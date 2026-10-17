@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-17T14:01:00.870Z",
- "launcherVersion": "0.1.50",
+ "generatedAt": "2026-10-17T14:09:20.408Z",
+ "launcherVersion": "0.1.51",
  "sets": [
   {
    "id": "anachronox",
@@ -14891,6 +14891,694 @@
      "description": "Reach every one of the 103 campaign maps.",
      "points": 50,
      "group": "Every area"
+    }
+   ]
+  },
+  {
+   "id": "hearthstone",
+   "title": "Hearthstone",
+   "how": "files",
+   "status": "untested",
+   "statusNote": "Log reading checked on sample Hearthstone logs; waiting for a player report.",
+   "notes": [
+    "Hearthstone is online, so Vault never reads its memory. Achievements come from Hearthstone's own game log (Power.log), the same one Hearthstone Deck Tracker reads.",
+    "Vault turns the game log on for you (it adds a [Power] section to Hearthstone's log.config). If Hearthstone was open when you installed or updated Vault, restart it once.",
+    "Games played before the log was on can't count. Class wins count from your first logged game."
+   ],
+   "achievementCount": 96,
+   "points": 2830,
+   "achievements": [
+    {
+     "id": "deathknight-1",
+     "title": "Death Knight Initiate",
+     "description": "Win 1 game as Death Knight (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 5,
+     "group": "Class: Death Knight"
+    },
+    {
+     "id": "deathknight-25",
+     "title": "Death Knight Adept",
+     "description": "Win 25 games as Death Knight (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 10,
+     "group": "Class: Death Knight"
+    },
+    {
+     "id": "deathknight-100",
+     "title": "Death Knight Veteran",
+     "description": "Win 100 games as Death Knight (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 25,
+     "group": "Class: Death Knight"
+    },
+    {
+     "id": "deathknight-500",
+     "title": "Death Knight Master",
+     "description": "Win 500 games as Death Knight (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 50,
+     "group": "Class: Death Knight"
+    },
+    {
+     "id": "deathknight-1000",
+     "title": "Golden The Lich King",
+     "description": "Win 1000 games as Death Knight (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 75,
+     "group": "Class: Death Knight"
+    },
+    {
+     "id": "demonhunter-1",
+     "title": "Demon Hunter Initiate",
+     "description": "Win 1 game as Demon Hunter (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 5,
+     "group": "Class: Demon Hunter"
+    },
+    {
+     "id": "demonhunter-25",
+     "title": "Demon Hunter Adept",
+     "description": "Win 25 games as Demon Hunter (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 10,
+     "group": "Class: Demon Hunter"
+    },
+    {
+     "id": "demonhunter-100",
+     "title": "Demon Hunter Veteran",
+     "description": "Win 100 games as Demon Hunter (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 25,
+     "group": "Class: Demon Hunter"
+    },
+    {
+     "id": "demonhunter-500",
+     "title": "Demon Hunter Master",
+     "description": "Win 500 games as Demon Hunter (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 50,
+     "group": "Class: Demon Hunter"
+    },
+    {
+     "id": "demonhunter-1000",
+     "title": "Golden Illidan",
+     "description": "Win 1000 games as Demon Hunter (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 75,
+     "group": "Class: Demon Hunter"
+    },
+    {
+     "id": "druid-1",
+     "title": "Druid Initiate",
+     "description": "Win 1 game as Druid (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 5,
+     "group": "Class: Druid"
+    },
+    {
+     "id": "druid-25",
+     "title": "Druid Adept",
+     "description": "Win 25 games as Druid (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 10,
+     "group": "Class: Druid"
+    },
+    {
+     "id": "druid-100",
+     "title": "Druid Veteran",
+     "description": "Win 100 games as Druid (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 25,
+     "group": "Class: Druid"
+    },
+    {
+     "id": "druid-500",
+     "title": "Druid Master",
+     "description": "Win 500 games as Druid (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 50,
+     "group": "Class: Druid"
+    },
+    {
+     "id": "druid-1000",
+     "title": "Golden Malfurion",
+     "description": "Win 1000 games as Druid (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 75,
+     "group": "Class: Druid"
+    },
+    {
+     "id": "hunter-1",
+     "title": "Hunter Initiate",
+     "description": "Win 1 game as Hunter (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 5,
+     "group": "Class: Hunter"
+    },
+    {
+     "id": "hunter-25",
+     "title": "Hunter Adept",
+     "description": "Win 25 games as Hunter (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 10,
+     "group": "Class: Hunter"
+    },
+    {
+     "id": "hunter-100",
+     "title": "Hunter Veteran",
+     "description": "Win 100 games as Hunter (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 25,
+     "group": "Class: Hunter"
+    },
+    {
+     "id": "hunter-500",
+     "title": "Hunter Master",
+     "description": "Win 500 games as Hunter (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 50,
+     "group": "Class: Hunter"
+    },
+    {
+     "id": "hunter-1000",
+     "title": "Golden Rexxar",
+     "description": "Win 1000 games as Hunter (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 75,
+     "group": "Class: Hunter"
+    },
+    {
+     "id": "mage-1",
+     "title": "Mage Initiate",
+     "description": "Win 1 game as Mage (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 5,
+     "group": "Class: Mage"
+    },
+    {
+     "id": "mage-25",
+     "title": "Mage Adept",
+     "description": "Win 25 games as Mage (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 10,
+     "group": "Class: Mage"
+    },
+    {
+     "id": "mage-100",
+     "title": "Mage Veteran",
+     "description": "Win 100 games as Mage (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 25,
+     "group": "Class: Mage"
+    },
+    {
+     "id": "mage-500",
+     "title": "Mage Master",
+     "description": "Win 500 games as Mage (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 50,
+     "group": "Class: Mage"
+    },
+    {
+     "id": "mage-1000",
+     "title": "Golden Jaina",
+     "description": "Win 1000 games as Mage (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 75,
+     "group": "Class: Mage"
+    },
+    {
+     "id": "paladin-1",
+     "title": "Paladin Initiate",
+     "description": "Win 1 game as Paladin (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 5,
+     "group": "Class: Paladin"
+    },
+    {
+     "id": "paladin-25",
+     "title": "Paladin Adept",
+     "description": "Win 25 games as Paladin (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 10,
+     "group": "Class: Paladin"
+    },
+    {
+     "id": "paladin-100",
+     "title": "Paladin Veteran",
+     "description": "Win 100 games as Paladin (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 25,
+     "group": "Class: Paladin"
+    },
+    {
+     "id": "paladin-500",
+     "title": "Paladin Master",
+     "description": "Win 500 games as Paladin (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 50,
+     "group": "Class: Paladin"
+    },
+    {
+     "id": "paladin-1000",
+     "title": "Golden Uther",
+     "description": "Win 1000 games as Paladin (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 75,
+     "group": "Class: Paladin"
+    },
+    {
+     "id": "priest-1",
+     "title": "Priest Initiate",
+     "description": "Win 1 game as Priest (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 5,
+     "group": "Class: Priest"
+    },
+    {
+     "id": "priest-25",
+     "title": "Priest Adept",
+     "description": "Win 25 games as Priest (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 10,
+     "group": "Class: Priest"
+    },
+    {
+     "id": "priest-100",
+     "title": "Priest Veteran",
+     "description": "Win 100 games as Priest (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 25,
+     "group": "Class: Priest"
+    },
+    {
+     "id": "priest-500",
+     "title": "Priest Master",
+     "description": "Win 500 games as Priest (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 50,
+     "group": "Class: Priest"
+    },
+    {
+     "id": "priest-1000",
+     "title": "Golden Anduin",
+     "description": "Win 1000 games as Priest (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 75,
+     "group": "Class: Priest"
+    },
+    {
+     "id": "rogue-1",
+     "title": "Rogue Initiate",
+     "description": "Win 1 game as Rogue (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 5,
+     "group": "Class: Rogue"
+    },
+    {
+     "id": "rogue-25",
+     "title": "Rogue Adept",
+     "description": "Win 25 games as Rogue (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 10,
+     "group": "Class: Rogue"
+    },
+    {
+     "id": "rogue-100",
+     "title": "Rogue Veteran",
+     "description": "Win 100 games as Rogue (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 25,
+     "group": "Class: Rogue"
+    },
+    {
+     "id": "rogue-500",
+     "title": "Rogue Master",
+     "description": "Win 500 games as Rogue (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 50,
+     "group": "Class: Rogue"
+    },
+    {
+     "id": "rogue-1000",
+     "title": "Golden Valeera",
+     "description": "Win 1000 games as Rogue (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 75,
+     "group": "Class: Rogue"
+    },
+    {
+     "id": "shaman-1",
+     "title": "Shaman Initiate",
+     "description": "Win 1 game as Shaman (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 5,
+     "group": "Class: Shaman"
+    },
+    {
+     "id": "shaman-25",
+     "title": "Shaman Adept",
+     "description": "Win 25 games as Shaman (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 10,
+     "group": "Class: Shaman"
+    },
+    {
+     "id": "shaman-100",
+     "title": "Shaman Veteran",
+     "description": "Win 100 games as Shaman (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 25,
+     "group": "Class: Shaman"
+    },
+    {
+     "id": "shaman-500",
+     "title": "Shaman Master",
+     "description": "Win 500 games as Shaman (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 50,
+     "group": "Class: Shaman"
+    },
+    {
+     "id": "shaman-1000",
+     "title": "Golden Thrall",
+     "description": "Win 1000 games as Shaman (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 75,
+     "group": "Class: Shaman"
+    },
+    {
+     "id": "warlock-1",
+     "title": "Warlock Initiate",
+     "description": "Win 1 game as Warlock (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 5,
+     "group": "Class: Warlock"
+    },
+    {
+     "id": "warlock-25",
+     "title": "Warlock Adept",
+     "description": "Win 25 games as Warlock (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 10,
+     "group": "Class: Warlock"
+    },
+    {
+     "id": "warlock-100",
+     "title": "Warlock Veteran",
+     "description": "Win 100 games as Warlock (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 25,
+     "group": "Class: Warlock"
+    },
+    {
+     "id": "warlock-500",
+     "title": "Warlock Master",
+     "description": "Win 500 games as Warlock (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 50,
+     "group": "Class: Warlock"
+    },
+    {
+     "id": "warlock-1000",
+     "title": "Golden Gul'dan",
+     "description": "Win 1000 games as Warlock (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 75,
+     "group": "Class: Warlock"
+    },
+    {
+     "id": "warrior-1",
+     "title": "Warrior Initiate",
+     "description": "Win 1 game as Warrior (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 5,
+     "group": "Class: Warrior"
+    },
+    {
+     "id": "warrior-25",
+     "title": "Warrior Adept",
+     "description": "Win 25 games as Warrior (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 10,
+     "group": "Class: Warrior"
+    },
+    {
+     "id": "warrior-100",
+     "title": "Warrior Veteran",
+     "description": "Win 100 games as Warrior (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 25,
+     "group": "Class: Warrior"
+    },
+    {
+     "id": "warrior-500",
+     "title": "Warrior Master",
+     "description": "Win 500 games as Warrior (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 50,
+     "group": "Class: Warrior"
+    },
+    {
+     "id": "warrior-1000",
+     "title": "Golden Garrosh",
+     "description": "Win 1000 games as Warrior (Ranked, Casual, Arena, Brawl, Practice or Friendly).",
+     "points": 75,
+     "group": "Class: Warrior"
+    },
+    {
+     "id": "mode-ranked",
+     "title": "Climbing the Ladder",
+     "description": "Win a Ranked game.",
+     "points": 10,
+     "group": "Game modes"
+    },
+    {
+     "id": "mode-casual",
+     "title": "Just for Fun",
+     "description": "Win a Casual game.",
+     "points": 10,
+     "group": "Game modes"
+    },
+    {
+     "id": "mode-arena",
+     "title": "Into the Arena",
+     "description": "Win an Arena game.",
+     "points": 10,
+     "group": "Game modes"
+    },
+    {
+     "id": "mode-brawl",
+     "title": "Tavern Brawler",
+     "description": "Win a Tavern Brawl.",
+     "points": 10,
+     "group": "Game modes"
+    },
+    {
+     "id": "mode-ai",
+     "title": "Practice Makes Perfect",
+     "description": "Beat the Innkeeper or another computer opponent.",
+     "points": 10,
+     "group": "Game modes"
+    },
+    {
+     "id": "mode-friend",
+     "title": "Friendly Rivalry",
+     "description": "Win a Friendly Challenge.",
+     "points": 10,
+     "group": "Game modes"
+    },
+    {
+     "id": "mode-duels",
+     "title": "Duelist",
+     "description": "Win a Duels game.",
+     "points": 10,
+     "group": "Game modes"
+    },
+    {
+     "id": "mode-mercpvp",
+     "title": "Mercenary Captain",
+     "description": "Win a Mercenaries PvP battle.",
+     "points": 10,
+     "group": "Game modes"
+    },
+    {
+     "id": "mode-ranked-100",
+     "title": "Ladder Regular",
+     "description": "Win 100 Ranked games.",
+     "points": 25,
+     "group": "Game modes"
+    },
+    {
+     "id": "mode-ranked-500",
+     "title": "Legendary Grind",
+     "description": "Win 500 Ranked games.",
+     "points": 50,
+     "group": "Game modes"
+    },
+    {
+     "id": "mode-arena-50",
+     "title": "Arena Veteran",
+     "description": "Win 50 Arena games.",
+     "points": 25,
+     "group": "Game modes"
+    },
+    {
+     "id": "mode-arena-250",
+     "title": "Arena Master",
+     "description": "Win 250 Arena games.",
+     "points": 50,
+     "group": "Game modes"
+    },
+    {
+     "id": "mode-brawl-25",
+     "title": "Brawl Regular",
+     "description": "Win 25 Tavern Brawl games.",
+     "points": 20,
+     "group": "Game modes"
+    },
+    {
+     "id": "format-standard",
+     "title": "Standard Bearer",
+     "description": "Win a Standard format game.",
+     "points": 10,
+     "group": "Game modes"
+    },
+    {
+     "id": "format-wild",
+     "title": "Into the Wild",
+     "description": "Win a Wild format game.",
+     "points": 10,
+     "group": "Game modes"
+    },
+    {
+     "id": "format-twist",
+     "title": "Twisted",
+     "description": "Win a Twist format game.",
+     "points": 10,
+     "group": "Game modes"
+    },
+    {
+     "id": "format-classic",
+     "title": "Old School",
+     "description": "Win a Classic format game.",
+     "points": 10,
+     "group": "Game modes"
+    },
+    {
+     "id": "bg-play",
+     "title": "Bob Says Hi",
+     "description": "Finish a Battlegrounds game.",
+     "points": 5,
+     "group": "Battlegrounds"
+    },
+    {
+     "id": "bg-top4",
+     "title": "Top Four",
+     "description": "Finish in the top 4 in Battlegrounds.",
+     "points": 10,
+     "group": "Battlegrounds"
+    },
+    {
+     "id": "bg-first",
+     "title": "Battlegrounds Champion",
+     "description": "Finish first in Battlegrounds.",
+     "points": 25,
+     "group": "Battlegrounds"
+    },
+    {
+     "id": "bg-top4-10",
+     "title": "Regular in the Tavern",
+     "description": "Finish in the top 4 in Battlegrounds 10 times.",
+     "points": 15,
+     "group": "Battlegrounds"
+    },
+    {
+     "id": "bg-top4-50",
+     "title": "Recruiter",
+     "description": "Finish in the top 4 in Battlegrounds 50 times.",
+     "points": 25,
+     "group": "Battlegrounds"
+    },
+    {
+     "id": "bg-top4-200",
+     "title": "Tavern Legend",
+     "description": "Finish in the top 4 in Battlegrounds 200 times.",
+     "points": 50,
+     "group": "Battlegrounds"
+    },
+    {
+     "id": "bg-first-10",
+     "title": "Serial Champion",
+     "description": "Finish first in Battlegrounds 10 times.",
+     "points": 30,
+     "group": "Battlegrounds"
+    },
+    {
+     "id": "bg-first-50",
+     "title": "Undisputed",
+     "description": "Finish first in Battlegrounds 50 times.",
+     "points": 60,
+     "group": "Battlegrounds"
+    },
+    {
+     "id": "bg-games-100",
+     "title": "Bob's Best Customer",
+     "description": "Play 100 Battlegrounds games.",
+     "points": 25,
+     "group": "Battlegrounds"
+    },
+    {
+     "id": "wins-10",
+     "title": "Getting the Hang of It",
+     "description": "Win 10 games across all modes (except Battlegrounds and Mercenaries).",
+     "points": 10,
+     "group": "Lifetime"
+    },
+    {
+     "id": "wins-100",
+     "title": "Seasoned",
+     "description": "Win 100 games across all modes (except Battlegrounds and Mercenaries).",
+     "points": 20,
+     "group": "Lifetime"
+    },
+    {
+     "id": "wins-500",
+     "title": "Card Slinger",
+     "description": "Win 500 games across all modes (except Battlegrounds and Mercenaries).",
+     "points": 40,
+     "group": "Lifetime"
+    },
+    {
+     "id": "wins-1000",
+     "title": "Thousand Victories",
+     "description": "Win 1000 games across all modes (except Battlegrounds and Mercenaries).",
+     "points": 60,
+     "group": "Lifetime"
+    },
+    {
+     "id": "wins-5000",
+     "title": "Living Legend",
+     "description": "Win 5000 games across all modes (except Battlegrounds and Mercenaries).",
+     "points": 100,
+     "group": "Lifetime"
+    },
+    {
+     "id": "games-100",
+     "title": "Pull Up a Chair",
+     "description": "Play 100 games of Hearthstone.",
+     "points": 15,
+     "group": "Lifetime"
+    },
+    {
+     "id": "games-1000",
+     "title": "Regular at the Inn",
+     "description": "Play 1000 games of Hearthstone.",
+     "points": 40,
+     "group": "Lifetime"
+    },
+    {
+     "id": "all-classes",
+     "title": "Jack of All Trades",
+     "description": "Win a game with every class.",
+     "points": 40,
+     "group": "Lifetime"
+    },
+    {
+     "id": "beat-all",
+     "title": "Nemesis of All",
+     "description": "Beat every class at least once.",
+     "points": 30,
+     "group": "Lifetime"
+    },
+    {
+     "id": "streak-3",
+     "title": "Hat Trick",
+     "description": "Win 3 games in a row (Battlegrounds and Mercenaries don't break it).",
+     "points": 10,
+     "group": "Challenges"
+    },
+    {
+     "id": "streak-5",
+     "title": "On a Roll",
+     "description": "Win 5 games in a row (Battlegrounds and Mercenaries don't break it).",
+     "points": 20,
+     "group": "Challenges"
+    },
+    {
+     "id": "streak-10",
+     "title": "Unstoppable",
+     "description": "Win 10 games in a row (Battlegrounds and Mercenaries don't break it).",
+     "points": 40,
+     "group": "Challenges"
+    },
+    {
+     "id": "fast-win",
+     "title": "Lethal on Board",
+     "description": "Win a game by turn 12 (six of your turns).",
+     "points": 20,
+     "group": "Challenges"
+    },
+    {
+     "id": "long-win",
+     "title": "Fatigue Is Real",
+     "description": "Win a game that lasts 40 or more turns.",
+     "points": 20,
+     "group": "Challenges"
+    },
+    {
+     "id": "marathon",
+     "title": "Marathon Match",
+     "description": "Win a game that lasts 30 minutes or longer.",
+     "points": 15,
+     "group": "Challenges"
     }
    ]
   },
