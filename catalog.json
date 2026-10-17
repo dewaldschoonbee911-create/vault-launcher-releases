@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-17T11:13:24.527Z",
- "launcherVersion": "0.1.41",
+ "generatedAt": "2026-10-17T11:35:36.636Z",
+ "launcherVersion": "0.1.42",
  "sets": [
   {
    "id": "anachronox",
@@ -11710,10 +11710,11 @@
     "Achievements pop on the score screen when a match ends, not during play.",
     "Your player is found by name (Settings → StarCraft player name) or, in games with just one human, automatically.",
     "Unit, building and research achievements count what you ordered, as recorded in the replay.",
-    "Your last game counts even if Vault was closed while you played (StarCraft keeps the last replay)."
+    "Your last game counts even if Vault was closed while you played (StarCraft keeps the last replay).",
+    "Campaign missions: StarCraft keeps campaign progress on Blizzard's servers, so Vault learns it from your save games. Save a game once in each new mission (Menu, Save Game) and the missions before it count as beaten."
    ],
-   "achievementCount": 71,
-   "points": 1110,
+   "achievementCount": 161,
+   "points": 2605,
    "achievements": [
     {
      "id": "gg",
@@ -12211,6 +12212,636 @@
      "description": "Win a game in which you built a Battlecruiser.",
      "points": 15,
      "group": "Victories"
+    },
+    {
+     "id": "x-terran-all-units",
+     "title": "Full Arsenal",
+     "description": "Over all your games, make every Terran unit at least once (13).",
+     "points": 40,
+     "group": "Collection: Terran"
+    },
+    {
+     "id": "x-terran-all-buildings",
+     "title": "Every Structure Standing",
+     "description": "Over all your games, build every Terran structure at least once (17).",
+     "points": 35,
+     "group": "Collection: Terran"
+    },
+    {
+     "id": "x-zerg-all-units",
+     "title": "Every Strain",
+     "description": "Over all your games, make every Zerg unit at least once (12).",
+     "points": 40,
+     "group": "Collection: Zerg"
+    },
+    {
+     "id": "x-zerg-all-buildings",
+     "title": "The Whole Hive",
+     "description": "Over all your games, build every Zerg structure at least once (16).",
+     "points": 35,
+     "group": "Collection: Zerg"
+    },
+    {
+     "id": "x-protoss-all-units",
+     "title": "Khala United",
+     "description": "Over all your games, make every Protoss unit at least once (14).",
+     "points": 40,
+     "group": "Collection: Protoss"
+    },
+    {
+     "id": "x-protoss-all-buildings",
+     "title": "Every Gate Open",
+     "description": "Over all your games, build every Protoss structure at least once (16).",
+     "points": 35,
+     "group": "Collection: Protoss"
+    },
+    {
+     "id": "x-bw-medic",
+     "title": "Field Medic",
+     "description": "Make a Medic (Brood War).",
+     "points": 10,
+     "group": "Brood War"
+    },
+    {
+     "id": "x-bw-valkyrie",
+     "title": "Valkyrie Wing",
+     "description": "Make a Valkyrie (Brood War).",
+     "points": 10,
+     "group": "Brood War"
+    },
+    {
+     "id": "x-bw-lurker",
+     "title": "Lurking Below",
+     "description": "Make a Lurker (Brood War).",
+     "points": 10,
+     "group": "Brood War"
+    },
+    {
+     "id": "x-bw-devourer",
+     "title": "Acid Spores",
+     "description": "Make a Devourer (Brood War).",
+     "points": 10,
+     "group": "Brood War"
+    },
+    {
+     "id": "x-bw-corsair",
+     "title": "Disruption Web",
+     "description": "Make a Corsair (Brood War).",
+     "points": 10,
+     "group": "Brood War"
+    },
+    {
+     "id": "x-bw-dark-templar",
+     "title": "Shadow Blades",
+     "description": "Make a Dark Templar (Brood War).",
+     "points": 10,
+     "group": "Brood War"
+    },
+    {
+     "id": "x-bw-dark-archon-5",
+     "title": "Mind Control",
+     "description": "Merge 5 Dark Archons over all your games.",
+     "points": 15,
+     "group": "Brood War"
+    },
+    {
+     "id": "x-win-terran-vs-terran",
+     "title": "TvT",
+     "description": "Win as Terran against a Terran opponent.",
+     "points": 10,
+     "group": "Matchups"
+    },
+    {
+     "id": "x-win-terran-vs-zerg",
+     "title": "TvZ",
+     "description": "Win as Terran against a Zerg opponent.",
+     "points": 10,
+     "group": "Matchups"
+    },
+    {
+     "id": "x-win-terran-vs-protoss",
+     "title": "TvP",
+     "description": "Win as Terran against a Protoss opponent.",
+     "points": 10,
+     "group": "Matchups"
+    },
+    {
+     "id": "x-terran-all-matchups",
+     "title": "Terran Supremacy",
+     "description": "As Terran, beat all three races (over all your games).",
+     "points": 25,
+     "group": "Matchups"
+    },
+    {
+     "id": "x-win-zerg-vs-terran",
+     "title": "ZvT",
+     "description": "Win as Zerg against a Terran opponent.",
+     "points": 10,
+     "group": "Matchups"
+    },
+    {
+     "id": "x-win-zerg-vs-zerg",
+     "title": "ZvZ",
+     "description": "Win as Zerg against a Zerg opponent.",
+     "points": 10,
+     "group": "Matchups"
+    },
+    {
+     "id": "x-win-zerg-vs-protoss",
+     "title": "ZvP",
+     "description": "Win as Zerg against a Protoss opponent.",
+     "points": 10,
+     "group": "Matchups"
+    },
+    {
+     "id": "x-zerg-all-matchups",
+     "title": "Zerg Supremacy",
+     "description": "As Zerg, beat all three races (over all your games).",
+     "points": 25,
+     "group": "Matchups"
+    },
+    {
+     "id": "x-win-protoss-vs-terran",
+     "title": "PvT",
+     "description": "Win as Protoss against a Terran opponent.",
+     "points": 10,
+     "group": "Matchups"
+    },
+    {
+     "id": "x-win-protoss-vs-zerg",
+     "title": "PvZ",
+     "description": "Win as Protoss against a Zerg opponent.",
+     "points": 10,
+     "group": "Matchups"
+    },
+    {
+     "id": "x-win-protoss-vs-protoss",
+     "title": "PvP",
+     "description": "Win as Protoss against a Protoss opponent.",
+     "points": 10,
+     "group": "Matchups"
+    },
+    {
+     "id": "x-protoss-all-matchups",
+     "title": "Protoss Supremacy",
+     "description": "As Protoss, beat all three races (over all your games).",
+     "points": 25,
+     "group": "Matchups"
+    },
+    {
+     "id": "x-ffa-7",
+     "title": "Last One Standing",
+     "description": "Win a game against 7 computer opponents.",
+     "points": 40,
+     "group": "Challenges"
+    },
+    {
+     "id": "x-cpu-3",
+     "title": "Outnumbered",
+     "description": "Win a game against 3 or more computer opponents.",
+     "points": 20,
+     "group": "Challenges"
+    },
+    {
+     "id": "x-rush-8",
+     "title": "Rush Hour",
+     "description": "Win in under 8 minutes.",
+     "points": 25,
+     "group": "Challenges"
+    },
+    {
+     "id": "x-marathon",
+     "title": "Marathon",
+     "description": "Win a game that lasts an hour or more.",
+     "points": 20,
+     "group": "Challenges"
+    },
+    {
+     "id": "x-bc-fleet",
+     "title": "Battlecruiser Operational",
+     "description": "Make 12 Battlecruisers in one game.",
+     "points": 25,
+     "group": "Challenges"
+    },
+    {
+     "id": "x-carrier-fleet",
+     "title": "Carrier Has Arrived",
+     "description": "Make 12 Carriers in one game.",
+     "points": 25,
+     "group": "Challenges"
+    },
+    {
+     "id": "x-ling-flood",
+     "title": "Zergling Flood",
+     "description": "Make 200 Zerglings in one game.",
+     "points": 20,
+     "group": "Challenges"
+    },
+    {
+     "id": "x-apm-150",
+     "title": "Fast Hands",
+     "description": "Finish a game with 150+ APM.",
+     "points": 20,
+     "group": "Challenges"
+    },
+    {
+     "id": "x-apm-250",
+     "title": "Pro Gamer Hands",
+     "description": "Finish a game with 250+ APM.",
+     "points": 35,
+     "group": "Challenges"
+    },
+    {
+     "id": "x-map-lost-temple",
+     "title": "Temple Run",
+     "description": "Win on Lost Temple.",
+     "points": 10,
+     "group": "Famous maps"
+    },
+    {
+     "id": "x-map-big-game-hunters",
+     "title": "Big Game",
+     "description": "Win on Big Game Hunters.",
+     "points": 10,
+     "group": "Famous maps"
+    },
+    {
+     "id": "x-map-python",
+     "title": "Charmer",
+     "description": "Win on Python.",
+     "points": 10,
+     "group": "Famous maps"
+    },
+    {
+     "id": "x-map-fighting-spirit",
+     "title": "Fighting Spirit",
+     "description": "Win on Fighting Spirit.",
+     "points": 10,
+     "group": "Famous maps"
+    },
+    {
+     "id": "x-map-challenger",
+     "title": "Challenger Approaching",
+     "description": "Win on Challenger.",
+     "points": 10,
+     "group": "Famous maps"
+    },
+    {
+     "id": "x-wins-50",
+     "title": "Seasoned Commander",
+     "description": "Win 50 games.",
+     "points": 20,
+     "group": "Lifetime"
+    },
+    {
+     "id": "x-wins-100",
+     "title": "Hundred Victories",
+     "description": "Win 100 games.",
+     "points": 30,
+     "group": "Lifetime"
+    },
+    {
+     "id": "x-wins-250",
+     "title": "Legend of Korhal",
+     "description": "Win 250 games.",
+     "points": 50,
+     "group": "Lifetime"
+    },
+    {
+     "id": "x-terran-wins-25",
+     "title": "Terran Veteran",
+     "description": "Win 25 games as Terran.",
+     "points": 20,
+     "group": "Lifetime"
+    },
+    {
+     "id": "x-zerg-wins-25",
+     "title": "Zerg Veteran",
+     "description": "Win 25 games as Zerg.",
+     "points": 20,
+     "group": "Lifetime"
+    },
+    {
+     "id": "x-protoss-wins-25",
+     "title": "Protoss Veteran",
+     "description": "Win 25 games as Protoss.",
+     "points": 20,
+     "group": "Lifetime"
+    },
+    {
+     "id": "x-army-1000",
+     "title": "Mobilised",
+     "description": "Make 1,000 army units over all your games.",
+     "points": 15,
+     "group": "Lifetime"
+    },
+    {
+     "id": "x-army-5000",
+     "title": "Total War",
+     "description": "Make 5,000 army units over all your games.",
+     "points": 30,
+     "group": "Lifetime"
+    },
+    {
+     "id": "x-marines-1000",
+     "title": "You Wanna Piece of Me?",
+     "description": "Make 1,000 Marines over all your games.",
+     "points": 20,
+     "group": "Lifetime"
+    },
+    {
+     "id": "x-zerglings-2000",
+     "title": "Endless Swarm",
+     "description": "Make 2,000 Zerglings over all your games.",
+     "points": 20,
+     "group": "Lifetime"
+    },
+    {
+     "id": "x-zealots-500",
+     "title": "My Life for Aiur",
+     "description": "Make 500 Zealots over all your games.",
+     "points": 20,
+     "group": "Lifetime"
+    },
+    {
+     "id": "x-archons-25",
+     "title": "Power Overwhelming",
+     "description": "Merge 25 Archons or Dark Archons over all your games.",
+     "points": 20,
+     "group": "Lifetime"
+    },
+    {
+     "id": "x-c-terran-1",
+     "title": "Wasteland",
+     "description": "Rebel Yell: beat mission 1, Wasteland. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Rebel Yell"
+    },
+    {
+     "id": "x-c-terran-2",
+     "title": "Backwater Station",
+     "description": "Rebel Yell: beat mission 2, Backwater Station. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Rebel Yell"
+    },
+    {
+     "id": "x-c-terran-3",
+     "title": "Desperate Alliance",
+     "description": "Rebel Yell: beat mission 3, Desperate Alliance. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Rebel Yell"
+    },
+    {
+     "id": "x-c-terran-4",
+     "title": "Jacob's Installation",
+     "description": "Rebel Yell: beat mission 4, Jacob's Installation. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Rebel Yell"
+    },
+    {
+     "id": "x-c-terran-5",
+     "title": "Revolution",
+     "description": "Rebel Yell: beat mission 5, Revolution. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Rebel Yell"
+    },
+    {
+     "id": "x-c-terran-6",
+     "title": "Norad II",
+     "description": "Rebel Yell: beat mission 6, Norad II. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Rebel Yell"
+    },
+    {
+     "id": "x-c-terran-7",
+     "title": "The Trump Card",
+     "description": "Rebel Yell: beat mission 7, The Trump Card. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Rebel Yell"
+    },
+    {
+     "id": "x-c-terran-8",
+     "title": "The Big Push",
+     "description": "Rebel Yell: beat mission 8, The Big Push. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Rebel Yell"
+    },
+    {
+     "id": "x-c-terran-9",
+     "title": "New Gettysburg",
+     "description": "Rebel Yell: beat mission 9, New Gettysburg. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Rebel Yell"
+    },
+    {
+     "id": "x-c-terran-final",
+     "title": "The Hammer Falls Awaits",
+     "description": "Rebel Yell: reach the final mission, The Hammer Falls. (Save a game in it.)",
+     "points": 20,
+     "group": "Campaign: Rebel Yell"
+    },
+    {
+     "id": "x-c-zerg-1",
+     "title": "Among the Ruins",
+     "description": "Overmind: beat mission 1, Among the Ruins. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Overmind"
+    },
+    {
+     "id": "x-c-zerg-2",
+     "title": "Egression",
+     "description": "Overmind: beat mission 2, Egression. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Overmind"
+    },
+    {
+     "id": "x-c-zerg-3",
+     "title": "The New Dominion",
+     "description": "Overmind: beat mission 3, The New Dominion. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Overmind"
+    },
+    {
+     "id": "x-c-zerg-4",
+     "title": "Agent of the Swarm",
+     "description": "Overmind: beat mission 4, Agent of the Swarm. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Overmind"
+    },
+    {
+     "id": "x-c-zerg-5",
+     "title": "The Amerigo",
+     "description": "Overmind: beat mission 5, The Amerigo. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Overmind"
+    },
+    {
+     "id": "x-c-zerg-6",
+     "title": "The Dark Templar",
+     "description": "Overmind: beat mission 6, The Dark Templar. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Overmind"
+    },
+    {
+     "id": "x-c-zerg-7",
+     "title": "The Culling",
+     "description": "Overmind: beat mission 7, The Culling. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Overmind"
+    },
+    {
+     "id": "x-c-zerg-8",
+     "title": "Eye for an Eye",
+     "description": "Overmind: beat mission 8, Eye for an Eye. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Overmind"
+    },
+    {
+     "id": "x-c-zerg-9",
+     "title": "The Invasion of Aiur",
+     "description": "Overmind: beat mission 9, The Invasion of Aiur. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: Overmind"
+    },
+    {
+     "id": "x-c-zerg-final",
+     "title": "Full Circle Awaits",
+     "description": "Overmind: reach the final mission, Full Circle. (Save a game in it.)",
+     "points": 20,
+     "group": "Campaign: Overmind"
+    },
+    {
+     "id": "x-c-protoss-1",
+     "title": "First Strike",
+     "description": "The Fall: beat mission 1, First Strike. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: The Fall"
+    },
+    {
+     "id": "x-c-protoss-2",
+     "title": "Into the Flames",
+     "description": "The Fall: beat mission 2, Into the Flames. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: The Fall"
+    },
+    {
+     "id": "x-c-protoss-3",
+     "title": "Higher Ground",
+     "description": "The Fall: beat mission 3, Higher Ground. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: The Fall"
+    },
+    {
+     "id": "x-c-protoss-4",
+     "title": "The Hunt for Tassadar",
+     "description": "The Fall: beat mission 4, The Hunt for Tassadar. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: The Fall"
+    },
+    {
+     "id": "x-c-protoss-5",
+     "title": "Choosing Sides",
+     "description": "The Fall: beat mission 5, Choosing Sides. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: The Fall"
+    },
+    {
+     "id": "x-c-protoss-6",
+     "title": "Into the Darkness",
+     "description": "The Fall: beat mission 6, Into the Darkness. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: The Fall"
+    },
+    {
+     "id": "x-c-protoss-7",
+     "title": "Homeland",
+     "description": "The Fall: beat mission 7, Homeland. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: The Fall"
+    },
+    {
+     "id": "x-c-protoss-8",
+     "title": "The Trial of Tassadar",
+     "description": "The Fall: beat mission 8, The Trial of Tassadar. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: The Fall"
+    },
+    {
+     "id": "x-c-protoss-9",
+     "title": "Shadow Hunters",
+     "description": "The Fall: beat mission 9, Shadow Hunters. (Counts once you save a game in a later mission.)",
+     "points": 10,
+     "group": "Campaign: The Fall"
+    },
+    {
+     "id": "x-c-protoss-final",
+     "title": "Eye of the Storm Awaits",
+     "description": "The Fall: reach the final mission, Eye of the Storm. (Save a game in it.)",
+     "points": 20,
+     "group": "Campaign: The Fall"
+    },
+    {
+     "id": "x-c-xprotoss-2",
+     "title": "The Stand: Opening Gambit",
+     "description": "Brood War, The Stand: reach mission 2. (Save a game in it.)",
+     "points": 10,
+     "group": "Campaign: The Stand (Brood War)"
+    },
+    {
+     "id": "x-c-xprotoss-5",
+     "title": "The Stand: Deep in the War",
+     "description": "Brood War, The Stand: reach mission 5. (Save a game in it.)",
+     "points": 15,
+     "group": "Campaign: The Stand (Brood War)"
+    },
+    {
+     "id": "x-c-xprotoss-8",
+     "title": "The Stand: Endgame",
+     "description": "Brood War, The Stand: reach mission 8. (Save a game in it.)",
+     "points": 20,
+     "group": "Campaign: The Stand (Brood War)"
+    },
+    {
+     "id": "x-c-xterran-2",
+     "title": "The Iron Fist: Opening Gambit",
+     "description": "Brood War, The Iron Fist: reach mission 2. (Save a game in it.)",
+     "points": 10,
+     "group": "Campaign: The Iron Fist (Brood War)"
+    },
+    {
+     "id": "x-c-xterran-5",
+     "title": "The Iron Fist: Deep in the War",
+     "description": "Brood War, The Iron Fist: reach mission 5. (Save a game in it.)",
+     "points": 15,
+     "group": "Campaign: The Iron Fist (Brood War)"
+    },
+    {
+     "id": "x-c-xterran-8",
+     "title": "The Iron Fist: Endgame",
+     "description": "Brood War, The Iron Fist: reach mission 8. (Save a game in it.)",
+     "points": 20,
+     "group": "Campaign: The Iron Fist (Brood War)"
+    },
+    {
+     "id": "x-c-xzerg-2",
+     "title": "Queen of Blades: Opening Gambit",
+     "description": "Brood War, Queen of Blades: reach mission 2. (Save a game in it.)",
+     "points": 10,
+     "group": "Campaign: Queen of Blades (Brood War)"
+    },
+    {
+     "id": "x-c-xzerg-5",
+     "title": "Queen of Blades: Deep in the War",
+     "description": "Brood War, Queen of Blades: reach mission 5. (Save a game in it.)",
+     "points": 15,
+     "group": "Campaign: Queen of Blades (Brood War)"
+    },
+    {
+     "id": "x-c-xzerg-8",
+     "title": "Queen of Blades: Endgame",
+     "description": "Brood War, Queen of Blades: reach mission 8. (Save a game in it.)",
+     "points": 20,
+     "group": "Campaign: Queen of Blades (Brood War)"
     }
    ]
   },
@@ -12222,10 +12853,12 @@
    "statusNote": "Campaign progress confirmed live on the first chapter.",
    "notes": [
     "Warcraft III has Blizzard's anti-cheat, so Vault never reads its memory. Achievements come from the campaign progress file the game saves in Documents\\Warcraft III when you beat a chapter.",
-    "Achievements pop on the victory screen, as soon as the game saves your progress. Progress you already have counts too."
+    "Achievements pop on the victory screen, as soon as the game saves your progress. Progress you already have counts too.",
+    "Campaign on Hard: set the difficulty to Hard before you play the chapter. Chapters you beat before Vault was watching do not count as Hard.",
+    "Skirmish and lifetime achievements come from the replay Warcraft III saves after every game (LastReplay.w3g). Turning on \"Auto-save replays\" in Options keeps every game, so none are missed."
    ],
-   "achievementCount": 59,
-   "points": 780,
+   "achievementCount": 118,
+   "points": 2365,
    "achievements": [
     {
      "id": "tutorial-1",
@@ -12247,6 +12880,13 @@
      "description": "Exodus of the Horde: beat chapter 3, Riders on the Storm. Campaign complete!",
      "points": 25,
      "group": "Exodus of the Horde"
+    },
+    {
+     "id": "tutorial-hard",
+     "title": "For the Horde! (Hard)",
+     "description": "Finish Exodus of the Horde on Hard difficulty.",
+     "points": 40,
+     "group": "Campaign on Hard"
     },
     {
      "id": "human-1",
@@ -12312,6 +12952,13 @@
      "group": "The Scourge of Lordaeron"
     },
     {
+     "id": "human-hard",
+     "title": "The Fall of a Prince (Hard)",
+     "description": "Finish The Scourge of Lordaeron on Hard difficulty.",
+     "points": 40,
+     "group": "Campaign on Hard"
+    },
+    {
      "id": "undead-1",
      "title": "Trudging Through the Ashes",
      "description": "Path of the Damned: beat chapter 1, Trudging Through the Ashes.",
@@ -12366,6 +13013,13 @@
      "description": "Path of the Damned: beat chapter 8, Under the Burning Sky. Campaign complete!",
      "points": 25,
      "group": "Path of the Damned"
+    },
+    {
+     "id": "undead-hard",
+     "title": "Lord of the Scourge (Hard)",
+     "description": "Finish Path of the Damned on Hard difficulty.",
+     "points": 40,
+     "group": "Campaign on Hard"
     },
     {
      "id": "orc-1",
@@ -12424,6 +13078,13 @@
      "group": "The Invasion of Kalimdor"
     },
     {
+     "id": "orc-hard",
+     "title": "Warchief of Kalimdor (Hard)",
+     "description": "Finish The Invasion of Kalimdor on Hard difficulty.",
+     "points": 40,
+     "group": "Campaign on Hard"
+    },
+    {
      "id": "nightelf-1",
      "title": "Enemies at the Gate",
      "description": "Eternity's End: beat chapter 1, Enemies at the Gate.",
@@ -12471,6 +13132,13 @@
      "description": "Eternity's End: beat chapter 7, Twilight of the Gods. Campaign complete!",
      "points": 25,
      "group": "Eternity's End"
+    },
+    {
+     "id": "nightelf-hard",
+     "title": "Archimonde Falls (Hard)",
+     "description": "Finish Eternity's End on Hard difficulty.",
+     "points": 40,
+     "group": "Campaign on Hard"
     },
     {
      "id": "nightelfex-1",
@@ -12529,6 +13197,13 @@
      "group": "Terror of the Tides"
     },
     {
+     "id": "nightelfex-hard",
+     "title": "Brothers Reunited (Hard)",
+     "description": "Finish Terror of the Tides on Hard difficulty.",
+     "points": 40,
+     "group": "Campaign on Hard"
+    },
+    {
      "id": "humanex-1",
      "title": "Misconceptions",
      "description": "Curse of the Blood Elves: beat chapter 1, Misconceptions.",
@@ -12552,9 +13227,9 @@
     {
      "id": "humanex-4",
      "title": "The Crossing",
-     "description": "Curse of the Blood Elves: beat chapter 4, The Crossing.",
-     "points": 10,
-     "group": "Curse of the Blood Elves"
+     "description": "Curse of the Blood Elves: find and beat the secret level, The Crossing (hidden in The Dungeons of Dalaran).",
+     "points": 25,
+     "group": "Secrets"
     },
     {
      "id": "humanex-5",
@@ -12578,46 +13253,116 @@
      "group": "Curse of the Blood Elves"
     },
     {
-     "id": "undeadex-n1",
-     "title": "Legacy of the Damned: Opening Moves",
-     "description": "Beat 1 chapter of Legacy of the Damned.",
+     "id": "humanex-hard",
+     "title": "Lord of Outland (Hard)",
+     "description": "Finish Curse of the Blood Elves on Hard difficulty.",
+     "points": 40,
+     "group": "Campaign on Hard"
+    },
+    {
+     "id": "undeadex-1",
+     "title": "King Arthas",
+     "description": "Legacy of the Damned: beat chapter 1, King Arthas.",
      "points": 10,
      "group": "Legacy of the Damned"
     },
     {
-     "id": "undeadex-n3",
-     "title": "Legacy of the Damned: Halfway There",
-     "description": "Beat 3 chapters of Legacy of the Damned.",
-     "points": 15,
+     "id": "undeadex-2",
+     "title": "The Flight from Lordaeron",
+     "description": "Legacy of the Damned: beat chapter 2, The Flight from Lordaeron.",
+     "points": 10,
      "group": "Legacy of the Damned"
     },
     {
-     "id": "undeadex-n5",
-     "title": "Legacy of the Damned: Hardened Commander",
-     "description": "Beat 5 chapters of Legacy of the Damned.",
-     "points": 20,
+     "id": "undeadex-3",
+     "title": "The Dark Lady",
+     "description": "Legacy of the Damned: beat chapter 3, The Dark Lady.",
+     "points": 10,
      "group": "Legacy of the Damned"
     },
     {
-     "id": "orcex-n1",
-     "title": "The Founding of Durotar: Opening Moves",
-     "description": "Beat 1 chapter of The Founding of Durotar.",
+     "id": "undeadex-4",
+     "title": "The Return to Northrend",
+     "description": "Legacy of the Damned: beat chapter 4, The Return to Northrend.",
+     "points": 10,
+     "group": "Legacy of the Damned"
+    },
+    {
+     "id": "undeadex-5",
+     "title": "Dreadlord's Fall",
+     "description": "Legacy of the Damned: beat chapter 5, Dreadlord's Fall.",
+     "points": 10,
+     "group": "Legacy of the Damned"
+    },
+    {
+     "id": "undeadex-6",
+     "title": "A New Power in Lordaeron",
+     "description": "Legacy of the Damned: beat chapter 6, A New Power in Lordaeron.",
+     "points": 10,
+     "group": "Legacy of the Damned"
+    },
+    {
+     "id": "undeadex-7",
+     "title": "Into the Shadow Web Caverns",
+     "description": "Legacy of the Damned: beat chapter 7, Into the Shadow Web Caverns.",
+     "points": 10,
+     "group": "Legacy of the Damned"
+    },
+    {
+     "id": "undeadex-8",
+     "title": "The Forgotten Ones",
+     "description": "Legacy of the Damned: beat chapter 8, The Forgotten Ones.",
+     "points": 10,
+     "group": "Legacy of the Damned"
+    },
+    {
+     "id": "undeadex-9",
+     "title": "Ascent to the Upper Kingdom",
+     "description": "Legacy of the Damned: beat chapter 9, Ascent to the Upper Kingdom.",
+     "points": 10,
+     "group": "Legacy of the Damned"
+    },
+    {
+     "id": "undeadex-10",
+     "title": "The Lich King Rises",
+     "description": "Legacy of the Damned: beat chapter 10, A Symphony of Frost and Flame. Campaign complete!",
+     "points": 25,
+     "group": "Legacy of the Damned"
+    },
+    {
+     "id": "undeadex-hard",
+     "title": "The Lich King Rises (Hard)",
+     "description": "Finish Legacy of the Damned on Hard difficulty.",
+     "points": 40,
+     "group": "Campaign on Hard"
+    },
+    {
+     "id": "orcex-1",
+     "title": "To Tame a Land",
+     "description": "The Founding of Durotar: beat act 1, To Tame a Land.",
      "points": 10,
      "group": "The Founding of Durotar"
     },
     {
-     "id": "orcex-n3",
-     "title": "The Founding of Durotar: Halfway There",
-     "description": "Beat 3 chapters of The Founding of Durotar.",
-     "points": 15,
+     "id": "orcex-2",
+     "title": "Old Hatreds",
+     "description": "The Founding of Durotar: beat act 2, Old Hatreds.",
+     "points": 10,
      "group": "The Founding of Durotar"
     },
     {
-     "id": "orcex-n5",
-     "title": "The Founding of Durotar: Hardened Commander",
-     "description": "Beat 5 chapters of The Founding of Durotar.",
-     "points": 20,
+     "id": "orcex-3",
+     "title": "Founder of Durotar",
+     "description": "The Founding of Durotar: beat act 3, A Blaze of Glory. Campaign complete!",
+     "points": 25,
      "group": "The Founding of Durotar"
+    },
+    {
+     "id": "orcex-hard",
+     "title": "Founder of Durotar (Hard)",
+     "description": "Finish The Founding of Durotar on Hard difficulty.",
+     "points": 40,
+     "group": "Campaign on Hard"
     },
     {
      "id": "roc-complete",
@@ -12634,11 +13379,312 @@
      "group": "Milestones"
     },
     {
+     "id": "tft-complete",
+     "title": "The Frozen Throne",
+     "description": "Finish all three Frozen Throne campaigns.",
+     "points": 50,
+     "group": "Milestones"
+    },
+    {
+     "id": "everything",
+     "title": "Saga of Azeroth",
+     "description": "Finish every campaign, including the bonus campaign.",
+     "points": 100,
+     "group": "Milestones"
+    },
+    {
+     "id": "roc-hard",
+     "title": "Hardened Veteran",
+     "description": "Finish all four Reign of Chaos campaigns on Hard.",
+     "points": 75,
+     "group": "Campaign on Hard"
+    },
+    {
+     "id": "first-hard",
+     "title": "No Easy Way",
+     "description": "Beat any chapter on Hard.",
+     "points": 10,
+     "group": "Campaign on Hard"
+    },
+    {
      "id": "first-chapter",
      "title": "Ready to Work",
      "description": "Beat any campaign chapter.",
      "points": 5,
      "group": "Milestones"
+    },
+    {
+     "id": "s-first-win",
+     "title": "Skirmish Victor",
+     "description": "Win a skirmish game.",
+     "points": 10,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-win-h",
+     "title": "For the Alliance",
+     "description": "Win a game as Human.",
+     "points": 10,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-win-o",
+     "title": "Lok'tar Ogar",
+     "description": "Win a game as Orc.",
+     "points": 10,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-win-u",
+     "title": "The Scourge Marches",
+     "description": "Win a game as Undead.",
+     "points": 10,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-win-n",
+     "title": "Shan'do",
+     "description": "Win a game as Night Elf.",
+     "points": 10,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-insane",
+     "title": "Insane in the Membrane",
+     "description": "Beat an Insane computer.",
+     "points": 30,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-cpu-3",
+     "title": "Against All Odds",
+     "description": "Win against 3 or more computer opponents.",
+     "points": 25,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-insane-3",
+     "title": "Unstoppable",
+     "description": "Win against 3 or more Insane computers.",
+     "points": 50,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-rush",
+     "title": "Rush Tactics",
+     "description": "Win in under 10 minutes.",
+     "points": 20,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-long",
+     "title": "War of Attrition",
+     "description": "Win a game that lasts an hour or more.",
+     "points": 20,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-hero-10",
+     "title": "Legendary Hero",
+     "description": "Get a hero to level 10 in one game.",
+     "points": 25,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-three-heroes",
+     "title": "Hall of Heroes",
+     "description": "Have three heroes in one game.",
+     "points": 15,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-apm-150",
+     "title": "Quick Commander",
+     "description": "Finish a game with 150+ APM.",
+     "points": 20,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-pvp",
+     "title": "Battle.net Brawler",
+     "description": "Win a game against another player.",
+     "points": 20,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-many-hfoo",
+     "title": "Footman Frenzy",
+     "description": "Train 40 Footmen in one game.",
+     "points": 15,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-many-ogru",
+     "title": "Grunt Work",
+     "description": "Train 40 Grunts in one game.",
+     "points": 15,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-many-ugho",
+     "title": "Ghoul Rush",
+     "description": "Train 40 Ghouls in one game.",
+     "points": 15,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-many-earc",
+     "title": "Rain of Arrows",
+     "description": "Train 40 Archers in one game.",
+     "points": 15,
+     "group": "Skirmish"
+    },
+    {
+     "id": "s-h-all-units",
+     "title": "Human Army Complete",
+     "description": "Over all your games, train every Human unit at least once (12).",
+     "points": 35,
+     "group": "Collection"
+    },
+    {
+     "id": "s-h-all-heroes",
+     "title": "Human Heroes United",
+     "description": "Over all your games, use all four Human heroes.",
+     "points": 25,
+     "group": "Collection"
+    },
+    {
+     "id": "s-h-wins-25",
+     "title": "Human Veteran",
+     "description": "Win 25 games as Human.",
+     "points": 20,
+     "group": "Lifetime"
+    },
+    {
+     "id": "s-o-all-units",
+     "title": "Orc Army Complete",
+     "description": "Over all your games, train every Orc unit at least once (12).",
+     "points": 35,
+     "group": "Collection"
+    },
+    {
+     "id": "s-o-all-heroes",
+     "title": "Orc Heroes United",
+     "description": "Over all your games, use all four Orc heroes.",
+     "points": 25,
+     "group": "Collection"
+    },
+    {
+     "id": "s-o-wins-25",
+     "title": "Orc Veteran",
+     "description": "Win 25 games as Orc.",
+     "points": 20,
+     "group": "Lifetime"
+    },
+    {
+     "id": "s-u-all-units",
+     "title": "Undead Army Complete",
+     "description": "Over all your games, train every Undead unit at least once (11).",
+     "points": 35,
+     "group": "Collection"
+    },
+    {
+     "id": "s-u-all-heroes",
+     "title": "Undead Heroes United",
+     "description": "Over all your games, use all four Undead heroes.",
+     "points": 25,
+     "group": "Collection"
+    },
+    {
+     "id": "s-u-wins-25",
+     "title": "Undead Veteran",
+     "description": "Win 25 games as Undead.",
+     "points": 20,
+     "group": "Lifetime"
+    },
+    {
+     "id": "s-n-all-units",
+     "title": "Night Elf Army Complete",
+     "description": "Over all your games, train every Night Elf unit at least once (11).",
+     "points": 35,
+     "group": "Collection"
+    },
+    {
+     "id": "s-n-all-heroes",
+     "title": "Night Elf Heroes United",
+     "description": "Over all your games, use all four Night Elf heroes.",
+     "points": 25,
+     "group": "Collection"
+    },
+    {
+     "id": "s-n-wins-25",
+     "title": "Night Elf Veteran",
+     "description": "Win 25 games as Night Elf.",
+     "points": 20,
+     "group": "Lifetime"
+    },
+    {
+     "id": "s-all-races",
+     "title": "Master of Azeroth",
+     "description": "Win with all four races.",
+     "points": 30,
+     "group": "Lifetime"
+    },
+    {
+     "id": "s-wins-10",
+     "title": "Warmonger",
+     "description": "Win 10 games.",
+     "points": 15,
+     "group": "Lifetime"
+    },
+    {
+     "id": "s-wins-50",
+     "title": "Conqueror",
+     "description": "Win 50 games.",
+     "points": 30,
+     "group": "Lifetime"
+    },
+    {
+     "id": "s-wins-100",
+     "title": "Hero of Azeroth",
+     "description": "Win 100 games.",
+     "points": 50,
+     "group": "Lifetime"
+    },
+    {
+     "id": "s-games-25",
+     "title": "Regular",
+     "description": "Play 25 games.",
+     "points": 10,
+     "group": "Lifetime"
+    },
+    {
+     "id": "s-army-1000",
+     "title": "Raise an Army",
+     "description": "Train 1,000 units over all your games (workers not counted).",
+     "points": 15,
+     "group": "Lifetime"
+    },
+    {
+     "id": "s-army-5000",
+     "title": "The Horde Unleashed",
+     "description": "Train 5,000 units over all your games (workers not counted).",
+     "points": 30,
+     "group": "Lifetime"
+    },
+    {
+     "id": "s-heroes10-10",
+     "title": "Hall of Legends",
+     "description": "Take 10 heroes to level 10.",
+     "points": 30,
+     "group": "Lifetime"
+    },
+    {
+     "id": "s-insane-10",
+     "title": "Insanity",
+     "description": "Beat Insane computers in 10 games.",
+     "points": 40,
+     "group": "Lifetime"
     }
    ]
   },
