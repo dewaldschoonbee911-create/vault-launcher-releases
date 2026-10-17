@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-17T12:52:47.345Z",
- "launcherVersion": "0.1.46",
+ "generatedAt": "2026-10-17T13:16:33.408Z",
+ "launcherVersion": "0.1.47",
  "sets": [
   {
    "id": "anachronox",
@@ -17907,10 +17907,11 @@
    "statusNote": "Map and story achievements confirmed live.",
    "notes": [
     "Map achievements unlock the moment a map finishes loading, including when you load a save.",
+    "Chapter achievements come from your save games: save once in each new chapter and the chapter before it counts, even if Vault was closed while you played.",
     "Build checked: Steam maxpayne2.exe (v1.01, DLLs dated 17 Oct 2003)."
    ],
-   "achievementCount": 29,
-   "points": 205,
+   "achievementCount": 61,
+   "points": 585,
    "achievements": [
     {
      "id": "mp2-start",
@@ -18114,6 +18115,230 @@
      "description": "Reach map 20 or later.",
      "points": 10,
      "group": "Milestones"
+    },
+    {
+     "id": "mp2-ch00",
+     "title": "Part I Prologue",
+     "description": "Finish Part I, Prologue: Prologue. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch01",
+     "title": "Elevator Doors",
+     "description": "Finish Part I, Chapter 1: Elevator Doors. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch02",
+     "title": "A Criminal Mastermind",
+     "description": "Finish Part I, Chapter 2: A Criminal Mastermind. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch03",
+     "title": "The Depths of My Brain",
+     "description": "Finish Part I, Chapter 3: The Depths of My Brain. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch04",
+     "title": "No 'Us' in This",
+     "description": "Finish Part I, Chapter 4: No 'Us' in This. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch05",
+     "title": "A Sign of Her Passage",
+     "description": "Finish Part I, Chapter 5: A Sign of Her Passage. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch06",
+     "title": "A Linear Sequence of Scares",
+     "description": "Finish Part I, Chapter 6: A Linear Sequence of Scares. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch07",
+     "title": "The Million Dollar Question",
+     "description": "Finish Part I, Chapter 7: The Million Dollar Question. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch08",
+     "title": "Part II Prologue",
+     "description": "Finish Part II, Prologue: Prologue. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch09",
+     "title": "The Things That I Want",
+     "description": "Finish Part II, Chapter 1: The Things That I Want. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch10",
+     "title": "In the Middle of Something",
+     "description": "Finish Part II, Chapter 2: In the Middle of Something. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch11",
+     "title": "Blowing Up",
+     "description": "Finish Part II, Chapter 3: Blowing Up. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch12",
+     "title": "Routing Her Synapses",
+     "description": "Finish Part II, Chapter 4: Routing Her Synapses. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch13",
+     "title": "Out of the Window",
+     "description": "Finish Part II, Chapter 5: Out of the Window. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch14",
+     "title": "The Genius of the Hole",
+     "description": "Finish Part II, Chapter 6: The Genius of the Hole. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch15",
+     "title": "Part III Prologue",
+     "description": "Finish Part III, Prologue: Prologue. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch16",
+     "title": "Too Stubborn to Die",
+     "description": "Finish Part III, Chapter 1: Too Stubborn to Die. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch17",
+     "title": "On a Crash Course",
+     "description": "Finish Part III, Chapter 2: On a Crash Course. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch18",
+     "title": "A Mob-War",
+     "description": "Finish Part III, Chapter 3: A Mob-War. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch19",
+     "title": "Dearest of All My Friends",
+     "description": "Finish Part III, Chapter 4: Dearest of All My Friends. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch20",
+     "title": "A Losing Game",
+     "description": "Finish Part III, Chapter 5: A Losing Game. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch21",
+     "title": "There Are No Happy Endings",
+     "description": "Finish Part III, Chapter 6: There Are No Happy Endings. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch22",
+     "title": "Love Hurts",
+     "description": "Finish Part III, Chapter 7: Love Hurts. Counts once you save in a later chapter.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-ch-final",
+     "title": "That Old Familiar Feeling",
+     "description": "Reach the final chapter and save there.",
+     "points": 25,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-part1",
+     "title": "The Darkness Inside",
+     "description": "Finish Part I.",
+     "points": 25,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-saved-part1",
+     "title": "Paper Trail: Part I",
+     "description": "Save at least once in every chapter of Part I.",
+     "points": 15,
+     "group": "Saves"
+    },
+    {
+     "id": "mp2-part2",
+     "title": "A Binary Choice",
+     "description": "Finish Part II.",
+     "points": 25,
+     "group": "Chapters"
+    },
+    {
+     "id": "mp2-saved-part2",
+     "title": "Paper Trail: Part II",
+     "description": "Save at least once in every chapter of Part II.",
+     "points": 15,
+     "group": "Saves"
+    },
+    {
+     "id": "mp2-saved-part3",
+     "title": "Paper Trail: Part III",
+     "description": "Save at least once in every chapter of Part III.",
+     "points": 15,
+     "group": "Saves"
+    },
+    {
+     "id": "mp2-saves10",
+     "title": "Quick Saver",
+     "description": "Make 10 saves.",
+     "points": 10,
+     "group": "Saves"
+    },
+    {
+     "id": "mp2-saves50",
+     "title": "Save Scummer",
+     "description": "Make 50 saves.",
+     "points": 10,
+     "group": "Saves"
+    },
+    {
+     "id": "mp2-saves150",
+     "title": "Bullet-Time Archivist",
+     "description": "Make 150 saves.",
+     "points": 10,
+     "group": "Saves"
     }
    ]
   },
