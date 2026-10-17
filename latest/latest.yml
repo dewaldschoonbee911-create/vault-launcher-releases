@@ -1,8 +1,8 @@
-version: 0.1.18
+version: 0.1.19
 files:
-  - url: VaultLauncher-Setup-0.1.18.exe
-    sha512: 1uS07XPhPoFgdcl7ZMV68cj6faQDQL6K0MOF7lS0Xs5aqHH3IY9STuNyj21mqkPa1uKS03uqi1C7uVaUXN913g==
-    size: 102880898
-path: VaultLauncher-Setup-0.1.18.exe
-sha512: 1uS07XPhPoFgdcl7ZMV68cj6faQDQL6K0MOF7lS0Xs5aqHH3IY9STuNyj21mqkPa1uKS03uqi1C7uVaUXN913g==
-releaseDate: '2026-10-17T05:58:08.690Z'
+  - url: VaultLauncher-Setup-0.1.19.exe
+    sha512: umXMlfpXB/AMMnDQXepQkBEdEbdKfqxBXwBWQyekhDClL7Nj5AqFee8frJbZ4ynO6d22RPaXevuQifctpecQpQ==
+    size: 102885129
+path: VaultLauncher-Setup-0.1.19.exe
+sha512: umXMlfpXB/AMMnDQXepQkBEdEbdKfqxBXwBWQyekhDClL7Nj5AqFee8frJbZ4ynO6d22RPaXevuQifctpecQpQ==
+releaseDate: '2026-10-17T06:06:44.501Z'
