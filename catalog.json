@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-17T13:16:33.408Z",
- "launcherVersion": "0.1.47",
+ "generatedAt": "2026-10-17T13:21:14.665Z",
+ "launcherVersion": "0.1.48",
  "sets": [
   {
    "id": "anachronox",
@@ -23714,8 +23714,8 @@
     "Campaign on Hard: set the difficulty to Hard before you play the chapter. Chapters you beat before Vault was watching do not count as Hard.",
     "Skirmish and lifetime achievements come from the replay Warcraft III saves after every game (LastReplay.w3g). Turning on \"Auto-save replays\" in Options keeps every game, so none are missed."
    ],
-   "achievementCount": 118,
-   "points": 2365,
+   "achievementCount": 120,
+   "points": 2385,
    "achievements": [
     {
      "id": "tutorial-1",
@@ -23733,8 +23733,22 @@
     },
     {
      "id": "tutorial-3",
+     "title": "Riders on the Storm",
+     "description": "Exodus of the Horde: beat chapter 3, Riders on the Storm.",
+     "points": 10,
+     "group": "Exodus of the Horde"
+    },
+    {
+     "id": "tutorial-4",
+     "title": "The Fires Down Below",
+     "description": "Exodus of the Horde: beat chapter 4, The Fires Down Below.",
+     "points": 10,
+     "group": "Exodus of the Horde"
+    },
+    {
+     "id": "tutorial-5",
      "title": "For the Horde!",
-     "description": "Exodus of the Horde: beat chapter 3, Riders on the Storm. Campaign complete!",
+     "description": "Exodus of the Horde: beat chapter 5, Countdown to Extinction. Campaign complete!",
      "points": 25,
      "group": "Exodus of the Horde"
     },
