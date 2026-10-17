@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-17T13:21:14.665Z",
+ "generatedAt": "2026-10-17T13:22:06.048Z",
  "launcherVersion": "0.1.48",
  "sets": [
   {
@@ -1767,8 +1767,8 @@
    "id": "cnc3",
    "title": "Command & Conquer 3: Tiberium Wars",
    "how": "files",
-   "status": "untested",
-   "statusNote": "Built from research, waiting for a player report.",
+   "status": "partly",
+   "statusNote": "Skirmish achievements confirmed from real replays.",
    "notes": [
     "Campaign achievements come from your save games (Vault never touches the game, which has online play). The game saves automatically between missions; saving during a mission helps too.",
     "Skirmish achievements come from the replay the game saves after every game (Documents\\Command and Conquer 3 Tiberium Wars\\Replays). Replays do not record who won, so these are about playing, not winning. Games shorter than 3 minutes do not count."
@@ -11357,8 +11357,8 @@
    "id": "diablo",
    "title": "Diablo",
    "how": "files",
-   "status": "untested",
-   "statusNote": "Save reading checked against a real (shareware) Diablo save; waiting for a full-game test.",
+   "status": "partly",
+   "statusNote": "Save reading confirmed on a real character.",
    "notes": [
     "Works with any copy of Diablo: Battle.net, GOG, the original CD, and DevilutionX. Hellfire too.",
     "Vault reads your save files and never touches the game. Single-player progress counts when the game saves: use Save Game in the menu, and achievements pop up then.",
@@ -20129,8 +20129,8 @@
    "id": "eaw",
    "title": "Star Wars: Empire at War",
    "how": "files",
-   "status": "untested",
-   "statusNote": "Built from research, waiting for a player report.",
+   "status": "partly",
+   "statusNote": "Save reading confirmed on a real Forces of Corruption save.",
    "notes": [
     "Empire at War has online play, so Vault never reads its memory. It reads your save games in Saved Games\\Petroglyph.",
     "The galactic map save holds the whole campaign script, so it can only show which campaign you started. Story battles are different: save once during each story battle (Esc, Save) and Vault records it.",
@@ -25034,8 +25034,8 @@
    "id": "worms",
    "title": "Worms Armageddon",
    "how": "memory",
-   "status": "untested",
-   "statusNote": null,
+   "status": "partly",
+   "statusNote": "First achievement confirmed in a real game.",
    "notes": [
     "Progress is per team: achievements count for whichever team you have selected in Missions or Training.",
     "Selecting a team that already has medals gives you the achievements it has earned.",
