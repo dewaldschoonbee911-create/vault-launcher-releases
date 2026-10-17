@@ -2,7 +2,7 @@
 
 One library for every PC game store, with achievements from every platform in one place, popups while you play, and community achievement sets for classic games that never had any.
 
-**[Download the installer](https://github.com/dewaldschoonbee911-create/vault-launcher-releases/raw/main/latest/VaultLauncher-Setup-0.1.26.exe)** (version 0.1.26) and double-click it. After that, Vault Launcher updates itself.
+**[Download the latest installer](https://steamvault.dev/vaultlauncher/download)** (or pick a version under [Releases](https://github.com/dewaldschoonbee911-create/vault-launcher-releases/releases)) and double-click it. After that, Vault Launcher updates itself.
 
 - Steam, Epic, GOG, EA app, Ubisoft Connect, Battle.net and Xbox games in one library
 - Steam, RetroAchievements and World of Warcraft achievements, with popups
