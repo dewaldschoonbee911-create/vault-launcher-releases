@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-17T09:17:03.687Z",
- "launcherVersion": "0.1.32",
+ "generatedAt": "2026-10-17T09:38:01.876Z",
+ "launcherVersion": "0.1.33",
  "sets": [
   {
    "id": "td",
@@ -5936,6 +5936,512 @@
    ]
   },
   {
+   "id": "fallout",
+   "title": "Fallout",
+   "how": "files",
+   "status": "untested",
+   "statusNote": null,
+   "notes": [
+    "Vault reads your save files (DATA\\SAVEGAME) and never touches the game. Achievements pop when you save.",
+    "Quests count as done when the Pip-Boy crosses them off.",
+    "Every save slot counts, so old saves you already have unlock what they show."
+   ],
+   "achievementCount": 70,
+   "points": 1220,
+   "achievements": [
+    {
+     "id": "leave-vault",
+     "title": "Out of the Vault",
+     "description": "Step out of Vault 13 into the wasteland.",
+     "points": 5,
+     "group": "Main story"
+    },
+    {
+     "id": "water-chip",
+     "title": "Water Chip",
+     "description": "Find the Water Chip.",
+     "points": 25,
+     "group": "Main story"
+    },
+    {
+     "id": "water-chip-fast",
+     "title": "Plenty of Time",
+     "description": "Find the Water Chip, and save, within your first 100 days.",
+     "points": 25,
+     "group": "Main story"
+    },
+    {
+     "id": "master",
+     "title": "Destroy the Mutant Leader",
+     "description": "Destroy the Master in the Cathedral.",
+     "points": 40,
+     "group": "Main story"
+    },
+    {
+     "id": "vats",
+     "title": "Destroy the Source",
+     "description": "Destroy the Military Base where the mutants are made.",
+     "points": 40,
+     "group": "Main story"
+    },
+    {
+     "id": "master-dead",
+     "title": "The Master Is Dead",
+     "description": "Kill the Master.",
+     "points": 30,
+     "group": "Main story"
+    },
+    {
+     "id": "vats-blown",
+     "title": "Vats Blown",
+     "description": "Blow up the vats at Mariposa.",
+     "points": 30,
+     "group": "Main story"
+    },
+    {
+     "id": "saviour",
+     "title": "Saviour of the Wasteland",
+     "description": "Stop both the Master and the vats.",
+     "points": 75,
+     "group": "Main story"
+    },
+    {
+     "id": "quest-vault-238",
+     "title": "Calm the Rebels",
+     "description": "Calm the rebel faction in Vault 13.",
+     "points": 15,
+     "group": "Quests: Vault 13"
+    },
+    {
+     "id": "quest-vault-188",
+     "title": "Water Thief",
+     "description": "Find the water thief in Vault 13.",
+     "points": 15,
+     "group": "Quests: Vault 13"
+    },
+    {
+     "id": "quest-shady-239",
+     "title": "Cure Jarvis",
+     "description": "Cure Jarvis of radscorpion poison.",
+     "points": 15,
+     "group": "Quests: Shady Sands"
+    },
+    {
+     "id": "quest-shady-240",
+     "title": "Antidote",
+     "description": "Make the radscorpion poison antidote.",
+     "points": 15,
+     "group": "Quests: Shady Sands"
+    },
+    {
+     "id": "quest-shady-103",
+     "title": "Rescue Tandi",
+     "description": "Rescue Tandi from the Khans.",
+     "points": 15,
+     "group": "Quests: Shady Sands"
+    },
+    {
+     "id": "quest-shady-43",
+     "title": "Stop the Radscorpions",
+     "description": "Deal with the radscorpions threatening Shady Sands.",
+     "points": 15,
+     "group": "Quests: Shady Sands"
+    },
+    {
+     "id": "quest-junk-144",
+     "title": "Help Saul",
+     "description": "Help Saul in Junktown.",
+     "points": 15,
+     "group": "Quests: Junktown"
+    },
+    {
+     "id": "quest-junk-105",
+     "title": "Kill Killian",
+     "description": "Take the job to kill Killian Darkwater.",
+     "points": 15,
+     "group": "Quests: Junktown"
+    },
+    {
+     "id": "quest-junk-143",
+     "title": "Rescue Sinthia",
+     "description": "Rescue Sinthia in Junktown.",
+     "points": 15,
+     "group": "Quests: Junktown"
+    },
+    {
+     "id": "quest-junk-145",
+     "title": "Save Trish",
+     "description": "Save Trish in Junktown.",
+     "points": 15,
+     "group": "Quests: Junktown"
+    },
+    {
+     "id": "quest-junk-104",
+     "title": "Stop Gizmo",
+     "description": "Stop Gizmo.",
+     "points": 15,
+     "group": "Quests: Junktown"
+    },
+    {
+     "id": "quest-junk-555",
+     "title": "Bust the Skulz",
+     "description": "Help Lars bust the Skulz gang.",
+     "points": 15,
+     "group": "Quests: Junktown"
+    },
+    {
+     "id": "quest-necro-29",
+     "title": "Clear the Watershed",
+     "description": "Destroy the Super Mutants at the Watershed.",
+     "points": 15,
+     "group": "Quests: Necropolis"
+    },
+    {
+     "id": "quest-necro-31",
+     "title": "Fix the Pump",
+     "description": "Fix the Necropolis water pump.",
+     "points": 15,
+     "group": "Quests: Necropolis"
+    },
+    {
+     "id": "quest-hub-100",
+     "title": "Deathclaw",
+     "description": "Destroy the Deathclaw in the Hub's old town.",
+     "points": 15,
+     "group": "Quests: The Hub"
+    },
+    {
+     "id": "quest-hub-112",
+     "title": "Dispose of Jain",
+     "description": "Dispose of Jain.",
+     "points": 15,
+     "group": "Quests: The Hub"
+    },
+    {
+     "id": "quest-hub-111",
+     "title": "Dispose of the Merchant",
+     "description": "Dispose of the merchant.",
+     "points": 15,
+     "group": "Quests: The Hub"
+    },
+    {
+     "id": "quest-hub-106",
+     "title": "Missing Caravans",
+     "description": "Find out what happened to the missing caravans.",
+     "points": 15,
+     "group": "Quests: The Hub"
+    },
+    {
+     "id": "quest-hub-107",
+     "title": "The Necklace",
+     "description": "Steal the necklace from the merchants.",
+     "points": 15,
+     "group": "Quests: The Hub"
+    },
+    {
+     "id": "quest-bos-108",
+     "title": "Initiate",
+     "description": "Become an Initiate of the Brotherhood of Steel.",
+     "points": 15,
+     "group": "Quests: Brotherhood"
+    },
+    {
+     "id": "quest-bos-109",
+     "title": "Lost Initiate",
+     "description": "Rescue the captured Initiate from the Hub.",
+     "points": 15,
+     "group": "Quests: Brotherhood"
+    },
+    {
+     "id": "quest-glow-140",
+     "title": "Glow Security",
+     "description": "Disarm the traps for the Glow facility.",
+     "points": 15,
+     "group": "Quests: The Glow"
+    },
+    {
+     "id": "quest-glow-139",
+     "title": "Power Restored",
+     "description": "Turn on the power in the Glow.",
+     "points": 15,
+     "group": "Quests: The Glow"
+    },
+    {
+     "id": "quest-bone-135",
+     "title": "Blade",
+     "description": "Become a Blade.",
+     "points": 15,
+     "group": "Quests: Boneyard"
+    },
+    {
+     "id": "quest-bone-127",
+     "title": "Romeo and Juliet",
+     "description": "Deliver the locket for Romeo.",
+     "points": 15,
+     "group": "Quests: Boneyard"
+    },
+    {
+     "id": "quest-bone-129",
+     "title": "Special Delivery",
+     "description": "Deliver the package for the Gun Runners.",
+     "points": 15,
+     "group": "Quests: Boneyard"
+    },
+    {
+     "id": "quest-bone-133",
+     "title": "The Spy",
+     "description": "Find the Children's spy among the Followers.",
+     "points": 15,
+     "group": "Quests: Boneyard"
+    },
+    {
+     "id": "quest-bone-138",
+     "title": "Green Thumb",
+     "description": "Fix the hydroponic farms in Adytum.",
+     "points": 15,
+     "group": "Quests: Boneyard"
+    },
+    {
+     "id": "quest-bone-130",
+     "title": "Find Jason",
+     "description": "Rescue Jason Zimmerman.",
+     "points": 15,
+     "group": "Quests: Boneyard"
+    },
+    {
+     "id": "quest-bone-128",
+     "title": "Gang War",
+     "description": "Stop the gangs from attacking Adytum.",
+     "points": 15,
+     "group": "Quests: Boneyard"
+    },
+    {
+     "id": "place-shady-sands",
+     "title": "Shady Sands",
+     "description": "Reach the farming town of Shady Sands.",
+     "points": 10,
+     "group": "Places"
+    },
+    {
+     "id": "place-vault-15",
+     "title": "Vault 15",
+     "description": "Find Vault 15.",
+     "points": 10,
+     "group": "Places"
+    },
+    {
+     "id": "place-khans",
+     "title": "The Khans' Camp",
+     "description": "Find the Khans' raider camp.",
+     "points": 10,
+     "group": "Places"
+    },
+    {
+     "id": "place-junktown",
+     "title": "Junktown",
+     "description": "Reach Junktown.",
+     "points": 10,
+     "group": "Places"
+    },
+    {
+     "id": "place-hub",
+     "title": "The Hub",
+     "description": "Reach the Hub.",
+     "points": 10,
+     "group": "Places"
+    },
+    {
+     "id": "place-necropolis",
+     "title": "Necropolis",
+     "description": "Reach Necropolis, city of the dead.",
+     "points": 10,
+     "group": "Places"
+    },
+    {
+     "id": "place-brotherhood",
+     "title": "Lost Hills",
+     "description": "Find the Brotherhood of Steel's bunker.",
+     "points": 10,
+     "group": "Places"
+    },
+    {
+     "id": "place-boneyard",
+     "title": "The Boneyard",
+     "description": "Reach the Boneyard.",
+     "points": 10,
+     "group": "Places"
+    },
+    {
+     "id": "place-glow",
+     "title": "The Glow",
+     "description": "Reach the Glow.",
+     "points": 10,
+     "group": "Places"
+    },
+    {
+     "id": "place-mariposa",
+     "title": "Mariposa",
+     "description": "Find the Mariposa military base.",
+     "points": 10,
+     "group": "Places"
+    },
+    {
+     "id": "place-cathedral",
+     "title": "Cathedral",
+     "description": "Reach the Cathedral of the Children.",
+     "points": 10,
+     "group": "Places"
+    },
+    {
+     "id": "place-masters-lair",
+     "title": "The Vault Below",
+     "description": "Get down into the Master's lair.",
+     "points": 10,
+     "group": "Places"
+    },
+    {
+     "id": "place-lair",
+     "title": "Into the Lair",
+     "description": "Find the deathclaw lair in the Boneyard.",
+     "points": 10,
+     "group": "Places"
+    },
+    {
+     "id": "place-brotherhood-deep",
+     "title": "Deeper in Lost Hills",
+     "description": "Reach the lower levels of the Brotherhood bunker.",
+     "points": 10,
+     "group": "Places"
+    },
+    {
+     "id": "places-20",
+     "title": "Wanderer",
+     "description": "Visit 20 different places.",
+     "points": 15,
+     "group": "Places"
+    },
+    {
+     "id": "places-40",
+     "title": "Cartographer",
+     "description": "Visit 40 different places.",
+     "points": 35,
+     "group": "Places"
+    },
+    {
+     "id": "tardis",
+     "title": "Bigger on the Inside",
+     "description": "Stumble on the blue police box in the desert.",
+     "points": 25,
+     "group": "Special encounters"
+    },
+    {
+     "id": "footprint",
+     "title": "Something Big Passed Here",
+     "description": "Find the giant footprint.",
+     "points": 25,
+     "group": "Special encounters"
+    },
+    {
+     "id": "shuttle",
+     "title": "Crash Site",
+     "description": "Find the crashed shuttle in the desert.",
+     "points": 25,
+     "group": "Special encounters"
+    },
+    {
+     "id": "kills-35-10",
+     "title": "Mutant Hunter",
+     "description": "Kill 10 Super Mutants.",
+     "points": 10,
+     "group": "Deeds"
+    },
+    {
+     "id": "kills-35-50",
+     "title": "Mutant Bane",
+     "description": "Kill 50 Super Mutants.",
+     "points": 20,
+     "group": "Deeds"
+    },
+    {
+     "id": "kills-35-150",
+     "title": "Cleanse the Wasteland",
+     "description": "Kill 150 Super Mutants.",
+     "points": 35,
+     "group": "Deeds"
+    },
+    {
+     "id": "kills-34-25",
+     "title": "Hardened",
+     "description": "Kill 25 people.",
+     "points": 10,
+     "group": "Deeds"
+    },
+    {
+     "id": "kills-34-100",
+     "title": "Wasteland Terror",
+     "description": "Kill 100 people.",
+     "points": 20,
+     "group": "Deeds"
+    },
+    {
+     "id": "kills-33-50",
+     "title": "Hunter",
+     "description": "Kill 50 animals.",
+     "points": 10,
+     "group": "Deeds"
+    },
+    {
+     "id": "kills-33-200",
+     "title": "Big Game Hunter",
+     "description": "Kill 200 animals.",
+     "points": 20,
+     "group": "Deeds"
+    },
+    {
+     "id": "champion",
+     "title": "Champion",
+     "description": "Earn the Champion reputation.",
+     "points": 25,
+     "group": "Deeds"
+    },
+    {
+     "id": "berserker",
+     "title": "Berserker",
+     "description": "Earn the Berserker reputation.",
+     "points": 15,
+     "group": "Deeds"
+    },
+    {
+     "id": "karma-100",
+     "title": "Good Karma",
+     "description": "Reach 100 karma.",
+     "points": 15,
+     "group": "Deeds"
+    },
+    {
+     "id": "karma-500",
+     "title": "Paragon of the Wastes",
+     "description": "Reach 500 karma.",
+     "points": 30,
+     "group": "Deeds"
+    },
+    {
+     "id": "days-30",
+     "title": "A Month Outside",
+     "description": "Spend 30 days in the wasteland.",
+     "points": 5,
+     "group": "Deeds"
+    },
+    {
+     "id": "days-365",
+     "title": "A Year in the Wastes",
+     "description": "Spend a whole year in the wasteland.",
+     "points": 20,
+     "group": "Deeds"
+    }
+   ]
+  },
+  {
    "id": "hots",
    "title": "Heroes of the Storm",
    "how": "files",
@@ -8327,6 +8833,366 @@
    ]
   },
   {
+   "id": "hitman2",
+   "title": "Hitman 2: Silent Assassin",
+   "how": "memory",
+   "status": "untested",
+   "statusNote": null,
+   "notes": [
+    "Each mission's achievement unlocks when the next mission starts loading.",
+    "Read-only: Vault watches the game's memory and never changes it."
+   ],
+   "achievementCount": 20,
+   "points": 240,
+   "achievements": [
+    {
+     "id": "mission-1",
+     "title": "Anathema",
+     "description": "Complete Anathema at the Gontranno Sanctuary.",
+     "points": 10,
+     "group": "Sicily"
+    },
+    {
+     "id": "mission-2",
+     "title": "St. Petersburg Stakeout",
+     "description": "Complete St. Petersburg Stakeout.",
+     "points": 10,
+     "group": "St. Petersburg"
+    },
+    {
+     "id": "mission-3",
+     "title": "Kirov Park Meeting",
+     "description": "Complete Kirov Park Meeting.",
+     "points": 10,
+     "group": "St. Petersburg"
+    },
+    {
+     "id": "mission-4",
+     "title": "Tubeway Torpedo",
+     "description": "Complete Tubeway Torpedo.",
+     "points": 10,
+     "group": "St. Petersburg"
+    },
+    {
+     "id": "mission-5",
+     "title": "Invitation to a Party",
+     "description": "Complete Invitation to a Party.",
+     "points": 10,
+     "group": "St. Petersburg"
+    },
+    {
+     "id": "mission-6",
+     "title": "Tracking Hayamoto",
+     "description": "Complete Tracking Hayamoto.",
+     "points": 10,
+     "group": "Japan"
+    },
+    {
+     "id": "mission-7",
+     "title": "Hidden Valley",
+     "description": "Complete Hidden Valley.",
+     "points": 10,
+     "group": "Japan"
+    },
+    {
+     "id": "mission-8",
+     "title": "At the Gates",
+     "description": "Complete At the Gates.",
+     "points": 10,
+     "group": "Japan"
+    },
+    {
+     "id": "mission-9",
+     "title": "Shogun Showdown",
+     "description": "Complete Shogun Showdown.",
+     "points": 10,
+     "group": "Japan"
+    },
+    {
+     "id": "mission-10",
+     "title": "Basement Killing",
+     "description": "Complete Basement Killing.",
+     "points": 10,
+     "group": "Malaysia"
+    },
+    {
+     "id": "mission-11",
+     "title": "The Graveyard Shift",
+     "description": "Complete The Graveyard Shift.",
+     "points": 10,
+     "group": "Malaysia"
+    },
+    {
+     "id": "mission-12",
+     "title": "The Jacuzzi Job",
+     "description": "Complete The Jacuzzi Job.",
+     "points": 10,
+     "group": "Malaysia"
+    },
+    {
+     "id": "mission-13",
+     "title": "Murder at the Bazaar",
+     "description": "Complete Murder at the Bazaar.",
+     "points": 10,
+     "group": "Afghanistan"
+    },
+    {
+     "id": "mission-14",
+     "title": "The Motorcade Interception",
+     "description": "Complete The Motorcade Interception.",
+     "points": 10,
+     "group": "Afghanistan"
+    },
+    {
+     "id": "mission-15",
+     "title": "Tunnel Rat",
+     "description": "Complete Tunnel Rat.",
+     "points": 10,
+     "group": "Afghanistan"
+    },
+    {
+     "id": "mission-16",
+     "title": "Temple City Ambush",
+     "description": "Complete Temple City Ambush.",
+     "points": 10,
+     "group": "India"
+    },
+    {
+     "id": "mission-17",
+     "title": "The Death of Hannelore",
+     "description": "Complete The Death of Hannelore.",
+     "points": 10,
+     "group": "India"
+    },
+    {
+     "id": "mission-18",
+     "title": "Terminal Hospitality",
+     "description": "Complete Terminal Hospitality.",
+     "points": 10,
+     "group": "India"
+    },
+    {
+     "id": "mission-19",
+     "title": "St. Petersburg Revisited",
+     "description": "Complete St. Petersburg Revisited.",
+     "points": 10,
+     "group": "St. Petersburg"
+    },
+    {
+     "id": "finale",
+     "title": "Redemption at Gontranno",
+     "description": "Finish the game back at the Gontranno Sanctuary.",
+     "points": 50,
+     "group": "Sicily"
+    }
+   ]
+  },
+  {
+   "id": "hitman1",
+   "title": "Hitman: Codename 47",
+   "how": "memory",
+   "status": "untested",
+   "statusNote": null,
+   "notes": [
+    "Each mission's achievement unlocks when the next mission starts loading.",
+    "Read-only: Vault watches the game's memory and never changes it."
+   ],
+   "achievementCount": 13,
+   "points": 165,
+   "achievements": [
+    {
+     "id": "mission-1",
+     "title": "Training Complete",
+     "description": "Finish the training at the asylum.",
+     "points": 5,
+     "group": "Training"
+    },
+    {
+     "id": "mission-2",
+     "title": "Kowloon Triads in Gang War",
+     "description": "Complete Kowloon Triads in Gang War.",
+     "points": 10,
+     "group": "Hong Kong"
+    },
+    {
+     "id": "mission-3",
+     "title": "Ambush at the Wang Fou",
+     "description": "Complete Ambush at the Wang Fou Restaurant.",
+     "points": 10,
+     "group": "Hong Kong"
+    },
+    {
+     "id": "mission-4",
+     "title": "Massacre at Cheung Chau",
+     "description": "Complete The Massacre at Cheung Chau Fish Restaurant.",
+     "points": 10,
+     "group": "Hong Kong"
+    },
+    {
+     "id": "mission-5",
+     "title": "The Lee Hong Assassination",
+     "description": "Assassinate Lee Hong.",
+     "points": 10,
+     "group": "Hong Kong"
+    },
+    {
+     "id": "mission-6",
+     "title": "Find the U'wa Tribe",
+     "description": "Complete Find the U'wa Tribe.",
+     "points": 10,
+     "group": "Colombia"
+    },
+    {
+     "id": "mission-7",
+     "title": "The Jungle God",
+     "description": "Complete The Jungle God.",
+     "points": 10,
+     "group": "Colombia"
+    },
+    {
+     "id": "mission-8",
+     "title": "Say Hello to My Little Friend",
+     "description": "Complete Say Hello to My Little Friend.",
+     "points": 10,
+     "group": "Colombia"
+    },
+    {
+     "id": "mission-9",
+     "title": "Traditions of the Trade",
+     "description": "Complete Traditions of the Trade in Budapest.",
+     "points": 10,
+     "group": "Budapest"
+    },
+    {
+     "id": "mission-10",
+     "title": "Gunrunner's Paradise",
+     "description": "Complete Gunrunner's Paradise in Rotterdam.",
+     "points": 10,
+     "group": "Rotterdam"
+    },
+    {
+     "id": "mission-11",
+     "title": "Plutonium Runs Loose",
+     "description": "Complete Plutonium Runs Loose.",
+     "points": 10,
+     "group": "Rotterdam"
+    },
+    {
+     "id": "mission-12",
+     "title": "The Setup",
+     "description": "Complete The Setup.",
+     "points": 10,
+     "group": "Rotterdam"
+    },
+    {
+     "id": "finale",
+     "title": "Meet Your Brother",
+     "description": "Finish the game at the Sanitarium.",
+     "points": 50,
+     "group": "Sanitarium"
+    }
+   ]
+  },
+  {
+   "id": "hitman3",
+   "title": "Hitman: Contracts",
+   "how": "memory",
+   "status": "untested",
+   "statusNote": null,
+   "notes": [
+    "Each mission's achievement unlocks when the next mission starts loading.",
+    "Read-only: Vault watches the game's memory and never changes it."
+   ],
+   "achievementCount": 12,
+   "points": 160,
+   "achievements": [
+    {
+     "id": "mission-1",
+     "title": "Asylum Aftermath",
+     "description": "Escape the asylum in Asylum Aftermath.",
+     "points": 10,
+     "group": "Romania"
+    },
+    {
+     "id": "mission-2",
+     "title": "The Meat King's Party",
+     "description": "Complete The Meat King's Party.",
+     "points": 10,
+     "group": "Romania"
+    },
+    {
+     "id": "mission-3",
+     "title": "The Bjarkhov Bomb",
+     "description": "Complete The Bjarkhov Bomb.",
+     "points": 10,
+     "group": "Siberia"
+    },
+    {
+     "id": "mission-4",
+     "title": "Beldingford Manor",
+     "description": "Complete Beldingford Manor.",
+     "points": 10,
+     "group": "England"
+    },
+    {
+     "id": "mission-5",
+     "title": "Rendezvous in Rotterdam",
+     "description": "Complete Rendezvous in Rotterdam.",
+     "points": 10,
+     "group": "Rotterdam"
+    },
+    {
+     "id": "mission-6",
+     "title": "Deadly Cargo",
+     "description": "Complete Deadly Cargo.",
+     "points": 10,
+     "group": "Rotterdam"
+    },
+    {
+     "id": "mission-7",
+     "title": "Traditions of the Trade",
+     "description": "Complete Traditions of the Trade.",
+     "points": 10,
+     "group": "Budapest"
+    },
+    {
+     "id": "mission-8",
+     "title": "Slaying a Dragon",
+     "description": "Complete Slaying a Dragon.",
+     "points": 10,
+     "group": "Hong Kong"
+    },
+    {
+     "id": "mission-9",
+     "title": "The Wang Fou Incident",
+     "description": "Complete The Wang Fou Incident.",
+     "points": 10,
+     "group": "Hong Kong"
+    },
+    {
+     "id": "mission-10",
+     "title": "The Seafood Massacre",
+     "description": "Complete The Seafood Massacre.",
+     "points": 10,
+     "group": "Hong Kong"
+    },
+    {
+     "id": "mission-11",
+     "title": "Lee Hong Assassination",
+     "description": "Complete Lee Hong Assassination.",
+     "points": 10,
+     "group": "Hong Kong"
+    },
+    {
+     "id": "finale",
+     "title": "Hunter and Hunted",
+     "description": "Finish the game in Paris.",
+     "points": 50,
+     "group": "Paris"
+    }
+   ]
+  },
+  {
    "id": "maxpayne2",
    "title": "Max Payne 2: The Fall of Max Payne",
    "how": "memory",
@@ -10267,6 +11133,99 @@
      "description": "Reach the final moment on the Star Forge viewing platform.",
      "points": 50,
      "group": "Story"
+    }
+   ]
+  },
+  {
+   "id": "swtfu",
+   "title": "Star Wars: The Force Unleashed",
+   "how": "memory",
+   "status": "untested",
+   "statusNote": null,
+   "notes": [
+    "Each level's achievement unlocks when the next level starts loading.",
+    "Read-only: Vault watches the game's memory and never changes it. Ultimate Sith Edition, Steam.",
+    "Level numbers come from the community speedrun auto-splitter."
+   ],
+   "achievementCount": 11,
+   "points": 160,
+   "achievements": [
+    {
+     "id": "level-vader",
+     "title": "Vader's Fury",
+     "description": "Finish the Kashyyyk prologue as Darth Vader.",
+     "points": 10,
+     "group": "Prologue"
+    },
+    {
+     "id": "level-training",
+     "title": "The Secret Apprentice",
+     "description": "Finish the training room on the Empirical.",
+     "points": 10,
+     "group": "Act I"
+    },
+    {
+     "id": "level-tie-factory",
+     "title": "TIE Fighter Factory",
+     "description": "Finish the TIE fighter construction facility on Nar Shaddaa.",
+     "points": 10,
+     "group": "Act I"
+    },
+    {
+     "id": "level-raxus",
+     "title": "Raxus Prime",
+     "description": "Defeat Kazdan Paratus on Raxus Prime.",
+     "points": 15,
+     "group": "Act I"
+    },
+    {
+     "id": "level-felucia",
+     "title": "Felucia",
+     "description": "Defeat Shaak Ti on Felucia.",
+     "points": 15,
+     "group": "Act I"
+    },
+    {
+     "id": "level-empirical",
+     "title": "The Empirical",
+     "description": "Survive the attack on the Empirical.",
+     "points": 10,
+     "group": "Act II"
+    },
+    {
+     "id": "level-cloud-city",
+     "title": "Cloud City",
+     "description": "Finish Cloud City on Bespin.",
+     "points": 10,
+     "group": "Act II"
+    },
+    {
+     "id": "level-imperial-kashyyyk",
+     "title": "Imperial Kashyyyk",
+     "description": "Finish the Imperial-occupied Kashyyyk.",
+     "points": 10,
+     "group": "Act II"
+    },
+    {
+     "id": "level-imperial-felucia",
+     "title": "Imperial Felucia",
+     "description": "Finish the Imperial-occupied Felucia.",
+     "points": 10,
+     "group": "Act III"
+    },
+    {
+     "id": "level-imperial-raxus",
+     "title": "Imperial Raxus Prime",
+     "description": "Pull down the Star Destroyer at Raxus Prime.",
+     "points": 10,
+     "group": "Act III"
+    },
+    {
+     "id": "level-death-star",
+     "title": "The Death Star",
+     "description": "Finish the final battle on the Death Star.",
+     "points": 50,
+     "group": "Act III"
     }
    ]
   },
