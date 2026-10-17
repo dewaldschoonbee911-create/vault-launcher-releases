@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-17T14:14:40.726Z",
- "launcherVersion": "0.1.52",
+ "generatedAt": "2026-10-17T14:21:29.852Z",
+ "launcherVersion": "0.1.53",
  "sets": [
   {
    "id": "anachronox",
@@ -461,8 +461,8 @@
     "Untested: \"Nothing Is True\" works as soon as the game has saved once. The Memory Block achievements depend on the save header naming the block, which Vault hasn't been able to check on a real save yet. If they don't pop, send a test report.",
     "The Places achievements count when a save header names the city you're in; also unchecked on a real save."
    ],
-   "achievementCount": 40,
-   "points": 700,
+   "achievementCount": 60,
+   "points": 1005,
    "achievements": [
     {
      "id": "started",
@@ -631,6 +631,146 @@
      "description": "Have the game save in Jerusalem, Acre and Damascus.",
      "points": 20,
      "group": "Places"
+    },
+    {
+     "id": "target-tamir",
+     "title": "The Blood of a Corrupt Merchant",
+     "description": "Assassinate Tamir, the black market merchant of Damascus. (Counts once the game saves in Memory Block 3 or later.)",
+     "points": 15,
+     "group": "Targets"
+    },
+    {
+     "id": "target-garnier",
+     "title": "The Blood of a Doctor",
+     "description": "Assassinate Garnier de Naplouse, leader of the Hospitallers in Acre. (Counts once the game saves in Memory Block 3 or later.)",
+     "points": 15,
+     "group": "Targets"
+    },
+    {
+     "id": "target-talal",
+     "title": "The Blood of a Slave Trader",
+     "description": "Assassinate Talal, the slave trader of Jerusalem. (Counts once the game saves in Memory Block 3 or later.)",
+     "points": 15,
+     "group": "Targets"
+    },
+    {
+     "id": "target-abul",
+     "title": "The Blood of the Merchant King",
+     "description": "Assassinate Abu'l Nuqoud, the merchant king of Damascus. (Counts once the game saves in Memory Block 4 or later.)",
+     "points": 15,
+     "group": "Targets"
+    },
+    {
+     "id": "target-william",
+     "title": "The Blood of a Liege-Lord",
+     "description": "Assassinate William of Montferrat, liege-lord of Acre. (Counts once the game saves in Memory Block 4 or later.)",
+     "points": 15,
+     "group": "Targets"
+    },
+    {
+     "id": "target-majd",
+     "title": "The Blood of a Regent",
+     "description": "Assassinate Majd Addin, regent of Jerusalem. (Counts once the game saves in Memory Block 4 or later.)",
+     "points": 15,
+     "group": "Targets"
+    },
+    {
+     "id": "target-jubair",
+     "title": "The Blood of a Scribe",
+     "description": "Assassinate Jubair al Hakim, the scribe of Damascus. (Counts once the game saves in Memory Block 5 or later.)",
+     "points": 15,
+     "group": "Targets"
+    },
+    {
+     "id": "target-sibrand",
+     "title": "The Blood of a Teutonic Leader",
+     "description": "Assassinate Sibrand, leader of the Teutonic Knights in Acre. (Counts once the game saves in Memory Block 5 or later.)",
+     "points": 15,
+     "group": "Targets"
+    },
+    {
+     "id": "target-robert",
+     "title": "The Blood of a Nemesis",
+     "description": "Assassinate Robert de Sable. (Counts once the game saves in the final Memory Block.)",
+     "points": 25,
+     "group": "Targets"
+    },
+    {
+     "id": "hero-masyaf",
+     "title": "Hero of Masyaf",
+     "description": "Protect Masyaf from the Templar invasion. (Counts once the game saves in Memory Block 2 or later.)",
+     "points": 15,
+     "group": "Memories"
+    },
+    {
+     "id": "animus",
+     "title": "Welcome to the Animus",
+     "description": "Finish the Animus tutorial and reach the first save.",
+     "points": 5,
+     "group": "Memories"
+    },
+    {
+     "id": "blocks-3",
+     "title": "Recovering Memories",
+     "description": "Have the game save in 3 different Memory Blocks.",
+     "points": 10,
+     "group": "Memories"
+    },
+    {
+     "id": "blocks-5",
+     "title": "Deep Synchronisation",
+     "description": "Have the game save in 5 different Memory Blocks.",
+     "points": 20,
+     "group": "Memories"
+    },
+    {
+     "id": "places-coast",
+     "title": "Crusader Coast",
+     "description": "Have the game save in Acre and at Arsuf.",
+     "points": 15,
+     "group": "Places"
+    },
+    {
+     "id": "places-road",
+     "title": "The Road to Masyaf",
+     "description": "Have the game save in Masyaf and out in the Kingdom.",
+     "points": 10,
+     "group": "Places"
+    },
+    {
+     "id": "places-all",
+     "title": "The Holy Land",
+     "description": "Have the game save in all seven places: Masyaf, Jerusalem, Acre, Damascus, the Kingdom, Arsuf and Solomon's Temple.",
+     "points": 30,
+     "group": "Places"
+    },
+    {
+     "id": "writes-25",
+     "title": "Synchronising",
+     "description": "Have the game save 25 times.",
+     "points": 5,
+     "group": "Saving"
+    },
+    {
+     "id": "writes-250",
+     "title": "One with the Animus",
+     "description": "Have the game save 250 times.",
+     "points": 25,
+     "group": "Saving"
+    },
+    {
+     "id": "files-5",
+     "title": "Many Lives",
+     "description": "Have 5 different save slots.",
+     "points": 10,
+     "group": "Saving"
+    },
+    {
+     "id": "files-10",
+     "title": "Bloodline",
+     "description": "Have 10 different save slots.",
+     "points": 15,
+     "group": "Saving"
     },
     {
      "id": "writes-10",
@@ -9899,8 +10039,8 @@
     "Save a game once in each new mission and the mission before it counts as finished.",
     "Untested: Vault hasn't seen a Commandos 2 save yet, so if nothing pops after saving, send a test report."
    ],
-   "achievementCount": 55,
-   "points": 805,
+   "achievementCount": 62,
+   "points": 840,
    "achievements": [
     {
      "id": "boot-camp",
@@ -10155,9 +10295,58 @@
      "group": "Bonus missions"
     },
     {
+     "id": "planner-sb_n",
+     "title": "Careful Planner: Night of the Wolves",
+     "description": "Save 5 times during Night of the Wolves.",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
      "id": "planner-sb",
      "title": "Careful Planner: Das Boot, Silent Killers",
      "description": "Save 5 times during Das Boot, Silent Killers.",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-hl",
+     "title": "Careful Planner: White Death",
+     "description": "Save 5 times during White Death.",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-bu",
+     "title": "Careful Planner: Target: Burma",
+     "description": "Save 5 times during Target: Burma.",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-kw",
+     "title": "Careful Planner: Bridge over the River Kwai",
+     "description": "Save 5 times during Bridge over the River Kwai.",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-is",
+     "title": "Careful Planner: The Guns of Savo Island",
+     "description": "Save 5 times during The Guns of Savo Island.",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-pt",
+     "title": "Careful Planner: The Giant in Haiphong",
+     "description": "Save 5 times during The Giant in Haiphong.",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-ry",
+     "title": "Careful Planner: Saving Private Smith",
+     "description": "Save 5 times during Saving Private Smith.",
      "points": 5,
      "group": "Careful planner"
     },
@@ -10299,8 +10488,8 @@
     "Vault reads your save games (the Output folder in the game folder) and never touches the game.",
     "Save a game once in each mission you reach. The campaigns can be played in any order."
    ],
-   "achievementCount": 49,
-   "points": 870,
+   "achievementCount": 61,
+   "points": 930,
    "achievements": [
     {
      "id": "training",
@@ -10524,6 +10713,90 @@
      "title": "Careful Planner: Normandy",
      "description": "Save 10 times across the Normandy missions.",
      "points": 10,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-st1",
+     "title": "Careful Planner: Stalingrad, part 1",
+     "description": "Save 5 times during Stalingrad, part 1.",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-st2",
+     "title": "Careful Planner: Stalingrad, part 2",
+     "description": "Save 5 times during Stalingrad, part 2.",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-ber1",
+     "title": "Careful Planner: Berlin, part 1",
+     "description": "Save 5 times during Berlin, part 1.",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-ber2",
+     "title": "Careful Planner: Berlin, part 2",
+     "description": "Save 5 times during Berlin, part 2.",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-te",
+     "title": "Careful Planner: Central Europe (train)",
+     "description": "Save 5 times during Central Europe (train).",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-ta1",
+     "title": "Careful Planner: Central Europe (second mission)",
+     "description": "Save 5 times during Central Europe (second mission).",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-tc",
+     "title": "Careful Planner: Central Europe (third mission)",
+     "description": "Save 5 times during Central Europe (third mission).",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-tm",
+     "title": "Careful Planner: Central Europe (fourth mission)",
+     "description": "Save 5 times during Central Europe (fourth mission).",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-tv",
+     "title": "Careful Planner: Central Europe (fifth mission)",
+     "description": "Save 5 times during Central Europe (fifth mission).",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-cp",
+     "title": "Careful Planner: Normandy: Caen",
+     "description": "Save 5 times during Normandy: Caen.",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-pt",
+     "title": "Careful Planner: Normandy: Le Havre",
+     "description": "Save 5 times during Normandy: Le Havre.",
+     "points": 5,
+     "group": "Careful planner"
+    },
+    {
+     "id": "planner-dsp",
+     "title": "Careful Planner: Omaha Beach",
+     "description": "Save 5 times during Omaha Beach.",
+     "points": 5,
      "group": "Careful planner"
     },
     {
@@ -11094,8 +11367,8 @@
     "Save a game once in each new mission (Esc, Save) and the mission before it counts as finished.",
     "Untested: Vault hasn't seen a Commandos save yet, so if nothing pops after saving, send a test report."
    ],
-   "achievementCount": 44,
-   "points": 675,
+   "achievementCount": 60,
+   "points": 955,
    "achievements": [
     {
      "id": "beat-01",
@@ -11292,6 +11565,118 @@
      "description": "Save 5 times during mission 8, Dangerous Friendships.",
      "points": 5,
      "group": "Careful planner"
+    },
+    {
+     "id": "methodical-01",
+     "title": "Methodical: Dying Light",
+     "description": "Save 15 times during mission 1, Dying Light.",
+     "points": 10,
+     "group": "Methodical"
+    },
+    {
+     "id": "methodical-02",
+     "title": "Methodical: The Asphalt Jungle",
+     "description": "Save 15 times during mission 2, The Asphalt Jungle.",
+     "points": 10,
+     "group": "Methodical"
+    },
+    {
+     "id": "methodical-03",
+     "title": "Methodical: Dropped Out of the Sky",
+     "description": "Save 15 times during mission 3, Dropped Out of the Sky.",
+     "points": 10,
+     "group": "Methodical"
+    },
+    {
+     "id": "methodical-04",
+     "title": "Methodical: Thor's Hammer",
+     "description": "Save 15 times during mission 4, Thor's Hammer.",
+     "points": 10,
+     "group": "Methodical"
+    },
+    {
+     "id": "methodical-05",
+     "title": "Methodical: Guess Who's Coming Tonight",
+     "description": "Save 15 times during mission 5, Guess Who's Coming Tonight.",
+     "points": 10,
+     "group": "Methodical"
+    },
+    {
+     "id": "methodical-06",
+     "title": "Methodical: Eagle's Nest",
+     "description": "Save 15 times during mission 6, Eagle's Nest.",
+     "points": 10,
+     "group": "Methodical"
+    },
+    {
+     "id": "methodical-07",
+     "title": "Methodical: The Great Escape",
+     "description": "Save 15 times during mission 7, The Great Escape.",
+     "points": 10,
+     "group": "Methodical"
+    },
+    {
+     "id": "methodical-08",
+     "title": "Methodical: Dangerous Friendships",
+     "description": "Save 15 times during mission 8, Dangerous Friendships.",
+     "points": 10,
+     "group": "Methodical"
+    },
+    {
+     "id": "obsessive-06",
+     "title": "No Room for Error: Eagle's Nest",
+     "description": "Save 30 times during mission 6, Eagle's Nest.",
+     "points": 15,
+     "group": "Methodical"
+    },
+    {
+     "id": "obsessive-07",
+     "title": "No Room for Error: The Great Escape",
+     "description": "Save 30 times during mission 7, The Great Escape.",
+     "points": 15,
+     "group": "Methodical"
+    },
+    {
+     "id": "obsessive-08",
+     "title": "No Room for Error: Dangerous Friendships",
+     "description": "Save 30 times during mission 8, Dangerous Friendships.",
+     "points": 15,
+     "group": "Methodical"
+    },
+    {
+     "id": "writes-500",
+     "title": "Quicksave Reflex",
+     "description": "Save your game 500 times.",
+     "points": 30,
+     "group": "Saving"
+    },
+    {
+     "id": "writes-1000",
+     "title": "F5 Veteran",
+     "description": "Save your game 1000 times.",
+     "points": 40,
+     "group": "Saving"
+    },
+    {
+     "id": "writes-2000",
+     "title": "The Save Key Is Worn Out",
+     "description": "Save your game 2000 times.",
+     "points": 50,
+     "group": "Saving"
+    },
+    {
+     "id": "files-12",
+     "title": "Archive Room",
+     "description": "Have 12 different save slots.",
+     "points": 15,
+     "group": "Saving"
+    },
+    {
+     "id": "files-20",
+     "title": "Records Office",
+     "description": "Have 20 different save slots.",
+     "points": 20,
+     "group": "Saving"
     },
     {
      "id": "files-3",
@@ -14890,8 +15275,8 @@
     "Vault reads your save games and never touches the game. The game saves at the start of every level, so finishing an episode pops its achievement as the next one starts.",
     "Episodes count from any save, so old saves count too. Only the furthest level matters, not the difficulty."
    ],
-   "achievementCount": 38,
-   "points": 695,
+   "achievementCount": 61,
+   "points": 850,
    "achievements": [
     {
      "id": "ep-01",
@@ -15081,6 +15466,167 @@
      "description": "Reach episode 10, Snake Fist.",
      "points": 10,
      "group": "Milestones"
+    },
+    {
+     "id": "in-01",
+     "title": "Checkpoint: Sanctuary",
+     "description": "Have the game save during episode 1, Sanctuary.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-02",
+     "title": "Checkpoint: Awakening",
+     "description": "Have the game save during episode 2, Awakening.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-03",
+     "title": "Checkpoint: Withdrawal",
+     "description": "Have the game save during episode 3, Withdrawal.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-04",
+     "title": "Checkpoint: Discovery",
+     "description": "Have the game save during episode 4, Discovery.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-05",
+     "title": "Checkpoint: Replica",
+     "description": "Have the game save during episode 5, Replica.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-06",
+     "title": "Checkpoint: Ruin",
+     "description": "Have the game save during episode 6, Ruin.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-07",
+     "title": "Checkpoint: Top",
+     "description": "Have the game save during episode 7, Top.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-08",
+     "title": "Checkpoint: Elementary",
+     "description": "Have the game save during episode 8, Elementary.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-09",
+     "title": "Checkpoint: Nurse's Office",
+     "description": "Have the game save during episode 9, Nurse's Office.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-10",
+     "title": "Checkpoint: Snake Fist",
+     "description": "Have the game save during episode 10, Snake Fist.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-11",
+     "title": "Checkpoint: Keegan",
+     "description": "Have the game save during episode 11, Keegan.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-12",
+     "title": "Checkpoint: Epicenter",
+     "description": "Have the game save during episode 12, Epicenter.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-13",
+     "title": "Checkpoint: Approach",
+     "description": "Have the game save during episode 13, Approach.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-14",
+     "title": "Checkpoint: Climax",
+     "description": "Have the game save during episode 14, Climax.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-reborn-m01",
+     "title": "Checkpoint: Reborn High-rise",
+     "description": "Have the game save during the Reborn level High-rise.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-reborn-m02",
+     "title": "Checkpoint: Reborn Escape",
+     "description": "Have the game save during the Reborn level Escape.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-reborn-m03",
+     "title": "Checkpoint: Reborn City",
+     "description": "Have the game save during the Reborn level City.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-reborn-m04",
+     "title": "Checkpoint: Reborn Descent",
+     "description": "Have the game save during the Reborn level Descent.",
+     "points": 5,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "in-all",
+     "title": "Every Checkpoint",
+     "description": "Have the game save in all 14 campaign episodes.",
+     "points": 25,
+     "group": "Checkpoints"
+    },
+    {
+     "id": "writes-10",
+     "title": "Quick Save",
+     "description": "Have the game save 10 times (checkpoints and your own saves).",
+     "points": 5,
+     "group": "Saving"
+    },
+    {
+     "id": "writes-50",
+     "title": "Survival Instinct",
+     "description": "Have the game save 50 times (checkpoints and your own saves).",
+     "points": 10,
+     "group": "Saving"
+    },
+    {
+     "id": "writes-150",
+     "title": "Paranoid",
+     "description": "Have the game save 150 times (checkpoints and your own saves).",
+     "points": 20,
+     "group": "Saving"
+    },
+    {
+     "id": "files-3",
+     "title": "Backup Plan",
+     "description": "Have 3 different save files.",
+     "points": 5,
+     "group": "Saving"
     },
     {
      "id": "d-1h",
@@ -16407,8 +16953,8 @@
     "Vault reads your save games (the SaveGame folder) and never touches the game.",
     "Save in each new place you reach and its achievement counts. Old saves count too."
    ],
-   "achievementCount": 45,
-   "points": 805,
+   "achievementCount": 62,
+   "points": 1035,
    "achievements": [
     {
      "id": "01-port",
@@ -16647,6 +17193,125 @@
      "description": "Reach every place in the game.",
      "points": 40,
      "group": "Milestones"
+    },
+    {
+     "id": "areas-2",
+     "title": "First Steps",
+     "description": "Reach 2 different places (over all your saves).",
+     "points": 5,
+     "group": "Milestones"
+    },
+    {
+     "id": "areas-6",
+     "title": "Scouting Party",
+     "description": "Reach 6 different places (over all your saves).",
+     "points": 10,
+     "group": "Milestones"
+    },
+    {
+     "id": "areas-10",
+     "title": "Halfway Through Gorky",
+     "description": "Reach 10 different places (over all your saves).",
+     "points": 15,
+     "group": "Milestones"
+    },
+    {
+     "id": "areas-14",
+     "title": "Deep in the Zone",
+     "description": "Reach 14 different places (over all your saves).",
+     "points": 20,
+     "group": "Milestones"
+    },
+    {
+     "id": "areas-18",
+     "title": "Mutant Hunter",
+     "description": "Reach 18 different places (over all your saves).",
+     "points": 25,
+     "group": "Milestones"
+    },
+    {
+     "id": "chapter-01-half",
+     "title": "The Port: Halfway",
+     "description": "Reach 4 of the 8 areas of The Port.",
+     "points": 10,
+     "group": "The Port"
+    },
+    {
+     "id": "chapter-03-half",
+     "title": "The Museum: Halfway",
+     "description": "Reach 2 of the 4 areas of The Museum.",
+     "points": 10,
+     "group": "The Museum"
+    },
+    {
+     "id": "chapter-04-half",
+     "title": "The City: Halfway",
+     "description": "Reach 3 of the 7 areas of The City.",
+     "points": 10,
+     "group": "The City"
+    },
+    {
+     "id": "chapters-2",
+     "title": "Moving On",
+     "description": "Reach 2 of the 5 chapters.",
+     "points": 10,
+     "group": "Milestones"
+    },
+    {
+     "id": "chapters-3",
+     "title": "Further In",
+     "description": "Reach 3 of the 5 chapters.",
+     "points": 15,
+     "group": "Milestones"
+    },
+    {
+     "id": "chapters-4",
+     "title": "Nearly Out",
+     "description": "Reach 4 of the 5 chapters.",
+     "points": 20,
+     "group": "Milestones"
+    },
+    {
+     "id": "writes-10",
+     "title": "Field Report",
+     "description": "Save your game 10 times.",
+     "points": 5,
+     "group": "Saving"
+    },
+    {
+     "id": "writes-50",
+     "title": "Survivor's Log",
+     "description": "Save your game 50 times.",
+     "points": 10,
+     "group": "Saving"
+    },
+    {
+     "id": "writes-150",
+     "title": "Meticulous",
+     "description": "Save your game 150 times.",
+     "points": 20,
+     "group": "Saving"
+    },
+    {
+     "id": "writes-400",
+     "title": "Never Unprepared",
+     "description": "Save your game 400 times.",
+     "points": 30,
+     "group": "Saving"
+    },
+    {
+     "id": "files-3",
+     "title": "Backup Plan",
+     "description": "Have 3 different save slots.",
+     "points": 5,
+     "group": "Saving"
+    },
+    {
+     "id": "files-8",
+     "title": "Filing Cabinet",
+     "description": "Have 8 different save slots.",
+     "points": 10,
+     "group": "Saving"
     },
     {
      "id": "d-1h",
@@ -20445,10 +21110,11 @@
    "statusNote": null,
    "notes": [
     "Each mission's achievement unlocks when the next mission starts loading.",
-    "Read-only: Vault watches the game's memory and never changes it."
+    "Read-only: Vault watches the game's memory and never changes it.",
+    "Save achievements come from the save games in the Save folder: each one names the mission it was made in. Saving is limited on harder difficulties and impossible on Professional."
    ],
-   "achievementCount": 31,
-   "points": 605,
+   "achievementCount": 62,
+   "points": 860,
    "achievements": [
     {
      "id": "mission-1",
@@ -20591,6 +21257,223 @@
      "group": "Sicily"
     },
     {
+     "id": "save-c1-1",
+     "title": "Field Notes: Anathema",
+     "description": "Save your game during Anathema.",
+     "points": 5,
+     "group": "Saves: Sicily"
+    },
+    {
+     "id": "save-c2-1",
+     "title": "Field Notes: St. Petersburg Stakeout",
+     "description": "Save your game during St. Petersburg Stakeout.",
+     "points": 5,
+     "group": "Saves: St. Petersburg"
+    },
+    {
+     "id": "save-c2-2",
+     "title": "Field Notes: Kirov Park Meeting",
+     "description": "Save your game during Kirov Park Meeting.",
+     "points": 5,
+     "group": "Saves: St. Petersburg"
+    },
+    {
+     "id": "save-c2-3",
+     "title": "Field Notes: Tubeway Torpedo",
+     "description": "Save your game during Tubeway Torpedo.",
+     "points": 5,
+     "group": "Saves: St. Petersburg"
+    },
+    {
+     "id": "save-c2-4",
+     "title": "Field Notes: Invitation to a Party",
+     "description": "Save your game during Invitation to a Party.",
+     "points": 5,
+     "group": "Saves: St. Petersburg"
+    },
+    {
+     "id": "save-c3-1",
+     "title": "Field Notes: Tracking Hayamoto",
+     "description": "Save your game during Tracking Hayamoto.",
+     "points": 5,
+     "group": "Saves: Japan"
+    },
+    {
+     "id": "save-c3-2a",
+     "title": "Field Notes: Hidden Valley",
+     "description": "Save your game during Hidden Valley.",
+     "points": 5,
+     "group": "Saves: Japan"
+    },
+    {
+     "id": "save-c3-2b",
+     "title": "Field Notes: At the Gates",
+     "description": "Save your game during At the Gates.",
+     "points": 5,
+     "group": "Saves: Japan"
+    },
+    {
+     "id": "save-c3-3",
+     "title": "Field Notes: Shogun Showdown",
+     "description": "Save your game during Shogun Showdown.",
+     "points": 5,
+     "group": "Saves: Japan"
+    },
+    {
+     "id": "save-c4-1",
+     "title": "Field Notes: Basement Killing",
+     "description": "Save your game during Basement Killing.",
+     "points": 5,
+     "group": "Saves: Malaysia"
+    },
+    {
+     "id": "save-c4-2",
+     "title": "Field Notes: The Graveyard Shift",
+     "description": "Save your game during The Graveyard Shift.",
+     "points": 5,
+     "group": "Saves: Malaysia"
+    },
+    {
+     "id": "save-c4-3",
+     "title": "Field Notes: The Jacuzzi Job",
+     "description": "Save your game during The Jacuzzi Job.",
+     "points": 5,
+     "group": "Saves: Malaysia"
+    },
+    {
+     "id": "save-c5-1",
+     "title": "Field Notes: Murder at the Bazaar",
+     "description": "Save your game during Murder at the Bazaar.",
+     "points": 5,
+     "group": "Saves: Afghanistan"
+    },
+    {
+     "id": "save-c5-2",
+     "title": "Field Notes: The Motorcade Interception",
+     "description": "Save your game during The Motorcade Interception.",
+     "points": 5,
+     "group": "Saves: Afghanistan"
+    },
+    {
+     "id": "save-c5-3",
+     "title": "Field Notes: Tunnel Rat",
+     "description": "Save your game during Tunnel Rat.",
+     "points": 5,
+     "group": "Saves: Afghanistan"
+    },
+    {
+     "id": "save-c6-1",
+     "title": "Field Notes: Temple City Ambush",
+     "description": "Save your game during Temple City Ambush.",
+     "points": 5,
+     "group": "Saves: India"
+    },
+    {
+     "id": "save-c6-2",
+     "title": "Field Notes: The Death of Hannelore",
+     "description": "Save your game during The Death of Hannelore.",
+     "points": 5,
+     "group": "Saves: India"
+    },
+    {
+     "id": "save-c6-3",
+     "title": "Field Notes: Terminal Hospitality",
+     "description": "Save your game during Terminal Hospitality.",
+     "points": 5,
+     "group": "Saves: India"
+    },
+    {
+     "id": "save-c7-1",
+     "title": "Field Notes: St. Petersburg Revisited",
+     "description": "Save your game during St. Petersburg Revisited.",
+     "points": 5,
+     "group": "Saves: St. Petersburg"
+    },
+    {
+     "id": "save-c8-1",
+     "title": "Field Notes: Redemption at Gontranno",
+     "description": "Save your game during Redemption at Gontranno.",
+     "points": 5,
+     "group": "Saves: Sicily"
+    },
+    {
+     "id": "saves-stpetersburg",
+     "title": "Paper Trail: St. Petersburg",
+     "description": "Save at least once in every St. Petersburg mission.",
+     "points": 15,
+     "group": "Saves"
+    },
+    {
+     "id": "saves-japan",
+     "title": "Paper Trail: Japan",
+     "description": "Save at least once in every Japan mission.",
+     "points": 15,
+     "group": "Saves"
+    },
+    {
+     "id": "saves-malaysia",
+     "title": "Paper Trail: Malaysia",
+     "description": "Save at least once in every Malaysia mission.",
+     "points": 15,
+     "group": "Saves"
+    },
+    {
+     "id": "saves-afghanistan",
+     "title": "Paper Trail: Afghanistan",
+     "description": "Save at least once in every Afghanistan mission.",
+     "points": 15,
+     "group": "Saves"
+    },
+    {
+     "id": "saves-india",
+     "title": "Paper Trail: India",
+     "description": "Save at least once in every India mission.",
+     "points": 15,
+     "group": "Saves"
+    },
+    {
+     "id": "saves-all",
+     "title": "Meticulous Planner",
+     "description": "Save at least once in every mission.",
+     "points": 30,
+     "group": "Saves"
+    },
+    {
+     "id": "saves-10",
+     "title": "Careful Assassin",
+     "description": "Make 10 saves.",
+     "points": 10,
+     "group": "Saves"
+    },
+    {
+     "id": "saves-50",
+     "title": "Contingency Plans",
+     "description": "Make 50 saves.",
+     "points": 10,
+     "group": "Saves"
+    },
+    {
+     "id": "saves-150",
+     "title": "Never Without a Backup",
+     "description": "Make 150 saves.",
+     "points": 10,
+     "group": "Saves"
+    },
+    {
+     "id": "savefiles-3",
+     "title": "Three Identities",
+     "description": "Keep 3 different save files.",
+     "points": 10,
+     "group": "Saves"
+    },
+    {
+     "id": "savefiles-7",
+     "title": "Filing Cabinet",
+     "description": "Keep 7 different save files.",
+     "points": 10,
+     "group": "Saves"
+    },
+    {
      "id": "d-1h",
      "title": "Getting Comfortable",
      "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
@@ -20680,8 +21563,8 @@
     "Save once in each new mission (or use \"save and continue\" between missions) and the mission before it counts as finished.",
     "Untested: Vault hasn't seen a Blood Money save yet, so if nothing pops after saving, send a test report."
    ],
-   "achievementCount": 45,
-   "points": 705,
+   "achievementCount": 60,
+   "points": 815,
    "achievements": [
     {
      "id": "beat-m00",
@@ -20885,6 +21768,111 @@
      "description": "Save a game during Requiem.",
      "points": 5,
      "group": "On location"
+    },
+    {
+     "id": "planner-m00",
+     "title": "Meticulous: Death of a Showman",
+     "description": "Save 5 times during Death of a Showman.",
+     "points": 5,
+     "group": "Meticulous"
+    },
+    {
+     "id": "planner-m01",
+     "title": "Meticulous: A Vintage Year",
+     "description": "Save 5 times during A Vintage Year.",
+     "points": 5,
+     "group": "Meticulous"
+    },
+    {
+     "id": "planner-m02",
+     "title": "Meticulous: Curtains Down",
+     "description": "Save 5 times during Curtains Down.",
+     "points": 5,
+     "group": "Meticulous"
+    },
+    {
+     "id": "planner-m03",
+     "title": "Meticulous: Flatline",
+     "description": "Save 5 times during Flatline.",
+     "points": 5,
+     "group": "Meticulous"
+    },
+    {
+     "id": "planner-m04",
+     "title": "Meticulous: A New Life",
+     "description": "Save 5 times during A New Life.",
+     "points": 5,
+     "group": "Meticulous"
+    },
+    {
+     "id": "planner-m05",
+     "title": "Meticulous: The Murder of Crows",
+     "description": "Save 5 times during The Murder of Crows.",
+     "points": 5,
+     "group": "Meticulous"
+    },
+    {
+     "id": "planner-m06",
+     "title": "Meticulous: You Better Watch Out...",
+     "description": "Save 5 times during You Better Watch Out....",
+     "points": 5,
+     "group": "Meticulous"
+    },
+    {
+     "id": "planner-m08",
+     "title": "Meticulous: Death on the Mississippi",
+     "description": "Save 5 times during Death on the Mississippi.",
+     "points": 5,
+     "group": "Meticulous"
+    },
+    {
+     "id": "planner-m09",
+     "title": "Meticulous: Till Death Do Us Part",
+     "description": "Save 5 times during Till Death Do Us Part.",
+     "points": 5,
+     "group": "Meticulous"
+    },
+    {
+     "id": "planner-m10",
+     "title": "Meticulous: A House of Cards",
+     "description": "Save 5 times during A House of Cards.",
+     "points": 5,
+     "group": "Meticulous"
+    },
+    {
+     "id": "planner-m11",
+     "title": "Meticulous: A Dance with the Devil",
+     "description": "Save 5 times during A Dance with the Devil.",
+     "points": 5,
+     "group": "Meticulous"
+    },
+    {
+     "id": "planner-m12",
+     "title": "Meticulous: Amendment XXV",
+     "description": "Save 5 times during Amendment XXV.",
+     "points": 5,
+     "group": "Meticulous"
+    },
+    {
+     "id": "planner-m13",
+     "title": "Meticulous: Requiem",
+     "description": "Save 5 times during Requiem.",
+     "points": 5,
+     "group": "Meticulous"
+    },
+    {
+     "id": "writes-300",
+     "title": "Paper Trail",
+     "description": "Save your game 300 times.",
+     "points": 30,
+     "group": "Saving"
+    },
+    {
+     "id": "files-10",
+     "title": "Safe House",
+     "description": "Have 10 different save slots.",
+     "points": 15,
+     "group": "Saving"
     },
     {
      "id": "files-3",
@@ -21191,10 +22179,11 @@
    "statusNote": null,
    "notes": [
     "Each mission's achievement unlocks when the next mission starts loading.",
-    "Read-only: Vault watches the game's memory and never changes it."
+    "Read-only: Vault watches the game's memory and never changes it.",
+    "Save achievements come from your save games: each one names the mission it was made in. Saving is limited on harder difficulties."
    ],
-   "achievementCount": 23,
-   "points": 525,
+   "achievementCount": 42,
+   "points": 690,
    "achievements": [
     {
      "id": "mission-1",
@@ -21279,6 +22268,139 @@
      "description": "Finish the game in Paris.",
      "points": 50,
      "group": "Paris"
+    },
+    {
+     "id": "save-c02-1",
+     "title": "Field Notes: The Bjarkhov Bomb",
+     "description": "Save your game during The Bjarkhov Bomb.",
+     "points": 5,
+     "group": "Saves: Siberia"
+    },
+    {
+     "id": "save-c03-1",
+     "title": "Field Notes: Beldingford Manor",
+     "description": "Save your game during Beldingford Manor.",
+     "points": 5,
+     "group": "Saves: England"
+    },
+    {
+     "id": "save-c06-1",
+     "title": "Field Notes: Rendezvous in Rotterdam",
+     "description": "Save your game during Rendezvous in Rotterdam.",
+     "points": 5,
+     "group": "Saves: Rotterdam"
+    },
+    {
+     "id": "save-c06-2",
+     "title": "Field Notes: Deadly Cargo",
+     "description": "Save your game during Deadly Cargo.",
+     "points": 5,
+     "group": "Saves: Rotterdam"
+    },
+    {
+     "id": "save-c07-1",
+     "title": "Field Notes: Traditions of the Trade",
+     "description": "Save your game during Traditions of the Trade.",
+     "points": 5,
+     "group": "Saves: Budapest"
+    },
+    {
+     "id": "save-c08-1",
+     "title": "Field Notes: Slaying a Dragon",
+     "description": "Save your game during Slaying a Dragon.",
+     "points": 5,
+     "group": "Saves: Hong Kong"
+    },
+    {
+     "id": "save-c08-2",
+     "title": "Field Notes: The Wang Fou Incident",
+     "description": "Save your game during The Wang Fou Incident.",
+     "points": 5,
+     "group": "Saves: Hong Kong"
+    },
+    {
+     "id": "save-c08-3",
+     "title": "Field Notes: The Seafood Massacre",
+     "description": "Save your game during The Seafood Massacre.",
+     "points": 5,
+     "group": "Saves: Hong Kong"
+    },
+    {
+     "id": "save-c08-4",
+     "title": "Field Notes: Lee Hong Assassination",
+     "description": "Save your game during Lee Hong Assassination.",
+     "points": 5,
+     "group": "Saves: Hong Kong"
+    },
+    {
+     "id": "save-c09-1",
+     "title": "Field Notes: Hunter and Hunted",
+     "description": "Save your game during Hunter and Hunted.",
+     "points": 5,
+     "group": "Saves: Paris"
+    },
+    {
+     "id": "saves-rotterdam",
+     "title": "Paper Trail: Rotterdam",
+     "description": "Save at least once in every Rotterdam mission.",
+     "points": 15,
+     "group": "Saves"
+    },
+    {
+     "id": "saves-hongkong",
+     "title": "Paper Trail: Hong Kong",
+     "description": "Save at least once in every Hong Kong mission.",
+     "points": 15,
+     "group": "Saves"
+    },
+    {
+     "id": "saves-all",
+     "title": "Meticulous Planner",
+     "description": "Save at least once in every mission.",
+     "points": 30,
+     "group": "Saves"
+    },
+    {
+     "id": "saves-10",
+     "title": "Careful Assassin",
+     "description": "Make 10 saves.",
+     "points": 10,
+     "group": "Saves"
+    },
+    {
+     "id": "saves-50",
+     "title": "Contingency Plans",
+     "description": "Make 50 saves.",
+     "points": 10,
+     "group": "Saves"
+    },
+    {
+     "id": "saves-150",
+     "title": "Never Without a Backup",
+     "description": "Make 150 saves.",
+     "points": 10,
+     "group": "Saves"
+    },
+    {
+     "id": "savefiles-3",
+     "title": "Three Identities",
+     "description": "Keep 3 different save files.",
+     "points": 10,
+     "group": "Saves"
+    },
+    {
+     "id": "savefiles-7",
+     "title": "Filing Cabinet",
+     "description": "Keep 7 different save files.",
+     "points": 10,
+     "group": "Saves"
+    },
+    {
+     "id": "save-romania",
+     "title": "Field Notes: Romania",
+     "description": "Save your game during a Romania mission (Asylum Aftermath or The Meat King's Party).",
+     "points": 5,
+     "group": "Saves: Romania"
     },
     {
      "id": "d-1h",
