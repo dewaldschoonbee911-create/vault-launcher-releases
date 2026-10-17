@@ -1,0 +1,32 @@
+# Publishes a Vault Launcher release from an "upload-*" branch.
+# The build machine pushes a single orphan commit with the installer, its blockmap and latest.yml
+# to a branch named upload-<version>. This workflow turns it into a GitHub Release (which is
+# where the launcher's auto-updater looks) and then deletes the branch, so the big installer
+# never becomes part of main's history.
+name: Publish release
+on:
+  push:
+    branches: ['upload-*']
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read version
+        id: v
+        run: echo "version=$(grep '^version:' latest.yml | awk '{print $2}')" >> "$GITHUB_OUTPUT"
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.v.outputs.version }}
+          name: Vault Launcher ${{ steps.v.outputs.version }}
+          body_path: NOTES.md
+          make_latest: true
+          files: |
+            *.exe
+            *.blockmap
+            latest.yml
+      - name: Remove upload branch
+        run: git push origin --delete "${GITHUB_REF_NAME}"
