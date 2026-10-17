@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-17T11:35:36.636Z",
- "launcherVersion": "0.1.42",
+ "generatedAt": "2026-10-17T11:41:34.355Z",
+ "launcherVersion": "0.1.43",
  "sets": [
   {
    "id": "anachronox",
@@ -2435,6 +2435,7 @@
    "status": "untested",
    "statusNote": null,
    "notes": [
+    "Mission achievements also unlock from your save games: save once in each new mission and the one before it counts, even if Vault was closed while you played.",
     "Mission achievements unlock when the score screen after a campaign mission appears.",
     "Playing a single mission from \"Replay level\" does not count, only the campaign."
    ],
