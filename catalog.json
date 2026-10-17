@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-17T14:28:03.988Z",
- "launcherVersion": "0.1.54",
+ "generatedAt": "2026-10-17T14:38:13.995Z",
+ "launcherVersion": "0.1.55",
  "sets": [
   {
    "id": "anachronox",
@@ -12174,6 +12174,1036 @@
      "description": "Reach every one of the 15 level parts of Episode 4 (San Francisco, 2030).",
      "points": 30,
      "group": "Episode 4: San Francisco, 2030"
+    },
+    {
+     "id": "d-1h",
+     "title": "Getting Comfortable",
+     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 5,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-5h",
+     "title": "Settling In",
+     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 10,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-10h",
+     "title": "Hooked",
+     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 15,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-25h",
+     "title": "Devoted",
+     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 25,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-50h",
+     "title": "Obsessed",
+     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 40,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-100h",
+     "title": "Lifer",
+     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 60,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-250h",
+     "title": "Part of the Furniture",
+     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 100,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-days3",
+     "title": "Coming Back",
+     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 5,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-days10",
+     "title": "Regular",
+     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 15,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-days30",
+     "title": "A Month of Play",
+     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 30,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-days100",
+     "title": "Daily Ritual",
+     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 60,
+     "group": "Dedication"
+    }
+   ]
+  },
+  {
+   "id": "davediver",
+   "title": "DAVE THE DIVER: Vault Extras",
+   "how": "files",
+   "status": "untested",
+   "statusNote": "Save format from the DaveSaveEd editor; not yet checked on a real save.",
+   "notes": [
+    "Bonus goals for DAVE THE DIVER on top of its Steam achievements: the full sea-life collection, every boss trophy, big catches, the sushi bar, and the In the Jungle DLC (which has no Steam achievements).",
+    "Read from your save files (AppData\\LocalLow\\nexon\\DAVE THE DIVER). Progress counts from everything Vault has seen in your saves, so playing on and saving keeps adding to it."
+   ],
+   "achievementCount": 145,
+   "points": 3205,
+   "achievements": [
+    {
+     "id": "sea-10",
+     "title": "First Catches",
+     "description": "Bring back 10 different kinds of sea life.",
+     "points": 5,
+     "group": "Blue Hole: sea life"
+    },
+    {
+     "id": "sea-25",
+     "title": "Reef Regular",
+     "description": "Bring back 25 different kinds of sea life.",
+     "points": 10,
+     "group": "Blue Hole: sea life"
+    },
+    {
+     "id": "sea-50",
+     "title": "Marine Biologist",
+     "description": "Bring back 50 different kinds of sea life.",
+     "points": 20,
+     "group": "Blue Hole: sea life"
+    },
+    {
+     "id": "sea-75",
+     "title": "Deep Diver",
+     "description": "Bring back 75 different kinds of sea life.",
+     "points": 30,
+     "group": "Blue Hole: sea life"
+    },
+    {
+     "id": "sea-100",
+     "title": "Living Encyclopedia",
+     "description": "Bring back 100 different kinds of sea life.",
+     "points": 50,
+     "group": "Blue Hole: sea life"
+    },
+    {
+     "id": "sea-120",
+     "title": "Master of the Blue Hole",
+     "description": "Bring back 120 different kinds of sea life.",
+     "points": 75,
+     "group": "Blue Hole: sea life"
+    },
+    {
+     "id": "big-1023001",
+     "title": "Green Humphead Parrotfish",
+     "description": "Bring back a Green Humphead Parrotfish.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023003",
+     "title": "Whitetip Reefshark",
+     "description": "Bring back a Whitetip Reefshark.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023005",
+     "title": "Giant Trevally",
+     "description": "Bring back a Giant Trevally.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023007",
+     "title": "Tiger Shark",
+     "description": "Bring back a Tiger Shark.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023009",
+     "title": "Long Nose Saw Shark",
+     "description": "Bring back a Long Nose Saw Shark.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023011",
+     "title": "Megamouth Shark",
+     "description": "Bring back a Megamouth Shark.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023013",
+     "title": "Frilled Shark",
+     "description": "Bring back a Frilled Shark.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023015",
+     "title": "Rhinochimaeridae",
+     "description": "Bring back a Rhinochimaeridae.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023017",
+     "title": "Blacktip Reef Shark",
+     "description": "Bring back a Blacktip Reef Shark.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023019",
+     "title": "Copper Shark",
+     "description": "Bring back a Copper Shark.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023021",
+     "title": "Greenland Shark",
+     "description": "Bring back a Greenland Shark.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023023",
+     "title": "Porbeagle Shark",
+     "description": "Bring back a Porbeagle Shark.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023025",
+     "title": "Narwhal",
+     "description": "Bring back a Narwhal.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023027",
+     "title": "Blue Fin Tuna",
+     "description": "Bring back a Blue Fin Tuna.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023030",
+     "title": "Yellow Fin Tuna",
+     "description": "Bring back a Yellow Fin Tuna.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023035",
+     "title": "Asian Sheepshead",
+     "description": "Bring back a Asian Sheepshead.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023037",
+     "title": "Red Stingray",
+     "description": "Bring back a Red Stingray.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023039",
+     "title": "Marbled Electric Ray",
+     "description": "Bring back a Marbled Electric Ray.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023043",
+     "title": "Antarctic Starry Skate",
+     "description": "Bring back a Antarctic Starry Skate.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023045",
+     "title": "Shortfin Mako",
+     "description": "Bring back a Shortfin Mako.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023047",
+     "title": "Thresher Shark",
+     "description": "Bring back a Thresher Shark.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023049",
+     "title": "Smooth Hammershark",
+     "description": "Bring back a Smooth Hammershark.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023051",
+     "title": "Zebra Shark",
+     "description": "Bring back a Zebra Shark.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023053",
+     "title": "Humboldt Squid",
+     "description": "Bring back a Humboldt Squid.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023055",
+     "title": "Striped Marlin",
+     "description": "Bring back a Striped Marlin.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023057",
+     "title": "Sword Fish",
+     "description": "Bring back a Sword Fish.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023059",
+     "title": "Sail Fish",
+     "description": "Bring back a Sail Fish.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023061",
+     "title": "Drepanaspis",
+     "description": "Bring back a Drepanaspis.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023063",
+     "title": "Dunkleosteus",
+     "description": "Bring back a Dunkleosteus.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-1023065",
+     "title": "Xenacanthus",
+     "description": "Bring back a Xenacanthus.",
+     "points": 10,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-all-5",
+     "title": "Big Game Hunter",
+     "description": "Bring back 5 of the big catches.",
+     "points": 15,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-all-15",
+     "title": "Leviathan Wrangler",
+     "description": "Bring back 15 of the big catches.",
+     "points": 30,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "big-all-30",
+     "title": "Every Giant of the Deep",
+     "description": "Bring back 30 of the big catches.",
+     "points": 60,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "toro",
+     "title": "Toro Time",
+     "description": "Get prime tuna belly (chutoro or ootoro).",
+     "points": 15,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "toro-all",
+     "title": "The Whole Tuna",
+     "description": "Get every cut of bluefin and yellowfin tuna belly.",
+     "points": 30,
+     "group": "Blue Hole: big catches"
+    },
+    {
+     "id": "boss-wolffish",
+     "title": "Trophy: Wolffish",
+     "description": "Bring back a prize cut from Wolffish.",
+     "points": 25,
+     "group": "Blue Hole: boss trophies"
+    },
+    {
+     "id": "boss-clionequeen",
+     "title": "Trophy: Clione Queen",
+     "description": "Bring back a prize cut from Clione Queen.",
+     "points": 25,
+     "group": "Blue Hole: boss trophies"
+    },
+    {
+     "id": "boss-goblinshark",
+     "title": "Trophy: Goblin Shark",
+     "description": "Bring back a prize cut from Goblin Shark.",
+     "points": 25,
+     "group": "Blue Hole: boss trophies"
+    },
+    {
+     "id": "boss-hermitcrab",
+     "title": "Trophy: Giant Hermit Crab",
+     "description": "Bring back a prize cut from Giant Hermit Crab.",
+     "points": 25,
+     "group": "Blue Hole: boss trophies"
+    },
+    {
+     "id": "boss-mantisshrimp",
+     "title": "Trophy: Mantis Shrimp",
+     "description": "Bring back a prize cut from Mantis Shrimp.",
+     "points": 25,
+     "group": "Blue Hole: boss trophies"
+    },
+    {
+     "id": "boss-klaus",
+     "title": "Trophy: Klaus",
+     "description": "Bring back a prize cut from Klaus.",
+     "points": 25,
+     "group": "Blue Hole: boss trophies"
+    },
+    {
+     "id": "boss-phantomjelly",
+     "title": "Trophy: Phantom Jellyfish",
+     "description": "Bring back a prize cut from Phantom Jellyfish.",
+     "points": 25,
+     "group": "Blue Hole: boss trophies"
+    },
+    {
+     "id": "boss-helicoprion",
+     "title": "Trophy: Helicoprion",
+     "description": "Bring back a prize cut from Helicoprion.",
+     "points": 25,
+     "group": "Blue Hole: boss trophies"
+    },
+    {
+     "id": "boss-kronosaurus",
+     "title": "Trophy: Kronosaurus",
+     "description": "Bring back a prize cut from Kronosaurus.",
+     "points": 25,
+     "group": "Blue Hole: boss trophies"
+    },
+    {
+     "id": "boss-anomalocaris",
+     "title": "Trophy: Anomalocaris",
+     "description": "Bring back a prize cut from Anomalocaris.",
+     "points": 25,
+     "group": "Blue Hole: boss trophies"
+    },
+    {
+     "id": "boss-lusca",
+     "title": "Trophy: Lusca",
+     "description": "Bring back a prize cut from Lusca.",
+     "points": 25,
+     "group": "Blue Hole: boss trophies"
+    },
+    {
+     "id": "boss-all",
+     "title": "Hall of Trophies",
+     "description": "Bring back a prize cut from every boss.",
+     "points": 75,
+     "group": "Blue Hole: boss trophies"
+    },
+    {
+     "id": "season-5",
+     "title": "Spice Rack",
+     "description": "Stock 5 different seasonings.",
+     "points": 10,
+     "group": "Blue Hole: kitchen"
+    },
+    {
+     "id": "season-14",
+     "title": "Fully Seasoned",
+     "description": "Stock 14 different seasonings.",
+     "points": 25,
+     "group": "Blue Hole: kitchen"
+    },
+    {
+     "id": "farm-10",
+     "title": "Green Thumb",
+     "description": "Stock 10 different farm and grocery ingredients.",
+     "points": 10,
+     "group": "Blue Hole: kitchen"
+    },
+    {
+     "id": "farm-28",
+     "title": "Farm to Table",
+     "description": "Stock 28 different farm and grocery ingredients.",
+     "points": 25,
+     "group": "Blue Hole: kitchen"
+    },
+    {
+     "id": "dredge-1",
+     "title": "Something in the Water",
+     "description": "Catch 1 of the strange fish from the DREDGE crossover.",
+     "points": 10,
+     "group": "Blue Hole: kitchen"
+    },
+    {
+     "id": "dredge-13",
+     "title": "Aberrant Angler",
+     "description": "Catch 13 of the strange fish from the DREDGE crossover.",
+     "points": 25,
+     "group": "Blue Hole: kitchen"
+    },
+    {
+     "id": "dredge-34",
+     "title": "Every Aberration",
+     "description": "Catch 34 of the strange fish from the DREDGE crossover.",
+     "points": 50,
+     "group": "Blue Hole: kitchen"
+    },
+    {
+     "id": "ing-50",
+     "title": "Well Stocked",
+     "description": "Collect 50 different ingredients of any kind.",
+     "points": 10,
+     "group": "Blue Hole: kitchen"
+    },
+    {
+     "id": "ing-150",
+     "title": "Overflowing Pantry",
+     "description": "Collect 150 different ingredients of any kind.",
+     "points": 25,
+     "group": "Blue Hole: kitchen"
+    },
+    {
+     "id": "ing-250",
+     "title": "Ingredient Hoarder",
+     "description": "Collect 250 different ingredients of any kind.",
+     "points": 40,
+     "group": "Blue Hole: kitchen"
+    },
+    {
+     "id": "gold-10000",
+     "title": "Pocket Change",
+     "description": "Have 10,000 gold at once.",
+     "points": 5,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "gold-100000",
+     "title": "Profitable Night",
+     "description": "Have 100,000 gold at once.",
+     "points": 10,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "gold-1000000",
+     "title": "Sushi Millionaire",
+     "description": "Have 1,000,000 gold at once.",
+     "points": 25,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "gold-5000000",
+     "title": "Restaurant Mogul",
+     "description": "Have 5,000,000 gold at once.",
+     "points": 40,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "gold-10000000",
+     "title": "Ten Million Gold",
+     "description": "Have 10,000,000 gold at once.",
+     "points": 50,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "gold-50000000",
+     "title": "Golden Bluefin",
+     "description": "Have 50,000,000 gold at once.",
+     "points": 75,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "follow-1000",
+     "title": "Cooksta Rookie",
+     "description": "Reach 1,000 Cooksta followers.",
+     "points": 5,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "follow-10000",
+     "title": "Rising Star",
+     "description": "Reach 10,000 Cooksta followers.",
+     "points": 10,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "follow-100000",
+     "title": "Influencer",
+     "description": "Reach 100,000 Cooksta followers.",
+     "points": 25,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "follow-500000",
+     "title": "Viral Sensation",
+     "description": "Reach 500,000 Cooksta followers.",
+     "points": 40,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "follow-1000000",
+     "title": "Million Followers",
+     "description": "Reach 1,000,000 Cooksta followers.",
+     "points": 60,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "bei-1000",
+     "title": "Bei Saver",
+     "description": "Have 1,000 Bei at once.",
+     "points": 10,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "bei-10000",
+     "title": "Bei Banker",
+     "description": "Have 10,000 Bei at once.",
+     "points": 20,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "bei-50000",
+     "title": "Bei Hoard",
+     "description": "Have 50,000 Bei at once.",
+     "points": 35,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "flame-100",
+     "title": "Artisan's Spark",
+     "description": "Have 100 Artisan's Flame at once.",
+     "points": 10,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "flame-1000",
+     "title": "Artisan's Blaze",
+     "description": "Have 1,000 Artisan's Flame at once.",
+     "points": 25,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "flame-5000",
+     "title": "Artisan's Inferno",
+     "description": "Have 5,000 Artisan's Flame at once.",
+     "points": 40,
+     "group": "Bancho Sushi"
+    },
+    {
+     "id": "jungle-start",
+     "title": "Welcome to the Jungle",
+     "description": "Start the In the Jungle story.",
+     "points": 10,
+     "group": "In the Jungle"
+    },
+    {
+     "id": "jungle-ing-10",
+     "title": "Jungle Forager",
+     "description": "Collect 10 different jungle ingredients and fish.",
+     "points": 10,
+     "group": "In the Jungle"
+    },
+    {
+     "id": "jungle-ing-25",
+     "title": "River Cook",
+     "description": "Collect 25 different jungle ingredients and fish.",
+     "points": 15,
+     "group": "In the Jungle"
+    },
+    {
+     "id": "jungle-ing-50",
+     "title": "Jungle Pantry",
+     "description": "Collect 50 different jungle ingredients and fish.",
+     "points": 25,
+     "group": "In the Jungle"
+    },
+    {
+     "id": "jungle-ing-75",
+     "title": "Taste of the Wild",
+     "description": "Collect 75 different jungle ingredients and fish.",
+     "points": 35,
+     "group": "In the Jungle"
+    },
+    {
+     "id": "jungle-ing-100",
+     "title": "Jungle Gourmet",
+     "description": "Collect 100 different jungle ingredients and fish.",
+     "points": 50,
+     "group": "In the Jungle"
+    },
+    {
+     "id": "jf-black-caiman",
+     "title": "Black Caiman",
+     "description": "Catch a Black Caiman in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-piraiba-catfish",
+     "title": "Piraiba Catfish",
+     "description": "Catch a Piraiba Catfish in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-giant-fresh-water-stingray",
+     "title": "Giant Fresh Water Stingray",
+     "description": "Catch a Giant Fresh Water Stingray in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-electric-eel",
+     "title": "Electric Eel",
+     "description": "Catch a Electric Eel in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-nile-perch",
+     "title": "Nile Perch",
+     "description": "Catch a Nile Perch in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-platinum-alligator-gar",
+     "title": "Platinum Alligator Gar",
+     "description": "Catch a Platinum Alligator Gar in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-great-sturgeon",
+     "title": "Great Sturgeon",
+     "description": "Catch a Great Sturgeon in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-pirarucu",
+     "title": "Pirarucu",
+     "description": "Catch a Pirarucu in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-goliath-tigerfish",
+     "title": "Goliath Tigerfish",
+     "description": "Catch a Goliath Tigerfish in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-eagle-shark",
+     "title": "Eagle Shark",
+     "description": "Catch a Eagle Shark in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-stethacanthus",
+     "title": "Stethacanthus",
+     "description": "Catch a Stethacanthus in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-ophthalmosaurus",
+     "title": "Ophthalmosaurus",
+     "description": "Catch a Ophthalmosaurus in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-ammonite",
+     "title": "Ammonite",
+     "description": "Catch a Ammonite in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-orthoceras",
+     "title": "Orthoceras",
+     "description": "Catch a Orthoceras in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-platyceramus",
+     "title": "Platyceramus",
+     "description": "Catch a Platyceramus in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-asian-arowana",
+     "title": "Asian Arowana",
+     "description": "Catch a Asian Arowana in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-red-bellied-piranha",
+     "title": "Red Bellied Piranha",
+     "description": "Catch a Red Bellied Piranha in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-giant-snakehead",
+     "title": "Giant Snakehead",
+     "description": "Catch a Giant Snakehead in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-fire-eel",
+     "title": "Fire Eel",
+     "description": "Catch a Fire Eel in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-sacabambaspis",
+     "title": "Sacabambaspis",
+     "description": "Catch a Sacabambaspis in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-tullimonstrum",
+     "title": "Tullimonstrum",
+     "description": "Catch a Tullimonstrum in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jf-basilosaurus",
+     "title": "Basilosaurus",
+     "description": "Catch a Basilosaurus in the jungle.",
+     "points": 15,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jboss-sulong",
+     "title": "Jungle Boss: Sulong",
+     "description": "Defeat Sulong and bring it back.",
+     "points": 30,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jboss-snapperturtle",
+     "title": "Jungle Boss: Snapping Turtle",
+     "description": "Defeat Snapping Turtle and bring it back.",
+     "points": 30,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jboss-xiphactinus",
+     "title": "Jungle Boss: Xiphactinus",
+     "description": "Defeat Xiphactinus and bring it back.",
+     "points": 30,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jfish-10",
+     "title": "River Angler",
+     "description": "Catch 10 different kinds of jungle fish.",
+     "points": 10,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jfish-25",
+     "title": "Freshwater Expert",
+     "description": "Catch 25 different kinds of jungle fish.",
+     "points": 20,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jfish-50",
+     "title": "Ichthyologist",
+     "description": "Catch 50 different kinds of jungle fish.",
+     "points": 35,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jfish-73",
+     "title": "Every River Fish",
+     "description": "Catch 73 different kinds of jungle fish.",
+     "points": 60,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jcrab-1",
+     "title": "Trapper",
+     "description": "Catch something in a crab trap.",
+     "points": 10,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "jcrab-all",
+     "title": "Crayfish Connoisseur",
+     "description": "Catch every crab-trap critter.",
+     "points": 30,
+     "group": "In the Jungle: river giants"
+    },
+    {
+     "id": "bugs-5",
+     "title": "Bug Catcher",
+     "description": "Collect 5 different insects and critters.",
+     "points": 10,
+     "group": "In the Jungle: village"
+    },
+    {
+     "id": "bugs-15",
+     "title": "Entomologist",
+     "description": "Collect 15 different insects and critters.",
+     "points": 20,
+     "group": "In the Jungle: village"
+    },
+    {
+     "id": "bugs-30",
+     "title": "Butterfly Collector",
+     "description": "Collect 30 different insects and critters.",
+     "points": 35,
+     "group": "In the Jungle: village"
+    },
+    {
+     "id": "bugs-52",
+     "title": "Every Creepy Crawly",
+     "description": "Collect 52 different insects and critters.",
+     "points": 60,
+     "group": "In the Jungle: village"
+    },
+    {
+     "id": "etc-10",
+     "title": "Pocketful of Treasures",
+     "description": "Collect 10 different shells, flowers, feathers and trinkets.",
+     "points": 10,
+     "group": "In the Jungle: village"
+    },
+    {
+     "id": "etc-30",
+     "title": "Curio Cabinet",
+     "description": "Collect 30 different shells, flowers, feathers and trinkets.",
+     "points": 20,
+     "group": "In the Jungle: village"
+    },
+    {
+     "id": "etc-60",
+     "title": "Jungle Museum",
+     "description": "Collect 60 different shells, flowers, feathers and trinkets.",
+     "points": 40,
+     "group": "In the Jungle: village"
+    },
+    {
+     "id": "furn-5",
+     "title": "Interior Designer",
+     "description": "Own 5 different pieces of furniture.",
+     "points": 10,
+     "group": "In the Jungle: village"
+    },
+    {
+     "id": "furn-15",
+     "title": "Cosy Hut",
+     "description": "Own 15 different pieces of furniture.",
+     "points": 20,
+     "group": "In the Jungle: village"
+    },
+    {
+     "id": "furn-30",
+     "title": "Dream Home",
+     "description": "Own 30 different pieces of furniture.",
+     "points": 40,
+     "group": "In the Jungle: village"
+    },
+    {
+     "id": "mat-10",
+     "title": "Gatherer",
+     "description": "Gather 10 different crafting materials.",
+     "points": 10,
+     "group": "In the Jungle: village"
+    },
+    {
+     "id": "mat-30",
+     "title": "Master Crafter",
+     "description": "Gather 30 different crafting materials.",
+     "points": 25,
+     "group": "In the Jungle: village"
+    },
+    {
+     "id": "jgold-1000",
+     "title": "Jungle Coins",
+     "description": "Have 1,000 jungle gold at once.",
+     "points": 10,
+     "group": "In the Jungle"
+    },
+    {
+     "id": "jgold-10000",
+     "title": "Village Treasury",
+     "description": "Have 10,000 jungle gold at once.",
+     "points": 20,
+     "group": "In the Jungle"
+    },
+    {
+     "id": "jgold-100000",
+     "title": "Jungle Tycoon",
+     "description": "Have 100,000 jungle gold at once.",
+     "points": 40,
+     "group": "In the Jungle"
+    },
+    {
+     "id": "jflame-100",
+     "title": "Jungle Spark",
+     "description": "Have 100 jungle Artisan's Flame at once.",
+     "points": 10,
+     "group": "In the Jungle"
+    },
+    {
+     "id": "jflame-1000",
+     "title": "Jungle Blaze",
+     "description": "Have 1,000 jungle Artisan's Flame at once.",
+     "points": 25,
+     "group": "In the Jungle"
     },
     {
      "id": "d-1h",
@@ -30533,6 +31563,1582 @@
      "description": "Have a score of 200,000 in a Spear of Destiny save.",
      "points": 25,
      "group": "Skill"
+    },
+    {
+     "id": "d-1h",
+     "title": "Getting Comfortable",
+     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 5,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-5h",
+     "title": "Settling In",
+     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 10,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-10h",
+     "title": "Hooked",
+     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 15,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-25h",
+     "title": "Devoted",
+     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 25,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-50h",
+     "title": "Obsessed",
+     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 40,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-100h",
+     "title": "Lifer",
+     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 60,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-250h",
+     "title": "Part of the Furniture",
+     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 100,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-days3",
+     "title": "Coming Back",
+     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 5,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-days10",
+     "title": "Regular",
+     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 15,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-days30",
+     "title": "A Month of Play",
+     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 30,
+     "group": "Dedication"
+    },
+    {
+     "id": "d-days100",
+     "title": "Daily Ritual",
+     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
+     "points": 60,
+     "group": "Dedication"
+    }
+   ]
+  },
+  {
+   "id": "wot",
+   "title": "World of Tanks · Vault Extras",
+   "how": "files",
+   "status": "untested",
+   "statusNote": "Official Wargaming API; waiting for a player report.",
+   "notes": [
+    "Optional bonus list on top of the game's own achievements: medals, career milestones and mastery from your World of Tanks service record.",
+    "Read from Wargaming's official public API with a free application ID you add in Settings → World of Tanks. Vault never touches the game itself. Medals update within about 10 minutes of a battle."
+   ],
+   "achievementCount": 223,
+   "points": 6421,
+   "achievements": [
+    {
+     "id": "hero-warrior-1",
+     "title": "Top Gun",
+     "description": "Earn the Top Gun medal: destroy the most enemies (at least 6) in a battle.",
+     "points": 5,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-warrior-10",
+     "title": "Top Gun ×10",
+     "description": "Earn the Top Gun medal 10 times: destroy the most enemies (at least 6) in a battle.",
+     "points": 10,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-warrior-50",
+     "title": "Top Gun ×50",
+     "description": "Earn the Top Gun medal 50 times: destroy the most enemies (at least 6) in a battle.",
+     "points": 20,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-warrior-100",
+     "title": "Top Gun ×100",
+     "description": "Earn the Top Gun medal 100 times: destroy the most enemies (at least 6) in a battle.",
+     "points": 30,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-warrior-250",
+     "title": "Top Gun ×250",
+     "description": "Earn the Top Gun medal 250 times: destroy the most enemies (at least 6) in a battle.",
+     "points": 50,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-invader-1",
+     "title": "Invader",
+     "description": "Earn the Invader medal: capture the enemy base for the most points.",
+     "points": 5,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-invader-10",
+     "title": "Invader ×10",
+     "description": "Earn the Invader medal 10 times: capture the enemy base for the most points.",
+     "points": 10,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-invader-50",
+     "title": "Invader ×50",
+     "description": "Earn the Invader medal 50 times: capture the enemy base for the most points.",
+     "points": 20,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-invader-100",
+     "title": "Invader ×100",
+     "description": "Earn the Invader medal 100 times: capture the enemy base for the most points.",
+     "points": 30,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-invader-250",
+     "title": "Invader ×250",
+     "description": "Earn the Invader medal 250 times: capture the enemy base for the most points.",
+     "points": 50,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-sniper-1",
+     "title": "Sniper",
+     "description": "Earn the Sniper medal: hit 85% of long-range shots.",
+     "points": 5,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-sniper-10",
+     "title": "Sniper ×10",
+     "description": "Earn the Sniper medal 10 times: hit 85% of long-range shots.",
+     "points": 10,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-sniper-50",
+     "title": "Sniper ×50",
+     "description": "Earn the Sniper medal 50 times: hit 85% of long-range shots.",
+     "points": 20,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-sniper-100",
+     "title": "Sniper ×100",
+     "description": "Earn the Sniper medal 100 times: hit 85% of long-range shots.",
+     "points": 30,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-sniper-250",
+     "title": "Sniper ×250",
+     "description": "Earn the Sniper medal 250 times: hit 85% of long-range shots.",
+     "points": 50,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-defender-1",
+     "title": "Defender",
+     "description": "Earn the Defender medal: reset the most capture points defending your base.",
+     "points": 5,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-defender-10",
+     "title": "Defender ×10",
+     "description": "Earn the Defender medal 10 times: reset the most capture points defending your base.",
+     "points": 10,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-defender-50",
+     "title": "Defender ×50",
+     "description": "Earn the Defender medal 50 times: reset the most capture points defending your base.",
+     "points": 20,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-defender-100",
+     "title": "Defender ×100",
+     "description": "Earn the Defender medal 100 times: reset the most capture points defending your base.",
+     "points": 30,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-defender-250",
+     "title": "Defender ×250",
+     "description": "Earn the Defender medal 250 times: reset the most capture points defending your base.",
+     "points": 50,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-steelwall-1",
+     "title": "Steel Wall",
+     "description": "Earn the Steel Wall medal: block and soak the most damage in a battle.",
+     "points": 5,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-steelwall-10",
+     "title": "Steel Wall ×10",
+     "description": "Earn the Steel Wall medal 10 times: block and soak the most damage in a battle.",
+     "points": 10,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-steelwall-50",
+     "title": "Steel Wall ×50",
+     "description": "Earn the Steel Wall medal 50 times: block and soak the most damage in a battle.",
+     "points": 20,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-steelwall-100",
+     "title": "Steel Wall ×100",
+     "description": "Earn the Steel Wall medal 100 times: block and soak the most damage in a battle.",
+     "points": 30,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-steelwall-250",
+     "title": "Steel Wall ×250",
+     "description": "Earn the Steel Wall medal 250 times: block and soak the most damage in a battle.",
+     "points": 50,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-supporter-1",
+     "title": "Confederate",
+     "description": "Earn the Confederate medal: help destroy the most enemies.",
+     "points": 5,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-supporter-10",
+     "title": "Confederate ×10",
+     "description": "Earn the Confederate medal 10 times: help destroy the most enemies.",
+     "points": 10,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-supporter-50",
+     "title": "Confederate ×50",
+     "description": "Earn the Confederate medal 50 times: help destroy the most enemies.",
+     "points": 20,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-supporter-100",
+     "title": "Confederate ×100",
+     "description": "Earn the Confederate medal 100 times: help destroy the most enemies.",
+     "points": 30,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-supporter-250",
+     "title": "Confederate ×250",
+     "description": "Earn the Confederate medal 250 times: help destroy the most enemies.",
+     "points": 50,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-scout-1",
+     "title": "Scout",
+     "description": "Earn the Scout medal: spot the most enemies.",
+     "points": 5,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-scout-10",
+     "title": "Scout ×10",
+     "description": "Earn the Scout medal 10 times: spot the most enemies.",
+     "points": 10,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-scout-50",
+     "title": "Scout ×50",
+     "description": "Earn the Scout medal 50 times: spot the most enemies.",
+     "points": 20,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-scout-100",
+     "title": "Scout ×100",
+     "description": "Earn the Scout medal 100 times: spot the most enemies.",
+     "points": 30,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-scout-250",
+     "title": "Scout ×250",
+     "description": "Earn the Scout medal 250 times: spot the most enemies.",
+     "points": 50,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-evileye-1",
+     "title": "Patrol Duty",
+     "description": "Earn the Patrol Duty medal: deal the most damage to targets you spotted.",
+     "points": 5,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-evileye-10",
+     "title": "Patrol Duty ×10",
+     "description": "Earn the Patrol Duty medal 10 times: deal the most damage to targets you spotted.",
+     "points": 10,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-evileye-50",
+     "title": "Patrol Duty ×50",
+     "description": "Earn the Patrol Duty medal 50 times: deal the most damage to targets you spotted.",
+     "points": 20,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-evileye-100",
+     "title": "Patrol Duty ×100",
+     "description": "Earn the Patrol Duty medal 100 times: deal the most damage to targets you spotted.",
+     "points": 30,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-evileye-250",
+     "title": "Patrol Duty ×250",
+     "description": "Earn the Patrol Duty medal 250 times: deal the most damage to targets you spotted.",
+     "points": 50,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-mainGun-1",
+     "title": "High Caliber",
+     "description": "Earn the High Caliber medal: deal the most damage in a battle (and at least 20% of the enemy team's hit points).",
+     "points": 5,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-mainGun-10",
+     "title": "High Caliber ×10",
+     "description": "Earn the High Caliber medal 10 times: deal the most damage in a battle (and at least 20% of the enemy team's hit points).",
+     "points": 10,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-mainGun-50",
+     "title": "High Caliber ×50",
+     "description": "Earn the High Caliber medal 50 times: deal the most damage in a battle (and at least 20% of the enemy team's hit points).",
+     "points": 20,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-mainGun-100",
+     "title": "High Caliber ×100",
+     "description": "Earn the High Caliber medal 100 times: deal the most damage in a battle (and at least 20% of the enemy team's hit points).",
+     "points": 30,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-mainGun-250",
+     "title": "High Caliber ×250",
+     "description": "Earn the High Caliber medal 250 times: deal the most damage in a battle (and at least 20% of the enemy team's hit points).",
+     "points": 50,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-medalBrothersInArms-1",
+     "title": "Brothers in Arms",
+     "description": "Earn the Brothers in Arms medal: survive and destroy 3+ enemies each, in a full platoon.",
+     "points": 5,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-medalBrothersInArms-10",
+     "title": "Brothers in Arms ×10",
+     "description": "Earn the Brothers in Arms medal 10 times: survive and destroy 3+ enemies each, in a full platoon.",
+     "points": 10,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-medalBrothersInArms-50",
+     "title": "Brothers in Arms ×50",
+     "description": "Earn the Brothers in Arms medal 50 times: survive and destroy 3+ enemies each, in a full platoon.",
+     "points": 20,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-medalBrothersInArms-100",
+     "title": "Brothers in Arms ×100",
+     "description": "Earn the Brothers in Arms medal 100 times: survive and destroy 3+ enemies each, in a full platoon.",
+     "points": 30,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-medalBrothersInArms-250",
+     "title": "Brothers in Arms ×250",
+     "description": "Earn the Brothers in Arms medal 250 times: survive and destroy 3+ enemies each, in a full platoon.",
+     "points": 50,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-medalCrucialContribution-1",
+     "title": "Crucial Contribution",
+     "description": "Earn the Crucial Contribution medal: destroy 12+ enemies with your platoon.",
+     "points": 5,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-medalCrucialContribution-10",
+     "title": "Crucial Contribution ×10",
+     "description": "Earn the Crucial Contribution medal 10 times: destroy 12+ enemies with your platoon.",
+     "points": 10,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-medalCrucialContribution-50",
+     "title": "Crucial Contribution ×50",
+     "description": "Earn the Crucial Contribution medal 50 times: destroy 12+ enemies with your platoon.",
+     "points": 20,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-medalCrucialContribution-100",
+     "title": "Crucial Contribution ×100",
+     "description": "Earn the Crucial Contribution medal 100 times: destroy 12+ enemies with your platoon.",
+     "points": 30,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "hero-medalCrucialContribution-250",
+     "title": "Crucial Contribution ×250",
+     "description": "Earn the Crucial Contribution medal 250 times: destroy 12+ enemies with your platoon.",
+     "points": 50,
+     "group": "Battle Hero medals"
+    },
+    {
+     "id": "epic-medalKolobanov",
+     "title": "Kolobanov's Medal",
+     "description": "Earn Kolobanov's Medal, one of the epic medals (win a battle alone against 5 or more enemies).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalKolobanov-5",
+     "title": "Kolobanov's Medal ×5",
+     "description": "Earn Kolobanov's Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalRadleyWalters",
+     "title": "Radley-Walters' Medal",
+     "description": "Earn Radley-Walters' Medal, one of the epic medals (destroy 8 or more enemies (tier V+)).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalRadleyWalters-5",
+     "title": "Radley-Walters' Medal ×5",
+     "description": "Earn Radley-Walters' Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalLafayettePool",
+     "title": "Pool's Medal",
+     "description": "Earn Pool's Medal, one of the epic medals (destroy 10 to 13 enemies).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalLafayettePool-5",
+     "title": "Pool's Medal ×5",
+     "description": "Earn Pool's Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalFadin",
+     "title": "Fadin's Medal",
+     "description": "Earn Fadin's Medal, one of the epic medals (destroy the last enemy with your last shell).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalFadin-5",
+     "title": "Fadin's Medal ×5",
+     "description": "Earn Fadin's Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalPascucci",
+     "title": "Pascucci's Medal",
+     "description": "Earn Pascucci's Medal, one of the epic medals (destroy 3+ artillery).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalPascucci-5",
+     "title": "Pascucci's Medal ×5",
+     "description": "Earn Pascucci's Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalBillotte",
+     "title": "Billotte's Medal",
+     "description": "Earn Billotte's Medal, one of the epic medals (survive with under 20% health after taking 5+ hits and destroy 2+ enemies).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalBillotte-5",
+     "title": "Billotte's Medal ×5",
+     "description": "Earn Billotte's Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalBurda",
+     "title": "Burda's Medal",
+     "description": "Earn Burda's Medal, one of the epic medals (an epic medal for an outstanding light-tank battle).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalBurda-5",
+     "title": "Burda's Medal ×5",
+     "description": "Earn Burda's Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalHalonen",
+     "title": "Halonen's Medal",
+     "description": "Earn Halonen's Medal, one of the epic medals (destroy 2+ higher-tier tanks as a tank destroyer).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalHalonen-5",
+     "title": "Halonen's Medal ×5",
+     "description": "Earn Halonen's Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalOrlik",
+     "title": "Orlik's Medal",
+     "description": "Earn Orlik's Medal, one of the epic medals (destroy 3+ higher-tier tanks in a light tank).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalOrlik-5",
+     "title": "Orlik's Medal ×5",
+     "description": "Earn Orlik's Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalOskin",
+     "title": "Oskin's Medal",
+     "description": "Earn Oskin's Medal, one of the epic medals (destroy 3+ higher-tier tanks in a medium tank).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalOskin-5",
+     "title": "Oskin's Medal ×5",
+     "description": "Earn Oskin's Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalNikolas",
+     "title": "Nicols' Medal",
+     "description": "Earn Nicols' Medal, one of the epic medals (destroy 4+ higher-tier tanks in a medium or heavy).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalNikolas-5",
+     "title": "Nicols' Medal ×5",
+     "description": "Earn Nicols' Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalDeLanglade",
+     "title": "De Langlade's Medal",
+     "description": "Earn De Langlade's Medal, one of the epic medals (destroy 4+ enemies while defending your base).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalDeLanglade-5",
+     "title": "De Langlade's Medal ×5",
+     "description": "Earn De Langlade's Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalTamadaYoshio",
+     "title": "Tamada Yoshio's Medal",
+     "description": "Earn Tamada Yoshio's Medal, one of the epic medals (destroy 2+ higher-tier tanks in a light tank).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalTamadaYoshio-5",
+     "title": "Tamada Yoshio's Medal ×5",
+     "description": "Earn Tamada Yoshio's Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalLehvaslaiho",
+     "title": "Lehväslaiho's Medal",
+     "description": "Earn Lehväslaiho's Medal, one of the epic medals (destroy 2 enemies while taking heavy fire).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalLehvaslaiho-5",
+     "title": "Lehväslaiho's Medal ×5",
+     "description": "Earn Lehväslaiho's Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalDumitru",
+     "title": "Dumitru's Medal",
+     "description": "Earn Dumitru's Medal, one of the epic medals (destroy 4+ enemies as artillery).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalDumitru-5",
+     "title": "Dumitru's Medal ×5",
+     "description": "Earn Dumitru's Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalTarczay",
+     "title": "Tarczay's Medal",
+     "description": "Earn Tarczay's Medal, one of the epic medals (destroy 4+ enemies having taken damage).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalTarczay-5",
+     "title": "Tarczay's Medal ×5",
+     "description": "Earn Tarczay's Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalBrunoPietro",
+     "title": "Bruno's Medal",
+     "description": "Earn Bruno's Medal, one of the epic medals (destroy 5+ enemies and survive with less than 10% health).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalBrunoPietro-5",
+     "title": "Bruno's Medal ×5",
+     "description": "Earn Bruno's Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-heroesOfRassenay",
+     "title": "Raseiniai Heroes Medal",
+     "description": "Earn Raseiniai Heroes Medal, one of the epic medals (destroy 14+ enemies by yourself).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-heroesOfRassenay-5",
+     "title": "Raseiniai Heroes Medal ×5",
+     "description": "Earn Raseiniai Heroes Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalBoelter",
+     "title": "Bölter's Medal",
+     "description": "Earn Bölter's Medal, one of the epic medals (destroy 2+ enemies in a light tank (tier V+)).",
+     "points": 30,
+     "group": "Epic medals"
+    },
+    {
+     "id": "epic-medalBoelter-5",
+     "title": "Bölter's Medal ×5",
+     "description": "Earn Bölter's Medal 5 times.",
+     "points": 60,
+     "group": "Epic medals"
+    },
+    {
+     "id": "class-medalKay-4",
+     "title": "Kay's Medal IV",
+     "description": "Reach class IV of Kay's Medal (Battle Hero medals earned).",
+     "points": 5,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalKay-3",
+     "title": "Kay's Medal III",
+     "description": "Reach class III of Kay's Medal (Battle Hero medals earned).",
+     "points": 10,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalKay-2",
+     "title": "Kay's Medal II",
+     "description": "Reach class II of Kay's Medal (Battle Hero medals earned).",
+     "points": 20,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalKay-1",
+     "title": "Kay's Medal I",
+     "description": "Reach class I of Kay's Medal (Battle Hero medals earned).",
+     "points": 40,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalCarius-4",
+     "title": "Carius' Medal IV",
+     "description": "Reach class IV of Carius' Medal (enemies destroyed).",
+     "points": 5,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalCarius-3",
+     "title": "Carius' Medal III",
+     "description": "Reach class III of Carius' Medal (enemies destroyed).",
+     "points": 10,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalCarius-2",
+     "title": "Carius' Medal II",
+     "description": "Reach class II of Carius' Medal (enemies destroyed).",
+     "points": 20,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalCarius-1",
+     "title": "Carius' Medal I",
+     "description": "Reach class I of Carius' Medal (enemies destroyed).",
+     "points": 40,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalKnispel-4",
+     "title": "Knispel's Medal IV",
+     "description": "Reach class IV of Knispel's Medal (damage dealt and received).",
+     "points": 5,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalKnispel-3",
+     "title": "Knispel's Medal III",
+     "description": "Reach class III of Knispel's Medal (damage dealt and received).",
+     "points": 10,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalKnispel-2",
+     "title": "Knispel's Medal II",
+     "description": "Reach class II of Knispel's Medal (damage dealt and received).",
+     "points": 20,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalKnispel-1",
+     "title": "Knispel's Medal I",
+     "description": "Reach class I of Knispel's Medal (damage dealt and received).",
+     "points": 40,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalPoppel-4",
+     "title": "Poppel's Medal IV",
+     "description": "Reach class IV of Poppel's Medal (enemies spotted).",
+     "points": 5,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalPoppel-3",
+     "title": "Poppel's Medal III",
+     "description": "Reach class III of Poppel's Medal (enemies spotted).",
+     "points": 10,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalPoppel-2",
+     "title": "Poppel's Medal II",
+     "description": "Reach class II of Poppel's Medal (enemies spotted).",
+     "points": 20,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalPoppel-1",
+     "title": "Poppel's Medal I",
+     "description": "Reach class I of Poppel's Medal (enemies spotted).",
+     "points": 40,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalAbrams-4",
+     "title": "Abrams' Medal IV",
+     "description": "Reach class IV of Abrams' Medal (battles survived and won).",
+     "points": 5,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalAbrams-3",
+     "title": "Abrams' Medal III",
+     "description": "Reach class III of Abrams' Medal (battles survived and won).",
+     "points": 10,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalAbrams-2",
+     "title": "Abrams' Medal II",
+     "description": "Reach class II of Abrams' Medal (battles survived and won).",
+     "points": 20,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalAbrams-1",
+     "title": "Abrams' Medal I",
+     "description": "Reach class I of Abrams' Medal (battles survived and won).",
+     "points": 40,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalLeClerc-4",
+     "title": "Leclerc's Medal IV",
+     "description": "Reach class IV of Leclerc's Medal (capture points earned).",
+     "points": 5,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalLeClerc-3",
+     "title": "Leclerc's Medal III",
+     "description": "Reach class III of Leclerc's Medal (capture points earned).",
+     "points": 10,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalLeClerc-2",
+     "title": "Leclerc's Medal II",
+     "description": "Reach class II of Leclerc's Medal (capture points earned).",
+     "points": 20,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalLeClerc-1",
+     "title": "Leclerc's Medal I",
+     "description": "Reach class I of Leclerc's Medal (capture points earned).",
+     "points": 40,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalLavrinenko-4",
+     "title": "Lavrinenko's Medal IV",
+     "description": "Reach class IV of Lavrinenko's Medal (base defence points).",
+     "points": 5,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalLavrinenko-3",
+     "title": "Lavrinenko's Medal III",
+     "description": "Reach class III of Lavrinenko's Medal (base defence points).",
+     "points": 10,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalLavrinenko-2",
+     "title": "Lavrinenko's Medal II",
+     "description": "Reach class II of Lavrinenko's Medal (base defence points).",
+     "points": 20,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalLavrinenko-1",
+     "title": "Lavrinenko's Medal I",
+     "description": "Reach class I of Lavrinenko's Medal (base defence points).",
+     "points": 40,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalEkins-4",
+     "title": "Ekins' Medal IV",
+     "description": "Reach class IV of Ekins' Medal (tier VIII–X tanks destroyed).",
+     "points": 5,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalEkins-3",
+     "title": "Ekins' Medal III",
+     "description": "Reach class III of Ekins' Medal (tier VIII–X tanks destroyed).",
+     "points": 10,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalEkins-2",
+     "title": "Ekins' Medal II",
+     "description": "Reach class II of Ekins' Medal (tier VIII–X tanks destroyed).",
+     "points": 20,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "class-medalEkins-1",
+     "title": "Ekins' Medal I",
+     "description": "Reach class I of Ekins' Medal (tier VIII–X tanks destroyed).",
+     "points": 40,
+     "group": "Commemorative medals"
+    },
+    {
+     "id": "special-raider",
+     "title": "Raider",
+     "description": "Capture a base with no damage taken.",
+     "points": 25,
+     "group": "Special medals"
+    },
+    {
+     "id": "special-kamikaze",
+     "title": "Kamikaze",
+     "description": "Destroy an enemy by ramming it.",
+     "points": 25,
+     "group": "Special medals"
+    },
+    {
+     "id": "special-bombardier",
+     "title": "Bombardier",
+     "description": "Destroy 2+ enemies with one artillery shell.",
+     "points": 25,
+     "group": "Special medals"
+    },
+    {
+     "id": "special-titleSniper",
+     "title": "Sharpshooter",
+     "description": "Land 10 hits in a row on target.",
+     "points": 25,
+     "group": "Special medals"
+    },
+    {
+     "id": "special-invincible",
+     "title": "Invincible",
+     "description": "Win 5 battles in a row without taking damage.",
+     "points": 25,
+     "group": "Special medals"
+    },
+    {
+     "id": "special-diehard",
+     "title": "Survivor",
+     "description": "Survive 20 battles in a row.",
+     "points": 25,
+     "group": "Special medals"
+    },
+    {
+     "id": "special-handOfDeath",
+     "title": "Reaper",
+     "description": "Destroy 3 enemies with 3 shots in a row.",
+     "points": 25,
+     "group": "Special medals"
+    },
+    {
+     "id": "special-armorPiercer",
+     "title": "Master Gunner",
+     "description": "Penetrate with 10 shots in a row.",
+     "points": 25,
+     "group": "Special medals"
+    },
+    {
+     "id": "special-beasthunter",
+     "title": "Hunter",
+     "description": "Destroy 100 Tigers, Panthers or Jagdpanthers.",
+     "points": 25,
+     "group": "Special medals"
+    },
+    {
+     "id": "special-mousebane",
+     "title": "Mouse Trap",
+     "description": "Destroy 10 Maus tanks.",
+     "points": 25,
+     "group": "Special medals"
+    },
+    {
+     "id": "special-tankExpert",
+     "title": "Expert",
+     "description": "Destroy every tank in the Tech Tree.",
+     "points": 25,
+     "group": "Special medals"
+    },
+    {
+     "id": "special-lumberjack",
+     "title": "Lumberjack",
+     "description": "Knock down 30+ trees in one battle.",
+     "points": 25,
+     "group": "Special medals"
+    },
+    {
+     "id": "special-sinai",
+     "title": "Lion of Sinai",
+     "description": "Destroy 100 Is-tanks.",
+     "points": 25,
+     "group": "Special medals"
+    },
+    {
+     "id": "special-pattonValley",
+     "title": "Patton Valley",
+     "description": "Destroy 100 Pattons.",
+     "points": 25,
+     "group": "Special medals"
+    },
+    {
+     "id": "special-huntsman",
+     "title": "Huntsman",
+     "description": "Destroy 100 Lycans.",
+     "points": 25,
+     "group": "Special medals"
+    },
+    {
+     "id": "stat-battles-100",
+     "title": "Fresh Recruit",
+     "description": "Reach 100 battles in your career.",
+     "points": 10,
+     "group": "Career"
+    },
+    {
+     "id": "stat-battles-500",
+     "title": "Private",
+     "description": "Reach 500 battles in your career.",
+     "points": 20,
+     "group": "Career"
+    },
+    {
+     "id": "stat-battles-1000",
+     "title": "Corporal",
+     "description": "Reach 1,000 battles in your career.",
+     "points": 30,
+     "group": "Career"
+    },
+    {
+     "id": "stat-battles-5000",
+     "title": "Sergeant",
+     "description": "Reach 5,000 battles in your career.",
+     "points": 40,
+     "group": "Career"
+    },
+    {
+     "id": "stat-battles-10000",
+     "title": "Lieutenant",
+     "description": "Reach 10,000 battles in your career.",
+     "points": 50,
+     "group": "Career"
+    },
+    {
+     "id": "stat-battles-25000",
+     "title": "Captain",
+     "description": "Reach 25,000 battles in your career.",
+     "points": 60,
+     "group": "Career"
+    },
+    {
+     "id": "stat-battles-50000",
+     "title": "Major",
+     "description": "Reach 50,000 battles in your career.",
+     "points": 70,
+     "group": "Career"
+    },
+    {
+     "id": "stat-battles-100000",
+     "title": "Field Marshal",
+     "description": "Reach 100,000 battles in your career.",
+     "points": 80,
+     "group": "Career"
+    },
+    {
+     "id": "stat-wins-50",
+     "title": "First Taste of Victory",
+     "description": "Reach 50 victories in your career.",
+     "points": 10,
+     "group": "Career"
+    },
+    {
+     "id": "stat-wins-250",
+     "title": "Winning Streak",
+     "description": "Reach 250 victories in your career.",
+     "points": 20,
+     "group": "Career"
+    },
+    {
+     "id": "stat-wins-1000",
+     "title": "Victor",
+     "description": "Reach 1,000 victories in your career.",
+     "points": 30,
+     "group": "Career"
+    },
+    {
+     "id": "stat-wins-5000",
+     "title": "Conqueror",
+     "description": "Reach 5,000 victories in your career.",
+     "points": 40,
+     "group": "Career"
+    },
+    {
+     "id": "stat-wins-10000",
+     "title": "Warlord",
+     "description": "Reach 10,000 victories in your career.",
+     "points": 50,
+     "group": "Career"
+    },
+    {
+     "id": "stat-wins-25000",
+     "title": "Unbeatable",
+     "description": "Reach 25,000 victories in your career.",
+     "points": 60,
+     "group": "Career"
+    },
+    {
+     "id": "stat-frags-100",
+     "title": "Tank Breaker",
+     "description": "Reach 100 enemy tanks destroyed in your career.",
+     "points": 10,
+     "group": "Career"
+    },
+    {
+     "id": "stat-frags-1000",
+     "title": "Tank Killer",
+     "description": "Reach 1,000 enemy tanks destroyed in your career.",
+     "points": 20,
+     "group": "Career"
+    },
+    {
+     "id": "stat-frags-5000",
+     "title": "Iron Reaper",
+     "description": "Reach 5,000 enemy tanks destroyed in your career.",
+     "points": 30,
+     "group": "Career"
+    },
+    {
+     "id": "stat-frags-10000",
+     "title": "Ten Thousand Wrecks",
+     "description": "Reach 10,000 enemy tanks destroyed in your career.",
+     "points": 40,
+     "group": "Career"
+    },
+    {
+     "id": "stat-frags-25000",
+     "title": "Scrap Merchant",
+     "description": "Reach 25,000 enemy tanks destroyed in your career.",
+     "points": 50,
+     "group": "Career"
+    },
+    {
+     "id": "stat-damage_dealt-100000",
+     "title": "Making a Dent",
+     "description": "Reach 100,000 damage dealt in your career.",
+     "points": 10,
+     "group": "Career"
+    },
+    {
+     "id": "stat-damage_dealt-1000000",
+     "title": "Million Damage",
+     "description": "Reach 1,000,000 damage dealt in your career.",
+     "points": 20,
+     "group": "Career"
+    },
+    {
+     "id": "stat-damage_dealt-5000000",
+     "title": "Heavy Hitter",
+     "description": "Reach 5,000,000 damage dealt in your career.",
+     "points": 30,
+     "group": "Career"
+    },
+    {
+     "id": "stat-damage_dealt-10000000",
+     "title": "Ten Million",
+     "description": "Reach 10,000,000 damage dealt in your career.",
+     "points": 40,
+     "group": "Career"
+    },
+    {
+     "id": "stat-damage_dealt-50000000",
+     "title": "Devastator",
+     "description": "Reach 50,000,000 damage dealt in your career.",
+     "points": 50,
+     "group": "Career"
+    },
+    {
+     "id": "stat-damage_dealt-100000000",
+     "title": "Hundred Million",
+     "description": "Reach 100,000,000 damage dealt in your career.",
+     "points": 60,
+     "group": "Career"
+    },
+    {
+     "id": "stat-spotted-1000",
+     "title": "Eyes Open",
+     "description": "Reach 1,000 enemies spotted in your career.",
+     "points": 10,
+     "group": "Career"
+    },
+    {
+     "id": "stat-spotted-10000",
+     "title": "Eagle Eye",
+     "description": "Reach 10,000 enemies spotted in your career.",
+     "points": 20,
+     "group": "Career"
+    },
+    {
+     "id": "stat-spotted-25000",
+     "title": "All-Seeing",
+     "description": "Reach 25,000 enemies spotted in your career.",
+     "points": 30,
+     "group": "Career"
+    },
+    {
+     "id": "stat-survived_battles-1000",
+     "title": "Still Standing",
+     "description": "Reach 1,000 battles survived in your career.",
+     "points": 10,
+     "group": "Career"
+    },
+    {
+     "id": "stat-survived_battles-5000",
+     "title": "Hard to Kill",
+     "description": "Reach 5,000 battles survived in your career.",
+     "points": 20,
+     "group": "Career"
+    },
+    {
+     "id": "stat-capture_points-1000",
+     "title": "Flag Planter",
+     "description": "Reach 1,000 base capture points in your career.",
+     "points": 10,
+     "group": "Career"
+    },
+    {
+     "id": "stat-capture_points-10000",
+     "title": "Base Taker",
+     "description": "Reach 10,000 base capture points in your career.",
+     "points": 20,
+     "group": "Career"
+    },
+    {
+     "id": "stat-dropped_capture_points-1000",
+     "title": "Gatekeeper",
+     "description": "Reach 1,000 capture points reset in your career.",
+     "points": 10,
+     "group": "Career"
+    },
+    {
+     "id": "stat-dropped_capture_points-10000",
+     "title": "Iron Defence",
+     "description": "Reach 10,000 capture points reset in your career.",
+     "points": 20,
+     "group": "Career"
+    },
+    {
+     "id": "stat-trees_cut-1000",
+     "title": "Clearing the Way",
+     "description": "Reach 1,000 trees knocked down in your career.",
+     "points": 10,
+     "group": "Career"
+    },
+    {
+     "id": "stat-trees_cut-10000",
+     "title": "Deforestation",
+     "description": "Reach 10,000 trees knocked down in your career.",
+     "points": 20,
+     "group": "Career"
+    },
+    {
+     "id": "stat-trees_cut-50000",
+     "title": "Paul Bunyan",
+     "description": "Reach 50,000 trees knocked down in your career.",
+     "points": 30,
+     "group": "Career"
+    },
+    {
+     "id": "stat-xp-1000000",
+     "title": "Experienced",
+     "description": "Reach 1,000,000 battle experience in your career.",
+     "points": 10,
+     "group": "Career"
+    },
+    {
+     "id": "stat-xp-10000000",
+     "title": "Veteran Crew",
+     "description": "Reach 10,000,000 battle experience in your career.",
+     "points": 20,
+     "group": "Career"
+    },
+    {
+     "id": "best-damage-2000",
+     "title": "Hard Hitter",
+     "description": "Deal 2,000 damage in a single battle.",
+     "points": 15,
+     "group": "Best battle"
+    },
+    {
+     "id": "best-damage-4000",
+     "title": "Big Damage",
+     "description": "Deal 4,000 damage in a single battle.",
+     "points": 20,
+     "group": "Best battle"
+    },
+    {
+     "id": "best-damage-6000",
+     "title": "Damage Dealer",
+     "description": "Deal 6,000 damage in a single battle.",
+     "points": 25,
+     "group": "Best battle"
+    },
+    {
+     "id": "best-damage-8000",
+     "title": "Wrecking Ball",
+     "description": "Deal 8,000 damage in a single battle.",
+     "points": 30,
+     "group": "Best battle"
+    },
+    {
+     "id": "best-damage-10000",
+     "title": "Five Digits",
+     "description": "Deal 10,000 damage in a single battle.",
+     "points": 35,
+     "group": "Best battle"
+    },
+    {
+     "id": "best-frags-5",
+     "title": "Five Down",
+     "description": "Destroy 5 enemies in a single battle.",
+     "points": 25,
+     "group": "Best battle"
+    },
+    {
+     "id": "best-frags-7",
+     "title": "Seven Down",
+     "description": "Destroy 7 enemies in a single battle.",
+     "points": 31,
+     "group": "Best battle"
+    },
+    {
+     "id": "best-frags-10",
+     "title": "Ten Down",
+     "description": "Destroy 10 enemies in a single battle.",
+     "points": 40,
+     "group": "Best battle"
+    },
+    {
+     "id": "winrate-50",
+     "title": "Above Average",
+     "description": "Have a 50% or better win rate over at least 1,000 battles.",
+     "points": 20,
+     "group": "Career"
+    },
+    {
+     "id": "winrate-55",
+     "title": "Good Player",
+     "description": "Have a 55% or better win rate over at least 1,000 battles.",
+     "points": 25,
+     "group": "Career"
+    },
+    {
+     "id": "winrate-60",
+     "title": "Unicum in the Making",
+     "description": "Have a 60% or better win rate over at least 1,000 battles.",
+     "points": 30,
+     "group": "Career"
+    },
+    {
+     "id": "winrate-65",
+     "title": "Unicum",
+     "description": "Have a 65% or better win rate over at least 2,000 battles.",
+     "points": 35,
+     "group": "Career"
+    },
+    {
+     "id": "ace-1",
+     "title": "Ace Tanker",
+     "description": "Have Ace Tanker mastery on 1 tank.",
+     "points": 10,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "ace-5",
+     "title": "Ace ×5",
+     "description": "Have Ace Tanker mastery on 5 tanks.",
+     "points": 12,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "ace-10",
+     "title": "Ace ×10",
+     "description": "Have Ace Tanker mastery on 10 tanks.",
+     "points": 15,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "ace-25",
+     "title": "Ace Collector",
+     "description": "Have Ace Tanker mastery on 25 tanks.",
+     "points": 22,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "ace-50",
+     "title": "Ace of Aces",
+     "description": "Have Ace Tanker mastery on 50 tanks.",
+     "points": 35,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "ace-100",
+     "title": "Ace Centurion",
+     "description": "Have Ace Tanker mastery on 100 tanks.",
+     "points": 60,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "first-10",
+     "title": "First Class Crew",
+     "description": "Have 1st Class mastery or better on 10 tanks.",
+     "points": 18,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "first-50",
+     "title": "First Class Fleet",
+     "description": "Have 1st Class mastery or better on 50 tanks.",
+     "points": 31,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "tanks-10",
+     "title": "Small Garage",
+     "description": "Play battles in 10 different tanks.",
+     "points": 12,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "tanks-50",
+     "title": "Growing Garage",
+     "description": "Play battles in 50 different tanks.",
+     "points": 20,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "tanks-100",
+     "title": "Big Garage",
+     "description": "Play battles in 100 different tanks.",
+     "points": 30,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "tanks-200",
+     "title": "Tank Museum",
+     "description": "Play battles in 200 different tanks.",
+     "points": 50,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "tier10-1",
+     "title": "Tier X",
+     "description": "Play battles in 1 tier X tank.",
+     "points": 17,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "tier10-5",
+     "title": "Tier X Collector",
+     "description": "Play battles in 5 tier X tanks.",
+     "points": 25,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "tier10-10",
+     "title": "Tier X Fleet",
+     "description": "Play battles in 10 tier X tanks.",
+     "points": 35,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "tier10-25",
+     "title": "Tier X Armada",
+     "description": "Play battles in 25 tier X tanks.",
+     "points": 65,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "nations-5",
+     "title": "Well Travelled",
+     "description": "Play tanks from 5 different nations.",
+     "points": 20,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "nations-8",
+     "title": "World Tour",
+     "description": "Play tanks from 8 different nations.",
+     "points": 26,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "nations-11",
+     "title": "Every Nation",
+     "description": "Play tanks from 11 different nations.",
+     "points": 32,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "mom-10",
+     "title": "Ace Tanker ×10 (any tanks)",
+     "description": "Earn the Ace Tanker badge 10 times in total.",
+     "points": 25,
+     "group": "Mastery & garage"
+    },
+    {
+     "id": "mom-50",
+     "title": "Ace Tanker ×50 (any tanks)",
+     "description": "Earn the Ace Tanker badge 50 times in total.",
+     "points": 45,
+     "group": "Mastery & garage"
     },
     {
      "id": "d-1h",

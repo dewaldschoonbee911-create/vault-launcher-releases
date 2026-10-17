@@ -1,8 +1,8 @@
-version: 0.1.54
+version: 0.1.55
 files:
-  - url: https://github.com/dewaldschoonbee911-create/vault-launcher-releases/releases/download/v0.1.54/VaultLauncher-Setup-0.1.54.exe
-    sha512: lt/Pc1KbRHOrgbTQyE3Z7XaPE+ZEEckoRZxGEcdXDXufDNAU0lFi+awe/ujkM7gs/gadwFBk7EMzXJdN1Evl9Q==
-    size: 103136773
-path: https://github.com/dewaldschoonbee911-create/vault-launcher-releases/releases/download/v0.1.54/VaultLauncher-Setup-0.1.54.exe
-sha512: lt/Pc1KbRHOrgbTQyE3Z7XaPE+ZEEckoRZxGEcdXDXufDNAU0lFi+awe/ujkM7gs/gadwFBk7EMzXJdN1Evl9Q==
-releaseDate: '2026-10-17T14:27:52.987Z'
+  - url: https://github.com/dewaldschoonbee911-create/vault-launcher-releases/releases/download/v0.1.55/VaultLauncher-Setup-0.1.55.exe
+    sha512: TWCx1fOrv68PSIT8cVHeaGPHRjzSicp61pVEz+bQIOb6EdbyYbroKr92wWdVIsHm6pTYOMEVV7X7wzCu/uI+UA==
+    size: 103150016
+path: https://github.com/dewaldschoonbee911-create/vault-launcher-releases/releases/download/v0.1.55/VaultLauncher-Setup-0.1.55.exe
+sha512: TWCx1fOrv68PSIT8cVHeaGPHRjzSicp61pVEz+bQIOb6EdbyYbroKr92wWdVIsHm6pTYOMEVV7X7wzCu/uI+UA==
+releaseDate: '2026-10-17T14:38:03.006Z'
