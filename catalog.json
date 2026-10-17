@@ -1,7 +1,112 @@
 {
- "generatedAt": "2026-10-17T09:38:01.876Z",
- "launcherVersion": "0.1.33",
+ "generatedAt": "2026-10-17T09:44:13.564Z",
+ "launcherVersion": "0.1.34",
  "sets": [
+  {
+   "id": "anachronox",
+   "title": "Anachronox",
+   "how": "files",
+   "status": "untested",
+   "statusNote": null,
+   "notes": [
+    "Vault reads your save folders (anoxdata\\SAVE) and never touches the game. Places count once a save includes them."
+   ],
+   "achievementCount": 13,
+   "points": 265,
+   "achievements": [
+    {
+     "id": "bricks",
+     "title": "The Bricks",
+     "description": "Wake up in Boots's office in the Bricks.",
+     "points": 5,
+     "group": "Anachronox"
+    },
+    {
+     "id": "rowdys",
+     "title": "Rowdy's",
+     "description": "Stop by Rowdy's bar.",
+     "points": 10,
+     "group": "Anachronox"
+    },
+    {
+     "id": "sender",
+     "title": "Sender Station",
+     "description": "Reach Sender Station.",
+     "points": 10,
+     "group": "Anachronox"
+    },
+    {
+     "id": "museum",
+     "title": "Museum Piece",
+     "description": "Visit the museum.",
+     "points": 10,
+     "group": "Anachronox"
+    },
+    {
+     "id": "democratus",
+     "title": "Democratus",
+     "description": "Reach the planet Democratus.",
+     "points": 20,
+     "group": "Worlds"
+    },
+    {
+     "id": "hephaestus",
+     "title": "Hephaestus",
+     "description": "Reach the planet Hephaestus.",
+     "points": 20,
+     "group": "Worlds"
+    },
+    {
+     "id": "hive",
+     "title": "The Hive",
+     "description": "Reach the Hive.",
+     "points": 20,
+     "group": "Worlds"
+    },
+    {
+     "id": "krapton",
+     "title": "Krapton",
+     "description": "Reach Krapton.",
+     "points": 20,
+     "group": "Worlds"
+    },
+    {
+     "id": "limbus",
+     "title": "Limbus",
+     "description": "Reach Limbus.",
+     "points": 30,
+     "group": "Worlds"
+    },
+    {
+     "id": "ending",
+     "title": "The End?",
+     "description": "See the ending.",
+     "points": 50,
+     "group": "Worlds"
+    },
+    {
+     "id": "maps-20",
+     "title": "Detective Work",
+     "description": "Reach 20 different places.",
+     "points": 10,
+     "group": "Exploration"
+    },
+    {
+     "id": "maps-45",
+     "title": "Galaxy Hopper",
+     "description": "Reach 45 different places.",
+     "points": 20,
+     "group": "Exploration"
+    },
+    {
+     "id": "maps-75",
+     "title": "Every Corner of the Galaxy",
+     "description": "Reach 75 different places.",
+     "points": 40,
+     "group": "Exploration"
+    }
+   ]
+  },
   {
    "id": "td",
    "title": "Command & Conquer (Tiberian Dawn)",
@@ -4518,6 +4623,202 @@
    ]
   },
   {
+   "id": "daikatana",
+   "title": "Daikatana",
+   "how": "files",
+   "status": "untested",
+   "statusNote": null,
+   "notes": [
+    "Vault reads your save folders (data\\save) and never touches the game. A level counts once a save includes it, so quick-save (F6) or let the game save at level changes."
+   ],
+   "achievementCount": 26,
+   "points": 405,
+   "achievements": [
+    {
+     "id": "level-e1m1",
+     "title": "Marsh",
+     "description": "Reach Marsh (Japan, 2455).",
+     "points": 10,
+     "group": "Episode 1: Japan, 2455"
+    },
+    {
+     "id": "level-e1m2",
+     "title": "Sewer System",
+     "description": "Reach Sewer System (Japan, 2455).",
+     "points": 10,
+     "group": "Episode 1: Japan, 2455"
+    },
+    {
+     "id": "level-e1m3",
+     "title": "Solitary",
+     "description": "Reach Solitary (Japan, 2455).",
+     "points": 10,
+     "group": "Episode 1: Japan, 2455"
+    },
+    {
+     "id": "level-e1m4",
+     "title": "Crematorium",
+     "description": "Reach Crematorium (Japan, 2455).",
+     "points": 10,
+     "group": "Episode 1: Japan, 2455"
+    },
+    {
+     "id": "level-e1m5",
+     "title": "Processing",
+     "description": "Reach Processing (Japan, 2455).",
+     "points": 10,
+     "group": "Episode 1: Japan, 2455"
+    },
+    {
+     "id": "level-e1m6",
+     "title": "Icelab",
+     "description": "Reach Icelab (Japan, 2455).",
+     "points": 10,
+     "group": "Episode 1: Japan, 2455"
+    },
+    {
+     "id": "level-e1m7",
+     "title": "Vault",
+     "description": "Reach Vault (Japan, 2455).",
+     "points": 20,
+     "group": "Episode 1: Japan, 2455"
+    },
+    {
+     "id": "level-e2m1",
+     "title": "Lemnos Isle",
+     "description": "Reach Lemnos Isle (Ancient Greece).",
+     "points": 25,
+     "group": "Episode 2: Ancient Greece"
+    },
+    {
+     "id": "level-e2m2",
+     "title": "Catacomb",
+     "description": "Reach Catacomb (Ancient Greece).",
+     "points": 10,
+     "group": "Episode 2: Ancient Greece"
+    },
+    {
+     "id": "level-e2m3",
+     "title": "Athens",
+     "description": "Reach Athens (Ancient Greece).",
+     "points": 10,
+     "group": "Episode 2: Ancient Greece"
+    },
+    {
+     "id": "level-e2m4",
+     "title": "Acropolis",
+     "description": "Reach Acropolis (Ancient Greece).",
+     "points": 10,
+     "group": "Episode 2: Ancient Greece"
+    },
+    {
+     "id": "level-e2m5",
+     "title": "Lair of Medusa",
+     "description": "Reach Lair of Medusa (Ancient Greece).",
+     "points": 20,
+     "group": "Episode 2: Ancient Greece"
+    },
+    {
+     "id": "level-e3m1",
+     "title": "Plague Village",
+     "description": "Reach Plague Village (Medieval Norway).",
+     "points": 25,
+     "group": "Episode 3: Medieval Norway"
+    },
+    {
+     "id": "level-e3m2",
+     "title": "Passage",
+     "description": "Reach Passage (Medieval Norway).",
+     "points": 10,
+     "group": "Episode 3: Medieval Norway"
+    },
+    {
+     "id": "level-e3m3",
+     "title": "Dungeon",
+     "description": "Reach Dungeon (Medieval Norway).",
+     "points": 10,
+     "group": "Episode 3: Medieval Norway"
+    },
+    {
+     "id": "level-e3m4",
+     "title": "Wyndrax Tower",
+     "description": "Reach Wyndrax Tower (Medieval Norway).",
+     "points": 10,
+     "group": "Episode 3: Medieval Norway"
+    },
+    {
+     "id": "level-e3m5",
+     "title": "Crypt of Nharre",
+     "description": "Reach Crypt of Nharre (Medieval Norway).",
+     "points": 10,
+     "group": "Episode 3: Medieval Norway"
+    },
+    {
+     "id": "level-e3m6",
+     "title": "Gharroth's Throne",
+     "description": "Reach Gharroth's Throne (Medieval Norway).",
+     "points": 20,
+     "group": "Episode 3: Medieval Norway"
+    },
+    {
+     "id": "level-e4m1",
+     "title": "Escape From Alcatraz",
+     "description": "Reach Escape From Alcatraz (San Francisco, 2030).",
+     "points": 25,
+     "group": "Episode 4: San Francisco, 2030"
+    },
+    {
+     "id": "level-e4m2",
+     "title": "Beneath The Rock",
+     "description": "Reach Beneath The Rock (San Francisco, 2030).",
+     "points": 10,
+     "group": "Episode 4: San Francisco, 2030"
+    },
+    {
+     "id": "level-e4m3",
+     "title": "Tower of Crime",
+     "description": "Reach Tower of Crime (San Francisco, 2030).",
+     "points": 10,
+     "group": "Episode 4: San Francisco, 2030"
+    },
+    {
+     "id": "level-e4m4",
+     "title": "Mishima Labs",
+     "description": "Reach Mishima Labs (San Francisco, 2030).",
+     "points": 10,
+     "group": "Episode 4: San Francisco, 2030"
+    },
+    {
+     "id": "level-e4m5",
+     "title": "Mishima's Hideout",
+     "description": "Reach Mishima's Hideout (San Francisco, 2030).",
+     "points": 40,
+     "group": "Episode 4: San Francisco, 2030"
+    },
+    {
+     "id": "level-e4m6",
+     "title": "S.E.A.L. Training Center",
+     "description": "Reach S.E.A.L. Training Center (San Francisco, 2030).",
+     "points": 10,
+     "group": "Episode 4: San Francisco, 2030"
+    },
+    {
+     "id": "maps-30",
+     "title": "Time Traveller",
+     "description": "Reach 30 different levels.",
+     "points": 20,
+     "group": "Exploration"
+    },
+    {
+     "id": "maps-55",
+     "title": "Every Era",
+     "description": "Reach 55 different levels.",
+     "points": 40,
+     "group": "Exploration"
+    }
+   ]
+  },
+  {
    "id": "deusex",
    "title": "Deus Ex",
    "how": "files",
@@ -6438,6 +6739,175 @@
      "description": "Spend a whole year in the wasteland.",
      "points": 20,
      "group": "Deeds"
+    }
+   ]
+  },
+  {
+   "id": "halflife",
+   "title": "Half-Life",
+   "how": "files",
+   "status": "untested",
+   "statusNote": null,
+   "notes": [
+    "Vault reads your save files (valve\\SAVE) and never touches the game. Half-Life saves when you change levels and when you save, so chapters pop up as you go.",
+    "Any map named in any of your saves counts, so old saves count too."
+   ],
+   "achievementCount": 22,
+   "points": 390,
+   "achievements": [
+    {
+     "id": "chapter-hazard",
+     "title": "Hazard Course",
+     "description": "Run the Hazard Course training.",
+     "points": 5,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-inbound",
+     "title": "Black Mesa Inbound",
+     "description": "Ride the tram into Black Mesa.",
+     "points": 5,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-anomalous",
+     "title": "Anomalous Materials",
+     "description": "Reach the test chamber.",
+     "points": 5,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-unforeseen",
+     "title": "Unforeseen Consequences",
+     "description": "Survive the resonance cascade.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-office",
+     "title": "Office Complex",
+     "description": "Make it through the Office Complex.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-hostiles",
+     "title": "We've Got Hostiles",
+     "description": "Meet the HECU marines.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-blastpit",
+     "title": "Blast Pit",
+     "description": "Reach the Blast Pit.",
+     "points": 15,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-powerup",
+     "title": "Power Up",
+     "description": "Restore power to the rail line.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-rail",
+     "title": "On a Rail",
+     "description": "Ride the rails to the rocket.",
+     "points": 15,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-apprehension",
+     "title": "Apprehension",
+     "description": "Get captured by the marines.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-residue",
+     "title": "Residue Processing",
+     "description": "Escape through Residue Processing.",
+     "points": 10,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-ethics",
+     "title": "Questionable Ethics",
+     "description": "Reach the Questionable Ethics labs.",
+     "points": 15,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-surface",
+     "title": "Surface Tension",
+     "description": "Make it to the surface.",
+     "points": 15,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-forget",
+     "title": "\"Forget About Freeman!\"",
+     "description": "Fight on as the marines pull out.",
+     "points": 15,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-lambda",
+     "title": "Lambda Core",
+     "description": "Reach the Lambda Core.",
+     "points": 20,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-xen",
+     "title": "Xen",
+     "description": "Teleport to Xen.",
+     "points": 20,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-gonarch",
+     "title": "Gonarch's Lair",
+     "description": "Face the Gonarch.",
+     "points": 25,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-interloper",
+     "title": "Interloper",
+     "description": "Reach the alien factory.",
+     "points": 25,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-nihilanth",
+     "title": "Nihilanth",
+     "description": "Confront the Nihilanth.",
+     "points": 40,
+     "group": "Chapters"
+    },
+    {
+     "id": "chapter-endgame",
+     "title": "Endgame",
+     "description": "Meet the G-Man's offer at the end.",
+     "points": 50,
+     "group": "Chapters"
+    },
+    {
+     "id": "maps-50",
+     "title": "Long Way Around",
+     "description": "Reach 50 different maps.",
+     "points": 20,
+     "group": "Exploration"
+    },
+    {
+     "id": "maps-90",
+     "title": "Every Corner of Black Mesa",
+     "description": "Reach 90 different maps.",
+     "points": 40,
+     "group": "Exploration"
     }
    ]
   },
