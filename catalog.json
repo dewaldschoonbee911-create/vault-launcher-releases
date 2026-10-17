@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-17T09:07:36.464Z",
- "launcherVersion": "0.1.31",
+ "generatedAt": "2026-10-17T09:17:03.687Z",
+ "launcherVersion": "0.1.32",
  "sets": [
   {
    "id": "td",
@@ -5173,6 +5173,765 @@
      "description": "See the Helios ending: merge with the AI.",
      "points": 50,
      "group": "Endings"
+    }
+   ]
+  },
+  {
+   "id": "diablo",
+   "title": "Diablo",
+   "how": "files",
+   "status": "untested",
+   "statusNote": "Save reading checked against a real (shareware) Diablo save; waiting for a full-game test.",
+   "notes": [
+    "Works with any copy of Diablo: Battle.net, GOG, the original CD, and DevilutionX. Hellfire too.",
+    "Vault reads your save files and never touches the game. Single-player progress counts when the game saves: use Save Game in the menu, and achievements pop up then.",
+    "Multiplayer heroes save all the time, so their achievements pop almost straight away.",
+    "Kills and quests come from the saved game, so they're counted per hero and added up across all your heroes."
+   ],
+   "achievementCount": 106,
+   "points": 2120,
+   "achievements": [
+    {
+     "id": "enter",
+     "title": "Into the Cathedral",
+     "description": "Go down into the dungeon below Tristram's cathedral.",
+     "points": 5,
+     "group": "The descent"
+    },
+    {
+     "id": "dlvl-4",
+     "title": "Deeper Still",
+     "description": "Reach dungeon level 4.",
+     "points": 5,
+     "group": "The descent"
+    },
+    {
+     "id": "catacombs",
+     "title": "The Catacombs",
+     "description": "Reach the Catacombs (dungeon level 5).",
+     "points": 10,
+     "group": "The descent"
+    },
+    {
+     "id": "caves",
+     "title": "The Caves",
+     "description": "Reach the Caves (dungeon level 9).",
+     "points": 15,
+     "group": "The descent"
+    },
+    {
+     "id": "hell",
+     "title": "Welcome to Hell",
+     "description": "Reach Hell (dungeon level 13).",
+     "points": 20,
+     "group": "The descent"
+    },
+    {
+     "id": "dlvl-15",
+     "title": "The Gates of Hell",
+     "description": "Reach dungeon level 15.",
+     "points": 20,
+     "group": "The descent"
+    },
+    {
+     "id": "dlvl-16",
+     "title": "Sanctuary of the Dark Lord",
+     "description": "Reach dungeon level 16, Diablo's lair.",
+     "points": 25,
+     "group": "The descent"
+    },
+    {
+     "id": "hive",
+     "title": "The Hive",
+     "description": "Reach the Hive (Hellfire).",
+     "points": 15,
+     "group": "The descent"
+    },
+    {
+     "id": "crypt",
+     "title": "The Crypt",
+     "description": "Reach the Crypt (Hellfire).",
+     "points": 20,
+     "group": "The descent"
+    },
+    {
+     "id": "butcher",
+     "title": "Ah, Fresh Meat!",
+     "description": "Kill the Butcher.",
+     "points": 15,
+     "group": "Bosses"
+    },
+    {
+     "id": "leoric",
+     "title": "The King Is Dead",
+     "description": "Kill the Skeleton King.",
+     "points": 15,
+     "group": "Bosses"
+    },
+    {
+     "id": "diablo",
+     "title": "Lord of Terror",
+     "description": "Kill Diablo.",
+     "points": 50,
+     "group": "Bosses"
+    },
+    {
+     "id": "diablo-nightmare",
+     "title": "Nightmare's End",
+     "description": "Kill Diablo on Nightmare difficulty.",
+     "points": 75,
+     "group": "Bosses"
+    },
+    {
+     "id": "diablo-hell",
+     "title": "Hell's Bane",
+     "description": "Kill Diablo on Hell difficulty.",
+     "points": 100,
+     "group": "Bosses"
+    },
+    {
+     "id": "diablo-3",
+     "title": "Again and Again",
+     "description": "Kill Diablo 3 times (across your heroes).",
+     "points": 40,
+     "group": "Bosses"
+    },
+    {
+     "id": "defiler",
+     "title": "Exterminator",
+     "description": "Kill the Defiler (Hellfire).",
+     "points": 30,
+     "group": "Bosses"
+    },
+    {
+     "id": "nakrul",
+     "title": "Na-Krul Falls",
+     "description": "Kill Na-Krul (Hellfire).",
+     "points": 50,
+     "group": "Bosses"
+    },
+    {
+     "id": "quest-the-butcher",
+     "title": "Butcher's Bill",
+     "description": "Complete The Butcher.",
+     "points": 10,
+     "group": "Quests"
+    },
+    {
+     "id": "quest-leoric",
+     "title": "Long Live the King",
+     "description": "Complete The Curse of King Leoric.",
+     "points": 10,
+     "group": "Quests"
+    },
+    {
+     "id": "quest-poisoned-water",
+     "title": "Clean Water",
+     "description": "Complete Poisoned Water Supply.",
+     "points": 10,
+     "group": "Quests"
+    },
+    {
+     "id": "quest-ogdens-sign",
+     "title": "Sign Here",
+     "description": "Complete Ogden's Sign.",
+     "points": 10,
+     "group": "Quests"
+    },
+    {
+     "id": "quest-gharbad",
+     "title": "Gharbad the Weak",
+     "description": "Deal with Gharbad the Weak.",
+     "points": 10,
+     "group": "Quests"
+    },
+    {
+     "id": "quest-magic-rock",
+     "title": "The Magic Rock",
+     "description": "Complete The Magic Rock.",
+     "points": 10,
+     "group": "Quests"
+    },
+    {
+     "id": "quest-chamber-of-bone",
+     "title": "Chamber of Bone",
+     "description": "Complete The Chamber of Bone.",
+     "points": 10,
+     "group": "Quests"
+    },
+    {
+     "id": "quest-halls-of-the-blind",
+     "title": "Halls of the Blind",
+     "description": "Complete Halls of the Blind.",
+     "points": 10,
+     "group": "Quests"
+    },
+    {
+     "id": "quest-valor",
+     "title": "Valor",
+     "description": "Complete Valor and claim Arkaine's armour.",
+     "points": 15,
+     "group": "Quests"
+    },
+    {
+     "id": "quest-zhar",
+     "title": "Zhar the Mad",
+     "description": "Deal with Zhar the Mad.",
+     "points": 10,
+     "group": "Quests"
+    },
+    {
+     "id": "quest-black-mushroom",
+     "title": "The Black Mushroom",
+     "description": "Complete The Black Mushroom.",
+     "points": 10,
+     "group": "Quests"
+    },
+    {
+     "id": "quest-anvil-of-fury",
+     "title": "Anvil of Fury",
+     "description": "Complete Anvil of Fury.",
+     "points": 10,
+     "group": "Quests"
+    },
+    {
+     "id": "quest-warlord",
+     "title": "Warlord of Blood",
+     "description": "Defeat the Warlord of Blood.",
+     "points": 15,
+     "group": "Quests"
+    },
+    {
+     "id": "quest-lachdanan",
+     "title": "Lachdanan's Rest",
+     "description": "Help Lachdanan find peace.",
+     "points": 10,
+     "group": "Quests"
+    },
+    {
+     "id": "quest-lazarus",
+     "title": "Archbishop Lazarus",
+     "description": "Defeat Archbishop Lazarus.",
+     "points": 15,
+     "group": "Quests"
+    },
+    {
+     "id": "all-quests",
+     "title": "Hero of Tristram",
+     "description": "Complete every quest your game offered (with at least 8 quests in it), then save.",
+     "points": 50,
+     "group": "Quests"
+    },
+    {
+     "id": "level-5",
+     "title": "Novice",
+     "description": "Reach character level 5.",
+     "points": 5,
+     "group": "Experience"
+    },
+    {
+     "id": "level-10",
+     "title": "Adventurer",
+     "description": "Reach character level 10.",
+     "points": 10,
+     "group": "Experience"
+    },
+    {
+     "id": "level-15",
+     "title": "Veteran",
+     "description": "Reach character level 15.",
+     "points": 10,
+     "group": "Experience"
+    },
+    {
+     "id": "level-20",
+     "title": "Champion",
+     "description": "Reach character level 20.",
+     "points": 15,
+     "group": "Experience"
+    },
+    {
+     "id": "level-25",
+     "title": "Slayer",
+     "description": "Reach character level 25.",
+     "points": 20,
+     "group": "Experience"
+    },
+    {
+     "id": "level-30",
+     "title": "Hero",
+     "description": "Reach character level 30.",
+     "points": 25,
+     "group": "Experience"
+    },
+    {
+     "id": "level-35",
+     "title": "Paragon",
+     "description": "Reach character level 35.",
+     "points": 30,
+     "group": "Experience"
+    },
+    {
+     "id": "level-40",
+     "title": "Legend",
+     "description": "Reach character level 40.",
+     "points": 40,
+     "group": "Experience"
+    },
+    {
+     "id": "level-45",
+     "title": "Mythic",
+     "description": "Reach character level 45.",
+     "points": 50,
+     "group": "Experience"
+    },
+    {
+     "id": "level-50",
+     "title": "Level 50",
+     "description": "Reach character level 50.",
+     "points": 75,
+     "group": "Experience"
+    },
+    {
+     "id": "warrior-10",
+     "title": "Blade of Tristram",
+     "description": "Reach level 10 as a Warrior.",
+     "points": 10,
+     "group": "Classes"
+    },
+    {
+     "id": "warrior-30",
+     "title": "Master Warrior",
+     "description": "Reach level 30 as a Warrior.",
+     "points": 25,
+     "group": "Classes"
+    },
+    {
+     "id": "rogue-10",
+     "title": "Sister of the Sightless Eye",
+     "description": "Reach level 10 as a Rogue.",
+     "points": 10,
+     "group": "Classes"
+    },
+    {
+     "id": "rogue-30",
+     "title": "Master Rogue",
+     "description": "Reach level 30 as a Rogue.",
+     "points": 25,
+     "group": "Classes"
+    },
+    {
+     "id": "sorcerer-10",
+     "title": "Vizjerei Adept",
+     "description": "Reach level 10 as a Sorcerer.",
+     "points": 10,
+     "group": "Classes"
+    },
+    {
+     "id": "sorcerer-30",
+     "title": "Master Sorcerer",
+     "description": "Reach level 30 as a Sorcerer.",
+     "points": 25,
+     "group": "Classes"
+    },
+    {
+     "id": "monk-10",
+     "title": "Ivgorod Monk",
+     "description": "Reach level 10 as a Monk (Hellfire).",
+     "points": 10,
+     "group": "Classes"
+    },
+    {
+     "id": "monk-30",
+     "title": "Master Monk",
+     "description": "Reach level 30 as a Monk (Hellfire).",
+     "points": 25,
+     "group": "Classes"
+    },
+    {
+     "id": "bard-10",
+     "title": "Wandering Bard",
+     "description": "Reach level 10 as a Bard (Hellfire).",
+     "points": 10,
+     "group": "Classes"
+    },
+    {
+     "id": "bard-30",
+     "title": "Master Bard",
+     "description": "Reach level 30 as a Bard (Hellfire).",
+     "points": 25,
+     "group": "Classes"
+    },
+    {
+     "id": "barbarian-10",
+     "title": "Northern Fury",
+     "description": "Reach level 10 as a Barbarian (Hellfire).",
+     "points": 10,
+     "group": "Classes"
+    },
+    {
+     "id": "barbarian-30",
+     "title": "Master Barbarian",
+     "description": "Reach level 30 as a Barbarian (Hellfire).",
+     "points": 25,
+     "group": "Classes"
+    },
+    {
+     "id": "classes-3",
+     "title": "Three Paths",
+     "description": "Reach level 10 with three different classes.",
+     "points": 25,
+     "group": "Classes"
+    },
+    {
+     "id": "classes-6",
+     "title": "Every Path",
+     "description": "Reach level 10 with all six classes (Hellfire).",
+     "points": 50,
+     "group": "Classes"
+    },
+    {
+     "id": "str-60",
+     "title": "Strong Arm",
+     "description": "Raise base Strength to 60.",
+     "points": 10,
+     "group": "Attributes and wealth"
+    },
+    {
+     "id": "str-120",
+     "title": "Mighty",
+     "description": "Raise base Strength to 120.",
+     "points": 20,
+     "group": "Attributes and wealth"
+    },
+    {
+     "id": "str-200",
+     "title": "Titanic",
+     "description": "Raise base Strength to 200.",
+     "points": 35,
+     "group": "Attributes and wealth"
+    },
+    {
+     "id": "mag-60",
+     "title": "Spark",
+     "description": "Raise base Magic to 60.",
+     "points": 10,
+     "group": "Attributes and wealth"
+    },
+    {
+     "id": "mag-120",
+     "title": "Arcane",
+     "description": "Raise base Magic to 120.",
+     "points": 20,
+     "group": "Attributes and wealth"
+    },
+    {
+     "id": "mag-200",
+     "title": "Archmage",
+     "description": "Raise base Magic to 200.",
+     "points": 35,
+     "group": "Attributes and wealth"
+    },
+    {
+     "id": "dex-60",
+     "title": "Nimble",
+     "description": "Raise base Dexterity to 60.",
+     "points": 10,
+     "group": "Attributes and wealth"
+    },
+    {
+     "id": "dex-120",
+     "title": "Deadeye",
+     "description": "Raise base Dexterity to 120.",
+     "points": 20,
+     "group": "Attributes and wealth"
+    },
+    {
+     "id": "dex-200",
+     "title": "Untouchable",
+     "description": "Raise base Dexterity to 200.",
+     "points": 35,
+     "group": "Attributes and wealth"
+    },
+    {
+     "id": "vit-60",
+     "title": "Hardy",
+     "description": "Raise base Vitality to 60.",
+     "points": 10,
+     "group": "Attributes and wealth"
+    },
+    {
+     "id": "vit-120",
+     "title": "Iron Hide",
+     "description": "Raise base Vitality to 120.",
+     "points": 20,
+     "group": "Attributes and wealth"
+    },
+    {
+     "id": "vit-200",
+     "title": "Unkillable",
+     "description": "Raise base Vitality to 200.",
+     "points": 35,
+     "group": "Attributes and wealth"
+    },
+    {
+     "id": "gold-5000",
+     "title": "Pocket Money",
+     "description": "Carry 5,000 gold at once.",
+     "points": 5,
+     "group": "Attributes and wealth"
+    },
+    {
+     "id": "gold-25000",
+     "title": "Well Off",
+     "description": "Carry 25,000 gold at once.",
+     "points": 10,
+     "group": "Attributes and wealth"
+    },
+    {
+     "id": "gold-100000",
+     "title": "Wealthy",
+     "description": "Carry 100,000 gold at once.",
+     "points": 20,
+     "group": "Attributes and wealth"
+    },
+    {
+     "id": "gold-500000",
+     "title": "Griswold's Best Customer",
+     "description": "Carry 500,000 gold at once.",
+     "points": 35,
+     "group": "Attributes and wealth"
+    },
+    {
+     "id": "kills-100",
+     "title": "Bloodied",
+     "description": "Slay 100 monsters (all your heroes together).",
+     "points": 5,
+     "group": "Slaying"
+    },
+    {
+     "id": "kills-500",
+     "title": "Monster Hunter",
+     "description": "Slay 500 monsters (all your heroes together).",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kills-1000",
+     "title": "Thousand Slain",
+     "description": "Slay 1,000 monsters (all your heroes together).",
+     "points": 15,
+     "group": "Slaying"
+    },
+    {
+     "id": "kills-2500",
+     "title": "Purifier",
+     "description": "Slay 2,500 monsters (all your heroes together).",
+     "points": 25,
+     "group": "Slaying"
+    },
+    {
+     "id": "kills-5000",
+     "title": "Scourge of Hell",
+     "description": "Slay 5,000 monsters (all your heroes together).",
+     "points": 35,
+     "group": "Slaying"
+    },
+    {
+     "id": "kills-10000",
+     "title": "Ten Thousand Demons",
+     "description": "Slay 10,000 monsters (all your heroes together).",
+     "points": 50,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-zombies-50",
+     "title": "Grave Robber",
+     "description": "Slay 50 Zombies, ghouls and carcasses.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-zombies-200",
+     "title": "Rot Stopper",
+     "description": "Slay 200 Zombies, ghouls and carcasses.",
+     "points": 20,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-fallen-100",
+     "title": "Fallen Foe",
+     "description": "Slay 100 Fallen Ones, Carvers and Devil Kin.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-fallen-500",
+     "title": "Kin Slayer",
+     "description": "Slay 500 Fallen Ones, Carvers and Devil Kin.",
+     "points": 20,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-skeletons-100",
+     "title": "Bone Breaker",
+     "description": "Slay 100 skeletons.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-skeletons-500",
+     "title": "Ossuary",
+     "description": "Slay 500 skeletons.",
+     "points": 20,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-scavengers-50",
+     "title": "Pest Control",
+     "description": "Slay 50 Scavengers and Shadow Beasts.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-goatmen-100",
+     "title": "Goat Herder",
+     "description": "Slay 100 Goatmen.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-goatmen-400",
+     "title": "Clan Breaker",
+     "description": "Slay 400 Goatmen.",
+     "points": 20,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-bats-50",
+     "title": "Bat Swatter",
+     "description": "Slay 50 Fiends, Blinks and Glooms.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-acid-50",
+     "title": "Antacid",
+     "description": "Slay 50 Acid Beasts.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-overlords-50",
+     "title": "Overthrown",
+     "description": "Slay 50 Overlords, Mud Men, Toad Demons and Flayed Ones.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-hidden-50",
+     "title": "I See You",
+     "description": "Slay 50 Hidden, Stalkers and Unseen.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-magma-100",
+     "title": "Cooled Down",
+     "description": "Slay 100 Magma Demons.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-horned-100",
+     "title": "Bull Fighter",
+     "description": "Slay 100 Horned Demons and Chargers.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-lightning-100",
+     "title": "Lightning Rod",
+     "description": "Slay 100 Storm demons.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-gargoyles-50",
+     "title": "Stone Breaker",
+     "description": "Slay 50 Gargoyles and Winged Demons.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-balrogs-50",
+     "title": "Balrog Bane",
+     "description": "Slay 50 Slayers, Guardians and Balrogs.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-drakes-50",
+     "title": "Dragon Slayer",
+     "description": "Slay 50 Vipers and Drakes.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-knights-50",
+     "title": "Knight Breaker",
+     "description": "Slay 50 Black Knights and Doom Guards.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-succubi-50",
+     "title": "Unmoved",
+     "description": "Slay 50 Succubi and Snow Witches.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-mages-50",
+     "title": "Council Dissolved",
+     "description": "Slay 50 Counselors, Magistrates, Cabalists and Advocates.",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-hive-100",
+     "title": "Hive Cleaner",
+     "description": "Slay 100 Hive creatures (Hellfire).",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "kill-crypt-100",
+     "title": "Crypt Keeper",
+     "description": "Slay 100 Crypt creatures (Hellfire).",
+     "points": 10,
+     "group": "Slaying"
+    },
+    {
+     "id": "bestiary-25",
+     "title": "Naturalist",
+     "description": "Slay 25 different kinds of monster.",
+     "points": 15,
+     "group": "Slaying"
+    },
+    {
+     "id": "bestiary-50",
+     "title": "Bestiary",
+     "description": "Slay 50 different kinds of monster.",
+     "points": 25,
+     "group": "Slaying"
+    },
+    {
+     "id": "bestiary-75",
+     "title": "Demonologist",
+     "description": "Slay 75 different kinds of monster.",
+     "points": 40,
+     "group": "Slaying"
     }
    ]
   },
