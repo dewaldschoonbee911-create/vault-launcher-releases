@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-18T08:58:53.855Z",
- "launcherVersion": "0.1.63",
+ "generatedAt": "2026-10-18T09:24:56.327Z",
+ "launcherVersion": "0.1.64",
  "sets": [
   {
    "id": "anachronox",
@@ -11,8 +11,8 @@
    "notes": [
     "Vault reads your save folders (anoxdata\\SAVE) and never touches the game. Places count once a save includes them."
    ],
-   "achievementCount": 62,
-   "points": 1115,
+   "achievementCount": 51,
+   "points": 750,
    "achievements": [
     {
      "id": "bricks",
@@ -370,83 +370,6 @@
      "description": "Reach all 3 areas of The Fortress.",
      "points": 20,
      "group": "Worlds"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -461,8 +384,8 @@
     "Untested: \"Nothing Is True\" works as soon as the game has saved once. The Memory Block achievements depend on the save header naming the block, which Vault hasn't been able to check on a real save yet. If they don't pop, send a test report.",
     "The Places achievements count when a save header names the city you're in; also unchecked on a real save."
    ],
-   "achievementCount": 60,
-   "points": 1005,
+   "achievementCount": 49,
+   "points": 640,
    "achievements": [
     {
      "id": "started",
@@ -806,83 +729,6 @@
      "description": "Have 3 different save slots.",
      "points": 10,
      "group": "Saving"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -896,8 +742,8 @@
     "Mission achievements unlock when the next mission starts loading after a win.",
     "The last mission of each campaign ends the game instead of loading another, so it can't be tracked yet."
    ],
-   "achievementCount": 72,
-   "points": 1075,
+   "achievementCount": 61,
+   "points": 710,
    "achievements": [
     {
      "id": "gdi01",
@@ -1325,83 +1171,6 @@
      "description": "Play Nod mission 7 on its third map (C).",
      "points": 10,
      "group": "Alternative maps"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -1415,8 +1184,8 @@
     "Campaign achievements come from your save games (Vault never touches the game, which has online play). The game saves automatically between missions; saving during a mission helps too.",
     "Skirmish achievements come from the replay the game saves after every game (Documents\\Command and Conquer 3 Kanes Wrath\\Replays). Replays do not record who won, so these are about playing, not winning. Games shorter than 3 minutes do not count."
    ],
-   "achievementCount": 113,
-   "points": 1770,
+   "achievementCount": 102,
+   "points": 1405,
    "achievements": [
     {
      "id": "nod-1",
@@ -2131,83 +1900,6 @@
      "description": "Play a game on Tiberium Gardens III.",
      "points": 5,
      "group": "Maps"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -2221,8 +1913,8 @@
     "Campaign achievements come from your save games (Vault never touches the game, which has online play). The game saves automatically between missions; saving during a mission helps too.",
     "Skirmish achievements come from the replay the game saves after every game (Documents\\Command and Conquer 3 Tiberium Wars\\Replays). Replays do not record who won, so these are about playing, not winning. Games shorter than 3 minutes do not count."
    ],
-   "achievementCount": 126,
-   "points": 1955,
+   "achievementCount": 115,
+   "points": 1590,
    "achievements": [
     {
      "id": "gdi-n1",
@@ -3028,83 +2720,6 @@
      "description": "Play a game on Bordertown Beatdown.",
      "points": 5,
      "group": "Maps"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -3119,8 +2734,8 @@
     "Campaign on Hard counts missions finished while the campaign difficulty is set to Hard, after Vault has seen your profile once.",
     "Skirmish achievements come from the replay the game saves after every game (Documents\\Command & Conquer 4 Tiberian Twilight\\Replays). Replays do not record who won, so these are about playing, not winning. Games shorter than 3 minutes do not count."
    ],
-   "achievementCount": 83,
-   "points": 1605,
+   "achievementCount": 72,
+   "points": 1240,
    "achievements": [
     {
      "id": "gdi-1",
@@ -3625,83 +3240,6 @@
      "description": "Play a game on Afflicted Arena.",
      "points": 5,
      "group": "Maps"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -3715,8 +3253,8 @@
     "Mission achievements unlock the moment the victory message appears.",
     "Build checked: Steam 2025 re-release (Game.dat a5436346871e3be33faac242e69a42c2)."
    ],
-   "achievementCount": 80,
-   "points": 1535,
+   "achievementCount": 69,
+   "points": 1170,
    "achievements": [
     {
      "id": "usa01",
@@ -4200,83 +3738,6 @@
      "description": "Win a match after losing 100 or more units.",
      "points": 15,
      "group": "Victories"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -4290,8 +3751,8 @@
     "Mission achievements unlock the moment the victory message appears.",
     "Build checked: Steam 2025 re-release (Game.dat bd53837403b5015f6008ef6aca6ecc9d)."
    ],
-   "achievementCount": 94,
-   "points": 2095,
+   "achievementCount": 83,
+   "points": 1730,
    "achievements": [
     {
      "id": "usa01",
@@ -4873,83 +4334,6 @@
      "description": "Beat General Leang in the Generals' Challenge.",
      "points": 10,
      "group": "Generals' Challenge — opponents"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -4963,8 +4347,8 @@
     "Mission achievements unlock when the next mission starts loading after a win.",
     "The last mission of each campaign ends the game instead of loading another, so it can't be tracked yet."
    ],
-   "achievementCount": 69,
-   "points": 1115,
+   "achievementCount": 58,
+   "points": 750,
    "achievements": [
     {
      "id": "allied01",
@@ -5371,83 +4755,6 @@
      "description": "Reach the last Soviet mission.",
      "points": 20,
      "group": "Milestones"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -5460,8 +4767,8 @@
    "notes": [
     "Online and modem/LAN games are excluded, so nothing here touches CnCNet ladder play."
    ],
-   "achievementCount": 90,
-   "points": 2100,
+   "achievementCount": 79,
+   "points": 1735,
    "achievements": [
     {
      "id": "allied-01",
@@ -6015,83 +5322,6 @@
      "description": "Lose a skirmish. It happens to every commander.",
      "points": 5,
      "group": "Skirmish"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -6105,8 +5335,8 @@
     "Campaign achievements come from your save games (Vault never touches the game, which has online play). The game saves automatically between missions; saving during a mission helps too.",
     "Skirmish achievements come from the replay the game saves after every game (Documents\\Red Alert 3\\Replays). Replays do not record who won, so these are about playing, not winning. Games shorter than 3 minutes do not count."
    ],
-   "achievementCount": 119,
-   "points": 1795,
+   "achievementCount": 108,
+   "points": 1430,
    "achievements": [
     {
      "id": "allies-1",
@@ -6863,83 +6093,6 @@
      "description": "Play a game on Neon Crisis.",
      "points": 5,
      "group": "Maps"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -6953,8 +6106,8 @@
     "Campaign achievements come from your save games (Vault never touches the game, which has online play). The game saves automatically between missions; saving during a mission helps too.",
     "Skirmish achievements come from the replay the game saves after every game (Documents\\Red Alert 3 Uprising\\Replays). Replays do not record who won, so these are about playing, not winning. Games shorter than 3 minutes do not count."
    ],
-   "achievementCount": 92,
-   "points": 1595,
+   "achievementCount": 81,
+   "points": 1230,
    "achievements": [
     {
      "id": "allies-1",
@@ -7522,83 +6675,6 @@
      "description": "Play a game on Holdout Keep.",
      "points": 5,
      "group": "Maps"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -7613,8 +6689,8 @@
     "Mission achievements unlock when the score screen after a campaign mission appears.",
     "Playing a single mission from \"Replay level\" does not count, only the campaign."
    ],
-   "achievementCount": 83,
-   "points": 1530,
+   "achievementCount": 72,
+   "points": 1165,
    "achievements": [
     {
      "id": "m00",
@@ -8119,83 +7195,6 @@
      "description": "Pick up 50 powerups.",
      "points": 10,
      "group": "Exploration"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -8209,8 +7208,8 @@
     "Mission names are matched as GDI<n>… / NOD<n>… (e.g. GDI1A, NOD10A). To be confirmed with a live test: check the \"Mission file\" value on the test page.",
     "Online and modem/LAN games are excluded, so nothing here touches CnCNet ladder play."
    ],
-   "achievementCount": 89,
-   "points": 2090,
+   "achievementCount": 78,
+   "points": 1725,
    "achievements": [
     {
      "id": "gdi-01",
@@ -8757,83 +7756,6 @@
      "description": "Lose a skirmish. It happens to every commander.",
      "points": 5,
      "group": "Skirmish"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -8847,8 +7769,8 @@
     "Live-tested 16 Oct 2026. While a match loads the player record briefly holds garbage (2,097,184 credits etc. for ~2s); the gate rejects it.",
     "Online and modem/LAN games are excluded, so nothing here touches CnCNet ladder play."
    ],
-   "achievementCount": 168,
-   "points": 3290,
+   "achievementCount": 157,
+   "points": 2925,
    "achievements": [
     {
      "id": "allied-01",
@@ -9948,83 +8870,6 @@
      "description": "Lose a skirmish. It happens to every commander.",
      "points": 5,
      "group": "Skirmish"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -10039,8 +8884,8 @@
     "Save a game once in each new mission and the mission before it counts as finished.",
     "Untested: Vault hasn't seen a Commandos 2 save yet, so if nothing pops after saving, send a test report."
    ],
-   "achievementCount": 62,
-   "points": 840,
+   "achievementCount": 51,
+   "points": 475,
    "achievements": [
     {
      "id": "boot-camp",
@@ -10398,83 +9243,6 @@
      "description": "Save your game 250 times.",
      "points": 25,
      "group": "Saving"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -10488,8 +9256,8 @@
     "Vault reads your save games (the Output folder in the game folder) and never touches the game.",
     "Save a game once in each mission you reach. The campaigns can be played in any order."
    ],
-   "achievementCount": 61,
-   "points": 930,
+   "achievementCount": 50,
+   "points": 565,
    "achievements": [
     {
      "id": "training",
@@ -10840,83 +9608,6 @@
      "description": "Save your game 250 times.",
      "points": 25,
      "group": "Saving"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -10931,8 +9622,8 @@
     "Save a game once in each new mission (Esc, Save) and the mission before it counts as finished.",
     "Untested: Vault hasn't seen a Commandos save yet, so if nothing pops after saving, send a test report."
    ],
-   "achievementCount": 60,
-   "points": 815,
+   "achievementCount": 49,
+   "points": 450,
    "achievements": [
     {
      "id": "beat-01",
@@ -11276,83 +9967,6 @@
      "description": "Save your game 250 times.",
      "points": 25,
      "group": "Saving"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -11367,8 +9981,8 @@
     "Save a game once in each new mission (Esc, Save) and the mission before it counts as finished.",
     "Untested: Vault hasn't seen a Commandos save yet, so if nothing pops after saving, send a test report."
    ],
-   "achievementCount": 60,
-   "points": 955,
+   "achievementCount": 49,
+   "points": 590,
    "achievements": [
     {
      "id": "beat-01",
@@ -11712,83 +10326,6 @@
      "description": "Save your game 250 times.",
      "points": 25,
      "group": "Saving"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -11801,8 +10338,8 @@
    "notes": [
     "Vault reads your save folders (data\\save) and never touches the game. A level counts once a save includes it, so quick-save (F6) or let the game save at level changes."
    ],
-   "achievementCount": 64,
-   "points": 1135,
+   "achievementCount": 53,
+   "points": 770,
    "achievements": [
     {
      "id": "level-e1m1",
@@ -12174,83 +10711,6 @@
      "description": "Reach every one of the 15 level parts of Episode 4 (San Francisco, 2030).",
      "points": 30,
      "group": "Episode 4: San Francisco, 2030"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -12264,8 +10724,8 @@
     "Bonus goals for DAVE THE DIVER on top of its Steam achievements: the full sea-life collection, every boss trophy, big catches, the sushi bar, and the In the Jungle DLC (which has no Steam achievements).",
     "Read from your save files (AppData\\LocalLow\\nexon\\DAVE THE DIVER). Progress counts from everything Vault has seen in your saves, so playing on and saving keeps adding to it."
    ],
-   "achievementCount": 145,
-   "points": 3205,
+   "achievementCount": 134,
+   "points": 2840,
    "achievements": [
     {
      "id": "sea-10",
@@ -13204,83 +11664,6 @@
      "description": "Have 1,000 jungle Artisan's Flame at once.",
      "points": 25,
      "group": "In the Jungle"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -13294,8 +11677,8 @@
     "Vault reads your Death Rally save slots and never touches the game.",
     "Achievements count when the game saves: save from the menu between races, or press F2 to quick save during a race. Old saves count too."
    ],
-   "achievementCount": 61,
-   "points": 1365,
+   "achievementCount": 50,
+   "points": 1000,
    "achievements": [
     {
      "id": "car-vagabond",
@@ -13646,83 +12029,6 @@
      "description": "Reach number one on \"Petrol in My Veins\", the hardest difficulty.",
      "points": 50,
      "group": "Rankings"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -13736,8 +12042,8 @@
     "Deus Ex writes a log (System\\DeusEx.log) that records every map it loads. Vault reads it, so nothing touches the game.",
     "Each map unlocks when it loads, including from a saved game. Your last session counts even if Vault was closed."
    ],
-   "achievementCount": 103,
-   "points": 1040,
+   "achievementCount": 92,
+   "points": 675,
    "achievements": [
     {
      "id": "m00",
@@ -14382,83 +12688,6 @@
      "description": "See the Helios ending: merge with the AI.",
      "points": 50,
      "group": "Endings"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -14474,8 +12703,8 @@
     "Multiplayer heroes save all the time, so their achievements pop almost straight away.",
     "Kills and quests come from the saved game, so they're counted per hero and added up across all your heroes."
    ],
-   "achievementCount": 117,
-   "points": 2485,
+   "achievementCount": 106,
+   "points": 2120,
    "achievements": [
     {
      "id": "enter",
@@ -15218,83 +13447,6 @@
      "description": "Slay 75 different kinds of monster.",
      "points": 40,
      "group": "Slaying"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -15308,8 +13460,8 @@
     "Vault reads your saved games (DynamicResources\\Layouts in the game folder) and never touches the game. Achievements pop when you save.",
     "The tutorial base does not count. Every save you have counts, so older saves unlock what they show."
    ],
-   "achievementCount": 75,
-   "points": 1500,
+   "achievementCount": 64,
+   "points": 1135,
    "achievements": [
     {
      "id": "lair",
@@ -15758,83 +13910,6 @@
      "description": "Steal 14 different treasures over your games.",
      "points": 60,
      "group": "Stolen loot"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -15849,8 +13924,8 @@
     "Save once in each new mission: the missions before it count as beaten. The last mission can only count as reached.",
     "Not yet tested on a real save. If nothing pops after saving, send a test report from the game page."
    ],
-   "achievementCount": 63,
-   "points": 1430,
+   "achievementCount": 52,
+   "points": 1065,
    "achievements": [
     {
      "id": "surv-1",
@@ -16215,83 +14290,6 @@
      "description": "Reach the final mission with every side.",
      "points": 50,
      "group": "Milestones"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -16305,8 +14303,8 @@
     "Vault reads your save games and never touches the game. The game saves at the start of every level, so finishing an episode pops its achievement as the next one starts.",
     "Episodes count from any save, so old saves count too. Only the furthest level matters, not the difficulty."
    ],
-   "achievementCount": 61,
-   "points": 850,
+   "achievementCount": 50,
+   "points": 485,
    "achievements": [
     {
      "id": "ep-01",
@@ -16657,83 +14655,6 @@
      "description": "Have 3 different save files.",
      "points": 5,
      "group": "Saving"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -16748,8 +14669,8 @@
     "Quests count as done when the Pip-Boy crosses them off.",
     "Every save slot counts, so old saves you already have unlock what they show."
    ],
-   "achievementCount": 81,
-   "points": 1585,
+   "achievementCount": 70,
+   "points": 1220,
    "achievements": [
     {
      "id": "leave-vault",
@@ -17240,83 +15161,6 @@
      "description": "Spend a whole year in the wasteland.",
      "points": 20,
      "group": "Deeds"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -17331,8 +15175,8 @@
     "Places count when you have a save made there. Fallout 3 autosaves when you travel, so most places pop by themselves. Your highest level and longest play time across all saves count.",
     "Saves you already have count too."
    ],
-   "achievementCount": 91,
-   "points": 1435,
+   "achievementCount": 80,
+   "points": 1070,
    "achievements": [
     {
      "id": "level-2",
@@ -17893,83 +15737,6 @@
      "description": "Save a game in 50 different places.",
      "points": 35,
      "group": "Places"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -17983,8 +15750,8 @@
     "Vault reads your save games (the SaveGame folder) and never touches the game.",
     "Save in each new place you reach and its achievement counts. Old saves count too."
    ],
-   "achievementCount": 62,
-   "points": 1035,
+   "achievementCount": 51,
+   "points": 670,
    "achievements": [
     {
      "id": "01-port",
@@ -18342,83 +16109,6 @@
      "description": "Have 8 different save slots.",
      "points": 10,
      "group": "Saving"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -18432,8 +16122,8 @@
     "Vault reads your save files (valve\\SAVE) and never touches the game. Half-Life saves when you change levels and when you save, so chapters pop up as you go.",
     "Any map named in any of your saves counts, so old saves count too."
    ],
-   "achievementCount": 66,
-   "points": 1110,
+   "achievementCount": 55,
+   "points": 745,
    "achievements": [
     {
      "id": "chapter-hazard",
@@ -18819,83 +16509,6 @@
      "description": "Reach every one of the 103 campaign maps.",
      "points": 50,
      "group": "Every area"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -18910,8 +16523,8 @@
     "Vault turns the game log on for you (it adds a [Power] section to Hearthstone's log.config). If Hearthstone was open when you installed or updated Vault, restart it once.",
     "Games played before the log was on can't count. Class wins count from your first logged game."
    ],
-   "achievementCount": 107,
-   "points": 3195,
+   "achievementCount": 96,
+   "points": 2830,
    "achievements": [
     {
      "id": "deathknight-1",
@@ -19584,83 +17197,6 @@
      "description": "Win a game that lasts 30 minutes or longer.",
      "points": 15,
      "group": "Challenges"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -19677,8 +17213,8 @@
     "If several people play on this PC, Vault counts the account with the most replays. You can pick another in Settings → Heroes of the Storm.",
     "Hero and battleground names come from the replay in the game's language; per-hero and per-map achievements currently match the English names."
    ],
-   "achievementCount": 350,
-   "points": 4518,
+   "achievementCount": 339,
+   "points": 4153,
    "achievements": [
     {
      "id": "first-match",
@@ -22052,83 +19588,6 @@
      "description": "Win 10 matches as Zul'jin.",
      "points": 10,
      "group": "Hero mastery"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -22143,8 +19602,8 @@
     "Read-only: Vault watches the game's memory and never changes it.",
     "Save achievements come from the save games in the Save folder: each one names the mission it was made in. Saving is limited on harder difficulties and impossible on Professional."
    ],
-   "achievementCount": 62,
-   "points": 860,
+   "achievementCount": 51,
+   "points": 495,
    "achievements": [
     {
      "id": "mission-1",
@@ -22502,83 +19961,6 @@
      "description": "Keep 7 different save files.",
      "points": 10,
      "group": "Saves"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -22593,8 +19975,8 @@
     "Save once in each new mission (or use \"save and continue\" between missions) and the mission before it counts as finished.",
     "Untested: Vault hasn't seen a Blood Money save yet, so if nothing pops after saving, send a test report."
    ],
-   "achievementCount": 60,
-   "points": 815,
+   "achievementCount": 49,
+   "points": 450,
    "achievements": [
     {
      "id": "beat-m00",
@@ -22938,83 +20320,6 @@
      "description": "Save your game 150 times.",
      "points": 25,
      "group": "Saving"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -23028,8 +20333,8 @@
     "Each mission's achievement unlocks when the next mission starts loading.",
     "Read-only: Vault watches the game's memory and never changes it."
    ],
-   "achievementCount": 24,
-   "points": 530,
+   "achievementCount": 13,
+   "points": 165,
    "achievements": [
     {
      "id": "mission-1",
@@ -23121,83 +20426,6 @@
      "description": "Finish the game at the Sanitarium.",
      "points": 50,
      "group": "Sanitarium"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -23212,8 +20440,8 @@
     "Read-only: Vault watches the game's memory and never changes it.",
     "Save achievements come from your save games: each one names the mission it was made in. Saving is limited on harder difficulties."
    ],
-   "achievementCount": 42,
-   "points": 690,
+   "achievementCount": 31,
+   "points": 325,
    "achievements": [
     {
      "id": "mission-1",
@@ -23431,83 +20659,6 @@
      "description": "Save your game during a Romania mission (Asylum Aftermath or The Meat King's Party).",
      "points": 5,
      "group": "Saves: Romania"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -23522,8 +20673,8 @@
     "Chapter achievements come from your save games: save once in each new chapter and the chapter before it counts, even if Vault was closed while you played.",
     "Build checked: Steam maxpayne2.exe (v1.01, DLLs dated 17 Oct 2003)."
    ],
-   "achievementCount": 72,
-   "points": 950,
+   "achievementCount": 61,
+   "points": 585,
    "achievements": [
     {
      "id": "mp2-start",
@@ -23951,83 +21102,6 @@
      "description": "Make 150 saves.",
      "points": 10,
      "group": "Saves"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -24041,8 +21115,8 @@
     "Vault reads the game's record tables (FeData\\pc\\stats) and never touches the game.",
     "A record counts as yours when it carries your driver name from the game's options. Records you already hold count too."
    ],
-   "achievementCount": 68,
-   "points": 1205,
+   "achievementCount": 57,
+   "points": 840,
    "achievements": [
     {
      "id": "oval-record",
@@ -24442,83 +21516,6 @@
      "description": "Hold the best lap record on every track.",
      "points": 50,
      "group": "Records"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -24531,8 +21528,8 @@
    "notes": [
     "Counts come from the game's own completion stats, so loading a save gives you everything it has already done."
    ],
-   "achievementCount": 77,
-   "points": 1430,
+   "achievementCount": 66,
+   "points": 1065,
    "achievements": [
     {
      "id": "missions1",
@@ -24995,83 +21992,6 @@
      "description": "Reach 90% completion.",
      "points": 35,
      "group": "Completion"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -25086,8 +22006,8 @@
     "Combat achievements use the game's own mission statistics, which count per mission.",
     "Read from the game DLL, which Steam doesn't scramble."
    ],
-   "achievementCount": 71,
-   "points": 1310,
+   "achievementCount": 60,
+   "points": 945,
    "achievements": [
     {
      "id": "map-kejim_post",
@@ -25508,83 +22428,6 @@
      "description": "Find every secret in a mission that has at least 3.",
      "points": 35,
      "group": "Secrets"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -25599,8 +22442,8 @@
     "Combat achievements use the game's own mission statistics, which count per mission.",
     "Read from the game DLL, which Steam doesn't scramble."
    ],
-   "achievementCount": 74,
-   "points": 1455,
+   "achievementCount": 63,
+   "points": 1090,
    "achievements": [
     {
      "id": "map-yavin1",
@@ -26042,83 +22885,6 @@
      "description": "Find every secret in a mission that has at least 3.",
      "points": 35,
      "group": "Secrets"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -26134,8 +22900,8 @@
     "Covers the Rebel and Empire campaigns and the Forces of Corruption campaign with Tyber Zann.",
     "Every save also names its tutorial or Galactic Conquest map, so tutorials and Galactic Conquest games count as soon as you save once in them (wins are not recorded in saves)."
    ],
-   "achievementCount": 94,
-   "points": 1370,
+   "achievementCount": 83,
+   "points": 1005,
    "achievements": [
     {
      "id": "rebel-start",
@@ -26717,83 +23483,6 @@
      "description": "Record 15 story battles across all campaigns.",
      "points": 30,
      "group": "Milestones"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -26806,8 +23495,8 @@
    "notes": [
     "Area achievements unlock when an area finishes loading (loading a save counts too)."
    ],
-   "achievementCount": 126,
-   "points": 1305,
+   "achievementCount": 115,
+   "points": 940,
    "achievements": [
     {
      "id": "planet-tar",
@@ -27613,83 +24302,6 @@
      "description": "Reach the final moment on the Star Forge viewing platform.",
      "points": 50,
      "group": "Story"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -27704,8 +24316,8 @@
     "Read-only: Vault watches the game's memory and never changes it. Ultimate Sith Edition, Steam.",
     "Level numbers come from the community speedrun auto-splitter."
    ],
-   "achievementCount": 23,
-   "points": 540,
+   "achievementCount": 12,
+   "points": 175,
    "achievements": [
     {
      "id": "level-vader",
@@ -27790,83 +24402,6 @@
      "description": "Start a New Game+ run with your powers carried over.",
      "points": 15,
      "group": "Extras"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -27884,8 +24419,8 @@
     "Your last game counts even if Vault was closed while you played (StarCraft keeps the last replay).",
     "Campaign missions: StarCraft keeps campaign progress on Blizzard's servers, so Vault learns it from your save games. Save a game once in each new mission (Menu, Save Game) and the missions before it count as beaten."
    ],
-   "achievementCount": 172,
-   "points": 2970,
+   "achievementCount": 161,
+   "points": 2605,
    "achievements": [
     {
      "id": "gg",
@@ -29013,83 +25548,6 @@
      "description": "Brood War, Queen of Blades: reach mission 8. (Save a game in it.)",
      "points": 20,
      "group": "Campaign: Queen of Blades (Brood War)"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -29104,8 +25562,8 @@
     "Operations you already won count too. Difficulty achievements use the hardest difficulty you won each operation on.",
     "This is the original Supreme Commander campaign, not Forged Alliance."
    ],
-   "achievementCount": 84,
-   "points": 1995,
+   "achievementCount": 73,
+   "points": 1630,
    "achievements": [
     {
      "id": "uef-1",
@@ -29617,83 +26075,6 @@
      "description": "Complete every bonus objective in 9 operations.",
      "points": 30,
      "group": "Objectives"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -29708,8 +26089,8 @@
     "Save once in each new mission: the missions before it count as beaten. The last mission can only count as reached.",
     "Not yet tested on a real save. If nothing pops after saving, send a test report from the game page."
    ],
-   "achievementCount": 64,
-   "points": 1450,
+   "achievementCount": 53,
+   "points": 1085,
    "achievements": [
     {
      "id": "surv-1",
@@ -30081,83 +26462,6 @@
      "description": "Reach the final mission with every side.",
      "points": 50,
      "group": "Milestones"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -30173,8 +26477,8 @@
     "Campaign on Hard: set the difficulty to Hard before you play the chapter. Chapters you beat before Vault was watching do not count as Hard.",
     "Skirmish and lifetime achievements come from the replay Warcraft III saves after every game (LastReplay.w3g). Turning on \"Auto-save replays\" in Options keeps every game, so none are missed."
    ],
-   "achievementCount": 131,
-   "points": 2750,
+   "achievementCount": 120,
+   "points": 2385,
    "achievements": [
     {
      "id": "tutorial-1",
@@ -31015,83 +27319,6 @@
      "description": "Beat Insane computers in 10 games.",
      "points": 40,
      "group": "Lifetime"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -31106,8 +27333,8 @@
     "Includes Spear of Destiny, which comes with the Steam version.",
     "Save layout from id Software's released Wolfenstein 3D source code."
    ],
-   "achievementCount": 76,
-   "points": 1615,
+   "achievementCount": 65,
+   "points": 1250,
    "achievements": [
     {
      "id": "e1-start",
@@ -31563,83 +27790,6 @@
      "description": "Have a score of 200,000 in a Spear of Destiny save.",
      "points": 25,
      "group": "Skill"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -31653,8 +27803,8 @@
     "Optional bonus list on top of the game's own achievements: medals, career milestones and mastery from your World of Tanks service record.",
     "Read from Wargaming's official public API with a free application ID you add in Settings → World of Tanks. Vault never touches the game itself. Medals update within about 10 minutes of a battle."
    ],
-   "achievementCount": 223,
-   "points": 6421,
+   "achievementCount": 212,
+   "points": 6056,
    "achievements": [
     {
      "id": "hero-warrior-1",
@@ -33139,83 +29289,6 @@
      "description": "Earn the Ace Tanker badge 50 times in total.",
      "points": 45,
      "group": "Mastery & garage"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   },
@@ -33230,8 +29303,8 @@
     "Selecting a team that already has medals gives you the achievements it has earned.",
     "Build checked: Steam WA.exe 3.8.1 (November 2020)."
    ],
-   "achievementCount": 71,
-   "points": 1140,
+   "achievementCount": 60,
+   "points": 775,
    "achievements": [
     {
      "id": "mission01",
@@ -33652,83 +29725,6 @@
      "description": "Win 10 deathmatches with one team.",
      "points": 25,
      "group": "Deathmatch"
-    },
-    {
-     "id": "d-1h",
-     "title": "Getting Comfortable",
-     "description": "Play for 1 hour. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-5h",
-     "title": "Settling In",
-     "description": "Play for 5 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 10,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-10h",
-     "title": "Hooked",
-     "description": "Play for 10 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-25h",
-     "title": "Devoted",
-     "description": "Play for 25 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 25,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-50h",
-     "title": "Obsessed",
-     "description": "Play for 50 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 40,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-100h",
-     "title": "Lifer",
-     "description": "Play for 100 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-250h",
-     "title": "Part of the Furniture",
-     "description": "Play for 250 hours. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 100,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days3",
-     "title": "Coming Back",
-     "description": "Play on 3 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 5,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days10",
-     "title": "Regular",
-     "description": "Play on 10 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 15,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days30",
-     "title": "A Month of Play",
-     "description": "Play on 30 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 30,
-     "group": "Dedication"
-    },
-    {
-     "id": "d-days100",
-     "title": "Daily Ritual",
-     "description": "Play on 100 different days. Hours count from your store and Vault; days count from when Vault is running.",
-     "points": 60,
-     "group": "Dedication"
     }
    ]
   }
