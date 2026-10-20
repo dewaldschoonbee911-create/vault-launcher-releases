@@ -17,6 +17,15 @@ jobs:
       - name: Read version
         id: v
         run: echo "version=$(grep '^version:' latest.yml | awk '{print $2}')" >> "$GITHUB_OUTPUT"
+      - name: Build portable zip (no installer)
+        run: |
+          sudo apt-get install -y p7zip-full >/dev/null
+          V=${{ steps.v.outputs.version }}
+          7z x -y "VaultLauncher-Setup-$V.exe" -onsis >/dev/null
+          mkdir -p "portable/Vault Launcher"
+          7z x -y 'nsis/$PLUGINSDIR/app-64.7z' -o"portable/Vault Launcher" >/dev/null
+          printf 'This copy of Vault Launcher runs without installing.\r\nTo update, download the new zip from https://steamvault.dev/vaultlauncher and replace this folder.\r\n' > "portable/Vault Launcher/portable.txt"
+          (cd portable && zip -qr9 "../VaultLauncher-Portable-$V.zip" "Vault Launcher")
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
@@ -27,6 +36,7 @@ jobs:
           files: |
             *.exe
             *.blockmap
+            *.zip
             latest.yml
       - name: Remove upload branch
         run: git push origin --delete "${GITHUB_REF_NAME}"
