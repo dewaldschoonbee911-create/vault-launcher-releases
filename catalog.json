@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-18T10:27:59.819Z",
- "launcherVersion": "0.1.69",
+ "generatedAt": "2026-10-20T04:32:29.814Z",
+ "launcherVersion": "0.1.70",
  "sets": [
   {
    "id": "anachronox",
@@ -26477,8 +26477,8 @@
     "Campaign on Hard: set the difficulty to Hard before you play the chapter. Chapters you beat before Vault was watching do not count as Hard.",
     "Skirmish and lifetime achievements come from the replay Warcraft III saves after every game (LastReplay.w3g). Turning on \"Auto-save replays\" in Options keeps every game, so none are missed."
    ],
-   "achievementCount": 120,
-   "points": 2385,
+   "achievementCount": 136,
+   "points": 2650,
    "achievements": [
     {
      "id": "tutorial-1",
@@ -27046,6 +27046,118 @@
      "description": "Beat any campaign chapter.",
      "points": 5,
      "group": "Milestones"
+    },
+    {
+     "id": "h-thrall-5",
+     "title": "Son of Durotan",
+     "description": "Exodus of the Horde: carry Thrall into a mission at level 5.",
+     "points": 15,
+     "group": "Hero challenges"
+    },
+    {
+     "id": "h-thrall-cl",
+     "title": "Storm Caller",
+     "description": "Exodus of the Horde: train Thrall's Chain Lightning to level 3.",
+     "points": 15,
+     "group": "Hero challenges"
+    },
+    {
+     "id": "h-thrall-sf",
+     "title": "Spirit Wolves",
+     "description": "Exodus of the Horde: train Thrall's Feral Spirit to level 3.",
+     "points": 15,
+     "group": "Hero challenges"
+    },
+    {
+     "id": "h-thrall-gear",
+     "title": "Geared for War",
+     "description": "Exodus of the Horde: carry 3 permanent items (not potions or scrolls) into a mission with Thrall.",
+     "points": 10,
+     "group": "Hero challenges"
+    },
+    {
+     "id": "h-arthas-5",
+     "title": "Prince of Lordaeron",
+     "description": "The Scourge of Lordaeron: carry Arthas into a mission at level 5.",
+     "points": 15,
+     "group": "Hero challenges"
+    },
+    {
+     "id": "h-arthas-8",
+     "title": "Champion of the Light",
+     "description": "The Scourge of Lordaeron: carry Arthas into a mission at level 8.",
+     "points": 25,
+     "group": "Hero challenges"
+    },
+    {
+     "id": "h-arthas-hb",
+     "title": "Light's Embrace",
+     "description": "The Scourge of Lordaeron: train Arthas's Holy Light to level 3.",
+     "points": 15,
+     "group": "Hero challenges"
+    },
+    {
+     "id": "h-arthas-ds",
+     "title": "Unbreakable",
+     "description": "The Scourge of Lordaeron: train Arthas's Divine Shield to level 3.",
+     "points": 15,
+     "group": "Hero challenges"
+    },
+    {
+     "id": "h-arthas-ad",
+     "title": "Aura of Devotion",
+     "description": "The Scourge of Lordaeron: train Arthas's Devotion Aura to level 3.",
+     "points": 15,
+     "group": "Hero challenges"
+    },
+    {
+     "id": "h-arthas-re",
+     "title": "Rise Again",
+     "description": "The Scourge of Lordaeron: Arthas learns Resurrection.",
+     "points": 20,
+     "group": "Hero challenges"
+    },
+    {
+     "id": "h-arthas-gear",
+     "title": "Armed to the Teeth",
+     "description": "The Scourge of Lordaeron: carry 4 permanent items into a mission with Arthas.",
+     "points": 15,
+     "group": "Hero challenges"
+    },
+    {
+     "id": "h-any-mastery",
+     "title": "Mastery",
+     "description": "Any campaign: train one of a hero's abilities to level 3.",
+     "points": 10,
+     "group": "Hero challenges"
+    },
+    {
+     "id": "h-any-ult",
+     "title": "Ultimate Power",
+     "description": "Any campaign: a hero learns their ultimate ability.",
+     "points": 20,
+     "group": "Hero challenges"
+    },
+    {
+     "id": "h-any-7",
+     "title": "Seasoned Hero",
+     "description": "Any campaign: carry a hero into a mission at level 7.",
+     "points": 20,
+     "group": "Hero challenges"
+    },
+    {
+     "id": "h-any-10",
+     "title": "Hero of Legend",
+     "description": "Any campaign: carry a hero into a mission at level 10.",
+     "points": 30,
+     "group": "Hero challenges"
+    },
+    {
+     "id": "h-any-bag",
+     "title": "Pack Mule",
+     "description": "Any campaign: carry a hero into a mission with all six bag slots full.",
+     "points": 10,
+     "group": "Hero challenges"
     },
     {
      "id": "s-first-win",
