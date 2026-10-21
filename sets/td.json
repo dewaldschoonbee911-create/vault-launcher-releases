@@ -1,0 +1,537 @@
+{
+  "id": "td",
+  "title": "Command & Conquer (Tiberian Dawn)",
+  "exeNames": [
+    "c&c95.exe"
+  ],
+  "md5": [
+    "41edb3691584a3e73ccce4b0bd1e18fb"
+  ],
+  "layoutProbes": [
+    {
+      "address": "4f3575",
+      "bytes": "5343256325303264256325632e494e4900",
+      "note": "scenario name format string"
+    }
+  ],
+  "version": 1,
+  "pollHz": 10,
+  "settleSeconds": 2,
+  "notes": [
+    "Mission achievements unlock when the next mission starts loading after a win.",
+    "The last mission of each campaign ends the game instead of loading another, so it can't be tracked yet."
+  ],
+  "watches": [
+    {
+      "id": "mission",
+      "label": "Current mission file",
+      "address": "53e4b0",
+      "size": "str",
+      "length": 12
+    }
+  ],
+  "testGuide": [
+    {
+      "title": "Start Command & Conquer (Tiberian Dawn)",
+      "detail": "Click Play on the game page and wait for the main menu."
+    },
+    {
+      "title": "Start the campaign",
+      "detail": "Start a new game on either side. \"Current mission file\" should show something like SCG01EA."
+    },
+    {
+      "title": "Win the first mission",
+      "detail": "When mission 2 starts loading, \"Mission 1\" pops."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "gdi01",
+      "title": "GDI Mission 1",
+      "description": "Win GDI campaign mission 1.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=12848_d0x53e4b3=12592",
+      "group": "GDI campaign"
+    },
+    {
+      "id": "gdi02",
+      "title": "GDI Mission 2",
+      "description": "Win GDI campaign mission 2.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13104_d0x53e4b3=12848",
+      "group": "GDI campaign"
+    },
+    {
+      "id": "gdi03",
+      "title": "GDI Mission 3",
+      "description": "Win GDI campaign mission 3.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13360_d0x53e4b3=13104",
+      "group": "GDI campaign"
+    },
+    {
+      "id": "gdi04",
+      "title": "GDI Mission 4",
+      "description": "Win GDI campaign mission 4.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13616_d0x53e4b3=13360",
+      "group": "GDI campaign"
+    },
+    {
+      "id": "gdi05",
+      "title": "GDI Mission 5",
+      "description": "Win GDI campaign mission 5.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13872_d0x53e4b3=13616",
+      "group": "GDI campaign"
+    },
+    {
+      "id": "gdi06",
+      "title": "GDI Mission 6",
+      "description": "Win GDI campaign mission 6.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=14128_d0x53e4b3=13872",
+      "group": "GDI campaign"
+    },
+    {
+      "id": "gdi07",
+      "title": "GDI Mission 7",
+      "description": "Win GDI campaign mission 7.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=14384_d0x53e4b3=14128",
+      "group": "GDI campaign"
+    },
+    {
+      "id": "gdi08",
+      "title": "GDI Mission 8",
+      "description": "Win GDI campaign mission 8.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=14640_d0x53e4b3=14384",
+      "group": "GDI campaign"
+    },
+    {
+      "id": "gdi09",
+      "title": "GDI Mission 9",
+      "description": "Win GDI campaign mission 9.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=12337_d0x53e4b3=14640",
+      "group": "GDI campaign"
+    },
+    {
+      "id": "gdi10",
+      "title": "GDI Mission 10",
+      "description": "Win GDI campaign mission 10.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=12593_d0x53e4b3=12337",
+      "group": "GDI campaign"
+    },
+    {
+      "id": "gdi11",
+      "title": "GDI Mission 11",
+      "description": "Win GDI campaign mission 11.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=12849_d0x53e4b3=12593",
+      "group": "GDI campaign"
+    },
+    {
+      "id": "gdi12",
+      "title": "GDI Mission 12",
+      "description": "Win GDI campaign mission 12.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13105_d0x53e4b3=12849",
+      "group": "GDI campaign"
+    },
+    {
+      "id": "gdi13",
+      "title": "GDI Mission 13",
+      "description": "Win GDI campaign mission 13.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13361_d0x53e4b3=13105",
+      "group": "GDI campaign"
+    },
+    {
+      "id": "gdi14",
+      "title": "GDI Mission 14",
+      "description": "Win GDI campaign mission 14.",
+      "points": 15,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13617_d0x53e4b3=13361",
+      "group": "GDI campaign"
+    },
+    {
+      "id": "gdi-reach05",
+      "title": "GDI: Mission 5",
+      "description": "Reach GDI mission 5 (loading a save of a later mission counts too).",
+      "points": 10,
+      "memaddr": "1=1S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13616S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13872S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=14128S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=14384S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=14640S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=12337S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=12593S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=12849S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13105S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13361S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13617",
+      "group": "Milestones"
+    },
+    {
+      "id": "gdi-reach10",
+      "title": "GDI: Mission 10",
+      "description": "Reach GDI mission 10 (loading a save of a later mission counts too).",
+      "points": 10,
+      "memaddr": "1=1S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=12337S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=12593S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=12849S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13105S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13361S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13617",
+      "group": "Milestones"
+    },
+    {
+      "id": "gdi-final",
+      "title": "GDI: The Final Battle",
+      "description": "Reach the last GDI mission.",
+      "points": 20,
+      "memaddr": "1=1S0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13617",
+      "group": "Milestones"
+    },
+    {
+      "id": "nod01",
+      "title": "Nod Mission 1",
+      "description": "Win Nod campaign mission 1.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=12848_d0x53e4b3=12592",
+      "group": "Nod campaign"
+    },
+    {
+      "id": "nod02",
+      "title": "Nod Mission 2",
+      "description": "Win Nod campaign mission 2.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=13104_d0x53e4b3=12848",
+      "group": "Nod campaign"
+    },
+    {
+      "id": "nod03",
+      "title": "Nod Mission 3",
+      "description": "Win Nod campaign mission 3.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=13360_d0x53e4b3=13104",
+      "group": "Nod campaign"
+    },
+    {
+      "id": "nod04",
+      "title": "Nod Mission 4",
+      "description": "Win Nod campaign mission 4.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=13616_d0x53e4b3=13360",
+      "group": "Nod campaign"
+    },
+    {
+      "id": "nod05",
+      "title": "Nod Mission 5",
+      "description": "Win Nod campaign mission 5.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=13872_d0x53e4b3=13616",
+      "group": "Nod campaign"
+    },
+    {
+      "id": "nod06",
+      "title": "Nod Mission 6",
+      "description": "Win Nod campaign mission 6.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=14128_d0x53e4b3=13872",
+      "group": "Nod campaign"
+    },
+    {
+      "id": "nod07",
+      "title": "Nod Mission 7",
+      "description": "Win Nod campaign mission 7.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=14384_d0x53e4b3=14128",
+      "group": "Nod campaign"
+    },
+    {
+      "id": "nod08",
+      "title": "Nod Mission 8",
+      "description": "Win Nod campaign mission 8.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=14640_d0x53e4b3=14384",
+      "group": "Nod campaign"
+    },
+    {
+      "id": "nod09",
+      "title": "Nod Mission 9",
+      "description": "Win Nod campaign mission 9.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=12337_d0x53e4b3=14640",
+      "group": "Nod campaign"
+    },
+    {
+      "id": "nod10",
+      "title": "Nod Mission 10",
+      "description": "Win Nod campaign mission 10.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=12593_d0x53e4b3=12337",
+      "group": "Nod campaign"
+    },
+    {
+      "id": "nod11",
+      "title": "Nod Mission 11",
+      "description": "Win Nod campaign mission 11.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=12849_d0x53e4b3=12593",
+      "group": "Nod campaign"
+    },
+    {
+      "id": "nod12",
+      "title": "Nod Mission 12",
+      "description": "Win Nod campaign mission 12.",
+      "points": 15,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=13105_d0x53e4b3=12849",
+      "group": "Nod campaign"
+    },
+    {
+      "id": "nod-reach05",
+      "title": "Nod: Mission 5",
+      "description": "Reach Nod mission 5 (loading a save of a later mission counts too).",
+      "points": 10,
+      "memaddr": "1=1S0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=13616S0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=13872S0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=14128S0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=14384S0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=14640S0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=12337S0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=12593S0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=12849S0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=13105",
+      "group": "Milestones"
+    },
+    {
+      "id": "nod-reach10",
+      "title": "Nod: Mission 10",
+      "description": "Reach Nod mission 10 (loading a save of a later mission counts too).",
+      "points": 10,
+      "memaddr": "1=1S0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=12337S0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=12593S0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=12849S0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=13105",
+      "group": "Milestones"
+    },
+    {
+      "id": "nod-final",
+      "title": "Nod: The Final Battle",
+      "description": "Reach the last Nod mission.",
+      "points": 20,
+      "memaddr": "1=1S0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=13105",
+      "group": "Milestones"
+    },
+    {
+      "id": "covert-gdi22",
+      "title": "Covert Ops: GDI Operation 1",
+      "description": "Start GDI Covert Operation 1 from the New Missions menu.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=12850",
+      "group": "Covert Operations"
+    },
+    {
+      "id": "covert-gdi23",
+      "title": "Covert Ops: GDI Operation 2",
+      "description": "Start GDI Covert Operation 2 from the New Missions menu.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13106",
+      "group": "Covert Operations"
+    },
+    {
+      "id": "covert-gdi36",
+      "title": "Covert Ops: GDI Operation 3",
+      "description": "Start GDI Covert Operation 3 from the New Missions menu.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13875",
+      "group": "Covert Operations"
+    },
+    {
+      "id": "covert-gdi38",
+      "title": "Covert Ops: GDI Operation 4",
+      "description": "Start GDI Covert Operation 4 from the New Missions menu.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=14387",
+      "group": "Covert Operations"
+    },
+    {
+      "id": "covert-gdi40",
+      "title": "Covert Ops: GDI Operation 5",
+      "description": "Start GDI Covert Operation 5 from the New Missions menu.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=12340",
+      "group": "Covert Operations"
+    },
+    {
+      "id": "covert-gdi41",
+      "title": "Covert Ops: GDI Operation 6",
+      "description": "Start GDI Covert Operation 6 from the New Missions menu.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=12596",
+      "group": "Covert Operations"
+    },
+    {
+      "id": "covert-gdi50",
+      "title": "Covert Ops: GDI Operation 7",
+      "description": "Start GDI Covert Operation 7 from the New Missions menu.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=12341",
+      "group": "Covert Operations"
+    },
+    {
+      "id": "covert-nod20",
+      "title": "Covert Ops: Nod Operation 1",
+      "description": "Start Nod Covert Operation 1 from the New Missions menu.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=12338",
+      "group": "Covert Operations"
+    },
+    {
+      "id": "covert-nod21",
+      "title": "Covert Ops: Nod Operation 2",
+      "description": "Start Nod Covert Operation 2 from the New Missions menu.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=12594",
+      "group": "Covert Operations"
+    },
+    {
+      "id": "covert-nod30",
+      "title": "Covert Ops: Nod Operation 3",
+      "description": "Start Nod Covert Operation 3 from the New Missions menu.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=12339",
+      "group": "Covert Operations"
+    },
+    {
+      "id": "covert-nod31",
+      "title": "Covert Ops: Nod Operation 4",
+      "description": "Start Nod Covert Operation 4 from the New Missions menu.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=12595",
+      "group": "Covert Operations"
+    },
+    {
+      "id": "covert-nod32",
+      "title": "Covert Ops: Nod Operation 5",
+      "description": "Start Nod Covert Operation 5 from the New Missions menu.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=12851",
+      "group": "Covert Operations"
+    },
+    {
+      "id": "covert-nod33",
+      "title": "Covert Ops: Nod Operation 6",
+      "description": "Start Nod Covert Operation 6 from the New Missions menu.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=13107",
+      "group": "Covert Operations"
+    },
+    {
+      "id": "covert-nod35",
+      "title": "Covert Ops: Nod Operation 7",
+      "description": "Start Nod Covert Operation 7 from the New Missions menu.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=13619",
+      "group": "Covert Operations"
+    },
+    {
+      "id": "covert-nod37",
+      "title": "Covert Ops: Nod Operation 8",
+      "description": "Start Nod Covert Operation 8 from the New Missions menu.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=14131",
+      "group": "Covert Operations"
+    },
+    {
+      "id": "funpark1",
+      "title": "Something Big",
+      "description": "Find the secret dinosaur missions and play mission 1.",
+      "points": 20,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=74_0x53e4b3=12592",
+      "group": "Secrets"
+    },
+    {
+      "id": "funpark2",
+      "title": "Jurassic Mayhem",
+      "description": "Find the secret dinosaur missions and play mission 2.",
+      "points": 20,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=74_0x53e4b3=12848",
+      "group": "Secrets"
+    },
+    {
+      "id": "funpark3",
+      "title": "Extinction Event",
+      "description": "Find the secret dinosaur missions and play mission 3.",
+      "points": 20,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=74_0x53e4b3=13104",
+      "group": "Secrets"
+    },
+    {
+      "id": "funpark4",
+      "title": "Dino Hunter",
+      "description": "Find the secret dinosaur missions and play mission 4.",
+      "points": 20,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=74_0x53e4b3=13360",
+      "group": "Secrets"
+    },
+    {
+      "id": "gdi-final-a",
+      "title": "GDI Final Battle: Route A",
+      "description": "Fight the last GDI mission on map A.",
+      "points": 15,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13617_0xH53e4b5=69_0xH53e4b6=65",
+      "group": "Alternative maps"
+    },
+    {
+      "id": "gdi-final-b",
+      "title": "GDI Final Battle: Route B",
+      "description": "Fight the last GDI mission on map B.",
+      "points": 15,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13617_0xH53e4b5=69_0xH53e4b6=66",
+      "group": "Alternative maps"
+    },
+    {
+      "id": "gdi-final-c",
+      "title": "GDI Final Battle: Route C",
+      "description": "Fight the last GDI mission on map C.",
+      "points": 15,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13617_0xH53e4b5=69_0xH53e4b6=67",
+      "group": "Alternative maps"
+    },
+    {
+      "id": "nod-final-a",
+      "title": "Nod Temple Strike: Route A",
+      "description": "Fight the last Nod mission on map A.",
+      "points": 15,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=13105_0xH53e4b5=69_0xH53e4b6=65",
+      "group": "Alternative maps"
+    },
+    {
+      "id": "nod-final-b",
+      "title": "Nod Temple Strike: Route B",
+      "description": "Fight the last Nod mission on map B.",
+      "points": 15,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=13105_0xH53e4b5=69_0xH53e4b6=66",
+      "group": "Alternative maps"
+    },
+    {
+      "id": "nod-final-c",
+      "title": "Nod Temple Strike: Route C",
+      "description": "Fight the last Nod mission on map C.",
+      "points": 15,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=13105_0xH53e4b5=69_0xH53e4b6=67",
+      "group": "Alternative maps"
+    },
+    {
+      "id": "gdi04-west",
+      "title": "Go West",
+      "description": "Play GDI mission 4 on the western map.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13360_0xH53e4b5=87",
+      "group": "Alternative maps"
+    },
+    {
+      "id": "gdi05-west",
+      "title": "Western Front",
+      "description": "Play GDI mission 5 on the western map.",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=71_0x53e4b3=13616_0xH53e4b5=87",
+      "group": "Alternative maps"
+    },
+    {
+      "id": "nod06-c",
+      "title": "The Third Way",
+      "description": "Play Nod mission 6 on its third map (C).",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=13872_0xH53e4b5=69_0xH53e4b6=67",
+      "group": "Alternative maps"
+    },
+    {
+      "id": "nod07-c",
+      "title": "Road Less Travelled",
+      "description": "Play Nod mission 7 on its third map (C).",
+      "points": 10,
+      "memaddr": "0x53e4b0=17235_0xH53e4b2=66_0x53e4b3=14128_0xH53e4b5=69_0xH53e4b6=67",
+      "group": "Alternative maps"
+    }
+  ]
+}

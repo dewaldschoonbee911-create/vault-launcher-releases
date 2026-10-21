@@ -1,0 +1,820 @@
+{
+  "id": "ra2",
+  "title": "Command & Conquer: Red Alert 2",
+  "version": 4,
+  "resetUnlocksBefore": 4,
+  "authors": [
+    "Vault Launcher"
+  ],
+  "linkFiles": [
+    "game.exe",
+    "ra2.mix"
+  ],
+  "exeNames": [
+    "game.exe"
+  ],
+  "genericExeName": true,
+  "md5": [
+    "799c80c40f28a350b64e52f44f02ea9a"
+  ],
+  "layoutProbes": [
+    {
+      "address": "0x4E5440",
+      "bytes": "8b4424048b914c02000003d089914c020000c204",
+      "note": "HouseClass::GiveMoney: Balance at +0x24C"
+    },
+    {
+      "address": "0x4E7EE0",
+      "bytes": "83ec10538bd9c7442410000000008a833f010000",
+      "note": "HouseClass win routine: IsWinner at +0x13F"
+    }
+  ],
+  "pollHz": 15,
+  "gate": "0xXa35db4!=0_I:0xXa35db4_0xX5360<100000_I:0xXa35db4_0xX53b4<100000_I:0xXa35db4_0xX24c<10000000_I:0xXa35db4_0xH13f<2_I:0xXa35db4_0xH140<2",
+  "settleSeconds": 3,
+  "notes": [
+    "RA2 game.exe 1.006 (Steam Ultimate Collection, md5 799c80c4...). Engine routines pattern-matched against Yuri's Revenge: GiveMoney 0x4E5440 (+0x24C), win routine 0x4E7EE0 (won/over/lost +0x13F/+0x13E/+0x140).",
+    "Kills: the score code sums the 20-slot UnitsKilled array at +0x5310; buildings at +0x5364. The kill code increments the victim house +0x53B4 (BuildingsLost); +0x5360 is UnitsLost.",
+    "Player pointer 0xA35DB4 (494 references), session game mode 0xA3D298, scenario 0xA3D290 (+0x83C mission file, +0x608 human difficulty, same layout as TS/YR).",
+    "Online and modem/LAN games are excluded, so nothing here touches CnCNet ladder play."
+  ],
+  "achievements": [
+    {
+      "id": "allied-01",
+      "title": "Allied Mission 1",
+      "description": "Win Allied campaign mission 1.",
+      "points": 10,
+      "group": "Allied campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=12592_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5000257SI:0xXa3d290_0xW83c=7105633"
+    },
+    {
+      "id": "allied-02",
+      "title": "Allied Mission 2",
+      "description": "Win Allied campaign mission 2.",
+      "points": 10,
+      "group": "Allied campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=12848_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5000257SI:0xXa3d290_0xW83c=7105633"
+    },
+    {
+      "id": "allied-03",
+      "title": "Allied Mission 3",
+      "description": "Win Allied campaign mission 3.",
+      "points": 10,
+      "group": "Allied campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=13104_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5000257SI:0xXa3d290_0xW83c=7105633"
+    },
+    {
+      "id": "allied-04",
+      "title": "Allied Mission 4",
+      "description": "Win Allied campaign mission 4.",
+      "points": 10,
+      "group": "Allied campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=13360_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5000257SI:0xXa3d290_0xW83c=7105633"
+    },
+    {
+      "id": "allied-05",
+      "title": "Allied Mission 5",
+      "description": "Win Allied campaign mission 5.",
+      "points": 15,
+      "group": "Allied campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=13616_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5000257SI:0xXa3d290_0xW83c=7105633"
+    },
+    {
+      "id": "allied-06",
+      "title": "Allied Mission 6",
+      "description": "Win Allied campaign mission 6.",
+      "points": 15,
+      "group": "Allied campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=13872_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5000257SI:0xXa3d290_0xW83c=7105633"
+    },
+    {
+      "id": "allied-07",
+      "title": "Allied Mission 7",
+      "description": "Win Allied campaign mission 7.",
+      "points": 15,
+      "group": "Allied campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=14128_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5000257SI:0xXa3d290_0xW83c=7105633"
+    },
+    {
+      "id": "allied-08",
+      "title": "Allied Mission 8",
+      "description": "Win Allied campaign mission 8.",
+      "points": 15,
+      "group": "Allied campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=14384_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5000257SI:0xXa3d290_0xW83c=7105633"
+    },
+    {
+      "id": "allied-09",
+      "title": "Allied Mission 9",
+      "description": "Win Allied campaign mission 9.",
+      "points": 20,
+      "group": "Allied campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=14640_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5000257SI:0xXa3d290_0xW83c=7105633"
+    },
+    {
+      "id": "allied-10",
+      "title": "Allied Mission 10",
+      "description": "Win Allied campaign mission 10.",
+      "points": 20,
+      "group": "Allied campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=12337_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5000257SI:0xXa3d290_0xW83c=7105633"
+    },
+    {
+      "id": "allied-11",
+      "title": "Allied Mission 11",
+      "description": "Win Allied campaign mission 11.",
+      "points": 20,
+      "group": "Allied campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=12593_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5000257SI:0xXa3d290_0xW83c=7105633"
+    },
+    {
+      "id": "allied-12",
+      "title": "Allied Campaign Complete",
+      "description": "Win the final Allied mission and finish the campaign.",
+      "points": 50,
+      "group": "Allied campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=12849_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5000257SI:0xXa3d290_0xW83c=7105633"
+    },
+    {
+      "id": "allied-hard-any",
+      "title": "Allied Veteran",
+      "description": "Win any Allied mission on Hard.",
+      "points": 15,
+      "group": "Hard mode",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0xX608=2_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5000257SI:0xXa3d290_0xW83c=7105633"
+    },
+    {
+      "id": "allied-hard-final",
+      "title": "Allied Legend",
+      "description": "Win the final Allied mission on Hard.",
+      "points": 75,
+      "group": "Hard mode",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0xX608=2_I:0xXa3d290_0x83f=12849_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5000257SI:0xXa3d290_0xW83c=7105633"
+    },
+    {
+      "id": "soviet-01",
+      "title": "Soviet Mission 1",
+      "description": "Win Soviet campaign mission 1.",
+      "points": 10,
+      "group": "Soviet campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=12592_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5656403SI:0xXa3d290_0xW83c=7761779"
+    },
+    {
+      "id": "soviet-02",
+      "title": "Soviet Mission 2",
+      "description": "Win Soviet campaign mission 2.",
+      "points": 10,
+      "group": "Soviet campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=12848_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5656403SI:0xXa3d290_0xW83c=7761779"
+    },
+    {
+      "id": "soviet-03",
+      "title": "Soviet Mission 3",
+      "description": "Win Soviet campaign mission 3.",
+      "points": 10,
+      "group": "Soviet campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=13104_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5656403SI:0xXa3d290_0xW83c=7761779"
+    },
+    {
+      "id": "soviet-04",
+      "title": "Soviet Mission 4",
+      "description": "Win Soviet campaign mission 4.",
+      "points": 10,
+      "group": "Soviet campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=13360_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5656403SI:0xXa3d290_0xW83c=7761779"
+    },
+    {
+      "id": "soviet-05",
+      "title": "Soviet Mission 5",
+      "description": "Win Soviet campaign mission 5.",
+      "points": 15,
+      "group": "Soviet campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=13616_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5656403SI:0xXa3d290_0xW83c=7761779"
+    },
+    {
+      "id": "soviet-06",
+      "title": "Soviet Mission 6",
+      "description": "Win Soviet campaign mission 6.",
+      "points": 15,
+      "group": "Soviet campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=13872_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5656403SI:0xXa3d290_0xW83c=7761779"
+    },
+    {
+      "id": "soviet-07",
+      "title": "Soviet Mission 7",
+      "description": "Win Soviet campaign mission 7.",
+      "points": 15,
+      "group": "Soviet campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=14128_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5656403SI:0xXa3d290_0xW83c=7761779"
+    },
+    {
+      "id": "soviet-08",
+      "title": "Soviet Mission 8",
+      "description": "Win Soviet campaign mission 8.",
+      "points": 15,
+      "group": "Soviet campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=14384_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5656403SI:0xXa3d290_0xW83c=7761779"
+    },
+    {
+      "id": "soviet-09",
+      "title": "Soviet Mission 9",
+      "description": "Win Soviet campaign mission 9.",
+      "points": 20,
+      "group": "Soviet campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=14640_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5656403SI:0xXa3d290_0xW83c=7761779"
+    },
+    {
+      "id": "soviet-10",
+      "title": "Soviet Mission 10",
+      "description": "Win Soviet campaign mission 10.",
+      "points": 20,
+      "group": "Soviet campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=12337_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5656403SI:0xXa3d290_0xW83c=7761779"
+    },
+    {
+      "id": "soviet-11",
+      "title": "Soviet Mission 11",
+      "description": "Win Soviet campaign mission 11.",
+      "points": 20,
+      "group": "Soviet campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=12593_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5656403SI:0xXa3d290_0xW83c=7761779"
+    },
+    {
+      "id": "soviet-12",
+      "title": "Soviet Campaign Complete",
+      "description": "Win the final Soviet mission and finish the campaign.",
+      "points": 50,
+      "group": "Soviet campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0x83f=12849_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5656403SI:0xXa3d290_0xW83c=7761779"
+    },
+    {
+      "id": "soviet-hard-any",
+      "title": "Soviet Veteran",
+      "description": "Win any Soviet mission on Hard.",
+      "points": 15,
+      "group": "Hard mode",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0xX608=2_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5656403SI:0xXa3d290_0xW83c=7761779"
+    },
+    {
+      "id": "soviet-hard-final",
+      "title": "Soviet Legend",
+      "description": "Win the final Soviet mission on Hard.",
+      "points": 75,
+      "group": "Hard mode",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa3d290_0xX608=2_I:0xXa3d290_0x83f=12849_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1SI:0xXa3d290_0xW83c=5656403SI:0xXa3d290_0xW83c=7761779"
+    },
+    {
+      "id": "mission-accomplished",
+      "title": "Mission Accomplished",
+      "description": "Win any campaign mission.",
+      "points": 5,
+      "group": "Campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1"
+    },
+    {
+      "id": "no-casualties",
+      "title": "No Man Left Behind",
+      "description": "Win a campaign mission without losing a single unit.",
+      "points": 30,
+      "group": "Campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa35db4_0xX5360=0_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1"
+    },
+    {
+      "id": "fortress",
+      "title": "Fortress",
+      "description": "Win a campaign mission without losing a single building.",
+      "points": 20,
+      "group": "Campaign",
+      "memaddr": "0xXa3d298=0_0xXa35db4!=0_I:0xXa35db4_0xX53b4=0_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1"
+    },
+    {
+      "id": "first-blood",
+      "title": "First Blood",
+      "description": "Destroy your first enemy unit in a skirmish or campaign mission.",
+      "points": 5,
+      "group": "Combat",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_A:0xX5310_I:0xXa35db4_A:0xX5314_I:0xXa35db4_A:0xX5318_I:0xXa35db4_A:0xX531c_I:0xXa35db4_A:0xX5320_I:0xXa35db4_A:0xX5324_I:0xXa35db4_A:0xX5328_I:0xXa35db4_A:0xX532c_I:0xXa35db4_A:0xX5330_I:0xXa35db4_A:0xX5334_I:0xXa35db4_A:0xX5338_I:0xXa35db4_A:0xX533c_I:0xXa35db4_A:0xX5340_I:0xXa35db4_A:0xX5344_I:0xXa35db4_A:0xX5348_I:0xXa35db4_A:0xX534c_I:0xXa35db4_A:0xX5350_I:0xXa35db4_A:0xX5354_I:0xXa35db4_A:0xX5358_I:0xXa35db4_0xX535c>=1"
+    },
+    {
+      "id": "kills-50",
+      "title": "Skirmisher",
+      "description": "Destroy 50 enemy units in a single skirmish.",
+      "points": 10,
+      "group": "Combat",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_A:0xX5310_I:0xXa35db4_A:0xX5314_I:0xXa35db4_A:0xX5318_I:0xXa35db4_A:0xX531c_I:0xXa35db4_A:0xX5320_I:0xXa35db4_A:0xX5324_I:0xXa35db4_A:0xX5328_I:0xXa35db4_A:0xX532c_I:0xXa35db4_A:0xX5330_I:0xXa35db4_A:0xX5334_I:0xXa35db4_A:0xX5338_I:0xXa35db4_A:0xX533c_I:0xXa35db4_A:0xX5340_I:0xXa35db4_A:0xX5344_I:0xXa35db4_A:0xX5348_I:0xXa35db4_A:0xX534c_I:0xXa35db4_A:0xX5350_I:0xXa35db4_A:0xX5354_I:0xXa35db4_A:0xX5358_I:0xXa35db4_M:0xX535c>=50"
+    },
+    {
+      "id": "kills-100",
+      "title": "Scrap Metal",
+      "description": "Destroy 100 enemy units in a single skirmish.",
+      "points": 10,
+      "group": "Combat",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_A:0xX5310_I:0xXa35db4_A:0xX5314_I:0xXa35db4_A:0xX5318_I:0xXa35db4_A:0xX531c_I:0xXa35db4_A:0xX5320_I:0xXa35db4_A:0xX5324_I:0xXa35db4_A:0xX5328_I:0xXa35db4_A:0xX532c_I:0xXa35db4_A:0xX5330_I:0xXa35db4_A:0xX5334_I:0xXa35db4_A:0xX5338_I:0xXa35db4_A:0xX533c_I:0xXa35db4_A:0xX5340_I:0xXa35db4_A:0xX5344_I:0xXa35db4_A:0xX5348_I:0xXa35db4_A:0xX534c_I:0xXa35db4_A:0xX5350_I:0xXa35db4_A:0xX5354_I:0xXa35db4_A:0xX5358_I:0xXa35db4_M:0xX535c>=100"
+    },
+    {
+      "id": "kills-250",
+      "title": "Junkyard",
+      "description": "Destroy 250 enemy units in a single skirmish.",
+      "points": 15,
+      "group": "Combat",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_A:0xX5310_I:0xXa35db4_A:0xX5314_I:0xXa35db4_A:0xX5318_I:0xXa35db4_A:0xX531c_I:0xXa35db4_A:0xX5320_I:0xXa35db4_A:0xX5324_I:0xXa35db4_A:0xX5328_I:0xXa35db4_A:0xX532c_I:0xXa35db4_A:0xX5330_I:0xXa35db4_A:0xX5334_I:0xXa35db4_A:0xX5338_I:0xXa35db4_A:0xX533c_I:0xXa35db4_A:0xX5340_I:0xXa35db4_A:0xX5344_I:0xXa35db4_A:0xX5348_I:0xXa35db4_A:0xX534c_I:0xXa35db4_A:0xX5350_I:0xXa35db4_A:0xX5354_I:0xXa35db4_A:0xX5358_I:0xXa35db4_M:0xX535c>=250"
+    },
+    {
+      "id": "kills-500",
+      "title": "Total War",
+      "description": "Destroy 500 enemy units in a single skirmish.",
+      "points": 25,
+      "group": "Combat",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_A:0xX5310_I:0xXa35db4_A:0xX5314_I:0xXa35db4_A:0xX5318_I:0xXa35db4_A:0xX531c_I:0xXa35db4_A:0xX5320_I:0xXa35db4_A:0xX5324_I:0xXa35db4_A:0xX5328_I:0xXa35db4_A:0xX532c_I:0xXa35db4_A:0xX5330_I:0xXa35db4_A:0xX5334_I:0xXa35db4_A:0xX5338_I:0xXa35db4_A:0xX533c_I:0xXa35db4_A:0xX5340_I:0xXa35db4_A:0xX5344_I:0xXa35db4_A:0xX5348_I:0xXa35db4_A:0xX534c_I:0xXa35db4_A:0xX5350_I:0xXa35db4_A:0xX5354_I:0xXa35db4_A:0xX5358_I:0xXa35db4_M:0xX535c>=500"
+    },
+    {
+      "id": "kills-1000",
+      "title": "War Machine",
+      "description": "Destroy 1,000 enemy units in a single skirmish.",
+      "points": 50,
+      "group": "Combat",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_A:0xX5310_I:0xXa35db4_A:0xX5314_I:0xXa35db4_A:0xX5318_I:0xXa35db4_A:0xX531c_I:0xXa35db4_A:0xX5320_I:0xXa35db4_A:0xX5324_I:0xXa35db4_A:0xX5328_I:0xXa35db4_A:0xX532c_I:0xXa35db4_A:0xX5330_I:0xXa35db4_A:0xX5334_I:0xXa35db4_A:0xX5338_I:0xXa35db4_A:0xX533c_I:0xXa35db4_A:0xX5340_I:0xXa35db4_A:0xX5344_I:0xXa35db4_A:0xX5348_I:0xXa35db4_A:0xX534c_I:0xXa35db4_A:0xX5350_I:0xXa35db4_A:0xX5354_I:0xXa35db4_A:0xX5358_I:0xXa35db4_M:0xX535c>=1000"
+    },
+    {
+      "id": "buildings-10",
+      "title": "Demolition",
+      "description": "Destroy 10 enemy buildings in a single skirmish.",
+      "points": 10,
+      "group": "Combat",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_A:0xX5364_I:0xXa35db4_A:0xX5368_I:0xXa35db4_A:0xX536c_I:0xXa35db4_A:0xX5370_I:0xXa35db4_A:0xX5374_I:0xXa35db4_A:0xX5378_I:0xXa35db4_A:0xX537c_I:0xXa35db4_A:0xX5380_I:0xXa35db4_A:0xX5384_I:0xXa35db4_A:0xX5388_I:0xXa35db4_A:0xX538c_I:0xXa35db4_A:0xX5390_I:0xXa35db4_A:0xX5394_I:0xXa35db4_A:0xX5398_I:0xXa35db4_A:0xX539c_I:0xXa35db4_A:0xX53a0_I:0xXa35db4_A:0xX53a4_I:0xXa35db4_A:0xX53a8_I:0xXa35db4_A:0xX53ac_I:0xXa35db4_M:0xX53b0>=10"
+    },
+    {
+      "id": "buildings-25",
+      "title": "Demolition Crew",
+      "description": "Destroy 25 enemy buildings in a single skirmish.",
+      "points": 15,
+      "group": "Combat",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_A:0xX5364_I:0xXa35db4_A:0xX5368_I:0xXa35db4_A:0xX536c_I:0xXa35db4_A:0xX5370_I:0xXa35db4_A:0xX5374_I:0xXa35db4_A:0xX5378_I:0xXa35db4_A:0xX537c_I:0xXa35db4_A:0xX5380_I:0xXa35db4_A:0xX5384_I:0xXa35db4_A:0xX5388_I:0xXa35db4_A:0xX538c_I:0xXa35db4_A:0xX5390_I:0xXa35db4_A:0xX5394_I:0xXa35db4_A:0xX5398_I:0xXa35db4_A:0xX539c_I:0xXa35db4_A:0xX53a0_I:0xXa35db4_A:0xX53a4_I:0xXa35db4_A:0xX53a8_I:0xXa35db4_A:0xX53ac_I:0xXa35db4_M:0xX53b0>=25"
+    },
+    {
+      "id": "buildings-75",
+      "title": "Wrecking Ball",
+      "description": "Destroy 75 enemy buildings in a single skirmish.",
+      "points": 25,
+      "group": "Combat",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_A:0xX5364_I:0xXa35db4_A:0xX5368_I:0xXa35db4_A:0xX536c_I:0xXa35db4_A:0xX5370_I:0xXa35db4_A:0xX5374_I:0xXa35db4_A:0xX5378_I:0xXa35db4_A:0xX537c_I:0xXa35db4_A:0xX5380_I:0xXa35db4_A:0xX5384_I:0xXa35db4_A:0xX5388_I:0xXa35db4_A:0xX538c_I:0xXa35db4_A:0xX5390_I:0xXa35db4_A:0xX5394_I:0xXa35db4_A:0xX5398_I:0xXa35db4_A:0xX539c_I:0xXa35db4_A:0xX53a0_I:0xXa35db4_A:0xX53a4_I:0xXa35db4_A:0xX53a8_I:0xXa35db4_A:0xX53ac_I:0xXa35db4_M:0xX53b0>=75"
+    },
+    {
+      "id": "buildings-150",
+      "title": "Scorched Earth",
+      "description": "Destroy 150 enemy buildings in a single skirmish.",
+      "points": 40,
+      "group": "Combat",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_A:0xX5364_I:0xXa35db4_A:0xX5368_I:0xXa35db4_A:0xX536c_I:0xXa35db4_A:0xX5370_I:0xXa35db4_A:0xX5374_I:0xXa35db4_A:0xX5378_I:0xXa35db4_A:0xX537c_I:0xXa35db4_A:0xX5380_I:0xXa35db4_A:0xX5384_I:0xXa35db4_A:0xX5388_I:0xXa35db4_A:0xX538c_I:0xXa35db4_A:0xX5390_I:0xXa35db4_A:0xX5394_I:0xXa35db4_A:0xX5398_I:0xXa35db4_A:0xX539c_I:0xXa35db4_A:0xX53a0_I:0xXa35db4_A:0xX53a4_I:0xXa35db4_A:0xX53a8_I:0xXa35db4_A:0xX53ac_I:0xXa35db4_M:0xX53b0>=150"
+    },
+    {
+      "id": "credits-25000",
+      "title": "Savings Account",
+      "description": "Hold 25,000 credits at once in a skirmish or campaign mission.",
+      "points": 5,
+      "group": "Economy",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_M:0xX24c>=25000"
+    },
+    {
+      "id": "credits-50000",
+      "title": "War Chest",
+      "description": "Hold 50,000 credits at once in a skirmish or campaign mission.",
+      "points": 10,
+      "group": "Economy",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_M:0xX24c>=50000"
+    },
+    {
+      "id": "credits-100000",
+      "title": "Deep Pockets",
+      "description": "Hold 100,000 credits at once in a skirmish or campaign mission.",
+      "points": 15,
+      "group": "Economy",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_M:0xX24c>=100000"
+    },
+    {
+      "id": "credits-150000",
+      "title": "Tycoon",
+      "description": "Hold 150,000 credits at once in a skirmish or campaign mission.",
+      "points": 25,
+      "group": "Economy",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_M:0xX24c>=150000"
+    },
+    {
+      "id": "credits-500000",
+      "title": "Bottomless Treasury",
+      "description": "Hold 500,000 credits at once in a skirmish or campaign mission.",
+      "points": 50,
+      "group": "Economy",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_M:0xX24c>=500000"
+    },
+    {
+      "id": "comeback",
+      "title": "Comeback Kid",
+      "description": "Win a skirmish after your credits dropped below 1,000.",
+      "points": 25,
+      "group": "Economy",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_0xX24c<1000.1._I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1"
+    },
+    {
+      "id": "army-50",
+      "title": "Standing Army",
+      "description": "Have 50 units (vehicles, ships, infantry and aircraft) alive at once in a skirmish or campaign mission.",
+      "points": 10,
+      "group": "Army",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_A:0xX228_I:0xXa35db4_A:0xX238_I:0xXa35db4_M:0xX234>=50"
+    },
+    {
+      "id": "army-100",
+      "title": "Grand Army",
+      "description": "Have 100 units (vehicles, ships, infantry and aircraft) alive at once in a skirmish or campaign mission.",
+      "points": 20,
+      "group": "Army",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_A:0xX228_I:0xXa35db4_A:0xX238_I:0xXa35db4_M:0xX234>=100"
+    },
+    {
+      "id": "army-200",
+      "title": "The Horde",
+      "description": "Have 200 units (vehicles, ships, infantry and aircraft) alive at once in a skirmish or campaign mission.",
+      "points": 40,
+      "group": "Army",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_A:0xX228_I:0xXa35db4_A:0xX238_I:0xXa35db4_M:0xX234>=200"
+    },
+    {
+      "id": "army-300",
+      "title": "Unstoppable Tide",
+      "description": "Have 300 units (vehicles, ships, infantry and aircraft) alive at once in a skirmish or campaign mission.",
+      "points": 60,
+      "group": "Army",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_A:0xX228_I:0xXa35db4_A:0xX238_I:0xXa35db4_M:0xX234>=300"
+    },
+    {
+      "id": "vehicles-25",
+      "title": "Armoured Column",
+      "description": "Have 25 vehicles and ships at once.",
+      "points": 10,
+      "group": "Army",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_0xX228>=25"
+    },
+    {
+      "id": "vehicles-50",
+      "title": "Tank Rush",
+      "description": "Have 50 vehicles and ships at once.",
+      "points": 20,
+      "group": "Army",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_0xX228>=50"
+    },
+    {
+      "id": "vehicles-100",
+      "title": "Steel Wall",
+      "description": "Have 100 vehicles and ships at once.",
+      "points": 35,
+      "group": "Army",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_0xX228>=100"
+    },
+    {
+      "id": "infantry-50",
+      "title": "Boots on the Ground",
+      "description": "Have 50 infantry at once.",
+      "points": 10,
+      "group": "Army",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_0xX234>=50"
+    },
+    {
+      "id": "infantry-100",
+      "title": "Infantry Swarm",
+      "description": "Have 100 infantry at once.",
+      "points": 20,
+      "group": "Army",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_0xX234>=100"
+    },
+    {
+      "id": "infantry-150",
+      "title": "Human Wave",
+      "description": "Have 150 infantry at once.",
+      "points": 30,
+      "group": "Army",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_0xX234>=150"
+    },
+    {
+      "id": "aircraft-10",
+      "title": "Air Wing",
+      "description": "Have 10 aircraft at once.",
+      "points": 10,
+      "group": "Army",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_0xX238>=10"
+    },
+    {
+      "id": "aircraft-25",
+      "title": "Air Superiority",
+      "description": "Have 25 aircraft at once.",
+      "points": 25,
+      "group": "Army",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_0xX238>=25"
+    },
+    {
+      "id": "navy-10",
+      "title": "Flotilla",
+      "description": "Have 10 ships and subs at once.",
+      "points": 10,
+      "group": "Army",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_0xX22c>=10"
+    },
+    {
+      "id": "navy-25",
+      "title": "Armada",
+      "description": "Have 25 ships and subs at once.",
+      "points": 25,
+      "group": "Army",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_0xX22c>=25"
+    },
+    {
+      "id": "base-30",
+      "title": "Base Builder",
+      "description": "Have 30 buildings (walls count) at once.",
+      "points": 10,
+      "group": "Base",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_0xX230>=30"
+    },
+    {
+      "id": "base-60",
+      "title": "Sprawling Base",
+      "description": "Have 60 buildings (walls count) at once.",
+      "points": 20,
+      "group": "Base",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_0xX230>=60"
+    },
+    {
+      "id": "base-100",
+      "title": "Metropolis",
+      "description": "Have 100 buildings (walls count) at once.",
+      "points": 35,
+      "group": "Base",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_0xX230>=100"
+    },
+    {
+      "id": "harvested-50000",
+      "title": "Ore Baron",
+      "description": "Harvest 50,000 credits of ore and gems in one match.",
+      "points": 10,
+      "group": "Economy",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_M:0xX220>=50000"
+    },
+    {
+      "id": "harvested-100000",
+      "title": "Mining Magnate",
+      "description": "Harvest 100,000 credits of ore and gems in one match.",
+      "points": 20,
+      "group": "Economy",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_M:0xX220>=100000"
+    },
+    {
+      "id": "harvested-250000",
+      "title": "Strip Miner",
+      "description": "Harvest 250,000 credits of ore and gems in one match.",
+      "points": 35,
+      "group": "Economy",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_M:0xX220>=250000"
+    },
+    {
+      "id": "spent-100000",
+      "title": "Big Spender",
+      "description": "Spend 100,000 credits in one match.",
+      "points": 10,
+      "group": "Economy",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_M:0xX21c>=100000"
+    },
+    {
+      "id": "spent-250000",
+      "title": "War Budget",
+      "description": "Spend 250,000 credits in one match.",
+      "points": 20,
+      "group": "Economy",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_M:0xX21c>=250000"
+    },
+    {
+      "id": "spent-500000",
+      "title": "Military-Industrial Complex",
+      "description": "Spend 500,000 credits in one match.",
+      "points": 35,
+      "group": "Economy",
+      "memaddr": "0xXa3d298!=3_0xXa3d298!=4_0xXa3d298!=1_0xXa3d298!=2_0xXa35db4!=0_I:0xXa35db4_M:0xX21c>=500000"
+    },
+    {
+      "id": "skirmish-victory",
+      "title": "Commander",
+      "description": "Win a skirmish.",
+      "points": 10,
+      "group": "Skirmish",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1"
+    },
+    {
+      "id": "clean-sweep",
+      "title": "Clean Sweep",
+      "description": "Win a skirmish having destroyed at least 50 enemy units and 10 enemy buildings.",
+      "points": 25,
+      "group": "Skirmish",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_A:0xX5310_I:0xXa35db4_A:0xX5314_I:0xXa35db4_A:0xX5318_I:0xXa35db4_A:0xX531c_I:0xXa35db4_A:0xX5320_I:0xXa35db4_A:0xX5324_I:0xXa35db4_A:0xX5328_I:0xXa35db4_A:0xX532c_I:0xXa35db4_A:0xX5330_I:0xXa35db4_A:0xX5334_I:0xXa35db4_A:0xX5338_I:0xXa35db4_A:0xX533c_I:0xXa35db4_A:0xX5340_I:0xXa35db4_A:0xX5344_I:0xXa35db4_A:0xX5348_I:0xXa35db4_A:0xX534c_I:0xXa35db4_A:0xX5350_I:0xXa35db4_A:0xX5354_I:0xXa35db4_A:0xX5358_I:0xXa35db4_0xX535c>=50_I:0xXa35db4_A:0xX5364_I:0xXa35db4_A:0xX5368_I:0xXa35db4_A:0xX536c_I:0xXa35db4_A:0xX5370_I:0xXa35db4_A:0xX5374_I:0xXa35db4_A:0xX5378_I:0xXa35db4_A:0xX537c_I:0xXa35db4_A:0xX5380_I:0xXa35db4_A:0xX5384_I:0xXa35db4_A:0xX5388_I:0xXa35db4_A:0xX538c_I:0xXa35db4_A:0xX5390_I:0xXa35db4_A:0xX5394_I:0xXa35db4_A:0xX5398_I:0xXa35db4_A:0xX539c_I:0xXa35db4_A:0xX53a0_I:0xXa35db4_A:0xX53a4_I:0xXa35db4_A:0xX53a8_I:0xXa35db4_A:0xX53ac_I:0xXa35db4_0xX53b0>=10_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1"
+    },
+    {
+      "id": "annihilation",
+      "title": "Annihilation",
+      "description": "Win a skirmish having destroyed at least 200 enemy units and 40 enemy buildings.",
+      "points": 50,
+      "group": "Skirmish",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_A:0xX5310_I:0xXa35db4_A:0xX5314_I:0xXa35db4_A:0xX5318_I:0xXa35db4_A:0xX531c_I:0xXa35db4_A:0xX5320_I:0xXa35db4_A:0xX5324_I:0xXa35db4_A:0xX5328_I:0xXa35db4_A:0xX532c_I:0xXa35db4_A:0xX5330_I:0xXa35db4_A:0xX5334_I:0xXa35db4_A:0xX5338_I:0xXa35db4_A:0xX533c_I:0xXa35db4_A:0xX5340_I:0xXa35db4_A:0xX5344_I:0xXa35db4_A:0xX5348_I:0xXa35db4_A:0xX534c_I:0xXa35db4_A:0xX5350_I:0xXa35db4_A:0xX5354_I:0xXa35db4_A:0xX5358_I:0xXa35db4_0xX535c>=200_I:0xXa35db4_A:0xX5364_I:0xXa35db4_A:0xX5368_I:0xXa35db4_A:0xX536c_I:0xXa35db4_A:0xX5370_I:0xXa35db4_A:0xX5374_I:0xXa35db4_A:0xX5378_I:0xXa35db4_A:0xX537c_I:0xXa35db4_A:0xX5380_I:0xXa35db4_A:0xX5384_I:0xXa35db4_A:0xX5388_I:0xXa35db4_A:0xX538c_I:0xXa35db4_A:0xX5390_I:0xXa35db4_A:0xX5394_I:0xXa35db4_A:0xX5398_I:0xXa35db4_A:0xX539c_I:0xXa35db4_A:0xX53a0_I:0xXa35db4_A:0xX53a4_I:0xXa35db4_A:0xX53a8_I:0xXa35db4_A:0xX53ac_I:0xXa35db4_0xX53b0>=40_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1"
+    },
+    {
+      "id": "iron-wall",
+      "title": "Iron Wall",
+      "description": "Win a skirmish losing fewer than 10 units.",
+      "points": 25,
+      "group": "Skirmish",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_0xX5360<10_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1"
+    },
+    {
+      "id": "flawless",
+      "title": "Flawless Victory",
+      "description": "Win a skirmish without losing a single unit.",
+      "points": 50,
+      "group": "Skirmish",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_0xX5360=0_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1"
+    },
+    {
+      "id": "untouchable",
+      "title": "Untouchable",
+      "description": "Win a skirmish without losing a single building.",
+      "points": 30,
+      "group": "Skirmish",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_0xX53b4=0_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1"
+    },
+    {
+      "id": "lightning-war",
+      "title": "Lightning War",
+      "description": "Win a skirmish with fewer than 30 enemy units destroyed.",
+      "points": 15,
+      "group": "Skirmish",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_A:0xX5310_I:0xXa35db4_A:0xX5314_I:0xXa35db4_A:0xX5318_I:0xXa35db4_A:0xX531c_I:0xXa35db4_A:0xX5320_I:0xXa35db4_A:0xX5324_I:0xXa35db4_A:0xX5328_I:0xXa35db4_A:0xX532c_I:0xXa35db4_A:0xX5330_I:0xXa35db4_A:0xX5334_I:0xXa35db4_A:0xX5338_I:0xXa35db4_A:0xX533c_I:0xXa35db4_A:0xX5340_I:0xXa35db4_A:0xX5344_I:0xXa35db4_A:0xX5348_I:0xXa35db4_A:0xX534c_I:0xXa35db4_A:0xX5350_I:0xXa35db4_A:0xX5354_I:0xXa35db4_A:0xX5358_I:0xXa35db4_0xX535c<30_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1"
+    },
+    {
+      "id": "war-of-attrition",
+      "title": "War of Attrition",
+      "description": "Win a skirmish after losing 100 or more units.",
+      "points": 15,
+      "group": "Skirmish",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_0xX5360>=100_I:0xXa35db4_d0xH13f=0_I:0xXa35db4_0xH13f=1"
+    },
+    {
+      "id": "tough-lesson",
+      "title": "Tough Lesson",
+      "description": "Lose a skirmish. It happens to every commander.",
+      "points": 5,
+      "group": "Skirmish",
+      "memaddr": "0xXa3d298=5_0xXa35db4!=0_I:0xXa35db4_d0xH140=0_I:0xXa35db4_0xH140=1"
+    }
+  ],
+  "watches": [
+    {
+      "id": "mode",
+      "label": "Game type",
+      "address": "0xA3D298",
+      "size": "u32",
+      "values": {
+        "0": "Campaign",
+        "3": "LAN game",
+        "4": "Online game",
+        "5": "Skirmish"
+      }
+    },
+    {
+      "id": "mission",
+      "label": "Mission file",
+      "pointer": "0xA3D290",
+      "offset": "0x83C",
+      "size": "str",
+      "length": 16
+    },
+    {
+      "id": "difficulty",
+      "label": "Difficulty",
+      "pointer": "0xA3D290",
+      "offset": "0x608",
+      "size": "u32",
+      "values": {
+        "0": "Easy",
+        "1": "Normal",
+        "2": "Hard"
+      }
+    },
+    {
+      "id": "credits",
+      "label": "Your credits",
+      "pointer": "0xA35DB4",
+      "offset": "0x24C",
+      "size": "u32"
+    },
+    {
+      "id": "kills",
+      "label": "Enemy units destroyed by you",
+      "pointer": "0xA35DB4",
+      "offset": "0x5310",
+      "size": "sum20"
+    },
+    {
+      "id": "bkills",
+      "label": "Enemy buildings destroyed by you",
+      "pointer": "0xA35DB4",
+      "offset": "0x5364",
+      "size": "sum20"
+    },
+    {
+      "id": "lost",
+      "label": "Your units lost",
+      "pointer": "0xA35DB4",
+      "offset": "0x5360",
+      "size": "u32"
+    },
+    {
+      "id": "blost",
+      "label": "Your buildings lost",
+      "pointer": "0xA35DB4",
+      "offset": "0x53B4",
+      "size": "u32"
+    },
+    {
+      "id": "vehicles",
+      "label": "Your vehicles & ships now",
+      "pointer": "0xA35DB4",
+      "offset": "0x228",
+      "size": "u32"
+    },
+    {
+      "id": "infantry",
+      "label": "Your infantry now",
+      "pointer": "0xA35DB4",
+      "offset": "0x234",
+      "size": "u32"
+    },
+    {
+      "id": "aircraft",
+      "label": "Your aircraft now",
+      "pointer": "0xA35DB4",
+      "offset": "0x238",
+      "size": "u32"
+    },
+    {
+      "id": "buildings",
+      "label": "Your buildings now",
+      "pointer": "0xA35DB4",
+      "offset": "0x230",
+      "size": "u32"
+    },
+    {
+      "id": "harvested",
+      "label": "Credits harvested this match",
+      "pointer": "0xA35DB4",
+      "offset": "0x220",
+      "size": "u32"
+    },
+    {
+      "id": "won",
+      "label": "You won",
+      "pointer": "0xA35DB4",
+      "offset": "0x13F",
+      "size": "u8",
+      "values": {
+        "0": "Not yet",
+        "1": "Yes!"
+      }
+    }
+  ],
+  "testGuide": [
+    {
+      "title": "Start a skirmish",
+      "detail": "Choose Skirmish and start a game against the computer.",
+      "doneWhen": {
+        "watch": "mode",
+        "equals": 5
+      }
+    },
+    {
+      "title": "Destroy an enemy unit",
+      "detail": "\"Enemy units destroyed by you\" goes up, and First Blood pops up.",
+      "doneWhen": {
+        "watch": "kills",
+        "atLeast": 1
+      }
+    },
+    {
+      "title": "Lose one of yours",
+      "detail": "\"Your units lost\" goes up instead. If the two are swapped, copy the test report to Claude.",
+      "doneWhen": {
+        "watch": "lost",
+        "atLeast": 1
+      }
+    },
+    {
+      "title": "Win a campaign mission",
+      "detail": "\"Mission file\" shows the mission name and the mission achievement pops when you win."
+    }
+  ]
+}

@@ -1,0 +1,803 @@
+{
+  "id": "supcom",
+  "title": "Supreme Commander",
+  "version": 2,
+  "kind": "replay",
+  "authors": [
+    "Vault Launcher"
+  ],
+  "storeIds": [],
+  "linkFiles": [
+    "bin/SupremeCommander.exe",
+    "gamedata/lua.scd"
+  ],
+  "exeNames": [],
+  "md5": [],
+  "notes": [
+    "Supreme Commander has online play, so Vault never reads its memory. It reads the campaign record the game keeps in its settings file (Game.prefs) when you win an operation.",
+    "Operations you already won count too. Difficulty achievements use the hardest difficulty you won each operation on.",
+    "This is the original Supreme Commander campaign, not Forged Alliance."
+  ],
+  "testGuide": [
+    {
+      "title": "Win an operation",
+      "detail": "Win any campaign operation and go back to the menu. \"Commander on Deck\" and that operation should pop."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "uef-1",
+      "title": "Operation Black Earth",
+      "description": "UEF campaign: win operation 1, Black Earth.",
+      "points": 10,
+      "group": "UEF campaign",
+      "rule": {
+        "op": "SCCA_E01"
+      }
+    },
+    {
+      "id": "uef-2",
+      "title": "Operation Snow Blind",
+      "description": "UEF campaign: win operation 2, Snow Blind.",
+      "points": 10,
+      "group": "UEF campaign",
+      "rule": {
+        "op": "SCCA_E02"
+      }
+    },
+    {
+      "id": "uef-3",
+      "title": "Operation Metal Shark",
+      "description": "UEF campaign: win operation 3, Metal Shark.",
+      "points": 10,
+      "group": "UEF campaign",
+      "rule": {
+        "op": "SCCA_E03"
+      }
+    },
+    {
+      "id": "uef-4",
+      "title": "Operation Vaccine",
+      "description": "UEF campaign: win operation 4, Vaccine.",
+      "points": 10,
+      "group": "UEF campaign",
+      "rule": {
+        "op": "SCCA_E04"
+      }
+    },
+    {
+      "id": "uef-5",
+      "title": "Operation Forge",
+      "description": "UEF campaign: win operation 5, Forge.",
+      "points": 10,
+      "group": "UEF campaign",
+      "rule": {
+        "op": "SCCA_E05"
+      }
+    },
+    {
+      "id": "uef-6",
+      "title": "Operation Stone Wall",
+      "description": "UEF campaign: win operation 6, Stone Wall.",
+      "points": 25,
+      "group": "UEF campaign",
+      "rule": {
+        "op": "SCCA_E06"
+      }
+    },
+    {
+      "id": "uef-done",
+      "title": "For the Earth",
+      "description": "Win all six UEF operations.",
+      "points": 40,
+      "group": "UEF campaign",
+      "rule": {
+        "campaign": "uef"
+      }
+    },
+    {
+      "id": "uef-hard",
+      "title": "For the Earth (Hard)",
+      "description": "Win all six UEF operations on Hard.",
+      "points": 60,
+      "group": "Hard difficulty",
+      "rule": {
+        "campaign": "uef",
+        "diff": 3
+      }
+    },
+    {
+      "id": "uef-normal",
+      "title": "UEF Commander",
+      "description": "Win all six UEF operations on Normal or Hard.",
+      "points": 30,
+      "group": "Hard difficulty",
+      "rule": {
+        "campaign": "uef",
+        "diff": 2
+      }
+    },
+    {
+      "id": "cybran-1",
+      "title": "Operation Liberation",
+      "description": "Cybran campaign: win operation 1, Liberation.",
+      "points": 10,
+      "group": "Cybran campaign",
+      "rule": {
+        "op": "SCCA_R01"
+      }
+    },
+    {
+      "id": "cybran-2",
+      "title": "Operation Artifact",
+      "description": "Cybran campaign: win operation 2, Artifact.",
+      "points": 10,
+      "group": "Cybran campaign",
+      "rule": {
+        "op": "SCCA_R02"
+      }
+    },
+    {
+      "id": "cybran-3",
+      "title": "Operation Defrag",
+      "description": "Cybran campaign: win operation 3, Defrag.",
+      "points": 10,
+      "group": "Cybran campaign",
+      "rule": {
+        "op": "SCCA_R03"
+      }
+    },
+    {
+      "id": "cybran-4",
+      "title": "Operation Mainframe Tango",
+      "description": "Cybran campaign: win operation 4, Mainframe Tango.",
+      "points": 10,
+      "group": "Cybran campaign",
+      "rule": {
+        "op": "SCCA_R04"
+      }
+    },
+    {
+      "id": "cybran-5",
+      "title": "Operation Unlock",
+      "description": "Cybran campaign: win operation 5, Unlock.",
+      "points": 10,
+      "group": "Cybran campaign",
+      "rule": {
+        "op": "SCCA_R05"
+      }
+    },
+    {
+      "id": "cybran-6",
+      "title": "Operation Freedom",
+      "description": "Cybran campaign: win operation 6, Freedom.",
+      "points": 25,
+      "group": "Cybran campaign",
+      "rule": {
+        "op": "SCCA_R06"
+      }
+    },
+    {
+      "id": "cybran-done",
+      "title": "Free at Last",
+      "description": "Win all six Cybran operations.",
+      "points": 40,
+      "group": "Cybran campaign",
+      "rule": {
+        "campaign": "cybran"
+      }
+    },
+    {
+      "id": "cybran-hard",
+      "title": "Free at Last (Hard)",
+      "description": "Win all six Cybran operations on Hard.",
+      "points": 60,
+      "group": "Hard difficulty",
+      "rule": {
+        "campaign": "cybran",
+        "diff": 3
+      }
+    },
+    {
+      "id": "cybran-normal",
+      "title": "Cybran Commander",
+      "description": "Win all six Cybran operations on Normal or Hard.",
+      "points": 30,
+      "group": "Hard difficulty",
+      "rule": {
+        "campaign": "cybran",
+        "diff": 2
+      }
+    },
+    {
+      "id": "aeon-1",
+      "title": "Operation Joust",
+      "description": "Aeon campaign: win operation 1, Joust.",
+      "points": 10,
+      "group": "Aeon campaign",
+      "rule": {
+        "op": "SCCA_A01"
+      }
+    },
+    {
+      "id": "aeon-2",
+      "title": "Operation Machine Purge",
+      "description": "Aeon campaign: win operation 2, Machine Purge.",
+      "points": 10,
+      "group": "Aeon campaign",
+      "rule": {
+        "op": "SCCA_A02"
+      }
+    },
+    {
+      "id": "aeon-3",
+      "title": "Operation High Tide",
+      "description": "Aeon campaign: win operation 3, High Tide.",
+      "points": 10,
+      "group": "Aeon campaign",
+      "rule": {
+        "op": "SCCA_A03"
+      }
+    },
+    {
+      "id": "aeon-4",
+      "title": "Operation Entity",
+      "description": "Aeon campaign: win operation 4, Entity.",
+      "points": 10,
+      "group": "Aeon campaign",
+      "rule": {
+        "op": "SCCA_A04"
+      }
+    },
+    {
+      "id": "aeon-5",
+      "title": "Operation Shining Star",
+      "description": "Aeon campaign: win operation 5, Shining Star.",
+      "points": 10,
+      "group": "Aeon campaign",
+      "rule": {
+        "op": "SCCA_A05"
+      }
+    },
+    {
+      "id": "aeon-6",
+      "title": "Operation Beginnings",
+      "description": "Aeon campaign: win operation 6, Beginnings.",
+      "points": 25,
+      "group": "Aeon campaign",
+      "rule": {
+        "op": "SCCA_A06"
+      }
+    },
+    {
+      "id": "aeon-done",
+      "title": "Illuminated",
+      "description": "Win all six Aeon operations.",
+      "points": 40,
+      "group": "Aeon campaign",
+      "rule": {
+        "campaign": "aeon"
+      }
+    },
+    {
+      "id": "aeon-hard",
+      "title": "Illuminated (Hard)",
+      "description": "Win all six Aeon operations on Hard.",
+      "points": 60,
+      "group": "Hard difficulty",
+      "rule": {
+        "campaign": "aeon",
+        "diff": 3
+      }
+    },
+    {
+      "id": "aeon-normal",
+      "title": "Aeon Commander",
+      "description": "Win all six Aeon operations on Normal or Hard.",
+      "points": 30,
+      "group": "Hard difficulty",
+      "rule": {
+        "campaign": "aeon",
+        "diff": 2
+      }
+    },
+    {
+      "id": "uef-1-hard",
+      "title": "Black Earth (Hard)",
+      "description": "UEF campaign: win operation 1, Black Earth, on Hard.",
+      "points": 20,
+      "group": "UEF on Hard",
+      "rule": {
+        "op": "SCCA_E01",
+        "diff": 3
+      }
+    },
+    {
+      "id": "uef-2-hard",
+      "title": "Snow Blind (Hard)",
+      "description": "UEF campaign: win operation 2, Snow Blind, on Hard.",
+      "points": 20,
+      "group": "UEF on Hard",
+      "rule": {
+        "op": "SCCA_E02",
+        "diff": 3
+      }
+    },
+    {
+      "id": "uef-3-hard",
+      "title": "Metal Shark (Hard)",
+      "description": "UEF campaign: win operation 3, Metal Shark, on Hard.",
+      "points": 20,
+      "group": "UEF on Hard",
+      "rule": {
+        "op": "SCCA_E03",
+        "diff": 3
+      }
+    },
+    {
+      "id": "uef-4-hard",
+      "title": "Vaccine (Hard)",
+      "description": "UEF campaign: win operation 4, Vaccine, on Hard.",
+      "points": 20,
+      "group": "UEF on Hard",
+      "rule": {
+        "op": "SCCA_E04",
+        "diff": 3
+      }
+    },
+    {
+      "id": "uef-5-hard",
+      "title": "Forge (Hard)",
+      "description": "UEF campaign: win operation 5, Forge, on Hard.",
+      "points": 20,
+      "group": "UEF on Hard",
+      "rule": {
+        "op": "SCCA_E05",
+        "diff": 3
+      }
+    },
+    {
+      "id": "uef-6-hard",
+      "title": "Stone Wall (Hard)",
+      "description": "UEF campaign: win operation 6, Stone Wall, on Hard.",
+      "points": 35,
+      "group": "UEF on Hard",
+      "rule": {
+        "op": "SCCA_E06",
+        "diff": 3
+      }
+    },
+    {
+      "id": "cybran-1-hard",
+      "title": "Liberation (Hard)",
+      "description": "Cybran campaign: win operation 1, Liberation, on Hard.",
+      "points": 20,
+      "group": "Cybran on Hard",
+      "rule": {
+        "op": "SCCA_R01",
+        "diff": 3
+      }
+    },
+    {
+      "id": "cybran-2-hard",
+      "title": "Artifact (Hard)",
+      "description": "Cybran campaign: win operation 2, Artifact, on Hard.",
+      "points": 20,
+      "group": "Cybran on Hard",
+      "rule": {
+        "op": "SCCA_R02",
+        "diff": 3
+      }
+    },
+    {
+      "id": "cybran-3-hard",
+      "title": "Defrag (Hard)",
+      "description": "Cybran campaign: win operation 3, Defrag, on Hard.",
+      "points": 20,
+      "group": "Cybran on Hard",
+      "rule": {
+        "op": "SCCA_R03",
+        "diff": 3
+      }
+    },
+    {
+      "id": "cybran-4-hard",
+      "title": "Mainframe Tango (Hard)",
+      "description": "Cybran campaign: win operation 4, Mainframe Tango, on Hard.",
+      "points": 20,
+      "group": "Cybran on Hard",
+      "rule": {
+        "op": "SCCA_R04",
+        "diff": 3
+      }
+    },
+    {
+      "id": "cybran-5-hard",
+      "title": "Unlock (Hard)",
+      "description": "Cybran campaign: win operation 5, Unlock, on Hard.",
+      "points": 20,
+      "group": "Cybran on Hard",
+      "rule": {
+        "op": "SCCA_R05",
+        "diff": 3
+      }
+    },
+    {
+      "id": "cybran-6-hard",
+      "title": "Freedom (Hard)",
+      "description": "Cybran campaign: win operation 6, Freedom, on Hard.",
+      "points": 35,
+      "group": "Cybran on Hard",
+      "rule": {
+        "op": "SCCA_R06",
+        "diff": 3
+      }
+    },
+    {
+      "id": "aeon-1-hard",
+      "title": "Joust (Hard)",
+      "description": "Aeon campaign: win operation 1, Joust, on Hard.",
+      "points": 20,
+      "group": "Aeon on Hard",
+      "rule": {
+        "op": "SCCA_A01",
+        "diff": 3
+      }
+    },
+    {
+      "id": "aeon-2-hard",
+      "title": "Machine Purge (Hard)",
+      "description": "Aeon campaign: win operation 2, Machine Purge, on Hard.",
+      "points": 20,
+      "group": "Aeon on Hard",
+      "rule": {
+        "op": "SCCA_A02",
+        "diff": 3
+      }
+    },
+    {
+      "id": "aeon-3-hard",
+      "title": "High Tide (Hard)",
+      "description": "Aeon campaign: win operation 3, High Tide, on Hard.",
+      "points": 20,
+      "group": "Aeon on Hard",
+      "rule": {
+        "op": "SCCA_A03",
+        "diff": 3
+      }
+    },
+    {
+      "id": "aeon-4-hard",
+      "title": "Entity (Hard)",
+      "description": "Aeon campaign: win operation 4, Entity, on Hard.",
+      "points": 20,
+      "group": "Aeon on Hard",
+      "rule": {
+        "op": "SCCA_A04",
+        "diff": 3
+      }
+    },
+    {
+      "id": "aeon-5-hard",
+      "title": "Shining Star (Hard)",
+      "description": "Aeon campaign: win operation 5, Shining Star, on Hard.",
+      "points": 20,
+      "group": "Aeon on Hard",
+      "rule": {
+        "op": "SCCA_A05",
+        "diff": 3
+      }
+    },
+    {
+      "id": "aeon-6-hard",
+      "title": "Beginnings (Hard)",
+      "description": "Aeon campaign: win operation 6, Beginnings, on Hard.",
+      "points": 35,
+      "group": "Aeon on Hard",
+      "rule": {
+        "op": "SCCA_A06",
+        "diff": 3
+      }
+    },
+    {
+      "id": "uef-1-full",
+      "title": "Black Earth: Every Objective",
+      "description": "UEF campaign: win operation 1, Black Earth, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "UEF objectives",
+      "rule": {
+        "op": "SCCA_E01",
+        "full": true
+      }
+    },
+    {
+      "id": "uef-2-full",
+      "title": "Snow Blind: Every Objective",
+      "description": "UEF campaign: win operation 2, Snow Blind, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "UEF objectives",
+      "rule": {
+        "op": "SCCA_E02",
+        "full": true
+      }
+    },
+    {
+      "id": "uef-3-full",
+      "title": "Metal Shark: Every Objective",
+      "description": "UEF campaign: win operation 3, Metal Shark, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "UEF objectives",
+      "rule": {
+        "op": "SCCA_E03",
+        "full": true
+      }
+    },
+    {
+      "id": "uef-4-full",
+      "title": "Vaccine: Every Objective",
+      "description": "UEF campaign: win operation 4, Vaccine, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "UEF objectives",
+      "rule": {
+        "op": "SCCA_E04",
+        "full": true
+      }
+    },
+    {
+      "id": "uef-5-full",
+      "title": "Forge: Every Objective",
+      "description": "UEF campaign: win operation 5, Forge, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "UEF objectives",
+      "rule": {
+        "op": "SCCA_E05",
+        "full": true
+      }
+    },
+    {
+      "id": "uef-6-full",
+      "title": "Stone Wall: Every Objective",
+      "description": "UEF campaign: win operation 6, Stone Wall, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "UEF objectives",
+      "rule": {
+        "op": "SCCA_E06",
+        "full": true
+      }
+    },
+    {
+      "id": "cybran-1-full",
+      "title": "Liberation: Every Objective",
+      "description": "Cybran campaign: win operation 1, Liberation, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "Cybran objectives",
+      "rule": {
+        "op": "SCCA_R01",
+        "full": true
+      }
+    },
+    {
+      "id": "cybran-2-full",
+      "title": "Artifact: Every Objective",
+      "description": "Cybran campaign: win operation 2, Artifact, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "Cybran objectives",
+      "rule": {
+        "op": "SCCA_R02",
+        "full": true
+      }
+    },
+    {
+      "id": "cybran-3-full",
+      "title": "Defrag: Every Objective",
+      "description": "Cybran campaign: win operation 3, Defrag, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "Cybran objectives",
+      "rule": {
+        "op": "SCCA_R03",
+        "full": true
+      }
+    },
+    {
+      "id": "cybran-4-full",
+      "title": "Mainframe Tango: Every Objective",
+      "description": "Cybran campaign: win operation 4, Mainframe Tango, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "Cybran objectives",
+      "rule": {
+        "op": "SCCA_R04",
+        "full": true
+      }
+    },
+    {
+      "id": "cybran-5-full",
+      "title": "Unlock: Every Objective",
+      "description": "Cybran campaign: win operation 5, Unlock, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "Cybran objectives",
+      "rule": {
+        "op": "SCCA_R05",
+        "full": true
+      }
+    },
+    {
+      "id": "cybran-6-full",
+      "title": "Freedom: Every Objective",
+      "description": "Cybran campaign: win operation 6, Freedom, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "Cybran objectives",
+      "rule": {
+        "op": "SCCA_R06",
+        "full": true
+      }
+    },
+    {
+      "id": "aeon-1-full",
+      "title": "Joust: Every Objective",
+      "description": "Aeon campaign: win operation 1, Joust, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "Aeon objectives",
+      "rule": {
+        "op": "SCCA_A01",
+        "full": true
+      }
+    },
+    {
+      "id": "aeon-2-full",
+      "title": "Machine Purge: Every Objective",
+      "description": "Aeon campaign: win operation 2, Machine Purge, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "Aeon objectives",
+      "rule": {
+        "op": "SCCA_A02",
+        "full": true
+      }
+    },
+    {
+      "id": "aeon-3-full",
+      "title": "High Tide: Every Objective",
+      "description": "Aeon campaign: win operation 3, High Tide, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "Aeon objectives",
+      "rule": {
+        "op": "SCCA_A03",
+        "full": true
+      }
+    },
+    {
+      "id": "aeon-4-full",
+      "title": "Entity: Every Objective",
+      "description": "Aeon campaign: win operation 4, Entity, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "Aeon objectives",
+      "rule": {
+        "op": "SCCA_A04",
+        "full": true
+      }
+    },
+    {
+      "id": "aeon-5-full",
+      "title": "Shining Star: Every Objective",
+      "description": "Aeon campaign: win operation 5, Shining Star, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "Aeon objectives",
+      "rule": {
+        "op": "SCCA_A05",
+        "full": true
+      }
+    },
+    {
+      "id": "aeon-6-full",
+      "title": "Beginnings: Every Objective",
+      "description": "Aeon campaign: win operation 6, Beginnings, with every secondary and bonus objective done.",
+      "points": 15,
+      "group": "Aeon objectives",
+      "rule": {
+        "op": "SCCA_A06",
+        "full": true
+      }
+    },
+    {
+      "id": "first-op",
+      "title": "Commander on Deck",
+      "description": "Win any campaign operation.",
+      "points": 5,
+      "group": "Milestones",
+      "rule": {
+        "ops": 1
+      }
+    },
+    {
+      "id": "ops-9",
+      "title": "Theatre Commander",
+      "description": "Win 9 campaign operations.",
+      "points": 20,
+      "group": "Milestones",
+      "rule": {
+        "ops": 9
+      }
+    },
+    {
+      "id": "all",
+      "title": "Infinite War",
+      "description": "Win every operation of all three campaigns.",
+      "points": 75,
+      "group": "Milestones",
+      "rule": {
+        "all": true
+      }
+    },
+    {
+      "id": "first-hard",
+      "title": "No Mercy",
+      "description": "Win any operation on Hard.",
+      "points": 15,
+      "group": "Hard difficulty",
+      "rule": {
+        "ops": 1,
+        "diff": 3
+      }
+    },
+    {
+      "id": "all-hard",
+      "title": "Supreme Commander",
+      "description": "Win every operation of all three campaigns on Hard.",
+      "points": 100,
+      "group": "Hard difficulty",
+      "rule": {
+        "all": true,
+        "diff": 3
+      }
+    },
+    {
+      "id": "secondary-1",
+      "title": "Above and Beyond",
+      "description": "Complete every secondary objective in an operation.",
+      "points": 10,
+      "group": "Objectives",
+      "rule": {
+        "secondary": 1
+      }
+    },
+    {
+      "id": "secondary-9",
+      "title": "Thorough",
+      "description": "Complete every secondary objective in 9 operations.",
+      "points": 25,
+      "group": "Objectives",
+      "rule": {
+        "secondary": 9
+      }
+    },
+    {
+      "id": "secondary-18",
+      "title": "Nothing Left Undone",
+      "description": "Complete every secondary objective in all 18 operations.",
+      "points": 50,
+      "group": "Objectives",
+      "rule": {
+        "secondary": 18
+      }
+    },
+    {
+      "id": "bonus-1",
+      "title": "Bonus Round",
+      "description": "Complete every bonus objective in an operation.",
+      "points": 10,
+      "group": "Objectives",
+      "rule": {
+        "bonus": 1
+      }
+    },
+    {
+      "id": "bonus-9",
+      "title": "Overachiever",
+      "description": "Complete every bonus objective in 9 operations.",
+      "points": 30,
+      "group": "Objectives",
+      "rule": {
+        "bonus": 9
+      }
+    }
+  ]
+}

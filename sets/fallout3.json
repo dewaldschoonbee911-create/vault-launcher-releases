@@ -1,0 +1,833 @@
+{
+  "id": "fallout3",
+  "title": "Fallout 3",
+  "version": 1,
+  "kind": "replay",
+  "authors": [
+    "Vault Launcher"
+  ],
+  "storeIds": [],
+  "linkFiles": [
+    "Fallout3.exe",
+    "Fallout3Launcher.exe"
+  ],
+  "exeNames": [],
+  "md5": [],
+  "notes": [
+    "Vault reads the top of your save games (Documents\\My Games\\Fallout3\\Saves) and never touches the game.",
+    "Places count when you have a save made there. Fallout 3 autosaves when you travel, so most places pop by themselves. Your highest level and longest play time across all saves count.",
+    "Saves you already have count too."
+  ],
+  "testGuide": [
+    {
+      "title": "Make a save",
+      "detail": "Play until you can save, then save from the pause menu. \"Last save\" should show your character, level and location."
+    },
+    {
+      "title": "Reach Megaton",
+      "detail": "Save inside Megaton. \"Atomic Neighbours\" should pop up."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "level-2",
+      "title": "Out in the Wasteland",
+      "description": "Reach level 2.",
+      "points": 5,
+      "group": "Levels",
+      "rule": {
+        "level": 2
+      }
+    },
+    {
+      "id": "level-4",
+      "title": "Wastelander",
+      "description": "Reach level 4.",
+      "points": 5,
+      "group": "Levels",
+      "rule": {
+        "level": 4
+      }
+    },
+    {
+      "id": "level-6",
+      "title": "Survivor",
+      "description": "Reach level 6.",
+      "points": 10,
+      "group": "Levels",
+      "rule": {
+        "level": 6
+      }
+    },
+    {
+      "id": "level-8",
+      "title": "Scavenger",
+      "description": "Reach level 8.",
+      "points": 10,
+      "group": "Levels",
+      "rule": {
+        "level": 8
+      }
+    },
+    {
+      "id": "level-10",
+      "title": "Seasoned",
+      "description": "Reach level 10.",
+      "points": 15,
+      "group": "Levels",
+      "rule": {
+        "level": 10
+      }
+    },
+    {
+      "id": "level-12",
+      "title": "Hardened",
+      "description": "Reach level 12.",
+      "points": 15,
+      "group": "Levels",
+      "rule": {
+        "level": 12
+      }
+    },
+    {
+      "id": "level-14",
+      "title": "Road Warrior",
+      "description": "Reach level 14.",
+      "points": 15,
+      "group": "Levels",
+      "rule": {
+        "level": 14
+      }
+    },
+    {
+      "id": "level-16",
+      "title": "Veteran",
+      "description": "Reach level 16.",
+      "points": 20,
+      "group": "Levels",
+      "rule": {
+        "level": 16
+      }
+    },
+    {
+      "id": "level-18",
+      "title": "Legend of the Wastes",
+      "description": "Reach level 18.",
+      "points": 20,
+      "group": "Levels",
+      "rule": {
+        "level": 18
+      }
+    },
+    {
+      "id": "level-20",
+      "title": "Level Cap",
+      "description": "Reach level 20.",
+      "points": 30,
+      "group": "Levels",
+      "rule": {
+        "level": 20
+      }
+    },
+    {
+      "id": "level-25",
+      "title": "Beyond the Cap",
+      "description": "Reach level 25. (Needs the Broken Steel add-on.)",
+      "points": 30,
+      "group": "Levels",
+      "rule": {
+        "level": 25
+      }
+    },
+    {
+      "id": "level-30",
+      "title": "Broken Steel",
+      "description": "Reach level 30. (Needs the Broken Steel add-on.)",
+      "points": 40,
+      "group": "Levels",
+      "rule": {
+        "level": 30
+      }
+    },
+    {
+      "id": "place-megaton",
+      "title": "Atomic Neighbours",
+      "description": "Save a game in Megaton.",
+      "points": 10,
+      "group": "Story",
+      "rule": {
+        "place": "Megaton"
+      }
+    },
+    {
+      "id": "place-supermart",
+      "title": "Shopping Spree",
+      "description": "Save a game in the Super-Duper Mart.",
+      "points": 5,
+      "group": "Places",
+      "rule": {
+        "place": "Super-Duper Mart"
+      }
+    },
+    {
+      "id": "place-gnr",
+      "title": "Galaxy News",
+      "description": "Save a game at Galaxy News Radio.",
+      "points": 10,
+      "group": "Story",
+      "rule": {
+        "place": "Galaxy News Radio"
+      }
+    },
+    {
+      "id": "place-rivet",
+      "title": "Rivet City",
+      "description": "Save a game in Rivet City.",
+      "points": 10,
+      "group": "Story",
+      "rule": {
+        "place": "Rivet City"
+      }
+    },
+    {
+      "id": "place-jefferson",
+      "title": "Project Purity",
+      "description": "Save a game at the Jefferson Memorial.",
+      "points": 10,
+      "group": "Story",
+      "rule": {
+        "place": "Jefferson Memorial"
+      }
+    },
+    {
+      "id": "place-v112",
+      "title": "Tranquility Lane",
+      "description": "Save a game in Vault 112.",
+      "points": 10,
+      "group": "Story",
+      "rule": {
+        "place": "Vault 112"
+      }
+    },
+    {
+      "id": "place-lamplight",
+      "title": "Mayor MacCready",
+      "description": "Save a game in Little Lamplight.",
+      "points": 10,
+      "group": "Story",
+      "rule": {
+        "place": "Little Lamplight"
+      }
+    },
+    {
+      "id": "place-v87",
+      "title": "The G.E.C.K.",
+      "description": "Save a game in Vault 87.",
+      "points": 15,
+      "group": "Story",
+      "rule": {
+        "place": "Vault 87"
+      }
+    },
+    {
+      "id": "place-ravenrock",
+      "title": "Enclave Base",
+      "description": "Save a game in Raven Rock.",
+      "points": 15,
+      "group": "Story",
+      "rule": {
+        "place": "Raven Rock"
+      }
+    },
+    {
+      "id": "place-citadel",
+      "title": "The Brotherhood",
+      "description": "Save a game in the Citadel.",
+      "points": 15,
+      "group": "Story",
+      "rule": {
+        "place": "Citadel"
+      }
+    },
+    {
+      "id": "place-tenpenny",
+      "title": "High Society",
+      "description": "Save a game in Tenpenny Tower.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Tenpenny Tower"
+      }
+    },
+    {
+      "id": "place-underworld",
+      "title": "Ghoul Town",
+      "description": "Save a game in Underworld.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Underworld"
+      }
+    },
+    {
+      "id": "place-paradise",
+      "title": "Slaver Territory",
+      "description": "Save a game in Paradise Falls.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Paradise Falls"
+      }
+    },
+    {
+      "id": "place-arefu",
+      "title": "Blood Ties",
+      "description": "Save a game in Arefu.",
+      "points": 5,
+      "group": "Places",
+      "rule": {
+        "place": "Arefu"
+      }
+    },
+    {
+      "id": "place-canterbury",
+      "title": "Superhuman Gambit",
+      "description": "Save a game in Canterbury Commons.",
+      "points": 5,
+      "group": "Places",
+      "rule": {
+        "place": "Canterbury Commons"
+      }
+    },
+    {
+      "id": "place-oasis",
+      "title": "Oasis",
+      "description": "Save a game in Oasis.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Oasis"
+      }
+    },
+    {
+      "id": "place-bigtown",
+      "title": "Big Trouble",
+      "description": "Save a game in Big Town.",
+      "points": 5,
+      "group": "Places",
+      "rule": {
+        "place": "Big Town"
+      }
+    },
+    {
+      "id": "place-museumtech",
+      "title": "Museum Piece",
+      "description": "Save a game in the Museum of Technology.",
+      "points": 5,
+      "group": "Places",
+      "rule": {
+        "place": "Museum of Technology"
+      }
+    },
+    {
+      "id": "place-dunwich",
+      "title": "Something Wicked",
+      "description": "Save a game in the Dunwich Building.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Dunwich Building"
+      }
+    },
+    {
+      "id": "place-v106",
+      "title": "Mind Games",
+      "description": "Save a game in Vault 106.",
+      "points": 5,
+      "group": "Vaults",
+      "rule": {
+        "place": "Vault 106"
+      }
+    },
+    {
+      "id": "place-v92",
+      "title": "White Noise",
+      "description": "Save a game in Vault 92.",
+      "points": 5,
+      "group": "Vaults",
+      "rule": {
+        "place": "Vault 92"
+      }
+    },
+    {
+      "id": "place-v108",
+      "title": "Gary?",
+      "description": "Save a game in Vault 108.",
+      "points": 5,
+      "group": "Vaults",
+      "rule": {
+        "place": "Vault 108"
+      }
+    },
+    {
+      "id": "place-v101",
+      "title": "Home Sweet Home",
+      "description": "Save a game in Vault 101.",
+      "points": 5,
+      "group": "Vaults",
+      "rule": {
+        "place": "Vault 101"
+      }
+    },
+    {
+      "id": "place-anchorage",
+      "title": "Operation: Anchorage",
+      "description": "Save a game in the Anchorage simulation. (Add-on.)",
+      "points": 15,
+      "group": "Add-ons",
+      "rule": {
+        "place": "Anchorage"
+      }
+    },
+    {
+      "id": "place-pitt",
+      "title": "The Pitt",
+      "description": "Save a game in the Pitt. (Add-on.)",
+      "points": 15,
+      "group": "Add-ons",
+      "rule": {
+        "place": "The Pitt"
+      }
+    },
+    {
+      "id": "place-lookout",
+      "title": "Point Lookout",
+      "description": "Save a game in Point Lookout. (Add-on.)",
+      "points": 15,
+      "group": "Add-ons",
+      "rule": {
+        "place": "Point Lookout"
+      }
+    },
+    {
+      "id": "place-zeta",
+      "title": "Abducted",
+      "description": "Save a game aboard Mothership Zeta. (Add-on.)",
+      "points": 15,
+      "group": "Add-ons",
+      "rule": {
+        "place": "Mothership Zeta"
+      }
+    },
+    {
+      "id": "place-adams",
+      "title": "Who Dares Wins",
+      "description": "Save a game at Adams Air Force Base. (Broken Steel add-on.)",
+      "points": 20,
+      "group": "Add-ons",
+      "rule": {
+        "place": "Adams Air Force Base"
+      }
+    },
+    {
+      "id": "place-springvale",
+      "title": "Springvale",
+      "description": "Save a game in Springvale.",
+      "points": 5,
+      "group": "Places",
+      "rule": {
+        "place": "Springvale"
+      }
+    },
+    {
+      "id": "place-minefield",
+      "title": "Watch Your Step",
+      "description": "Save a game in Minefield.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Minefield"
+      }
+    },
+    {
+      "id": "place-grayditch",
+      "title": "Those!",
+      "description": "Save a game in Grayditch.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Grayditch"
+      }
+    },
+    {
+      "id": "place-evergreen",
+      "title": "Raider Bazaar",
+      "description": "Save a game at Evergreen Mills.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Evergreen Mills"
+      }
+    },
+    {
+      "id": "place-germantown",
+      "title": "Police Station",
+      "description": "Save a game at the Germantown police station.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Germantown"
+      }
+    },
+    {
+      "id": "place-dave",
+      "title": "Long Live Dave",
+      "description": "Save a game in the Republic of Dave.",
+      "points": 5,
+      "group": "Places",
+      "rule": {
+        "place": "Republic of Dave"
+      }
+    },
+    {
+      "id": "place-andale",
+      "title": "Strange Meat",
+      "description": "Save a game in Andale.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Andale"
+      }
+    },
+    {
+      "id": "place-girdershade",
+      "title": "Girdershade",
+      "description": "Save a game in Girdershade.",
+      "points": 5,
+      "group": "Places",
+      "rule": {
+        "place": "Girdershade"
+      }
+    },
+    {
+      "id": "place-constantine",
+      "title": "Fort Constantine",
+      "description": "Save a game at Fort Constantine.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Fort Constantine"
+      }
+    },
+    {
+      "id": "place-olney",
+      "title": "Deathclaw Country",
+      "description": "Save a game in Old Olney.",
+      "points": 15,
+      "group": "Places",
+      "rule": {
+        "place": "Old Olney"
+      }
+    },
+    {
+      "id": "place-rockopolis",
+      "title": "Rockopolis",
+      "description": "Save a game in Rockopolis.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Rockopolis"
+      }
+    },
+    {
+      "id": "place-archives",
+      "title": "Declaration of Independence",
+      "description": "Save a game in the National Archives.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "National Archives"
+      }
+    },
+    {
+      "id": "place-lincoln",
+      "title": "Head of State",
+      "description": "Save a game at the Lincoln Memorial.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Lincoln Memorial"
+      }
+    },
+    {
+      "id": "place-monument",
+      "title": "Monumental",
+      "description": "Save a game at the Washington Monument.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Washington Monument"
+      }
+    },
+    {
+      "id": "place-capitol",
+      "title": "Capitol Offence",
+      "description": "Save a game in the Capitol Building.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Capitol Building"
+      }
+    },
+    {
+      "id": "place-arlington",
+      "title": "Overdue Books",
+      "description": "Save a game in the Arlington Library.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Arlington Library"
+      }
+    },
+    {
+      "id": "place-fairfax",
+      "title": "Fairfax Ruins",
+      "description": "Save a game in the Fairfax ruins.",
+      "points": 5,
+      "group": "Places",
+      "rule": {
+        "place": "Fairfax"
+      }
+    },
+    {
+      "id": "place-temple",
+      "title": "Temple of the Union",
+      "description": "Save a game at the Temple of the Union.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Temple of the Union"
+      }
+    },
+    {
+      "id": "place-bannister",
+      "title": "Talon Territory",
+      "description": "Save a game at Fort Bannister.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Fort Bannister"
+      }
+    },
+    {
+      "id": "place-wheaton",
+      "title": "Armed to the Teeth",
+      "description": "Save a game at the Wheaton Armory.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Wheaton Armory"
+      }
+    },
+    {
+      "id": "place-corvega",
+      "title": "Assembly Line",
+      "description": "Save a game at the Corvega factory.",
+      "points": 5,
+      "group": "Places",
+      "rule": {
+        "place": "Corvega"
+      }
+    },
+    {
+      "id": "place-independence",
+      "title": "Outcasts",
+      "description": "Save a game at Fort Independence.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "place": "Fort Independence"
+      }
+    },
+    {
+      "id": "place-vaulttec",
+      "title": "Head Office",
+      "description": "Save a game at Vault-Tec Headquarters.",
+      "points": 10,
+      "group": "Vaults",
+      "rule": {
+        "place": "Vault-Tec Headquarters"
+      }
+    },
+    {
+      "id": "hours-1",
+      "title": "Fresh Out",
+      "description": "Play one character for 1 hour.",
+      "points": 5,
+      "group": "Time",
+      "rule": {
+        "hours": 1
+      }
+    },
+    {
+      "id": "hours-5",
+      "title": "Settling In",
+      "description": "Play one character for 5 hours.",
+      "points": 10,
+      "group": "Time",
+      "rule": {
+        "hours": 5
+      }
+    },
+    {
+      "id": "hours-10",
+      "title": "Wasteland Regular",
+      "description": "Play one character for 10 hours.",
+      "points": 15,
+      "group": "Time",
+      "rule": {
+        "hours": 10
+      }
+    },
+    {
+      "id": "hours-25",
+      "title": "Wasteland Lifer",
+      "description": "Play one character for 25 hours.",
+      "points": 20,
+      "group": "Time",
+      "rule": {
+        "hours": 25
+      }
+    },
+    {
+      "id": "hours-50",
+      "title": "Capital Resident",
+      "description": "Play one character for 50 hours.",
+      "points": 30,
+      "group": "Time",
+      "rule": {
+        "hours": 50
+      }
+    },
+    {
+      "id": "hours-100",
+      "title": "Lone Wanderer",
+      "description": "Play one character for 100 hours.",
+      "points": 40,
+      "group": "Time",
+      "rule": {
+        "hours": 100
+      }
+    },
+    {
+      "id": "saves-25",
+      "title": "Save Scummer",
+      "description": "Keep 25 different save files.",
+      "points": 10,
+      "group": "Time",
+      "rule": {
+        "saves": 25
+      }
+    },
+    {
+      "id": "hours-200",
+      "title": "Wasteland Legend",
+      "description": "Play one character for 200 hours.",
+      "points": 50,
+      "group": "Time",
+      "rule": {
+        "hours": 200
+      }
+    },
+    {
+      "id": "saves-100",
+      "title": "Archivist",
+      "description": "Keep 100 different save files.",
+      "points": 20,
+      "group": "Time",
+      "rule": {
+        "saves": 100
+      }
+    },
+    {
+      "id": "karma-vault-guardian",
+      "title": "Good Start",
+      "description": "Have good karma at level 1 or 2 (title \"Vault Guardian\").",
+      "points": 5,
+      "group": "Karma",
+      "rule": {
+        "karma": "Vault Guardian"
+      }
+    },
+    {
+      "id": "karma-vault-delinquent",
+      "title": "Bad Seed",
+      "description": "Have bad karma at level 1 or 2 (title \"Vault Delinquent\").",
+      "points": 5,
+      "group": "Karma",
+      "rule": {
+        "karma": "Vault Delinquent"
+      }
+    },
+    {
+      "id": "karma-messiah",
+      "title": "Messiah",
+      "description": "Reach level 20 with very good karma (title \"Messiah\").",
+      "points": 30,
+      "group": "Karma",
+      "rule": {
+        "karma": "Messiah"
+      }
+    },
+    {
+      "id": "karma-paradigm-of-humanity",
+      "title": "Paradigm of Humanity",
+      "description": "Reach level 20 with neutral karma (title \"Paradigm of Humanity\").",
+      "points": 30,
+      "group": "Karma",
+      "rule": {
+        "karma": "Paradigm of Humanity"
+      }
+    },
+    {
+      "id": "karma-devil",
+      "title": "The Devil",
+      "description": "Reach level 20 with very bad karma (title \"Devil\").",
+      "points": 30,
+      "group": "Karma",
+      "rule": {
+        "karma": "Devil"
+      }
+    },
+    {
+      "id": "places-10",
+      "title": "Well Travelled",
+      "description": "Save a game in 10 different places.",
+      "points": 10,
+      "group": "Places",
+      "rule": {
+        "placesCount": 10
+      }
+    },
+    {
+      "id": "places-25",
+      "title": "Wasteland Explorer",
+      "description": "Save a game in 25 different places.",
+      "points": 20,
+      "group": "Places",
+      "rule": {
+        "placesCount": 25
+      }
+    },
+    {
+      "id": "places-50",
+      "title": "Mapped the Wastes",
+      "description": "Save a game in 50 different places.",
+      "points": 35,
+      "group": "Places",
+      "rule": {
+        "placesCount": 50
+      }
+    }
+  ]
+}

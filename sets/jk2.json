@@ -1,0 +1,562 @@
+{
+  "id": "jk2",
+  "title": "Star Wars Jedi Knight II: Jedi Outcast",
+  "exeNames": [
+    "jk2sp.exe"
+  ],
+  "md5": [
+    "8fc6ed0324898b5c67d1b07ccb492af8"
+  ],
+  "genericExeName": false,
+  "linkFiles": [
+    "GameData/jk2sp.exe",
+    "GameData/jk2gamex86.dll"
+  ],
+  "version": 1,
+  "pollHz": 4,
+  "settleSeconds": 3,
+  "creditOnLoad": true,
+  "gate": "0xH{jk2gamex86.dll+3aeee0}!=0",
+  "notes": [
+    "Level achievements unlock when a level finishes loading (loading a save counts too).",
+    "Combat achievements use the game's own mission statistics, which count per mission.",
+    "Read from the game DLL, which Steam doesn't scramble."
+  ],
+  "watches": [
+    {
+      "id": "map",
+      "label": "Current map",
+      "address": "{jk2gamex86.dll+3aeee0}",
+      "size": "str",
+      "length": 32
+    },
+    {
+      "id": "kills",
+      "label": "Enemies killed (this mission)",
+      "path": [
+        "{jk2gamex86.dll+3aeec8}",
+        "6d4"
+      ],
+      "size": "u32"
+    },
+    {
+      "id": "secrets",
+      "label": "Secrets found",
+      "path": [
+        "{jk2gamex86.dll+3aeec8}",
+        "6c0"
+      ],
+      "size": "u32"
+    },
+    {
+      "id": "blocks",
+      "label": "Saber blocks",
+      "path": [
+        "{jk2gamex86.dll+3aeec8}",
+        "6dc"
+      ],
+      "size": "u32"
+    },
+    {
+      "id": "throws",
+      "label": "Saber throws",
+      "path": [
+        "{jk2gamex86.dll+3aeec8}",
+        "6d8"
+      ],
+      "size": "u32"
+    }
+  ],
+  "testGuide": [
+    {
+      "title": "Start Star Wars Jedi Knight II: Jedi Outcast",
+      "detail": "Start a new game or load a save. \"Current map\" should show the level name."
+    },
+    {
+      "title": "Fight",
+      "detail": "\"Enemies killed\" should count up as you defeat enemies."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "map-kejim_post",
+      "title": "Kejim: The Outpost",
+      "description": "Start the story at the Imperial outpost on Kejim.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1229604171_A:0xX{jk2gamex86.dll+3aeee4}&3755999199_0=1330667341_A:0xH{jk2gamex86.dll+3aeee8}&223_0=83_A:0xH{jk2gamex86.dll+3aeee9}&223_0=84_0xH{jk2gamex86.dll+3aeeea}=0",
+      "group": "Kejim"
+    },
+    {
+      "id": "map-kejim_base",
+      "title": "Kejim: The Base",
+      "description": "Reach the Imperial base on Kejim.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1229604171_A:0xX{jk2gamex86.dll+3aeee4}&3755999199_0=1094868813_A:0xH{jk2gamex86.dll+3aeee8}&223_0=83_A:0xH{jk2gamex86.dll+3aeee9}&223_0=69_0xH{jk2gamex86.dll+3aeeea}=0",
+      "group": "Kejim"
+    },
+    {
+      "id": "map-artus_mine",
+      "title": "Artus Prime: The Mines",
+      "description": "Reach the mines of Artus Prime.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1431589441_A:0xX{jk2gamex86.dll+3aeee4}&3755999199_0=1229807443_A:0xH{jk2gamex86.dll+3aeee8}&223_0=78_A:0xH{jk2gamex86.dll+3aeee9}&223_0=69_0xH{jk2gamex86.dll+3aeeea}=0",
+      "group": "Artus Prime"
+    },
+    {
+      "id": "map-artus_detention",
+      "title": "Artus Prime: Detention Area",
+      "description": "Reach the detention area.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1431589441_A:0xX{jk2gamex86.dll+3aeee4}&3755999199_0=1162108755_A:0xX{jk2gamex86.dll+3aeee8}&3755991007_0=1414415700_A:0xX{jk2gamex86.dll+3aeeec}&4292861919_0=5132105",
+      "group": "Artus Prime"
+    },
+    {
+      "id": "map-artus_topside",
+      "title": "Artus Prime: Topside",
+      "description": "Reach the surface of Artus Prime.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1431589441_A:0xX{jk2gamex86.dll+3aeee4}&3755999199_0=1330929491_A:0xX{jk2gamex86.dll+3aeee8}&3755991007_0=1145656144_A:0xH{jk2gamex86.dll+3aeeec}&223_0=69_0xH{jk2gamex86.dll+3aeeed}=0",
+      "group": "Artus Prime"
+    },
+    {
+      "id": "map-valley",
+      "title": "Valley of the Jedi",
+      "description": "Return to the Valley of the Jedi.",
+      "points": 15,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1280065878_A:0xH{jk2gamex86.dll+3aeee4}&223_0=69_A:0xH{jk2gamex86.dll+3aeee5}&223_0=89_0xH{jk2gamex86.dll+3aeee6}=0",
+      "group": "Story"
+    },
+    {
+      "id": "map-yavin_temple",
+      "title": "Yavin IV: The Temple",
+      "description": "Arrive at the Jedi Academy temple.",
+      "points": 10,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1230389593_A:0xX{jk2gamex86.dll+3aeee4}&3755999199_0=1163157326_A:0xX{jk2gamex86.dll+3aeee8}&3755991007_0=1162629197_0xH{jk2gamex86.dll+3aeeec}=0",
+      "group": "Yavin IV"
+    },
+    {
+      "id": "map-yavin_trial",
+      "title": "Yavin IV: The Trial",
+      "description": "Take the trial to regain your lightsaber.",
+      "points": 15,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1230389593_A:0xX{jk2gamex86.dll+3aeee4}&3755999199_0=1381261134_A:0xX{jk2gamex86.dll+3aeee8}&4292861919_0=4997449",
+      "group": "Yavin IV"
+    },
+    {
+      "id": "map-ns_streets",
+      "title": "Nar Shaddaa: Streets",
+      "description": "Hit the streets of Nar Shaddaa.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3758088159_0=1398756174_A:0xX{jk2gamex86.dll+3aeee4}&3755991007_0=1162170964_A:0xH{jk2gamex86.dll+3aeee8}&223_0=84_A:0xH{jk2gamex86.dll+3aeee9}&223_0=83_0xH{jk2gamex86.dll+3aeeea}=0",
+      "group": "Nar Shaddaa"
+    },
+    {
+      "id": "map-ns_hideout",
+      "title": "Nar Shaddaa: Reelo's Hideout",
+      "description": "Reach Reelo's hideout.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3758088159_0=1214206798_A:0xX{jk2gamex86.dll+3aeee4}&3755991007_0=1329939529_A:0xH{jk2gamex86.dll+3aeee8}&223_0=85_A:0xH{jk2gamex86.dll+3aeee9}&223_0=84_0xH{jk2gamex86.dll+3aeeea}=0",
+      "group": "Nar Shaddaa"
+    },
+    {
+      "id": "map-ns_starpad",
+      "title": "Nar Shaddaa: Starpad",
+      "description": "Reach the starpad.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3758088159_0=1398756174_A:0xX{jk2gamex86.dll+3aeee4}&3755991007_0=1347567956_A:0xH{jk2gamex86.dll+3aeee8}&223_0=65_A:0xH{jk2gamex86.dll+3aeee9}&223_0=68_0xH{jk2gamex86.dll+3aeeea}=0",
+      "group": "Nar Shaddaa"
+    },
+    {
+      "id": "map-bespin_undercity",
+      "title": "Bespin: Undercity",
+      "description": "Reach the undercity of Cloud City.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1347634498_A:0xX{jk2gamex86.dll+3aeee4}&3758088159_0=1432309321_A:0xX{jk2gamex86.dll+3aeee8}&3755991007_0=1380271182_A:0xX{jk2gamex86.dll+3aeeec}&3755991007_0=1498696003_0xH{jk2gamex86.dll+3aeef0}=0",
+      "group": "Bespin"
+    },
+    {
+      "id": "map-bespin_streets",
+      "title": "Bespin: Streets",
+      "description": "Reach the streets of Cloud City.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1347634498_A:0xX{jk2gamex86.dll+3aeee4}&3758088159_0=1398754889_A:0xX{jk2gamex86.dll+3aeee8}&3755991007_0=1162170964_A:0xH{jk2gamex86.dll+3aeeec}&223_0=84_A:0xH{jk2gamex86.dll+3aeeed}&223_0=83_0xH{jk2gamex86.dll+3aeeee}=0",
+      "group": "Bespin"
+    },
+    {
+      "id": "map-bespin_platform",
+      "title": "Bespin: Platform",
+      "description": "Reach the landing platform.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1347634498_A:0xX{jk2gamex86.dll+3aeee4}&3758088159_0=1348423241_A:0xX{jk2gamex86.dll+3aeee8}&3755991007_0=1179926860_A:0xX{jk2gamex86.dll+3aeeec}&4292861919_0=5067343",
+      "group": "Bespin"
+    },
+    {
+      "id": "map-cairn_bay",
+      "title": "Cairn: Docking Bay",
+      "description": "Reach the Cairn installation.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1380532547_A:0xX{jk2gamex86.dll+3aeee4}&3755999199_0=1094868814_A:0xH{jk2gamex86.dll+3aeee8}&223_0=89_0xH{jk2gamex86.dll+3aeee9}=0",
+      "group": "Cairn"
+    },
+    {
+      "id": "map-cairn_assembly",
+      "title": "Cairn: Assembly Area",
+      "description": "Reach the assembly area.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1380532547_A:0xX{jk2gamex86.dll+3aeee4}&3755999199_0=1396793166_A:0xX{jk2gamex86.dll+3aeee8}&3755991007_0=1112360275_A:0xH{jk2gamex86.dll+3aeeec}&223_0=76_A:0xH{jk2gamex86.dll+3aeeed}&223_0=89_0xH{jk2gamex86.dll+3aeeee}=0",
+      "group": "Cairn"
+    },
+    {
+      "id": "map-cairn_reactor",
+      "title": "Cairn: Reactor",
+      "description": "Reach the reactor.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1380532547_A:0xX{jk2gamex86.dll+3aeee4}&3755999199_0=1163026254_A:0xX{jk2gamex86.dll+3aeee8}&3755991007_0=1330922305_A:0xH{jk2gamex86.dll+3aeeec}&223_0=82_0xH{jk2gamex86.dll+3aeeed}=0",
+      "group": "Cairn"
+    },
+    {
+      "id": "map-cairn_dock1",
+      "title": "Cairn: Dock",
+      "description": "Reach the dock.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1380532547_A:0xX{jk2gamex86.dll+3aeee4}&3755999199_0=1329880910_A:0xX{jk2gamex86.dll+3aeee8}&4294959071_0=3230531",
+      "group": "Cairn"
+    },
+    {
+      "id": "map-doom_comm",
+      "title": "Doomgiver: Communications",
+      "description": "Board the Doomgiver.",
+      "points": 10,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1297043268_A:0xX{jk2gamex86.dll+3aeee4}&3755991039_0=1297040223_A:0xH{jk2gamex86.dll+3aeee8}&223_0=77_0xH{jk2gamex86.dll+3aeee9}=0",
+      "group": "Doomgiver"
+    },
+    {
+      "id": "map-doom_detention",
+      "title": "Doomgiver: Detention",
+      "description": "Reach the Doomgiver's detention block.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1297043268_A:0xX{jk2gamex86.dll+3aeee4}&3755991039_0=1413825631_A:0xX{jk2gamex86.dll+3aeee8}&3755991007_0=1230261829_A:0xH{jk2gamex86.dll+3aeeec}&223_0=79_A:0xH{jk2gamex86.dll+3aeeed}&223_0=78_0xH{jk2gamex86.dll+3aeeee}=0",
+      "group": "Doomgiver"
+    },
+    {
+      "id": "map-doom_shields",
+      "title": "Doomgiver: Shield Generator",
+      "description": "Reach the shield generator.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1297043268_A:0xX{jk2gamex86.dll+3aeee4}&3755991039_0=1229476703_A:0xX{jk2gamex86.dll+3aeee8}&3755991007_0=1396984901_0xH{jk2gamex86.dll+3aeeec}=0",
+      "group": "Doomgiver"
+    },
+    {
+      "id": "map-yavin_swamp",
+      "title": "Yavin IV: Swamp",
+      "description": "Return to Yavin IV.",
+      "points": 10,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1230389593_A:0xX{jk2gamex86.dll+3aeee4}&3755999199_0=1465081678_A:0xX{jk2gamex86.dll+3aeee8}&4292861919_0=5262657",
+      "group": "Yavin IV"
+    },
+    {
+      "id": "map-yavin_canyon",
+      "title": "Yavin IV: Canyon",
+      "description": "Reach the canyon.",
+      "points": 5,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1230389593_A:0xX{jk2gamex86.dll+3aeee4}&3755999199_0=1094934350_A:0xX{jk2gamex86.dll+3aeee8}&3755991007_0=1313823054_0xH{jk2gamex86.dll+3aeeec}=0",
+      "group": "Yavin IV"
+    },
+    {
+      "id": "map-yavin_courtyard",
+      "title": "Yavin IV: Courtyard",
+      "description": "Reach the temple courtyard.",
+      "points": 10,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1230389593_A:0xX{jk2gamex86.dll+3aeee4}&3755999199_0=1329815374_A:0xX{jk2gamex86.dll+3aeee8}&3755991007_0=1498698325_A:0xX{jk2gamex86.dll+3aeeec}&4292861919_0=4477505",
+      "group": "Yavin IV"
+    },
+    {
+      "id": "map-yavin_final",
+      "title": "Desann",
+      "description": "Reach the final confrontation.",
+      "points": 30,
+      "memaddr": "A:0xX{jk2gamex86.dll+3aeee0}&3755991007_0=1230389593_A:0xX{jk2gamex86.dll+3aeee4}&3755999199_0=1229348686_A:0xX{jk2gamex86.dll+3aeee8}&4292861919_0=4997454",
+      "group": "Story"
+    },
+    {
+      "id": "kills1",
+      "title": "First Blood",
+      "description": "Defeat 1 enemies in a single mission.",
+      "points": 5,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6d4>=1",
+      "group": "Combat"
+    },
+    {
+      "id": "kills25",
+      "title": "Skirmisher",
+      "description": "Defeat 25 enemies in a single mission.",
+      "points": 10,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6d4>=25",
+      "group": "Combat"
+    },
+    {
+      "id": "kills50",
+      "title": "Warrior",
+      "description": "Defeat 50 enemies in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6d4>=50",
+      "group": "Combat"
+    },
+    {
+      "id": "kills100",
+      "title": "One-Man Army",
+      "description": "Defeat 100 enemies in a single mission.",
+      "points": 25,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6d4>=100",
+      "group": "Combat"
+    },
+    {
+      "id": "blocks25",
+      "title": "Deflector",
+      "description": "Block 25 attacks with your lightsaber in a single mission.",
+      "points": 10,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6dc>=25",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "blocks100",
+      "title": "Wall of Light",
+      "description": "Block 100 attacks with your lightsaber in a single mission.",
+      "points": 20,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6dc>=100",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "blocks250",
+      "title": "Unbreakable Guard",
+      "description": "Block 250 attacks with your lightsaber in a single mission.",
+      "points": 30,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6dc>=250",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "throws10",
+      "title": "Boomerang",
+      "description": "Throw your lightsaber 10 times in a single mission.",
+      "points": 10,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6d8>=10",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "throws50",
+      "title": "Saber Throw Master",
+      "description": "Throw your lightsaber 50 times in a single mission.",
+      "points": 20,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6d8>=50",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "dismember",
+      "title": "Limb from Limb",
+      "description": "In one mission, land 5 lightsaber strikes on enemy legs and 5 on enemy arms.",
+      "points": 15,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6e0>=5_I:0xX{jk2gamex86.dll+3aeec8}_0xX6e4>=5",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "secret1",
+      "title": "Explorer",
+      "description": "Find a secret area.",
+      "points": 10,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6c0>=1",
+      "group": "Secrets"
+    },
+    {
+      "id": "secret5",
+      "title": "Treasure Hunter",
+      "description": "Find 5 secret areas in one mission.",
+      "points": 20,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6c0>=5",
+      "group": "Secrets"
+    },
+    {
+      "id": "sharpshooter",
+      "title": "Sharpshooter",
+      "description": "Land 200 shots in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6cc>=200",
+      "group": "Combat"
+    },
+    {
+      "id": "kills75",
+      "title": "Veteran",
+      "description": "Defeat 75 enemies in a single mission.",
+      "points": 20,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6d4>=75",
+      "group": "Combat"
+    },
+    {
+      "id": "kills150",
+      "title": "Legend of the Force",
+      "description": "Defeat 150 enemies in a single mission.",
+      "points": 35,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6d4>=150",
+      "group": "Combat"
+    },
+    {
+      "id": "kills200",
+      "title": "Unstoppable",
+      "description": "Defeat 200 enemies in a single mission.",
+      "points": 45,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6d4>=200",
+      "group": "Combat"
+    },
+    {
+      "id": "hits500",
+      "title": "Dead Eye",
+      "description": "Land 500 shots in a single mission.",
+      "points": 25,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6cc>=500",
+      "group": "Combat"
+    },
+    {
+      "id": "shots1000",
+      "title": "Trigger Happy",
+      "description": "Fire 1,000 shots in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6c8>=1000",
+      "group": "Combat"
+    },
+    {
+      "id": "accuracy50",
+      "title": "Steady Aim",
+      "description": "Hit with at least half of your shots (at least 100 fired) in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6c8>=100_I:0xX{jk2gamex86.dll+3aeec8}_A:0xX6cc*100_I:0xX{jk2gamex86.dll+3aeec8}_B:0xX6c8*50_0>=0",
+      "group": "Combat"
+    },
+    {
+      "id": "accuracy75",
+      "title": "Marksman",
+      "description": "Hit with three out of four shots (at least 100 fired) in a single mission.",
+      "points": 25,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6c8>=100_I:0xX{jk2gamex86.dll+3aeec8}_A:0xX6cc*100_I:0xX{jk2gamex86.dll+3aeec8}_B:0xX6c8*75_0>=0",
+      "group": "Combat"
+    },
+    {
+      "id": "accuracy90",
+      "title": "Never Miss",
+      "description": "Hit with 9 out of 10 shots (at least 50 fired) in a single mission.",
+      "points": 35,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6c8>=50_I:0xX{jk2gamex86.dll+3aeec8}_A:0xX6cc*100_I:0xX{jk2gamex86.dll+3aeec8}_B:0xX6c8*90_0>=0",
+      "group": "Combat"
+    },
+    {
+      "id": "blocks50",
+      "title": "Parry",
+      "description": "Block 50 attacks with your lightsaber in a single mission.",
+      "points": 10,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6dc>=50",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "blocks500",
+      "title": "Living Shield",
+      "description": "Block 500 attacks with your lightsaber in a single mission.",
+      "points": 40,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6dc>=500",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "blocks1000",
+      "title": "Impenetrable",
+      "description": "Block 1000 attacks with your lightsaber in a single mission.",
+      "points": 50,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6dc>=1000",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "throws25",
+      "title": "Spinning Blade",
+      "description": "Throw your lightsaber 25 times in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6d8>=25",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "throws100",
+      "title": "Return to Sender",
+      "description": "Throw your lightsaber 100 times in a single mission.",
+      "points": 30,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6d8>=100",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "legs25",
+      "title": "Leg Sweeper",
+      "description": "Land 25 lightsaber strikes on enemy legs in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6e0>=25",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "arms25",
+      "title": "Disarming",
+      "description": "Land 25 lightsaber strikes on enemy arms in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6e4>=25",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "torsos50",
+      "title": "Centre Mass",
+      "description": "Land 50 lightsaber strikes on enemy bodies in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6e8>=50",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "others25",
+      "title": "Creative Swordplay",
+      "description": "Land 25 lightsaber strikes on other places (heads and hands) in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6ec>=25",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "strikes100",
+      "title": "Blade Dancer",
+      "description": "Land 100 lightsaber strikes on enemies in a single mission.",
+      "points": 20,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_A:0xX6e0_I:0xX{jk2gamex86.dll+3aeec8}_A:0xX6e4_I:0xX{jk2gamex86.dll+3aeec8}_A:0xX6e8_I:0xX{jk2gamex86.dll+3aeec8}_0xX6ec>=100",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "strikes250",
+      "title": "Saber Storm",
+      "description": "Land 250 lightsaber strikes on enemies in a single mission.",
+      "points": 35,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_A:0xX6e0_I:0xX{jk2gamex86.dll+3aeec8}_A:0xX6e4_I:0xX{jk2gamex86.dll+3aeec8}_A:0xX6e8_I:0xX{jk2gamex86.dll+3aeec8}_0xX6ec>=250",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "secret3",
+      "title": "Sharp Eyes",
+      "description": "Find 3 secret areas in one mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6c0>=3",
+      "group": "Secrets"
+    },
+    {
+      "id": "allsecrets",
+      "title": "Nothing Left Hidden",
+      "description": "Find every secret area in a mission.",
+      "points": 25,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6c4>=1_I:0xX{jk2gamex86.dll+3aeec8}_0xX6c0>=0xX6c4",
+      "group": "Secrets"
+    },
+    {
+      "id": "allsecrets3",
+      "title": "Master Explorer",
+      "description": "Find every secret in a mission that has at least 3.",
+      "points": 35,
+      "memaddr": "I:0xX{jk2gamex86.dll+3aeec8}_0xX6c4>=3_I:0xX{jk2gamex86.dll+3aeec8}_0xX6c0>=0xX6c4",
+      "group": "Secrets"
+    }
+  ]
+}

@@ -1,0 +1,525 @@
+{
+  "id": "ra1",
+  "title": "Command & Conquer: Red Alert",
+  "exeNames": [
+    "ra95.dat",
+    "ra95.exe"
+  ],
+  "md5": [
+    "fc6eed209d25ee68b6ca9422703299f9"
+  ],
+  "layoutProbes": [
+    {
+      "address": "5f0031",
+      "bytes": "5343256325303264256325632e494e4900",
+      "note": "scenario name format string"
+    }
+  ],
+  "version": 1,
+  "pollHz": 10,
+  "settleSeconds": 2,
+  "notes": [
+    "Mission achievements unlock when the next mission starts loading after a win.",
+    "The last mission of each campaign ends the game instead of loading another, so it can't be tracked yet."
+  ],
+  "watches": [
+    {
+      "id": "mission",
+      "label": "Current mission file",
+      "address": "6679d4",
+      "size": "str",
+      "length": 12
+    },
+    {
+      "id": "difficulty",
+      "label": "Difficulty",
+      "address": "6678e8",
+      "size": "u8",
+      "values": {
+        "0": "Easy",
+        "1": "Normal",
+        "2": "Hard"
+      }
+    }
+  ],
+  "testGuide": [
+    {
+      "title": "Start Command & Conquer: Red Alert",
+      "detail": "Click Play on the game page and wait for the main menu."
+    },
+    {
+      "title": "Start the campaign",
+      "detail": "Start a new game on either side. \"Current mission file\" should show something like SCG01EA."
+    },
+    {
+      "title": "Win the first mission",
+      "detail": "When mission 2 starts loading, \"Mission 1\" pops."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "allied01",
+      "title": "Allied Mission 1",
+      "description": "Win Allied campaign mission 1.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=12848_d0x6679d7=12592",
+      "group": "Allied campaign"
+    },
+    {
+      "id": "allied01-hard",
+      "title": "Allied Mission 1 (Hard)",
+      "description": "Win Allied campaign mission 1 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=12848_d0x6679d7=12592_0xH6678e8=2",
+      "group": "Allied campaign \u2014 Hard"
+    },
+    {
+      "id": "allied02",
+      "title": "Allied Mission 2",
+      "description": "Win Allied campaign mission 2.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=13104_d0x6679d7=12848",
+      "group": "Allied campaign"
+    },
+    {
+      "id": "allied02-hard",
+      "title": "Allied Mission 2 (Hard)",
+      "description": "Win Allied campaign mission 2 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=13104_d0x6679d7=12848_0xH6678e8=2",
+      "group": "Allied campaign \u2014 Hard"
+    },
+    {
+      "id": "allied03",
+      "title": "Allied Mission 3",
+      "description": "Win Allied campaign mission 3.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=13360_d0x6679d7=13104",
+      "group": "Allied campaign"
+    },
+    {
+      "id": "allied03-hard",
+      "title": "Allied Mission 3 (Hard)",
+      "description": "Win Allied campaign mission 3 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=13360_d0x6679d7=13104_0xH6678e8=2",
+      "group": "Allied campaign \u2014 Hard"
+    },
+    {
+      "id": "allied04",
+      "title": "Allied Mission 4",
+      "description": "Win Allied campaign mission 4.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=13616_d0x6679d7=13360",
+      "group": "Allied campaign"
+    },
+    {
+      "id": "allied04-hard",
+      "title": "Allied Mission 4 (Hard)",
+      "description": "Win Allied campaign mission 4 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=13616_d0x6679d7=13360_0xH6678e8=2",
+      "group": "Allied campaign \u2014 Hard"
+    },
+    {
+      "id": "allied05",
+      "title": "Allied Mission 5",
+      "description": "Win Allied campaign mission 5.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=13872_d0x6679d7=13616",
+      "group": "Allied campaign"
+    },
+    {
+      "id": "allied05-hard",
+      "title": "Allied Mission 5 (Hard)",
+      "description": "Win Allied campaign mission 5 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=13872_d0x6679d7=13616_0xH6678e8=2",
+      "group": "Allied campaign \u2014 Hard"
+    },
+    {
+      "id": "allied06",
+      "title": "Allied Mission 6",
+      "description": "Win Allied campaign mission 6.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=14128_d0x6679d7=13872",
+      "group": "Allied campaign"
+    },
+    {
+      "id": "allied06-hard",
+      "title": "Allied Mission 6 (Hard)",
+      "description": "Win Allied campaign mission 6 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=14128_d0x6679d7=13872_0xH6678e8=2",
+      "group": "Allied campaign \u2014 Hard"
+    },
+    {
+      "id": "allied07",
+      "title": "Allied Mission 7",
+      "description": "Win Allied campaign mission 7.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=14384_d0x6679d7=14128",
+      "group": "Allied campaign"
+    },
+    {
+      "id": "allied07-hard",
+      "title": "Allied Mission 7 (Hard)",
+      "description": "Win Allied campaign mission 7 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=14384_d0x6679d7=14128_0xH6678e8=2",
+      "group": "Allied campaign \u2014 Hard"
+    },
+    {
+      "id": "allied08",
+      "title": "Allied Mission 8",
+      "description": "Win Allied campaign mission 8.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=14640_d0x6679d7=14384",
+      "group": "Allied campaign"
+    },
+    {
+      "id": "allied08-hard",
+      "title": "Allied Mission 8 (Hard)",
+      "description": "Win Allied campaign mission 8 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=14640_d0x6679d7=14384_0xH6678e8=2",
+      "group": "Allied campaign \u2014 Hard"
+    },
+    {
+      "id": "allied09",
+      "title": "Allied Mission 9",
+      "description": "Win Allied campaign mission 9.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=12337_d0x6679d7=14640",
+      "group": "Allied campaign"
+    },
+    {
+      "id": "allied09-hard",
+      "title": "Allied Mission 9 (Hard)",
+      "description": "Win Allied campaign mission 9 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=12337_d0x6679d7=14640_0xH6678e8=2",
+      "group": "Allied campaign \u2014 Hard"
+    },
+    {
+      "id": "allied10",
+      "title": "Allied Mission 10",
+      "description": "Win Allied campaign mission 10.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=12593_d0x6679d7=12337",
+      "group": "Allied campaign"
+    },
+    {
+      "id": "allied10-hard",
+      "title": "Allied Mission 10 (Hard)",
+      "description": "Win Allied campaign mission 10 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=12593_d0x6679d7=12337_0xH6678e8=2",
+      "group": "Allied campaign \u2014 Hard"
+    },
+    {
+      "id": "allied11",
+      "title": "Allied Mission 11",
+      "description": "Win Allied campaign mission 11.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=12849_d0x6679d7=12593",
+      "group": "Allied campaign"
+    },
+    {
+      "id": "allied11-hard",
+      "title": "Allied Mission 11 (Hard)",
+      "description": "Win Allied campaign mission 11 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=12849_d0x6679d7=12593_0xH6678e8=2",
+      "group": "Allied campaign \u2014 Hard"
+    },
+    {
+      "id": "allied12",
+      "title": "Allied Mission 12",
+      "description": "Win Allied campaign mission 12.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=13105_d0x6679d7=12849",
+      "group": "Allied campaign"
+    },
+    {
+      "id": "allied12-hard",
+      "title": "Allied Mission 12 (Hard)",
+      "description": "Win Allied campaign mission 12 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=13105_d0x6679d7=12849_0xH6678e8=2",
+      "group": "Allied campaign \u2014 Hard"
+    },
+    {
+      "id": "allied13",
+      "title": "Allied Mission 13",
+      "description": "Win Allied campaign mission 13.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=13361_d0x6679d7=13105",
+      "group": "Allied campaign"
+    },
+    {
+      "id": "allied13-hard",
+      "title": "Allied Mission 13 (Hard)",
+      "description": "Win Allied campaign mission 13 on Hard.",
+      "points": 20,
+      "memaddr": "0x6679d4=17235_0xH6679d6=71_0x6679d7=13361_d0x6679d7=13105_0xH6678e8=2",
+      "group": "Allied campaign \u2014 Hard"
+    },
+    {
+      "id": "allied-reach05",
+      "title": "Allied: Mission 5",
+      "description": "Reach Allied mission 5 (loading a save of a later mission counts too).",
+      "points": 10,
+      "memaddr": "1=1S0x6679d4=17235_0xH6679d6=71_0x6679d7=13616S0x6679d4=17235_0xH6679d6=71_0x6679d7=13872S0x6679d4=17235_0xH6679d6=71_0x6679d7=14128S0x6679d4=17235_0xH6679d6=71_0x6679d7=14384S0x6679d4=17235_0xH6679d6=71_0x6679d7=14640S0x6679d4=17235_0xH6679d6=71_0x6679d7=12337S0x6679d4=17235_0xH6679d6=71_0x6679d7=12593S0x6679d4=17235_0xH6679d6=71_0x6679d7=12849S0x6679d4=17235_0xH6679d6=71_0x6679d7=13105S0x6679d4=17235_0xH6679d6=71_0x6679d7=13361",
+      "group": "Milestones"
+    },
+    {
+      "id": "allied-reach10",
+      "title": "Allied: Mission 10",
+      "description": "Reach Allied mission 10 (loading a save of a later mission counts too).",
+      "points": 10,
+      "memaddr": "1=1S0x6679d4=17235_0xH6679d6=71_0x6679d7=12337S0x6679d4=17235_0xH6679d6=71_0x6679d7=12593S0x6679d4=17235_0xH6679d6=71_0x6679d7=12849S0x6679d4=17235_0xH6679d6=71_0x6679d7=13105S0x6679d4=17235_0xH6679d6=71_0x6679d7=13361",
+      "group": "Milestones"
+    },
+    {
+      "id": "allied-final",
+      "title": "Allied: The Final Battle",
+      "description": "Reach the last Allied mission.",
+      "points": 20,
+      "memaddr": "1=1S0x6679d4=17235_0xH6679d6=71_0x6679d7=13361",
+      "group": "Milestones"
+    },
+    {
+      "id": "soviet01",
+      "title": "Soviet Mission 1",
+      "description": "Win Soviet campaign mission 1.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=12848_d0x6679d7=12592",
+      "group": "Soviet campaign"
+    },
+    {
+      "id": "soviet01-hard",
+      "title": "Soviet Mission 1 (Hard)",
+      "description": "Win Soviet campaign mission 1 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=12848_d0x6679d7=12592_0xH6678e8=2",
+      "group": "Soviet campaign \u2014 Hard"
+    },
+    {
+      "id": "soviet02",
+      "title": "Soviet Mission 2",
+      "description": "Win Soviet campaign mission 2.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=13104_d0x6679d7=12848",
+      "group": "Soviet campaign"
+    },
+    {
+      "id": "soviet02-hard",
+      "title": "Soviet Mission 2 (Hard)",
+      "description": "Win Soviet campaign mission 2 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=13104_d0x6679d7=12848_0xH6678e8=2",
+      "group": "Soviet campaign \u2014 Hard"
+    },
+    {
+      "id": "soviet03",
+      "title": "Soviet Mission 3",
+      "description": "Win Soviet campaign mission 3.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=13360_d0x6679d7=13104",
+      "group": "Soviet campaign"
+    },
+    {
+      "id": "soviet03-hard",
+      "title": "Soviet Mission 3 (Hard)",
+      "description": "Win Soviet campaign mission 3 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=13360_d0x6679d7=13104_0xH6678e8=2",
+      "group": "Soviet campaign \u2014 Hard"
+    },
+    {
+      "id": "soviet04",
+      "title": "Soviet Mission 4",
+      "description": "Win Soviet campaign mission 4.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=13616_d0x6679d7=13360",
+      "group": "Soviet campaign"
+    },
+    {
+      "id": "soviet04-hard",
+      "title": "Soviet Mission 4 (Hard)",
+      "description": "Win Soviet campaign mission 4 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=13616_d0x6679d7=13360_0xH6678e8=2",
+      "group": "Soviet campaign \u2014 Hard"
+    },
+    {
+      "id": "soviet05",
+      "title": "Soviet Mission 5",
+      "description": "Win Soviet campaign mission 5.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=13872_d0x6679d7=13616",
+      "group": "Soviet campaign"
+    },
+    {
+      "id": "soviet05-hard",
+      "title": "Soviet Mission 5 (Hard)",
+      "description": "Win Soviet campaign mission 5 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=13872_d0x6679d7=13616_0xH6678e8=2",
+      "group": "Soviet campaign \u2014 Hard"
+    },
+    {
+      "id": "soviet06",
+      "title": "Soviet Mission 6",
+      "description": "Win Soviet campaign mission 6.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=14128_d0x6679d7=13872",
+      "group": "Soviet campaign"
+    },
+    {
+      "id": "soviet06-hard",
+      "title": "Soviet Mission 6 (Hard)",
+      "description": "Win Soviet campaign mission 6 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=14128_d0x6679d7=13872_0xH6678e8=2",
+      "group": "Soviet campaign \u2014 Hard"
+    },
+    {
+      "id": "soviet07",
+      "title": "Soviet Mission 7",
+      "description": "Win Soviet campaign mission 7.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=14384_d0x6679d7=14128",
+      "group": "Soviet campaign"
+    },
+    {
+      "id": "soviet07-hard",
+      "title": "Soviet Mission 7 (Hard)",
+      "description": "Win Soviet campaign mission 7 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=14384_d0x6679d7=14128_0xH6678e8=2",
+      "group": "Soviet campaign \u2014 Hard"
+    },
+    {
+      "id": "soviet08",
+      "title": "Soviet Mission 8",
+      "description": "Win Soviet campaign mission 8.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=14640_d0x6679d7=14384",
+      "group": "Soviet campaign"
+    },
+    {
+      "id": "soviet08-hard",
+      "title": "Soviet Mission 8 (Hard)",
+      "description": "Win Soviet campaign mission 8 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=14640_d0x6679d7=14384_0xH6678e8=2",
+      "group": "Soviet campaign \u2014 Hard"
+    },
+    {
+      "id": "soviet09",
+      "title": "Soviet Mission 9",
+      "description": "Win Soviet campaign mission 9.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=12337_d0x6679d7=14640",
+      "group": "Soviet campaign"
+    },
+    {
+      "id": "soviet09-hard",
+      "title": "Soviet Mission 9 (Hard)",
+      "description": "Win Soviet campaign mission 9 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=12337_d0x6679d7=14640_0xH6678e8=2",
+      "group": "Soviet campaign \u2014 Hard"
+    },
+    {
+      "id": "soviet10",
+      "title": "Soviet Mission 10",
+      "description": "Win Soviet campaign mission 10.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=12593_d0x6679d7=12337",
+      "group": "Soviet campaign"
+    },
+    {
+      "id": "soviet10-hard",
+      "title": "Soviet Mission 10 (Hard)",
+      "description": "Win Soviet campaign mission 10 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=12593_d0x6679d7=12337_0xH6678e8=2",
+      "group": "Soviet campaign \u2014 Hard"
+    },
+    {
+      "id": "soviet11",
+      "title": "Soviet Mission 11",
+      "description": "Win Soviet campaign mission 11.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=12849_d0x6679d7=12593",
+      "group": "Soviet campaign"
+    },
+    {
+      "id": "soviet11-hard",
+      "title": "Soviet Mission 11 (Hard)",
+      "description": "Win Soviet campaign mission 11 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=12849_d0x6679d7=12593_0xH6678e8=2",
+      "group": "Soviet campaign \u2014 Hard"
+    },
+    {
+      "id": "soviet12",
+      "title": "Soviet Mission 12",
+      "description": "Win Soviet campaign mission 12.",
+      "points": 10,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=13105_d0x6679d7=12849",
+      "group": "Soviet campaign"
+    },
+    {
+      "id": "soviet12-hard",
+      "title": "Soviet Mission 12 (Hard)",
+      "description": "Win Soviet campaign mission 12 on Hard.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=13105_d0x6679d7=12849_0xH6678e8=2",
+      "group": "Soviet campaign \u2014 Hard"
+    },
+    {
+      "id": "soviet13",
+      "title": "Soviet Mission 13",
+      "description": "Win Soviet campaign mission 13.",
+      "points": 15,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=13361_d0x6679d7=13105",
+      "group": "Soviet campaign"
+    },
+    {
+      "id": "soviet13-hard",
+      "title": "Soviet Mission 13 (Hard)",
+      "description": "Win Soviet campaign mission 13 on Hard.",
+      "points": 20,
+      "memaddr": "0x6679d4=17235_0xH6679d6=85_0x6679d7=13361_d0x6679d7=13105_0xH6678e8=2",
+      "group": "Soviet campaign \u2014 Hard"
+    },
+    {
+      "id": "soviet-reach05",
+      "title": "Soviet: Mission 5",
+      "description": "Reach Soviet mission 5 (loading a save of a later mission counts too).",
+      "points": 10,
+      "memaddr": "1=1S0x6679d4=17235_0xH6679d6=85_0x6679d7=13616S0x6679d4=17235_0xH6679d6=85_0x6679d7=13872S0x6679d4=17235_0xH6679d6=85_0x6679d7=14128S0x6679d4=17235_0xH6679d6=85_0x6679d7=14384S0x6679d4=17235_0xH6679d6=85_0x6679d7=14640S0x6679d4=17235_0xH6679d6=85_0x6679d7=12337S0x6679d4=17235_0xH6679d6=85_0x6679d7=12593S0x6679d4=17235_0xH6679d6=85_0x6679d7=12849S0x6679d4=17235_0xH6679d6=85_0x6679d7=13105S0x6679d4=17235_0xH6679d6=85_0x6679d7=13361",
+      "group": "Milestones"
+    },
+    {
+      "id": "soviet-reach10",
+      "title": "Soviet: Mission 10",
+      "description": "Reach Soviet mission 10 (loading a save of a later mission counts too).",
+      "points": 10,
+      "memaddr": "1=1S0x6679d4=17235_0xH6679d6=85_0x6679d7=12337S0x6679d4=17235_0xH6679d6=85_0x6679d7=12593S0x6679d4=17235_0xH6679d6=85_0x6679d7=12849S0x6679d4=17235_0xH6679d6=85_0x6679d7=13105S0x6679d4=17235_0xH6679d6=85_0x6679d7=13361",
+      "group": "Milestones"
+    },
+    {
+      "id": "soviet-final",
+      "title": "Soviet: The Final Battle",
+      "description": "Reach the last Soviet mission.",
+      "points": 20,
+      "memaddr": "1=1S0x6679d4=17235_0xH6679d6=85_0x6679d7=13361",
+      "group": "Milestones"
+    }
+  ]
+}

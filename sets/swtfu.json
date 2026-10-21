@@ -1,0 +1,138 @@
+{
+ "id": "swtfu",
+ "title": "Star Wars: The Force Unleashed",
+ "exeNames": [
+  "SWTFU.exe"
+ ],
+ "md5": [
+  "855181d642b028b6a32daa16493c8470"
+ ],
+ "genericExeName": false,
+ "linkFiles": [
+  "SWTFU.exe"
+ ],
+ "version": 1,
+ "pollHz": 10,
+ "settleSeconds": 2,
+ "notes": [
+  "Each level's achievement unlocks when the next level starts loading.",
+  "Read-only: Vault watches the game's memory and never changes it. Ultimate Sith Edition, Steam.",
+  "Level numbers come from the community speedrun auto-splitter."
+ ],
+ "watches": [
+  {
+   "id": "level",
+   "label": "Current level number",
+   "address": "{swtfu.exe+ea0adc}",
+   "size": "u8"
+  }
+ ],
+ "testGuide": [
+  {
+   "title": "Start the story",
+   "detail": "Start a new game. \"Current level number\" should show 2 during the Kashyyyk prologue."
+  },
+  {
+   "title": "Finish the prologue",
+   "detail": "When the next level loads, \"Vader's Fury\" should pop up."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "level-vader",
+   "title": "Vader's Fury",
+   "description": "Finish the Kashyyyk prologue as Darth Vader.",
+   "points": 10,
+   "group": "Prologue",
+   "memaddr": "d0xH{swtfu.exe+ea0adc}=2_0xH{swtfu.exe+ea0adc}>2"
+  },
+  {
+   "id": "level-training",
+   "title": "The Secret Apprentice",
+   "description": "Finish the training room on the Empirical.",
+   "points": 10,
+   "group": "Act I",
+   "memaddr": "d0xH{swtfu.exe+ea0adc}=4_0xH{swtfu.exe+ea0adc}>4"
+  },
+  {
+   "id": "level-tie-factory",
+   "title": "TIE Fighter Factory",
+   "description": "Finish the TIE fighter construction facility on Nar Shaddaa.",
+   "points": 10,
+   "group": "Act I",
+   "memaddr": "d0xH{swtfu.exe+ea0adc}=6_0xH{swtfu.exe+ea0adc}>6"
+  },
+  {
+   "id": "level-raxus",
+   "title": "Raxus Prime",
+   "description": "Defeat Kazdan Paratus on Raxus Prime.",
+   "points": 15,
+   "group": "Act I",
+   "memaddr": "d0xH{swtfu.exe+ea0adc}=8_0xH{swtfu.exe+ea0adc}>8"
+  },
+  {
+   "id": "level-felucia",
+   "title": "Felucia",
+   "description": "Defeat Shaak Ti on Felucia.",
+   "points": 15,
+   "group": "Act I",
+   "memaddr": "d0xH{swtfu.exe+ea0adc}=12_0xH{swtfu.exe+ea0adc}>12"
+  },
+  {
+   "id": "level-empirical",
+   "title": "The Empirical",
+   "description": "Survive the attack on the Empirical.",
+   "points": 10,
+   "group": "Act II",
+   "memaddr": "d0xH{swtfu.exe+ea0adc}=15_0xH{swtfu.exe+ea0adc}>15"
+  },
+  {
+   "id": "level-cloud-city",
+   "title": "Cloud City",
+   "description": "Finish Cloud City on Bespin.",
+   "points": 10,
+   "group": "Act II",
+   "memaddr": "d0xH{swtfu.exe+ea0adc}=17_0xH{swtfu.exe+ea0adc}>17"
+  },
+  {
+   "id": "level-imperial-kashyyyk",
+   "title": "Imperial Kashyyyk",
+   "description": "Finish the Imperial-occupied Kashyyyk.",
+   "points": 10,
+   "group": "Act II",
+   "memaddr": "d0xH{swtfu.exe+ea0adc}=19_0xH{swtfu.exe+ea0adc}>19"
+  },
+  {
+   "id": "level-imperial-felucia",
+   "title": "Imperial Felucia",
+   "description": "Finish the Imperial-occupied Felucia.",
+   "points": 10,
+   "group": "Act III",
+   "memaddr": "d0xH{swtfu.exe+ea0adc}=21_0xH{swtfu.exe+ea0adc}>21"
+  },
+  {
+   "id": "level-imperial-raxus",
+   "title": "Imperial Raxus Prime",
+   "description": "Pull down the Star Destroyer at Raxus Prime.",
+   "points": 10,
+   "group": "Act III",
+   "memaddr": "d0xH{swtfu.exe+ea0adc}=26_0xH{swtfu.exe+ea0adc}>26"
+  },
+  {
+   "id": "level-death-star",
+   "title": "The Death Star",
+   "description": "Finish the final battle on the Death Star.",
+   "points": 50,
+   "group": "Act III",
+   "memaddr": "d0xH{swtfu.exe+ea0adc}=31_0xH{swtfu.exe+ea0adc}>31"
+  },
+  {
+   "id": "new-game-plus",
+   "title": "Unlimited Power",
+   "description": "Start a New Game+ run with your powers carried over.",
+   "points": 15,
+   "group": "Extras",
+   "memaddr": "d0xH{swtfu.exe+10b5063}=0_0xH{swtfu.exe+10b5063}=66"
+  }
+ ]
+}

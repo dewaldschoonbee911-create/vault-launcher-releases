@@ -1,0 +1,664 @@
+{
+ "id": "assassinscreed",
+ "title": "Assassin's Creed",
+ "version": 2,
+ "kind": "replay",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [],
+ "linkFiles": [
+  "AssassinsCreed_Game.exe",
+  "DataPC_Masyaf.forge"
+ ],
+ "exeNames": [
+  "AssassinsCreed_Dx9.exe",
+  "AssassinsCreed_Dx10.exe"
+ ],
+ "md5": [],
+ "notes": [
+  "Vault reads the save headers in %APPDATA%\\Ubisoft\\Assassin's Creed\\Saved Games and never touches the game. The game saves on its own as you play.",
+  "Untested: \"Nothing Is True\" works as soon as the game has saved once. The Memory Block achievements depend on the save header naming the block, which Vault hasn't been able to check on a real save yet. If they don't pop, send a test report.",
+  "The Places achievements count when a save header names the city you're in; also unchecked on a real save."
+ ],
+ "testGuide": [
+  {
+   "title": "Start a new game",
+   "detail": "Play until the game autosaves (the spinning symbol in the corner)."
+  },
+  {
+   "title": "Check the numbers",
+   "detail": "\"Nothing Is True\" should pop. \"Last save\" shows the memory block if the save names one."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "started",
+   "title": "Nothing Is True",
+   "description": "Start the game and let it save once.",
+   "points": 5,
+   "group": "Memories",
+   "rule": {
+    "reach": [
+     "STARTED",
+     "B1",
+     "B2",
+     "B3",
+     "B4",
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "block-1",
+   "title": "Fall from Grace",
+   "description": "Finish Memory Block 1. (Counts once the game saves in a later block.)",
+   "points": 10,
+   "group": "Memories",
+   "rule": {
+    "reach": [
+     "B2",
+     "B3",
+     "B4",
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "block-2",
+   "title": "First Blood",
+   "description": "Finish Memory Block 2. (Counts once the game saves in a later block.)",
+   "points": 10,
+   "group": "Memories",
+   "rule": {
+    "reach": [
+     "B3",
+     "B4",
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "block-3",
+   "title": "Halfway to Freedom",
+   "description": "Finish Memory Block 3. (Counts once the game saves in a later block.)",
+   "points": 10,
+   "group": "Memories",
+   "rule": {
+    "reach": [
+     "B4",
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "block-4",
+   "title": "Mentor's Doubts",
+   "description": "Finish Memory Block 4. (Counts once the game saves in a later block.)",
+   "points": 10,
+   "group": "Memories",
+   "rule": {
+    "reach": [
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "block-5",
+   "title": "The Last Nine",
+   "description": "Finish Memory Block 5. (Counts once the game saves in a later block.)",
+   "points": 10,
+   "group": "Memories",
+   "rule": {
+    "reach": [
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "block-6",
+   "title": "Robert de Sable",
+   "description": "Finish Memory Block 6. (Counts once the game saves in a later block.)",
+   "points": 20,
+   "group": "Memories",
+   "rule": {
+    "reach": [
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "block-7",
+   "title": "Everything Is Permitted",
+   "description": "Reach Memory Block 7, the last one.",
+   "points": 30,
+   "group": "Memories",
+   "rule": {
+    "reach": "B7"
+   }
+  },
+  {
+   "id": "in-block-1",
+   "title": "Synchronised: Block 1",
+   "description": "Have the game save during Memory Block 1.",
+   "points": 5,
+   "group": "Memories",
+   "rule": {
+    "reach": "B1"
+   }
+  },
+  {
+   "id": "in-block-2",
+   "title": "Synchronised: Block 2",
+   "description": "Have the game save during Memory Block 2.",
+   "points": 5,
+   "group": "Memories",
+   "rule": {
+    "reach": "B2"
+   }
+  },
+  {
+   "id": "in-block-3",
+   "title": "Synchronised: Block 3",
+   "description": "Have the game save during Memory Block 3.",
+   "points": 5,
+   "group": "Memories",
+   "rule": {
+    "reach": "B3"
+   }
+  },
+  {
+   "id": "in-block-4",
+   "title": "Synchronised: Block 4",
+   "description": "Have the game save during Memory Block 4.",
+   "points": 5,
+   "group": "Memories",
+   "rule": {
+    "reach": "B4"
+   }
+  },
+  {
+   "id": "in-block-5",
+   "title": "Synchronised: Block 5",
+   "description": "Have the game save during Memory Block 5.",
+   "points": 5,
+   "group": "Memories",
+   "rule": {
+    "reach": "B5"
+   }
+  },
+  {
+   "id": "in-block-6",
+   "title": "Synchronised: Block 6",
+   "description": "Have the game save during Memory Block 6.",
+   "points": 5,
+   "group": "Memories",
+   "rule": {
+    "reach": "B6"
+   }
+  },
+  {
+   "id": "in-block-7",
+   "title": "Synchronised: Block 7",
+   "description": "Have the game save during Memory Block 7.",
+   "points": 5,
+   "group": "Memories",
+   "rule": {
+    "reach": "B7"
+   }
+  },
+  {
+   "id": "blocks-all",
+   "title": "Full Synchronisation",
+   "description": "Have the game save in all seven Memory Blocks.",
+   "points": 30,
+   "group": "Memories",
+   "rule": {
+    "count": 7,
+    "of": [
+     "B1",
+     "B2",
+     "B3",
+     "B4",
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "place-masyaf",
+   "title": "Home of the Brotherhood",
+   "description": "Have the game save while you are in Masyaf.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "tag": "Masyaf"
+   }
+  },
+  {
+   "id": "place-jerusalem",
+   "title": "Holy City",
+   "description": "Have the game save while you are in Jerusalem.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "tag": "Jerusalem"
+   }
+  },
+  {
+   "id": "place-acre",
+   "title": "Port of the Crusaders",
+   "description": "Have the game save while you are in Acre.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "tag": "Acre"
+   }
+  },
+  {
+   "id": "place-damascus",
+   "title": "Jewel of the Desert",
+   "description": "Have the game save while you are in Damascus.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "tag": "Damascus"
+   }
+  },
+  {
+   "id": "place-kingdom",
+   "title": "Open Country",
+   "description": "Have the game save while you are in the Kingdom.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "tag": "Kingdom"
+   }
+  },
+  {
+   "id": "place-arsuf",
+   "title": "The Battle of Arsuf",
+   "description": "Have the game save while you are in Arsuf.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "tag": "Arsuf"
+   }
+  },
+  {
+   "id": "place-solomon",
+   "title": "Temple Mount",
+   "description": "Have the game save while you are in Solomon's Temple.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "tag": "Solomon"
+   }
+  },
+  {
+   "id": "places-cities",
+   "title": "Three Cities",
+   "description": "Have the game save in Jerusalem, Acre and Damascus.",
+   "points": 20,
+   "group": "Places",
+   "rule": {
+    "tagsAll": [
+     "Jerusalem",
+     "Acre",
+     "Damascus"
+    ]
+   }
+  },
+  {
+   "id": "target-tamir",
+   "title": "The Blood of a Corrupt Merchant",
+   "description": "Assassinate Tamir, the black market merchant of Damascus. (Counts once the game saves in Memory Block 3 or later.)",
+   "points": 15,
+   "group": "Targets",
+   "rule": {
+    "reach": [
+     "B3",
+     "B4",
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "target-garnier",
+   "title": "The Blood of a Doctor",
+   "description": "Assassinate Garnier de Naplouse, leader of the Hospitallers in Acre. (Counts once the game saves in Memory Block 3 or later.)",
+   "points": 15,
+   "group": "Targets",
+   "rule": {
+    "reach": [
+     "B3",
+     "B4",
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "target-talal",
+   "title": "The Blood of a Slave Trader",
+   "description": "Assassinate Talal, the slave trader of Jerusalem. (Counts once the game saves in Memory Block 3 or later.)",
+   "points": 15,
+   "group": "Targets",
+   "rule": {
+    "reach": [
+     "B3",
+     "B4",
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "target-abul",
+   "title": "The Blood of the Merchant King",
+   "description": "Assassinate Abu'l Nuqoud, the merchant king of Damascus. (Counts once the game saves in Memory Block 4 or later.)",
+   "points": 15,
+   "group": "Targets",
+   "rule": {
+    "reach": [
+     "B4",
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "target-william",
+   "title": "The Blood of a Liege-Lord",
+   "description": "Assassinate William of Montferrat, liege-lord of Acre. (Counts once the game saves in Memory Block 4 or later.)",
+   "points": 15,
+   "group": "Targets",
+   "rule": {
+    "reach": [
+     "B4",
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "target-majd",
+   "title": "The Blood of a Regent",
+   "description": "Assassinate Majd Addin, regent of Jerusalem. (Counts once the game saves in Memory Block 4 or later.)",
+   "points": 15,
+   "group": "Targets",
+   "rule": {
+    "reach": [
+     "B4",
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "target-jubair",
+   "title": "The Blood of a Scribe",
+   "description": "Assassinate Jubair al Hakim, the scribe of Damascus. (Counts once the game saves in Memory Block 5 or later.)",
+   "points": 15,
+   "group": "Targets",
+   "rule": {
+    "reach": [
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "target-sibrand",
+   "title": "The Blood of a Teutonic Leader",
+   "description": "Assassinate Sibrand, leader of the Teutonic Knights in Acre. (Counts once the game saves in Memory Block 5 or later.)",
+   "points": 15,
+   "group": "Targets",
+   "rule": {
+    "reach": [
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "target-robert",
+   "title": "The Blood of a Nemesis",
+   "description": "Assassinate Robert de Sable. (Counts once the game saves in the final Memory Block.)",
+   "points": 25,
+   "group": "Targets",
+   "rule": {
+    "reach": "B7"
+   }
+  },
+  {
+   "id": "hero-masyaf",
+   "title": "Hero of Masyaf",
+   "description": "Protect Masyaf from the Templar invasion. (Counts once the game saves in Memory Block 2 or later.)",
+   "points": 15,
+   "group": "Memories",
+   "rule": {
+    "reach": [
+     "B2",
+     "B3",
+     "B4",
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "animus",
+   "title": "Welcome to the Animus",
+   "description": "Finish the Animus tutorial and reach the first save.",
+   "points": 5,
+   "group": "Memories",
+   "rule": {
+    "reach": [
+     "STARTED",
+     "B1",
+     "B2",
+     "B3",
+     "B4",
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "blocks-3",
+   "title": "Recovering Memories",
+   "description": "Have the game save in 3 different Memory Blocks.",
+   "points": 10,
+   "group": "Memories",
+   "rule": {
+    "count": 3,
+    "of": [
+     "B1",
+     "B2",
+     "B3",
+     "B4",
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "blocks-5",
+   "title": "Deep Synchronisation",
+   "description": "Have the game save in 5 different Memory Blocks.",
+   "points": 20,
+   "group": "Memories",
+   "rule": {
+    "count": 5,
+    "of": [
+     "B1",
+     "B2",
+     "B3",
+     "B4",
+     "B5",
+     "B6",
+     "B7"
+    ]
+   }
+  },
+  {
+   "id": "places-coast",
+   "title": "Crusader Coast",
+   "description": "Have the game save in Acre and at Arsuf.",
+   "points": 15,
+   "group": "Places",
+   "rule": {
+    "tagsAll": [
+     "Acre",
+     "Arsuf"
+    ]
+   }
+  },
+  {
+   "id": "places-road",
+   "title": "The Road to Masyaf",
+   "description": "Have the game save in Masyaf and out in the Kingdom.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "tagsAll": [
+     "Masyaf",
+     "Kingdom"
+    ]
+   }
+  },
+  {
+   "id": "places-all",
+   "title": "The Holy Land",
+   "description": "Have the game save in all seven places: Masyaf, Jerusalem, Acre, Damascus, the Kingdom, Arsuf and Solomon's Temple.",
+   "points": 30,
+   "group": "Places",
+   "rule": {
+    "tagsAll": [
+     "Masyaf",
+     "Jerusalem",
+     "Acre",
+     "Damascus",
+     "Kingdom",
+     "Arsuf",
+     "Solomon"
+    ]
+   }
+  },
+  {
+   "id": "writes-25",
+   "title": "Synchronising",
+   "description": "Have the game save 25 times.",
+   "points": 5,
+   "group": "Saving",
+   "rule": {
+    "saves": 25
+   }
+  },
+  {
+   "id": "writes-250",
+   "title": "One with the Animus",
+   "description": "Have the game save 250 times.",
+   "points": 25,
+   "group": "Saving",
+   "rule": {
+    "saves": 250
+   }
+  },
+  {
+   "id": "files-5",
+   "title": "Many Lives",
+   "description": "Have 5 different save slots.",
+   "points": 10,
+   "group": "Saving",
+   "rule": {
+    "files": 5
+   }
+  },
+  {
+   "id": "files-10",
+   "title": "Bloodline",
+   "description": "Have 10 different save slots.",
+   "points": 15,
+   "group": "Saving",
+   "rule": {
+    "files": 10
+   }
+  },
+  {
+   "id": "writes-10",
+   "title": "Leap of Faith",
+   "description": "Have the game save 10 times.",
+   "points": 5,
+   "group": "Saving",
+   "rule": {
+    "saves": 10
+   }
+  },
+  {
+   "id": "writes-50",
+   "title": "Regular Visitor",
+   "description": "Have the game save 50 times.",
+   "points": 10,
+   "group": "Saving",
+   "rule": {
+    "saves": 50
+   }
+  },
+  {
+   "id": "writes-150",
+   "title": "Animus Addict",
+   "description": "Have the game save 150 times.",
+   "points": 20,
+   "group": "Saving",
+   "rule": {
+    "saves": 150
+   }
+  },
+  {
+   "id": "writes-400",
+   "title": "Living in the Animus",
+   "description": "Have the game save 400 times.",
+   "points": 30,
+   "group": "Saving",
+   "rule": {
+    "saves": 400
+   }
+  },
+  {
+   "id": "files-3",
+   "title": "More Than One Life",
+   "description": "Have 3 different save slots.",
+   "points": 10,
+   "group": "Saving",
+   "rule": {
+    "files": 3
+   }
+  }
+ ]
+}

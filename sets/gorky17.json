@@ -1,0 +1,746 @@
+{
+  "id": "gorky17",
+  "title": "Gorky 17",
+  "version": 2,
+  "kind": "replay",
+  "authors": [
+    "Vault Launcher"
+  ],
+  "storeIds": [],
+  "linkFiles": [
+    "gorky17.exe",
+    "dat/common/lang.dat"
+  ],
+  "exeNames": [
+    "gorky17.exe"
+  ],
+  "md5": [],
+  "notes": [
+    "Vault reads your save games (the SaveGame folder) and never touches the game.",
+    "Save in each new place you reach and its achievement counts. Old saves count too."
+  ],
+  "testGuide": [
+    {
+      "title": "Start a new game and save",
+      "detail": "Play until you can save at the port, then save. \"Welcome to Slupsk\" should pop."
+    },
+    {
+      "title": "Check the numbers",
+      "detail": "\"Last save\" should name the place you saved in."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "01-port",
+      "title": "Welcome to Slupsk",
+      "description": "Arrive at the port.",
+      "points": 10,
+      "group": "The Port",
+      "rule": {
+        "area": "01_port"
+      }
+    },
+    {
+      "id": "01-port-worker",
+      "title": "Workers' Quarters",
+      "description": "Search the workers' quarters.",
+      "points": 10,
+      "group": "The Port",
+      "rule": {
+        "area": "01_port_worker"
+      }
+    },
+    {
+      "id": "01-port-tunnel",
+      "title": "Into the Tunnel",
+      "description": "Make your way into the tunnel.",
+      "points": 10,
+      "group": "The Port",
+      "rule": {
+        "area": "01_port_tunnel"
+      }
+    },
+    {
+      "id": "01-port-store",
+      "title": "Stock Check",
+      "description": "Reach the store.",
+      "points": 10,
+      "group": "The Port",
+      "rule": {
+        "area": "01_port_store"
+      }
+    },
+    {
+      "id": "01-port-silos",
+      "title": "The Silos",
+      "description": "Reach the silos.",
+      "points": 10,
+      "group": "The Port",
+      "rule": {
+        "area": "01_port_silos"
+      }
+    },
+    {
+      "id": "01-port-citadel",
+      "title": "The Citadel",
+      "description": "Reach the citadel.",
+      "points": 10,
+      "group": "The Port",
+      "rule": {
+        "area": "01_port_citadel"
+      }
+    },
+    {
+      "id": "01-port-castle",
+      "title": "Castle Walls",
+      "description": "Reach the castle.",
+      "points": 10,
+      "group": "The Port",
+      "rule": {
+        "area": "01_port_castle"
+      }
+    },
+    {
+      "id": "01-port-chief",
+      "title": "Chief's Office",
+      "description": "Reach the chief's office.",
+      "points": 10,
+      "group": "The Port",
+      "rule": {
+        "area": "01_port_chief"
+      }
+    },
+    {
+      "id": "02-serwers",
+      "title": "Down Below",
+      "description": "Descend into the sewers.",
+      "points": 10,
+      "group": "The Sewers",
+      "rule": {
+        "area": "02_serwers"
+      }
+    },
+    {
+      "id": "03-museum",
+      "title": "Exhibit A",
+      "description": "Reach the museum.",
+      "points": 10,
+      "group": "The Museum",
+      "rule": {
+        "area": "03_museum"
+      }
+    },
+    {
+      "id": "03-museum-forgotten",
+      "title": "Forgotten Rooms",
+      "description": "Find the forgotten rooms.",
+      "points": 10,
+      "group": "The Museum",
+      "rule": {
+        "area": "03_museum_forgotten"
+      }
+    },
+    {
+      "id": "03-museum-oldship",
+      "title": "Old Ship",
+      "description": "Reach the old ship.",
+      "points": 10,
+      "group": "The Museum",
+      "rule": {
+        "area": "03_museum_oldship"
+      }
+    },
+    {
+      "id": "03-museum-observator",
+      "title": "Stargazer",
+      "description": "Reach the observatory.",
+      "points": 10,
+      "group": "The Museum",
+      "rule": {
+        "area": "03_museum_observator"
+      }
+    },
+    {
+      "id": "04-city",
+      "title": "Streets of Gorky",
+      "description": "Reach the city.",
+      "points": 10,
+      "group": "The City",
+      "rule": {
+        "area": "04_city"
+      }
+    },
+    {
+      "id": "04-city-entrance",
+      "title": "City Gates",
+      "description": "Reach the city entrance.",
+      "points": 10,
+      "group": "The City",
+      "rule": {
+        "area": "04_city_entrance"
+      }
+    },
+    {
+      "id": "04-city-shop",
+      "title": "Be Kind, Rewind",
+      "description": "Reach the video shop.",
+      "points": 10,
+      "group": "The City",
+      "rule": {
+        "area": "04_city_shop"
+      }
+    },
+    {
+      "id": "04-city-garage",
+      "title": "Grease Monkey",
+      "description": "Reach the garage.",
+      "points": 10,
+      "group": "The City",
+      "rule": {
+        "area": "04_city_garage"
+      }
+    },
+    {
+      "id": "04-city-tenement",
+      "title": "Tenement Block",
+      "description": "Reach the tenement.",
+      "points": 10,
+      "group": "The City",
+      "rule": {
+        "area": "04_city_tenement"
+      }
+    },
+    {
+      "id": "04-city-factory",
+      "title": "The Factory",
+      "description": "Reach the factory.",
+      "points": 10,
+      "group": "The City",
+      "rule": {
+        "area": "04_city_factory"
+      }
+    },
+    {
+      "id": "04-city-elevator",
+      "title": "Going Up",
+      "description": "Reach the elevator.",
+      "points": 10,
+      "group": "The City",
+      "rule": {
+        "area": "04_city_elevator"
+      }
+    },
+    {
+      "id": "05-laboratory",
+      "title": "The Laboratory",
+      "description": "Break into the laboratory.",
+      "points": 10,
+      "group": "The Laboratory",
+      "rule": {
+        "area": "05_laboratory"
+      }
+    },
+    {
+      "id": "05-laboratory-duty",
+      "title": "On Duty",
+      "description": "Reach the duty room.",
+      "points": 10,
+      "group": "The Laboratory",
+      "rule": {
+        "area": "05_laboratory_duty"
+      }
+    },
+    {
+      "id": "05-laboratory-reactor",
+      "title": "Meltdown",
+      "description": "Reach the reactor.",
+      "points": 25,
+      "group": "The Laboratory",
+      "rule": {
+        "area": "05_laboratory_reactor"
+      }
+    },
+    {
+      "id": "chapter-01-all",
+      "title": "The Port: Every Area",
+      "description": "Reach all 8 areas of The Port.",
+      "points": 15,
+      "group": "The Port",
+      "rule": {
+        "area_all": [
+          "01_port",
+          "01_port_worker",
+          "01_port_tunnel",
+          "01_port_store",
+          "01_port_silos",
+          "01_port_citadel",
+          "01_port_castle",
+          "01_port_chief"
+        ]
+      }
+    },
+    {
+      "id": "chapter-03-all",
+      "title": "The Museum: Every Area",
+      "description": "Reach all 4 areas of The Museum.",
+      "points": 15,
+      "group": "The Museum",
+      "rule": {
+        "area_all": [
+          "03_museum",
+          "03_museum_forgotten",
+          "03_museum_oldship",
+          "03_museum_observator"
+        ]
+      }
+    },
+    {
+      "id": "chapter-04-all",
+      "title": "The City: Every Area",
+      "description": "Reach all 7 areas of The City.",
+      "points": 15,
+      "group": "The City",
+      "rule": {
+        "area_all": [
+          "04_city",
+          "04_city_entrance",
+          "04_city_shop",
+          "04_city_garage",
+          "04_city_tenement",
+          "04_city_factory",
+          "04_city_elevator"
+        ]
+      }
+    },
+    {
+      "id": "chapter-05-all",
+      "title": "The Laboratory: Every Area",
+      "description": "Reach all 3 areas of The Laboratory.",
+      "points": 15,
+      "group": "The Laboratory",
+      "rule": {
+        "area_all": [
+          "05_laboratory",
+          "05_laboratory_duty",
+          "05_laboratory_reactor"
+        ]
+      }
+    },
+    {
+      "id": "chapters-all",
+      "title": "From Port to Reactor",
+      "description": "Reach at least one area in every chapter.",
+      "points": 20,
+      "group": "Milestones",
+      "rule": {
+        "chapters_all": [
+          [
+            "01_port",
+            "01_port_worker",
+            "01_port_tunnel",
+            "01_port_store",
+            "01_port_silos",
+            "01_port_citadel",
+            "01_port_castle",
+            "01_port_chief"
+          ],
+          [
+            "02_serwers"
+          ],
+          [
+            "03_museum",
+            "03_museum_forgotten",
+            "03_museum_oldship",
+            "03_museum_observator"
+          ],
+          [
+            "04_city",
+            "04_city_entrance",
+            "04_city_shop",
+            "04_city_garage",
+            "04_city_tenement",
+            "04_city_factory",
+            "04_city_elevator"
+          ],
+          [
+            "05_laboratory",
+            "05_laboratory_duty",
+            "05_laboratory_reactor"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "areas-4",
+      "title": "Getting Around",
+      "description": "Reach 4 different places (over all your saves).",
+      "points": 5,
+      "group": "Milestones",
+      "rule": {
+        "areas": 4
+      }
+    },
+    {
+      "id": "areas-12",
+      "title": "Thorough",
+      "description": "Reach 12 different places (over all your saves).",
+      "points": 15,
+      "group": "Milestones",
+      "rule": {
+        "areas": 12
+      }
+    },
+    {
+      "id": "areas-20",
+      "title": "Almost Everywhere",
+      "description": "Reach 20 different places (over all your saves).",
+      "points": 25,
+      "group": "Milestones",
+      "rule": {
+        "areas": 20
+      }
+    },
+    {
+      "id": "areas-8",
+      "title": "Explorer",
+      "description": "Reach 8 different places (over all your saves).",
+      "points": 10,
+      "group": "Milestones",
+      "rule": {
+        "areas": 8
+      }
+    },
+    {
+      "id": "areas-16",
+      "title": "Seasoned Investigator",
+      "description": "Reach 16 different places (over all your saves).",
+      "points": 20,
+      "group": "Milestones",
+      "rule": {
+        "areas": 16
+      }
+    },
+    {
+      "id": "areas-23",
+      "title": "Every Corner of Gorky",
+      "description": "Reach every place in the game.",
+      "points": 40,
+      "group": "Milestones",
+      "rule": {
+        "areas": 23
+      }
+    },
+    {
+      "id": "areas-2",
+      "title": "First Steps",
+      "description": "Reach 2 different places (over all your saves).",
+      "points": 5,
+      "group": "Milestones",
+      "rule": {
+        "areas": 2
+      }
+    },
+    {
+      "id": "areas-6",
+      "title": "Scouting Party",
+      "description": "Reach 6 different places (over all your saves).",
+      "points": 10,
+      "group": "Milestones",
+      "rule": {
+        "areas": 6
+      }
+    },
+    {
+      "id": "areas-10",
+      "title": "Halfway Through Gorky",
+      "description": "Reach 10 different places (over all your saves).",
+      "points": 15,
+      "group": "Milestones",
+      "rule": {
+        "areas": 10
+      }
+    },
+    {
+      "id": "areas-14",
+      "title": "Deep in the Zone",
+      "description": "Reach 14 different places (over all your saves).",
+      "points": 20,
+      "group": "Milestones",
+      "rule": {
+        "areas": 14
+      }
+    },
+    {
+      "id": "areas-18",
+      "title": "Mutant Hunter",
+      "description": "Reach 18 different places (over all your saves).",
+      "points": 25,
+      "group": "Milestones",
+      "rule": {
+        "areas": 18
+      }
+    },
+    {
+      "id": "chapter-01-half",
+      "title": "The Port: Halfway",
+      "description": "Reach 4 of the 8 areas of The Port.",
+      "points": 10,
+      "group": "The Port",
+      "rule": {
+        "area_some": {
+          "of": [
+            "01_port",
+            "01_port_worker",
+            "01_port_tunnel",
+            "01_port_store",
+            "01_port_silos",
+            "01_port_citadel",
+            "01_port_castle",
+            "01_port_chief"
+          ],
+          "n": 4
+        }
+      }
+    },
+    {
+      "id": "chapter-03-half",
+      "title": "The Museum: Halfway",
+      "description": "Reach 2 of the 4 areas of The Museum.",
+      "points": 10,
+      "group": "The Museum",
+      "rule": {
+        "area_some": {
+          "of": [
+            "03_museum",
+            "03_museum_forgotten",
+            "03_museum_oldship",
+            "03_museum_observator"
+          ],
+          "n": 2
+        }
+      }
+    },
+    {
+      "id": "chapter-04-half",
+      "title": "The City: Halfway",
+      "description": "Reach 3 of the 7 areas of The City.",
+      "points": 10,
+      "group": "The City",
+      "rule": {
+        "area_some": {
+          "of": [
+            "04_city",
+            "04_city_entrance",
+            "04_city_shop",
+            "04_city_garage",
+            "04_city_tenement",
+            "04_city_factory",
+            "04_city_elevator"
+          ],
+          "n": 3
+        }
+      }
+    },
+    {
+      "id": "chapters-2",
+      "title": "Moving On",
+      "description": "Reach 2 of the 5 chapters.",
+      "points": 10,
+      "group": "Milestones",
+      "rule": {
+        "chapters_n": {
+          "of": [
+            [
+              "01_port",
+              "01_port_worker",
+              "01_port_tunnel",
+              "01_port_store",
+              "01_port_silos",
+              "01_port_citadel",
+              "01_port_castle",
+              "01_port_chief"
+            ],
+            [
+              "02_serwers"
+            ],
+            [
+              "03_museum",
+              "03_museum_forgotten",
+              "03_museum_oldship",
+              "03_museum_observator"
+            ],
+            [
+              "04_city",
+              "04_city_entrance",
+              "04_city_shop",
+              "04_city_garage",
+              "04_city_tenement",
+              "04_city_factory",
+              "04_city_elevator"
+            ],
+            [
+              "05_laboratory",
+              "05_laboratory_duty",
+              "05_laboratory_reactor"
+            ]
+          ],
+          "n": 2
+        }
+      }
+    },
+    {
+      "id": "chapters-3",
+      "title": "Further In",
+      "description": "Reach 3 of the 5 chapters.",
+      "points": 15,
+      "group": "Milestones",
+      "rule": {
+        "chapters_n": {
+          "of": [
+            [
+              "01_port",
+              "01_port_worker",
+              "01_port_tunnel",
+              "01_port_store",
+              "01_port_silos",
+              "01_port_citadel",
+              "01_port_castle",
+              "01_port_chief"
+            ],
+            [
+              "02_serwers"
+            ],
+            [
+              "03_museum",
+              "03_museum_forgotten",
+              "03_museum_oldship",
+              "03_museum_observator"
+            ],
+            [
+              "04_city",
+              "04_city_entrance",
+              "04_city_shop",
+              "04_city_garage",
+              "04_city_tenement",
+              "04_city_factory",
+              "04_city_elevator"
+            ],
+            [
+              "05_laboratory",
+              "05_laboratory_duty",
+              "05_laboratory_reactor"
+            ]
+          ],
+          "n": 3
+        }
+      }
+    },
+    {
+      "id": "chapters-4",
+      "title": "Nearly Out",
+      "description": "Reach 4 of the 5 chapters.",
+      "points": 20,
+      "group": "Milestones",
+      "rule": {
+        "chapters_n": {
+          "of": [
+            [
+              "01_port",
+              "01_port_worker",
+              "01_port_tunnel",
+              "01_port_store",
+              "01_port_silos",
+              "01_port_citadel",
+              "01_port_castle",
+              "01_port_chief"
+            ],
+            [
+              "02_serwers"
+            ],
+            [
+              "03_museum",
+              "03_museum_forgotten",
+              "03_museum_oldship",
+              "03_museum_observator"
+            ],
+            [
+              "04_city",
+              "04_city_entrance",
+              "04_city_shop",
+              "04_city_garage",
+              "04_city_tenement",
+              "04_city_factory",
+              "04_city_elevator"
+            ],
+            [
+              "05_laboratory",
+              "05_laboratory_duty",
+              "05_laboratory_reactor"
+            ]
+          ],
+          "n": 4
+        }
+      }
+    },
+    {
+      "id": "writes-10",
+      "title": "Field Report",
+      "description": "Save your game 10 times.",
+      "points": 5,
+      "group": "Saving",
+      "rule": {
+        "saves": 10
+      }
+    },
+    {
+      "id": "writes-50",
+      "title": "Survivor's Log",
+      "description": "Save your game 50 times.",
+      "points": 10,
+      "group": "Saving",
+      "rule": {
+        "saves": 50
+      }
+    },
+    {
+      "id": "writes-150",
+      "title": "Meticulous",
+      "description": "Save your game 150 times.",
+      "points": 20,
+      "group": "Saving",
+      "rule": {
+        "saves": 150
+      }
+    },
+    {
+      "id": "writes-400",
+      "title": "Never Unprepared",
+      "description": "Save your game 400 times.",
+      "points": 30,
+      "group": "Saving",
+      "rule": {
+        "saves": 400
+      }
+    },
+    {
+      "id": "files-3",
+      "title": "Backup Plan",
+      "description": "Have 3 different save slots.",
+      "points": 5,
+      "group": "Saving",
+      "rule": {
+        "files": 3
+      }
+    },
+    {
+      "id": "files-8",
+      "title": "Filing Cabinet",
+      "description": "Have 8 different save slots.",
+      "points": 10,
+      "group": "Saving",
+      "rule": {
+        "files": 8
+      }
+    }
+  ]
+}

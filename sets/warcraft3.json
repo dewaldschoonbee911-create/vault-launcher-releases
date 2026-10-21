@@ -1,0 +1,1927 @@
+{
+  "id": "warcraft3",
+  "title": "Warcraft III: Reforged",
+  "version": 3,
+  "resetUnlocksBefore": 3,
+  "kind": "replay",
+  "authors": [
+    "Vault Launcher"
+  ],
+  "storeIds": [
+    "battlenet:W3"
+  ],
+  "exeNames": [],
+  "md5": [],
+  "notes": [
+    "Warcraft III has Blizzard's anti-cheat, so Vault never reads its memory. Achievements come from the campaign progress file the game saves in Documents\\Warcraft III when you beat a chapter.",
+    "Achievements pop on the victory screen, as soon as the game saves your progress. Progress you already have counts too.",
+    "Campaign on Hard: set the difficulty to Hard before you play the chapter. Chapters you beat before Vault was watching do not count as Hard.",
+    "Skirmish and lifetime achievements come from the replay Warcraft III saves after every game (LastReplay.w3g). Turning on \"Auto-save replays\" in Options keeps every game, so none are missed."
+  ],
+  "testGuide": [
+    {
+      "title": "Beat a campaign chapter",
+      "detail": "Play any chapter to the victory screen. The chapter counts below go up when the game saves."
+    },
+    {
+      "title": "Look for the popup",
+      "detail": "The achievement for that chapter should pop within a couple of seconds."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "tutorial-1",
+      "title": "Chasing Visions",
+      "description": "Exodus of the Horde: beat chapter 1, Chasing Visions.",
+      "points": 10,
+      "rule": {
+        "campaign": "tutorial",
+        "chapter": 2
+      },
+      "group": "Exodus of the Horde"
+    },
+    {
+      "id": "tutorial-2",
+      "title": "Departures",
+      "description": "Exodus of the Horde: beat chapter 2, Departures.",
+      "points": 10,
+      "rule": {
+        "campaign": "tutorial",
+        "chapter": 3
+      },
+      "group": "Exodus of the Horde"
+    },
+    {
+      "id": "tutorial-3",
+      "title": "Riders on the Storm",
+      "description": "Exodus of the Horde: beat chapter 3, Riders on the Storm.",
+      "points": 10,
+      "rule": {
+        "campaign": "tutorial",
+        "chapter": 4
+      },
+      "group": "Exodus of the Horde"
+    },
+    {
+      "id": "tutorial-4",
+      "title": "The Fires Down Below",
+      "description": "Exodus of the Horde: beat chapter 4, The Fires Down Below.",
+      "points": 10,
+      "rule": {
+        "campaign": "tutorial",
+        "chapter": 5
+      },
+      "group": "Exodus of the Horde"
+    },
+    {
+      "id": "tutorial-5",
+      "title": "For the Horde!",
+      "description": "Exodus of the Horde: beat chapter 5, Countdown to Extinction. Campaign complete!",
+      "points": 25,
+      "rule": {
+        "campaign": "tutorial",
+        "chapter": 6
+      },
+      "group": "Exodus of the Horde"
+    },
+    {
+      "id": "tutorial-hard",
+      "title": "For the Horde! (Hard)",
+      "description": "Finish Exodus of the Horde on Hard difficulty.",
+      "points": 40,
+      "rule": {
+        "campaign": "tutorial",
+        "chapter": 6,
+        "hard": true
+      },
+      "group": "Campaign on Hard"
+    },
+    {
+      "id": "human-1",
+      "title": "The Defense of Strahnbrad",
+      "description": "The Scourge of Lordaeron: beat chapter 1, The Defense of Strahnbrad.",
+      "points": 10,
+      "rule": {
+        "campaign": "human",
+        "chapter": 1
+      },
+      "group": "The Scourge of Lordaeron"
+    },
+    {
+      "id": "human-2",
+      "title": "Blackrock & Roll",
+      "description": "The Scourge of Lordaeron: beat chapter 2, Blackrock & Roll.",
+      "points": 10,
+      "rule": {
+        "campaign": "human",
+        "chapter": 2
+      },
+      "group": "The Scourge of Lordaeron"
+    },
+    {
+      "id": "human-3",
+      "title": "Ravages of the Plague",
+      "description": "The Scourge of Lordaeron: beat chapter 3, Ravages of the Plague.",
+      "points": 10,
+      "rule": {
+        "campaign": "human",
+        "chapter": 4
+      },
+      "group": "The Scourge of Lordaeron"
+    },
+    {
+      "id": "human-4",
+      "title": "The Cult of the Damned",
+      "description": "The Scourge of Lordaeron: beat chapter 4, The Cult of the Damned.",
+      "points": 10,
+      "rule": {
+        "campaign": "human",
+        "chapter": 5
+      },
+      "group": "The Scourge of Lordaeron"
+    },
+    {
+      "id": "human-5",
+      "title": "March of the Scourge",
+      "description": "The Scourge of Lordaeron: beat chapter 5, March of the Scourge.",
+      "points": 10,
+      "rule": {
+        "campaign": "human",
+        "chapter": 6
+      },
+      "group": "The Scourge of Lordaeron"
+    },
+    {
+      "id": "human-6",
+      "title": "The Culling",
+      "description": "The Scourge of Lordaeron: beat chapter 6, The Culling.",
+      "points": 10,
+      "rule": {
+        "campaign": "human",
+        "chapter": 8
+      },
+      "group": "The Scourge of Lordaeron"
+    },
+    {
+      "id": "human-7",
+      "title": "The Shores of Northrend",
+      "description": "The Scourge of Lordaeron: beat chapter 7, The Shores of Northrend.",
+      "points": 10,
+      "rule": {
+        "campaign": "human",
+        "chapter": 10
+      },
+      "group": "The Scourge of Lordaeron"
+    },
+    {
+      "id": "human-8",
+      "title": "Dissension",
+      "description": "The Scourge of Lordaeron: beat chapter 8, Dissension.",
+      "points": 10,
+      "rule": {
+        "campaign": "human",
+        "chapter": 11
+      },
+      "group": "The Scourge of Lordaeron"
+    },
+    {
+      "id": "human-9",
+      "title": "The Fall of a Prince",
+      "description": "The Scourge of Lordaeron: beat chapter 9, Frostmourne. Campaign complete!",
+      "points": 25,
+      "rule": {
+        "campaign": "human",
+        "chapter": 12
+      },
+      "group": "The Scourge of Lordaeron"
+    },
+    {
+      "id": "human-hard",
+      "title": "The Fall of a Prince (Hard)",
+      "description": "Finish The Scourge of Lordaeron on Hard difficulty.",
+      "points": 40,
+      "rule": {
+        "campaign": "human",
+        "chapter": 12,
+        "hard": true
+      },
+      "group": "Campaign on Hard"
+    },
+    {
+      "id": "undead-1",
+      "title": "Trudging Through the Ashes",
+      "description": "Path of the Damned: beat chapter 1, Trudging Through the Ashes.",
+      "points": 10,
+      "rule": {
+        "campaign": "undead",
+        "chapter": 1
+      },
+      "group": "Path of the Damned"
+    },
+    {
+      "id": "undead-2",
+      "title": "Digging Up the Dead",
+      "description": "Path of the Damned: beat chapter 2, Digging Up the Dead.",
+      "points": 10,
+      "rule": {
+        "campaign": "undead",
+        "chapter": 1
+      },
+      "group": "Path of the Damned"
+    },
+    {
+      "id": "undead-3",
+      "title": "Into the Realm Eternal",
+      "description": "Path of the Damned: beat chapter 3, Into the Realm Eternal.",
+      "points": 10,
+      "rule": {
+        "campaign": "undead",
+        "chapter": 3
+      },
+      "group": "Path of the Damned"
+    },
+    {
+      "id": "undead-4",
+      "title": "Key of the Three Moons",
+      "description": "Path of the Damned: beat chapter 4, Key of the Three Moons.",
+      "points": 10,
+      "rule": {
+        "campaign": "undead",
+        "chapter": 4
+      },
+      "group": "Path of the Damned"
+    },
+    {
+      "id": "undead-5",
+      "title": "The Fall of Silvermoon",
+      "description": "Path of the Damned: beat chapter 5, The Fall of Silvermoon.",
+      "points": 10,
+      "rule": {
+        "campaign": "undead",
+        "chapter": 5
+      },
+      "group": "Path of the Damned"
+    },
+    {
+      "id": "undead-6",
+      "title": "Blackrock & Roll, Too!",
+      "description": "Path of the Damned: beat chapter 6, Blackrock & Roll, Too!.",
+      "points": 10,
+      "rule": {
+        "campaign": "undead",
+        "chapter": 7
+      },
+      "group": "Path of the Damned"
+    },
+    {
+      "id": "undead-7",
+      "title": "The Siege of Dalaran",
+      "description": "Path of the Damned: beat chapter 7, The Siege of Dalaran.",
+      "points": 10,
+      "rule": {
+        "campaign": "undead",
+        "chapter": 8
+      },
+      "group": "Path of the Damned"
+    },
+    {
+      "id": "undead-8",
+      "title": "Lord of the Scourge",
+      "description": "Path of the Damned: beat chapter 8, Under the Burning Sky. Campaign complete!",
+      "points": 25,
+      "rule": {
+        "campaign": "undead",
+        "chapter": 9
+      },
+      "group": "Path of the Damned"
+    },
+    {
+      "id": "undead-hard",
+      "title": "Lord of the Scourge (Hard)",
+      "description": "Finish Path of the Damned on Hard difficulty.",
+      "points": 40,
+      "rule": {
+        "campaign": "undead",
+        "chapter": 9,
+        "hard": true
+      },
+      "group": "Campaign on Hard"
+    },
+    {
+      "id": "orc-1",
+      "title": "Landfall",
+      "description": "The Invasion of Kalimdor: beat chapter 1, Landfall.",
+      "points": 10,
+      "rule": {
+        "campaign": "orc",
+        "chapter": 1
+      },
+      "group": "The Invasion of Kalimdor"
+    },
+    {
+      "id": "orc-2",
+      "title": "The Long March",
+      "description": "The Invasion of Kalimdor: beat chapter 2, The Long March.",
+      "points": 10,
+      "rule": {
+        "campaign": "orc",
+        "chapter": 1
+      },
+      "group": "The Invasion of Kalimdor"
+    },
+    {
+      "id": "orc-3",
+      "title": "Cry of the Warsong",
+      "description": "The Invasion of Kalimdor: beat chapter 3, Cry of the Warsong.",
+      "points": 10,
+      "rule": {
+        "campaign": "orc",
+        "chapter": 3
+      },
+      "group": "The Invasion of Kalimdor"
+    },
+    {
+      "id": "orc-4",
+      "title": "The Spirits of Ashenvale",
+      "description": "The Invasion of Kalimdor: beat chapter 4, The Spirits of Ashenvale.",
+      "points": 10,
+      "rule": {
+        "campaign": "orc",
+        "chapter": 4
+      },
+      "group": "The Invasion of Kalimdor"
+    },
+    {
+      "id": "orc-5",
+      "title": "The Hunter of Shadows",
+      "description": "The Invasion of Kalimdor: beat chapter 5, The Hunter of Shadows.",
+      "points": 10,
+      "rule": {
+        "campaign": "orc",
+        "chapter": 6
+      },
+      "group": "The Invasion of Kalimdor"
+    },
+    {
+      "id": "orc-6",
+      "title": "Where Wyverns Dare",
+      "description": "The Invasion of Kalimdor: beat chapter 6, Where Wyverns Dare.",
+      "points": 10,
+      "rule": {
+        "campaign": "orc",
+        "chapter": 7
+      },
+      "group": "The Invasion of Kalimdor"
+    },
+    {
+      "id": "orc-7",
+      "title": "The Oracle",
+      "description": "The Invasion of Kalimdor: beat chapter 7, The Oracle.",
+      "points": 10,
+      "rule": {
+        "campaign": "orc",
+        "chapter": 8
+      },
+      "group": "The Invasion of Kalimdor"
+    },
+    {
+      "id": "orc-8",
+      "title": "Warchief of Kalimdor",
+      "description": "The Invasion of Kalimdor: beat chapter 8, By Demons Be Driven. Campaign complete!",
+      "points": 25,
+      "rule": {
+        "campaign": "orc",
+        "chapter": 9
+      },
+      "group": "The Invasion of Kalimdor"
+    },
+    {
+      "id": "orc-hard",
+      "title": "Warchief of Kalimdor (Hard)",
+      "description": "Finish The Invasion of Kalimdor on Hard difficulty.",
+      "points": 40,
+      "rule": {
+        "campaign": "orc",
+        "chapter": 9,
+        "hard": true
+      },
+      "group": "Campaign on Hard"
+    },
+    {
+      "id": "nightelf-1",
+      "title": "Enemies at the Gate",
+      "description": "Eternity's End: beat chapter 1, Enemies at the Gate.",
+      "points": 10,
+      "rule": {
+        "campaign": "nightelf",
+        "chapter": 1
+      },
+      "group": "Eternity's End"
+    },
+    {
+      "id": "nightelf-2",
+      "title": "Daughters of the Moon",
+      "description": "Eternity's End: beat chapter 2, Daughters of the Moon.",
+      "points": 10,
+      "rule": {
+        "campaign": "nightelf",
+        "chapter": 1
+      },
+      "group": "Eternity's End"
+    },
+    {
+      "id": "nightelf-3",
+      "title": "The Awakening of Stormrage",
+      "description": "Eternity's End: beat chapter 3, The Awakening of Stormrage.",
+      "points": 10,
+      "rule": {
+        "campaign": "nightelf",
+        "chapter": 2
+      },
+      "group": "Eternity's End"
+    },
+    {
+      "id": "nightelf-4",
+      "title": "The Druids Arise",
+      "description": "Eternity's End: beat chapter 4, The Druids Arise.",
+      "points": 10,
+      "rule": {
+        "campaign": "nightelf",
+        "chapter": 3
+      },
+      "group": "Eternity's End"
+    },
+    {
+      "id": "nightelf-5",
+      "title": "Brothers in Blood",
+      "description": "Eternity's End: beat chapter 5, Brothers in Blood.",
+      "points": 10,
+      "rule": {
+        "campaign": "nightelf",
+        "chapter": 4
+      },
+      "group": "Eternity's End"
+    },
+    {
+      "id": "nightelf-6",
+      "title": "A Destiny of Flame and Sorrow",
+      "description": "Eternity's End: beat chapter 6, A Destiny of Flame and Sorrow.",
+      "points": 10,
+      "rule": {
+        "campaign": "nightelf",
+        "chapter": 5
+      },
+      "group": "Eternity's End"
+    },
+    {
+      "id": "nightelf-7",
+      "title": "Archimonde Falls",
+      "description": "Eternity's End: beat chapter 7, Twilight of the Gods. Campaign complete!",
+      "points": 25,
+      "rule": {
+        "campaign": "nightelf",
+        "chapter": 7
+      },
+      "group": "Eternity's End"
+    },
+    {
+      "id": "nightelf-hard",
+      "title": "Archimonde Falls (Hard)",
+      "description": "Finish Eternity's End on Hard difficulty.",
+      "points": 40,
+      "rule": {
+        "campaign": "nightelf",
+        "chapter": 7,
+        "hard": true
+      },
+      "group": "Campaign on Hard"
+    },
+    {
+      "id": "nightelfex-1",
+      "title": "Rise of the Naga",
+      "description": "Terror of the Tides: beat chapter 1, Rise of the Naga.",
+      "points": 10,
+      "rule": {
+        "campaign": "nightelfex",
+        "chapter": 1
+      },
+      "group": "Terror of the Tides"
+    },
+    {
+      "id": "nightelfex-2",
+      "title": "The Broken Isles",
+      "description": "Terror of the Tides: beat chapter 2, The Broken Isles.",
+      "points": 10,
+      "rule": {
+        "campaign": "nightelfex",
+        "chapter": 2
+      },
+      "group": "Terror of the Tides"
+    },
+    {
+      "id": "nightelfex-3",
+      "title": "The Tomb of Sargeras",
+      "description": "Terror of the Tides: beat chapter 3, The Tomb of Sargeras.",
+      "points": 10,
+      "rule": {
+        "campaign": "nightelfex",
+        "chapter": 3
+      },
+      "group": "Terror of the Tides"
+    },
+    {
+      "id": "nightelfex-4",
+      "title": "Wrath of the Betrayer",
+      "description": "Terror of the Tides: beat chapter 4, Wrath of the Betrayer.",
+      "points": 10,
+      "rule": {
+        "campaign": "nightelfex",
+        "chapter": 4
+      },
+      "group": "Terror of the Tides"
+    },
+    {
+      "id": "nightelfex-5",
+      "title": "Balancing the Scales",
+      "description": "Terror of the Tides: beat chapter 5, Balancing the Scales.",
+      "points": 10,
+      "rule": {
+        "campaign": "nightelfex",
+        "chapter": 6
+      },
+      "group": "Terror of the Tides"
+    },
+    {
+      "id": "nightelfex-6",
+      "title": "Shards of the Alliance",
+      "description": "Terror of the Tides: beat chapter 6, Shards of the Alliance.",
+      "points": 10,
+      "rule": {
+        "campaign": "nightelfex",
+        "chapter": 7
+      },
+      "group": "Terror of the Tides"
+    },
+    {
+      "id": "nightelfex-7",
+      "title": "The Ruins of Dalaran",
+      "description": "Terror of the Tides: beat chapter 7, The Ruins of Dalaran.",
+      "points": 10,
+      "rule": {
+        "campaign": "nightelfex",
+        "chapter": 9
+      },
+      "group": "Terror of the Tides"
+    },
+    {
+      "id": "nightelfex-8",
+      "title": "Brothers Reunited",
+      "description": "Terror of the Tides: beat chapter 8, The Brothers Stormrage. Campaign complete!",
+      "points": 25,
+      "rule": {
+        "campaign": "nightelfex",
+        "chapter": 10
+      },
+      "group": "Terror of the Tides"
+    },
+    {
+      "id": "nightelfex-hard",
+      "title": "Brothers Reunited (Hard)",
+      "description": "Finish Terror of the Tides on Hard difficulty.",
+      "points": 40,
+      "rule": {
+        "campaign": "nightelfex",
+        "chapter": 10,
+        "hard": true
+      },
+      "group": "Campaign on Hard"
+    },
+    {
+      "id": "humanex-1",
+      "title": "Misconceptions",
+      "description": "Curse of the Blood Elves: beat chapter 1, Misconceptions.",
+      "points": 10,
+      "rule": {
+        "campaign": "humanex",
+        "chapter": 1
+      },
+      "group": "Curse of the Blood Elves"
+    },
+    {
+      "id": "humanex-2",
+      "title": "A Dark Covenant",
+      "description": "Curse of the Blood Elves: beat chapter 2, A Dark Covenant.",
+      "points": 10,
+      "rule": {
+        "campaign": "humanex",
+        "chapter": 1
+      },
+      "group": "Curse of the Blood Elves"
+    },
+    {
+      "id": "humanex-3",
+      "title": "The Dungeons of Dalaran",
+      "description": "Curse of the Blood Elves: beat chapter 3, The Dungeons of Dalaran.",
+      "points": 10,
+      "rule": {
+        "campaign": "humanex",
+        "chapter": 2
+      },
+      "group": "Curse of the Blood Elves"
+    },
+    {
+      "id": "humanex-4",
+      "title": "The Crossing",
+      "description": "Curse of the Blood Elves: find and beat the secret level, The Crossing (hidden in The Dungeons of Dalaran).",
+      "points": 25,
+      "rule": {
+        "campaign": "humanex",
+        "chapter": 3
+      },
+      "group": "Secrets"
+    },
+    {
+      "id": "humanex-5",
+      "title": "The Search for Illidan",
+      "description": "Curse of the Blood Elves: beat chapter 5, The Search for Illidan.",
+      "points": 10,
+      "rule": {
+        "campaign": "humanex",
+        "chapter": 5
+      },
+      "group": "Curse of the Blood Elves"
+    },
+    {
+      "id": "humanex-6",
+      "title": "Gates of the Abyss",
+      "description": "Curse of the Blood Elves: beat chapter 6, Gates of the Abyss.",
+      "points": 10,
+      "rule": {
+        "campaign": "humanex",
+        "chapter": 7
+      },
+      "group": "Curse of the Blood Elves"
+    },
+    {
+      "id": "humanex-7",
+      "title": "Lord of Outland",
+      "description": "Curse of the Blood Elves: beat chapter 7, Lord of Outland. Campaign complete!",
+      "points": 25,
+      "rule": {
+        "campaign": "humanex",
+        "chapter": 8
+      },
+      "group": "Curse of the Blood Elves"
+    },
+    {
+      "id": "humanex-hard",
+      "title": "Lord of Outland (Hard)",
+      "description": "Finish Curse of the Blood Elves on Hard difficulty.",
+      "points": 40,
+      "rule": {
+        "campaign": "humanex",
+        "chapter": 8,
+        "hard": true
+      },
+      "group": "Campaign on Hard"
+    },
+    {
+      "id": "undeadex-1",
+      "title": "King Arthas",
+      "description": "Legacy of the Damned: beat chapter 1, King Arthas.",
+      "points": 10,
+      "rule": {
+        "campaign": "undeadex",
+        "chapter": 1
+      },
+      "group": "Legacy of the Damned"
+    },
+    {
+      "id": "undeadex-2",
+      "title": "The Flight from Lordaeron",
+      "description": "Legacy of the Damned: beat chapter 2, The Flight from Lordaeron.",
+      "points": 10,
+      "rule": {
+        "campaign": "undeadex",
+        "chapter": 2
+      },
+      "group": "Legacy of the Damned"
+    },
+    {
+      "id": "undeadex-3",
+      "title": "The Dark Lady",
+      "description": "Legacy of the Damned: beat chapter 3, The Dark Lady.",
+      "points": 10,
+      "rule": {
+        "campaign": "undeadex",
+        "chapter": 4
+      },
+      "group": "Legacy of the Damned"
+    },
+    {
+      "id": "undeadex-4",
+      "title": "The Return to Northrend",
+      "description": "Legacy of the Damned: beat chapter 4, The Return to Northrend.",
+      "points": 10,
+      "rule": {
+        "campaign": "undeadex",
+        "chapter": 5
+      },
+      "group": "Legacy of the Damned"
+    },
+    {
+      "id": "undeadex-5",
+      "title": "Dreadlord's Fall",
+      "description": "Legacy of the Damned: beat chapter 5, Dreadlord's Fall.",
+      "points": 10,
+      "rule": {
+        "campaign": "undeadex",
+        "chapter": 6
+      },
+      "group": "Legacy of the Damned"
+    },
+    {
+      "id": "undeadex-6",
+      "title": "A New Power in Lordaeron",
+      "description": "Legacy of the Damned: beat chapter 6, A New Power in Lordaeron.",
+      "points": 10,
+      "rule": {
+        "campaign": "undeadex",
+        "chapter": 7
+      },
+      "group": "Legacy of the Damned"
+    },
+    {
+      "id": "undeadex-7",
+      "title": "Into the Shadow Web Caverns",
+      "description": "Legacy of the Damned: beat chapter 7, Into the Shadow Web Caverns.",
+      "points": 10,
+      "rule": {
+        "campaign": "undeadex",
+        "chapter": 8
+      },
+      "group": "Legacy of the Damned"
+    },
+    {
+      "id": "undeadex-8",
+      "title": "The Forgotten Ones",
+      "description": "Legacy of the Damned: beat chapter 8, The Forgotten Ones.",
+      "points": 10,
+      "rule": {
+        "campaign": "undeadex",
+        "chapter": 9
+      },
+      "group": "Legacy of the Damned"
+    },
+    {
+      "id": "undeadex-9",
+      "title": "Ascent to the Upper Kingdom",
+      "description": "Legacy of the Damned: beat chapter 9, Ascent to the Upper Kingdom.",
+      "points": 10,
+      "rule": {
+        "campaign": "undeadex",
+        "chapter": 10
+      },
+      "group": "Legacy of the Damned"
+    },
+    {
+      "id": "undeadex-10",
+      "title": "The Lich King Rises",
+      "description": "Legacy of the Damned: beat chapter 10, A Symphony of Frost and Flame. Campaign complete!",
+      "points": 25,
+      "rule": {
+        "campaign": "undeadex",
+        "chapter": 12
+      },
+      "group": "Legacy of the Damned"
+    },
+    {
+      "id": "undeadex-hard",
+      "title": "The Lich King Rises (Hard)",
+      "description": "Finish Legacy of the Damned on Hard difficulty.",
+      "points": 40,
+      "rule": {
+        "campaign": "undeadex",
+        "chapter": 12,
+        "hard": true
+      },
+      "group": "Campaign on Hard"
+    },
+    {
+      "id": "orcex-1",
+      "title": "To Tame a Land",
+      "description": "The Founding of Durotar: beat act 1, To Tame a Land.",
+      "points": 10,
+      "rule": {
+        "campaign": "orcex",
+        "chapter": 1
+      },
+      "group": "The Founding of Durotar"
+    },
+    {
+      "id": "orcex-2",
+      "title": "Old Hatreds",
+      "description": "The Founding of Durotar: beat act 2, Old Hatreds.",
+      "points": 10,
+      "rule": {
+        "campaign": "orcex",
+        "chapter": 1
+      },
+      "group": "The Founding of Durotar"
+    },
+    {
+      "id": "orcex-3",
+      "title": "Founder of Durotar",
+      "description": "The Founding of Durotar: beat act 3, A Blaze of Glory. Campaign complete!",
+      "points": 25,
+      "rule": {
+        "campaign": "orcex",
+        "chapter": 2
+      },
+      "group": "The Founding of Durotar"
+    },
+    {
+      "id": "orcex-hard",
+      "title": "Founder of Durotar (Hard)",
+      "description": "Finish The Founding of Durotar on Hard difficulty.",
+      "points": 40,
+      "rule": {
+        "campaign": "orcex",
+        "chapter": 2,
+        "hard": true
+      },
+      "group": "Campaign on Hard"
+    },
+    {
+      "id": "roc-complete",
+      "title": "Reign of Chaos",
+      "description": "Finish all four Reign of Chaos campaigns.",
+      "points": 50,
+      "rule": {
+        "all": [
+          {
+            "campaign": "human",
+            "chapter": 12
+          },
+          {
+            "campaign": "undead",
+            "chapter": 9
+          },
+          {
+            "campaign": "orc",
+            "chapter": 9
+          },
+          {
+            "campaign": "nightelf",
+            "chapter": 7
+          }
+        ]
+      },
+      "group": "Milestones"
+    },
+    {
+      "id": "tft-half",
+      "title": "The Frozen Throne Beckons",
+      "description": "Finish Terror of the Tides and Curse of the Blood Elves.",
+      "points": 30,
+      "rule": {
+        "all": [
+          {
+            "campaign": "nightelfex",
+            "chapter": 10
+          },
+          {
+            "campaign": "humanex",
+            "chapter": 8
+          }
+        ]
+      },
+      "group": "Milestones"
+    },
+    {
+      "id": "tft-complete",
+      "title": "The Frozen Throne",
+      "description": "Finish all three Frozen Throne campaigns.",
+      "points": 50,
+      "rule": {
+        "all": [
+          {
+            "campaign": "nightelfex",
+            "chapter": 10
+          },
+          {
+            "campaign": "humanex",
+            "chapter": 8
+          },
+          {
+            "campaign": "undeadex",
+            "chapter": 12
+          }
+        ]
+      },
+      "group": "Milestones"
+    },
+    {
+      "id": "everything",
+      "title": "Saga of Azeroth",
+      "description": "Finish every campaign, including the bonus campaign.",
+      "points": 100,
+      "rule": {
+        "all": [
+          {
+            "campaign": "tutorial",
+            "chapter": 6
+          },
+          {
+            "campaign": "human",
+            "chapter": 12
+          },
+          {
+            "campaign": "undead",
+            "chapter": 9
+          },
+          {
+            "campaign": "orc",
+            "chapter": 9
+          },
+          {
+            "campaign": "nightelf",
+            "chapter": 7
+          },
+          {
+            "campaign": "nightelfex",
+            "chapter": 10
+          },
+          {
+            "campaign": "humanex",
+            "chapter": 8
+          },
+          {
+            "campaign": "undeadex",
+            "chapter": 12
+          },
+          {
+            "campaign": "orcex",
+            "chapter": 2
+          }
+        ]
+      },
+      "group": "Milestones"
+    },
+    {
+      "id": "roc-hard",
+      "title": "Hardened Veteran",
+      "description": "Finish all four Reign of Chaos campaigns on Hard.",
+      "points": 75,
+      "rule": {
+        "all": [
+          {
+            "campaign": "human",
+            "chapter": 12
+          },
+          {
+            "campaign": "undead",
+            "chapter": 9
+          },
+          {
+            "campaign": "orc",
+            "chapter": 9
+          },
+          {
+            "campaign": "nightelf",
+            "chapter": 7
+          }
+        ],
+        "hard": true
+      },
+      "group": "Campaign on Hard"
+    },
+    {
+      "id": "first-hard",
+      "title": "No Easy Way",
+      "description": "Beat any chapter on Hard.",
+      "points": 10,
+      "rule": {
+        "chapters": 1,
+        "campaign": "*",
+        "hard": true
+      },
+      "group": "Campaign on Hard"
+    },
+    {
+      "id": "first-chapter",
+      "title": "Ready to Work",
+      "description": "Beat any campaign chapter.",
+      "points": 5,
+      "rule": {
+        "anyOf": [
+          {
+            "campaign": "tutorial",
+            "chapter": 2
+          },
+          {
+            "campaign": "human",
+            "chapter": 1
+          },
+          {
+            "campaign": "undead",
+            "chapter": 1
+          },
+          {
+            "campaign": "orc",
+            "chapter": 1
+          },
+          {
+            "campaign": "nightelf",
+            "chapter": 1
+          },
+          {
+            "campaign": "nightelfex",
+            "chapter": 1
+          },
+          {
+            "campaign": "humanex",
+            "chapter": 1
+          },
+          {
+            "campaign": "undeadex",
+            "chapter": 1
+          },
+          {
+            "campaign": "orcex",
+            "chapter": 1
+          }
+        ]
+      },
+      "group": "Milestones"
+    },
+    {
+      "id": "h-thrall-5",
+      "title": "Son of Durotan",
+      "description": "Exodus of the Horde: carry Thrall into a mission at level 5.",
+      "points": 15,
+      "rule": {
+        "hero": {
+          "name": "Thrall",
+          "campaign": "Tutorial",
+          "minLevel": 5
+        }
+      },
+      "group": "Hero challenges"
+    },
+    {
+      "id": "h-thrall-cl",
+      "title": "Storm Caller",
+      "description": "Exodus of the Horde: train Thrall's Chain Lightning to level 3.",
+      "points": 15,
+      "rule": {
+        "hero": {
+          "name": "Thrall",
+          "campaign": "Tutorial",
+          "ability": "AOcl",
+          "abilityLevel": 3
+        }
+      },
+      "group": "Hero challenges"
+    },
+    {
+      "id": "h-thrall-sf",
+      "title": "Spirit Wolves",
+      "description": "Exodus of the Horde: train Thrall's Feral Spirit to level 3.",
+      "points": 15,
+      "rule": {
+        "hero": {
+          "name": "Thrall",
+          "campaign": "Tutorial",
+          "ability": "AOsf",
+          "abilityLevel": 3
+        }
+      },
+      "group": "Hero challenges"
+    },
+    {
+      "id": "h-thrall-gear",
+      "title": "Geared for War",
+      "description": "Exodus of the Horde: carry 3 permanent items (not potions or scrolls) into a mission with Thrall.",
+      "points": 10,
+      "rule": {
+        "hero": {
+          "name": "Thrall",
+          "campaign": "Tutorial",
+          "permanentItems": 3
+        }
+      },
+      "group": "Hero challenges"
+    },
+    {
+      "id": "h-arthas-5",
+      "title": "Prince of Lordaeron",
+      "description": "The Scourge of Lordaeron: carry Arthas into a mission at level 5.",
+      "points": 15,
+      "rule": {
+        "hero": {
+          "name": "Arthas",
+          "campaign": "Human",
+          "minLevel": 5
+        }
+      },
+      "group": "Hero challenges"
+    },
+    {
+      "id": "h-arthas-8",
+      "title": "Champion of the Light",
+      "description": "The Scourge of Lordaeron: carry Arthas into a mission at level 8.",
+      "points": 25,
+      "rule": {
+        "hero": {
+          "name": "Arthas",
+          "campaign": "Human",
+          "minLevel": 8
+        }
+      },
+      "group": "Hero challenges"
+    },
+    {
+      "id": "h-arthas-hb",
+      "title": "Light's Embrace",
+      "description": "The Scourge of Lordaeron: train Arthas's Holy Light to level 3.",
+      "points": 15,
+      "rule": {
+        "hero": {
+          "name": "Arthas",
+          "campaign": "Human",
+          "ability": "AHhb",
+          "abilityLevel": 3
+        }
+      },
+      "group": "Hero challenges"
+    },
+    {
+      "id": "h-arthas-ds",
+      "title": "Unbreakable",
+      "description": "The Scourge of Lordaeron: train Arthas's Divine Shield to level 3.",
+      "points": 15,
+      "rule": {
+        "hero": {
+          "name": "Arthas",
+          "campaign": "Human",
+          "ability": "AHds",
+          "abilityLevel": 3
+        }
+      },
+      "group": "Hero challenges"
+    },
+    {
+      "id": "h-arthas-ad",
+      "title": "Aura of Devotion",
+      "description": "The Scourge of Lordaeron: train Arthas's Devotion Aura to level 3.",
+      "points": 15,
+      "rule": {
+        "hero": {
+          "name": "Arthas",
+          "campaign": "Human",
+          "ability": "AHad",
+          "abilityLevel": 3
+        }
+      },
+      "group": "Hero challenges"
+    },
+    {
+      "id": "h-arthas-re",
+      "title": "Rise Again",
+      "description": "The Scourge of Lordaeron: Arthas learns Resurrection.",
+      "points": 20,
+      "rule": {
+        "hero": {
+          "name": "Arthas",
+          "campaign": "Human",
+          "ability": "AHre"
+        }
+      },
+      "group": "Hero challenges"
+    },
+    {
+      "id": "h-arthas-gear",
+      "title": "Armed to the Teeth",
+      "description": "The Scourge of Lordaeron: carry 4 permanent items into a mission with Arthas.",
+      "points": 15,
+      "rule": {
+        "hero": {
+          "name": "Arthas",
+          "campaign": "Human",
+          "permanentItems": 4
+        }
+      },
+      "group": "Hero challenges"
+    },
+    {
+      "id": "h-any-mastery",
+      "title": "Mastery",
+      "description": "Any campaign: train one of a hero's abilities to level 3.",
+      "points": 10,
+      "rule": {
+        "hero": {
+          "abilityLevel": 3,
+          "ability": [
+            "AOcl",
+            "AOsf",
+            "AOfs",
+            "AHhb",
+            "AHds",
+            "AHad",
+            "AHtb",
+            "AHtc",
+            "AHbh",
+            "AHbz",
+            "AHwe",
+            "AHab",
+            "AHfs",
+            "AHbn",
+            "AHdr",
+            "AOwk",
+            "AOcr",
+            "AOmi",
+            "AOsh",
+            "AOws",
+            "AOae",
+            "AOhw",
+            "AOhx",
+            "AOsw",
+            "AUdc",
+            "AUdp",
+            "AUau",
+            "AUfn",
+            "AUfa",
+            "AUdr",
+            "AUsl",
+            "AUcs",
+            "AUim",
+            "AUts",
+            "AUcb",
+            "AEer",
+            "AEfn",
+            "AEah",
+            "AEmb",
+            "AEim",
+            "AEev",
+            "AEst",
+            "AEsh",
+            "AEbl",
+            "AEfk",
+            "AHtc"
+          ]
+        }
+      },
+      "group": "Hero challenges"
+    },
+    {
+      "id": "h-any-ult",
+      "title": "Ultimate Power",
+      "description": "Any campaign: a hero learns their ultimate ability.",
+      "points": 20,
+      "rule": {
+        "hero": {
+          "ability": [
+            "AEme",
+            "AEsf",
+            "AEsv",
+            "AEtq",
+            "AHav",
+            "AHmt",
+            "AHpx",
+            "AHre",
+            "ANch",
+            "ANdo",
+            "ANef",
+            "ANfd",
+            "ANrn",
+            "ANsg",
+            "ANsi",
+            "ANst",
+            "ANto",
+            "ANvc",
+            "ANvd",
+            "AOeq",
+            "AOre",
+            "AOvd",
+            "AOww",
+            "AUan",
+            "AUdd",
+            "AUin",
+            "AUls"
+          ]
+        }
+      },
+      "group": "Hero challenges"
+    },
+    {
+      "id": "h-any-7",
+      "title": "Seasoned Hero",
+      "description": "Any campaign: carry a hero into a mission at level 7.",
+      "points": 20,
+      "rule": {
+        "hero": {
+          "minLevel": 7
+        }
+      },
+      "group": "Hero challenges"
+    },
+    {
+      "id": "h-any-10",
+      "title": "Hero of Legend",
+      "description": "Any campaign: carry a hero into a mission at level 10.",
+      "points": 30,
+      "rule": {
+        "hero": {
+          "minLevel": 10
+        }
+      },
+      "group": "Hero challenges"
+    },
+    {
+      "id": "h-any-bag",
+      "title": "Pack Mule",
+      "description": "Any campaign: carry a hero into a mission with all six bag slots full.",
+      "points": 10,
+      "rule": {
+        "hero": {
+          "fullBag": true
+        }
+      },
+      "group": "Hero challenges"
+    },
+    {
+      "id": "s-first-win",
+      "title": "Skirmish Victor",
+      "description": "Win a skirmish game.",
+      "points": 10,
+      "rule": {
+        "skirmish": {
+          "win": true
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-win-h",
+      "title": "For the Alliance",
+      "description": "Win a game as Human.",
+      "points": 10,
+      "rule": {
+        "skirmish": {
+          "win": true,
+          "race": "H"
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-win-o",
+      "title": "Lok'tar Ogar",
+      "description": "Win a game as Orc.",
+      "points": 10,
+      "rule": {
+        "skirmish": {
+          "win": true,
+          "race": "O"
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-win-u",
+      "title": "The Scourge Marches",
+      "description": "Win a game as Undead.",
+      "points": 10,
+      "rule": {
+        "skirmish": {
+          "win": true,
+          "race": "U"
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-win-n",
+      "title": "Shan'do",
+      "description": "Win a game as Night Elf.",
+      "points": 10,
+      "rule": {
+        "skirmish": {
+          "win": true,
+          "race": "N"
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-insane",
+      "title": "Insane in the Membrane",
+      "description": "Beat an Insane computer.",
+      "points": 30,
+      "rule": {
+        "skirmish": {
+          "win": true,
+          "cpuLevel": 2
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-cpu-3",
+      "title": "Against All Odds",
+      "description": "Win against 3 or more computer opponents.",
+      "points": 25,
+      "rule": {
+        "skirmish": {
+          "win": true,
+          "minCpu": 3
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-insane-3",
+      "title": "Unstoppable",
+      "description": "Win against 3 or more Insane computers.",
+      "points": 50,
+      "rule": {
+        "skirmish": {
+          "win": true,
+          "minCpu": 3,
+          "cpuLevel": 2
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-rush",
+      "title": "Rush Tactics",
+      "description": "Win in under 10 minutes.",
+      "points": 20,
+      "rule": {
+        "skirmish": {
+          "win": true,
+          "maxMinutes": 10
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-long",
+      "title": "War of Attrition",
+      "description": "Win a game that lasts an hour or more.",
+      "points": 20,
+      "rule": {
+        "skirmish": {
+          "win": true,
+          "minMinutes": 60
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-hero-10",
+      "title": "Legendary Hero",
+      "description": "Get a hero to level 10 in one game.",
+      "points": 25,
+      "rule": {
+        "skirmish": {
+          "heroLevel": 10
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-three-heroes",
+      "title": "Hall of Heroes",
+      "description": "Have three heroes in one game.",
+      "points": 15,
+      "rule": {
+        "skirmish": {
+          "heroes": 3
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-apm-150",
+      "title": "Quick Commander",
+      "description": "Finish a game with 150+ APM.",
+      "points": 20,
+      "rule": {
+        "skirmish": {
+          "minApm": 150
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-pvp",
+      "title": "Battle.net Brawler",
+      "description": "Win a game against another player.",
+      "points": 20,
+      "rule": {
+        "skirmish": {
+          "win": true,
+          "vsHuman": true
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-many-hfoo",
+      "title": "Footman Frenzy",
+      "description": "Train 40 Footmen in one game.",
+      "points": 15,
+      "rule": {
+        "skirmish": {
+          "trained": {
+            "unit": "hfoo",
+            "n": 40
+          }
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-many-ogru",
+      "title": "Grunt Work",
+      "description": "Train 40 Grunts in one game.",
+      "points": 15,
+      "rule": {
+        "skirmish": {
+          "trained": {
+            "unit": "ogru",
+            "n": 40
+          }
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-many-ugho",
+      "title": "Ghoul Rush",
+      "description": "Train 40 Ghouls in one game.",
+      "points": 15,
+      "rule": {
+        "skirmish": {
+          "trained": {
+            "unit": "ugho",
+            "n": 40
+          }
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-many-earc",
+      "title": "Rain of Arrows",
+      "description": "Train 40 Archers in one game.",
+      "points": 15,
+      "rule": {
+        "skirmish": {
+          "trained": {
+            "unit": "earc",
+            "n": 40
+          }
+        }
+      },
+      "group": "Skirmish"
+    },
+    {
+      "id": "s-h-all-units",
+      "title": "Human Army Complete",
+      "description": "Over all your games, train every Human unit at least once (12).",
+      "points": 35,
+      "rule": {
+        "skirmish": {
+          "everUnits": [
+            "hpea",
+            "hfoo",
+            "hrif",
+            "hkni",
+            "hmpr",
+            "hsor",
+            "hspt",
+            "hmtm",
+            "hgyr",
+            "hgry",
+            "hmtt",
+            "hdhw"
+          ]
+        }
+      },
+      "group": "Collection"
+    },
+    {
+      "id": "s-h-all-heroes",
+      "title": "Human Heroes United",
+      "description": "Over all your games, use all four Human heroes.",
+      "points": 25,
+      "rule": {
+        "skirmish": {
+          "everHeroes": [
+            "Hamg",
+            "Hmkg",
+            "Hpal",
+            "Hblm"
+          ]
+        }
+      },
+      "group": "Collection"
+    },
+    {
+      "id": "s-h-wins-25",
+      "title": "Human Veteran",
+      "description": "Win 25 games as Human.",
+      "points": 20,
+      "rule": {
+        "skirmish": {
+          "raceWins": {
+            "race": "H",
+            "n": 25
+          }
+        }
+      },
+      "group": "Lifetime"
+    },
+    {
+      "id": "s-o-all-units",
+      "title": "Orc Army Complete",
+      "description": "Over all your games, train every Orc unit at least once (12).",
+      "points": 35,
+      "rule": {
+        "skirmish": {
+          "everUnits": [
+            "opeo",
+            "ogru",
+            "ohun",
+            "ocat",
+            "oshm",
+            "odoc",
+            "ospw",
+            "orai",
+            "okod",
+            "owyv",
+            "otbr",
+            "otau"
+          ]
+        }
+      },
+      "group": "Collection"
+    },
+    {
+      "id": "s-o-all-heroes",
+      "title": "Orc Heroes United",
+      "description": "Over all your games, use all four Orc heroes.",
+      "points": 25,
+      "rule": {
+        "skirmish": {
+          "everHeroes": [
+            "Obla",
+            "Ofar",
+            "Otch",
+            "Oshd"
+          ]
+        }
+      },
+      "group": "Collection"
+    },
+    {
+      "id": "s-o-wins-25",
+      "title": "Orc Veteran",
+      "description": "Win 25 games as Orc.",
+      "points": 20,
+      "rule": {
+        "skirmish": {
+          "raceWins": {
+            "race": "O",
+            "n": 25
+          }
+        }
+      },
+      "group": "Lifetime"
+    },
+    {
+      "id": "s-u-all-units",
+      "title": "Undead Army Complete",
+      "description": "Over all your games, train every Undead unit at least once (11).",
+      "points": 35,
+      "rule": {
+        "skirmish": {
+          "everUnits": [
+            "uaco",
+            "ugho",
+            "ucry",
+            "ugar",
+            "uabo",
+            "umtw",
+            "unec",
+            "uban",
+            "uobs",
+            "ufro",
+            "ushd"
+          ]
+        }
+      },
+      "group": "Collection"
+    },
+    {
+      "id": "s-u-all-heroes",
+      "title": "Undead Heroes United",
+      "description": "Over all your games, use all four Undead heroes.",
+      "points": 25,
+      "rule": {
+        "skirmish": {
+          "everHeroes": [
+            "Udea",
+            "Ulic",
+            "Udre",
+            "Ucrl"
+          ]
+        }
+      },
+      "group": "Collection"
+    },
+    {
+      "id": "s-u-wins-25",
+      "title": "Undead Veteran",
+      "description": "Win 25 games as Undead.",
+      "points": 20,
+      "rule": {
+        "skirmish": {
+          "raceWins": {
+            "race": "U",
+            "n": 25
+          }
+        }
+      },
+      "group": "Lifetime"
+    },
+    {
+      "id": "s-n-all-units",
+      "title": "Night Elf Army Complete",
+      "description": "Over all your games, train every Night Elf unit at least once (11).",
+      "points": 35,
+      "rule": {
+        "skirmish": {
+          "everUnits": [
+            "ewsp",
+            "earc",
+            "esen",
+            "ebal",
+            "edry",
+            "edoc",
+            "emtg",
+            "ehip",
+            "edot",
+            "efdr",
+            "echm"
+          ]
+        }
+      },
+      "group": "Collection"
+    },
+    {
+      "id": "s-n-all-heroes",
+      "title": "Night Elf Heroes United",
+      "description": "Over all your games, use all four Night Elf heroes.",
+      "points": 25,
+      "rule": {
+        "skirmish": {
+          "everHeroes": [
+            "Edem",
+            "Ekee",
+            "Emoo",
+            "Ewar"
+          ]
+        }
+      },
+      "group": "Collection"
+    },
+    {
+      "id": "s-n-wins-25",
+      "title": "Night Elf Veteran",
+      "description": "Win 25 games as Night Elf.",
+      "points": 20,
+      "rule": {
+        "skirmish": {
+          "raceWins": {
+            "race": "N",
+            "n": 25
+          }
+        }
+      },
+      "group": "Lifetime"
+    },
+    {
+      "id": "s-all-races",
+      "title": "Master of Azeroth",
+      "description": "Win with all four races.",
+      "points": 30,
+      "rule": {
+        "skirmish": {
+          "allRaces": true
+        }
+      },
+      "group": "Lifetime"
+    },
+    {
+      "id": "s-wins-10",
+      "title": "Warmonger",
+      "description": "Win 10 games.",
+      "points": 15,
+      "rule": {
+        "skirmish": {
+          "totalWins": 10
+        }
+      },
+      "group": "Lifetime"
+    },
+    {
+      "id": "s-wins-50",
+      "title": "Conqueror",
+      "description": "Win 50 games.",
+      "points": 30,
+      "rule": {
+        "skirmish": {
+          "totalWins": 50
+        }
+      },
+      "group": "Lifetime"
+    },
+    {
+      "id": "s-wins-100",
+      "title": "Hero of Azeroth",
+      "description": "Win 100 games.",
+      "points": 50,
+      "rule": {
+        "skirmish": {
+          "totalWins": 100
+        }
+      },
+      "group": "Lifetime"
+    },
+    {
+      "id": "s-games-25",
+      "title": "Regular",
+      "description": "Play 25 games.",
+      "points": 10,
+      "rule": {
+        "skirmish": {
+          "totalGames": 25
+        }
+      },
+      "group": "Lifetime"
+    },
+    {
+      "id": "s-army-1000",
+      "title": "Raise an Army",
+      "description": "Train 1,000 units over all your games (workers not counted).",
+      "points": 15,
+      "rule": {
+        "skirmish": {
+          "totalArmy": 1000
+        }
+      },
+      "group": "Lifetime"
+    },
+    {
+      "id": "s-army-5000",
+      "title": "The Horde Unleashed",
+      "description": "Train 5,000 units over all your games (workers not counted).",
+      "points": 30,
+      "rule": {
+        "skirmish": {
+          "totalArmy": 5000
+        }
+      },
+      "group": "Lifetime"
+    },
+    {
+      "id": "s-heroes10-10",
+      "title": "Hall of Legends",
+      "description": "Take 10 heroes to level 10.",
+      "points": 30,
+      "rule": {
+        "skirmish": {
+          "heroes10": 10
+        }
+      },
+      "group": "Lifetime"
+    },
+    {
+      "id": "s-insane-10",
+      "title": "Insanity",
+      "description": "Beat Insane computers in 10 games.",
+      "points": 40,
+      "rule": {
+        "skirmish": {
+          "insaneWins": 10
+        }
+      },
+      "group": "Lifetime"
+    }
+  ]
+}

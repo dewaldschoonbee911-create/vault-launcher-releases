@@ -1,0 +1,822 @@
+{
+ "id": "commandos1",
+ "title": "Commandos: Behind Enemy Lines",
+ "version": 2,
+ "kind": "replay",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [],
+ "linkFiles": [
+  "Comandos.exe",
+  "WARGAME.DIR"
+ ],
+ "exeNames": [
+  "Comandos.exe"
+ ],
+ "md5": [],
+ "notes": [
+  "Vault reads your save games (the OUTPUT folder in the game folder) and never touches the game.",
+  "Save a game once in each new mission (Esc, Save) and the mission before it counts as finished.",
+  "Untested: Vault hasn't seen a Commandos save yet, so if nothing pops after saving, send a test report."
+ ],
+ "testGuide": [
+  {
+   "title": "Start the campaign",
+   "detail": "Play the first mission for a minute, then save the game."
+  },
+  {
+   "title": "Check the numbers",
+   "detail": "\"Last save\" should show the mission name. When you save in mission 2, the first mission pops."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "beat-01",
+   "title": "Baptism of Fire",
+   "description": "Finish mission 1, Baptism of Fire. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M02",
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M07",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13",
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-02",
+   "title": "A Quiet Blow-up",
+   "description": "Finish mission 2, A Quiet Blow-up. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M07",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13",
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-03",
+   "title": "Reverse Engineering",
+   "description": "Finish mission 3, Reverse Engineering. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M04",
+     "M05",
+     "M06",
+     "M07",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13",
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-04",
+   "title": "Restore Pride",
+   "description": "Finish mission 4, Restore Pride. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M05",
+     "M06",
+     "M07",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13",
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-05",
+   "title": "Blind Justice",
+   "description": "Finish mission 5, Blind Justice. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M06",
+     "M07",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13",
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-06",
+   "title": "Menace of the Leopold",
+   "description": "Finish mission 6, Menace of the Leopold. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M07",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13",
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-07",
+   "title": "Chase of the Wolves",
+   "description": "Finish mission 7, Chase of the Wolves. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13",
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-08",
+   "title": "Pyrotechnics",
+   "description": "Finish mission 8, Pyrotechnics. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13",
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-09",
+   "title": "A Courtesy Call",
+   "description": "Finish mission 9, A Courtesy Call. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M10",
+     "M11",
+     "M12",
+     "M13",
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-10",
+   "title": "Operation Icarus",
+   "description": "Finish mission 10, Operation Icarus. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M11",
+     "M12",
+     "M13",
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-11",
+   "title": "In the Soup",
+   "description": "Finish mission 11, In the Soup. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M12",
+     "M13",
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-12",
+   "title": "Up on the Roof",
+   "description": "Finish mission 12, Up on the Roof. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M13",
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-13",
+   "title": "David & Goliath",
+   "description": "Finish mission 13, David & Goliath. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-14",
+   "title": "D-Day Kick Off",
+   "description": "Finish mission 14, D-Day Kick Off. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-15",
+   "title": "The End of the Butcher",
+   "description": "Finish mission 15, The End of the Butcher. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-16",
+   "title": "Stop Wildfire",
+   "description": "Finish mission 16, Stop Wildfire. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-17",
+   "title": "Before Dawn",
+   "description": "Finish mission 17, Before Dawn. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-18",
+   "title": "The Force of Circumstance",
+   "description": "Finish mission 18, The Force of Circumstance. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "beat-19",
+   "title": "Frustrate Retaliation",
+   "description": "Finish mission 19, Frustrate Retaliation. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "reach-final",
+   "title": "Valhalla Awaits",
+   "description": "Reach the final mission, Operation Valhalla. (Save a game in it.)",
+   "points": 25,
+   "group": "Campaign",
+   "rule": {
+    "reach": "M20"
+   }
+  },
+  {
+   "id": "saves-5",
+   "title": "Getting the Hang of It",
+   "description": "Save a game in 5 different missions.",
+   "points": 10,
+   "group": "Milestones",
+   "rule": {
+    "count": 5,
+    "of": [
+     "M01",
+     "M02",
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M07",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13",
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "saves-10",
+   "title": "Seasoned Commando",
+   "description": "Save a game in 10 different missions.",
+   "points": 15,
+   "group": "Milestones",
+   "rule": {
+    "count": 10,
+    "of": [
+     "M01",
+     "M02",
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M07",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13",
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "saves-15",
+   "title": "Behind the Lines",
+   "description": "Save a game in 15 different missions.",
+   "points": 20,
+   "group": "Milestones",
+   "rule": {
+    "count": 15,
+    "of": [
+     "M01",
+     "M02",
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M07",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13",
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "saves-all",
+   "title": "Every Step of the Way",
+   "description": "Save a game in every one of the 20 missions.",
+   "points": 30,
+   "group": "Milestones",
+   "rule": {
+    "count": 20,
+    "of": [
+     "M01",
+     "M02",
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M07",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13",
+     "M14",
+     "M15",
+     "M16",
+     "M17",
+     "M18",
+     "M19",
+     "M20"
+    ]
+   }
+  },
+  {
+   "id": "during-01",
+   "title": "Field Notes: Baptism of Fire",
+   "description": "Save a game during mission 1, Baptism of Fire.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M01"
+   }
+  },
+  {
+   "id": "during-02",
+   "title": "Field Notes: A Quiet Blow-up",
+   "description": "Save a game during mission 2, A Quiet Blow-up.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M02"
+   }
+  },
+  {
+   "id": "during-03",
+   "title": "Field Notes: Reverse Engineering",
+   "description": "Save a game during mission 3, Reverse Engineering.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M03"
+   }
+  },
+  {
+   "id": "during-04",
+   "title": "Field Notes: Restore Pride",
+   "description": "Save a game during mission 4, Restore Pride.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M04"
+   }
+  },
+  {
+   "id": "during-05",
+   "title": "Field Notes: Blind Justice",
+   "description": "Save a game during mission 5, Blind Justice.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M05"
+   }
+  },
+  {
+   "id": "during-06",
+   "title": "Field Notes: Menace of the Leopold",
+   "description": "Save a game during mission 6, Menace of the Leopold.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M06"
+   }
+  },
+  {
+   "id": "during-07",
+   "title": "Field Notes: Chase of the Wolves",
+   "description": "Save a game during mission 7, Chase of the Wolves.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M07"
+   }
+  },
+  {
+   "id": "during-08",
+   "title": "Field Notes: Pyrotechnics",
+   "description": "Save a game during mission 8, Pyrotechnics.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M08"
+   }
+  },
+  {
+   "id": "during-09",
+   "title": "Field Notes: A Courtesy Call",
+   "description": "Save a game during mission 9, A Courtesy Call.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M09"
+   }
+  },
+  {
+   "id": "during-10",
+   "title": "Field Notes: Operation Icarus",
+   "description": "Save a game during mission 10, Operation Icarus.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M10"
+   }
+  },
+  {
+   "id": "during-11",
+   "title": "Field Notes: In the Soup",
+   "description": "Save a game during mission 11, In the Soup.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M11"
+   }
+  },
+  {
+   "id": "during-12",
+   "title": "Field Notes: Up on the Roof",
+   "description": "Save a game during mission 12, Up on the Roof.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M12"
+   }
+  },
+  {
+   "id": "during-13",
+   "title": "Field Notes: David & Goliath",
+   "description": "Save a game during mission 13, David & Goliath.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M13"
+   }
+  },
+  {
+   "id": "during-14",
+   "title": "Field Notes: D-Day Kick Off",
+   "description": "Save a game during mission 14, D-Day Kick Off.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M14"
+   }
+  },
+  {
+   "id": "during-15",
+   "title": "Field Notes: The End of the Butcher",
+   "description": "Save a game during mission 15, The End of the Butcher.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M15"
+   }
+  },
+  {
+   "id": "during-16",
+   "title": "Field Notes: Stop Wildfire",
+   "description": "Save a game during mission 16, Stop Wildfire.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M16"
+   }
+  },
+  {
+   "id": "during-17",
+   "title": "Field Notes: Before Dawn",
+   "description": "Save a game during mission 17, Before Dawn.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M17"
+   }
+  },
+  {
+   "id": "during-18",
+   "title": "Field Notes: The Force of Circumstance",
+   "description": "Save a game during mission 18, The Force of Circumstance.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M18"
+   }
+  },
+  {
+   "id": "during-19",
+   "title": "Field Notes: Frustrate Retaliation",
+   "description": "Save a game during mission 19, Frustrate Retaliation.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M19"
+   }
+  },
+  {
+   "id": "during-20",
+   "title": "Field Notes: Operation Valhalla",
+   "description": "Save a game during mission 20, Operation Valhalla.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M20"
+   }
+  },
+  {
+   "id": "files-3",
+   "title": "Backup Plan",
+   "description": "Have 3 different save slots.",
+   "points": 5,
+   "group": "Saving",
+   "rule": {
+    "files": 3
+   }
+  },
+  {
+   "id": "files-8",
+   "title": "Filing Cabinet",
+   "description": "Have 8 different save slots.",
+   "points": 10,
+   "group": "Saving",
+   "rule": {
+    "files": 8
+   }
+  },
+  {
+   "id": "writes-25",
+   "title": "Save Early",
+   "description": "Save your game 25 times.",
+   "points": 5,
+   "group": "Saving",
+   "rule": {
+    "saves": 25
+   }
+  },
+  {
+   "id": "writes-100",
+   "title": "Save Often",
+   "description": "Save your game 100 times.",
+   "points": 15,
+   "group": "Saving",
+   "rule": {
+    "saves": 100
+   }
+  },
+  {
+   "id": "writes-250",
+   "title": "Nothing Left to Chance",
+   "description": "Save your game 250 times.",
+   "points": 25,
+   "group": "Saving",
+   "rule": {
+    "saves": 250
+   }
+  }
+ ]
+}

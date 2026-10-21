@@ -1,0 +1,657 @@
+{
+ "id": "commandosbcd",
+ "title": "Commandos: Beyond the Call of Duty",
+ "version": 2,
+ "kind": "replay",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [],
+ "linkFiles": [
+  "coman_mp.exe",
+  "WAR_MP.DIR"
+ ],
+ "exeNames": [
+  "coman_mp.exe"
+ ],
+ "md5": [],
+ "notes": [
+  "Vault reads your save games (the OUTPUT folder in the game folder) and never touches the game.",
+  "Save a game once in each new mission (Esc, Save) and the mission before it counts as finished.",
+  "Untested: Vault hasn't seen a Commandos save yet, so if nothing pops after saving, send a test report."
+ ],
+ "testGuide": [
+  {
+   "title": "Start the campaign",
+   "detail": "Play the first mission for a minute, then save the game."
+  },
+  {
+   "title": "Check the numbers",
+   "detail": "\"Last save\" should show the mission name. When you save in mission 2, the first mission pops."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "beat-01",
+   "title": "Dying Light",
+   "description": "Finish mission 1, Dying Light. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M02",
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M07",
+     "M08"
+    ]
+   }
+  },
+  {
+   "id": "beat-02",
+   "title": "The Asphalt Jungle",
+   "description": "Finish mission 2, The Asphalt Jungle. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M07",
+     "M08"
+    ]
+   }
+  },
+  {
+   "id": "beat-03",
+   "title": "Dropped Out of the Sky",
+   "description": "Finish mission 3, Dropped Out of the Sky. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M04",
+     "M05",
+     "M06",
+     "M07",
+     "M08"
+    ]
+   }
+  },
+  {
+   "id": "beat-04",
+   "title": "Thor's Hammer",
+   "description": "Finish mission 4, Thor's Hammer. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M05",
+     "M06",
+     "M07",
+     "M08"
+    ]
+   }
+  },
+  {
+   "id": "beat-05",
+   "title": "Guess Who's Coming Tonight",
+   "description": "Finish mission 5, Guess Who's Coming Tonight. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M06",
+     "M07",
+     "M08"
+    ]
+   }
+  },
+  {
+   "id": "beat-06",
+   "title": "Eagle's Nest",
+   "description": "Finish mission 6, Eagle's Nest. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M07",
+     "M08"
+    ]
+   }
+  },
+  {
+   "id": "beat-07",
+   "title": "The Great Escape",
+   "description": "Finish mission 7, The Great Escape. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "M08"
+    ]
+   }
+  },
+  {
+   "id": "reach-final",
+   "title": "Dangerous Friendships Ahead",
+   "description": "Reach the final mission, Dangerous Friendships. (Save a game in it.)",
+   "points": 25,
+   "group": "Campaign",
+   "rule": {
+    "reach": "M08"
+   }
+  },
+  {
+   "id": "saves-2",
+   "title": "Getting the Hang of It",
+   "description": "Save a game in 2 different missions.",
+   "points": 10,
+   "group": "Milestones",
+   "rule": {
+    "count": 2,
+    "of": [
+     "M01",
+     "M02",
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M07",
+     "M08"
+    ]
+   }
+  },
+  {
+   "id": "saves-4",
+   "title": "Seasoned Commando",
+   "description": "Save a game in 4 different missions.",
+   "points": 15,
+   "group": "Milestones",
+   "rule": {
+    "count": 4,
+    "of": [
+     "M01",
+     "M02",
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M07",
+     "M08"
+    ]
+   }
+  },
+  {
+   "id": "saves-6",
+   "title": "Behind the Lines",
+   "description": "Save a game in 6 different missions.",
+   "points": 20,
+   "group": "Milestones",
+   "rule": {
+    "count": 6,
+    "of": [
+     "M01",
+     "M02",
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M07",
+     "M08"
+    ]
+   }
+  },
+  {
+   "id": "saves-all",
+   "title": "Every Step of the Way",
+   "description": "Save a game in every one of the 8 missions.",
+   "points": 30,
+   "group": "Milestones",
+   "rule": {
+    "count": 8,
+    "of": [
+     "M01",
+     "M02",
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M07",
+     "M08"
+    ]
+   }
+  },
+  {
+   "id": "during-01",
+   "title": "Field Notes: Dying Light",
+   "description": "Save a game during mission 1, Dying Light.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M01"
+   }
+  },
+  {
+   "id": "during-02",
+   "title": "Field Notes: The Asphalt Jungle",
+   "description": "Save a game during mission 2, The Asphalt Jungle.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M02"
+   }
+  },
+  {
+   "id": "during-03",
+   "title": "Field Notes: Dropped Out of the Sky",
+   "description": "Save a game during mission 3, Dropped Out of the Sky.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M03"
+   }
+  },
+  {
+   "id": "during-04",
+   "title": "Field Notes: Thor's Hammer",
+   "description": "Save a game during mission 4, Thor's Hammer.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M04"
+   }
+  },
+  {
+   "id": "during-05",
+   "title": "Field Notes: Guess Who's Coming Tonight",
+   "description": "Save a game during mission 5, Guess Who's Coming Tonight.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M05"
+   }
+  },
+  {
+   "id": "during-06",
+   "title": "Field Notes: Eagle's Nest",
+   "description": "Save a game during mission 6, Eagle's Nest.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M06"
+   }
+  },
+  {
+   "id": "during-07",
+   "title": "Field Notes: The Great Escape",
+   "description": "Save a game during mission 7, The Great Escape.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M07"
+   }
+  },
+  {
+   "id": "during-08",
+   "title": "Field Notes: Dangerous Friendships",
+   "description": "Save a game during mission 8, Dangerous Friendships.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "M08"
+   }
+  },
+  {
+   "id": "planner-01",
+   "title": "Careful Planner: Dying Light",
+   "description": "Save 5 times during mission 1, Dying Light.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "M01",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-02",
+   "title": "Careful Planner: The Asphalt Jungle",
+   "description": "Save 5 times during mission 2, The Asphalt Jungle.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "M02",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-03",
+   "title": "Careful Planner: Dropped Out of the Sky",
+   "description": "Save 5 times during mission 3, Dropped Out of the Sky.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "M03",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-04",
+   "title": "Careful Planner: Thor's Hammer",
+   "description": "Save 5 times during mission 4, Thor's Hammer.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "M04",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-05",
+   "title": "Careful Planner: Guess Who's Coming Tonight",
+   "description": "Save 5 times during mission 5, Guess Who's Coming Tonight.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "M05",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-06",
+   "title": "Careful Planner: Eagle's Nest",
+   "description": "Save 5 times during mission 6, Eagle's Nest.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "M06",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-07",
+   "title": "Careful Planner: The Great Escape",
+   "description": "Save 5 times during mission 7, The Great Escape.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "M07",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-08",
+   "title": "Careful Planner: Dangerous Friendships",
+   "description": "Save 5 times during mission 8, Dangerous Friendships.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "M08",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "methodical-01",
+   "title": "Methodical: Dying Light",
+   "description": "Save 15 times during mission 1, Dying Light.",
+   "points": 10,
+   "group": "Methodical",
+   "rule": {
+    "inMission": {
+     "of": "M01",
+     "n": 15
+    }
+   }
+  },
+  {
+   "id": "methodical-02",
+   "title": "Methodical: The Asphalt Jungle",
+   "description": "Save 15 times during mission 2, The Asphalt Jungle.",
+   "points": 10,
+   "group": "Methodical",
+   "rule": {
+    "inMission": {
+     "of": "M02",
+     "n": 15
+    }
+   }
+  },
+  {
+   "id": "methodical-03",
+   "title": "Methodical: Dropped Out of the Sky",
+   "description": "Save 15 times during mission 3, Dropped Out of the Sky.",
+   "points": 10,
+   "group": "Methodical",
+   "rule": {
+    "inMission": {
+     "of": "M03",
+     "n": 15
+    }
+   }
+  },
+  {
+   "id": "methodical-04",
+   "title": "Methodical: Thor's Hammer",
+   "description": "Save 15 times during mission 4, Thor's Hammer.",
+   "points": 10,
+   "group": "Methodical",
+   "rule": {
+    "inMission": {
+     "of": "M04",
+     "n": 15
+    }
+   }
+  },
+  {
+   "id": "methodical-05",
+   "title": "Methodical: Guess Who's Coming Tonight",
+   "description": "Save 15 times during mission 5, Guess Who's Coming Tonight.",
+   "points": 10,
+   "group": "Methodical",
+   "rule": {
+    "inMission": {
+     "of": "M05",
+     "n": 15
+    }
+   }
+  },
+  {
+   "id": "methodical-06",
+   "title": "Methodical: Eagle's Nest",
+   "description": "Save 15 times during mission 6, Eagle's Nest.",
+   "points": 10,
+   "group": "Methodical",
+   "rule": {
+    "inMission": {
+     "of": "M06",
+     "n": 15
+    }
+   }
+  },
+  {
+   "id": "methodical-07",
+   "title": "Methodical: The Great Escape",
+   "description": "Save 15 times during mission 7, The Great Escape.",
+   "points": 10,
+   "group": "Methodical",
+   "rule": {
+    "inMission": {
+     "of": "M07",
+     "n": 15
+    }
+   }
+  },
+  {
+   "id": "methodical-08",
+   "title": "Methodical: Dangerous Friendships",
+   "description": "Save 15 times during mission 8, Dangerous Friendships.",
+   "points": 10,
+   "group": "Methodical",
+   "rule": {
+    "inMission": {
+     "of": "M08",
+     "n": 15
+    }
+   }
+  },
+  {
+   "id": "obsessive-06",
+   "title": "No Room for Error: Eagle's Nest",
+   "description": "Save 30 times during mission 6, Eagle's Nest.",
+   "points": 15,
+   "group": "Methodical",
+   "rule": {
+    "inMission": {
+     "of": "M06",
+     "n": 30
+    }
+   }
+  },
+  {
+   "id": "obsessive-07",
+   "title": "No Room for Error: The Great Escape",
+   "description": "Save 30 times during mission 7, The Great Escape.",
+   "points": 15,
+   "group": "Methodical",
+   "rule": {
+    "inMission": {
+     "of": "M07",
+     "n": 30
+    }
+   }
+  },
+  {
+   "id": "obsessive-08",
+   "title": "No Room for Error: Dangerous Friendships",
+   "description": "Save 30 times during mission 8, Dangerous Friendships.",
+   "points": 15,
+   "group": "Methodical",
+   "rule": {
+    "inMission": {
+     "of": "M08",
+     "n": 30
+    }
+   }
+  },
+  {
+   "id": "writes-500",
+   "title": "Quicksave Reflex",
+   "description": "Save your game 500 times.",
+   "points": 30,
+   "group": "Saving",
+   "rule": {
+    "saves": 500
+   }
+  },
+  {
+   "id": "writes-1000",
+   "title": "F5 Veteran",
+   "description": "Save your game 1000 times.",
+   "points": 40,
+   "group": "Saving",
+   "rule": {
+    "saves": 1000
+   }
+  },
+  {
+   "id": "writes-2000",
+   "title": "The Save Key Is Worn Out",
+   "description": "Save your game 2000 times.",
+   "points": 50,
+   "group": "Saving",
+   "rule": {
+    "saves": 2000
+   }
+  },
+  {
+   "id": "files-12",
+   "title": "Archive Room",
+   "description": "Have 12 different save slots.",
+   "points": 15,
+   "group": "Saving",
+   "rule": {
+    "files": 12
+   }
+  },
+  {
+   "id": "files-20",
+   "title": "Records Office",
+   "description": "Have 20 different save slots.",
+   "points": 20,
+   "group": "Saving",
+   "rule": {
+    "files": 20
+   }
+  },
+  {
+   "id": "files-3",
+   "title": "Backup Plan",
+   "description": "Have 3 different save slots.",
+   "points": 5,
+   "group": "Saving",
+   "rule": {
+    "files": 3
+   }
+  },
+  {
+   "id": "files-8",
+   "title": "Filing Cabinet",
+   "description": "Have 8 different save slots.",
+   "points": 10,
+   "group": "Saving",
+   "rule": {
+    "files": 8
+   }
+  },
+  {
+   "id": "writes-25",
+   "title": "Save Early",
+   "description": "Save your game 25 times.",
+   "points": 5,
+   "group": "Saving",
+   "rule": {
+    "saves": 25
+   }
+  },
+  {
+   "id": "writes-100",
+   "title": "Save Often",
+   "description": "Save your game 100 times.",
+   "points": 15,
+   "group": "Saving",
+   "rule": {
+    "saves": 100
+   }
+  },
+  {
+   "id": "writes-250",
+   "title": "Nothing Left to Chance",
+   "description": "Save your game 250 times.",
+   "points": 25,
+   "group": "Saving",
+   "rule": {
+    "saves": 250
+   }
+  }
+ ]
+}

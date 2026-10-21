@@ -1,0 +1,739 @@
+{
+  "id": "renegade",
+  "title": "Command & Conquer: Renegade",
+  "exeNames": [
+    "game.dat"
+  ],
+  "genericExeName": true,
+  "linkFiles": [
+    "Game.exe",
+    "Data/always.dat"
+  ],
+  "md5": [
+    "4694cb507d6d745bf05f1007977123f6"
+  ],
+  "variants": [
+    {
+      "md5": [
+        "c809d32212e3c2cc60b5d879139b8a07"
+      ],
+      "exeNames": [
+        "game.exe"
+      ],
+      "note": "Steam Game.exe 1.037",
+      "addressMap": {
+        "8446b0": "81ddf0",
+        "821704": "80f458",
+        "8566f0": "855e48",
+        "8447cc": "81df04",
+        "8447d0": "81df08",
+        "8447d4": "81df0c",
+        "8447d8": "81df10",
+        "8447dc": "81df14",
+        "8447e8": "81df20",
+        "8447ec": "81df24",
+        "8447f0": "81df28",
+        "8447f4": "81df2c",
+        "844800": "81df38"
+      }
+    }
+  ],
+  "version": 1,
+  "pollHz": 5,
+  "settleSeconds": 2,
+  "notes": [
+    "Mission achievements also unlock from your save games: save once in each new mission and the one before it counts, even if Vault was closed while you played.",
+    "Mission achievements unlock when the score screen after a campaign mission appears.",
+    "Playing a single mission from \"Replay level\" does not count, only the campaign."
+  ],
+  "watches": [
+    {
+      "id": "state",
+      "label": "Campaign step (-10 = not in the campaign)",
+      "address": "8446b0",
+      "size": "u32",
+      "values": {
+        "4294967286": "Not in the campaign",
+        "4294967285": "Replaying a level",
+        "4294967284": "Replay score screen"
+      }
+    },
+    {
+      "id": "kills",
+      "label": "Enemies killed",
+      "path": [
+        "8566f0",
+        "4",
+        "960",
+        "28"
+      ],
+      "size": "u32"
+    },
+    {
+      "id": "headshots",
+      "label": "Headshots",
+      "path": [
+        "8566f0",
+        "4",
+        "960",
+        "34"
+      ],
+      "size": "u32"
+    },
+    {
+      "id": "vehicles",
+      "label": "Vehicles destroyed",
+      "path": [
+        "8566f0",
+        "4",
+        "960",
+        "50"
+      ],
+      "size": "u32"
+    },
+    {
+      "id": "difficulty",
+      "label": "Difficulty",
+      "address": "821704",
+      "size": "u32",
+      "values": {
+        "0": "Easy",
+        "1": "Normal",
+        "2": "Hard"
+      }
+    }
+  ],
+  "testGuide": [
+    {
+      "title": "Start Renegade",
+      "detail": "Click Play on the game page and wait for the main menu."
+    },
+    {
+      "title": "Start a new campaign",
+      "detail": "Single player \u2192 New Game \u2192 pick a difficulty. \"Campaign step\" should change to 0.",
+      "doneWhen": {
+        "watch": "state",
+        "equals": 0
+      }
+    },
+    {
+      "title": "Finish the first mission",
+      "detail": "When the score screen appears the step becomes 1 and \"Prologue Complete\" pops.",
+      "doneWhen": {
+        "watch": "state",
+        "equals": 1
+      }
+    }
+  ],
+  "achievements": [
+    {
+      "id": "m00",
+      "title": "Prologue Complete",
+      "description": "Finish the opening mission.",
+      "points": 10,
+      "memaddr": "0xX8446b0=1",
+      "group": "Campaign",
+      "rule": {
+        "rgReach": 1
+      }
+    },
+    {
+      "id": "m00-hard",
+      "title": "Prologue Complete (Hard)",
+      "description": "Finish the opening mission on Hard.",
+      "points": 15,
+      "memaddr": "0xX8446b0=1_0xX821704>=2",
+      "group": "Campaign \u2014 Hard"
+    },
+    {
+      "id": "m01",
+      "title": "Mission 1 Complete",
+      "description": "Finish campaign mission 1.",
+      "points": 10,
+      "memaddr": "0xX8446b0=4",
+      "group": "Campaign",
+      "rule": {
+        "rgReach": 2
+      }
+    },
+    {
+      "id": "m01-hard",
+      "title": "Mission 1 Complete (Hard)",
+      "description": "Finish campaign mission 1 on Hard.",
+      "points": 15,
+      "memaddr": "0xX8446b0=4_0xX821704>=2",
+      "group": "Campaign \u2014 Hard"
+    },
+    {
+      "id": "m02",
+      "title": "Mission 2 Complete",
+      "description": "Finish campaign mission 2.",
+      "points": 10,
+      "memaddr": "0xX8446b0=7",
+      "group": "Campaign",
+      "rule": {
+        "rgReach": 3
+      }
+    },
+    {
+      "id": "m02-hard",
+      "title": "Mission 2 Complete (Hard)",
+      "description": "Finish campaign mission 2 on Hard.",
+      "points": 15,
+      "memaddr": "0xX8446b0=7_0xX821704>=2",
+      "group": "Campaign \u2014 Hard"
+    },
+    {
+      "id": "m03",
+      "title": "Mission 3 Complete",
+      "description": "Finish campaign mission 3.",
+      "points": 10,
+      "memaddr": "0xX8446b0=10",
+      "group": "Campaign",
+      "rule": {
+        "rgReach": 4
+      }
+    },
+    {
+      "id": "m03-hard",
+      "title": "Mission 3 Complete (Hard)",
+      "description": "Finish campaign mission 3 on Hard.",
+      "points": 15,
+      "memaddr": "0xX8446b0=10_0xX821704>=2",
+      "group": "Campaign \u2014 Hard"
+    },
+    {
+      "id": "m04",
+      "title": "Mission 4 Complete",
+      "description": "Finish campaign mission 4.",
+      "points": 10,
+      "memaddr": "0xX8446b0=13",
+      "group": "Campaign",
+      "rule": {
+        "rgReach": 5
+      }
+    },
+    {
+      "id": "m04-hard",
+      "title": "Mission 4 Complete (Hard)",
+      "description": "Finish campaign mission 4 on Hard.",
+      "points": 15,
+      "memaddr": "0xX8446b0=13_0xX821704>=2",
+      "group": "Campaign \u2014 Hard"
+    },
+    {
+      "id": "m05",
+      "title": "Mission 5 Complete",
+      "description": "Finish campaign mission 5.",
+      "points": 10,
+      "memaddr": "0xX8446b0=16",
+      "group": "Campaign",
+      "rule": {
+        "rgReach": 6
+      }
+    },
+    {
+      "id": "m05-hard",
+      "title": "Mission 5 Complete (Hard)",
+      "description": "Finish campaign mission 5 on Hard.",
+      "points": 15,
+      "memaddr": "0xX8446b0=16_0xX821704>=2",
+      "group": "Campaign \u2014 Hard"
+    },
+    {
+      "id": "m06",
+      "title": "Mission 6 Complete",
+      "description": "Finish campaign mission 6.",
+      "points": 10,
+      "memaddr": "0xX8446b0=19",
+      "group": "Campaign",
+      "rule": {
+        "rgReach": 7
+      }
+    },
+    {
+      "id": "m06-hard",
+      "title": "Mission 6 Complete (Hard)",
+      "description": "Finish campaign mission 6 on Hard.",
+      "points": 15,
+      "memaddr": "0xX8446b0=19_0xX821704>=2",
+      "group": "Campaign \u2014 Hard"
+    },
+    {
+      "id": "m07",
+      "title": "Mission 7 Complete",
+      "description": "Finish campaign mission 7.",
+      "points": 10,
+      "memaddr": "0xX8446b0=22",
+      "group": "Campaign",
+      "rule": {
+        "rgReach": 8
+      }
+    },
+    {
+      "id": "m07-hard",
+      "title": "Mission 7 Complete (Hard)",
+      "description": "Finish campaign mission 7 on Hard.",
+      "points": 15,
+      "memaddr": "0xX8446b0=22_0xX821704>=2",
+      "group": "Campaign \u2014 Hard"
+    },
+    {
+      "id": "m08",
+      "title": "Mission 8 Complete",
+      "description": "Finish campaign mission 8.",
+      "points": 10,
+      "memaddr": "0xX8446b0=25",
+      "group": "Campaign",
+      "rule": {
+        "rgReach": 9
+      }
+    },
+    {
+      "id": "m08-hard",
+      "title": "Mission 8 Complete (Hard)",
+      "description": "Finish campaign mission 8 on Hard.",
+      "points": 15,
+      "memaddr": "0xX8446b0=25_0xX821704>=2",
+      "group": "Campaign \u2014 Hard"
+    },
+    {
+      "id": "m09",
+      "title": "Mission 9 Complete",
+      "description": "Finish campaign mission 9.",
+      "points": 10,
+      "memaddr": "0xX8446b0=28",
+      "group": "Campaign",
+      "rule": {
+        "rgReach": 10
+      }
+    },
+    {
+      "id": "m09-hard",
+      "title": "Mission 9 Complete (Hard)",
+      "description": "Finish campaign mission 9 on Hard.",
+      "points": 15,
+      "memaddr": "0xX8446b0=28_0xX821704>=2",
+      "group": "Campaign \u2014 Hard"
+    },
+    {
+      "id": "m10",
+      "title": "Mission 10 Complete",
+      "description": "Finish campaign mission 10.",
+      "points": 10,
+      "memaddr": "0xX8446b0=31",
+      "group": "Campaign",
+      "rule": {
+        "rgReach": 11
+      }
+    },
+    {
+      "id": "m10-hard",
+      "title": "Mission 10 Complete (Hard)",
+      "description": "Finish campaign mission 10 on Hard.",
+      "points": 15,
+      "memaddr": "0xX8446b0=31_0xX821704>=2",
+      "group": "Campaign \u2014 Hard"
+    },
+    {
+      "id": "m11",
+      "title": "Mission 11 Complete",
+      "description": "Finish campaign mission 11.",
+      "points": 25,
+      "memaddr": "0xX8446b0=34",
+      "group": "Campaign"
+    },
+    {
+      "id": "m11-hard",
+      "title": "Mission 11 Complete (Hard)",
+      "description": "Finish campaign mission 11 on Hard.",
+      "points": 30,
+      "memaddr": "0xX8446b0=34_0xX821704>=2",
+      "group": "Campaign \u2014 Hard"
+    },
+    {
+      "id": "finale",
+      "title": "One Man Army",
+      "description": "Finish the whole campaign and watch the finale.",
+      "points": 50,
+      "memaddr": "0xX8446b0=35",
+      "group": "Campaign"
+    },
+    {
+      "id": "finale-hard",
+      "title": "Commando",
+      "description": "Finish the whole campaign on Hard.",
+      "points": 75,
+      "memaddr": "0xX8446b0=35_0xX821704>=2",
+      "group": "Campaign \u2014 Hard"
+    },
+    {
+      "id": "halfway3",
+      "title": "Getting Started",
+      "description": "Reach campaign mission 4 (counts if you load a later save too).",
+      "points": 10,
+      "memaddr": "0xX8446b0>=11_0xX8446b0<=35",
+      "group": "Milestones"
+    },
+    {
+      "id": "halfway6",
+      "title": "Halfway There",
+      "description": "Reach campaign mission 7 (counts if you load a later save too).",
+      "points": 10,
+      "memaddr": "0xX8446b0>=20_0xX8446b0<=35",
+      "group": "Milestones"
+    },
+    {
+      "id": "halfway9",
+      "title": "Deep Behind Enemy Lines",
+      "description": "Reach campaign mission 10 (counts if you load a later save too).",
+      "points": 10,
+      "memaddr": "0xX8446b0>=29_0xX8446b0<=35",
+      "group": "Milestones"
+    },
+    {
+      "id": "m00-allobj",
+      "title": "Prologue: Overachiever",
+      "description": "Finish prologue with every secondary objective done (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=1_0xH8447d4=0_0xX8447d8>0_0xX8447dc>=1_A:0xX8447d8_B:0xX8447dc_0=0",
+      "group": "Objectives"
+    },
+    {
+      "id": "m00-noreload",
+      "title": "Prologue: No Second Chances",
+      "description": "Finish prologue without loading a save (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=1_0xH8447d4=0_0xX8447d0=0",
+      "group": "Ironman"
+    },
+    {
+      "id": "m01-allobj",
+      "title": "Mission 1: Overachiever",
+      "description": "Finish mission 1 with every secondary objective done (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=4_0xH8447d4=0_0xX8447d8>0_0xX8447dc>=1_A:0xX8447d8_B:0xX8447dc_0=0",
+      "group": "Objectives"
+    },
+    {
+      "id": "m01-noreload",
+      "title": "Mission 1: No Second Chances",
+      "description": "Finish mission 1 without loading a save (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=4_0xH8447d4=0_0xX8447d0=0",
+      "group": "Ironman"
+    },
+    {
+      "id": "m02-allobj",
+      "title": "Mission 2: Overachiever",
+      "description": "Finish mission 2 with every secondary objective done (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=7_0xH8447d4=0_0xX8447d8>0_0xX8447dc>=1_A:0xX8447d8_B:0xX8447dc_0=0",
+      "group": "Objectives"
+    },
+    {
+      "id": "m02-noreload",
+      "title": "Mission 2: No Second Chances",
+      "description": "Finish mission 2 without loading a save (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=7_0xH8447d4=0_0xX8447d0=0",
+      "group": "Ironman"
+    },
+    {
+      "id": "m03-allobj",
+      "title": "Mission 3: Overachiever",
+      "description": "Finish mission 3 with every secondary objective done (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=10_0xH8447d4=0_0xX8447d8>0_0xX8447dc>=1_A:0xX8447d8_B:0xX8447dc_0=0",
+      "group": "Objectives"
+    },
+    {
+      "id": "m03-noreload",
+      "title": "Mission 3: No Second Chances",
+      "description": "Finish mission 3 without loading a save (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=10_0xH8447d4=0_0xX8447d0=0",
+      "group": "Ironman"
+    },
+    {
+      "id": "m04-allobj",
+      "title": "Mission 4: Overachiever",
+      "description": "Finish mission 4 with every secondary objective done (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=13_0xH8447d4=0_0xX8447d8>0_0xX8447dc>=1_A:0xX8447d8_B:0xX8447dc_0=0",
+      "group": "Objectives"
+    },
+    {
+      "id": "m04-noreload",
+      "title": "Mission 4: No Second Chances",
+      "description": "Finish mission 4 without loading a save (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=13_0xH8447d4=0_0xX8447d0=0",
+      "group": "Ironman"
+    },
+    {
+      "id": "m05-allobj",
+      "title": "Mission 5: Overachiever",
+      "description": "Finish mission 5 with every secondary objective done (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=16_0xH8447d4=0_0xX8447d8>0_0xX8447dc>=1_A:0xX8447d8_B:0xX8447dc_0=0",
+      "group": "Objectives"
+    },
+    {
+      "id": "m05-noreload",
+      "title": "Mission 5: No Second Chances",
+      "description": "Finish mission 5 without loading a save (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=16_0xH8447d4=0_0xX8447d0=0",
+      "group": "Ironman"
+    },
+    {
+      "id": "m06-allobj",
+      "title": "Mission 6: Overachiever",
+      "description": "Finish mission 6 with every secondary objective done (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=19_0xH8447d4=0_0xX8447d8>0_0xX8447dc>=1_A:0xX8447d8_B:0xX8447dc_0=0",
+      "group": "Objectives"
+    },
+    {
+      "id": "m06-noreload",
+      "title": "Mission 6: No Second Chances",
+      "description": "Finish mission 6 without loading a save (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=19_0xH8447d4=0_0xX8447d0=0",
+      "group": "Ironman"
+    },
+    {
+      "id": "m07-allobj",
+      "title": "Mission 7: Overachiever",
+      "description": "Finish mission 7 with every secondary objective done (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=22_0xH8447d4=0_0xX8447d8>0_0xX8447dc>=1_A:0xX8447d8_B:0xX8447dc_0=0",
+      "group": "Objectives"
+    },
+    {
+      "id": "m07-noreload",
+      "title": "Mission 7: No Second Chances",
+      "description": "Finish mission 7 without loading a save (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=22_0xH8447d4=0_0xX8447d0=0",
+      "group": "Ironman"
+    },
+    {
+      "id": "m08-allobj",
+      "title": "Mission 8: Overachiever",
+      "description": "Finish mission 8 with every secondary objective done (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=25_0xH8447d4=0_0xX8447d8>0_0xX8447dc>=1_A:0xX8447d8_B:0xX8447dc_0=0",
+      "group": "Objectives"
+    },
+    {
+      "id": "m08-noreload",
+      "title": "Mission 8: No Second Chances",
+      "description": "Finish mission 8 without loading a save (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=25_0xH8447d4=0_0xX8447d0=0",
+      "group": "Ironman"
+    },
+    {
+      "id": "m09-allobj",
+      "title": "Mission 9: Overachiever",
+      "description": "Finish mission 9 with every secondary objective done (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=28_0xH8447d4=0_0xX8447d8>0_0xX8447dc>=1_A:0xX8447d8_B:0xX8447dc_0=0",
+      "group": "Objectives"
+    },
+    {
+      "id": "m09-noreload",
+      "title": "Mission 9: No Second Chances",
+      "description": "Finish mission 9 without loading a save (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=28_0xH8447d4=0_0xX8447d0=0",
+      "group": "Ironman"
+    },
+    {
+      "id": "m10-allobj",
+      "title": "Mission 10: Overachiever",
+      "description": "Finish mission 10 with every secondary objective done (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=31_0xH8447d4=0_0xX8447d8>0_0xX8447dc>=1_A:0xX8447d8_B:0xX8447dc_0=0",
+      "group": "Objectives"
+    },
+    {
+      "id": "m10-noreload",
+      "title": "Mission 10: No Second Chances",
+      "description": "Finish mission 10 without loading a save (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=31_0xH8447d4=0_0xX8447d0=0",
+      "group": "Ironman"
+    },
+    {
+      "id": "m11-allobj",
+      "title": "Mission 11: Overachiever",
+      "description": "Finish mission 11 with every secondary objective done (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=34_0xH8447d4=0_0xX8447d8>0_0xX8447dc>=1_A:0xX8447d8_B:0xX8447dc_0=0",
+      "group": "Objectives"
+    },
+    {
+      "id": "m11-noreload",
+      "title": "Mission 11: No Second Chances",
+      "description": "Finish mission 11 without loading a save (no cheats).",
+      "points": 15,
+      "memaddr": "0xX8446b0=34_0xH8447d4=0_0xX8447d0=0",
+      "group": "Ironman"
+    },
+    {
+      "id": "ss-head25",
+      "title": "Sharpshooter",
+      "description": "Finish a mission with 25 or more headshots.",
+      "points": 15,
+      "memaddr": "0xX8446b0<=35_0xX8447f4>=25_0xX8446b0>=1",
+      "group": "Marksman"
+    },
+    {
+      "id": "ss-crotch10",
+      "title": "Below the Belt",
+      "description": "Finish a mission with 10 or more, um, low shots.",
+      "points": 10,
+      "memaddr": "0xX8446b0<=35_0xX844800>=10_0xX8446b0>=1",
+      "group": "Marksman"
+    },
+    {
+      "id": "ss-kills150",
+      "title": "Rampage",
+      "description": "Finish a mission with 150 or more enemies killed.",
+      "points": 20,
+      "memaddr": "0xX8446b0<=35_0xX8447f0>=150_0xX8446b0>=1",
+      "group": "Combat"
+    },
+    {
+      "id": "kills-1",
+      "title": "First Kill",
+      "description": "Kill 1 enemy.",
+      "points": 5,
+      "memaddr": "I:0xX8566f0_I:0xX4_I:0xX960_0xX28>=1",
+      "group": "Combat"
+    },
+    {
+      "id": "kills-50",
+      "title": "Commando in Training",
+      "description": "Kill 50 enemies.",
+      "points": 10,
+      "memaddr": "I:0xX8566f0_I:0xX4_I:0xX960_M:0xX28>=50",
+      "group": "Combat"
+    },
+    {
+      "id": "kills-100",
+      "title": "Nod Nightmare",
+      "description": "Kill 100 enemies.",
+      "points": 15,
+      "memaddr": "I:0xX8566f0_I:0xX4_I:0xX960_M:0xX28>=100",
+      "group": "Combat"
+    },
+    {
+      "id": "kills-250",
+      "title": "One Man Army Corps",
+      "description": "Kill 250 enemies.",
+      "points": 30,
+      "memaddr": "I:0xX8566f0_I:0xX4_I:0xX960_M:0xX28>=250",
+      "group": "Combat"
+    },
+    {
+      "id": "head-10",
+      "title": "Headhunter",
+      "description": "Land 10 headshots.",
+      "points": 10,
+      "memaddr": "I:0xX8566f0_I:0xX4_I:0xX960_M:0xX34>=10",
+      "group": "Marksman"
+    },
+    {
+      "id": "head-50",
+      "title": "Head Case",
+      "description": "Land 50 headshots.",
+      "points": 20,
+      "memaddr": "I:0xX8566f0_I:0xX4_I:0xX960_M:0xX34>=50",
+      "group": "Marksman"
+    },
+    {
+      "id": "head-150",
+      "title": "Brain Surgeon",
+      "description": "Land 150 headshots.",
+      "points": 35,
+      "memaddr": "I:0xX8566f0_I:0xX4_I:0xX960_M:0xX34>=150",
+      "group": "Marksman"
+    },
+    {
+      "id": "vehicles-5",
+      "title": "Tank Buster",
+      "description": "Destroy 5 vehicles.",
+      "points": 10,
+      "memaddr": "I:0xX8566f0_I:0xX4_I:0xX960_M:0xX50>=5",
+      "group": "Combat"
+    },
+    {
+      "id": "vehicles-15",
+      "title": "Scrapyard",
+      "description": "Destroy 15 vehicles.",
+      "points": 20,
+      "memaddr": "I:0xX8566f0_I:0xX4_I:0xX960_M:0xX50>=15",
+      "group": "Combat"
+    },
+    {
+      "id": "vehicles-40",
+      "title": "Armour Piercing",
+      "description": "Destroy 40 vehicles.",
+      "points": 35,
+      "memaddr": "I:0xX8566f0_I:0xX4_I:0xX960_M:0xX50>=40",
+      "group": "Combat"
+    },
+    {
+      "id": "buildings-1",
+      "title": "Building Down",
+      "description": "Destroy 1 building.",
+      "points": 10,
+      "memaddr": "I:0xX8566f0_I:0xX4_I:0xX960_0xX64>=1",
+      "group": "Combat"
+    },
+    {
+      "id": "buildings-3",
+      "title": "Demolition Expert",
+      "description": "Destroy 3 buildings.",
+      "points": 20,
+      "memaddr": "I:0xX8566f0_I:0xX4_I:0xX960_M:0xX64>=3",
+      "group": "Combat"
+    },
+    {
+      "id": "squish-1",
+      "title": "Roadkill",
+      "description": "Run over 1 enemy with a vehicle.",
+      "points": 10,
+      "memaddr": "I:0xX8566f0_I:0xX4_I:0xX960_0xX5c>=1",
+      "group": "Vehicles"
+    },
+    {
+      "id": "squish-10",
+      "title": "Speed Bumps",
+      "description": "Run over 10 enemies with a vehicle.",
+      "points": 20,
+      "memaddr": "I:0xX8566f0_I:0xX4_I:0xX960_M:0xX5c>=10",
+      "group": "Vehicles"
+    },
+    {
+      "id": "vkills-25",
+      "title": "Mechanised Infantry",
+      "description": "Kill 25 enemies while driving a vehicle.",
+      "points": 15,
+      "memaddr": "I:0xX8566f0_I:0xX4_I:0xX960_M:0xX58>=25",
+      "group": "Vehicles"
+    },
+    {
+      "id": "powerups-50",
+      "title": "Scavenger",
+      "description": "Pick up 50 powerups.",
+      "points": 10,
+      "memaddr": "I:0xX8566f0_I:0xX4_I:0xX960_M:0xX4c>=50",
+      "group": "Exploration"
+    }
+  ]
+}

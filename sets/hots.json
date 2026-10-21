@@ -1,0 +1,4173 @@
+{
+ "id": "hots",
+ "title": "Heroes of the Storm",
+ "version": 1,
+ "kind": "replay",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [
+  "battlenet:Hero"
+ ],
+ "exeNames": [],
+ "md5": [],
+ "notes": [
+  "Heroes of the Storm runs Blizzard's anti-cheat, so Vault never reads its memory or touches its files. Achievements come from the replay Heroes saves after every match (Documents\\Heroes of the Storm\\Accounts\\...\\Replays).",
+  "Your old replays count too: the first time Vault starts with this set it goes through every saved replay and unlocks what you've already earned, dated to when you played, without a flood of popups.",
+  "Achievements pop when the score screen appears, not during the match.",
+  "If several people play on this PC, Vault counts the account with the most replays. You can pick another in Settings → Heroes of the Storm.",
+  "Hero and battleground names come from the replay in the game's language; per-hero and per-map achievements currently match the English names."
+ ],
+ "testGuide": [
+  {
+   "title": "Start Vault",
+   "detail": "Open the Heroes of the Storm set. The \"Account\" line should show your name, and \"Games / wins counted\" should show your old matches."
+  },
+  {
+   "title": "Play a match",
+   "detail": "Any mode, including vs AI. Play to the end."
+  },
+  {
+   "title": "Look for the popup",
+   "detail": "When the score screen shows, anything you earned should pop up, and \"Last match\" updates. If nothing changes, send a test report."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "first-match",
+   "title": "Welcome to the Nexus",
+   "description": "Finish your first match.",
+   "points": 5,
+   "group": "Getting started",
+   "rule": {
+    "finished": true
+   }
+  },
+  {
+   "id": "first-win",
+   "title": "First Blood, First Win",
+   "description": "Win a match.",
+   "points": 10,
+   "group": "Getting started",
+   "rule": {
+    "finished": true,
+    "win": true
+   }
+  },
+  {
+   "id": "first-mvp",
+   "title": "Most Valuable",
+   "description": "Be voted MVP of a match.",
+   "points": 10,
+   "group": "Getting started",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMVPBoolean"
+   }
+  },
+  {
+   "id": "first-human-win",
+   "title": "Real Opposition",
+   "description": "Win a match against other players (not AI).",
+   "points": 15,
+   "group": "Getting started",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "vsAI": false
+   }
+  },
+  {
+   "id": "games-10",
+   "title": "Regular",
+   "description": "Finish 10 matches.",
+   "points": 10,
+   "group": "Milestones",
+   "rule": {
+    "totalGames": 10
+   }
+  },
+  {
+   "id": "games-25",
+   "title": "Veteran",
+   "description": "Finish 25 matches.",
+   "points": 15,
+   "group": "Milestones",
+   "rule": {
+    "totalGames": 25
+   }
+  },
+  {
+   "id": "games-50",
+   "title": "Nexus Native",
+   "description": "Finish 50 matches.",
+   "points": 20,
+   "group": "Milestones",
+   "rule": {
+    "totalGames": 50
+   }
+  },
+  {
+   "id": "games-100",
+   "title": "Centurion",
+   "description": "Finish 100 matches.",
+   "points": 25,
+   "group": "Milestones",
+   "rule": {
+    "totalGames": 100
+   }
+  },
+  {
+   "id": "games-250",
+   "title": "Lifer",
+   "description": "Finish 250 matches.",
+   "points": 40,
+   "group": "Milestones",
+   "rule": {
+    "totalGames": 250
+   }
+  },
+  {
+   "id": "games-500",
+   "title": "Eternal Conflict",
+   "description": "Finish 500 matches.",
+   "points": 60,
+   "group": "Milestones",
+   "rule": {
+    "totalGames": 500
+   }
+  },
+  {
+   "id": "wins-5",
+   "title": "On a Roll",
+   "description": "Win 5 matches.",
+   "points": 10,
+   "group": "Milestones",
+   "rule": {
+    "totalWins": 5
+   }
+  },
+  {
+   "id": "wins-10",
+   "title": "Ten Victories",
+   "description": "Win 10 matches.",
+   "points": 10,
+   "group": "Milestones",
+   "rule": {
+    "totalWins": 10
+   }
+  },
+  {
+   "id": "wins-25",
+   "title": "Winning Habit",
+   "description": "Win 25 matches.",
+   "points": 15,
+   "group": "Milestones",
+   "rule": {
+    "totalWins": 25
+   }
+  },
+  {
+   "id": "wins-50",
+   "title": "Fifty Wins",
+   "description": "Win 50 matches.",
+   "points": 20,
+   "group": "Milestones",
+   "rule": {
+    "totalWins": 50
+   }
+  },
+  {
+   "id": "wins-100",
+   "title": "Hundred Wins",
+   "description": "Win 100 matches.",
+   "points": 30,
+   "group": "Milestones",
+   "rule": {
+    "totalWins": 100
+   }
+  },
+  {
+   "id": "wins-250",
+   "title": "Conqueror",
+   "description": "Win 250 matches.",
+   "points": 45,
+   "group": "Milestones",
+   "rule": {
+    "totalWins": 250
+   }
+  },
+  {
+   "id": "wins-500",
+   "title": "Nexus Legend",
+   "description": "Win 500 matches.",
+   "points": 75,
+   "group": "Milestones",
+   "rule": {
+    "totalWins": 500
+   }
+  },
+  {
+   "id": "human-wins-10",
+   "title": "Proven Against People",
+   "description": "Win 10 matches against other players.",
+   "points": 20,
+   "group": "Milestones",
+   "rule": {
+    "winsVsHumans": 10
+   }
+  },
+  {
+   "id": "human-wins-50",
+   "title": "Ladder Material",
+   "description": "Win 50 matches against other players.",
+   "points": 40,
+   "group": "Milestones",
+   "rule": {
+    "winsVsHumans": 50
+   }
+  },
+  {
+   "id": "td-15",
+   "title": "Busy Fighter",
+   "description": "Get 15 takedowns in one match.",
+   "points": 10,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "Takedowns": 15
+    }
+   }
+  },
+  {
+   "id": "td-25",
+   "title": "Everywhere at Once",
+   "description": "Get 25 takedowns in one match.",
+   "points": 15,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "Takedowns": 25
+    }
+   }
+  },
+  {
+   "id": "td-35",
+   "title": "Unstoppable Force",
+   "description": "Get 35 takedowns in one match.",
+   "points": 25,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "Takedowns": 35
+    }
+   }
+  },
+  {
+   "id": "solo-10",
+   "title": "Lone Wolf",
+   "description": "Get 10 kills (final blows) in one match.",
+   "points": 10,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "SoloKill": 10
+    }
+   }
+  },
+  {
+   "id": "solo-20",
+   "title": "Executioner",
+   "description": "Get 20 kills in one match.",
+   "points": 25,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "SoloKill": 20
+    }
+   }
+  },
+  {
+   "id": "assists-20",
+   "title": "Wingman",
+   "description": "Get 20 assists in one match.",
+   "points": 15,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "Assists": 20
+    }
+   }
+  },
+  {
+   "id": "deathless-win",
+   "title": "Untouchable",
+   "description": "Win a match without dying.",
+   "points": 15,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "stats": {
+     "Deaths": {
+      "max": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "deathless-20",
+   "title": "Flawless",
+   "description": "Win a match with 20+ takedowns and no deaths.",
+   "points": 30,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "stats": {
+     "Deaths": {
+      "max": 0
+     },
+     "Takedowns": 20
+    }
+   }
+  },
+  {
+   "id": "streak-10",
+   "title": "Killing Spree",
+   "description": "Reach a kill streak of 10.",
+   "points": 10,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "HighestKillStreak": 10
+    }
+   }
+  },
+  {
+   "id": "streak-20",
+   "title": "Rampage",
+   "description": "Reach a kill streak of 20.",
+   "points": 20,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "HighestKillStreak": 20
+    }
+   }
+  },
+  {
+   "id": "streak-30",
+   "title": "Godlike",
+   "description": "Reach a kill streak of 30.",
+   "points": 35,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "HighestKillStreak": 30
+    }
+   }
+  },
+  {
+   "id": "hd-50k",
+   "title": "Heavy Hitter",
+   "description": "Deal 50,000 hero damage in one match.",
+   "points": 10,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "HeroDamage": 50000
+    }
+   }
+  },
+  {
+   "id": "hd-80k",
+   "title": "Painbringer",
+   "description": "Deal 80,000 hero damage in one match.",
+   "points": 20,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "HeroDamage": 80000
+    }
+   }
+  },
+  {
+   "id": "hd-120k",
+   "title": "Annihilator",
+   "description": "Deal 120,000 hero damage in one match.",
+   "points": 35,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "HeroDamage": 120000
+    }
+   }
+  },
+  {
+   "id": "siege-100k",
+   "title": "Wall Breaker",
+   "description": "Deal 100,000 siege damage in one match.",
+   "points": 10,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "SiegeDamage": 100000
+    }
+   }
+  },
+  {
+   "id": "siege-200k",
+   "title": "Demolition Crew",
+   "description": "Deal 200,000 siege damage in one match.",
+   "points": 25,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "SiegeDamage": 200000
+    }
+   }
+  },
+  {
+   "id": "structure-60k",
+   "title": "Fort Knocker",
+   "description": "Deal 60,000 damage to structures in one match.",
+   "points": 15,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "StructureDamage": 60000
+    }
+   }
+  },
+  {
+   "id": "heal-50k",
+   "title": "Lifeline",
+   "description": "Heal 50,000 in one match.",
+   "points": 15,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "Healing": 50000
+    }
+   }
+  },
+  {
+   "id": "heal-100k",
+   "title": "Miracle Worker",
+   "description": "Heal 100,000 in one match.",
+   "points": 30,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "Healing": 100000
+    }
+   }
+  },
+  {
+   "id": "taken-80k",
+   "title": "Damage Sponge",
+   "description": "Take 80,000 damage in one match.",
+   "points": 15,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "DamageTaken": 80000
+    }
+   }
+  },
+  {
+   "id": "soak-100k",
+   "title": "Unbreakable",
+   "description": "Soak 100,000 damage in one match.",
+   "points": 25,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "DamageSoaked": 100000
+    }
+   }
+  },
+  {
+   "id": "xp-25k",
+   "title": "Lane Keeper",
+   "description": "Contribute 25,000 experience in one match.",
+   "points": 15,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "ExperienceContribution": 25000
+    }
+   }
+  },
+  {
+   "id": "camps-5",
+   "title": "Mercenary Boss",
+   "description": "Capture 5 mercenary camps in one match.",
+   "points": 10,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "MercCampCaptures": 5
+    }
+   }
+  },
+  {
+   "id": "camps-10",
+   "title": "Camp Counselor",
+   "description": "Capture 10 mercenary camps in one match.",
+   "points": 20,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "MercCampCaptures": 10
+    }
+   }
+  },
+  {
+   "id": "minions-200",
+   "title": "Wave Clear",
+   "description": "Kill 200 minions in one match.",
+   "points": 15,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "MinionKills": 200
+    }
+   }
+  },
+  {
+   "id": "globes-50",
+   "title": "Globe Trotter",
+   "description": "Collect 50 regeneration globes in one match.",
+   "points": 10,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "RegenGlobes": 50
+    }
+   }
+  },
+  {
+   "id": "multikill-5",
+   "title": "Multi-Tasker",
+   "description": "Score 5 multikills in one match.",
+   "points": 15,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "Multikill": 5
+    }
+   }
+  },
+  {
+   "id": "vengeance-3",
+   "title": "Vengeful",
+   "description": "Perform 3 vengeances in one match.",
+   "points": 10,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "VengeancesPerformed": 3
+    }
+   }
+  },
+  {
+   "id": "escapes-5",
+   "title": "Slippery",
+   "description": "Escape death 5 times in one match.",
+   "points": 10,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "EscapesPerformed": 5
+    }
+   }
+  },
+  {
+   "id": "clutch-3",
+   "title": "Clutch",
+   "description": "Perform 3 clutch heals in one match.",
+   "points": 15,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "ClutchHealsPerformed": 3
+    }
+   }
+  },
+  {
+   "id": "level-25",
+   "title": "Max Talents",
+   "description": "Reach team level 25.",
+   "points": 10,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "stats": {
+     "TeamLevel": 25
+    }
+   }
+  },
+  {
+   "id": "fast-win",
+   "title": "Blitz",
+   "description": "Win a match in under 12 minutes.",
+   "points": 20,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "maxMinutes": 12
+   }
+  },
+  {
+   "id": "long-win",
+   "title": "War of Attrition",
+   "description": "Win a match that lasts 25 minutes or more.",
+   "points": 15,
+   "group": "In one match",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "minMinutes": 25
+   }
+  },
+  {
+   "id": "award-highestkillstreak",
+   "title": "Dominator",
+   "description": "Earn the score-screen award for highest kill streak.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardHighestKillStreakBoolean"
+   }
+  },
+  {
+   "id": "award-mostkills",
+   "title": "Finisher",
+   "description": "Earn the score-screen award for most kills.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostKillsBoolean"
+   }
+  },
+  {
+   "id": "award-mostherodamagedone",
+   "title": "Painbringer Award",
+   "description": "Earn the score-screen award for most hero damage.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostHeroDamageDoneBoolean"
+   }
+  },
+  {
+   "id": "award-mostsiegedamagedone",
+   "title": "Siege Master",
+   "description": "Earn the score-screen award for most siege damage.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostSiegeDamageDoneBoolean"
+   }
+  },
+  {
+   "id": "award-mostxpcontribution",
+   "title": "Experienced",
+   "description": "Earn the score-screen award for most experience contribution.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostXPContributionBoolean"
+   }
+  },
+  {
+   "id": "award-mosthealing",
+   "title": "Main Healer",
+   "description": "Earn the score-screen award for most healing.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostHealingBoolean"
+   }
+  },
+  {
+   "id": "award-mostdamagetaken",
+   "title": "Bulwark",
+   "description": "Earn the score-screen award for most damage taken.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostDamageTakenBoolean"
+   }
+  },
+  {
+   "id": "award-mostprotection",
+   "title": "Protector",
+   "description": "Earn the score-screen award for most protection given to allies.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostProtectionBoolean"
+   }
+  },
+  {
+   "id": "award-moststuns",
+   "title": "Stunner",
+   "description": "Earn the score-screen award for most time stunning enemies.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostStunsBoolean"
+   }
+  },
+  {
+   "id": "award-mostroots",
+   "title": "Trapper",
+   "description": "Earn the score-screen award for most time rooting enemies.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostRootsBoolean"
+   }
+  },
+  {
+   "id": "award-mostsilences",
+   "title": "Silencer",
+   "description": "Earn the score-screen award for most time silencing enemies.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostSilencesBoolean"
+   }
+  },
+  {
+   "id": "award-mostmerccampscaptured",
+   "title": "Headhunter",
+   "description": "Earn the score-screen award for most mercenary camps captured.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostMercCampsCapturedBoolean"
+   }
+  },
+  {
+   "id": "award-mostvengeancesperformed",
+   "title": "Avenger",
+   "description": "Earn the score-screen award for most vengeances.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostVengeancesPerformedBoolean"
+   }
+  },
+  {
+   "id": "award-mostescapes",
+   "title": "Escape Artist",
+   "description": "Earn the score-screen award for most escapes.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostEscapesBoolean"
+   }
+  },
+  {
+   "id": "award-mostdaredevilescapes",
+   "title": "Daredevil",
+   "description": "Earn the score-screen award for most daredevil escapes.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostDaredevilEscapesBoolean"
+   }
+  },
+  {
+   "id": "award-hattrick",
+   "title": "Hat Trick",
+   "description": "Earn the score-screen award for first three kills of the match.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardHatTrickBoolean"
+   }
+  },
+  {
+   "id": "award-clutchhealer",
+   "title": "Clutch Healer",
+   "description": "Earn the score-screen award for most clutch heals.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardClutchHealerBoolean"
+   }
+  },
+  {
+   "id": "award-0deaths",
+   "title": "Sole Survivor",
+   "description": "Earn the score-screen award for no deaths.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAward0DeathsBoolean"
+   }
+  },
+  {
+   "id": "award-0outnumbereddeaths",
+   "title": "Team Player",
+   "description": "Earn the score-screen award for never dying outnumbered.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAward0OutnumberedDeathsBoolean"
+   }
+  },
+  {
+   "id": "award-mostteamfightherodamagedone",
+   "title": "Scrapper",
+   "description": "Earn the score-screen award for most teamfight hero damage.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostTeamfightHeroDamageDoneBoolean"
+   }
+  },
+  {
+   "id": "award-mostteamfighthealingdone",
+   "title": "Combat Medic",
+   "description": "Earn the score-screen award for most teamfight healing.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostTeamfightHealingDoneBoolean"
+   }
+  },
+  {
+   "id": "award-mostteamfightdamagetaken",
+   "title": "Guardian",
+   "description": "Earn the score-screen award for most teamfight damage taken.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostTeamfightDamageTakenBoolean"
+   }
+  },
+  {
+   "id": "award-mostcursedamagedone",
+   "title": "Master of the Curse",
+   "description": "Earn the score-screen award for most damage while the curse is active (Cursed Hollow).",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostCurseDamageDoneBoolean"
+   }
+  },
+  {
+   "id": "award-mostdragonshrinescaptured",
+   "title": "Shriner",
+   "description": "Earn the score-screen award for most dragon shrines captured (Dragon Shire).",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostDragonShrinesCapturedBoolean"
+   }
+  },
+  {
+   "id": "award-mostcoinspaid",
+   "title": "Moneybags",
+   "description": "Earn the score-screen award for most doubloons paid (Blackheart's Bay).",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostCoinsPaidBoolean"
+   }
+  },
+  {
+   "id": "award-mostimmortaldamage",
+   "title": "Immortal Slayer",
+   "description": "Earn the score-screen award for most damage to Immortals (Battlefield of Eternity).",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostImmortalDamageBoolean"
+   }
+  },
+  {
+   "id": "award-mostdamagedonetozerg",
+   "title": "Zerg Crusher",
+   "description": "Earn the score-screen award for most damage to the Zerg (Braxis Holdout).",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostDamageDoneToZergBoolean"
+   }
+  },
+  {
+   "id": "award-mostdamagetoplants",
+   "title": "Garden Terror",
+   "description": "Earn the score-screen award for most damage to plants (Garden of Terror).",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostDamageToPlantsBoolean"
+   }
+  },
+  {
+   "id": "award-mostseedscollected",
+   "title": "Seed Collector",
+   "description": "Earn the score-screen award for most seeds collected (Garden of Terror).",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostSeedsCollectedBoolean"
+   }
+  },
+  {
+   "id": "award-mostdamagetominions",
+   "title": "Guardian Slayer",
+   "description": "Earn the score-screen award for most damage to shrine minions (Infernal Shrines).",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostDamageToMinionsBoolean"
+   }
+  },
+  {
+   "id": "award-mosttimeintemple",
+   "title": "Temple Master",
+   "description": "Earn the score-screen award for most time on temples (Sky Temple).",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostTimeInTempleBoolean"
+   }
+  },
+  {
+   "id": "award-mostgemsturnedin",
+   "title": "Jeweler",
+   "description": "Earn the score-screen award for most gems turned in (Tomb of the Spider Queen).",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostGemsTurnedInBoolean"
+   }
+  },
+  {
+   "id": "award-mostskullscollected",
+   "title": "Skull Collector",
+   "description": "Earn the score-screen award for most skulls collected (Haunted Mines).",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostSkullsCollectedBoolean"
+   }
+  },
+  {
+   "id": "award-mostaltardamagedone",
+   "title": "Cannoneer",
+   "description": "Earn the score-screen award for most altar damage (Towers of Doom).",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostAltarDamageDone"
+   }
+  },
+  {
+   "id": "award-mostnukedamagedone",
+   "title": "Da Bomb",
+   "description": "Earn the score-screen award for most nuke damage (Warhead Junction).",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostNukeDamageDoneBoolean"
+   }
+  },
+  {
+   "id": "award-mosttimepushing",
+   "title": "Pusher",
+   "description": "Earn the score-screen award for most time pushing the payload (Hanamura Temple).",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostTimePushingBoolean"
+   }
+  },
+  {
+   "id": "award-mosttimeonpoint",
+   "title": "Point Guard",
+   "description": "Earn the score-screen award for most time on the point (Volskaya Foundry).",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostTimeOnPointBoolean"
+   }
+  },
+  {
+   "id": "award-mostinterruptedcageunlocks",
+   "title": "Loyal Defender",
+   "description": "Earn the score-screen award for most cage unlocks interrupted (Alterac Pass).",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "finished": true,
+    "award": "EndOfMatchAwardMostInterruptedCageUnlocksBoolean"
+   }
+  },
+  {
+   "id": "mvp-10",
+   "title": "MVP Regular",
+   "description": "Be voted MVP 10 times.",
+   "points": 15,
+   "group": "Awards",
+   "rule": {
+    "total": {
+     "stat": "EndOfMatchAwardMVPBoolean",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "mvp-25",
+   "title": "MVP Machine",
+   "description": "Be voted MVP 25 times.",
+   "points": 25,
+   "group": "Awards",
+   "rule": {
+    "total": {
+     "stat": "EndOfMatchAwardMVPBoolean",
+     "n": 25
+    }
+   }
+  },
+  {
+   "id": "mvp-50",
+   "title": "Nexus Superstar",
+   "description": "Be voted MVP 50 times.",
+   "points": 40,
+   "group": "Awards",
+   "rule": {
+    "total": {
+     "stat": "EndOfMatchAwardMVPBoolean",
+     "n": 50
+    }
+   }
+  },
+  {
+   "id": "mvp-100",
+   "title": "Hall of Fame",
+   "description": "Be voted MVP 100 times.",
+   "points": 60,
+   "group": "Awards",
+   "rule": {
+    "total": {
+     "stat": "EndOfMatchAwardMVPBoolean",
+     "n": 100
+    }
+   }
+  },
+  {
+   "id": "awards-5",
+   "title": "Decorated",
+   "description": "Earn 5 different score-screen awards.",
+   "points": 10,
+   "group": "Awards",
+   "rule": {
+    "distinctAwards": 5
+   }
+  },
+  {
+   "id": "awards-10",
+   "title": "Trophy Case",
+   "description": "Earn 10 different score-screen awards.",
+   "points": 20,
+   "group": "Awards",
+   "rule": {
+    "distinctAwards": 10
+   }
+  },
+  {
+   "id": "awards-20",
+   "title": "Award Collector",
+   "description": "Earn 20 different score-screen awards.",
+   "points": 35,
+   "group": "Awards",
+   "rule": {
+    "distinctAwards": 20
+   }
+  },
+  {
+   "id": "total-takedowns-250",
+   "title": "Body Count",
+   "description": "Reach 250 takedowns over all your matches.",
+   "points": 10,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "Takedowns",
+     "n": 250
+    }
+   }
+  },
+  {
+   "id": "total-takedowns-1000",
+   "title": "Thousand Fights",
+   "description": "Reach 1,000 takedowns over all your matches.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "Takedowns",
+     "n": 1000
+    }
+   }
+  },
+  {
+   "id": "total-takedowns-5000",
+   "title": "Nexus Reaper",
+   "description": "Reach 5,000 takedowns over all your matches.",
+   "points": 40,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "Takedowns",
+     "n": 5000
+    }
+   }
+  },
+  {
+   "id": "total-solokill-100",
+   "title": "Hundred Kills",
+   "description": "Reach 100 kills over all your matches.",
+   "points": 10,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "SoloKill",
+     "n": 100
+    }
+   }
+  },
+  {
+   "id": "total-solokill-500",
+   "title": "Slayer",
+   "description": "Reach 500 kills over all your matches.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "SoloKill",
+     "n": 500
+    }
+   }
+  },
+  {
+   "id": "total-solokill-2000",
+   "title": "Grim Tally",
+   "description": "Reach 2,000 kills over all your matches.",
+   "points": 40,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "SoloKill",
+     "n": 2000
+    }
+   }
+  },
+  {
+   "id": "total-herodamage-1000000",
+   "title": "Millionaire",
+   "description": "Reach 1,000,000 hero damage over all your matches.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "HeroDamage",
+     "n": 1000000
+    }
+   }
+  },
+  {
+   "id": "total-herodamage-5000000",
+   "title": "Five Million Hurt",
+   "description": "Reach 5,000,000 hero damage over all your matches.",
+   "points": 30,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "HeroDamage",
+     "n": 5000000
+    }
+   }
+  },
+  {
+   "id": "total-herodamage-20000000",
+   "title": "Twenty Million Hurt",
+   "description": "Reach 20,000,000 hero damage over all your matches.",
+   "points": 50,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "HeroDamage",
+     "n": 20000000
+    }
+   }
+  },
+  {
+   "id": "total-siegedamage-2000000",
+   "title": "Tower Toppler",
+   "description": "Reach 2,000,000 siege damage over all your matches.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "SiegeDamage",
+     "n": 2000000
+    }
+   }
+  },
+  {
+   "id": "total-siegedamage-10000000",
+   "title": "Fort Flattener",
+   "description": "Reach 10,000,000 siege damage over all your matches.",
+   "points": 35,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "SiegeDamage",
+     "n": 10000000
+    }
+   }
+  },
+  {
+   "id": "total-healing-500000",
+   "title": "Field Medic",
+   "description": "Reach 500,000 healing over all your matches.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "Healing",
+     "n": 500000
+    }
+   }
+  },
+  {
+   "id": "total-healing-2500000",
+   "title": "Saint of the Nexus",
+   "description": "Reach 2,500,000 healing over all your matches.",
+   "points": 35,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "Healing",
+     "n": 2500000
+    }
+   }
+  },
+  {
+   "id": "total-merccampcaptures-50",
+   "title": "Recruiter",
+   "description": "Reach 50 mercenary camps captured over all your matches.",
+   "points": 10,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "MercCampCaptures",
+     "n": 50
+    }
+   }
+  },
+  {
+   "id": "total-merccampcaptures-250",
+   "title": "Warlord",
+   "description": "Reach 250 mercenary camps captured over all your matches.",
+   "points": 25,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "MercCampCaptures",
+     "n": 250
+    }
+   }
+  },
+  {
+   "id": "total-minionkills-2500",
+   "title": "Minion Masher",
+   "description": "Reach 2,500 minions killed over all your matches.",
+   "points": 10,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "MinionKills",
+     "n": 2500
+    }
+   }
+  },
+  {
+   "id": "total-minionkills-10000",
+   "title": "Wave Eater",
+   "description": "Reach 10,000 minions killed over all your matches.",
+   "points": 25,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "MinionKills",
+     "n": 10000
+    }
+   }
+  },
+  {
+   "id": "total-regenglobes-1000",
+   "title": "Globe Gobbler",
+   "description": "Reach 1,000 regeneration globes collected over all your matches.",
+   "points": 10,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "RegenGlobes",
+     "n": 1000
+    }
+   }
+  },
+  {
+   "id": "total-vengeancesperformed-100",
+   "title": "Get Even",
+   "description": "Reach 100 vengeances over all your matches.",
+   "points": 10,
+   "group": "Lifetime",
+   "rule": {
+    "total": {
+     "stat": "VengeancesPerformed",
+     "n": 100
+    }
+   }
+  },
+  {
+   "id": "warcraft-wins-1",
+   "title": "For Warcraft!",
+   "description": "Win a match with a Warcraft hero.",
+   "points": 10,
+   "group": "Universes and roles",
+   "rule": {
+    "total": {
+     "stat": "WinsWarcraft",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "warcraft-wins-25",
+   "title": "Warcraft Champion 25",
+   "description": "Win 25 matches with a Warcraft hero.",
+   "points": 17,
+   "group": "Universes and roles",
+   "rule": {
+    "total": {
+     "stat": "WinsWarcraft",
+     "n": 25
+    }
+   }
+  },
+  {
+   "id": "warcraft-wins-100",
+   "title": "Warcraft Champion 100",
+   "description": "Win 100 matches with a Warcraft hero.",
+   "points": 25,
+   "group": "Universes and roles",
+   "rule": {
+    "total": {
+     "stat": "WinsWarcraft",
+     "n": 100
+    }
+   }
+  },
+  {
+   "id": "starcraft-wins-1",
+   "title": "For StarCraft!",
+   "description": "Win a match with a StarCraft hero.",
+   "points": 10,
+   "group": "Universes and roles",
+   "rule": {
+    "total": {
+     "stat": "WinsStarCraft",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "starcraft-wins-25",
+   "title": "StarCraft Champion 25",
+   "description": "Win 25 matches with a StarCraft hero.",
+   "points": 17,
+   "group": "Universes and roles",
+   "rule": {
+    "total": {
+     "stat": "WinsStarCraft",
+     "n": 25
+    }
+   }
+  },
+  {
+   "id": "starcraft-wins-100",
+   "title": "StarCraft Champion 100",
+   "description": "Win 100 matches with a StarCraft hero.",
+   "points": 25,
+   "group": "Universes and roles",
+   "rule": {
+    "total": {
+     "stat": "WinsStarCraft",
+     "n": 100
+    }
+   }
+  },
+  {
+   "id": "diablo-wins-1",
+   "title": "For Diablo!",
+   "description": "Win a match with a Diablo hero.",
+   "points": 10,
+   "group": "Universes and roles",
+   "rule": {
+    "total": {
+     "stat": "WinsDiablo",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "diablo-wins-25",
+   "title": "Diablo Champion 25",
+   "description": "Win 25 matches with a Diablo hero.",
+   "points": 17,
+   "group": "Universes and roles",
+   "rule": {
+    "total": {
+     "stat": "WinsDiablo",
+     "n": 25
+    }
+   }
+  },
+  {
+   "id": "diablo-wins-100",
+   "title": "Diablo Champion 100",
+   "description": "Win 100 matches with a Diablo hero.",
+   "points": 25,
+   "group": "Universes and roles",
+   "rule": {
+    "total": {
+     "stat": "WinsDiablo",
+     "n": 100
+    }
+   }
+  },
+  {
+   "id": "overwatch-wins-1",
+   "title": "Hero from Overwatch",
+   "description": "Win a match with an Overwatch hero.",
+   "points": 10,
+   "group": "Universes and roles",
+   "rule": {
+    "total": {
+     "stat": "PlaysOverwatch",
+     "n": 1,
+     "winsOnly": true
+    }
+   }
+  },
+  {
+   "id": "overwatch-wins-10",
+   "title": "Overwatch Champion 10",
+   "description": "Win 10 matches with an Overwatch hero.",
+   "points": 17,
+   "group": "Universes and roles",
+   "rule": {
+    "total": {
+     "stat": "PlaysOverwatch",
+     "n": 10,
+     "winsOnly": true
+    }
+   }
+  },
+  {
+   "id": "overwatch-wins-50",
+   "title": "Overwatch Champion 50",
+   "description": "Win 50 matches with an Overwatch hero.",
+   "points": 25,
+   "group": "Universes and roles",
+   "rule": {
+    "total": {
+     "stat": "PlaysOverwatch",
+     "n": 50,
+     "winsOnly": true
+    }
+   }
+  },
+  {
+   "id": "role-warrior-10",
+   "title": "Warrior Main",
+   "description": "Win 10 matches as a Tank or Bruiser.",
+   "points": 15,
+   "group": "Universes and roles",
+   "rule": {
+    "total": {
+     "stat": "WinsWarrior",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "role-assassin-10",
+   "title": "Assassin Main",
+   "description": "Win 10 matches as an Assassin.",
+   "points": 15,
+   "group": "Universes and roles",
+   "rule": {
+    "total": {
+     "stat": "WinsAssassin",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "role-support-10",
+   "title": "Support Main",
+   "description": "Win 10 matches as a Healer or Support.",
+   "points": 15,
+   "group": "Universes and roles",
+   "rule": {
+    "total": {
+     "stat": "WinsSupport",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "role-specialist-10",
+   "title": "Specialist Main",
+   "description": "Win 10 matches as a Specialist.",
+   "points": 15,
+   "group": "Universes and roles",
+   "rule": {
+    "total": {
+     "stat": "WinsSpecialist",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-variety-5",
+   "title": "Flexible",
+   "description": "Win with 5 different heroes.",
+   "points": 10,
+   "group": "Hero variety",
+   "rule": {
+    "distinctHeroWins": 5
+   }
+  },
+  {
+   "id": "hero-variety-10",
+   "title": "Versatile",
+   "description": "Win with 10 different heroes.",
+   "points": 15,
+   "group": "Hero variety",
+   "rule": {
+    "distinctHeroWins": 10
+   }
+  },
+  {
+   "id": "hero-variety-25",
+   "title": "Jack of All Trades",
+   "description": "Win with 25 different heroes.",
+   "points": 25,
+   "group": "Hero variety",
+   "rule": {
+    "distinctHeroWins": 25
+   }
+  },
+  {
+   "id": "hero-variety-50",
+   "title": "Roster Deep",
+   "description": "Win with 50 different heroes.",
+   "points": 40,
+   "group": "Hero variety",
+   "rule": {
+    "distinctHeroWins": 50
+   }
+  },
+  {
+   "id": "hero-variety-90",
+   "title": "Master of the Nexus",
+   "description": "Win with 90 different heroes.",
+   "points": 100,
+   "group": "Hero variety",
+   "rule": {
+    "distinctHeroWins": 90
+   }
+  },
+  {
+   "id": "hero-best-10",
+   "title": "One-Trick",
+   "description": "Win 10 matches with the same hero.",
+   "points": 15,
+   "group": "Hero variety",
+   "rule": {
+    "bestHeroWins": 10
+   }
+  },
+  {
+   "id": "hero-best-25",
+   "title": "Signature Hero",
+   "description": "Win 25 matches with the same hero.",
+   "points": 25,
+   "group": "Hero variety",
+   "rule": {
+    "bestHeroWins": 25
+   }
+  },
+  {
+   "id": "hero-best-50",
+   "title": "Main Character",
+   "description": "Win 50 matches with the same hero.",
+   "points": 40,
+   "group": "Hero variety",
+   "rule": {
+    "bestHeroWins": 50
+   }
+  },
+  {
+   "id": "hero-best-100",
+   "title": "Living Legend",
+   "description": "Win 100 matches with the same hero.",
+   "points": 60,
+   "group": "Hero variety",
+   "rule": {
+    "bestHeroWins": 100
+   }
+  },
+  {
+   "id": "map-alterac-pass",
+   "title": "Victory: Alterac Pass",
+   "description": "Win a match on Alterac Pass.",
+   "points": 5,
+   "group": "Battlegrounds",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Alterac Pass"
+   }
+  },
+  {
+   "id": "map-battlefield-of-eternity",
+   "title": "Victory: Battlefield of Eternity",
+   "description": "Win a match on Battlefield of Eternity.",
+   "points": 5,
+   "group": "Battlegrounds",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Battlefield of Eternity"
+   }
+  },
+  {
+   "id": "map-blackheart-s-bay",
+   "title": "Victory: Blackheart's Bay",
+   "description": "Win a match on Blackheart's Bay.",
+   "points": 5,
+   "group": "Battlegrounds",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Blackheart's Bay"
+   }
+  },
+  {
+   "id": "map-braxis-holdout",
+   "title": "Victory: Braxis Holdout",
+   "description": "Win a match on Braxis Holdout.",
+   "points": 5,
+   "group": "Battlegrounds",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Braxis Holdout"
+   }
+  },
+  {
+   "id": "map-cursed-hollow",
+   "title": "Victory: Cursed Hollow",
+   "description": "Win a match on Cursed Hollow.",
+   "points": 5,
+   "group": "Battlegrounds",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Cursed Hollow"
+   }
+  },
+  {
+   "id": "map-dragon-shire",
+   "title": "Victory: Dragon Shire",
+   "description": "Win a match on Dragon Shire.",
+   "points": 5,
+   "group": "Battlegrounds",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Dragon Shire"
+   }
+  },
+  {
+   "id": "map-garden-of-terror",
+   "title": "Victory: Garden of Terror",
+   "description": "Win a match on Garden of Terror.",
+   "points": 5,
+   "group": "Battlegrounds",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Garden of Terror"
+   }
+  },
+  {
+   "id": "map-hanamura-temple",
+   "title": "Victory: Hanamura Temple",
+   "description": "Win a match on Hanamura Temple.",
+   "points": 5,
+   "group": "Battlegrounds",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Hanamura Temple"
+   }
+  },
+  {
+   "id": "map-haunted-mines",
+   "title": "Victory: Haunted Mines",
+   "description": "Win a match on Haunted Mines.",
+   "points": 5,
+   "group": "Battlegrounds",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Haunted Mines"
+   }
+  },
+  {
+   "id": "map-infernal-shrines",
+   "title": "Victory: Infernal Shrines",
+   "description": "Win a match on Infernal Shrines.",
+   "points": 5,
+   "group": "Battlegrounds",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Infernal Shrines"
+   }
+  },
+  {
+   "id": "map-sky-temple",
+   "title": "Victory: Sky Temple",
+   "description": "Win a match on Sky Temple.",
+   "points": 5,
+   "group": "Battlegrounds",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Sky Temple"
+   }
+  },
+  {
+   "id": "map-tomb-of-the-spider-queen",
+   "title": "Victory: Tomb of the Spider Queen",
+   "description": "Win a match on Tomb of the Spider Queen.",
+   "points": 5,
+   "group": "Battlegrounds",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Tomb of the Spider Queen"
+   }
+  },
+  {
+   "id": "map-towers-of-doom",
+   "title": "Victory: Towers of Doom",
+   "description": "Win a match on Towers of Doom.",
+   "points": 5,
+   "group": "Battlegrounds",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Towers of Doom"
+   }
+  },
+  {
+   "id": "map-volskaya-foundry",
+   "title": "Victory: Volskaya Foundry",
+   "description": "Win a match on Volskaya Foundry.",
+   "points": 5,
+   "group": "Battlegrounds",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Volskaya Foundry"
+   }
+  },
+  {
+   "id": "map-warhead-junction",
+   "title": "Victory: Warhead Junction",
+   "description": "Win a match on Warhead Junction.",
+   "points": 5,
+   "group": "Battlegrounds",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Warhead Junction"
+   }
+  },
+  {
+   "id": "maps-5",
+   "title": "Sightseer",
+   "description": "Win on 5 different battlegrounds.",
+   "points": 10,
+   "group": "Battlegrounds",
+   "rule": {
+    "distinctMapWins": 5
+   }
+  },
+  {
+   "id": "maps-10",
+   "title": "World Traveller",
+   "description": "Win on 10 different battlegrounds.",
+   "points": 20,
+   "group": "Battlegrounds",
+   "rule": {
+    "distinctMapWins": 10
+   }
+  },
+  {
+   "id": "maps-15",
+   "title": "Every Battleground",
+   "description": "Win on 15 different battlegrounds.",
+   "points": 40,
+   "group": "Battlegrounds",
+   "rule": {
+    "distinctMapWins": 15
+   }
+  },
+  {
+   "id": "hero-abathur",
+   "title": "Abathur",
+   "description": "Win a match as Abathur.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Abathur"
+   }
+  },
+  {
+   "id": "hero-alarak",
+   "title": "Alarak",
+   "description": "Win a match as Alarak.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Alarak"
+   }
+  },
+  {
+   "id": "hero-alexstrasza",
+   "title": "Alexstrasza",
+   "description": "Win a match as Alexstrasza.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Alexstrasza"
+   }
+  },
+  {
+   "id": "hero-ana",
+   "title": "Ana",
+   "description": "Win a match as Ana.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Ana"
+   }
+  },
+  {
+   "id": "hero-anduin",
+   "title": "Anduin",
+   "description": "Win a match as Anduin.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Anduin"
+   }
+  },
+  {
+   "id": "hero-anub-arak",
+   "title": "Anub'arak",
+   "description": "Win a match as Anub'arak.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Anub'arak"
+   }
+  },
+  {
+   "id": "hero-artanis",
+   "title": "Artanis",
+   "description": "Win a match as Artanis.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Artanis"
+   }
+  },
+  {
+   "id": "hero-arthas",
+   "title": "Arthas",
+   "description": "Win a match as Arthas.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Arthas"
+   }
+  },
+  {
+   "id": "hero-auriel",
+   "title": "Auriel",
+   "description": "Win a match as Auriel.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Auriel"
+   }
+  },
+  {
+   "id": "hero-azmodan",
+   "title": "Azmodan",
+   "description": "Win a match as Azmodan.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Azmodan"
+   }
+  },
+  {
+   "id": "hero-blaze",
+   "title": "Blaze",
+   "description": "Win a match as Blaze.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Blaze"
+   }
+  },
+  {
+   "id": "hero-brightwing",
+   "title": "Brightwing",
+   "description": "Win a match as Brightwing.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Brightwing"
+   }
+  },
+  {
+   "id": "hero-cassia",
+   "title": "Cassia",
+   "description": "Win a match as Cassia.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Cassia"
+   }
+  },
+  {
+   "id": "hero-chen",
+   "title": "Chen",
+   "description": "Win a match as Chen.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Chen"
+   }
+  },
+  {
+   "id": "hero-cho",
+   "title": "Cho",
+   "description": "Win a match as Cho.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Cho"
+   }
+  },
+  {
+   "id": "hero-chromie",
+   "title": "Chromie",
+   "description": "Win a match as Chromie.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Chromie"
+   }
+  },
+  {
+   "id": "hero-d-va",
+   "title": "D.Va",
+   "description": "Win a match as D.Va.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "D.Va"
+   }
+  },
+  {
+   "id": "hero-deathwing",
+   "title": "Deathwing",
+   "description": "Win a match as Deathwing.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Deathwing"
+   }
+  },
+  {
+   "id": "hero-deckard",
+   "title": "Deckard",
+   "description": "Win a match as Deckard.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Deckard"
+   }
+  },
+  {
+   "id": "hero-dehaka",
+   "title": "Dehaka",
+   "description": "Win a match as Dehaka.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Dehaka"
+   }
+  },
+  {
+   "id": "hero-diablo",
+   "title": "Diablo",
+   "description": "Win a match as Diablo.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Diablo"
+   }
+  },
+  {
+   "id": "hero-e-t-c",
+   "title": "E.T.C.",
+   "description": "Win a match as E.T.C..",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "E.T.C."
+   }
+  },
+  {
+   "id": "hero-falstad",
+   "title": "Falstad",
+   "description": "Win a match as Falstad.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Falstad"
+   }
+  },
+  {
+   "id": "hero-fenix",
+   "title": "Fenix",
+   "description": "Win a match as Fenix.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Fenix"
+   }
+  },
+  {
+   "id": "hero-gall",
+   "title": "Gall",
+   "description": "Win a match as Gall.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Gall"
+   }
+  },
+  {
+   "id": "hero-garrosh",
+   "title": "Garrosh",
+   "description": "Win a match as Garrosh.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Garrosh"
+   }
+  },
+  {
+   "id": "hero-gazlowe",
+   "title": "Gazlowe",
+   "description": "Win a match as Gazlowe.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Gazlowe"
+   }
+  },
+  {
+   "id": "hero-genji",
+   "title": "Genji",
+   "description": "Win a match as Genji.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Genji"
+   }
+  },
+  {
+   "id": "hero-greymane",
+   "title": "Greymane",
+   "description": "Win a match as Greymane.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Greymane"
+   }
+  },
+  {
+   "id": "hero-gul-dan",
+   "title": "Gul'dan",
+   "description": "Win a match as Gul'dan.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Gul'dan"
+   }
+  },
+  {
+   "id": "hero-hanzo",
+   "title": "Hanzo",
+   "description": "Win a match as Hanzo.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Hanzo"
+   }
+  },
+  {
+   "id": "hero-hogger",
+   "title": "Hogger",
+   "description": "Win a match as Hogger.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Hogger"
+   }
+  },
+  {
+   "id": "hero-illidan",
+   "title": "Illidan",
+   "description": "Win a match as Illidan.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Illidan"
+   }
+  },
+  {
+   "id": "hero-imperius",
+   "title": "Imperius",
+   "description": "Win a match as Imperius.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Imperius"
+   }
+  },
+  {
+   "id": "hero-jaina",
+   "title": "Jaina",
+   "description": "Win a match as Jaina.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Jaina"
+   }
+  },
+  {
+   "id": "hero-johanna",
+   "title": "Johanna",
+   "description": "Win a match as Johanna.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Johanna"
+   }
+  },
+  {
+   "id": "hero-junkrat",
+   "title": "Junkrat",
+   "description": "Win a match as Junkrat.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Junkrat"
+   }
+  },
+  {
+   "id": "hero-kael-thas",
+   "title": "Kael'thas",
+   "description": "Win a match as Kael'thas.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Kael'thas"
+   }
+  },
+  {
+   "id": "hero-kel-thuzad",
+   "title": "Kel'Thuzad",
+   "description": "Win a match as Kel'Thuzad.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Kel'Thuzad"
+   }
+  },
+  {
+   "id": "hero-kerrigan",
+   "title": "Kerrigan",
+   "description": "Win a match as Kerrigan.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Kerrigan"
+   }
+  },
+  {
+   "id": "hero-kharazim",
+   "title": "Kharazim",
+   "description": "Win a match as Kharazim.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Kharazim"
+   }
+  },
+  {
+   "id": "hero-leoric",
+   "title": "Leoric",
+   "description": "Win a match as Leoric.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Leoric"
+   }
+  },
+  {
+   "id": "hero-li-li",
+   "title": "Li Li",
+   "description": "Win a match as Li Li.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Li Li"
+   }
+  },
+  {
+   "id": "hero-li-ming",
+   "title": "Li-Ming",
+   "description": "Win a match as Li-Ming.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Li-Ming"
+   }
+  },
+  {
+   "id": "hero-lt-morales",
+   "title": "Lt. Morales",
+   "description": "Win a match as Lt. Morales.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Lt. Morales"
+   }
+  },
+  {
+   "id": "hero-lunara",
+   "title": "Lunara",
+   "description": "Win a match as Lunara.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Lunara"
+   }
+  },
+  {
+   "id": "hero-lucio",
+   "title": "Lúcio",
+   "description": "Win a match as Lúcio.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Lúcio"
+   }
+  },
+  {
+   "id": "hero-maiev",
+   "title": "Maiev",
+   "description": "Win a match as Maiev.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Maiev"
+   }
+  },
+  {
+   "id": "hero-mal-ganis",
+   "title": "Mal'Ganis",
+   "description": "Win a match as Mal'Ganis.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Mal'Ganis"
+   }
+  },
+  {
+   "id": "hero-malfurion",
+   "title": "Malfurion",
+   "description": "Win a match as Malfurion.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Malfurion"
+   }
+  },
+  {
+   "id": "hero-malthael",
+   "title": "Malthael",
+   "description": "Win a match as Malthael.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Malthael"
+   }
+  },
+  {
+   "id": "hero-medivh",
+   "title": "Medivh",
+   "description": "Win a match as Medivh.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Medivh"
+   }
+  },
+  {
+   "id": "hero-mei",
+   "title": "Mei",
+   "description": "Win a match as Mei.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Mei"
+   }
+  },
+  {
+   "id": "hero-mephisto",
+   "title": "Mephisto",
+   "description": "Win a match as Mephisto.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Mephisto"
+   }
+  },
+  {
+   "id": "hero-muradin",
+   "title": "Muradin",
+   "description": "Win a match as Muradin.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Muradin"
+   }
+  },
+  {
+   "id": "hero-murky",
+   "title": "Murky",
+   "description": "Win a match as Murky.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Murky"
+   }
+  },
+  {
+   "id": "hero-nazeebo",
+   "title": "Nazeebo",
+   "description": "Win a match as Nazeebo.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Nazeebo"
+   }
+  },
+  {
+   "id": "hero-nova",
+   "title": "Nova",
+   "description": "Win a match as Nova.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Nova"
+   }
+  },
+  {
+   "id": "hero-orphea",
+   "title": "Orphea",
+   "description": "Win a match as Orphea.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Orphea"
+   }
+  },
+  {
+   "id": "hero-probius",
+   "title": "Probius",
+   "description": "Win a match as Probius.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Probius"
+   }
+  },
+  {
+   "id": "hero-qhira",
+   "title": "Qhira",
+   "description": "Win a match as Qhira.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Qhira"
+   }
+  },
+  {
+   "id": "hero-ragnaros",
+   "title": "Ragnaros",
+   "description": "Win a match as Ragnaros.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Ragnaros"
+   }
+  },
+  {
+   "id": "hero-raynor",
+   "title": "Raynor",
+   "description": "Win a match as Raynor.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Raynor"
+   }
+  },
+  {
+   "id": "hero-rehgar",
+   "title": "Rehgar",
+   "description": "Win a match as Rehgar.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Rehgar"
+   }
+  },
+  {
+   "id": "hero-rexxar",
+   "title": "Rexxar",
+   "description": "Win a match as Rexxar.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Rexxar"
+   }
+  },
+  {
+   "id": "hero-samuro",
+   "title": "Samuro",
+   "description": "Win a match as Samuro.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Samuro"
+   }
+  },
+  {
+   "id": "hero-sgt-hammer",
+   "title": "Sgt. Hammer",
+   "description": "Win a match as Sgt. Hammer.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Sgt. Hammer"
+   }
+  },
+  {
+   "id": "hero-sonya",
+   "title": "Sonya",
+   "description": "Win a match as Sonya.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Sonya"
+   }
+  },
+  {
+   "id": "hero-stitches",
+   "title": "Stitches",
+   "description": "Win a match as Stitches.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Stitches"
+   }
+  },
+  {
+   "id": "hero-stukov",
+   "title": "Stukov",
+   "description": "Win a match as Stukov.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Stukov"
+   }
+  },
+  {
+   "id": "hero-sylvanas",
+   "title": "Sylvanas",
+   "description": "Win a match as Sylvanas.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Sylvanas"
+   }
+  },
+  {
+   "id": "hero-tassadar",
+   "title": "Tassadar",
+   "description": "Win a match as Tassadar.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Tassadar"
+   }
+  },
+  {
+   "id": "hero-the-butcher",
+   "title": "The Butcher",
+   "description": "Win a match as The Butcher.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "The Butcher"
+   }
+  },
+  {
+   "id": "hero-the-lost-vikings",
+   "title": "The Lost Vikings",
+   "description": "Win a match as The Lost Vikings.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "The Lost Vikings"
+   }
+  },
+  {
+   "id": "hero-thrall",
+   "title": "Thrall",
+   "description": "Win a match as Thrall.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Thrall"
+   }
+  },
+  {
+   "id": "hero-tracer",
+   "title": "Tracer",
+   "description": "Win a match as Tracer.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Tracer"
+   }
+  },
+  {
+   "id": "hero-tychus",
+   "title": "Tychus",
+   "description": "Win a match as Tychus.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Tychus"
+   }
+  },
+  {
+   "id": "hero-tyrael",
+   "title": "Tyrael",
+   "description": "Win a match as Tyrael.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Tyrael"
+   }
+  },
+  {
+   "id": "hero-tyrande",
+   "title": "Tyrande",
+   "description": "Win a match as Tyrande.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Tyrande"
+   }
+  },
+  {
+   "id": "hero-uther",
+   "title": "Uther",
+   "description": "Win a match as Uther.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Uther"
+   }
+  },
+  {
+   "id": "hero-valeera",
+   "title": "Valeera",
+   "description": "Win a match as Valeera.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Valeera"
+   }
+  },
+  {
+   "id": "hero-valla",
+   "title": "Valla",
+   "description": "Win a match as Valla.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Valla"
+   }
+  },
+  {
+   "id": "hero-varian",
+   "title": "Varian",
+   "description": "Win a match as Varian.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Varian"
+   }
+  },
+  {
+   "id": "hero-whitemane",
+   "title": "Whitemane",
+   "description": "Win a match as Whitemane.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Whitemane"
+   }
+  },
+  {
+   "id": "hero-xul",
+   "title": "Xul",
+   "description": "Win a match as Xul.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Xul"
+   }
+  },
+  {
+   "id": "hero-yrel",
+   "title": "Yrel",
+   "description": "Win a match as Yrel.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Yrel"
+   }
+  },
+  {
+   "id": "hero-zagara",
+   "title": "Zagara",
+   "description": "Win a match as Zagara.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Zagara"
+   }
+  },
+  {
+   "id": "hero-zarya",
+   "title": "Zarya",
+   "description": "Win a match as Zarya.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Zarya"
+   }
+  },
+  {
+   "id": "hero-zeratul",
+   "title": "Zeratul",
+   "description": "Win a match as Zeratul.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Zeratul"
+   }
+  },
+  {
+   "id": "hero-zul-jin",
+   "title": "Zul'jin",
+   "description": "Win a match as Zul'jin.",
+   "points": 5,
+   "group": "Heroes",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "hero": "Zul'jin"
+   }
+  },
+  {
+   "id": "hero-abathur-10",
+   "title": "Abathur Expert",
+   "description": "Win 10 matches as Abathur.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Abathur",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-alarak-10",
+   "title": "Alarak Expert",
+   "description": "Win 10 matches as Alarak.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Alarak",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-alexstrasza-10",
+   "title": "Alexstrasza Expert",
+   "description": "Win 10 matches as Alexstrasza.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Alexstrasza",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-ana-10",
+   "title": "Ana Expert",
+   "description": "Win 10 matches as Ana.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Ana",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-anduin-10",
+   "title": "Anduin Expert",
+   "description": "Win 10 matches as Anduin.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Anduin",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-anub-arak-10",
+   "title": "Anub'arak Expert",
+   "description": "Win 10 matches as Anub'arak.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Anub'arak",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-artanis-10",
+   "title": "Artanis Expert",
+   "description": "Win 10 matches as Artanis.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Artanis",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-arthas-10",
+   "title": "Arthas Expert",
+   "description": "Win 10 matches as Arthas.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Arthas",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-auriel-10",
+   "title": "Auriel Expert",
+   "description": "Win 10 matches as Auriel.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Auriel",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-azmodan-10",
+   "title": "Azmodan Expert",
+   "description": "Win 10 matches as Azmodan.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Azmodan",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-blaze-10",
+   "title": "Blaze Expert",
+   "description": "Win 10 matches as Blaze.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Blaze",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-brightwing-10",
+   "title": "Brightwing Expert",
+   "description": "Win 10 matches as Brightwing.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Brightwing",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-cassia-10",
+   "title": "Cassia Expert",
+   "description": "Win 10 matches as Cassia.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Cassia",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-chen-10",
+   "title": "Chen Expert",
+   "description": "Win 10 matches as Chen.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Chen",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-cho-10",
+   "title": "Cho Expert",
+   "description": "Win 10 matches as Cho.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Cho",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-chromie-10",
+   "title": "Chromie Expert",
+   "description": "Win 10 matches as Chromie.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Chromie",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-d-va-10",
+   "title": "D.Va Expert",
+   "description": "Win 10 matches as D.Va.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "D.Va",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-deathwing-10",
+   "title": "Deathwing Expert",
+   "description": "Win 10 matches as Deathwing.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Deathwing",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-deckard-10",
+   "title": "Deckard Expert",
+   "description": "Win 10 matches as Deckard.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Deckard",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-dehaka-10",
+   "title": "Dehaka Expert",
+   "description": "Win 10 matches as Dehaka.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Dehaka",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-diablo-10",
+   "title": "Diablo Expert",
+   "description": "Win 10 matches as Diablo.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Diablo",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-e-t-c-10",
+   "title": "E.T.C. Expert",
+   "description": "Win 10 matches as E.T.C..",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "E.T.C.",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-falstad-10",
+   "title": "Falstad Expert",
+   "description": "Win 10 matches as Falstad.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Falstad",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-fenix-10",
+   "title": "Fenix Expert",
+   "description": "Win 10 matches as Fenix.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Fenix",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-gall-10",
+   "title": "Gall Expert",
+   "description": "Win 10 matches as Gall.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Gall",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-garrosh-10",
+   "title": "Garrosh Expert",
+   "description": "Win 10 matches as Garrosh.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Garrosh",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-gazlowe-10",
+   "title": "Gazlowe Expert",
+   "description": "Win 10 matches as Gazlowe.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Gazlowe",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-genji-10",
+   "title": "Genji Expert",
+   "description": "Win 10 matches as Genji.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Genji",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-greymane-10",
+   "title": "Greymane Expert",
+   "description": "Win 10 matches as Greymane.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Greymane",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-gul-dan-10",
+   "title": "Gul'dan Expert",
+   "description": "Win 10 matches as Gul'dan.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Gul'dan",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-hanzo-10",
+   "title": "Hanzo Expert",
+   "description": "Win 10 matches as Hanzo.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Hanzo",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-hogger-10",
+   "title": "Hogger Expert",
+   "description": "Win 10 matches as Hogger.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Hogger",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-illidan-10",
+   "title": "Illidan Expert",
+   "description": "Win 10 matches as Illidan.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Illidan",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-imperius-10",
+   "title": "Imperius Expert",
+   "description": "Win 10 matches as Imperius.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Imperius",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-jaina-10",
+   "title": "Jaina Expert",
+   "description": "Win 10 matches as Jaina.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Jaina",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-johanna-10",
+   "title": "Johanna Expert",
+   "description": "Win 10 matches as Johanna.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Johanna",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-junkrat-10",
+   "title": "Junkrat Expert",
+   "description": "Win 10 matches as Junkrat.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Junkrat",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-kael-thas-10",
+   "title": "Kael'thas Expert",
+   "description": "Win 10 matches as Kael'thas.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Kael'thas",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-kel-thuzad-10",
+   "title": "Kel'Thuzad Expert",
+   "description": "Win 10 matches as Kel'Thuzad.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Kel'Thuzad",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-kerrigan-10",
+   "title": "Kerrigan Expert",
+   "description": "Win 10 matches as Kerrigan.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Kerrigan",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-kharazim-10",
+   "title": "Kharazim Expert",
+   "description": "Win 10 matches as Kharazim.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Kharazim",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-leoric-10",
+   "title": "Leoric Expert",
+   "description": "Win 10 matches as Leoric.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Leoric",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-li-li-10",
+   "title": "Li Li Expert",
+   "description": "Win 10 matches as Li Li.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Li Li",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-li-ming-10",
+   "title": "Li-Ming Expert",
+   "description": "Win 10 matches as Li-Ming.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Li-Ming",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-lt-morales-10",
+   "title": "Lt. Morales Expert",
+   "description": "Win 10 matches as Lt. Morales.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Lt. Morales",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-lunara-10",
+   "title": "Lunara Expert",
+   "description": "Win 10 matches as Lunara.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Lunara",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-lucio-10",
+   "title": "Lúcio Expert",
+   "description": "Win 10 matches as Lúcio.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Lúcio",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-maiev-10",
+   "title": "Maiev Expert",
+   "description": "Win 10 matches as Maiev.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Maiev",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-mal-ganis-10",
+   "title": "Mal'Ganis Expert",
+   "description": "Win 10 matches as Mal'Ganis.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Mal'Ganis",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-malfurion-10",
+   "title": "Malfurion Expert",
+   "description": "Win 10 matches as Malfurion.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Malfurion",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-malthael-10",
+   "title": "Malthael Expert",
+   "description": "Win 10 matches as Malthael.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Malthael",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-medivh-10",
+   "title": "Medivh Expert",
+   "description": "Win 10 matches as Medivh.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Medivh",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-mei-10",
+   "title": "Mei Expert",
+   "description": "Win 10 matches as Mei.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Mei",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-mephisto-10",
+   "title": "Mephisto Expert",
+   "description": "Win 10 matches as Mephisto.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Mephisto",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-muradin-10",
+   "title": "Muradin Expert",
+   "description": "Win 10 matches as Muradin.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Muradin",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-murky-10",
+   "title": "Murky Expert",
+   "description": "Win 10 matches as Murky.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Murky",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-nazeebo-10",
+   "title": "Nazeebo Expert",
+   "description": "Win 10 matches as Nazeebo.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Nazeebo",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-nova-10",
+   "title": "Nova Expert",
+   "description": "Win 10 matches as Nova.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Nova",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-orphea-10",
+   "title": "Orphea Expert",
+   "description": "Win 10 matches as Orphea.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Orphea",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-probius-10",
+   "title": "Probius Expert",
+   "description": "Win 10 matches as Probius.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Probius",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-qhira-10",
+   "title": "Qhira Expert",
+   "description": "Win 10 matches as Qhira.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Qhira",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-ragnaros-10",
+   "title": "Ragnaros Expert",
+   "description": "Win 10 matches as Ragnaros.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Ragnaros",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-raynor-10",
+   "title": "Raynor Expert",
+   "description": "Win 10 matches as Raynor.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Raynor",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-rehgar-10",
+   "title": "Rehgar Expert",
+   "description": "Win 10 matches as Rehgar.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Rehgar",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-rexxar-10",
+   "title": "Rexxar Expert",
+   "description": "Win 10 matches as Rexxar.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Rexxar",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-samuro-10",
+   "title": "Samuro Expert",
+   "description": "Win 10 matches as Samuro.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Samuro",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-sgt-hammer-10",
+   "title": "Sgt. Hammer Expert",
+   "description": "Win 10 matches as Sgt. Hammer.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Sgt. Hammer",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-sonya-10",
+   "title": "Sonya Expert",
+   "description": "Win 10 matches as Sonya.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Sonya",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-stitches-10",
+   "title": "Stitches Expert",
+   "description": "Win 10 matches as Stitches.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Stitches",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-stukov-10",
+   "title": "Stukov Expert",
+   "description": "Win 10 matches as Stukov.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Stukov",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-sylvanas-10",
+   "title": "Sylvanas Expert",
+   "description": "Win 10 matches as Sylvanas.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Sylvanas",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-tassadar-10",
+   "title": "Tassadar Expert",
+   "description": "Win 10 matches as Tassadar.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Tassadar",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-the-butcher-10",
+   "title": "The Butcher Expert",
+   "description": "Win 10 matches as The Butcher.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "The Butcher",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-the-lost-vikings-10",
+   "title": "The Lost Vikings Expert",
+   "description": "Win 10 matches as The Lost Vikings.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "The Lost Vikings",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-thrall-10",
+   "title": "Thrall Expert",
+   "description": "Win 10 matches as Thrall.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Thrall",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-tracer-10",
+   "title": "Tracer Expert",
+   "description": "Win 10 matches as Tracer.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Tracer",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-tychus-10",
+   "title": "Tychus Expert",
+   "description": "Win 10 matches as Tychus.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Tychus",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-tyrael-10",
+   "title": "Tyrael Expert",
+   "description": "Win 10 matches as Tyrael.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Tyrael",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-tyrande-10",
+   "title": "Tyrande Expert",
+   "description": "Win 10 matches as Tyrande.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Tyrande",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-uther-10",
+   "title": "Uther Expert",
+   "description": "Win 10 matches as Uther.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Uther",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-valeera-10",
+   "title": "Valeera Expert",
+   "description": "Win 10 matches as Valeera.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Valeera",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-valla-10",
+   "title": "Valla Expert",
+   "description": "Win 10 matches as Valla.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Valla",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-varian-10",
+   "title": "Varian Expert",
+   "description": "Win 10 matches as Varian.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Varian",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-whitemane-10",
+   "title": "Whitemane Expert",
+   "description": "Win 10 matches as Whitemane.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Whitemane",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-xul-10",
+   "title": "Xul Expert",
+   "description": "Win 10 matches as Xul.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Xul",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-yrel-10",
+   "title": "Yrel Expert",
+   "description": "Win 10 matches as Yrel.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Yrel",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-zagara-10",
+   "title": "Zagara Expert",
+   "description": "Win 10 matches as Zagara.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Zagara",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-zarya-10",
+   "title": "Zarya Expert",
+   "description": "Win 10 matches as Zarya.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Zarya",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-zeratul-10",
+   "title": "Zeratul Expert",
+   "description": "Win 10 matches as Zeratul.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Zeratul",
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hero-zul-jin-10",
+   "title": "Zul'jin Expert",
+   "description": "Win 10 matches as Zul'jin.",
+   "points": 10,
+   "group": "Hero mastery",
+   "rule": {
+    "heroWins": {
+     "hero": "Zul'jin",
+     "n": 10
+    }
+   }
+  }
+ ]
+}

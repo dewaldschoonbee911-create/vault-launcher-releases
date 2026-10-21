@@ -1,0 +1,1347 @@
+{
+ "id": "cnc3kw",
+ "title": "Command & Conquer 3: Kane's Wrath",
+ "version": 1,
+ "kind": "replay",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [
+  "steam:24810"
+ ],
+ "linkFiles": [
+  "CNC3EP1.exe"
+ ],
+ "exeNames": [
+  "cnc3ep1.dat",
+  "CNC3EP1.exe"
+ ],
+ "md5": [],
+ "notes": [
+  "Campaign achievements come from your save games (Vault never touches the game, which has online play). The game saves automatically between missions; saving during a mission helps too.",
+  "Skirmish achievements come from the replay the game saves after every game (Documents\\Command and Conquer 3 Kanes Wrath\\Replays). Replays do not record who won, so these are about playing, not winning. Games shorter than 3 minutes do not count."
+ ],
+ "testGuide": [
+  {
+   "title": "Start the Nod campaign",
+   "detail": "Beat the first mission. When the game saves for the next mission, \"Rio Insurrection\" should pop."
+  },
+  {
+   "title": "Play a skirmish",
+   "detail": "Play a skirmish for at least 3 minutes, then quit. \"Into Battle\" should pop."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "nod-1",
+   "title": "The Rio Insurrection",
+   "description": "Kane's Wrath: beat mission 1, The Rio Insurrection.",
+   "points": 10,
+   "group": "Campaign: Kane's Wrath",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 1
+    }
+   }
+  },
+  {
+   "id": "nod-2",
+   "title": "What is Rightfully Ours",
+   "description": "Kane's Wrath: beat mission 2, What is Rightfully Ours.",
+   "points": 10,
+   "group": "Campaign: Kane's Wrath",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 2
+    }
+   }
+  },
+  {
+   "id": "nod-3",
+   "title": "Persuade Him...",
+   "description": "Kane's Wrath: beat mission 3, Persuade Him....",
+   "points": 10,
+   "group": "Campaign: Kane's Wrath",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 3
+    }
+   }
+  },
+  {
+   "id": "nod-4",
+   "title": "A Grand Gesture...",
+   "description": "Kane's Wrath: beat mission 4, A Grand Gesture....",
+   "points": 10,
+   "group": "Campaign: Kane's Wrath",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 4
+    }
+   }
+  },
+  {
+   "id": "nod-5",
+   "title": "Keys to the Kingdom",
+   "description": "Kane's Wrath: beat mission 5, Keys to the Kingdom.",
+   "points": 10,
+   "group": "Campaign: Kane's Wrath",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 5
+    }
+   }
+  },
+  {
+   "id": "nod-6",
+   "title": "All That Glitters",
+   "description": "Kane's Wrath: beat mission 6, All That Glitters.",
+   "points": 10,
+   "group": "Campaign: Kane's Wrath",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 6
+    }
+   }
+  },
+  {
+   "id": "nod-7",
+   "title": "The Doctor Vanishes",
+   "description": "Kane's Wrath: beat mission 7, The Doctor Vanishes.",
+   "points": 10,
+   "group": "Campaign: Kane's Wrath",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 7
+    }
+   }
+  },
+  {
+   "id": "nod-8",
+   "title": "MARV Rising",
+   "description": "Kane's Wrath: beat mission 8, MARV Rising.",
+   "points": 10,
+   "group": "Campaign: Kane's Wrath",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 8
+    }
+   }
+  },
+  {
+   "id": "nod-9",
+   "title": "The Betrayal of Kilian Qatar",
+   "description": "Kane's Wrath: beat mission 9, The Betrayal of Kilian Qatar.",
+   "points": 10,
+   "group": "Campaign: Kane's Wrath",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 9
+    }
+   }
+  },
+  {
+   "id": "nod-10",
+   "title": "Hearts and Minds",
+   "description": "Kane's Wrath: beat mission 10, Hearts and Minds.",
+   "points": 10,
+   "group": "Campaign: Kane's Wrath",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 10
+    }
+   }
+  },
+  {
+   "id": "nod-11",
+   "title": "Tacitus Interruptus",
+   "description": "Kane's Wrath: beat mission 11, Tacitus Interruptus.",
+   "points": 10,
+   "group": "Campaign: Kane's Wrath",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 11
+    }
+   }
+  },
+  {
+   "id": "nod-12",
+   "title": "Will Made Flesh",
+   "description": "Kane's Wrath: beat mission 12, Will Made Flesh.",
+   "points": 10,
+   "group": "Campaign: Kane's Wrath",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 12
+    }
+   }
+  },
+  {
+   "id": "nod-13",
+   "title": "Ascension",
+   "description": "Kane's Wrath: beat mission 13, Tacitus Regained. Campaign complete!",
+   "points": 25,
+   "group": "Campaign: Kane's Wrath",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 13
+    }
+   }
+  },
+  {
+   "id": "nod-act1",
+   "title": "Act I: Rebirth",
+   "description": "Kane's Wrath: finish Act I (4 missions beaten).",
+   "points": 15,
+   "group": "Campaign: Kane's Wrath",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "missions": 4
+    }
+   }
+  },
+  {
+   "id": "nod-act2",
+   "title": "Act II: Glory",
+   "description": "Kane's Wrath: finish Act II (11 missions beaten).",
+   "points": 20,
+   "group": "Campaign: Kane's Wrath",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "missions": 11
+    }
+   }
+  },
+  {
+   "id": "sk-first",
+   "title": "Into Battle",
+   "description": "Play a skirmish game for at least 3 minutes.",
+   "points": 5,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {}
+   }
+  },
+  {
+   "id": "sk-fac-6",
+   "title": "Global Defense",
+   "description": "Play a skirmish game as GDI.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 6
+    }
+   }
+  },
+  {
+   "id": "sk-fac-7",
+   "title": "Steel Talons",
+   "description": "Play a skirmish game as Steel Talons.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 7
+    }
+   }
+  },
+  {
+   "id": "sk-fac-8",
+   "title": "ZOCOM",
+   "description": "Play a skirmish game as ZOCOM.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 8
+    }
+   }
+  },
+  {
+   "id": "sk-fac-9",
+   "title": "Brotherhood of Nod",
+   "description": "Play a skirmish game as Nod.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 9
+    }
+   }
+  },
+  {
+   "id": "sk-fac-10",
+   "title": "Black Hand",
+   "description": "Play a skirmish game as Black Hand.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-11",
+   "title": "Marked of Kane",
+   "description": "Play a skirmish game as Marked of Kane.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 11
+    }
+   }
+  },
+  {
+   "id": "sk-fac-12",
+   "title": "Visitors",
+   "description": "Play a skirmish game as Scrin.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 12
+    }
+   }
+  },
+  {
+   "id": "sk-fac-13",
+   "title": "Reaper-17",
+   "description": "Play a skirmish game as Reaper-17.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 13
+    }
+   }
+  },
+  {
+   "id": "sk-fac-14",
+   "title": "Traveler-59",
+   "description": "Play a skirmish game as Traveler-59.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 14
+    }
+   }
+  },
+  {
+   "id": "sk-all-factions",
+   "title": "Commander of Every Army",
+   "description": "Play as every faction (9).",
+   "points": 30,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "factions": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+     ]
+    }
+   }
+  },
+  {
+   "id": "sk-hard",
+   "title": "Hard Target",
+   "description": "Last 10 minutes in a game against a Hard computer.",
+   "points": 15,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "vsAi": "hard",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-brutal",
+   "title": "Brutal Awakening",
+   "description": "Last 10 minutes in a game against a Brutal computer.",
+   "points": 25,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-outnumbered",
+   "title": "Outnumbered",
+   "description": "Last 10 minutes in a game against 3 or more computers.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minAi": 3,
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-brutal-5",
+   "title": "Brutal Veteran",
+   "description": "Play 5 games of 10 minutes or more against a Brutal computer.",
+   "points": 30,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "brutal": 5
+    }
+   }
+  },
+  {
+   "id": "sk-long",
+   "title": "War of Attrition",
+   "description": "Play a game that lasts 45 minutes or more.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minMinutes": 45
+    }
+   }
+  },
+  {
+   "id": "sk-human",
+   "title": "Worthy Opponent",
+   "description": "Play a game of 10 minutes or more against another person.",
+   "points": 15,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "vsHuman": true,
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-games-10",
+   "title": "Seasoned Commander",
+   "description": "Play 10 games (3 minutes or longer).",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 10
+    }
+   }
+  },
+  {
+   "id": "sk-games-25",
+   "title": "Battle Hardened",
+   "description": "Play 25 games (3 minutes or longer).",
+   "points": 25,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 25
+    }
+   }
+  },
+  {
+   "id": "sk-games-50",
+   "title": "Living Legend",
+   "description": "Play 50 games (3 minutes or longer).",
+   "points": 40,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 50
+    }
+   }
+  },
+  {
+   "id": "sk-maps-5",
+   "title": "Cartographer",
+   "description": "Play on 5 different maps.",
+   "points": 10,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "maps": 5
+    }
+   }
+  },
+  {
+   "id": "sk-maps-10",
+   "title": "World Tour",
+   "description": "Play on 10 different maps.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "maps": 10
+    }
+   }
+  },
+  {
+   "id": "sk-hours-10",
+   "title": "Ten Hours of War",
+   "description": "Spend 10 hours in skirmish games.",
+   "points": 25,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "hours": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-6-brutal",
+   "title": "GDI vs Brutal",
+   "description": "As GDI, last 10 minutes against a Brutal computer.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 6,
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-6-10",
+   "title": "GDI Veteran",
+   "description": "Play 10 games as GDI.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "facGames": {
+      "faction": 6,
+      "n": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "sk-fac-7-brutal",
+   "title": "Steel Talons vs Brutal",
+   "description": "As Steel Talons, last 10 minutes against a Brutal computer.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 7,
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-7-10",
+   "title": "Steel Talons Veteran",
+   "description": "Play 10 games as Steel Talons.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "facGames": {
+      "faction": 7,
+      "n": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "sk-fac-8-brutal",
+   "title": "ZOCOM vs Brutal",
+   "description": "As ZOCOM, last 10 minutes against a Brutal computer.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 8,
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-8-10",
+   "title": "ZOCOM Veteran",
+   "description": "Play 10 games as ZOCOM.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "facGames": {
+      "faction": 8,
+      "n": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "sk-fac-9-brutal",
+   "title": "Nod vs Brutal",
+   "description": "As Nod, last 10 minutes against a Brutal computer.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 9,
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-9-10",
+   "title": "Nod Veteran",
+   "description": "Play 10 games as Nod.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "facGames": {
+      "faction": 9,
+      "n": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "sk-fac-10-brutal",
+   "title": "Black Hand vs Brutal",
+   "description": "As Black Hand, last 10 minutes against a Brutal computer.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 10,
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-10-10",
+   "title": "Black Hand Veteran",
+   "description": "Play 10 games as Black Hand.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "facGames": {
+      "faction": 10,
+      "n": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "sk-fac-11-brutal",
+   "title": "Marked of Kane vs Brutal",
+   "description": "As Marked of Kane, last 10 minutes against a Brutal computer.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 11,
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-11-10",
+   "title": "Marked of Kane Veteran",
+   "description": "Play 10 games as Marked of Kane.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "facGames": {
+      "faction": 11,
+      "n": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "sk-fac-12-brutal",
+   "title": "Scrin vs Brutal",
+   "description": "As Scrin, last 10 minutes against a Brutal computer.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 12,
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-12-10",
+   "title": "Scrin Veteran",
+   "description": "Play 10 games as Scrin.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "facGames": {
+      "faction": 12,
+      "n": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "sk-fac-13-brutal",
+   "title": "Reaper-17 vs Brutal",
+   "description": "As Reaper-17, last 10 minutes against a Brutal computer.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 13,
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-13-10",
+   "title": "Reaper-17 Veteran",
+   "description": "Play 10 games as Reaper-17.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "facGames": {
+      "faction": 13,
+      "n": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "sk-fac-14-brutal",
+   "title": "Traveler-59 vs Brutal",
+   "description": "As Traveler-59, last 10 minutes against a Brutal computer.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 14,
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-14-10",
+   "title": "Traveler-59 Veteran",
+   "description": "Play 10 games as Traveler-59.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "facGames": {
+      "faction": 14,
+      "n": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "sk-vs-all",
+   "title": "Know Your Enemy",
+   "description": "Face every faction (9) as an opponent.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "vsFactions": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+     ]
+    }
+   }
+  },
+  {
+   "id": "sk-team",
+   "title": "Brothers in Arms",
+   "description": "Play a team game with a teammate for at least 10 minutes.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "withAlly": true,
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-big",
+   "title": "Total War",
+   "description": "Play a game with 6 or more players for at least 10 minutes.",
+   "points": 15,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minPlayers": 6,
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-marathon",
+   "title": "Marathon",
+   "description": "Play a game that lasts 90 minutes or more.",
+   "points": 30,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minMinutes": 90
+    }
+   }
+  },
+  {
+   "id": "sk-medium",
+   "title": "Warming Up",
+   "description": "Last 10 minutes in a game against a Medium computer.",
+   "points": 5,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "vsAi": "medium",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-brutal-3",
+   "title": "Three Brutal Foes",
+   "description": "Last 15 minutes against 3 or more computers, one of them Brutal.",
+   "points": 30,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minAi": 3,
+     "vsAi": "brutal",
+     "minMinutes": 15
+    }
+   }
+  },
+  {
+   "id": "sk-brutal-25",
+   "title": "Brutal Master",
+   "description": "Play 25 games of 10 minutes or more against a Brutal computer.",
+   "points": 50,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "brutal": 25
+    }
+   }
+  },
+  {
+   "id": "sk-games-5",
+   "title": "Getting Started",
+   "description": "Play 5 games (3 minutes or longer).",
+   "points": 5,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 5
+    }
+   }
+  },
+  {
+   "id": "sk-games-100",
+   "title": "Centurion",
+   "description": "Play 100 games (3 minutes or longer).",
+   "points": 60,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 100
+    }
+   }
+  },
+  {
+   "id": "sk-hours-1",
+   "title": "First Hour",
+   "description": "Spend 1 hour in skirmish games.",
+   "points": 5,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "hours": 1
+    }
+   }
+  },
+  {
+   "id": "sk-hours-25",
+   "title": "Twenty-Five Hours",
+   "description": "Spend 25 hours in skirmish games.",
+   "points": 40,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "hours": 25
+    }
+   }
+  },
+  {
+   "id": "sk-hours-50",
+   "title": "Fifty Hours",
+   "description": "Spend 50 hours in skirmish games.",
+   "points": 60,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "hours": 50
+    }
+   }
+  },
+  {
+   "id": "sk-maps-20",
+   "title": "Seen It All",
+   "description": "Play on 20 different maps.",
+   "points": 30,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "maps": 20
+    }
+   }
+  },
+  {
+   "id": "map-bamap_aw01_04",
+   "title": "Seaport Smackdown",
+   "description": "Play a game on Seaport Smackdown.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_aw01_04"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_dc01_4",
+   "title": "Grasslands Landgrab",
+   "description": "Play a game on Grasslands Landgrab.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_dc01_4"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_dc02_4",
+   "title": "Badlands",
+   "description": "Play a game on Badlands.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_dc02_4"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_dc03_3",
+   "title": "Desolation",
+   "description": "Play a game on Desolation.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_dc03_3"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_dc04_3",
+   "title": "End of the Line",
+   "description": "Play a game on End of the Line.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_dc04_3"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_dc05_2",
+   "title": "Tournament Decision",
+   "description": "Play a game on Tournament Decision.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_dc05_2"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_dc05_3",
+   "title": "Split Decision",
+   "description": "Play a game on Split Decision.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_dc05_3"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_dc06_4",
+   "title": "Arid Remains",
+   "description": "Play a game on Arid Remains.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_dc06_4"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_dc07_4",
+   "title": "Mountains of Madness",
+   "description": "Play a game on Mountains of Madness.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_dc07_4"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_dc08_4",
+   "title": "Crosstown Conflict",
+   "description": "Play a game on Crosstown Conflict.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_dc08_4"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_dc10_4",
+   "title": "Murderers Row",
+   "description": "Play a game on Murderers Row.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_dc10_4"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_dc11_4",
+   "title": "Empire City",
+   "description": "Play a game on Empire City.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_dc11_4"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_ew01_4",
+   "title": "Unsound Investment",
+   "description": "Play a game on Unsound Investment.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_ew01_4"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_ew03_04",
+   "title": "Oasis Onslaught",
+   "description": "Play a game on Oasis Onslaught.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_ew03_04"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_ew05_04",
+   "title": "Safety Nest",
+   "description": "Play a game on Safety Nest.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_ew05_04"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_ew06_04",
+   "title": "Shell Shocked",
+   "description": "Play a game on Shell Shocked.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_ew06_04"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_ew07_04",
+   "title": "Urban Blight",
+   "description": "Play a game on Urban Blight.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_ew07_04"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_ew08_04",
+   "title": "Eastern Promises",
+   "description": "Play a game on Eastern Promises.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_ew08_04"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_ew09_03",
+   "title": "Suburban Slaughterhouse",
+   "description": "Play a game on Suburban Slaughterhouse.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_ew09_03"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_ew10_06",
+   "title": "Tiberium Wasteland",
+   "description": "Play a game on Tiberium Wasteland.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_ew10_06"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_ew11_05",
+   "title": "Isthmus of Insanity",
+   "description": "Play a game on Isthmus of Insanity.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_ew11_05"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_jf01_4",
+   "title": "Dockside Devastation",
+   "description": "Play a game on Dockside Devastation.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_jf01_4"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_jf03_6",
+   "title": "Dark Waters",
+   "description": "Play a game on Dark Waters.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_jf03_6"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_kk03_3",
+   "title": "Tundra Triangle",
+   "description": "Play a game on Tundra Triangle.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_kk03_3"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_rh01_4",
+   "title": "Heaven and Hell",
+   "description": "Play a game on Heaven and Hell.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_rh01_4"
+    }
+   }
+  },
+  {
+   "id": "map-bamap_sb01_4",
+   "title": "Missed Opportunity",
+   "description": "Play a game on Missed Opportunity.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "bamap_sb01_4"
+    }
+   }
+  },
+  {
+   "id": "map-eamap_sb05_4",
+   "title": "Craters of Camden",
+   "description": "Play a game on Craters of Camden.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "eamap_sb05_4"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_black11",
+   "title": "Top Gun",
+   "description": "Play a game on Top Gun.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_black11"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_simon_b",
+   "title": "Ruined River",
+   "description": "Play a game on Ruined River.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_simon_b"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_black5",
+   "title": "Death Valley",
+   "description": "Play a game on Death Valley.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_black5"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_6_black1",
+   "title": "Black's Bigger Battle",
+   "description": "Play a game on Black's Bigger Battle.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_6_black1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_black1",
+   "title": "Crater of Carnage",
+   "description": "Play a game on Crater of Carnage.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_black1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_5_black1",
+   "title": "Tiberium Gardens III",
+   "description": "Play a game on Tiberium Gardens III.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_5_black1"
+    }
+   }
+  }
+ ]
+}

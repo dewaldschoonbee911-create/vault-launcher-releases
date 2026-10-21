@@ -1,0 +1,2055 @@
+{
+ "id": "starcraft",
+ "title": "StarCraft: Remastered",
+ "version": 1,
+ "kind": "replay",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [
+  "battlenet:S1"
+ ],
+ "exeNames": [],
+ "md5": [],
+ "notes": [
+  "StarCraft: Remastered ships with Blizzard's anti-cheat, so Vault never reads its memory. Achievements come from the replay StarCraft writes when every match ends (Documents\\StarCraft\\Maps\\Replays), parsed with screp (Apache-2.0).",
+  "Achievements pop on the score screen when a match ends, not during play.",
+  "Your player is found by name (Settings \u2192 StarCraft player name) or, in games with just one human, automatically.",
+  "Unit, building and research achievements count what you ordered, as recorded in the replay.",
+  "Your last game counts even if Vault was closed while you played (StarCraft keeps the last replay).",
+  "Campaign missions: StarCraft keeps campaign progress on Blizzard's servers, so Vault learns it from your save games. Save a game once in each new mission (Menu, Save Game) and the missions before it count as beaten."
+ ],
+ "achievements": [
+  {
+   "id": "gg",
+   "title": "GG",
+   "description": "Finish your first game of StarCraft.",
+   "points": 5,
+   "group": "Getting started",
+   "rule": {
+    "finished": true
+   }
+  },
+  {
+   "id": "first-victory",
+   "title": "First Victory",
+   "description": "Win any game.",
+   "points": 10,
+   "group": "Getting started",
+   "rule": {
+    "win": true
+   }
+  },
+  {
+   "id": "terran-win",
+   "title": "Terran Commander",
+   "description": "Win a game as Terran.",
+   "points": 10,
+   "group": "Races",
+   "rule": {
+    "win": true,
+    "race": "Terran"
+   }
+  },
+  {
+   "id": "zerg-win",
+   "title": "Overmind\u2019s Favourite",
+   "description": "Win a game as Zerg.",
+   "points": 10,
+   "group": "Races",
+   "rule": {
+    "win": true,
+    "race": "Zerg"
+   }
+  },
+  {
+   "id": "protoss-win",
+   "title": "En Taro Adun",
+   "description": "Win a game as Protoss.",
+   "points": 10,
+   "group": "Races",
+   "rule": {
+    "win": true,
+    "race": "Protoss"
+   }
+  },
+  {
+   "id": "all-races",
+   "title": "Jack of All Races",
+   "description": "Win at least one game with each race.",
+   "points": 25,
+   "group": "Races",
+   "rule": {
+    "win": true,
+    "allRacesWon": true
+   }
+  },
+  {
+   "id": "outnumbered",
+   "title": "Outnumbered",
+   "description": "Win against 2 or more computer opponents.",
+   "points": 15,
+   "group": "Skirmish",
+   "rule": {
+    "win": true,
+    "minComputerOpponents": 2
+   }
+  },
+  {
+   "id": "against-the-odds",
+   "title": "Against the Odds",
+   "description": "Win against 3 or more computer opponents.",
+   "points": 25,
+   "group": "Skirmish",
+   "rule": {
+    "win": true,
+    "minComputerOpponents": 3
+   }
+  },
+  {
+   "id": "one-vs-seven",
+   "title": "One Against Seven",
+   "description": "Win against 7 computer opponents.",
+   "points": 50,
+   "group": "Skirmish",
+   "rule": {
+    "win": true,
+    "minComputerOpponents": 7
+   }
+  },
+  {
+   "id": "rush",
+   "title": "Rush Hour",
+   "description": "Win a game in under 10 minutes.",
+   "points": 15,
+   "group": "Speed",
+   "rule": {
+    "win": true,
+    "maxMinutes": 10
+   }
+  },
+  {
+   "id": "blitz",
+   "title": "Blitzkrieg",
+   "description": "Win a game in under 6 minutes.",
+   "points": 25,
+   "group": "Speed",
+   "rule": {
+    "win": true,
+    "maxMinutes": 6
+   }
+  },
+  {
+   "id": "marathon",
+   "title": "Marathon",
+   "description": "Win a game that lasted more than 45 minutes.",
+   "points": 15,
+   "group": "Speed",
+   "rule": {
+    "win": true,
+    "minMinutes": 45
+   }
+  },
+  {
+   "id": "fast-hands",
+   "title": "Fast Hands",
+   "description": "Win a game with an APM of 100 or more.",
+   "points": 15,
+   "group": "Skill",
+   "rule": {
+    "win": true,
+    "minApm": 100
+   }
+  },
+  {
+   "id": "pro-hands",
+   "title": "Pro Hands",
+   "description": "Win a game with an APM of 200 or more.",
+   "points": 30,
+   "group": "Skill",
+   "rule": {
+    "win": true,
+    "minApm": 200
+   }
+  },
+  {
+   "id": "online-win",
+   "title": "Battle-Tested",
+   "description": "Win a game against a human opponent.",
+   "points": 20,
+   "group": "Multiplayer",
+   "rule": {
+    "win": true,
+    "minHumanOpponents": 1
+   }
+  },
+  {
+   "id": "tourist",
+   "title": "Map Tourist",
+   "description": "Win on 5 different maps.",
+   "points": 15,
+   "group": "Career",
+   "rule": {
+    "win": true,
+    "distinctWinMaps": 5
+   }
+  },
+  {
+   "id": "cartographer",
+   "title": "Cartographer",
+   "description": "Win on 15 different maps.",
+   "points": 30,
+   "group": "Career",
+   "rule": {
+    "win": true,
+    "distinctWinMaps": 15
+   }
+  },
+  {
+   "id": "veteran",
+   "title": "Veteran",
+   "description": "Win 10 games.",
+   "points": 15,
+   "group": "Career",
+   "rule": {
+    "win": true,
+    "totalWins": 10
+   }
+  },
+  {
+   "id": "legend",
+   "title": "Legend of the Koprulu Sector",
+   "description": "Win 50 games.",
+   "points": 50,
+   "group": "Career",
+   "rule": {
+    "win": true,
+    "totalWins": 50
+   }
+  },
+  {
+   "id": "regular",
+   "title": "Regular",
+   "description": "Play 25 games.",
+   "points": 10,
+   "group": "Career",
+   "rule": {
+    "finished": true,
+    "totalGames": 25
+   }
+  },
+  {
+   "id": "unit-battlecruiser",
+   "title": "Capital Ship",
+   "description": "Get a Battlecruiser in a finished game.",
+   "points": 15,
+   "group": "Units: Terran",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Battlecruiser",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "unit-science-vessel",
+   "title": "Eye in the Sky",
+   "description": "Get a Science Vessel in a finished game.",
+   "points": 10,
+   "group": "Units: Terran",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Science Vessel",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "unit-ghost",
+   "title": "Ghost Protocol",
+   "description": "Get a Ghost in a finished game.",
+   "points": 10,
+   "group": "Units: Terran",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Ghost",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "unit-valkyrie",
+   "title": "Valkyrie Rising",
+   "description": "Get a Valkyrie in a finished game.",
+   "points": 10,
+   "group": "Units: Terran",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Valkyrie",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "unit-medic",
+   "title": "Combat Medic",
+   "description": "Get a Medic in a finished game.",
+   "points": 5,
+   "group": "Units: Terran",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Medic",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "unit-carrier",
+   "title": "My Life for Aiur",
+   "description": "Get a Carrier in a finished game.",
+   "points": 15,
+   "group": "Units: Protoss",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Carrier",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "unit-arbiter",
+   "title": "Arbiter of Fate",
+   "description": "Get a Arbiter in a finished game.",
+   "points": 15,
+   "group": "Units: Protoss",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Arbiter",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "unit-reaver",
+   "title": "Scarab Delivery",
+   "description": "Get a Reaver in a finished game.",
+   "points": 10,
+   "group": "Units: Protoss",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Reaver",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "unit-dark-templar",
+   "title": "Shadow Blade",
+   "description": "Get a Dark Templar in a finished game.",
+   "points": 10,
+   "group": "Units: Protoss",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Dark Templar",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "unit-corsair",
+   "title": "Corsair Captain",
+   "description": "Get a Corsair in a finished game.",
+   "points": 10,
+   "group": "Units: Protoss",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Corsair",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "unit-ultralisk",
+   "title": "Ultralisk Rampage",
+   "description": "Get a Ultralisk in a finished game.",
+   "points": 15,
+   "group": "Units: Zerg",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Ultralisk",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "unit-defiler",
+   "title": "Plaguebringer",
+   "description": "Get a Defiler in a finished game.",
+   "points": 15,
+   "group": "Units: Zerg",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Defiler",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "unit-guardian",
+   "title": "Crab Walk",
+   "description": "Get a Guardian in a finished game.",
+   "points": 10,
+   "group": "Units: Zerg",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Guardian",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "unit-devourer",
+   "title": "Devourer of Worlds",
+   "description": "Get a Devourer in a finished game.",
+   "points": 10,
+   "group": "Units: Zerg",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Devourer",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "unit-lurker",
+   "title": "Lurking Below",
+   "description": "Get a Lurker in a finished game.",
+   "points": 10,
+   "group": "Units: Zerg",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Lurker",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "unit-queen",
+   "title": "Queen of Blades",
+   "description": "Get a Queen in a finished game.",
+   "points": 10,
+   "group": "Units: Zerg",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Queen",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "archon",
+   "title": "Power Overwhelming",
+   "description": "Merge two High Templar into an Archon.",
+   "points": 10,
+   "group": "Units: Protoss",
+   "rule": {
+    "finished": true,
+    "archon": true
+   }
+  },
+  {
+   "id": "dark-archon",
+   "title": "Mind Games",
+   "description": "Merge two Dark Templar into a Dark Archon.",
+   "points": 15,
+   "group": "Units: Protoss",
+   "rule": {
+    "finished": true,
+    "darkArchon": true
+   }
+  },
+  {
+   "id": "nuke",
+   "title": "Nuclear Launch Detected",
+   "description": "Call down a nuclear strike.",
+   "points": 25,
+   "group": "Units: Terran",
+   "rule": {
+    "finished": true,
+    "nuke": true
+   }
+  },
+  {
+   "id": "bc-fleet",
+   "title": "Battlecruiser Fleet",
+   "description": "Build 8 Battlecruisers in one game.",
+   "points": 25,
+   "group": "Units: Terran",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Battlecruiser",
+     "n": 8
+    }
+   }
+  },
+  {
+   "id": "carrier-fleet",
+   "title": "Carrier Fleet",
+   "description": "Build 8 Carriers in one game.",
+   "points": 25,
+   "group": "Units: Protoss",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Carrier",
+     "n": 8
+    }
+   }
+  },
+  {
+   "id": "zergling-swarm",
+   "title": "The Swarm",
+   "description": "Morph 100 Zerglings in one game.",
+   "points": 20,
+   "group": "Units: Zerg",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Zergling",
+     "n": 100
+    }
+   }
+  },
+  {
+   "id": "marine-corps",
+   "title": "Marine Corps",
+   "description": "Train 60 Marines in one game.",
+   "points": 15,
+   "group": "Units: Terran",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Marine",
+     "n": 60
+    }
+   }
+  },
+  {
+   "id": "zealot-legion",
+   "title": "For Adun!",
+   "description": "Warp in 40 Zealots in one game.",
+   "points": 15,
+   "group": "Units: Protoss",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Zealot",
+     "n": 40
+    }
+   }
+  },
+  {
+   "id": "army50",
+   "title": "Raise an Army",
+   "description": "Train 50 combat units (not workers) in one game.",
+   "points": 10,
+   "group": "Armies",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "n": 50
+    }
+   }
+  },
+  {
+   "id": "army100",
+   "title": "Grand Army",
+   "description": "Train 100 combat units (not workers) in one game.",
+   "points": 15,
+   "group": "Armies",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "n": 100
+    }
+   }
+  },
+  {
+   "id": "army200",
+   "title": "Endless Legions",
+   "description": "Train 200 combat units (not workers) in one game.",
+   "points": 25,
+   "group": "Armies",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "n": 200
+    }
+   }
+  },
+  {
+   "id": "total-army1000",
+   "title": "Warmonger",
+   "description": "Train 1,000 combat units across all your games.",
+   "points": 20,
+   "group": "Armies",
+   "rule": {
+    "finished": true,
+    "totalArmy": 1000
+   }
+  },
+  {
+   "id": "total-army5000",
+   "title": "Galactic Conqueror",
+   "description": "Train 5,000 combat units across all your games.",
+   "points": 40,
+   "group": "Armies",
+   "rule": {
+    "finished": true,
+    "totalArmy": 5000
+   }
+  },
+  {
+   "id": "expand",
+   "title": "Expansion",
+   "description": "Build 2 extra bases (Command Center, Nexus or Hatchery) in one game.",
+   "points": 10,
+   "group": "Bases",
+   "rule": {
+    "finished": true,
+    "built": {
+     "unit": [
+      "Command Center",
+      "Nexus",
+      "Hatchery"
+     ],
+     "n": 2
+    }
+   }
+  },
+  {
+   "id": "expand5",
+   "title": "Map Control",
+   "description": "Build 5 extra bases in one game.",
+   "points": 20,
+   "group": "Bases",
+   "rule": {
+    "finished": true,
+    "built": {
+     "unit": [
+      "Command Center",
+      "Nexus",
+      "Hatchery"
+     ],
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "builder30",
+   "title": "Master Builder",
+   "description": "Place 30 buildings in one game.",
+   "points": 10,
+   "group": "Bases",
+   "rule": {
+    "finished": true,
+    "built": {
+     "n": 30
+    }
+   }
+  },
+  {
+   "id": "builder60",
+   "title": "Sprawling Empire",
+   "description": "Place 60 buildings in one game.",
+   "points": 20,
+   "group": "Bases",
+   "rule": {
+    "finished": true,
+    "built": {
+     "n": 60
+    }
+   }
+  },
+  {
+   "id": "fortress",
+   "title": "Fortress",
+   "description": "Build 10 Bunkers, Photon Cannons or Sunken Colonies in one game.",
+   "points": 15,
+   "group": "Bases",
+   "rule": {
+    "finished": true,
+    "built": {
+     "unit": [
+      "Bunker",
+      "Photon Cannon",
+      "Sunken Colony"
+     ],
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "hive",
+   "title": "Hive Mind",
+   "description": "Morph a Hive.",
+   "points": 10,
+   "group": "Bases",
+   "rule": {
+    "finished": true,
+    "built": {
+     "unit": "Hive",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "total-build500",
+   "title": "City Planner",
+   "description": "Place 500 buildings across all your games.",
+   "points": 20,
+   "group": "Bases",
+   "rule": {
+    "finished": true,
+    "totalBuildings": 500
+   }
+  },
+  {
+   "id": "tech-tank-siege-mode",
+   "title": "Siege Mode Engaged",
+   "description": "Research Tank Siege Mode.",
+   "points": 5,
+   "group": "Research",
+   "rule": {
+    "finished": true,
+    "researched": "Tank Siege Mode"
+   }
+  },
+  {
+   "id": "tech-psionic-storm",
+   "title": "Storm Caller",
+   "description": "Research Psionic Storm.",
+   "points": 10,
+   "group": "Research",
+   "rule": {
+    "finished": true,
+    "researched": "Psionic Storm"
+   }
+  },
+  {
+   "id": "tech-yamato-gun",
+   "title": "Yamato Cannon",
+   "description": "Research Yamato Gun.",
+   "points": 10,
+   "group": "Research",
+   "rule": {
+    "finished": true,
+    "researched": "Yamato Gun"
+   }
+  },
+  {
+   "id": "tech-plague",
+   "title": "Pestilence",
+   "description": "Research Plague.",
+   "points": 10,
+   "group": "Research",
+   "rule": {
+    "finished": true,
+    "researched": "Plague"
+   }
+  },
+  {
+   "id": "tech-recall",
+   "title": "Recall!",
+   "description": "Research Recall.",
+   "points": 10,
+   "group": "Research",
+   "rule": {
+    "finished": true,
+    "researched": "Recall"
+   }
+  },
+  {
+   "id": "tech-stasis-field",
+   "title": "Frozen in Time",
+   "description": "Research Stasis Field.",
+   "points": 10,
+   "group": "Research",
+   "rule": {
+    "finished": true,
+    "researched": "Stasis Field"
+   }
+  },
+  {
+   "id": "tech-lurker-aspect",
+   "title": "Lurker Evolution",
+   "description": "Research Lurker Aspect.",
+   "points": 10,
+   "group": "Research",
+   "rule": {
+    "finished": true,
+    "researched": "Lurker Aspect"
+   }
+  },
+  {
+   "id": "tech-mind-control",
+   "title": "Mind Control",
+   "description": "Research Mind Control.",
+   "points": 15,
+   "group": "Research",
+   "rule": {
+    "finished": true,
+    "researched": "Mind Control"
+   }
+  },
+  {
+   "id": "tech-irradiate",
+   "title": "Irradiated",
+   "description": "Research Irradiate.",
+   "points": 10,
+   "group": "Research",
+   "rule": {
+    "finished": true,
+    "researched": "Irradiate"
+   }
+  },
+  {
+   "id": "tech-lockdown",
+   "title": "Locked Down",
+   "description": "Research Lockdown.",
+   "points": 10,
+   "group": "Research",
+   "rule": {
+    "finished": true,
+    "researched": "Lockdown"
+   }
+  },
+  {
+   "id": "tech-dark-swarm",
+   "title": "Dark Swarm",
+   "description": "Research Dark Swarm.",
+   "points": 10,
+   "group": "Research",
+   "rule": {
+    "finished": true,
+    "researched": "Dark Swarm"
+   }
+  },
+  {
+   "id": "tech-disruption-web",
+   "title": "Web of Disruption",
+   "description": "Research Disruption Web.",
+   "points": 10,
+   "group": "Research",
+   "rule": {
+    "finished": true,
+    "researched": "Disruption Web"
+   }
+  },
+  {
+   "id": "upgrades5",
+   "title": "Well Equipped",
+   "description": "Start 5 different upgrades in one game.",
+   "points": 10,
+   "group": "Research",
+   "rule": {
+    "finished": true,
+    "upgrades": 5
+   }
+  },
+  {
+   "id": "upgrades10",
+   "title": "Fully Upgraded",
+   "description": "Start 10 different upgrades in one game.",
+   "points": 20,
+   "group": "Research",
+   "rule": {
+    "finished": true,
+    "upgrades": 10
+   }
+  },
+  {
+   "id": "win-bc",
+   "title": "Victory from the Sky",
+   "description": "Win a game in which you built a Battlecruiser.",
+   "points": 15,
+   "group": "Victories",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "trained": {
+     "unit": "Battlecruiser",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "x-terran-all-units",
+   "title": "Full Arsenal",
+   "description": "Over all your games, make every Terran unit at least once (13).",
+   "points": 40,
+   "group": "Collection: Terran",
+   "rule": {
+    "everUnits": [
+     "SCV",
+     "Marine",
+     "Firebat",
+     "Medic",
+     "Ghost",
+     "Vulture",
+     "Siege Tank (Tank Mode)",
+     "Goliath",
+     "Wraith",
+     "Dropship",
+     "Science Vessel",
+     "Valkyrie",
+     "Battlecruiser"
+    ]
+   }
+  },
+  {
+   "id": "x-terran-all-buildings",
+   "title": "Every Structure Standing",
+   "description": "Over all your games, build every Terran structure at least once (17).",
+   "points": 35,
+   "group": "Collection: Terran",
+   "rule": {
+    "everBuildings": [
+     "Command Center",
+     "Supply Depot",
+     "Refinery",
+     "Barracks",
+     "Engineering Bay",
+     "Bunker",
+     "Academy",
+     "Missile Turret",
+     "Factory",
+     "Starport",
+     "Armory",
+     "Science Facility",
+     "Machine Shop",
+     "Control Tower",
+     "Covert Ops",
+     "Physics Lab",
+     "Nuclear Silo"
+    ]
+   }
+  },
+  {
+   "id": "x-zerg-all-units",
+   "title": "Every Strain",
+   "description": "Over all your games, make every Zerg unit at least once (12).",
+   "points": 40,
+   "group": "Collection: Zerg",
+   "rule": {
+    "everUnits": [
+     "Drone",
+     "Overlord",
+     "Zergling",
+     "Hydralisk",
+     "Lurker",
+     "Mutalisk",
+     "Guardian",
+     "Devourer",
+     "Scourge",
+     "Queen",
+     "Ultralisk",
+     "Defiler"
+    ]
+   }
+  },
+  {
+   "id": "x-zerg-all-buildings",
+   "title": "The Whole Hive",
+   "description": "Over all your games, build every Zerg structure at least once (16).",
+   "points": 35,
+   "group": "Collection: Zerg",
+   "rule": {
+    "everBuildings": [
+     "Hatchery",
+     "Lair",
+     "Hive",
+     "Creep Colony",
+     "Sunken Colony",
+     "Spore Colony",
+     "Extractor",
+     "Spawning Pool",
+     "Evolution Chamber",
+     "Hydralisk Den",
+     "Spire",
+     "Greater Spire",
+     "Queens Nest",
+     "Ultralisk Cavern",
+     "Defiler Mound",
+     "Nydus Canal"
+    ]
+   }
+  },
+  {
+   "id": "x-protoss-all-units",
+   "title": "Khala United",
+   "description": "Over all your games, make every Protoss unit at least once (14).",
+   "points": 40,
+   "group": "Collection: Protoss",
+   "rule": {
+    "everUnits": [
+     "Probe",
+     "Zealot",
+     "Dragoon",
+     "High Templar",
+     "Dark Templar",
+     "Archon",
+     "Dark Archon",
+     "Shuttle",
+     "Reaver",
+     "Observer",
+     "Scout",
+     "Corsair",
+     "Carrier",
+     "Arbiter"
+    ]
+   }
+  },
+  {
+   "id": "x-protoss-all-buildings",
+   "title": "Every Gate Open",
+   "description": "Over all your games, build every Protoss structure at least once (16).",
+   "points": 35,
+   "group": "Collection: Protoss",
+   "rule": {
+    "everBuildings": [
+     "Nexus",
+     "Pylon",
+     "Assimilator",
+     "Gateway",
+     "Forge",
+     "Photon Cannon",
+     "Cybernetics Core",
+     "Shield Battery",
+     "Robotics Facility",
+     "Stargate",
+     "Citadel of Adun",
+     "Robotics Support Bay",
+     "Fleet Beacon",
+     "Templar Archives",
+     "Observatory",
+     "Arbiter Tribunal"
+    ]
+   }
+  },
+  {
+   "id": "x-bw-medic",
+   "title": "Field Medic",
+   "description": "Make a Medic (Brood War).",
+   "points": 10,
+   "group": "Brood War",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Medic",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "x-bw-valkyrie",
+   "title": "Valkyrie Wing",
+   "description": "Make a Valkyrie (Brood War).",
+   "points": 10,
+   "group": "Brood War",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Valkyrie",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "x-bw-lurker",
+   "title": "Lurking Below",
+   "description": "Make a Lurker (Brood War).",
+   "points": 10,
+   "group": "Brood War",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Lurker",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "x-bw-devourer",
+   "title": "Acid Spores",
+   "description": "Make a Devourer (Brood War).",
+   "points": 10,
+   "group": "Brood War",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Devourer",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "x-bw-corsair",
+   "title": "Disruption Web",
+   "description": "Make a Corsair (Brood War).",
+   "points": 10,
+   "group": "Brood War",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Corsair",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "x-bw-dark-templar",
+   "title": "Shadow Blades",
+   "description": "Make a Dark Templar (Brood War).",
+   "points": 10,
+   "group": "Brood War",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Dark Templar",
+     "n": 1
+    }
+   }
+  },
+  {
+   "id": "x-bw-dark-archon-5",
+   "title": "Mind Control",
+   "description": "Merge 5 Dark Archons over all your games.",
+   "points": 15,
+   "group": "Brood War",
+   "rule": {
+    "totalUnit": {
+     "unit": "Dark Archon",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "x-win-terran-vs-terran",
+   "title": "TvT",
+   "description": "Win as Terran against a Terran opponent.",
+   "points": 10,
+   "group": "Matchups",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "race": "Terran",
+    "vsRace": "Terran"
+   }
+  },
+  {
+   "id": "x-win-terran-vs-zerg",
+   "title": "TvZ",
+   "description": "Win as Terran against a Zerg opponent.",
+   "points": 10,
+   "group": "Matchups",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "race": "Terran",
+    "vsRace": "Zerg"
+   }
+  },
+  {
+   "id": "x-win-terran-vs-protoss",
+   "title": "TvP",
+   "description": "Win as Terran against a Protoss opponent.",
+   "points": 10,
+   "group": "Matchups",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "race": "Terran",
+    "vsRace": "Protoss"
+   }
+  },
+  {
+   "id": "x-terran-all-matchups",
+   "title": "Terran Supremacy",
+   "description": "As Terran, beat all three races (over all your games).",
+   "points": 25,
+   "group": "Matchups",
+   "rule": {
+    "allMatchups": "Terran"
+   }
+  },
+  {
+   "id": "x-win-zerg-vs-terran",
+   "title": "ZvT",
+   "description": "Win as Zerg against a Terran opponent.",
+   "points": 10,
+   "group": "Matchups",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "race": "Zerg",
+    "vsRace": "Terran"
+   }
+  },
+  {
+   "id": "x-win-zerg-vs-zerg",
+   "title": "ZvZ",
+   "description": "Win as Zerg against a Zerg opponent.",
+   "points": 10,
+   "group": "Matchups",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "race": "Zerg",
+    "vsRace": "Zerg"
+   }
+  },
+  {
+   "id": "x-win-zerg-vs-protoss",
+   "title": "ZvP",
+   "description": "Win as Zerg against a Protoss opponent.",
+   "points": 10,
+   "group": "Matchups",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "race": "Zerg",
+    "vsRace": "Protoss"
+   }
+  },
+  {
+   "id": "x-zerg-all-matchups",
+   "title": "Zerg Supremacy",
+   "description": "As Zerg, beat all three races (over all your games).",
+   "points": 25,
+   "group": "Matchups",
+   "rule": {
+    "allMatchups": "Zerg"
+   }
+  },
+  {
+   "id": "x-win-protoss-vs-terran",
+   "title": "PvT",
+   "description": "Win as Protoss against a Terran opponent.",
+   "points": 10,
+   "group": "Matchups",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "race": "Protoss",
+    "vsRace": "Terran"
+   }
+  },
+  {
+   "id": "x-win-protoss-vs-zerg",
+   "title": "PvZ",
+   "description": "Win as Protoss against a Zerg opponent.",
+   "points": 10,
+   "group": "Matchups",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "race": "Protoss",
+    "vsRace": "Zerg"
+   }
+  },
+  {
+   "id": "x-win-protoss-vs-protoss",
+   "title": "PvP",
+   "description": "Win as Protoss against a Protoss opponent.",
+   "points": 10,
+   "group": "Matchups",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "race": "Protoss",
+    "vsRace": "Protoss"
+   }
+  },
+  {
+   "id": "x-protoss-all-matchups",
+   "title": "Protoss Supremacy",
+   "description": "As Protoss, beat all three races (over all your games).",
+   "points": 25,
+   "group": "Matchups",
+   "rule": {
+    "allMatchups": "Protoss"
+   }
+  },
+  {
+   "id": "x-ffa-7",
+   "title": "Last One Standing",
+   "description": "Win a game against 7 computer opponents.",
+   "points": 40,
+   "group": "Challenges",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "minComputerOpponents": 7
+   }
+  },
+  {
+   "id": "x-cpu-3",
+   "title": "Outnumbered",
+   "description": "Win a game against 3 or more computer opponents.",
+   "points": 20,
+   "group": "Challenges",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "minComputerOpponents": 3
+   }
+  },
+  {
+   "id": "x-rush-8",
+   "title": "Rush Hour",
+   "description": "Win in under 8 minutes.",
+   "points": 25,
+   "group": "Challenges",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "maxMinutes": 8
+   }
+  },
+  {
+   "id": "x-marathon",
+   "title": "Marathon",
+   "description": "Win a game that lasts an hour or more.",
+   "points": 20,
+   "group": "Challenges",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "minMinutes": 60
+   }
+  },
+  {
+   "id": "x-bc-fleet",
+   "title": "Battlecruiser Operational",
+   "description": "Make 12 Battlecruisers in one game.",
+   "points": 25,
+   "group": "Challenges",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Battlecruiser",
+     "n": 12
+    }
+   }
+  },
+  {
+   "id": "x-carrier-fleet",
+   "title": "Carrier Has Arrived",
+   "description": "Make 12 Carriers in one game.",
+   "points": 25,
+   "group": "Challenges",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Carrier",
+     "n": 12
+    }
+   }
+  },
+  {
+   "id": "x-ling-flood",
+   "title": "Zergling Flood",
+   "description": "Make 200 Zerglings in one game.",
+   "points": 20,
+   "group": "Challenges",
+   "rule": {
+    "finished": true,
+    "trained": {
+     "unit": "Zergling",
+     "n": 200
+    }
+   }
+  },
+  {
+   "id": "x-apm-150",
+   "title": "Fast Hands",
+   "description": "Finish a game with 150+ APM.",
+   "points": 20,
+   "group": "Challenges",
+   "rule": {
+    "finished": true,
+    "minApm": 150
+   }
+  },
+  {
+   "id": "x-apm-250",
+   "title": "Pro Gamer Hands",
+   "description": "Finish a game with 250+ APM.",
+   "points": 35,
+   "group": "Challenges",
+   "rule": {
+    "finished": true,
+    "minApm": 250
+   }
+  },
+  {
+   "id": "x-map-lost-temple",
+   "title": "Temple Run",
+   "description": "Win on Lost Temple.",
+   "points": 10,
+   "group": "Famous maps",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Lost Temple"
+   }
+  },
+  {
+   "id": "x-map-big-game-hunters",
+   "title": "Big Game",
+   "description": "Win on Big Game Hunters.",
+   "points": 10,
+   "group": "Famous maps",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Big Game Hunters"
+   }
+  },
+  {
+   "id": "x-map-python",
+   "title": "Charmer",
+   "description": "Win on Python.",
+   "points": 10,
+   "group": "Famous maps",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Python"
+   }
+  },
+  {
+   "id": "x-map-fighting-spirit",
+   "title": "Fighting Spirit",
+   "description": "Win on Fighting Spirit.",
+   "points": 10,
+   "group": "Famous maps",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Fighting Spirit"
+   }
+  },
+  {
+   "id": "x-map-challenger",
+   "title": "Challenger Approaching",
+   "description": "Win on Challenger.",
+   "points": 10,
+   "group": "Famous maps",
+   "rule": {
+    "finished": true,
+    "win": true,
+    "map": "Challenger"
+   }
+  },
+  {
+   "id": "x-wins-50",
+   "title": "Seasoned Commander",
+   "description": "Win 50 games.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "totalWins": 50
+   }
+  },
+  {
+   "id": "x-wins-100",
+   "title": "Hundred Victories",
+   "description": "Win 100 games.",
+   "points": 30,
+   "group": "Lifetime",
+   "rule": {
+    "totalWins": 100
+   }
+  },
+  {
+   "id": "x-wins-250",
+   "title": "Legend of Korhal",
+   "description": "Win 250 games.",
+   "points": 50,
+   "group": "Lifetime",
+   "rule": {
+    "totalWins": 250
+   }
+  },
+  {
+   "id": "x-terran-wins-25",
+   "title": "Terran Veteran",
+   "description": "Win 25 games as Terran.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "raceWins": {
+     "race": "Terran",
+     "n": 25
+    }
+   }
+  },
+  {
+   "id": "x-zerg-wins-25",
+   "title": "Zerg Veteran",
+   "description": "Win 25 games as Zerg.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "raceWins": {
+     "race": "Zerg",
+     "n": 25
+    }
+   }
+  },
+  {
+   "id": "x-protoss-wins-25",
+   "title": "Protoss Veteran",
+   "description": "Win 25 games as Protoss.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "raceWins": {
+     "race": "Protoss",
+     "n": 25
+    }
+   }
+  },
+  {
+   "id": "x-army-1000",
+   "title": "Mobilised",
+   "description": "Make 1,000 army units over all your games.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "totalArmy": 1000
+   }
+  },
+  {
+   "id": "x-army-5000",
+   "title": "Total War",
+   "description": "Make 5,000 army units over all your games.",
+   "points": 30,
+   "group": "Lifetime",
+   "rule": {
+    "totalArmy": 5000
+   }
+  },
+  {
+   "id": "x-marines-1000",
+   "title": "You Wanna Piece of Me?",
+   "description": "Make 1,000 Marines over all your games.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "totalUnit": {
+     "unit": "Marine",
+     "n": 1000
+    }
+   }
+  },
+  {
+   "id": "x-zerglings-2000",
+   "title": "Endless Swarm",
+   "description": "Make 2,000 Zerglings over all your games.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "totalUnit": {
+     "unit": "Zergling",
+     "n": 2000
+    }
+   }
+  },
+  {
+   "id": "x-zealots-500",
+   "title": "My Life for Aiur",
+   "description": "Make 500 Zealots over all your games.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "totalUnit": {
+     "unit": "Zealot",
+     "n": 500
+    }
+   }
+  },
+  {
+   "id": "x-archons-25",
+   "title": "Power Overwhelming",
+   "description": "Merge 25 Archons or Dark Archons over all your games.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "totalArchons": 25
+   }
+  },
+  {
+   "id": "x-c-terran-1",
+   "title": "Wasteland",
+   "description": "Rebel Yell: beat mission 1, Wasteland. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Rebel Yell",
+   "rule": {
+    "scCampaign": "terran",
+    "reach": 2
+   }
+  },
+  {
+   "id": "x-c-terran-2",
+   "title": "Backwater Station",
+   "description": "Rebel Yell: beat mission 2, Backwater Station. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Rebel Yell",
+   "rule": {
+    "scCampaign": "terran",
+    "reach": 3
+   }
+  },
+  {
+   "id": "x-c-terran-3",
+   "title": "Desperate Alliance",
+   "description": "Rebel Yell: beat mission 3, Desperate Alliance. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Rebel Yell",
+   "rule": {
+    "scCampaign": "terran",
+    "reach": 4
+   }
+  },
+  {
+   "id": "x-c-terran-4",
+   "title": "Jacob's Installation",
+   "description": "Rebel Yell: beat mission 4, Jacob's Installation. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Rebel Yell",
+   "rule": {
+    "scCampaign": "terran",
+    "reach": 5
+   }
+  },
+  {
+   "id": "x-c-terran-5",
+   "title": "Revolution",
+   "description": "Rebel Yell: beat mission 5, Revolution. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Rebel Yell",
+   "rule": {
+    "scCampaign": "terran",
+    "reach": 6
+   }
+  },
+  {
+   "id": "x-c-terran-6",
+   "title": "Norad II",
+   "description": "Rebel Yell: beat mission 6, Norad II. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Rebel Yell",
+   "rule": {
+    "scCampaign": "terran",
+    "reach": 7
+   }
+  },
+  {
+   "id": "x-c-terran-7",
+   "title": "The Trump Card",
+   "description": "Rebel Yell: beat mission 7, The Trump Card. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Rebel Yell",
+   "rule": {
+    "scCampaign": "terran",
+    "reach": 8
+   }
+  },
+  {
+   "id": "x-c-terran-8",
+   "title": "The Big Push",
+   "description": "Rebel Yell: beat mission 8, The Big Push. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Rebel Yell",
+   "rule": {
+    "scCampaign": "terran",
+    "reach": 9
+   }
+  },
+  {
+   "id": "x-c-terran-9",
+   "title": "New Gettysburg",
+   "description": "Rebel Yell: beat mission 9, New Gettysburg. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Rebel Yell",
+   "rule": {
+    "scCampaign": "terran",
+    "reach": 10
+   }
+  },
+  {
+   "id": "x-c-terran-final",
+   "title": "The Hammer Falls Awaits",
+   "description": "Rebel Yell: reach the final mission, The Hammer Falls. (Save a game in it.)",
+   "points": 20,
+   "group": "Campaign: Rebel Yell",
+   "rule": {
+    "scCampaign": "terran",
+    "reach": 10
+   }
+  },
+  {
+   "id": "x-c-zerg-1",
+   "title": "Among the Ruins",
+   "description": "Overmind: beat mission 1, Among the Ruins. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Overmind",
+   "rule": {
+    "scCampaign": "zerg",
+    "reach": 2
+   }
+  },
+  {
+   "id": "x-c-zerg-2",
+   "title": "Egression",
+   "description": "Overmind: beat mission 2, Egression. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Overmind",
+   "rule": {
+    "scCampaign": "zerg",
+    "reach": 3
+   }
+  },
+  {
+   "id": "x-c-zerg-3",
+   "title": "The New Dominion",
+   "description": "Overmind: beat mission 3, The New Dominion. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Overmind",
+   "rule": {
+    "scCampaign": "zerg",
+    "reach": 4
+   }
+  },
+  {
+   "id": "x-c-zerg-4",
+   "title": "Agent of the Swarm",
+   "description": "Overmind: beat mission 4, Agent of the Swarm. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Overmind",
+   "rule": {
+    "scCampaign": "zerg",
+    "reach": 5
+   }
+  },
+  {
+   "id": "x-c-zerg-5",
+   "title": "The Amerigo",
+   "description": "Overmind: beat mission 5, The Amerigo. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Overmind",
+   "rule": {
+    "scCampaign": "zerg",
+    "reach": 6
+   }
+  },
+  {
+   "id": "x-c-zerg-6",
+   "title": "The Dark Templar",
+   "description": "Overmind: beat mission 6, The Dark Templar. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Overmind",
+   "rule": {
+    "scCampaign": "zerg",
+    "reach": 7
+   }
+  },
+  {
+   "id": "x-c-zerg-7",
+   "title": "The Culling",
+   "description": "Overmind: beat mission 7, The Culling. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Overmind",
+   "rule": {
+    "scCampaign": "zerg",
+    "reach": 8
+   }
+  },
+  {
+   "id": "x-c-zerg-8",
+   "title": "Eye for an Eye",
+   "description": "Overmind: beat mission 8, Eye for an Eye. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Overmind",
+   "rule": {
+    "scCampaign": "zerg",
+    "reach": 9
+   }
+  },
+  {
+   "id": "x-c-zerg-9",
+   "title": "The Invasion of Aiur",
+   "description": "Overmind: beat mission 9, The Invasion of Aiur. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: Overmind",
+   "rule": {
+    "scCampaign": "zerg",
+    "reach": 10
+   }
+  },
+  {
+   "id": "x-c-zerg-final",
+   "title": "Full Circle Awaits",
+   "description": "Overmind: reach the final mission, Full Circle. (Save a game in it.)",
+   "points": 20,
+   "group": "Campaign: Overmind",
+   "rule": {
+    "scCampaign": "zerg",
+    "reach": 10
+   }
+  },
+  {
+   "id": "x-c-protoss-1",
+   "title": "First Strike",
+   "description": "The Fall: beat mission 1, First Strike. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: The Fall",
+   "rule": {
+    "scCampaign": "protoss",
+    "reach": 2
+   }
+  },
+  {
+   "id": "x-c-protoss-2",
+   "title": "Into the Flames",
+   "description": "The Fall: beat mission 2, Into the Flames. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: The Fall",
+   "rule": {
+    "scCampaign": "protoss",
+    "reach": 3
+   }
+  },
+  {
+   "id": "x-c-protoss-3",
+   "title": "Higher Ground",
+   "description": "The Fall: beat mission 3, Higher Ground. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: The Fall",
+   "rule": {
+    "scCampaign": "protoss",
+    "reach": 4
+   }
+  },
+  {
+   "id": "x-c-protoss-4",
+   "title": "The Hunt for Tassadar",
+   "description": "The Fall: beat mission 4, The Hunt for Tassadar. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: The Fall",
+   "rule": {
+    "scCampaign": "protoss",
+    "reach": 5
+   }
+  },
+  {
+   "id": "x-c-protoss-5",
+   "title": "Choosing Sides",
+   "description": "The Fall: beat mission 5, Choosing Sides. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: The Fall",
+   "rule": {
+    "scCampaign": "protoss",
+    "reach": 6
+   }
+  },
+  {
+   "id": "x-c-protoss-6",
+   "title": "Into the Darkness",
+   "description": "The Fall: beat mission 6, Into the Darkness. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: The Fall",
+   "rule": {
+    "scCampaign": "protoss",
+    "reach": 7
+   }
+  },
+  {
+   "id": "x-c-protoss-7",
+   "title": "Homeland",
+   "description": "The Fall: beat mission 7, Homeland. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: The Fall",
+   "rule": {
+    "scCampaign": "protoss",
+    "reach": 8
+   }
+  },
+  {
+   "id": "x-c-protoss-8",
+   "title": "The Trial of Tassadar",
+   "description": "The Fall: beat mission 8, The Trial of Tassadar. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: The Fall",
+   "rule": {
+    "scCampaign": "protoss",
+    "reach": 9
+   }
+  },
+  {
+   "id": "x-c-protoss-9",
+   "title": "Shadow Hunters",
+   "description": "The Fall: beat mission 9, Shadow Hunters. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign: The Fall",
+   "rule": {
+    "scCampaign": "protoss",
+    "reach": 10
+   }
+  },
+  {
+   "id": "x-c-protoss-final",
+   "title": "Eye of the Storm Awaits",
+   "description": "The Fall: reach the final mission, Eye of the Storm. (Save a game in it.)",
+   "points": 20,
+   "group": "Campaign: The Fall",
+   "rule": {
+    "scCampaign": "protoss",
+    "reach": 10
+   }
+  },
+  {
+   "id": "x-c-xprotoss-2",
+   "title": "The Stand: Opening Gambit",
+   "description": "Brood War, The Stand: reach mission 2. (Save a game in it.)",
+   "points": 10,
+   "group": "Campaign: The Stand (Brood War)",
+   "rule": {
+    "scCampaign": "xprotoss",
+    "reach": 2
+   }
+  },
+  {
+   "id": "x-c-xprotoss-5",
+   "title": "The Stand: Deep in the War",
+   "description": "Brood War, The Stand: reach mission 5. (Save a game in it.)",
+   "points": 15,
+   "group": "Campaign: The Stand (Brood War)",
+   "rule": {
+    "scCampaign": "xprotoss",
+    "reach": 5
+   }
+  },
+  {
+   "id": "x-c-xprotoss-8",
+   "title": "The Stand: Endgame",
+   "description": "Brood War, The Stand: reach mission 8. (Save a game in it.)",
+   "points": 20,
+   "group": "Campaign: The Stand (Brood War)",
+   "rule": {
+    "scCampaign": "xprotoss",
+    "reach": 8
+   }
+  },
+  {
+   "id": "x-c-xterran-2",
+   "title": "The Iron Fist: Opening Gambit",
+   "description": "Brood War, The Iron Fist: reach mission 2. (Save a game in it.)",
+   "points": 10,
+   "group": "Campaign: The Iron Fist (Brood War)",
+   "rule": {
+    "scCampaign": "xterran",
+    "reach": 2
+   }
+  },
+  {
+   "id": "x-c-xterran-5",
+   "title": "The Iron Fist: Deep in the War",
+   "description": "Brood War, The Iron Fist: reach mission 5. (Save a game in it.)",
+   "points": 15,
+   "group": "Campaign: The Iron Fist (Brood War)",
+   "rule": {
+    "scCampaign": "xterran",
+    "reach": 5
+   }
+  },
+  {
+   "id": "x-c-xterran-8",
+   "title": "The Iron Fist: Endgame",
+   "description": "Brood War, The Iron Fist: reach mission 8. (Save a game in it.)",
+   "points": 20,
+   "group": "Campaign: The Iron Fist (Brood War)",
+   "rule": {
+    "scCampaign": "xterran",
+    "reach": 8
+   }
+  },
+  {
+   "id": "x-c-xzerg-2",
+   "title": "Queen of Blades: Opening Gambit",
+   "description": "Brood War, Queen of Blades: reach mission 2. (Save a game in it.)",
+   "points": 10,
+   "group": "Campaign: Queen of Blades (Brood War)",
+   "rule": {
+    "scCampaign": "xzerg",
+    "reach": 2
+   }
+  },
+  {
+   "id": "x-c-xzerg-5",
+   "title": "Queen of Blades: Deep in the War",
+   "description": "Brood War, Queen of Blades: reach mission 5. (Save a game in it.)",
+   "points": 15,
+   "group": "Campaign: Queen of Blades (Brood War)",
+   "rule": {
+    "scCampaign": "xzerg",
+    "reach": 5
+   }
+  },
+  {
+   "id": "x-c-xzerg-8",
+   "title": "Queen of Blades: Endgame",
+   "description": "Brood War, Queen of Blades: reach mission 8. (Save a game in it.)",
+   "points": 20,
+   "group": "Campaign: Queen of Blades (Brood War)",
+   "rule": {
+    "scCampaign": "xzerg",
+    "reach": 8
+   }
+  }
+ ],
+ "testGuide": [
+  {
+   "title": "Play a skirmish against the computer",
+   "detail": "Single Player \u2192 Skirmish. Play until you win (or quit). When the score screen appears, \"Last game\" below fills in."
+  },
+  {
+   "title": "Check the result",
+   "detail": "\"Result\" should say Victory if you won. If it says Unknown, copy the test report and send it to Claude."
+  },
+  {
+   "title": "Look for the popup",
+   "detail": "GG and First Victory should pop up on the score screen."
+  }
+ ]
+}

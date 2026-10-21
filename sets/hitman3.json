@@ -1,0 +1,375 @@
+{
+ "id": "hitman3",
+ "title": "Hitman: Contracts",
+ "exeNames": [
+  "hitmancontracts.exe"
+ ],
+ "md5": [
+  "e517938fdb7b8a9c369b45fd6c0fc284"
+ ],
+ "genericExeName": true,
+ "linkFiles": [
+  "HitmanContracts.exe"
+ ],
+ "version": 1,
+ "pollHz": 10,
+ "settleSeconds": 2,
+ "notes": [
+  "Each mission's achievement unlocks when the next mission starts loading.",
+  "Read-only: Vault watches the game's memory and never changes it.",
+  "Addresses come from the community speedrun auto-splitters for the Steam version.",
+  "Save achievements come from your save games: each one names the mission it was made in. Saving is limited on harder difficulties."
+ ],
+ "watches": [
+  {
+   "id": "scene",
+   "label": "Current scene number",
+   "path": [
+    "{hitmancontracts.exe+ca844}",
+    "4"
+   ],
+   "size": "u16"
+  }
+ ],
+ "testGuide": [
+  {
+   "title": "Start Hitman: Contracts",
+   "detail": "Start or load a mission. \"Current scene number\" should show a number that changes between missions."
+  },
+  {
+   "title": "Finish a mission",
+   "detail": "When the next mission loads, that mission's achievement should pop up. If not, send a test report."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "mission-1",
+   "title": "Asylum Aftermath",
+   "description": "Escape the asylum in Asylum Aftermath.",
+   "points": 10,
+   "group": "Romania",
+   "memaddr": "I:0xX{hitmancontracts.exe+ca844}_d0x0004=731_I:0xX{hitmancontracts.exe+ca844}_0x0004=981"
+  },
+  {
+   "id": "mission-2",
+   "title": "The Meat King's Party",
+   "description": "Complete The Meat King's Party.",
+   "points": 10,
+   "group": "Romania",
+   "memaddr": "I:0xX{hitmancontracts.exe+ca844}_d0x0004=981_I:0xX{hitmancontracts.exe+ca844}_0x0004=728"
+  },
+  {
+   "id": "mission-3",
+   "title": "The Bjarkhov Bomb",
+   "description": "Complete The Bjarkhov Bomb.",
+   "points": 10,
+   "group": "Siberia",
+   "memaddr": "I:0xX{hitmancontracts.exe+ca844}_d0x0004=728_I:0xX{hitmancontracts.exe+ca844}_0x0004=698"
+  },
+  {
+   "id": "mission-4",
+   "title": "Beldingford Manor",
+   "description": "Complete Beldingford Manor.",
+   "points": 10,
+   "group": "England",
+   "memaddr": "I:0xX{hitmancontracts.exe+ca844}_d0x0004=698_I:0xX{hitmancontracts.exe+ca844}_0x0004=735"
+  },
+  {
+   "id": "mission-5",
+   "title": "Rendezvous in Rotterdam",
+   "description": "Complete Rendezvous in Rotterdam.",
+   "points": 10,
+   "group": "Rotterdam",
+   "memaddr": "I:0xX{hitmancontracts.exe+ca844}_d0x0004=735_I:0xX{hitmancontracts.exe+ca844}_0x0004=886"
+  },
+  {
+   "id": "mission-6",
+   "title": "Deadly Cargo",
+   "description": "Complete Deadly Cargo.",
+   "points": 10,
+   "group": "Rotterdam",
+   "memaddr": "I:0xX{hitmancontracts.exe+ca844}_d0x0004=886_I:0xX{hitmancontracts.exe+ca844}_0x0004=894"
+  },
+  {
+   "id": "mission-7",
+   "title": "Traditions of the Trade",
+   "description": "Complete Traditions of the Trade.",
+   "points": 10,
+   "group": "Budapest",
+   "memaddr": "I:0xX{hitmancontracts.exe+ca844}_d0x0004=894_I:0xX{hitmancontracts.exe+ca844}_0x0004=886"
+  },
+  {
+   "id": "mission-8",
+   "title": "Slaying a Dragon",
+   "description": "Complete Slaying a Dragon.",
+   "points": 10,
+   "group": "Hong Kong",
+   "memaddr": "I:0xX{hitmancontracts.exe+ca844}_d0x0004=886_I:0xX{hitmancontracts.exe+ca844}_0x0004=920"
+  },
+  {
+   "id": "mission-9",
+   "title": "The Wang Fou Incident",
+   "description": "Complete The Wang Fou Incident.",
+   "points": 10,
+   "group": "Hong Kong",
+   "memaddr": "I:0xX{hitmancontracts.exe+ca844}_d0x0004=920_I:0xX{hitmancontracts.exe+ca844}_0x0004=731"
+  },
+  {
+   "id": "mission-10",
+   "title": "The Seafood Massacre",
+   "description": "Complete The Seafood Massacre.",
+   "points": 10,
+   "group": "Hong Kong",
+   "memaddr": "I:0xX{hitmancontracts.exe+ca844}_d0x0004=731_I:0xX{hitmancontracts.exe+ca844}_0x0004=905"
+  },
+  {
+   "id": "mission-11",
+   "title": "Lee Hong Assassination",
+   "description": "Complete Lee Hong Assassination.",
+   "points": 10,
+   "group": "Hong Kong",
+   "memaddr": "I:0xX{hitmancontracts.exe+ca844}_d0x0004=905_I:0xX{hitmancontracts.exe+ca844}_0x0004=741"
+  },
+  {
+   "id": "finale",
+   "title": "Hunter and Hunted",
+   "description": "Finish the game in Paris.",
+   "points": 50,
+   "group": "Paris",
+   "memaddr": "I:0xX{hitmancontracts.exe+181638}_0xH0000=67_I:0xX{hitmancontracts.exe+181638}_d0xH0000=0_I:0xX{hitmancontracts.exe+ca844}_0x0004=741"
+  },
+  {
+   "id": "save-c02-1",
+   "title": "Field Notes: The Bjarkhov Bomb",
+   "description": "Save your game during The Bjarkhov Bomb.",
+   "points": 5,
+   "group": "Saves: Siberia",
+   "rule": {
+    "hmSavedIn": [
+     "C02-1"
+    ]
+   }
+  },
+  {
+   "id": "save-c03-1",
+   "title": "Field Notes: Beldingford Manor",
+   "description": "Save your game during Beldingford Manor.",
+   "points": 5,
+   "group": "Saves: England",
+   "rule": {
+    "hmSavedIn": [
+     "C03-1"
+    ]
+   }
+  },
+  {
+   "id": "save-c06-1",
+   "title": "Field Notes: Rendezvous in Rotterdam",
+   "description": "Save your game during Rendezvous in Rotterdam.",
+   "points": 5,
+   "group": "Saves: Rotterdam",
+   "rule": {
+    "hmSavedIn": [
+     "C06-1"
+    ]
+   }
+  },
+  {
+   "id": "save-c06-2",
+   "title": "Field Notes: Deadly Cargo",
+   "description": "Save your game during Deadly Cargo.",
+   "points": 5,
+   "group": "Saves: Rotterdam",
+   "rule": {
+    "hmSavedIn": [
+     "C06-2"
+    ]
+   }
+  },
+  {
+   "id": "save-c07-1",
+   "title": "Field Notes: Traditions of the Trade",
+   "description": "Save your game during Traditions of the Trade.",
+   "points": 5,
+   "group": "Saves: Budapest",
+   "rule": {
+    "hmSavedIn": [
+     "C07-1"
+    ]
+   }
+  },
+  {
+   "id": "save-c08-1",
+   "title": "Field Notes: Slaying a Dragon",
+   "description": "Save your game during Slaying a Dragon.",
+   "points": 5,
+   "group": "Saves: Hong Kong",
+   "rule": {
+    "hmSavedIn": [
+     "C08-1"
+    ]
+   }
+  },
+  {
+   "id": "save-c08-2",
+   "title": "Field Notes: The Wang Fou Incident",
+   "description": "Save your game during The Wang Fou Incident.",
+   "points": 5,
+   "group": "Saves: Hong Kong",
+   "rule": {
+    "hmSavedIn": [
+     "C08-2"
+    ]
+   }
+  },
+  {
+   "id": "save-c08-3",
+   "title": "Field Notes: The Seafood Massacre",
+   "description": "Save your game during The Seafood Massacre.",
+   "points": 5,
+   "group": "Saves: Hong Kong",
+   "rule": {
+    "hmSavedIn": [
+     "C08-3"
+    ]
+   }
+  },
+  {
+   "id": "save-c08-4",
+   "title": "Field Notes: Lee Hong Assassination",
+   "description": "Save your game during Lee Hong Assassination.",
+   "points": 5,
+   "group": "Saves: Hong Kong",
+   "rule": {
+    "hmSavedIn": [
+     "C08-4"
+    ]
+   }
+  },
+  {
+   "id": "save-c09-1",
+   "title": "Field Notes: Hunter and Hunted",
+   "description": "Save your game during Hunter and Hunted.",
+   "points": 5,
+   "group": "Saves: Paris",
+   "rule": {
+    "hmSavedIn": [
+     "C09-1"
+    ]
+   }
+  },
+  {
+   "id": "saves-rotterdam",
+   "title": "Paper Trail: Rotterdam",
+   "description": "Save at least once in every Rotterdam mission.",
+   "points": 15,
+   "group": "Saves",
+   "rule": {
+    "hmSavedIn": [
+     "C06-1",
+     "C06-2"
+    ]
+   }
+  },
+  {
+   "id": "saves-hongkong",
+   "title": "Paper Trail: Hong Kong",
+   "description": "Save at least once in every Hong Kong mission.",
+   "points": 15,
+   "group": "Saves",
+   "rule": {
+    "hmSavedIn": [
+     "C08-1",
+     "C08-2",
+     "C08-3",
+     "C08-4"
+    ]
+   }
+  },
+  {
+   "id": "saves-all",
+   "title": "Meticulous Planner",
+   "description": "Save at least once in every mission.",
+   "points": 30,
+   "group": "Saves",
+   "rule": {
+    "hmSavedIn": [
+     "C02-1",
+     "C03-1",
+     "C06-1",
+     "C06-2",
+     "C07-1",
+     "C08-1",
+     "C08-2",
+     "C08-3",
+     "C08-4",
+     "C09-1"
+    ]
+   }
+  },
+  {
+   "id": "saves-10",
+   "title": "Careful Assassin",
+   "description": "Make 10 saves.",
+   "points": 10,
+   "group": "Saves",
+   "rule": {
+    "hmSaves": 10
+   }
+  },
+  {
+   "id": "saves-50",
+   "title": "Contingency Plans",
+   "description": "Make 50 saves.",
+   "points": 10,
+   "group": "Saves",
+   "rule": {
+    "hmSaves": 50
+   }
+  },
+  {
+   "id": "saves-150",
+   "title": "Never Without a Backup",
+   "description": "Make 150 saves.",
+   "points": 10,
+   "group": "Saves",
+   "rule": {
+    "hmSaves": 150
+   }
+  },
+  {
+   "id": "savefiles-3",
+   "title": "Three Identities",
+   "description": "Keep 3 different save files.",
+   "points": 10,
+   "group": "Saves",
+   "rule": {
+    "hmFiles": 3
+   }
+  },
+  {
+   "id": "savefiles-7",
+   "title": "Filing Cabinet",
+   "description": "Keep 7 different save files.",
+   "points": 10,
+   "group": "Saves",
+   "rule": {
+    "hmFiles": 7
+   }
+  },
+  {
+   "id": "save-romania",
+   "title": "Field Notes: Romania",
+   "description": "Save your game during a Romania mission (Asylum Aftermath or The Meat King's Party).",
+   "points": 5,
+   "group": "Saves: Romania",
+   "rule": {
+    "hmAnyIn": [
+     "C00-1",
+     "C01-1",
+     "C01-2"
+    ]
+   }
+  }
+ ]
+}

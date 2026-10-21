@@ -1,0 +1,945 @@
+{
+ "id": "cnc4",
+ "title": "Command & Conquer 4: Tiberian Twilight",
+ "version": 1,
+ "kind": "replay",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [
+  "steam:47700"
+ ],
+ "linkFiles": [
+  "CNC4.exe"
+ ],
+ "exeNames": [
+  "CNC4.game",
+  "CNC4.exe"
+ ],
+ "md5": [],
+ "notes": [
+  "Campaign achievements come from your profile settings file (Options.ini), which the game updates after each mission. Vault never touches the game.",
+  "Campaign on Hard counts missions finished while the campaign difficulty is set to Hard, after Vault has seen your profile once.",
+  "Skirmish achievements come from the replay the game saves after every game (Documents\\Command & Conquer 4 Tiberian Twilight\\Replays). Replays do not record who won, so these are about playing, not winning. Games shorter than 3 minutes do not count."
+ ],
+ "testGuide": [
+  {
+   "title": "Beat a campaign mission",
+   "detail": "Finish the first GDI or Nod mission and return to the menu. Its achievement should pop."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "gdi-1",
+   "title": "GDI: Spontaneous Outbursts",
+   "description": "GDI campaign: finish mission 1, Spontaneous Outbursts.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "c4": {
+     "campaign": "gdi",
+     "missions": 1
+    }
+   }
+  },
+  {
+   "id": "gdi-1-hard",
+   "title": "GDI: Spontaneous Outbursts (Hard)",
+   "description": "GDI campaign: finish mission 1, Spontaneous Outbursts, on Hard.",
+   "points": 15,
+   "group": "Campaign on Hard",
+   "rule": {
+    "c4": {
+     "campaign": "gdi",
+     "missions": 1,
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "gdi-2",
+   "title": "GDI: Cold Hard Truth",
+   "description": "GDI campaign: finish mission 2, Cold Hard Truth.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "c4": {
+     "campaign": "gdi",
+     "missions": 2
+    }
+   }
+  },
+  {
+   "id": "gdi-2-hard",
+   "title": "GDI: Cold Hard Truth (Hard)",
+   "description": "GDI campaign: finish mission 2, Cold Hard Truth, on Hard.",
+   "points": 15,
+   "group": "Campaign on Hard",
+   "rule": {
+    "c4": {
+     "campaign": "gdi",
+     "missions": 2,
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "gdi-3",
+   "title": "GDI: Transport Down",
+   "description": "GDI campaign: finish mission 3, Transport Down.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "c4": {
+     "campaign": "gdi",
+     "missions": 3
+    }
+   }
+  },
+  {
+   "id": "gdi-3-hard",
+   "title": "GDI: Transport Down (Hard)",
+   "description": "GDI campaign: finish mission 3, Transport Down, on Hard.",
+   "points": 15,
+   "group": "Campaign on Hard",
+   "rule": {
+    "c4": {
+     "campaign": "gdi",
+     "missions": 3,
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "gdi-4",
+   "title": "GDI: Insurrection",
+   "description": "GDI campaign: finish mission 4, Insurrection.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "c4": {
+     "campaign": "gdi",
+     "missions": 4
+    }
+   }
+  },
+  {
+   "id": "gdi-4-hard",
+   "title": "GDI: Insurrection (Hard)",
+   "description": "GDI campaign: finish mission 4, Insurrection, on Hard.",
+   "points": 15,
+   "group": "Campaign on Hard",
+   "rule": {
+    "c4": {
+     "campaign": "gdi",
+     "missions": 4,
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "gdi-5",
+   "title": "GDI: Lockdown",
+   "description": "GDI campaign: finish mission 5, Lockdown.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "c4": {
+     "campaign": "gdi",
+     "missions": 5
+    }
+   }
+  },
+  {
+   "id": "gdi-5-hard",
+   "title": "GDI: Lockdown (Hard)",
+   "description": "GDI campaign: finish mission 5, Lockdown, on Hard.",
+   "points": 15,
+   "group": "Campaign on Hard",
+   "rule": {
+    "c4": {
+     "campaign": "gdi",
+     "missions": 5,
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "gdi-6",
+   "title": "GDI: To Kill a Prophet",
+   "description": "GDI campaign: finish mission 6, To Kill a Prophet.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "c4": {
+     "campaign": "gdi",
+     "missions": 6
+    }
+   }
+  },
+  {
+   "id": "gdi-6-hard",
+   "title": "GDI: To Kill a Prophet (Hard)",
+   "description": "GDI campaign: finish mission 6, To Kill a Prophet, on Hard.",
+   "points": 15,
+   "group": "Campaign on Hard",
+   "rule": {
+    "c4": {
+     "campaign": "gdi",
+     "missions": 6,
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "gdi-7",
+   "title": "GDI Campaign Complete",
+   "description": "GDI campaign: finish mission 7, For All Humanity. Campaign complete!",
+   "points": 25,
+   "group": "Campaign: GDI",
+   "rule": {
+    "c4": {
+     "campaign": "gdi",
+     "missions": 7
+    }
+   }
+  },
+  {
+   "id": "gdi-hard",
+   "title": "GDI on Hard",
+   "description": "Finish the GDI campaign with the difficulty set to Hard.",
+   "points": 40,
+   "group": "Campaign on Hard",
+   "rule": {
+    "c4": {
+     "campaign": "gdi",
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "nod-1",
+   "title": "Nod: Things Fall Apart",
+   "description": "Nod campaign: finish mission 1, Things Fall Apart.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "c4": {
+     "campaign": "nod",
+     "missions": 1
+    }
+   }
+  },
+  {
+   "id": "nod-1-hard",
+   "title": "Nod: Things Fall Apart (Hard)",
+   "description": "Nod campaign: finish mission 1, Things Fall Apart, on Hard.",
+   "points": 15,
+   "group": "Campaign on Hard",
+   "rule": {
+    "c4": {
+     "campaign": "nod",
+     "missions": 1,
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "nod-2",
+   "title": "Nod: Further Complications",
+   "description": "Nod campaign: finish mission 2, Further Complications.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "c4": {
+     "campaign": "nod",
+     "missions": 2
+    }
+   }
+  },
+  {
+   "id": "nod-2-hard",
+   "title": "Nod: Further Complications (Hard)",
+   "description": "Nod campaign: finish mission 2, Further Complications, on Hard.",
+   "points": 15,
+   "group": "Campaign on Hard",
+   "rule": {
+    "c4": {
+     "campaign": "nod",
+     "missions": 2,
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "nod-3",
+   "title": "Nod: The Harder They Fall",
+   "description": "Nod campaign: finish mission 3, The Harder They Fall.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "c4": {
+     "campaign": "nod",
+     "missions": 3
+    }
+   }
+  },
+  {
+   "id": "nod-3-hard",
+   "title": "Nod: The Harder They Fall (Hard)",
+   "description": "Nod campaign: finish mission 3, The Harder They Fall, on Hard.",
+   "points": 15,
+   "group": "Campaign on Hard",
+   "rule": {
+    "c4": {
+     "campaign": "nod",
+     "missions": 3,
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "nod-4",
+   "title": "Nod: Reversal of Fortune",
+   "description": "Nod campaign: finish mission 4, Reversal of Fortune.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "c4": {
+     "campaign": "nod",
+     "missions": 4
+    }
+   }
+  },
+  {
+   "id": "nod-4-hard",
+   "title": "Nod: Reversal of Fortune (Hard)",
+   "description": "Nod campaign: finish mission 4, Reversal of Fortune, on Hard.",
+   "points": 15,
+   "group": "Campaign on Hard",
+   "rule": {
+    "c4": {
+     "campaign": "nod",
+     "missions": 4,
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "nod-5",
+   "title": "Nod: Heresy's Reward",
+   "description": "Nod campaign: finish mission 5, Heresy's Reward.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "c4": {
+     "campaign": "nod",
+     "missions": 5
+    }
+   }
+  },
+  {
+   "id": "nod-5-hard",
+   "title": "Nod: Heresy's Reward (Hard)",
+   "description": "Nod campaign: finish mission 5, Heresy's Reward, on Hard.",
+   "points": 15,
+   "group": "Campaign on Hard",
+   "rule": {
+    "c4": {
+     "campaign": "nod",
+     "missions": 5,
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "nod-6",
+   "title": "Nod: Bleed Out",
+   "description": "Nod campaign: finish mission 6, Bleed Out.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "c4": {
+     "campaign": "nod",
+     "missions": 6
+    }
+   }
+  },
+  {
+   "id": "nod-6-hard",
+   "title": "Nod: Bleed Out (Hard)",
+   "description": "Nod campaign: finish mission 6, Bleed Out, on Hard.",
+   "points": 15,
+   "group": "Campaign on Hard",
+   "rule": {
+    "c4": {
+     "campaign": "nod",
+     "missions": 6,
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "nod-7",
+   "title": "Nod Campaign Complete",
+   "description": "Nod campaign: finish mission 7, The End of All Things. Campaign complete!",
+   "points": 25,
+   "group": "Campaign: Nod",
+   "rule": {
+    "c4": {
+     "campaign": "nod",
+     "missions": 7
+    }
+   }
+  },
+  {
+   "id": "nod-hard",
+   "title": "Nod on Hard",
+   "description": "Finish the Nod campaign with the difficulty set to Hard.",
+   "points": 40,
+   "group": "Campaign on Hard",
+   "rule": {
+    "c4": {
+     "campaign": "nod",
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "both",
+   "title": "Tiberian Twilight",
+   "description": "Finish both the GDI and Nod campaigns.",
+   "points": 50,
+   "group": "Milestones",
+   "rule": {
+    "c4": {
+     "both": true
+    }
+   }
+  },
+  {
+   "id": "both-hard",
+   "title": "The End of Tiberium",
+   "description": "Finish both campaigns on Hard.",
+   "points": 75,
+   "group": "Campaign on Hard",
+   "rule": {
+    "c4": {
+     "both": true,
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "any-3",
+   "title": "Crawler Commander",
+   "description": "Finish 3 campaign missions in total, GDI and Nod together.",
+   "points": 10,
+   "group": "Milestones",
+   "rule": {
+    "c4": {
+     "anyMissions": 3
+    }
+   }
+  },
+  {
+   "id": "any-10",
+   "title": "Veteran of the Twilight",
+   "description": "Finish 10 campaign missions in total, GDI and Nod together.",
+   "points": 20,
+   "group": "Milestones",
+   "rule": {
+    "c4": {
+     "anyMissions": 10
+    }
+   }
+  },
+  {
+   "id": "sk-first",
+   "title": "Into Battle",
+   "description": "Play a skirmish game for at least 3 minutes.",
+   "points": 5,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {}
+   }
+  },
+  {
+   "id": "sk-hard",
+   "title": "Hard Target",
+   "description": "Last 10 minutes in a game against a Hard computer.",
+   "points": 15,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "vsAi": "hard",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-brutal",
+   "title": "Brutal Awakening",
+   "description": "Last 10 minutes in a game against a Brutal computer.",
+   "points": 25,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-outnumbered",
+   "title": "Outnumbered",
+   "description": "Last 10 minutes in a game against 3 or more computers.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minAi": 3,
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-brutal-5",
+   "title": "Brutal Veteran",
+   "description": "Play 5 games of 10 minutes or more against a Brutal computer.",
+   "points": 30,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "brutal": 5
+    }
+   }
+  },
+  {
+   "id": "sk-long",
+   "title": "War of Attrition",
+   "description": "Play a game that lasts 45 minutes or more.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minMinutes": 45
+    }
+   }
+  },
+  {
+   "id": "sk-human",
+   "title": "Worthy Opponent",
+   "description": "Play a game of 10 minutes or more against another person.",
+   "points": 15,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "vsHuman": true,
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-games-10",
+   "title": "Seasoned Commander",
+   "description": "Play 10 games (3 minutes or longer).",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 10
+    }
+   }
+  },
+  {
+   "id": "sk-games-25",
+   "title": "Battle Hardened",
+   "description": "Play 25 games (3 minutes or longer).",
+   "points": 25,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 25
+    }
+   }
+  },
+  {
+   "id": "sk-games-50",
+   "title": "Living Legend",
+   "description": "Play 50 games (3 minutes or longer).",
+   "points": 40,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 50
+    }
+   }
+  },
+  {
+   "id": "sk-maps-5",
+   "title": "Cartographer",
+   "description": "Play on 5 different maps.",
+   "points": 10,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "maps": 5
+    }
+   }
+  },
+  {
+   "id": "sk-maps-10",
+   "title": "World Tour",
+   "description": "Play on 10 different maps.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "maps": 10
+    }
+   }
+  },
+  {
+   "id": "sk-hours-10",
+   "title": "Ten Hours of War",
+   "description": "Spend 10 hours in skirmish games.",
+   "points": 25,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "hours": 10
+    }
+   }
+  },
+  {
+   "id": "sk-team",
+   "title": "Brothers in Arms",
+   "description": "Play a team game with a teammate for at least 10 minutes.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "withAlly": true,
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-big",
+   "title": "Total War",
+   "description": "Play a game with 6 or more players for at least 10 minutes.",
+   "points": 15,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minPlayers": 6,
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-marathon",
+   "title": "Marathon",
+   "description": "Play a game that lasts 90 minutes or more.",
+   "points": 30,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minMinutes": 90
+    }
+   }
+  },
+  {
+   "id": "sk-medium",
+   "title": "Warming Up",
+   "description": "Last 10 minutes in a game against a Medium computer.",
+   "points": 5,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "vsAi": "medium",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-brutal-3",
+   "title": "Three Brutal Foes",
+   "description": "Last 15 minutes against 3 or more computers, one of them Brutal.",
+   "points": 30,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minAi": 3,
+     "vsAi": "brutal",
+     "minMinutes": 15
+    }
+   }
+  },
+  {
+   "id": "sk-brutal-25",
+   "title": "Brutal Master",
+   "description": "Play 25 games of 10 minutes or more against a Brutal computer.",
+   "points": 50,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "brutal": 25
+    }
+   }
+  },
+  {
+   "id": "sk-games-5",
+   "title": "Getting Started",
+   "description": "Play 5 games (3 minutes or longer).",
+   "points": 5,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 5
+    }
+   }
+  },
+  {
+   "id": "sk-games-100",
+   "title": "Centurion",
+   "description": "Play 100 games (3 minutes or longer).",
+   "points": 60,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 100
+    }
+   }
+  },
+  {
+   "id": "sk-hours-1",
+   "title": "First Hour",
+   "description": "Spend 1 hour in skirmish games.",
+   "points": 5,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "hours": 1
+    }
+   }
+  },
+  {
+   "id": "sk-hours-25",
+   "title": "Twenty-Five Hours",
+   "description": "Spend 25 hours in skirmish games.",
+   "points": 40,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "hours": 25
+    }
+   }
+  },
+  {
+   "id": "sk-hours-50",
+   "title": "Fifty Hours",
+   "description": "Spend 50 hours in skirmish games.",
+   "points": 60,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "hours": 50
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_10_arctic_feasel_1",
+   "title": "Bonechill Basin",
+   "description": "Play a game on Bonechill Basin.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_10_arctic_feasel_1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_10_arctic_feasel_2",
+   "title": "Icy Cellar",
+   "description": "Play a game on Icy Cellar.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_10_arctic_feasel_2"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_10_arctic_owens_03",
+   "title": "Frigid Highlands",
+   "description": "Play a game on Frigid Highlands.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_10_arctic_owens_03"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_10_arctic_owens_04",
+   "title": "Ice Station Omega",
+   "description": "Play a game on Ice Station Omega.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_10_arctic_owens_04"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_10_arctic_owens_05",
+   "title": "Bridge to Nowhere",
+   "description": "Play a game on Bridge to Nowhere.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_10_arctic_owens_05"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_10_capitalcity_smith_1",
+   "title": "Capital Coup",
+   "description": "Play a game on Capital Coup.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_10_capitalcity_smith_1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_10_junktown_ombao_1",
+   "title": "Lost Valley",
+   "description": "Play a game on Lost Valley.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_10_junktown_ombao_1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_10_junktown_ombao_2",
+   "title": "Jaded Peaks",
+   "description": "Play a game on Jaded Peaks.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_10_junktown_ombao_2"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_10_junktown_ombao_3",
+   "title": "Withered Fracture",
+   "description": "Play a game on Withered Fracture.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_10_junktown_ombao_3"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_10_junktown_owens_03",
+   "title": "Disputed Depot",
+   "description": "Play a game on Disputed Depot.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_10_junktown_owens_03"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_10_panamerica_ombao_1",
+   "title": "Hostile Headlands",
+   "description": "Play a game on Hostile Headlands.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_10_panamerica_ombao_1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_10_panamerica_ombao_2",
+   "title": "Blood and Sand",
+   "description": "Play a game on Blood and Sand.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_10_panamerica_ombao_2"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_10_panamerica_ombao_3",
+   "title": "Pipeline Plateau",
+   "description": "Play a game on Pipeline Plateau.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_10_panamerica_ombao_3"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_10_panamerica_ombao_4",
+   "title": "Searing Mesa",
+   "description": "Play a game on Searing Mesa.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_10_panamerica_ombao_4"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_10_panamerica_owens_03",
+   "title": "Urban Renewal",
+   "description": "Play a game on Urban Renewal.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_10_panamerica_owens_03"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_10_polynesia_feasel1",
+   "title": "Afflicted Arena",
+   "description": "Play a game on Afflicted Arena.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_10_polynesia_feasel1"
+    }
+   }
+  }
+ ]
+}

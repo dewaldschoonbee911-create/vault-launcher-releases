@@ -1,0 +1,958 @@
+{
+  "id": "deusex",
+  "title": "Deus Ex",
+  "version": 1,
+  "kind": "log",
+  "exeNames": [],
+  "md5": [],
+  "linkFiles": [
+    "System/DeusEx.exe",
+    "System/DeusEx.u"
+  ],
+  "logFiles": [
+    "System/DeusEx.log"
+  ],
+  "logWatches": [
+    {
+      "id": "map",
+      "label": "Current map",
+      "regex": "(?:LoadMap|Browse):\\s*(?:.*[\\\\/])?(\\d\\d_[A-Za-z0-9_]+)"
+    }
+  ],
+  "notes": [
+    "Deus Ex writes a log (System\\DeusEx.log) that records every map it loads. Vault reads it, so nothing touches the game.",
+    "Each map unlocks when it loads, including from a saved game. Your last session counts even if Vault was closed."
+  ],
+  "testGuide": [
+    {
+      "title": "Start Deus Ex",
+      "detail": "Play from your Library and start a new game or load a save."
+    },
+    {
+      "title": "Watch \"Current map\"",
+      "detail": "It should show a name like 01_NYC_UNATCOIsland. If it stays empty, copy the test report and send it to Claude."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "m00",
+      "title": "Boot Camp",
+      "description": "Start the training missions.",
+      "points": 10,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b(00_Training|00_TrainingCombat|00_TrainingFinal)\\b"
+      },
+      "group": "Missions"
+    },
+    {
+      "id": "m01",
+      "title": "Liberty Island",
+      "description": "Begin your first UNATCO mission.",
+      "points": 10,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b(01_NYC_UNATCOIsland|01_NYC_UNATCOHQ)\\b"
+      },
+      "group": "Missions"
+    },
+    {
+      "id": "m02",
+      "title": "Generator Hunt",
+      "description": "Arrive in Battery Park for Mission 2.",
+      "points": 10,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b(02_NYC_BatteryPark|02_NYC_Street|02_NYC_Warehouse|02_NYC_Underground|02_NYC_Bar|02_NYC_FreeClinic|02_NYC_Hotel|02_NYC_Smug)\\b"
+      },
+      "group": "Missions"
+    },
+    {
+      "id": "m03",
+      "title": "LaGuardia",
+      "description": "Begin Mission 3.",
+      "points": 10,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b(03_NYC_UNATCOIsland|03_NYC_UNATCOHQ|03_NYC_BatteryPark|03_NYC_BrooklynBridgeStation|03_NYC_MolePeople|03_NYC_AirfieldHeliBase|03_NYC_Airfield|03_NYC_Hangar|03_NYC_747)\\b"
+      },
+      "group": "Missions"
+    },
+    {
+      "id": "m04",
+      "title": "NSF Signal",
+      "description": "Begin Mission 4.",
+      "points": 10,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b(04_NYC_UNATCOIsland|04_NYC_UNATCOHQ|04_NYC_Street|04_NYC_Hotel|04_NYC_Bar|04_NYC_Smug|04_NYC_Underground|04_NYC_NSFHQ|04_NYC_BatteryPark)\\b"
+      },
+      "group": "Missions"
+    },
+    {
+      "id": "m05",
+      "title": "Captured",
+      "description": "Wake up in the MJ12 prison facility.",
+      "points": 10,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b(05_NYC_UNATCOMJ12lab|05_NYC_UNATCOHQ|05_NYC_UNATCOIsland)\\b"
+      },
+      "group": "Missions"
+    },
+    {
+      "id": "m06",
+      "title": "Hong Kong",
+      "description": "Arrive in Hong Kong.",
+      "points": 10,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b(06_HongKong_Helibase|06_HongKong_TongBase|06_HongKong_WanChai_Market|06_HongKong_WanChai_Street|06_HongKong_WanChai_Canal|06_HongKong_WanChai_Underworld|06_HongKong_WanChai_Garage|06_HongKong_MJ12lab|06_HongKong_VersaLife|06_HongKong_Storage)\\b"
+      },
+      "group": "Missions"
+    },
+    {
+      "id": "m08",
+      "title": "Return to New York",
+      "description": "Return to New York.",
+      "points": 10,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b(08_NYC_Street|08_NYC_Hotel|08_NYC_Bar|08_NYC_FreeClinic|08_NYC_Smug|08_NYC_Underground)\\b"
+      },
+      "group": "Missions"
+    },
+    {
+      "id": "m09",
+      "title": "Shipyard",
+      "description": "Reach the Brooklyn Naval Shipyard.",
+      "points": 10,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b(09_NYC_Dockyard|09_NYC_Ship|09_NYC_ShipFan|09_NYC_ShipBelow|09_NYC_Graveyard)\\b"
+      },
+      "group": "Missions"
+    },
+    {
+      "id": "m10",
+      "title": "Paris",
+      "description": "Arrive in Paris.",
+      "points": 10,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b(10_Paris_Catacombs|10_Paris_Catacombs_Tunnels|10_Paris_Metro|10_Paris_Club|10_Paris_Chateau)\\b"
+      },
+      "group": "Missions"
+    },
+    {
+      "id": "m11",
+      "title": "Cathedral",
+      "description": "Begin Mission 11.",
+      "points": 10,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b(11_Paris_Underground|11_Paris_Cathedral|11_Paris_Everett)\\b"
+      },
+      "group": "Missions"
+    },
+    {
+      "id": "m12",
+      "title": "Vandenberg",
+      "description": "Arrive at Vandenberg Air Force Base.",
+      "points": 10,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b(12_Vandenberg_Cmd|12_Vandenberg_Tunnels|12_Vandenberg_Computer|12_Vandenberg_Gas)\\b"
+      },
+      "group": "Missions"
+    },
+    {
+      "id": "m14",
+      "title": "Ocean Lab",
+      "description": "Begin Mission 14.",
+      "points": 10,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b(14_Vandenberg_Sub|14_OceanLab_Lab|14_OceanLab_UC|14_Oceanlab_Silo)\\b"
+      },
+      "group": "Missions"
+    },
+    {
+      "id": "m15",
+      "title": "Area 51",
+      "description": "Arrive at Area 51.",
+      "points": 20,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b(15_Area51_Bunker|15_Area51_Entrance|15_Area51_Final|15_Area51_Page)\\b"
+      },
+      "group": "Missions"
+    },
+    {
+      "id": "map-00_training",
+      "title": "Training",
+      "description": "Complete the Training stage.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b00_Training\\b"
+      },
+      "group": "Training"
+    },
+    {
+      "id": "map-00_trainingcombat",
+      "title": "Combat Training",
+      "description": "Complete the Combat Training stage.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b00_TrainingCombat\\b"
+      },
+      "group": "Training"
+    },
+    {
+      "id": "map-00_trainingfinal",
+      "title": "Final Training",
+      "description": "Complete the Final Training stage.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b00_TrainingFinal\\b"
+      },
+      "group": "Training"
+    },
+    {
+      "id": "map-01_nyc_unatcoisland",
+      "title": "Liberty Island (New York, M1)",
+      "description": "Visit Liberty Island in New York during Mission 1.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b01_NYC_UNATCOIsland\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-01_nyc_unatcohq",
+      "title": "UNATCO HQ (New York, M1)",
+      "description": "Visit UNATCO HQ in New York during Mission 1.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b01_NYC_UNATCOHQ\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-02_nyc_batterypark",
+      "title": "Battery Park (New York, M2)",
+      "description": "Visit Battery Park in New York during Mission 2.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b02_NYC_BatteryPark\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-02_nyc_street",
+      "title": "Hell's Kitchen (New York, M2)",
+      "description": "Visit Hell's Kitchen in New York during Mission 2.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b02_NYC_Street\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-02_nyc_warehouse",
+      "title": "NSF Warehouse (New York, M2)",
+      "description": "Visit NSF Warehouse in New York during Mission 2.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b02_NYC_Warehouse\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-02_nyc_underground",
+      "title": "Sewers (New York, M2)",
+      "description": "Visit Sewers in New York during Mission 2.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b02_NYC_Underground\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-02_nyc_bar",
+      "title": "Underworld Tavern (New York, M2)",
+      "description": "Visit Underworld Tavern in New York during Mission 2.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b02_NYC_Bar\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-02_nyc_freeclinic",
+      "title": "Free Clinic (New York, M2)",
+      "description": "Visit Free Clinic in New York during Mission 2.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b02_NYC_FreeClinic\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-02_nyc_hotel",
+      "title": "'Ton Hotel (New York, M2)",
+      "description": "Visit 'Ton Hotel in New York during Mission 2.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b02_NYC_Hotel\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-02_nyc_smug",
+      "title": "Smuggler's Hideout (New York, M2)",
+      "description": "Visit Smuggler's Hideout in New York during Mission 2.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b02_NYC_Smug\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-03_nyc_unatcoisland",
+      "title": "Liberty Island (New York, M3)",
+      "description": "Visit Liberty Island in New York during Mission 3.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b03_NYC_UNATCOIsland\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-03_nyc_unatcohq",
+      "title": "UNATCO HQ (New York, M3)",
+      "description": "Visit UNATCO HQ in New York during Mission 3.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b03_NYC_UNATCOHQ\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-03_nyc_batterypark",
+      "title": "Battery Park (New York, M3)",
+      "description": "Visit Battery Park in New York during Mission 3.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b03_NYC_BatteryPark\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-03_nyc_brooklynbridgestation",
+      "title": "Brooklyn Bridge Station (New York, M3)",
+      "description": "Visit Brooklyn Bridge Station in New York during Mission 3.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b03_NYC_BrooklynBridgeStation\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-03_nyc_molepeople",
+      "title": "Mole People Tunnels (New York, M3)",
+      "description": "Visit Mole People Tunnels in New York during Mission 3.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b03_NYC_MolePeople\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-03_nyc_airfieldhelibase",
+      "title": "LaGuardia Helibase (New York, M3)",
+      "description": "Visit LaGuardia Helibase in New York during Mission 3.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b03_NYC_AirfieldHeliBase\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-03_nyc_airfield",
+      "title": "LaGuardia Airfield (New York, M3)",
+      "description": "Visit LaGuardia Airfield in New York during Mission 3.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b03_NYC_Airfield\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-03_nyc_hangar",
+      "title": "Airfield Hangar (New York, M3)",
+      "description": "Visit Airfield Hangar in New York during Mission 3.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b03_NYC_Hangar\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-03_nyc_747",
+      "title": "The 747 (New York, M3)",
+      "description": "Visit The 747 in New York during Mission 3.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b03_NYC_747\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-04_nyc_unatcoisland",
+      "title": "Liberty Island (New York, M4)",
+      "description": "Visit Liberty Island in New York during Mission 4.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b04_NYC_UNATCOIsland\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-04_nyc_unatcohq",
+      "title": "UNATCO HQ (New York, M4)",
+      "description": "Visit UNATCO HQ in New York during Mission 4.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b04_NYC_UNATCOHQ\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-04_nyc_street",
+      "title": "Hell's Kitchen (New York, M4)",
+      "description": "Visit Hell's Kitchen in New York during Mission 4.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b04_NYC_Street\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-04_nyc_hotel",
+      "title": "'Ton Hotel (New York, M4)",
+      "description": "Visit 'Ton Hotel in New York during Mission 4.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b04_NYC_Hotel\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-04_nyc_bar",
+      "title": "Underworld Tavern (New York, M4)",
+      "description": "Visit Underworld Tavern in New York during Mission 4.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b04_NYC_Bar\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-04_nyc_smug",
+      "title": "Smuggler's Hideout (New York, M4)",
+      "description": "Visit Smuggler's Hideout in New York during Mission 4.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b04_NYC_Smug\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-04_nyc_underground",
+      "title": "Sewers (New York, M4)",
+      "description": "Visit Sewers in New York during Mission 4.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b04_NYC_Underground\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-04_nyc_nsfhq",
+      "title": "NSF Headquarters (New York, M4)",
+      "description": "Visit NSF Headquarters in New York during Mission 4.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b04_NYC_NSFHQ\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-04_nyc_batterypark",
+      "title": "Battery Park (New York, M4)",
+      "description": "Visit Battery Park in New York during Mission 4.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b04_NYC_BatteryPark\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-05_nyc_unatcomj12lab",
+      "title": "MJ12 Prison Facility (New York, M5)",
+      "description": "Visit MJ12 Prison Facility in New York during Mission 5.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b05_NYC_UNATCOMJ12lab\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-05_nyc_unatcohq",
+      "title": "UNATCO HQ (New York, M5)",
+      "description": "Visit UNATCO HQ in New York during Mission 5.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b05_NYC_UNATCOHQ\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-05_nyc_unatcoisland",
+      "title": "Liberty Island (New York, M5)",
+      "description": "Visit Liberty Island in New York during Mission 5.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b05_NYC_UNATCOIsland\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-06_hongkong_helibase",
+      "title": "Helibase (Hong Kong, M6)",
+      "description": "Visit Helibase in Hong Kong during Mission 6.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b06_HongKong_Helibase\\b"
+      },
+      "group": "Hong Kong"
+    },
+    {
+      "id": "map-06_hongkong_tongbase",
+      "title": "Tong's Base (Hong Kong, M6)",
+      "description": "Visit Tong's Base in Hong Kong during Mission 6.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b06_HongKong_TongBase\\b"
+      },
+      "group": "Hong Kong"
+    },
+    {
+      "id": "map-06_hongkong_wanchai_market",
+      "title": "Wan Chai Market (Hong Kong, M6)",
+      "description": "Visit Wan Chai Market in Hong Kong during Mission 6.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b06_HongKong_WanChai_Market\\b"
+      },
+      "group": "Hong Kong"
+    },
+    {
+      "id": "map-06_hongkong_wanchai_street",
+      "title": "Tonnochi Road (Hong Kong, M6)",
+      "description": "Visit Tonnochi Road in Hong Kong during Mission 6.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b06_HongKong_WanChai_Street\\b"
+      },
+      "group": "Hong Kong"
+    },
+    {
+      "id": "map-06_hongkong_wanchai_canal",
+      "title": "The Canals (Hong Kong, M6)",
+      "description": "Visit The Canals in Hong Kong during Mission 6.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b06_HongKong_WanChai_Canal\\b"
+      },
+      "group": "Hong Kong"
+    },
+    {
+      "id": "map-06_hongkong_wanchai_underworld",
+      "title": "Lucky Money Club (Hong Kong, M6)",
+      "description": "Visit Lucky Money Club in Hong Kong during Mission 6.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b06_HongKong_WanChai_Underworld\\b"
+      },
+      "group": "Hong Kong"
+    },
+    {
+      "id": "map-06_hongkong_wanchai_garage",
+      "title": "Wan Chai Garage (Hong Kong, M6)",
+      "description": "Visit Wan Chai Garage in Hong Kong during Mission 6.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b06_HongKong_WanChai_Garage\\b"
+      },
+      "group": "Hong Kong"
+    },
+    {
+      "id": "map-06_hongkong_mj12lab",
+      "title": "MJ12 Lab (Hong Kong, M6)",
+      "description": "Visit MJ12 Lab in Hong Kong during Mission 6.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b06_HongKong_MJ12lab\\b"
+      },
+      "group": "Hong Kong"
+    },
+    {
+      "id": "map-06_hongkong_versalife",
+      "title": "VersaLife (Hong Kong, M6)",
+      "description": "Visit VersaLife in Hong Kong during Mission 6.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b06_HongKong_VersaLife\\b"
+      },
+      "group": "Hong Kong"
+    },
+    {
+      "id": "map-06_hongkong_storage",
+      "title": "Universal Constructor Storage (Hong Kong, M6)",
+      "description": "Visit Universal Constructor Storage in Hong Kong during Mission 6.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b06_HongKong_Storage\\b"
+      },
+      "group": "Hong Kong"
+    },
+    {
+      "id": "map-08_nyc_street",
+      "title": "Hell's Kitchen (New York, M8)",
+      "description": "Visit Hell's Kitchen in New York during Mission 8.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b08_NYC_Street\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-08_nyc_hotel",
+      "title": "'Ton Hotel (New York, M8)",
+      "description": "Visit 'Ton Hotel in New York during Mission 8.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b08_NYC_Hotel\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-08_nyc_bar",
+      "title": "Underworld Tavern (New York, M8)",
+      "description": "Visit Underworld Tavern in New York during Mission 8.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b08_NYC_Bar\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-08_nyc_freeclinic",
+      "title": "Free Clinic (New York, M8)",
+      "description": "Visit Free Clinic in New York during Mission 8.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b08_NYC_FreeClinic\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-08_nyc_smug",
+      "title": "Smuggler's Hideout (New York, M8)",
+      "description": "Visit Smuggler's Hideout in New York during Mission 8.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b08_NYC_Smug\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-08_nyc_underground",
+      "title": "Sewers (New York, M8)",
+      "description": "Visit Sewers in New York during Mission 8.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b08_NYC_Underground\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-09_nyc_dockyard",
+      "title": "Brooklyn Naval Shipyard (New York, M9)",
+      "description": "Visit Brooklyn Naval Shipyard in New York during Mission 9.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b09_NYC_Dockyard\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-09_nyc_ship",
+      "title": "The Superfreighter (New York, M9)",
+      "description": "Visit The Superfreighter in New York during Mission 9.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b09_NYC_Ship\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-09_nyc_shipfan",
+      "title": "Superfreighter Engine Room (New York, M9)",
+      "description": "Visit Superfreighter Engine Room in New York during Mission 9.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b09_NYC_ShipFan\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-09_nyc_shipbelow",
+      "title": "Superfreighter Lower Decks (New York, M9)",
+      "description": "Visit Superfreighter Lower Decks in New York during Mission 9.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b09_NYC_ShipBelow\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-09_nyc_graveyard",
+      "title": "The Graveyard (New York, M9)",
+      "description": "Visit The Graveyard in New York during Mission 9.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b09_NYC_Graveyard\\b"
+      },
+      "group": "New York"
+    },
+    {
+      "id": "map-10_paris_catacombs",
+      "title": "Paris Streets (Paris, M10)",
+      "description": "Visit Paris Streets in Paris during Mission 10.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b10_Paris_Catacombs\\b"
+      },
+      "group": "Paris"
+    },
+    {
+      "id": "map-10_paris_catacombs_tunnels",
+      "title": "The Catacombs (Paris, M10)",
+      "description": "Visit The Catacombs in Paris during Mission 10.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b10_Paris_Catacombs_Tunnels\\b"
+      },
+      "group": "Paris"
+    },
+    {
+      "id": "map-10_paris_metro",
+      "title": "Paris Metro (Paris, M10)",
+      "description": "Visit Paris Metro in Paris during Mission 10.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b10_Paris_Metro\\b"
+      },
+      "group": "Paris"
+    },
+    {
+      "id": "map-10_paris_club",
+      "title": "La Porte de l'Enfer (Paris, M10)",
+      "description": "Visit La Porte de l'Enfer in Paris during Mission 10.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b10_Paris_Club\\b"
+      },
+      "group": "Paris"
+    },
+    {
+      "id": "map-10_paris_chateau",
+      "title": "DuClare Chateau (Paris, M10)",
+      "description": "Visit DuClare Chateau in Paris during Mission 10.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b10_Paris_Chateau\\b"
+      },
+      "group": "Paris"
+    },
+    {
+      "id": "map-11_paris_underground",
+      "title": "Sewers (Paris, M11)",
+      "description": "Visit Sewers in Paris during Mission 11.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b11_Paris_Underground\\b"
+      },
+      "group": "Paris"
+    },
+    {
+      "id": "map-11_paris_cathedral",
+      "title": "The Cathedral (Paris, M11)",
+      "description": "Visit The Cathedral in Paris during Mission 11.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b11_Paris_Cathedral\\b"
+      },
+      "group": "Paris"
+    },
+    {
+      "id": "map-11_paris_everett",
+      "title": "Everett's Mansion (Paris, M11)",
+      "description": "Visit Everett's Mansion in Paris during Mission 11.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b11_Paris_Everett\\b"
+      },
+      "group": "Paris"
+    },
+    {
+      "id": "map-12_vandenberg_cmd",
+      "title": "Vandenberg Command (Vandenberg, M12)",
+      "description": "Visit Vandenberg Command in Vandenberg during Mission 12.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b12_Vandenberg_Cmd\\b"
+      },
+      "group": "Vandenberg"
+    },
+    {
+      "id": "map-12_vandenberg_tunnels",
+      "title": "Vandenberg Tunnels (Vandenberg, M12)",
+      "description": "Visit Vandenberg Tunnels in Vandenberg during Mission 12.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b12_Vandenberg_Tunnels\\b"
+      },
+      "group": "Vandenberg"
+    },
+    {
+      "id": "map-12_vandenberg_computer",
+      "title": "Vandenberg Computer Centre (Vandenberg, M12)",
+      "description": "Visit Vandenberg Computer Centre in Vandenberg during Mission 12.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b12_Vandenberg_Computer\\b"
+      },
+      "group": "Vandenberg"
+    },
+    {
+      "id": "map-12_vandenberg_gas",
+      "title": "Gas Station (Vandenberg, M12)",
+      "description": "Visit Gas Station in Vandenberg during Mission 12.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b12_Vandenberg_Gas\\b"
+      },
+      "group": "Vandenberg"
+    },
+    {
+      "id": "map-14_vandenberg_sub",
+      "title": "Sub Base (Vandenberg, M14)",
+      "description": "Visit Sub Base in Vandenberg during Mission 14.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b14_Vandenberg_Sub\\b"
+      },
+      "group": "Vandenberg"
+    },
+    {
+      "id": "map-14_oceanlab_lab",
+      "title": "Ocean Lab (Ocean Lab, M14)",
+      "description": "Visit Ocean Lab in Ocean Lab during Mission 14.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b14_OceanLab_Lab\\b"
+      },
+      "group": "Ocean Lab"
+    },
+    {
+      "id": "map-14_oceanlab_uc",
+      "title": "Ocean Lab UC (Ocean Lab, M14)",
+      "description": "Visit Ocean Lab UC in Ocean Lab during Mission 14.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b14_OceanLab_UC\\b"
+      },
+      "group": "Ocean Lab"
+    },
+    {
+      "id": "map-14_oceanlab_silo",
+      "title": "Missile Silo (Ocean Lab, M14)",
+      "description": "Visit Missile Silo in Ocean Lab during Mission 14.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b14_Oceanlab_Silo\\b"
+      },
+      "group": "Ocean Lab"
+    },
+    {
+      "id": "map-15_area51_bunker",
+      "title": "Area 51 Bunker (Area 51, M15)",
+      "description": "Visit Area 51 Bunker in Area 51 during Mission 15.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b15_Area51_Bunker\\b"
+      },
+      "group": "Area 51"
+    },
+    {
+      "id": "map-15_area51_entrance",
+      "title": "Area 51 Entrance (Area 51, M15)",
+      "description": "Visit Area 51 Entrance in Area 51 during Mission 15.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b15_Area51_Entrance\\b"
+      },
+      "group": "Area 51"
+    },
+    {
+      "id": "map-15_area51_final",
+      "title": "Area 51 Sector 4 (Area 51, M15)",
+      "description": "Visit Area 51 Sector 4 in Area 51 during Mission 15.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b15_Area51_Final\\b"
+      },
+      "group": "Area 51"
+    },
+    {
+      "id": "map-15_area51_page",
+      "title": "Page's Lair (Area 51, M15)",
+      "description": "Visit Page's Lair in Area 51 during Mission 15.",
+      "points": 5,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b15_Area51_Page\\b"
+      },
+      "group": "Area 51"
+    },
+    {
+      "id": "ending1",
+      "title": "A Dark Age",
+      "description": "See the Tong ending: plunge the world into a new dark age.",
+      "points": 50,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b99_Endgame1\\b"
+      },
+      "group": "Endings"
+    },
+    {
+      "id": "ending2",
+      "title": "Illuminati",
+      "description": "See the Everett ending: rule with the Illuminati.",
+      "points": 50,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b99_Endgame2\\b"
+      },
+      "group": "Endings"
+    },
+    {
+      "id": "ending3",
+      "title": "Helios",
+      "description": "See the Helios ending: merge with the AI.",
+      "points": 50,
+      "rule": {
+        "line": "(LoadMap|Browse|Travel).*\\b99_Endgame3\\b"
+      },
+      "group": "Endings"
+    }
+  ]
+}

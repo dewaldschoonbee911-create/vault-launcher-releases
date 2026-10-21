@@ -1,0 +1,724 @@
+{
+ "id": "commandos3",
+ "title": "Commandos 3: Destination Berlin",
+ "version": 2,
+ "kind": "replay",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [],
+ "linkFiles": [
+  "Commandos3.exe",
+  "data3.pck"
+ ],
+ "exeNames": [
+  "Commandos3.exe"
+ ],
+ "md5": [],
+ "shippedSaves": [
+  "9c673722453efd078e049ee71ceeaf2937ffb3df"
+ ],
+ "notes": [
+  "Vault reads your save games (the Output folder in the game folder) and never touches the game.",
+  "Save a game once in each mission you reach. The campaigns can be played in any order."
+ ],
+ "testGuide": [
+  {
+   "title": "Start a campaign",
+   "detail": "Start any campaign mission and save the game once."
+  },
+  {
+   "title": "Check the numbers",
+   "detail": "\"Last save\" should show the campaign name, and that campaign's first achievement should pop."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "training",
+   "title": "Back to Basics",
+   "description": "Play a training mission.",
+   "points": 5,
+   "group": "Training",
+   "rule": {
+    "reach": [
+     "TUT1",
+     "TUT2"
+    ]
+   }
+  },
+  {
+   "id": "training-both",
+   "title": "Top of the Class",
+   "description": "Play both training missions.",
+   "points": 10,
+   "group": "Training",
+   "rule": {
+    "count": 2,
+    "of": [
+     "TUT1",
+     "TUT2"
+    ]
+   }
+  },
+  {
+   "id": "stal-start",
+   "title": "Into Stalingrad",
+   "description": "Start the Stalingrad campaign.",
+   "points": 10,
+   "group": "Stalingrad",
+   "rule": {
+    "reach": [
+     "ST1",
+     "ST2",
+     "BER1",
+     "BER2"
+    ]
+   }
+  },
+  {
+   "id": "stal-2",
+   "title": "Holding the Line",
+   "description": "Save a game in 2 different Stalingrad missions.",
+   "points": 15,
+   "group": "Stalingrad",
+   "rule": {
+    "count": 2,
+    "of": [
+     "ST1",
+     "ST2",
+     "BER1",
+     "BER2"
+    ]
+   }
+  },
+  {
+   "id": "berlin",
+   "title": "Destination Berlin",
+   "description": "Reach Berlin.",
+   "points": 25,
+   "group": "Stalingrad",
+   "rule": {
+    "reach": [
+     "BER1",
+     "BER2"
+    ]
+   }
+  },
+  {
+   "id": "stal-all",
+   "title": "Hero of Stalingrad",
+   "description": "Save a game in every Stalingrad and Berlin mission.",
+   "points": 30,
+   "group": "Stalingrad",
+   "rule": {
+    "count": 4,
+    "of": [
+     "ST1",
+     "ST2",
+     "BER1",
+     "BER2"
+    ]
+   }
+  },
+  {
+   "id": "ce-start",
+   "title": "All Aboard",
+   "description": "Start the Central Europe campaign.",
+   "points": 10,
+   "group": "Central Europe",
+   "rule": {
+    "reach": [
+     "TE",
+     "TA1",
+     "TC",
+     "TM",
+     "TV"
+    ]
+   }
+  },
+  {
+   "id": "ce-3",
+   "title": "Rolling Stock",
+   "description": "Save a game in 3 different Central Europe missions.",
+   "points": 15,
+   "group": "Central Europe",
+   "rule": {
+    "count": 3,
+    "of": [
+     "TE",
+     "TA1",
+     "TC",
+     "TM",
+     "TV"
+    ]
+   }
+  },
+  {
+   "id": "ce-all",
+   "title": "End of the Line",
+   "description": "Save a game in every Central Europe mission.",
+   "points": 30,
+   "group": "Central Europe",
+   "rule": {
+    "count": 5,
+    "of": [
+     "TE",
+     "TA1",
+     "TC",
+     "TM",
+     "TV"
+    ]
+   }
+  },
+  {
+   "id": "caen",
+   "title": "Night Raid on Caen",
+   "description": "Reach the Normandy mission at Caen.",
+   "points": 10,
+   "group": "Normandy",
+   "rule": {
+    "reach": "CP"
+   }
+  },
+  {
+   "id": "le-havre",
+   "title": "Port of Le Havre",
+   "description": "Reach the Normandy mission at Le Havre.",
+   "points": 10,
+   "group": "Normandy",
+   "rule": {
+    "reach": "PT"
+   }
+  },
+  {
+   "id": "omaha",
+   "title": "Omaha Beach",
+   "description": "Reach the Omaha Beach landing.",
+   "points": 25,
+   "group": "Normandy",
+   "rule": {
+    "reach": "DSP"
+   }
+  },
+  {
+   "id": "norm-all",
+   "title": "D-Day Veteran",
+   "description": "Save a game in every Normandy mission.",
+   "points": 30,
+   "group": "Normandy",
+   "rule": {
+    "count": 3,
+    "of": [
+     "CP",
+     "PT",
+     "DSP"
+    ]
+   }
+  },
+  {
+   "id": "saves-3",
+   "title": "Old Hand",
+   "description": "Save a game in 3 different campaign missions.",
+   "points": 10,
+   "group": "Milestones",
+   "rule": {
+    "count": 3,
+    "of": [
+     "ST1",
+     "ST2",
+     "BER1",
+     "BER2",
+     "TE",
+     "TA1",
+     "TC",
+     "TM",
+     "TV",
+     "CP",
+     "PT",
+     "DSP"
+    ]
+   }
+  },
+  {
+   "id": "saves-6",
+   "title": "World Tour",
+   "description": "Save a game in 6 different campaign missions.",
+   "points": 20,
+   "group": "Milestones",
+   "rule": {
+    "count": 6,
+    "of": [
+     "ST1",
+     "ST2",
+     "BER1",
+     "BER2",
+     "TE",
+     "TA1",
+     "TC",
+     "TM",
+     "TV",
+     "CP",
+     "PT",
+     "DSP"
+    ]
+   }
+  },
+  {
+   "id": "saves-12",
+   "title": "Destination: Everywhere",
+   "description": "Save a game in 12 different campaign missions.",
+   "points": 50,
+   "group": "Milestones",
+   "rule": {
+    "count": 12,
+    "of": [
+     "ST1",
+     "ST2",
+     "BER1",
+     "BER2",
+     "TE",
+     "TA1",
+     "TC",
+     "TM",
+     "TV",
+     "CP",
+     "PT",
+     "DSP"
+    ]
+   }
+  },
+  {
+   "id": "all-campaigns",
+   "title": "Three Fronts",
+   "description": "Play all three campaigns.",
+   "points": 25,
+   "group": "Milestones",
+   "rule": {
+    "all": [
+     [
+      "ST1",
+      "ST2",
+      "BER1",
+      "BER2"
+     ],
+     [
+      "TE",
+      "TA1",
+      "TC",
+      "TM",
+      "TV"
+     ],
+     [
+      "CP",
+      "PT",
+      "DSP"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "during-st1",
+   "title": "Field Notes: Stalingrad, part 1",
+   "description": "Save a game during Stalingrad, part 1.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "ST1"
+   }
+  },
+  {
+   "id": "during-st2",
+   "title": "Field Notes: Stalingrad, part 2",
+   "description": "Save a game during Stalingrad, part 2.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "ST2"
+   }
+  },
+  {
+   "id": "during-ber1",
+   "title": "Field Notes: Berlin, part 1",
+   "description": "Save a game during Berlin, part 1.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "BER1"
+   }
+  },
+  {
+   "id": "during-ber2",
+   "title": "Field Notes: Berlin, part 2",
+   "description": "Save a game during Berlin, part 2.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "BER2"
+   }
+  },
+  {
+   "id": "during-te",
+   "title": "Field Notes: Central Europe (train)",
+   "description": "Save a game during Central Europe (train).",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "TE"
+   }
+  },
+  {
+   "id": "during-ta1",
+   "title": "Field Notes: Central Europe (second mission)",
+   "description": "Save a game during Central Europe (second mission).",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "TA1"
+   }
+  },
+  {
+   "id": "during-tc",
+   "title": "Field Notes: Central Europe (third mission)",
+   "description": "Save a game during Central Europe (third mission).",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "TC"
+   }
+  },
+  {
+   "id": "during-tm",
+   "title": "Field Notes: Central Europe (fourth mission)",
+   "description": "Save a game during Central Europe (fourth mission).",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "TM"
+   }
+  },
+  {
+   "id": "during-tv",
+   "title": "Field Notes: Central Europe (fifth mission)",
+   "description": "Save a game during Central Europe (fifth mission).",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "TV"
+   }
+  },
+  {
+   "id": "during-cp",
+   "title": "Field Notes: Normandy: Caen",
+   "description": "Save a game during Normandy: Caen.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "CP"
+   }
+  },
+  {
+   "id": "during-pt",
+   "title": "Field Notes: Normandy: Le Havre",
+   "description": "Save a game during Normandy: Le Havre.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "PT"
+   }
+  },
+  {
+   "id": "during-dsp",
+   "title": "Field Notes: Omaha Beach",
+   "description": "Save a game during Omaha Beach.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "DSP"
+   }
+  },
+  {
+   "id": "planner-stal",
+   "title": "Careful Planner: Stalingrad and Berlin",
+   "description": "Save 10 times across the Stalingrad and Berlin missions.",
+   "points": 10,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": [
+      "ST1",
+      "ST2",
+      "BER1",
+      "BER2"
+     ],
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "planner-ce",
+   "title": "Careful Planner: Central Europe",
+   "description": "Save 10 times across the Central Europe missions.",
+   "points": 10,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": [
+      "TE",
+      "TA1",
+      "TC",
+      "TM",
+      "TV"
+     ],
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "planner-norm",
+   "title": "Careful Planner: Normandy",
+   "description": "Save 10 times across the Normandy missions.",
+   "points": 10,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": [
+      "CP",
+      "PT",
+      "DSP"
+     ],
+     "n": 10
+    }
+   }
+  },
+  {
+   "id": "planner-st1",
+   "title": "Careful Planner: Stalingrad, part 1",
+   "description": "Save 5 times during Stalingrad, part 1.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "ST1",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-st2",
+   "title": "Careful Planner: Stalingrad, part 2",
+   "description": "Save 5 times during Stalingrad, part 2.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "ST2",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-ber1",
+   "title": "Careful Planner: Berlin, part 1",
+   "description": "Save 5 times during Berlin, part 1.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "BER1",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-ber2",
+   "title": "Careful Planner: Berlin, part 2",
+   "description": "Save 5 times during Berlin, part 2.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "BER2",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-te",
+   "title": "Careful Planner: Central Europe (train)",
+   "description": "Save 5 times during Central Europe (train).",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "TE",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-ta1",
+   "title": "Careful Planner: Central Europe (second mission)",
+   "description": "Save 5 times during Central Europe (second mission).",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "TA1",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-tc",
+   "title": "Careful Planner: Central Europe (third mission)",
+   "description": "Save 5 times during Central Europe (third mission).",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "TC",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-tm",
+   "title": "Careful Planner: Central Europe (fourth mission)",
+   "description": "Save 5 times during Central Europe (fourth mission).",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "TM",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-tv",
+   "title": "Careful Planner: Central Europe (fifth mission)",
+   "description": "Save 5 times during Central Europe (fifth mission).",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "TV",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-cp",
+   "title": "Careful Planner: Normandy: Caen",
+   "description": "Save 5 times during Normandy: Caen.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "CP",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-pt",
+   "title": "Careful Planner: Normandy: Le Havre",
+   "description": "Save 5 times during Normandy: Le Havre.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "PT",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-dsp",
+   "title": "Careful Planner: Omaha Beach",
+   "description": "Save 5 times during Omaha Beach.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "DSP",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "saves-9",
+   "title": "Seasoned Commando",
+   "description": "Save a game in 9 different campaign missions.",
+   "points": 25,
+   "group": "Milestones",
+   "rule": {
+    "count": 9,
+    "of": [
+     "ST1",
+     "ST2",
+     "BER1",
+     "BER2",
+     "TE",
+     "TA1",
+     "TC",
+     "TM",
+     "TV",
+     "CP",
+     "PT",
+     "DSP"
+    ]
+   }
+  },
+  {
+   "id": "files-3",
+   "title": "Backup Plan",
+   "description": "Have 3 different save slots.",
+   "points": 5,
+   "group": "Saving",
+   "rule": {
+    "files": 3
+   }
+  },
+  {
+   "id": "files-8",
+   "title": "Filing Cabinet",
+   "description": "Have 8 different save slots.",
+   "points": 10,
+   "group": "Saving",
+   "rule": {
+    "files": 8
+   }
+  },
+  {
+   "id": "writes-25",
+   "title": "Save Early",
+   "description": "Save your game 25 times.",
+   "points": 5,
+   "group": "Saving",
+   "rule": {
+    "saves": 25
+   }
+  },
+  {
+   "id": "writes-100",
+   "title": "Save Often",
+   "description": "Save your game 100 times.",
+   "points": 15,
+   "group": "Saving",
+   "rule": {
+    "saves": 100
+   }
+  },
+  {
+   "id": "writes-250",
+   "title": "Nothing Left to Chance",
+   "description": "Save your game 250 times.",
+   "points": 25,
+   "group": "Saving",
+   "rule": {
+    "saves": 250
+   }
+  }
+ ]
+}

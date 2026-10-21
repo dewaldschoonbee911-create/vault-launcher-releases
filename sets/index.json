@@ -1,0 +1,320 @@
+{
+ "launcherVersion": "0.1.78",
+ "sets": [
+  {
+   "id": "anachronox",
+   "file": "anachronox.json",
+   "version": 1,
+   "sha256": "29e2a2ea7902952b01579dcc8e1f63a95cff987ffaed637825b6680698bb7ae1"
+  },
+  {
+   "id": "assassinscreed",
+   "file": "assassinscreed.json",
+   "version": 2,
+   "sha256": "98fe0ff247de033b109d9f5118a351571282aa9168eb02f1e99889b8e7371ffc"
+  },
+  {
+   "id": "cnc3",
+   "file": "cnc3.json",
+   "version": 1,
+   "sha256": "f8ee2910e43ecec5e42e1a265abcc014a505526716bab28d5ace7edc77feb982"
+  },
+  {
+   "id": "cnc3kw",
+   "file": "cnc3kw.json",
+   "version": 1,
+   "sha256": "2c9597a5559570b10fa42b956be9a3313cba1ee33e3aa1a5d44a46be27199238"
+  },
+  {
+   "id": "cnc4",
+   "file": "cnc4.json",
+   "version": 1,
+   "sha256": "b4216420622b7443f04d17e9b9b20125a825fe4e995b14bd83463fdad9ad0a28"
+  },
+  {
+   "id": "commandos1",
+   "file": "commandos1.json",
+   "version": 2,
+   "sha256": "8044311897d8df405cb3553b0486a58b8e0b80e555d37a545f419d60ed44b1a9"
+  },
+  {
+   "id": "commandos2",
+   "file": "commandos2.json",
+   "version": 2,
+   "sha256": "7e0c4433ef855f8dca387dc79ba88925ad85903f1f794b5a4283c864db852b1e"
+  },
+  {
+   "id": "commandos3",
+   "file": "commandos3.json",
+   "version": 2,
+   "sha256": "6b6c742b3ce8d3125505663206a71aa6d5b27c27d3161c4f6aeeeb6e2d1f5d3c"
+  },
+  {
+   "id": "commandosbcd",
+   "file": "commandosbcd.json",
+   "version": 2,
+   "sha256": "ef56e0c241d0a4b73e247ecd58f95d9d3fd827ab02914a47f65e757d527fc7bc"
+  },
+  {
+   "id": "daikatana",
+   "file": "daikatana.json",
+   "version": 2,
+   "sha256": "a9f0fd82c8e03f9db8612d89dd3d42488e31b769f2d1a430e5e83c9ff12192c3"
+  },
+  {
+   "id": "davediver",
+   "file": "davediver.json",
+   "version": 1,
+   "sha256": "1d5b5c0868bd040f82bb49341eca5bcbf9a0d939a2f8a7ec7e1d18ad3c5bd94d"
+  },
+  {
+   "id": "deathrally",
+   "file": "deathrally.json",
+   "version": 1,
+   "sha256": "7ef02def1c7584dda7bd4a761da21f06dd56f4e45bc93023b5524ff93042ac12"
+  },
+  {
+   "id": "deusex",
+   "file": "deusex.json",
+   "version": 1,
+   "sha256": "550d9c06e8096c76d2d3b158b1fe39b46ab9a1d998de57c20522fce196c7e39c"
+  },
+  {
+   "id": "diablo",
+   "file": "diablo.json",
+   "version": 1,
+   "sha256": "3ed979981372f900f3c77d0b1530d77e43668054419ff99482ce92e8142a6536"
+  },
+  {
+   "id": "eaw",
+   "file": "eaw.json",
+   "version": 2,
+   "sha256": "f29b70cb032777e2225d4a835476f97fc9a454806c4c0deedfa1a9148d1db6a0"
+  },
+  {
+   "id": "evilgenius",
+   "file": "evilgenius.json",
+   "version": 2,
+   "sha256": "64dd4963366ddb91b39b2aca4446a31f76d5ac283e7e7b102580758152d31cda"
+  },
+  {
+   "id": "fallout",
+   "file": "fallout.json",
+   "version": 1,
+   "sha256": "ec0b52cb3c1971aaa6b35f9b0091fc08ef0af2ba7b9f4a97c947b4a83a979831"
+  },
+  {
+   "id": "fallout3",
+   "file": "fallout3.json",
+   "version": 1,
+   "sha256": "94157f0dab6103739bbe98b8d7a0717e9270a19a8e69704a2a4a17e0a0d13a37"
+  },
+  {
+   "id": "fear2",
+   "file": "fear2.json",
+   "version": 2,
+   "sha256": "a8142293e0acf238c8fcf459f4450fa0d4b8611024aac6394cfe6a75aa08e452"
+  },
+  {
+   "id": "generals",
+   "file": "generals.json",
+   "version": 1,
+   "sha256": "67db0acd5a8d304e4da2e2f52601c32c627f64a9f296772d2deeed7e217a8bed"
+  },
+  {
+   "id": "generalszh",
+   "file": "generalszh.json",
+   "version": 1,
+   "sha256": "7daecd75d07290ea0d298f383cc388babce4e92fb60ce552a0cb09a332e3ecb3"
+  },
+  {
+   "id": "gorky17",
+   "file": "gorky17.json",
+   "version": 2,
+   "sha256": "0cf38e32b856f28440697c5b7fa537f45283cbcb01460d71c7a3bfa47681492d"
+  },
+  {
+   "id": "halflife",
+   "file": "halflife.json",
+   "version": 2,
+   "sha256": "607901a14263ca560f1d054da6bf412bc252a9958ce1d4e4d5dd3866a0bfa6fc"
+  },
+  {
+   "id": "hearthstone",
+   "file": "hearthstone.json",
+   "version": 1,
+   "sha256": "2fe0aaf00670d8a8e53d2fcb861a7d7c868f07f4fd18035b2bb5feb580ac1fed"
+  },
+  {
+   "id": "hitman1",
+   "file": "hitman1.json",
+   "version": 1,
+   "sha256": "f619d4fb0b16391d48c4e67765c2bf849628001db0070777ac5f00f3c86177b5"
+  },
+  {
+   "id": "hitman2",
+   "file": "hitman2.json",
+   "version": 1,
+   "sha256": "6ff877cf9765353ab605e0d184fc7ac2c5f1d06c2513079cdcf1ef2776ef6da5"
+  },
+  {
+   "id": "hitman3",
+   "file": "hitman3.json",
+   "version": 1,
+   "sha256": "5d89ca5cd267db69cf13d8e5e903f065d11295c810d9769b2ef1742ede533429"
+  },
+  {
+   "id": "hitmanbm",
+   "file": "hitmanbm.json",
+   "version": 2,
+   "sha256": "1aab54b81b2c43d0eb94201edecebcd6cd53112d2825b5aa21e364f0052dad5a"
+  },
+  {
+   "id": "hots",
+   "file": "hots.json",
+   "version": 1,
+   "sha256": "5e61a5be75fc9b1289c0e600375ee45aa0d7e6482e8c013a19bafd0e72fac878"
+  },
+  {
+   "id": "jk2",
+   "file": "jk2.json",
+   "version": 1,
+   "sha256": "b6ba7a733453328fcd5b95e882fefb410a9f21278a55b6d4b408ad0ee2772ddd"
+  },
+  {
+   "id": "jka",
+   "file": "jka.json",
+   "version": 1,
+   "sha256": "f0bb39f4490687a42994e61b53d2bb3957bb8b6398f85e9f4b9168d20f5af75d"
+  },
+  {
+   "id": "kknd",
+   "file": "kknd.json",
+   "version": 2,
+   "sha256": "778b9b2e46b7315104864f8e2de972c669c748b9828ae3dccfb920a59ce20552"
+  },
+  {
+   "id": "kknd2",
+   "file": "kknd2.json",
+   "version": 2,
+   "sha256": "b7b3da60a3c97691e1395c581f2bf0bc6d007850c1abd4a79e58633aab526659"
+  },
+  {
+   "id": "kotor",
+   "file": "kotor.json",
+   "version": 1,
+   "sha256": "d0e52a34789513197fce672b94731751b3ea5b4849f2fe1a8d9b3f56ab92d733"
+  },
+  {
+   "id": "maxpayne2",
+   "file": "maxpayne2.json",
+   "version": 1,
+   "sha256": "09d4ecc8df0beef0604bbf148bc31b4be9261cf1dd3ce295b6f8307ba7f8fe8d"
+  },
+  {
+   "id": "nfs2se",
+   "file": "nfs2se.json",
+   "version": 1,
+   "sha256": "84989f89cdd4e3c68b03eae588e3e5250c2baf78fe8cd7968a67f4fd95859f3e"
+  },
+  {
+   "id": "ra1",
+   "file": "ra1.json",
+   "version": 1,
+   "sha256": "48ed423b2ba6cd575419f43031938c726bd979fdd7c6845d2a733898d54ce706"
+  },
+  {
+   "id": "ra2",
+   "file": "ra2.json",
+   "version": 4,
+   "sha256": "59e01dde17df35231326d0cad6ce78740342387c2ef642e76841053c76798294"
+  },
+  {
+   "id": "ra2yr",
+   "file": "ra2yr.json",
+   "version": 4,
+   "sha256": "5374becf023a9bdceee2e1ab4b59cb009b7dabff2f8da22224d3e32845a583b3"
+  },
+  {
+   "id": "ra3",
+   "file": "ra3.json",
+   "version": 1,
+   "sha256": "aa57c0dd65e814df372c972ab242d8b2bd6b8a11ea73aa8c2b33f7eb064b3562"
+  },
+  {
+   "id": "ra3uprising",
+   "file": "ra3uprising.json",
+   "version": 1,
+   "sha256": "25e2f9de8dd7772935b940fa7c21a21289f5eeb62406be71a6b21417990b276b"
+  },
+  {
+   "id": "renegade",
+   "file": "renegade.json",
+   "version": 1,
+   "sha256": "52faaabe38cf8709393b4d327b58e8136d995a2d9e39ab0230e1b66f4306f165"
+  },
+  {
+   "id": "saintsrow2",
+   "file": "saintsrow2.json",
+   "version": 1,
+   "sha256": "2f6eb48195850e2c49153ab9017b911a570254856d7b893025ec0c1771e1b9ed"
+  },
+  {
+   "id": "starcraft",
+   "file": "starcraft.json",
+   "version": 1,
+   "sha256": "239ec802b08428bfea31c9a6b144c01967a4c01dd50395c0c771e38ce9f7e274"
+  },
+  {
+   "id": "supcom",
+   "file": "supcom.json",
+   "version": 2,
+   "sha256": "91bad2e691717573d6fc788d055dd0adcd2d9d3e9c254244ab9ce15e4b9ebb00"
+  },
+  {
+   "id": "swtfu",
+   "file": "swtfu.json",
+   "version": 1,
+   "sha256": "3386a39877b262df83a3051ea1d4d581d6454022229dc6409250aab89d3529e8"
+  },
+  {
+   "id": "td",
+   "file": "td.json",
+   "version": 1,
+   "sha256": "9ee79802e4dedaac9ff0b8ed089a041e0a6e280fc09220ab696cb3fa17e98a56"
+  },
+  {
+   "id": "ts",
+   "file": "ts.json",
+   "version": 4,
+   "sha256": "306d5dd9aaa6a32d70de1cd79f4d496380966d240e819312f1d419ad38704e33"
+  },
+  {
+   "id": "warcraft3",
+   "file": "warcraft3.json",
+   "version": 3,
+   "sha256": "3675302a1132a344738abc546eabf7a3ddb7632012d93ec76802f526bfa5f68e"
+  },
+  {
+   "id": "wolf3d",
+   "file": "wolf3d.json",
+   "version": 2,
+   "sha256": "3dd53feccc194b0993628295ba64f38873ff75f074b35f6b01079b59c50dc302"
+  },
+  {
+   "id": "worms",
+   "file": "worms.json",
+   "version": 1,
+   "sha256": "ad6e618eb39dbce8f2537cdc469803291acaf31a6cdd93300139bc9ad6bacd42"
+  },
+  {
+   "id": "wot",
+   "file": "wot.json",
+   "version": 1,
+   "sha256": "2b1437b3a9050f134cf65603fb3f188997143b33cbef14146622c666037df316"
+  }
+ ],
+ "status": {
+  "sha256": "c2a492713309acb9391b48e0c8e3736df7bdc142b722a813a96b85e1fa82ad33"
+ }
+}

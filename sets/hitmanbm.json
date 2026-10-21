@@ -1,0 +1,699 @@
+{
+ "id": "hitmanbm",
+ "title": "Hitman: Blood Money",
+ "version": 2,
+ "kind": "replay",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [],
+ "linkFiles": [
+  "HitmanBloodMoney.exe",
+  "Scenes/HitmanBloodMoney.ZIP"
+ ],
+ "exeNames": [
+  "HitmanBloodMoney.exe"
+ ],
+ "md5": [],
+ "notes": [
+  "Vault reads your save games (the Save folder in the game folder) and never touches the game.",
+  "Save once in each new mission (or use \"save and continue\" between missions) and the mission before it counts as finished.",
+  "Untested: Vault hasn't seen a Blood Money save yet, so if nothing pops after saving, send a test report."
+ ],
+ "testGuide": [
+  {
+   "title": "Play the first contract",
+   "detail": "Finish Death of a Showman and choose to save when the game offers between missions."
+  },
+  {
+   "title": "Check the numbers",
+   "detail": "\"Last save\" should show the next mission, and \"Death of a Showman\" should pop."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "beat-m00",
+   "title": "Death of a Showman",
+   "description": "Finish mission 1, Death of a Showman. (Counts once you save a game in a later mission.)",
+   "points": 15,
+   "group": "Contracts",
+   "rule": {
+    "reach": [
+     "M01",
+     "M02",
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13"
+    ]
+   }
+  },
+  {
+   "id": "beat-m01",
+   "title": "A Vintage Year",
+   "description": "Finish mission 2, A Vintage Year. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Contracts",
+   "rule": {
+    "reach": [
+     "M02",
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13"
+    ]
+   }
+  },
+  {
+   "id": "beat-m02",
+   "title": "Curtains Down",
+   "description": "Finish mission 3, Curtains Down. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Contracts",
+   "rule": {
+    "reach": [
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13"
+    ]
+   }
+  },
+  {
+   "id": "beat-m03",
+   "title": "Flatline",
+   "description": "Finish mission 4, Flatline. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Contracts",
+   "rule": {
+    "reach": [
+     "M04",
+     "M05",
+     "M06",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13"
+    ]
+   }
+  },
+  {
+   "id": "beat-m04",
+   "title": "A New Life",
+   "description": "Finish mission 5, A New Life. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Contracts",
+   "rule": {
+    "reach": [
+     "M05",
+     "M06",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13"
+    ]
+   }
+  },
+  {
+   "id": "beat-m05",
+   "title": "The Murder of Crows",
+   "description": "Finish mission 6, The Murder of Crows. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Contracts",
+   "rule": {
+    "reach": [
+     "M06",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13"
+    ]
+   }
+  },
+  {
+   "id": "beat-m06",
+   "title": "You Better Watch Out...",
+   "description": "Finish mission 7, You Better Watch Out.... (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Contracts",
+   "rule": {
+    "reach": [
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13"
+    ]
+   }
+  },
+  {
+   "id": "beat-m08",
+   "title": "Death on the Mississippi",
+   "description": "Finish mission 8, Death on the Mississippi. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Contracts",
+   "rule": {
+    "reach": [
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13"
+    ]
+   }
+  },
+  {
+   "id": "beat-m09",
+   "title": "Till Death Do Us Part",
+   "description": "Finish mission 9, Till Death Do Us Part. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Contracts",
+   "rule": {
+    "reach": [
+     "M10",
+     "M11",
+     "M12",
+     "M13"
+    ]
+   }
+  },
+  {
+   "id": "beat-m10",
+   "title": "A House of Cards",
+   "description": "Finish mission 10, A House of Cards. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Contracts",
+   "rule": {
+    "reach": [
+     "M11",
+     "M12",
+     "M13"
+    ]
+   }
+  },
+  {
+   "id": "beat-m11",
+   "title": "A Dance with the Devil",
+   "description": "Finish mission 11, A Dance with the Devil. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Contracts",
+   "rule": {
+    "reach": [
+     "M12",
+     "M13"
+    ]
+   }
+  },
+  {
+   "id": "beat-m12",
+   "title": "Amendment XXV",
+   "description": "Finish mission 12, Amendment XXV. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Contracts",
+   "rule": {
+    "reach": [
+     "M13"
+    ]
+   }
+  },
+  {
+   "id": "requiem",
+   "title": "Requiem",
+   "description": "Reach the final mission, Requiem. (Save a game in it.)",
+   "points": 30,
+   "group": "Contracts",
+   "rule": {
+    "reach": "M13"
+   }
+  },
+  {
+   "id": "saves-4",
+   "title": "Professional",
+   "description": "Save a game in 4 different missions.",
+   "points": 10,
+   "group": "Milestones",
+   "rule": {
+    "count": 4,
+    "of": [
+     "M00",
+     "M01",
+     "M02",
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13"
+    ]
+   }
+  },
+  {
+   "id": "saves-8",
+   "title": "Silent Assassin",
+   "description": "Save a game in 8 different missions.",
+   "points": 20,
+   "group": "Milestones",
+   "rule": {
+    "count": 8,
+    "of": [
+     "M00",
+     "M01",
+     "M02",
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13"
+    ]
+   }
+  },
+  {
+   "id": "saves-all",
+   "title": "Full Dossier",
+   "description": "Save a game in all 13 missions.",
+   "points": 30,
+   "group": "Milestones",
+   "rule": {
+    "count": 13,
+    "of": [
+     "M00",
+     "M01",
+     "M02",
+     "M03",
+     "M04",
+     "M05",
+     "M06",
+     "M08",
+     "M09",
+     "M10",
+     "M11",
+     "M12",
+     "M13"
+    ]
+   }
+  },
+  {
+   "id": "during-m00",
+   "title": "On Location: Death of a Showman",
+   "description": "Save a game during Death of a Showman.",
+   "points": 5,
+   "group": "On location",
+   "rule": {
+    "reach": "M00"
+   }
+  },
+  {
+   "id": "during-m01",
+   "title": "On Location: A Vintage Year",
+   "description": "Save a game during A Vintage Year.",
+   "points": 5,
+   "group": "On location",
+   "rule": {
+    "reach": "M01"
+   }
+  },
+  {
+   "id": "during-m02",
+   "title": "On Location: Curtains Down",
+   "description": "Save a game during Curtains Down.",
+   "points": 5,
+   "group": "On location",
+   "rule": {
+    "reach": "M02"
+   }
+  },
+  {
+   "id": "during-m03",
+   "title": "On Location: Flatline",
+   "description": "Save a game during Flatline.",
+   "points": 5,
+   "group": "On location",
+   "rule": {
+    "reach": "M03"
+   }
+  },
+  {
+   "id": "during-m04",
+   "title": "On Location: A New Life",
+   "description": "Save a game during A New Life.",
+   "points": 5,
+   "group": "On location",
+   "rule": {
+    "reach": "M04"
+   }
+  },
+  {
+   "id": "during-m05",
+   "title": "On Location: The Murder of Crows",
+   "description": "Save a game during The Murder of Crows.",
+   "points": 5,
+   "group": "On location",
+   "rule": {
+    "reach": "M05"
+   }
+  },
+  {
+   "id": "during-m06",
+   "title": "On Location: You Better Watch Out...",
+   "description": "Save a game during You Better Watch Out....",
+   "points": 5,
+   "group": "On location",
+   "rule": {
+    "reach": "M06"
+   }
+  },
+  {
+   "id": "during-m08",
+   "title": "On Location: Death on the Mississippi",
+   "description": "Save a game during Death on the Mississippi.",
+   "points": 5,
+   "group": "On location",
+   "rule": {
+    "reach": "M08"
+   }
+  },
+  {
+   "id": "during-m09",
+   "title": "On Location: Till Death Do Us Part",
+   "description": "Save a game during Till Death Do Us Part.",
+   "points": 5,
+   "group": "On location",
+   "rule": {
+    "reach": "M09"
+   }
+  },
+  {
+   "id": "during-m10",
+   "title": "On Location: A House of Cards",
+   "description": "Save a game during A House of Cards.",
+   "points": 5,
+   "group": "On location",
+   "rule": {
+    "reach": "M10"
+   }
+  },
+  {
+   "id": "during-m11",
+   "title": "On Location: A Dance with the Devil",
+   "description": "Save a game during A Dance with the Devil.",
+   "points": 5,
+   "group": "On location",
+   "rule": {
+    "reach": "M11"
+   }
+  },
+  {
+   "id": "during-m12",
+   "title": "On Location: Amendment XXV",
+   "description": "Save a game during Amendment XXV.",
+   "points": 5,
+   "group": "On location",
+   "rule": {
+    "reach": "M12"
+   }
+  },
+  {
+   "id": "during-m13",
+   "title": "On Location: Requiem",
+   "description": "Save a game during Requiem.",
+   "points": 5,
+   "group": "On location",
+   "rule": {
+    "reach": "M13"
+   }
+  },
+  {
+   "id": "planner-m00",
+   "title": "Meticulous: Death of a Showman",
+   "description": "Save 5 times during Death of a Showman.",
+   "points": 5,
+   "group": "Meticulous",
+   "rule": {
+    "inMission": {
+     "of": "M00",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-m01",
+   "title": "Meticulous: A Vintage Year",
+   "description": "Save 5 times during A Vintage Year.",
+   "points": 5,
+   "group": "Meticulous",
+   "rule": {
+    "inMission": {
+     "of": "M01",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-m02",
+   "title": "Meticulous: Curtains Down",
+   "description": "Save 5 times during Curtains Down.",
+   "points": 5,
+   "group": "Meticulous",
+   "rule": {
+    "inMission": {
+     "of": "M02",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-m03",
+   "title": "Meticulous: Flatline",
+   "description": "Save 5 times during Flatline.",
+   "points": 5,
+   "group": "Meticulous",
+   "rule": {
+    "inMission": {
+     "of": "M03",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-m04",
+   "title": "Meticulous: A New Life",
+   "description": "Save 5 times during A New Life.",
+   "points": 5,
+   "group": "Meticulous",
+   "rule": {
+    "inMission": {
+     "of": "M04",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-m05",
+   "title": "Meticulous: The Murder of Crows",
+   "description": "Save 5 times during The Murder of Crows.",
+   "points": 5,
+   "group": "Meticulous",
+   "rule": {
+    "inMission": {
+     "of": "M05",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-m06",
+   "title": "Meticulous: You Better Watch Out...",
+   "description": "Save 5 times during You Better Watch Out....",
+   "points": 5,
+   "group": "Meticulous",
+   "rule": {
+    "inMission": {
+     "of": "M06",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-m08",
+   "title": "Meticulous: Death on the Mississippi",
+   "description": "Save 5 times during Death on the Mississippi.",
+   "points": 5,
+   "group": "Meticulous",
+   "rule": {
+    "inMission": {
+     "of": "M08",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-m09",
+   "title": "Meticulous: Till Death Do Us Part",
+   "description": "Save 5 times during Till Death Do Us Part.",
+   "points": 5,
+   "group": "Meticulous",
+   "rule": {
+    "inMission": {
+     "of": "M09",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-m10",
+   "title": "Meticulous: A House of Cards",
+   "description": "Save 5 times during A House of Cards.",
+   "points": 5,
+   "group": "Meticulous",
+   "rule": {
+    "inMission": {
+     "of": "M10",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-m11",
+   "title": "Meticulous: A Dance with the Devil",
+   "description": "Save 5 times during A Dance with the Devil.",
+   "points": 5,
+   "group": "Meticulous",
+   "rule": {
+    "inMission": {
+     "of": "M11",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-m12",
+   "title": "Meticulous: Amendment XXV",
+   "description": "Save 5 times during Amendment XXV.",
+   "points": 5,
+   "group": "Meticulous",
+   "rule": {
+    "inMission": {
+     "of": "M12",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-m13",
+   "title": "Meticulous: Requiem",
+   "description": "Save 5 times during Requiem.",
+   "points": 5,
+   "group": "Meticulous",
+   "rule": {
+    "inMission": {
+     "of": "M13",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "writes-300",
+   "title": "Paper Trail",
+   "description": "Save your game 300 times.",
+   "points": 30,
+   "group": "Saving",
+   "rule": {
+    "saves": 300
+   }
+  },
+  {
+   "id": "files-10",
+   "title": "Safe House",
+   "description": "Have 10 different save slots.",
+   "points": 15,
+   "group": "Saving",
+   "rule": {
+    "files": 10
+   }
+  },
+  {
+   "id": "files-3",
+   "title": "Backup Plan",
+   "description": "Have 3 different save slots.",
+   "points": 5,
+   "group": "Saving",
+   "rule": {
+    "files": 3
+   }
+  },
+  {
+   "id": "files-6",
+   "title": "Filing Cabinet",
+   "description": "Have 6 different save slots.",
+   "points": 10,
+   "group": "Saving",
+   "rule": {
+    "files": 6
+   }
+  },
+  {
+   "id": "writes-10",
+   "title": "Cover Your Tracks",
+   "description": "Save your game 10 times.",
+   "points": 5,
+   "group": "Saving",
+   "rule": {
+    "saves": 10
+   }
+  },
+  {
+   "id": "writes-50",
+   "title": "Save Often",
+   "description": "Save your game 50 times.",
+   "points": 15,
+   "group": "Saving",
+   "rule": {
+    "saves": 50
+   }
+  },
+  {
+   "id": "writes-150",
+   "title": "Nothing Left to Chance",
+   "description": "Save your game 150 times.",
+   "points": 25,
+   "group": "Saving",
+   "rule": {
+    "saves": 150
+   }
+  }
+ ]
+}

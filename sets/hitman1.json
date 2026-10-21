@@ -1,0 +1,150 @@
+{
+ "id": "hitman1",
+ "title": "Hitman: Codename 47",
+ "exeNames": [
+  "hitman.exe"
+ ],
+ "md5": [
+  "1f56c85203637571d4cd14904baa2c91"
+ ],
+ "genericExeName": true,
+ "linkFiles": [
+  "Hitman.Exe",
+  "HitmanDlc.dlc"
+ ],
+ "version": 1,
+ "pollHz": 10,
+ "settleSeconds": 2,
+ "notes": [
+  "Each mission's achievement unlocks when the next mission starts loading.",
+  "Read-only: Vault watches the game's memory and never changes it.",
+  "Addresses come from the community speedrun auto-splitters for the Steam version."
+ ],
+ "watches": [
+  {
+   "id": "scene",
+   "label": "Current scene number",
+   "path": [
+    "{hitmandlc.dlc+149448}",
+    "0"
+   ],
+   "size": "u16"
+  }
+ ],
+ "testGuide": [
+  {
+   "title": "Start Hitman: Codename 47",
+   "detail": "Start or load a mission. \"Current scene number\" should show a number that changes between missions."
+  },
+  {
+   "title": "Finish a mission",
+   "detail": "When the next mission loads, that mission's achievement should pop up. If not, send a test report."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "mission-1",
+   "title": "Training Complete",
+   "description": "Finish the training at the asylum.",
+   "points": 5,
+   "group": "Training",
+   "memaddr": "I:0xX{hitmandlc.dlc+149448}_d0x0000=188_I:0xX{hitmandlc.dlc+149448}_0x0000=290"
+  },
+  {
+   "id": "mission-2",
+   "title": "Kowloon Triads in Gang War",
+   "description": "Complete Kowloon Triads in Gang War.",
+   "points": 10,
+   "group": "Hong Kong",
+   "memaddr": "I:0xX{hitmandlc.dlc+149448}_d0x0000=290_I:0xX{hitmandlc.dlc+149448}_0x0000=303"
+  },
+  {
+   "id": "mission-3",
+   "title": "Ambush at the Wang Fou",
+   "description": "Complete Ambush at the Wang Fou Restaurant.",
+   "points": 10,
+   "group": "Hong Kong",
+   "memaddr": "I:0xX{hitmandlc.dlc+149448}_d0x0000=303_I:0xX{hitmandlc.dlc+149448}_0x0000=183"
+  },
+  {
+   "id": "mission-4",
+   "title": "Massacre at Cheung Chau",
+   "description": "Complete The Massacre at Cheung Chau Fish Restaurant.",
+   "points": 10,
+   "group": "Hong Kong",
+   "memaddr": "I:0xX{hitmandlc.dlc+149448}_d0x0000=183_I:0xX{hitmandlc.dlc+149448}_0x0000=220"
+  },
+  {
+   "id": "mission-5",
+   "title": "The Lee Hong Assassination",
+   "description": "Assassinate Lee Hong.",
+   "points": 10,
+   "group": "Hong Kong",
+   "memaddr": "1=1SI:0xX{hitmandlc.dlc+149448}_d0x0000=220_I:0xX{hitmandlc.dlc+149448}_0x0000=280SI:0xX{hitmandlc.dlc+149448}_d0x0000=220_I:0xX{hitmandlc.dlc+149448}_0x0000=213"
+  },
+  {
+   "id": "mission-6",
+   "title": "Find the U'wa Tribe",
+   "description": "Complete Find the U'wa Tribe.",
+   "points": 10,
+   "group": "Colombia",
+   "memaddr": "I:0xX{hitmandlc.dlc+149448}_d0x0000=280_I:0xX{hitmandlc.dlc+149448}_0x0000=272"
+  },
+  {
+   "id": "mission-7",
+   "title": "The Jungle God",
+   "description": "Complete The Jungle God.",
+   "points": 10,
+   "group": "Colombia",
+   "memaddr": "I:0xX{hitmandlc.dlc+149448}_d0x0000=272_I:0xX{hitmandlc.dlc+149448}_0x0000=169"
+  },
+  {
+   "id": "mission-8",
+   "title": "Say Hello to My Little Friend",
+   "description": "Complete Say Hello to My Little Friend.",
+   "points": 10,
+   "group": "Colombia",
+   "memaddr": "I:0xX{hitmandlc.dlc+149448}_d0x0000=169_I:0xX{hitmandlc.dlc+149448}_0x0000=200"
+  },
+  {
+   "id": "mission-9",
+   "title": "Traditions of the Trade",
+   "description": "Complete Traditions of the Trade in Budapest.",
+   "points": 10,
+   "group": "Budapest",
+   "memaddr": "I:0xX{hitmandlc.dlc+149448}_d0x0000=200_I:0xX{hitmandlc.dlc+149448}_0x0000=297"
+  },
+  {
+   "id": "mission-10",
+   "title": "Gunrunner's Paradise",
+   "description": "Complete Gunrunner's Paradise in Rotterdam.",
+   "points": 10,
+   "group": "Rotterdam",
+   "memaddr": "I:0xX{hitmandlc.dlc+149448}_d0x0000=297_I:0xX{hitmandlc.dlc+149448}_0x0000=214"
+  },
+  {
+   "id": "mission-11",
+   "title": "Plutonium Runs Loose",
+   "description": "Complete Plutonium Runs Loose.",
+   "points": 10,
+   "group": "Rotterdam",
+   "memaddr": "I:0xX{hitmandlc.dlc+149448}_d0x0000=214_I:0xX{hitmandlc.dlc+149448}_0x0000=296"
+  },
+  {
+   "id": "mission-12",
+   "title": "The Setup",
+   "description": "Complete The Setup.",
+   "points": 10,
+   "group": "Rotterdam",
+   "memaddr": "I:0xX{hitmandlc.dlc+149448}_d0x0000=296_I:0xX{hitmandlc.dlc+149448}_0x0000=213"
+  },
+  {
+   "id": "finale",
+   "title": "Meet Your Brother",
+   "description": "Finish the game at the Sanitarium.",
+   "points": 50,
+   "group": "Sanitarium",
+   "memaddr": "1=1SI:0xX{enginedata.dll+18858}_0xX0000=1001955310_I:0xX{enginedata.dll+18858}_0xX0004=1072733133_I:0xX{enginedata.dll+18858}_d0xX0000=1649498773_I:0xX{enginedata.dll+18858}_d0xX0004=1072168369SI:0xX{enginedata.dll+18858}_0xX0000=1001955310_I:0xX{enginedata.dll+18858}_0xX0004=1072733133_I:0xX{enginedata.dll+18858}_d0xX0000=859807207_I:0xX{enginedata.dll+18858}_d0xX0004=1072910415"
+  }
+ ]
+}

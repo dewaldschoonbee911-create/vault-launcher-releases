@@ -1,0 +1,715 @@
+{
+  "id": "generals",
+  "title": "Command & Conquer: Generals",
+  "exeNames": [
+    "game.dat"
+  ],
+  "genericExeName": true,
+  "linkFiles": [
+    "Game.dat",
+    "INI.big"
+  ],
+  "md5": [
+    "a5436346871e3be33faac242e69a42c2"
+  ],
+  "version": 1,
+  "pollHz": 10,
+  "settleSeconds": 2,
+  "gate": "0xXa6c344!=0",
+  "notes": [
+    "Mission achievements unlock the moment the victory message appears.",
+    "Build checked: Steam 2025 re-release (Game.dat a5436346871e3be33faac242e69a42c2)."
+  ],
+  "watches": [
+    {
+      "id": "kills",
+      "label": "Enemy units you destroyed this match",
+      "path": [
+        "a6b968",
+        "c",
+        "20c"
+      ],
+      "size": "sum16"
+    },
+    {
+      "id": "bkills",
+      "label": "Enemy buildings you destroyed this match",
+      "path": [
+        "a6b968",
+        "c",
+        "254"
+      ],
+      "size": "sum16"
+    },
+    {
+      "id": "built",
+      "label": "Units you built this match",
+      "path": [
+        "a6b968",
+        "c",
+        "24c"
+      ],
+      "size": "u32"
+    },
+    {
+      "id": "lost",
+      "label": "Units you lost this match",
+      "path": [
+        "a6b968",
+        "c",
+        "250"
+      ],
+      "size": "u32"
+    },
+    {
+      "id": "earned",
+      "label": "Money earned this match",
+      "path": [
+        "a6b968",
+        "c",
+        "204"
+      ],
+      "size": "u32"
+    },
+    {
+      "id": "mgr",
+      "label": "Campaign manager loaded",
+      "address": "a6c344",
+      "size": "u32"
+    },
+    {
+      "id": "victory",
+      "label": "Victory flag",
+      "pointer": "a6c344",
+      "offset": "10",
+      "size": "u8",
+      "values": {
+        "0": "No",
+        "1": "Won"
+      }
+    },
+    {
+      "id": "difficulty",
+      "label": "Difficulty",
+      "pointer": "a6c344",
+      "offset": "18",
+      "size": "u32",
+      "values": {
+        "0": "Easy",
+        "1": "Normal",
+        "2": "Hard"
+      }
+    },
+    {
+      "id": "mission",
+      "label": "Mission loaded (0 = none / skirmish)",
+      "pointer": "a6c344",
+      "offset": "c",
+      "size": "u32"
+    },
+    {
+      "id": "map",
+      "label": "Mission map",
+      "path": [
+        "a6c344",
+        "c",
+        "8",
+        "4"
+      ],
+      "size": "str",
+      "length": 40
+    },
+    {
+      "id": "campaign",
+      "label": "Campaign",
+      "path": [
+        "a6c344",
+        "8",
+        "4",
+        "4"
+      ],
+      "size": "str",
+      "length": 24
+    }
+  ],
+  "testGuide": [
+    {
+      "title": "Start Command & Conquer: Generals",
+      "detail": "Click Play on the game page (or start it from Steam) and wait for the main menu.",
+      "doneWhen": {
+        "watch": "mgr",
+        "atLeast": 1
+      }
+    },
+    {
+      "title": "Start a campaign mission",
+      "detail": "Pick any campaign. \"Mission loaded\" should change from 0 to a big number.",
+      "doneWhen": {
+        "watch": "mission",
+        "atLeast": 1
+      }
+    },
+    {
+      "title": "Win it",
+      "detail": "When the victory message appears the Victory flag shows \"Won\" and the achievement pops.",
+      "doneWhen": {
+        "watch": "victory",
+        "equals": 1
+      }
+    }
+  ],
+  "achievements": [
+    {
+      "id": "usa01",
+      "title": "USA 1: Silent Dawn",
+      "description": "Win USA campaign mission 1.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809587541_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=49_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "USA campaign"
+    },
+    {
+      "id": "usa01-hard",
+      "title": "USA 1: Silent Dawn (Hard)",
+      "description": "Win USA campaign mission 1 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809587541_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=49_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "USA campaign — Hard"
+    },
+    {
+      "id": "usa02",
+      "title": "USA 2: Treasure Hunt",
+      "description": "Win USA campaign mission 2.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809587541_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=50_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "USA campaign"
+    },
+    {
+      "id": "usa02-hard",
+      "title": "USA 2: Treasure Hunt (Hard)",
+      "description": "Win USA campaign mission 2 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809587541_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=50_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "USA campaign — Hard"
+    },
+    {
+      "id": "usa03",
+      "title": "USA 3: Guardian Angel",
+      "description": "Win USA campaign mission 3.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809587541_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=51_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "USA campaign"
+    },
+    {
+      "id": "usa03-hard",
+      "title": "USA 3: Guardian Angel (Hard)",
+      "description": "Win USA campaign mission 3 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809587541_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=51_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "USA campaign — Hard"
+    },
+    {
+      "id": "usa04",
+      "title": "USA 4: Stormbringer",
+      "description": "Win USA campaign mission 4.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809587541_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=52_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "USA campaign"
+    },
+    {
+      "id": "usa04-hard",
+      "title": "USA 4: Stormbringer (Hard)",
+      "description": "Win USA campaign mission 4 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809587541_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=52_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "USA campaign — Hard"
+    },
+    {
+      "id": "usa05",
+      "title": "USA Mission 5",
+      "description": "Win USA campaign mission 5.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809587541_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=54_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "USA campaign"
+    },
+    {
+      "id": "usa05-hard",
+      "title": "USA Mission 5 (Hard)",
+      "description": "Win USA campaign mission 5 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809587541_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=54_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "USA campaign — Hard"
+    },
+    {
+      "id": "usa06",
+      "title": "USA 6: Desperate Union",
+      "description": "Win USA campaign mission 6.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809587541_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=55_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "USA campaign"
+    },
+    {
+      "id": "usa06-hard",
+      "title": "USA 6: Desperate Union (Hard)",
+      "description": "Win USA campaign mission 6 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809587541_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=55_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "USA campaign — Hard"
+    },
+    {
+      "id": "usa07",
+      "title": "USA 7: Last Call",
+      "description": "Win USA campaign mission 7 (the finale).",
+      "points": 25,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809587541_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=56_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "USA campaign"
+    },
+    {
+      "id": "usa07-hard",
+      "title": "USA 7: Last Call (Hard)",
+      "description": "Win USA campaign mission 7 on Hard.",
+      "points": 30,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809587541_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=56_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "USA campaign — Hard"
+    },
+    {
+      "id": "gla01",
+      "title": "GLA 1: Black Rain",
+      "description": "Win GLA campaign mission 1.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809585735_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=49_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "GLA campaign"
+    },
+    {
+      "id": "gla01-hard",
+      "title": "GLA 1: Black Rain (Hard)",
+      "description": "Win GLA campaign mission 1 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809585735_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=49_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "GLA campaign — Hard"
+    },
+    {
+      "id": "gla02",
+      "title": "GLA 2: Pillage the Village",
+      "description": "Win GLA campaign mission 2.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809585735_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=50_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "GLA campaign"
+    },
+    {
+      "id": "gla02-hard",
+      "title": "GLA 2: Pillage the Village (Hard)",
+      "description": "Win GLA campaign mission 2 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809585735_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=50_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "GLA campaign — Hard"
+    },
+    {
+      "id": "gla03",
+      "title": "GLA 3: Astana",
+      "description": "Win GLA campaign mission 3.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809585735_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=52_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "GLA campaign"
+    },
+    {
+      "id": "gla03-hard",
+      "title": "GLA 3: Astana (Hard)",
+      "description": "Win GLA campaign mission 3 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809585735_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=52_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "GLA campaign — Hard"
+    },
+    {
+      "id": "gla04",
+      "title": "GLA 4: Incirlik Air Base",
+      "description": "Win GLA campaign mission 4.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809585735_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=53_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "GLA campaign"
+    },
+    {
+      "id": "gla04-hard",
+      "title": "GLA 4: Incirlik Air Base (Hard)",
+      "description": "Win GLA campaign mission 4 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809585735_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=53_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "GLA campaign — Hard"
+    },
+    {
+      "id": "gla05",
+      "title": "GLA 5: Appropriate Poisons",
+      "description": "Win GLA campaign mission 5.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809585735_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=54_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "GLA campaign"
+    },
+    {
+      "id": "gla05-hard",
+      "title": "GLA 5: Appropriate Poisons (Hard)",
+      "description": "Win GLA campaign mission 5 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809585735_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=54_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "GLA campaign — Hard"
+    },
+    {
+      "id": "gla06",
+      "title": "GLA 6: Trojan Horse",
+      "description": "Win GLA campaign mission 6.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809585735_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=55_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "GLA campaign"
+    },
+    {
+      "id": "gla06-hard",
+      "title": "GLA 6: Trojan Horse (Hard)",
+      "description": "Win GLA campaign mission 6 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809585735_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=55_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "GLA campaign — Hard"
+    },
+    {
+      "id": "gla07",
+      "title": "GLA 7: Baikonur Cosmodrome",
+      "description": "Win GLA campaign mission 7 (the finale).",
+      "points": 25,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809585735_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=56_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "GLA campaign"
+    },
+    {
+      "id": "gla07-hard",
+      "title": "GLA 7: Baikonur Cosmodrome (Hard)",
+      "description": "Win GLA campaign mission 7 on Hard.",
+      "points": 30,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=809585735_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=56_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "GLA campaign — Hard"
+    },
+    {
+      "id": "china01",
+      "title": "China 1: The Dragon Awakes",
+      "description": "Win China campaign mission 1.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=810108995_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=49_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "China campaign"
+    },
+    {
+      "id": "china01-hard",
+      "title": "China 1: The Dragon Awakes (Hard)",
+      "description": "Win China campaign mission 1 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=810108995_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=49_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "China campaign — Hard"
+    },
+    {
+      "id": "china02",
+      "title": "China 2: Hong Kong Crisis",
+      "description": "Win China campaign mission 2.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=810108995_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=50_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "China campaign"
+    },
+    {
+      "id": "china02-hard",
+      "title": "China 2: Hong Kong Crisis (Hard)",
+      "description": "Win China campaign mission 2 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=810108995_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=50_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "China campaign — Hard"
+    },
+    {
+      "id": "china03",
+      "title": "China 3: A Flood of Violence",
+      "description": "Win China campaign mission 3.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=810108995_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=51_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "China campaign"
+    },
+    {
+      "id": "china03-hard",
+      "title": "China 3: A Flood of Violence (Hard)",
+      "description": "Win China campaign mission 3 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=810108995_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=51_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "China campaign — Hard"
+    },
+    {
+      "id": "china04",
+      "title": "China 4: Broken Alliances",
+      "description": "Win China campaign mission 4.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=810108995_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=52_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "China campaign"
+    },
+    {
+      "id": "china04-hard",
+      "title": "China 4: Broken Alliances (Hard)",
+      "description": "Win China campaign mission 4 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=810108995_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=52_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "China campaign — Hard"
+    },
+    {
+      "id": "china05",
+      "title": "China 5: Scorched Earth",
+      "description": "Win China campaign mission 5.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=810108995_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=53_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "China campaign"
+    },
+    {
+      "id": "china05-hard",
+      "title": "China 5: Scorched Earth (Hard)",
+      "description": "Win China campaign mission 5 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=810108995_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=53_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "China campaign — Hard"
+    },
+    {
+      "id": "china06",
+      "title": "China 6: Dead in their Tracks",
+      "description": "Win China campaign mission 6.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=810108995_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=54_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "China campaign"
+    },
+    {
+      "id": "china06-hard",
+      "title": "China 6: Dead in their Tracks (Hard)",
+      "description": "Win China campaign mission 6 on Hard.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=810108995_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=54_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "China campaign — Hard"
+    },
+    {
+      "id": "china07",
+      "title": "China 7: Nuclear Winter",
+      "description": "Win China campaign mission 7 (the finale).",
+      "points": 25,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=810108995_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=55_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "China campaign"
+    },
+    {
+      "id": "china07-hard",
+      "title": "China 7: Nuclear Winter (Hard)",
+      "description": "Win China campaign mission 7 on Hard.",
+      "points": 30,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_0xX18=2_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=810108995_I:0xXa6c344_I:0xXc_I:0xX8_0xHd=55_I:0xXa6c344_I:0xXc_I:0xX8_0xHe=92",
+      "group": "China campaign — Hard"
+    },
+    {
+      "id": "training",
+      "title": "Boot Camp",
+      "description": "Finish the training mission.",
+      "points": 5,
+      "memaddr": "I:0xXa6c344_0xH10=1_I:0xXa6c344_I:0xXc_I:0xX8_0xX9=1767993940_I:0xXa6c344_I:0xXc_I:0xX8_0xXd=1735289198_I:0xXa6c344_I:0xXc_I:0xX8_0xH11=48_I:0xXa6c344_I:0xXc_I:0xX8_0xH12=49_I:0xXa6c344_I:0xXc_I:0xX8_0xH13=92",
+      "group": "Getting started"
+    },
+    {
+      "id": "skirmish-win",
+      "title": "Skirmish Victor",
+      "description": "Win a skirmish (or LAN) game.",
+      "points": 10,
+      "memaddr": "I:0xXa6c344_0xH10=1_0xXa6c344!=0_I:0xXa6c344_0xX8=0",
+      "group": "Skirmish"
+    },
+    {
+      "id": "kills-1",
+      "title": "First Strike",
+      "description": "Destroy 1 enemy unit in one match.",
+      "points": 5,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_A:0xX20c_I:0xXa6b968_I:0xXc_A:0xX210_I:0xXa6b968_I:0xXc_A:0xX214_I:0xXa6b968_I:0xXc_A:0xX218_I:0xXa6b968_I:0xXc_A:0xX21c_I:0xXa6b968_I:0xXc_A:0xX220_I:0xXa6b968_I:0xXc_A:0xX224_I:0xXa6b968_I:0xXc_A:0xX228_I:0xXa6b968_I:0xXc_A:0xX22c_I:0xXa6b968_I:0xXc_A:0xX230_I:0xXa6b968_I:0xXc_A:0xX234_I:0xXa6b968_I:0xXc_A:0xX238_I:0xXa6b968_I:0xXc_A:0xX23c_I:0xXa6b968_I:0xXc_A:0xX240_I:0xXa6b968_I:0xXc_A:0xX244_I:0xXa6b968_I:0xXc_0xX248>=1",
+      "group": "Combat"
+    },
+    {
+      "id": "kills-50",
+      "title": "Body Count",
+      "description": "Destroy 50 enemy units in one match.",
+      "points": 10,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_A:0xX20c_I:0xXa6b968_I:0xXc_A:0xX210_I:0xXa6b968_I:0xXc_A:0xX214_I:0xXa6b968_I:0xXc_A:0xX218_I:0xXa6b968_I:0xXc_A:0xX21c_I:0xXa6b968_I:0xXc_A:0xX220_I:0xXa6b968_I:0xXc_A:0xX224_I:0xXa6b968_I:0xXc_A:0xX228_I:0xXa6b968_I:0xXc_A:0xX22c_I:0xXa6b968_I:0xXc_A:0xX230_I:0xXa6b968_I:0xXc_A:0xX234_I:0xXa6b968_I:0xXc_A:0xX238_I:0xXa6b968_I:0xXc_A:0xX23c_I:0xXa6b968_I:0xXc_A:0xX240_I:0xXa6b968_I:0xXc_A:0xX244_I:0xXa6b968_I:0xXc_M:0xX248>=50",
+      "group": "Combat"
+    },
+    {
+      "id": "kills-100",
+      "title": "Centurion",
+      "description": "Destroy 100 enemy units in one match.",
+      "points": 15,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_A:0xX20c_I:0xXa6b968_I:0xXc_A:0xX210_I:0xXa6b968_I:0xXc_A:0xX214_I:0xXa6b968_I:0xXc_A:0xX218_I:0xXa6b968_I:0xXc_A:0xX21c_I:0xXa6b968_I:0xXc_A:0xX220_I:0xXa6b968_I:0xXc_A:0xX224_I:0xXa6b968_I:0xXc_A:0xX228_I:0xXa6b968_I:0xXc_A:0xX22c_I:0xXa6b968_I:0xXc_A:0xX230_I:0xXa6b968_I:0xXc_A:0xX234_I:0xXa6b968_I:0xXc_A:0xX238_I:0xXa6b968_I:0xXc_A:0xX23c_I:0xXa6b968_I:0xXc_A:0xX240_I:0xXa6b968_I:0xXc_A:0xX244_I:0xXa6b968_I:0xXc_M:0xX248>=100",
+      "group": "Combat"
+    },
+    {
+      "id": "kills-250",
+      "title": "Warlord",
+      "description": "Destroy 250 enemy units in one match.",
+      "points": 25,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_A:0xX20c_I:0xXa6b968_I:0xXc_A:0xX210_I:0xXa6b968_I:0xXc_A:0xX214_I:0xXa6b968_I:0xXc_A:0xX218_I:0xXa6b968_I:0xXc_A:0xX21c_I:0xXa6b968_I:0xXc_A:0xX220_I:0xXa6b968_I:0xXc_A:0xX224_I:0xXa6b968_I:0xXc_A:0xX228_I:0xXa6b968_I:0xXc_A:0xX22c_I:0xXa6b968_I:0xXc_A:0xX230_I:0xXa6b968_I:0xXc_A:0xX234_I:0xXa6b968_I:0xXc_A:0xX238_I:0xXa6b968_I:0xXc_A:0xX23c_I:0xXa6b968_I:0xXc_A:0xX240_I:0xXa6b968_I:0xXc_A:0xX244_I:0xXa6b968_I:0xXc_M:0xX248>=250",
+      "group": "Combat"
+    },
+    {
+      "id": "kills-500",
+      "title": "Grim Reaper",
+      "description": "Destroy 500 enemy units in one match.",
+      "points": 40,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_A:0xX20c_I:0xXa6b968_I:0xXc_A:0xX210_I:0xXa6b968_I:0xXc_A:0xX214_I:0xXa6b968_I:0xXc_A:0xX218_I:0xXa6b968_I:0xXc_A:0xX21c_I:0xXa6b968_I:0xXc_A:0xX220_I:0xXa6b968_I:0xXc_A:0xX224_I:0xXa6b968_I:0xXc_A:0xX228_I:0xXa6b968_I:0xXc_A:0xX22c_I:0xXa6b968_I:0xXc_A:0xX230_I:0xXa6b968_I:0xXc_A:0xX234_I:0xXa6b968_I:0xXc_A:0xX238_I:0xXa6b968_I:0xXc_A:0xX23c_I:0xXa6b968_I:0xXc_A:0xX240_I:0xXa6b968_I:0xXc_A:0xX244_I:0xXa6b968_I:0xXc_M:0xX248>=500",
+      "group": "Combat"
+    },
+    {
+      "id": "kills-1000",
+      "title": "Apocalypse",
+      "description": "Destroy 1,000 enemy units in one match.",
+      "points": 60,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_A:0xX20c_I:0xXa6b968_I:0xXc_A:0xX210_I:0xXa6b968_I:0xXc_A:0xX214_I:0xXa6b968_I:0xXc_A:0xX218_I:0xXa6b968_I:0xXc_A:0xX21c_I:0xXa6b968_I:0xXc_A:0xX220_I:0xXa6b968_I:0xXc_A:0xX224_I:0xXa6b968_I:0xXc_A:0xX228_I:0xXa6b968_I:0xXc_A:0xX22c_I:0xXa6b968_I:0xXc_A:0xX230_I:0xXa6b968_I:0xXc_A:0xX234_I:0xXa6b968_I:0xXc_A:0xX238_I:0xXa6b968_I:0xXc_A:0xX23c_I:0xXa6b968_I:0xXc_A:0xX240_I:0xXa6b968_I:0xXc_A:0xX244_I:0xXa6b968_I:0xXc_M:0xX248>=1000",
+      "group": "Combat"
+    },
+    {
+      "id": "bkills-10",
+      "title": "Demolition Man",
+      "description": "Destroy 10 enemy buildings in one match.",
+      "points": 10,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_A:0xX254_I:0xXa6b968_I:0xXc_A:0xX258_I:0xXa6b968_I:0xXc_A:0xX25c_I:0xXa6b968_I:0xXc_A:0xX260_I:0xXa6b968_I:0xXc_A:0xX264_I:0xXa6b968_I:0xXc_A:0xX268_I:0xXa6b968_I:0xXc_A:0xX26c_I:0xXa6b968_I:0xXc_A:0xX270_I:0xXa6b968_I:0xXc_A:0xX274_I:0xXa6b968_I:0xXc_A:0xX278_I:0xXa6b968_I:0xXc_A:0xX27c_I:0xXa6b968_I:0xXc_A:0xX280_I:0xXa6b968_I:0xXc_A:0xX284_I:0xXa6b968_I:0xXc_A:0xX288_I:0xXa6b968_I:0xXc_A:0xX28c_I:0xXa6b968_I:0xXc_M:0xX290>=10",
+      "group": "Combat"
+    },
+    {
+      "id": "bkills-25",
+      "title": "Urban Renewal",
+      "description": "Destroy 25 enemy buildings in one match.",
+      "points": 20,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_A:0xX254_I:0xXa6b968_I:0xXc_A:0xX258_I:0xXa6b968_I:0xXc_A:0xX25c_I:0xXa6b968_I:0xXc_A:0xX260_I:0xXa6b968_I:0xXc_A:0xX264_I:0xXa6b968_I:0xXc_A:0xX268_I:0xXa6b968_I:0xXc_A:0xX26c_I:0xXa6b968_I:0xXc_A:0xX270_I:0xXa6b968_I:0xXc_A:0xX274_I:0xXa6b968_I:0xXc_A:0xX278_I:0xXa6b968_I:0xXc_A:0xX27c_I:0xXa6b968_I:0xXc_A:0xX280_I:0xXa6b968_I:0xXc_A:0xX284_I:0xXa6b968_I:0xXc_A:0xX288_I:0xXa6b968_I:0xXc_A:0xX28c_I:0xXa6b968_I:0xXc_M:0xX290>=25",
+      "group": "Combat"
+    },
+    {
+      "id": "bkills-50",
+      "title": "Scorched Earth",
+      "description": "Destroy 50 enemy buildings in one match.",
+      "points": 35,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_A:0xX254_I:0xXa6b968_I:0xXc_A:0xX258_I:0xXa6b968_I:0xXc_A:0xX25c_I:0xXa6b968_I:0xXc_A:0xX260_I:0xXa6b968_I:0xXc_A:0xX264_I:0xXa6b968_I:0xXc_A:0xX268_I:0xXa6b968_I:0xXc_A:0xX26c_I:0xXa6b968_I:0xXc_A:0xX270_I:0xXa6b968_I:0xXc_A:0xX274_I:0xXa6b968_I:0xXc_A:0xX278_I:0xXa6b968_I:0xXc_A:0xX27c_I:0xXa6b968_I:0xXc_A:0xX280_I:0xXa6b968_I:0xXc_A:0xX284_I:0xXa6b968_I:0xXc_A:0xX288_I:0xXa6b968_I:0xXc_A:0xX28c_I:0xXa6b968_I:0xXc_M:0xX290>=50",
+      "group": "Combat"
+    },
+    {
+      "id": "built-50",
+      "title": "Production Line",
+      "description": "Build 50 units in one match.",
+      "points": 10,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_M:0xX24c>=50",
+      "group": "Army"
+    },
+    {
+      "id": "built-100",
+      "title": "War Factory",
+      "description": "Build 100 units in one match.",
+      "points": 15,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_M:0xX24c>=100",
+      "group": "Army"
+    },
+    {
+      "id": "built-200",
+      "title": "Arsenal of Democracy",
+      "description": "Build 200 units in one match.",
+      "points": 30,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_M:0xX24c>=200",
+      "group": "Army"
+    },
+    {
+      "id": "bbuilt-25",
+      "title": "Base Builder",
+      "description": "Construct 25 buildings in one match.",
+      "points": 10,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_M:0xX294>=25",
+      "group": "Base"
+    },
+    {
+      "id": "bbuilt-50",
+      "title": "Fortified",
+      "description": "Construct 50 buildings in one match.",
+      "points": 20,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_M:0xX294>=50",
+      "group": "Base"
+    },
+    {
+      "id": "earned-50000",
+      "title": "Supply Chain",
+      "description": "Collect 50,000 in supplies and income in one match.",
+      "points": 10,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_M:0xX204>=50000",
+      "group": "Economy"
+    },
+    {
+      "id": "earned-100000",
+      "title": "War Profiteer",
+      "description": "Collect 100,000 in supplies and income in one match.",
+      "points": 20,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_M:0xX204>=100000",
+      "group": "Economy"
+    },
+    {
+      "id": "earned-250000",
+      "title": "Black Market Baron",
+      "description": "Collect 250,000 in supplies and income in one match.",
+      "points": 35,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_M:0xX204>=250000",
+      "group": "Economy"
+    },
+    {
+      "id": "spent-100000",
+      "title": "Big Spender",
+      "description": "Spend 100,000 in one match.",
+      "points": 10,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_M:0xX208>=100000",
+      "group": "Economy"
+    },
+    {
+      "id": "spent-250000",
+      "title": "Defense Budget",
+      "description": "Spend 250,000 in one match.",
+      "points": 25,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_M:0xX208>=250000",
+      "group": "Economy"
+    },
+    {
+      "id": "capture-tech",
+      "title": "Tech Grab",
+      "description": "Capture 3 tech buildings (oil derricks, hospitals, etc.) in one match.",
+      "points": 10,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_M:0xX29c>=3",
+      "group": "Engineers"
+    },
+    {
+      "id": "capture-enemy",
+      "title": "Hostile Takeover",
+      "description": "Capture an enemy faction building.",
+      "points": 15,
+      "memaddr": "0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_0xX2a0>=1",
+      "group": "Engineers"
+    },
+    {
+      "id": "flawless",
+      "title": "Flawless Victory",
+      "description": "Win a mission or skirmish without losing a single unit.",
+      "points": 40,
+      "memaddr": "I:0xXa6c344_0xH10=1_0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_0xX250=0_I:0xXa6b968_I:0xXc_0xX24c>=1",
+      "group": "Victories"
+    },
+    {
+      "id": "untouchable",
+      "title": "Untouchable",
+      "description": "Win a mission or skirmish without losing a single building.",
+      "points": 25,
+      "memaddr": "I:0xXa6c344_0xH10=1_0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_0xX298=0_I:0xXa6b968_I:0xXc_0xX294>=1",
+      "group": "Victories"
+    },
+    {
+      "id": "overkill",
+      "title": "Overkill",
+      "description": "Win a match having destroyed at least 200 enemy units.",
+      "points": 30,
+      "memaddr": "I:0xXa6c344_0xH10=1_0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_A:0xX20c_I:0xXa6b968_I:0xXc_A:0xX210_I:0xXa6b968_I:0xXc_A:0xX214_I:0xXa6b968_I:0xXc_A:0xX218_I:0xXa6b968_I:0xXc_A:0xX21c_I:0xXa6b968_I:0xXc_A:0xX220_I:0xXa6b968_I:0xXc_A:0xX224_I:0xXa6b968_I:0xXc_A:0xX228_I:0xXa6b968_I:0xXc_A:0xX22c_I:0xXa6b968_I:0xXc_A:0xX230_I:0xXa6b968_I:0xXc_A:0xX234_I:0xXa6b968_I:0xXc_A:0xX238_I:0xXa6b968_I:0xXc_A:0xX23c_I:0xXa6b968_I:0xXc_A:0xX240_I:0xXa6b968_I:0xXc_A:0xX244_I:0xXa6b968_I:0xXc_0xX248>=200",
+      "group": "Victories"
+    },
+    {
+      "id": "pyrrhic",
+      "title": "Pyrrhic Victory",
+      "description": "Win a match after losing 100 or more units.",
+      "points": 15,
+      "memaddr": "I:0xXa6c344_0xH10=1_0xXa6b968!=0_I:0xXa6b968_0xXc!=0_I:0xXa6b968_I:0xXc_0xX250>=100",
+      "group": "Victories"
+    }
+  ]
+}

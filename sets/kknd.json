@@ -1,0 +1,600 @@
+{
+  "id": "kknd",
+  "title": "Evolved: Mission 24",
+  "version": 2,
+  "kind": "replay",
+  "authors": [
+    "Vault Launcher"
+  ],
+  "storeIds": [],
+  "linkFiles": [
+    "kknd.exe",
+    "levels/640/surv_01.lvl"
+  ],
+  "exeNames": [],
+  "md5": [],
+  "notes": [
+    "Vault reads your saved games (savegame in the game folder) and never touches the game.",
+    "Save once in each new mission: the missions before it count as beaten. The last mission can only count as reached.",
+    "Not yet tested on a real save. If nothing pops after saving, send a test report from the game page."
+  ],
+  "testGuide": [
+    {
+      "title": "Save in mission 2",
+      "detail": "Beat the first mission, then save early in the second. The first mission's achievement should pop."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "surv-1",
+      "title": "First Blood",
+      "description": "Survivors: beat mission 1. (Counts once you save in a later mission.)",
+      "points": 10,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 2
+      }
+    },
+    {
+      "id": "surv-m02",
+      "title": "Survivors: Mission 2",
+      "description": "Survivors: beat mission 2. (Counts once you save in a later mission.)",
+      "points": 10,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 3
+      }
+    },
+    {
+      "id": "surv-3",
+      "title": "Scavengers",
+      "description": "Survivors: beat mission 3. (Counts once you save in a later mission.)",
+      "points": 10,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 4
+      }
+    },
+    {
+      "id": "surv-m04",
+      "title": "Survivors: Mission 4",
+      "description": "Survivors: beat mission 4. (Counts once you save in a later mission.)",
+      "points": 10,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 5
+      }
+    },
+    {
+      "id": "surv-5",
+      "title": "Gas Guzzlers",
+      "description": "Survivors: beat mission 5. (Counts once you save in a later mission.)",
+      "points": 15,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 6
+      }
+    },
+    {
+      "id": "surv-m06",
+      "title": "Survivors: Mission 6",
+      "description": "Survivors: beat mission 6. (Counts once you save in a later mission.)",
+      "points": 15,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 7
+      }
+    },
+    {
+      "id": "surv-m07",
+      "title": "Survivors: Mission 7",
+      "description": "Survivors: beat mission 7. (Counts once you save in a later mission.)",
+      "points": 15,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 8
+      }
+    },
+    {
+      "id": "surv-8",
+      "title": "Holding the Line",
+      "description": "Survivors: beat mission 8. (Counts once you save in a later mission.)",
+      "points": 15,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 9
+      }
+    },
+    {
+      "id": "surv-m09",
+      "title": "Survivors: Mission 9",
+      "description": "Survivors: beat mission 9. (Counts once you save in a later mission.)",
+      "points": 15,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 10
+      }
+    },
+    {
+      "id": "surv-10",
+      "title": "Road Warriors",
+      "description": "Survivors: beat mission 10. (Counts once you save in a later mission.)",
+      "points": 15,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 11
+      }
+    },
+    {
+      "id": "surv-m11",
+      "title": "Survivors: Mission 11",
+      "description": "Survivors: beat mission 11. (Counts once you save in a later mission.)",
+      "points": 15,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 12
+      }
+    },
+    {
+      "id": "surv-m12",
+      "title": "Survivors: Mission 12",
+      "description": "Survivors: beat mission 12. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 13
+      }
+    },
+    {
+      "id": "surv-13",
+      "title": "Bunker Busters",
+      "description": "Survivors: beat mission 13. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 14
+      }
+    },
+    {
+      "id": "surv-m14",
+      "title": "Survivors: Mission 14",
+      "description": "Survivors: beat mission 14. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 15
+      }
+    },
+    {
+      "id": "surv-15",
+      "title": "Halfway to Hell",
+      "description": "Survivors: beat mission 15. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 16
+      }
+    },
+    {
+      "id": "surv-m16",
+      "title": "Survivors: Mission 16",
+      "description": "Survivors: beat mission 16. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 17
+      }
+    },
+    {
+      "id": "surv-m17",
+      "title": "Survivors: Mission 17",
+      "description": "Survivors: beat mission 17. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 18
+      }
+    },
+    {
+      "id": "surv-18",
+      "title": "Iron Will",
+      "description": "Survivors: beat mission 18. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 19
+      }
+    },
+    {
+      "id": "surv-m19",
+      "title": "Survivors: Mission 19",
+      "description": "Survivors: beat mission 19. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 20
+      }
+    },
+    {
+      "id": "surv-20",
+      "title": "Wasteland Kings",
+      "description": "Survivors: beat mission 20. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 21
+      }
+    },
+    {
+      "id": "surv-m21",
+      "title": "Survivors: Mission 21",
+      "description": "Survivors: beat mission 21. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 22
+      }
+    },
+    {
+      "id": "surv-22",
+      "title": "Last Stand",
+      "description": "Survivors: beat mission 22. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 23
+      }
+    },
+    {
+      "id": "surv-m23",
+      "title": "Survivors: Mission 23",
+      "description": "Survivors: beat mission 23. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 24
+      }
+    },
+    {
+      "id": "surv-m24",
+      "title": "Survivors: Mission 24",
+      "description": "Survivors: beat mission 24. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 25
+      }
+    },
+    {
+      "id": "surv-final",
+      "title": "The Final Assault",
+      "description": "Survivors: reach the final mission, 25. (Save in it.)",
+      "points": 30,
+      "group": "Survivors campaign",
+      "rule": {
+        "side": "surv",
+        "reach": 25
+      }
+    },
+    {
+      "id": "mute-1",
+      "title": "Mutant Uprising",
+      "description": "Evolved: beat mission 1. (Counts once you save in a later mission.)",
+      "points": 10,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 2
+      }
+    },
+    {
+      "id": "mute-m02",
+      "title": "Evolved: Mission 2",
+      "description": "Evolved: beat mission 2. (Counts once you save in a later mission.)",
+      "points": 10,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 3
+      }
+    },
+    {
+      "id": "mute-3",
+      "title": "Beast Masters",
+      "description": "Evolved: beat mission 3. (Counts once you save in a later mission.)",
+      "points": 10,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 4
+      }
+    },
+    {
+      "id": "mute-m04",
+      "title": "Evolved: Mission 4",
+      "description": "Evolved: beat mission 4. (Counts once you save in a later mission.)",
+      "points": 10,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 5
+      }
+    },
+    {
+      "id": "mute-5",
+      "title": "Oil and Blood",
+      "description": "Evolved: beat mission 5. (Counts once you save in a later mission.)",
+      "points": 15,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 6
+      }
+    },
+    {
+      "id": "mute-m06",
+      "title": "Evolved: Mission 6",
+      "description": "Evolved: beat mission 6. (Counts once you save in a later mission.)",
+      "points": 15,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 7
+      }
+    },
+    {
+      "id": "mute-m07",
+      "title": "Evolved: Mission 7",
+      "description": "Evolved: beat mission 7. (Counts once you save in a later mission.)",
+      "points": 15,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 8
+      }
+    },
+    {
+      "id": "mute-8",
+      "title": "Unstoppable Horde",
+      "description": "Evolved: beat mission 8. (Counts once you save in a later mission.)",
+      "points": 15,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 9
+      }
+    },
+    {
+      "id": "mute-m09",
+      "title": "Evolved: Mission 9",
+      "description": "Evolved: beat mission 9. (Counts once you save in a later mission.)",
+      "points": 15,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 10
+      }
+    },
+    {
+      "id": "mute-10",
+      "title": "Natural Selection",
+      "description": "Evolved: beat mission 10. (Counts once you save in a later mission.)",
+      "points": 15,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 11
+      }
+    },
+    {
+      "id": "mute-m11",
+      "title": "Evolved: Mission 11",
+      "description": "Evolved: beat mission 11. (Counts once you save in a later mission.)",
+      "points": 15,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 12
+      }
+    },
+    {
+      "id": "mute-m12",
+      "title": "Evolved: Mission 12",
+      "description": "Evolved: beat mission 12. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 13
+      }
+    },
+    {
+      "id": "mute-13",
+      "title": "Survival of the Fittest",
+      "description": "Evolved: beat mission 13. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 14
+      }
+    },
+    {
+      "id": "mute-m14",
+      "title": "Evolved: Mission 14",
+      "description": "Evolved: beat mission 14. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 15
+      }
+    },
+    {
+      "id": "mute-15",
+      "title": "Dominant Species",
+      "description": "Evolved: beat mission 15. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 16
+      }
+    },
+    {
+      "id": "mute-m16",
+      "title": "Evolved: Mission 16",
+      "description": "Evolved: beat mission 16. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 17
+      }
+    },
+    {
+      "id": "mute-m17",
+      "title": "Evolved: Mission 17",
+      "description": "Evolved: beat mission 17. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 18
+      }
+    },
+    {
+      "id": "mute-18",
+      "title": "Apex Predators",
+      "description": "Evolved: beat mission 18. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 19
+      }
+    },
+    {
+      "id": "mute-m19",
+      "title": "Evolved: Mission 19",
+      "description": "Evolved: beat mission 19. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 20
+      }
+    },
+    {
+      "id": "mute-20",
+      "title": "Mutant Nation",
+      "description": "Evolved: beat mission 20. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 21
+      }
+    },
+    {
+      "id": "mute-m21",
+      "title": "Evolved: Mission 21",
+      "description": "Evolved: beat mission 21. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 22
+      }
+    },
+    {
+      "id": "mute-22",
+      "title": "Extinction Event",
+      "description": "Evolved: beat mission 22. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 23
+      }
+    },
+    {
+      "id": "mute-m23",
+      "title": "Evolved: Mission 23",
+      "description": "Evolved: beat mission 23. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 24
+      }
+    },
+    {
+      "id": "mute-m24",
+      "title": "Evolved: Mission 24",
+      "description": "Evolved: beat mission 24. (Counts once you save in a later mission.)",
+      "points": 25,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 25
+      }
+    },
+    {
+      "id": "mute-final",
+      "title": "The Final Mutation",
+      "description": "Evolved: reach the final mission, 25. (Save in it.)",
+      "points": 30,
+      "group": "Evolved campaign",
+      "rule": {
+        "side": "mute",
+        "reach": 25
+      }
+    },
+    {
+      "id": "both",
+      "title": "Choose Your Side",
+      "description": "Start a campaign for every side (2).",
+      "points": 15,
+      "group": "Milestones",
+      "rule": {
+        "sides": 2
+      }
+    },
+    {
+      "id": "final-all",
+      "title": "War Without End",
+      "description": "Reach the final mission with every side.",
+      "points": 50,
+      "group": "Milestones",
+      "rule": {
+        "reachAll": 25,
+        "of": 2
+      }
+    }
+  ]
+}

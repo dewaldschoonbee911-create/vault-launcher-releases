@@ -1,0 +1,585 @@
+{
+  "id": "worms",
+  "title": "Worms Armageddon",
+  "exeNames": [
+    "WA.exe"
+  ],
+  "md5": [
+    "d9fe5735353838385993ef4e6b8073c4"
+  ],
+  "linkFiles": [
+    "WA.exe",
+    "DATA/Mission/mission1.wam"
+  ],
+  "version": 1,
+  "pollHz": 4,
+  "settleSeconds": 2,
+  "notes": [
+    "Progress is per team: achievements count for whichever team you have selected in Missions or Training.",
+    "Selecting a team that already has medals gives you the achievements it has earned.",
+    "Build checked: Steam WA.exe 3.8.1 (November 2020)."
+  ],
+  "watches": [
+    {
+      "id": "team",
+      "label": "Selected team (0 = none)",
+      "address": "{WA.exe+47811f}",
+      "size": "u8"
+    },
+    {
+      "id": "missions",
+      "label": "Missions passed",
+      "address": "{WA.exe+48ed08}",
+      "indexBy": {
+        "address": "{WA.exe+47811f}",
+        "stride": 3856
+      },
+      "countOf": {
+        "n": 33,
+        "step": 8
+      },
+      "size": "u8"
+    },
+    {
+      "id": "basic",
+      "label": "Basic Training medal",
+      "address": "{WA.exe+48f3c4}",
+      "indexBy": {
+        "address": "{WA.exe+47811f}",
+        "stride": 3856
+      },
+      "size": "u8",
+      "values": {
+        "0": "None",
+        "1": "Bronze",
+        "2": "Silver",
+        "3": "Gold"
+      }
+    },
+    {
+      "id": "golds",
+      "label": "Training gold medals",
+      "address": "{WA.exe+48f3c4}",
+      "indexBy": {
+        "address": "{WA.exe+47811f}",
+        "stride": 3856
+      },
+      "countOf": {
+        "n": 6,
+        "step": 1,
+        "min": 3
+      },
+      "size": "u8"
+    },
+    {
+      "id": "dm",
+      "label": "Deathmatch wins",
+      "address": "{WA.exe+48ecd8}",
+      "indexBy": {
+        "address": "{WA.exe+47811f}",
+        "stride": 3856
+      },
+      "size": "u8"
+    }
+  ],
+  "testGuide": [
+    {
+      "title": "Start Worms Armageddon",
+      "detail": "Click Play. Vault connects at the main menu."
+    },
+    {
+      "title": "Pick your team",
+      "detail": "Go to Single Player, then Missions or Training, and click your team. \"Selected team\" should change from 0.",
+      "doneWhen": {
+        "watch": "team",
+        "atLeast": 1
+      }
+    },
+    {
+      "title": "Win something",
+      "detail": "Pass a mission or earn a training medal. The achievement pops when the game saves your result."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "mission01",
+      "title": "Chateau Assassin",
+      "description": "Complete mission 1: Chateau Assassin",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed08}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission02",
+      "title": "All Quiet in the Library?",
+      "description": "Complete mission 2: All Quiet in the Library?",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed10}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission03",
+      "title": "Operation Market Garden",
+      "description": "Complete mission 3: Operation Market Garden",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed18}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission04",
+      "title": "Chemical Warfare",
+      "description": "Complete mission 4: Chemical Warfare",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed20}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission05",
+      "title": "Countdown to Armageddon!",
+      "description": "Complete mission 5: Countdown to Armageddon!",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed28}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission06",
+      "title": "The Drop Zone",
+      "description": "Complete mission 6: The Drop Zone",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed30}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission07",
+      "title": "Sand in Your Eye",
+      "description": "Complete mission 7: Sand in Your Eye",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed38}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission08",
+      "title": "Jurassic Worm",
+      "description": "Complete mission 8: Jurassic Worm",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed40}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission09",
+      "title": "Aim Long, Aim True",
+      "description": "Complete mission 9: Aim Long, Aim True",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed48}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission10",
+      "title": "Big Shot",
+      "description": "Complete mission 10: Big Shot",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed50}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission11",
+      "title": "Rumble in the Farmyard",
+      "description": "Complete mission 11: Rumble in the Farmyard",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed58}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission12",
+      "title": "Go Bananas!",
+      "description": "Complete mission 12: Go Bananas!",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed60}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission13",
+      "title": "Horny Nuke",
+      "description": "Complete mission 13: Horny Nuke",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed68}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission14",
+      "title": "Mad Cows",
+      "description": "Complete mission 14: Mad Cows",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed70}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission15",
+      "title": "Mars Star",
+      "description": "Complete mission 15: Mars Star",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed78}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission16",
+      "title": "Trouble on Mount Wormore",
+      "description": "Complete mission 16: Trouble on Mount Wormore",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed80}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission17",
+      "title": "Stolen Goods",
+      "description": "Complete mission 17: Stolen Goods",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed88}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission18",
+      "title": "Bazooka on the Rocks",
+      "description": "Complete mission 18: Bazooka on the Rocks",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed90}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission19",
+      "title": "Water Surprise",
+      "description": "Complete mission 19: Water Surprise",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed98}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission20",
+      "title": "Hot Stuff",
+      "description": "Complete mission 20: Hot Stuff",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48eda0}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission21",
+      "title": "Sinking Ice Cap",
+      "description": "Complete mission 21: Sinking Ice Cap",
+      "points": 15,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48eda8}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission22",
+      "title": "Pumpkin Problems",
+      "description": "Complete mission 22: Pumpkin Problems",
+      "points": 15,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48edb0}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission23",
+      "title": "Wooden Ambush!",
+      "description": "Complete mission 23: Wooden Ambush!",
+      "points": 15,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48edb8}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission24",
+      "title": "No Substitute",
+      "description": "Complete mission 24: No Substitute",
+      "points": 15,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48edc0}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission25",
+      "title": "Goody Two-Shoes",
+      "description": "Complete mission 25: Goody Two-Shoes",
+      "points": 15,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48edc8}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission26",
+      "title": "Super Sheep to the Rescue!",
+      "description": "Complete mission 26: Super Sheep to the Rescue!",
+      "points": 15,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48edd0}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission27",
+      "title": "Rescue Agent Dennis!",
+      "description": "Complete mission 27: Rescue Agent Dennis!",
+      "points": 15,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48edd8}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission28",
+      "title": "Trouble in Toy Store",
+      "description": "Complete mission 28: Trouble in Toy Store",
+      "points": 15,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ede0}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission29",
+      "title": "Not Mushroom Out There...",
+      "description": "Complete mission 29: Not Mushroom Out There...",
+      "points": 15,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ede8}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission30",
+      "title": "Cool as Ice",
+      "description": "Complete mission 30: Cool as Ice",
+      "points": 15,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48edf0}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission31",
+      "title": "Do the Locomotion",
+      "description": "Complete mission 31: Do the Locomotion",
+      "points": 15,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48edf8}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission32",
+      "title": "Spectral Recovery?",
+      "description": "Complete mission 32: Spectral Recovery?",
+      "points": 15,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ee00}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "mission33",
+      "title": "Who Left the Flood-Gates Open?",
+      "description": "Complete mission 33: Who Left the Flood-Gates Open?",
+      "points": 25,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ee08}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "missions5",
+      "title": "Field Promotion",
+      "description": "Complete missions 1 to 5.",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed08}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed10}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed18}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed20}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed28}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "missions10",
+      "title": "Seasoned Soldier",
+      "description": "Complete missions 1 to 10.",
+      "points": 15,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed08}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed10}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed18}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed20}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed28}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed30}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed38}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed40}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed48}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed50}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "missions20",
+      "title": "Veteran Worm",
+      "description": "Complete missions 1 to 20.",
+      "points": 25,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed08}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed10}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed18}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed20}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed28}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed30}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed38}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed40}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed48}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed50}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed58}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed60}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed68}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed70}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed78}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed80}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed88}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed90}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed98}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48eda0}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "missions33",
+      "title": "Armageddon Survivor",
+      "description": "Complete all 33 missions.",
+      "points": 50,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed08}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed10}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed18}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed20}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed28}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed30}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed38}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed40}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed48}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed50}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed58}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed60}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed68}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed70}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed78}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed80}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed88}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed90}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ed98}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48eda0}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48eda8}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48edb0}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48edb8}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48edc0}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48edc8}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48edd0}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48edd8}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ede0}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ede8}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48edf0}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48edf8}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ee00}!=0_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ee08}!=0",
+      "group": "Missions"
+    },
+    {
+      "id": "basic-bronze",
+      "title": "Basic Training: Bronze",
+      "description": "Earn a Bronze medal in Basic Training.",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c4}>=1",
+      "group": "Training"
+    },
+    {
+      "id": "basic-silver",
+      "title": "Basic Training: Silver",
+      "description": "Earn a Silver medal in Basic Training.",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c4}>=2",
+      "group": "Training"
+    },
+    {
+      "id": "basic-gold",
+      "title": "Basic Training: Gold",
+      "description": "Earn a Gold medal in Basic Training.",
+      "points": 25,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c4}>=3",
+      "group": "Training"
+    },
+    {
+      "id": "event1-bronze",
+      "title": "Super Sheep Racing: Bronze",
+      "description": "Earn a Bronze medal in Super Sheep Racing.",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c5}>=1",
+      "group": "Training"
+    },
+    {
+      "id": "event1-silver",
+      "title": "Super Sheep Racing: Silver",
+      "description": "Earn a Silver medal in Super Sheep Racing.",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c5}>=2",
+      "group": "Training"
+    },
+    {
+      "id": "event1-gold",
+      "title": "Super Sheep Racing: Gold",
+      "description": "Earn a Gold medal in Super Sheep Racing.",
+      "points": 20,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c5}>=3",
+      "group": "Training"
+    },
+    {
+      "id": "event2-bronze",
+      "title": "Rifle Range: Bronze",
+      "description": "Earn a Bronze medal in Rifle Range.",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c6}>=1",
+      "group": "Training"
+    },
+    {
+      "id": "event2-silver",
+      "title": "Rifle Range: Silver",
+      "description": "Earn a Silver medal in Rifle Range.",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c6}>=2",
+      "group": "Training"
+    },
+    {
+      "id": "event2-gold",
+      "title": "Rifle Range: Gold",
+      "description": "Earn a Gold medal in Rifle Range.",
+      "points": 20,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c6}>=3",
+      "group": "Training"
+    },
+    {
+      "id": "event3-bronze",
+      "title": "Crazy Crates: Bronze",
+      "description": "Earn a Bronze medal in Crazy Crates.",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c7}>=1",
+      "group": "Training"
+    },
+    {
+      "id": "event3-silver",
+      "title": "Crazy Crates: Silver",
+      "description": "Earn a Silver medal in Crazy Crates.",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c7}>=2",
+      "group": "Training"
+    },
+    {
+      "id": "event3-gold",
+      "title": "Crazy Crates: Gold",
+      "description": "Earn a Gold medal in Crazy Crates.",
+      "points": 20,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c7}>=3",
+      "group": "Training"
+    },
+    {
+      "id": "event4-bronze",
+      "title": "Artillery Range: Bronze",
+      "description": "Earn a Bronze medal in Artillery Range.",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c8}>=1",
+      "group": "Training"
+    },
+    {
+      "id": "event4-silver",
+      "title": "Artillery Range: Silver",
+      "description": "Earn a Silver medal in Artillery Range.",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c8}>=2",
+      "group": "Training"
+    },
+    {
+      "id": "event4-gold",
+      "title": "Artillery Range: Gold",
+      "description": "Earn a Gold medal in Artillery Range.",
+      "points": 20,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c8}>=3",
+      "group": "Training"
+    },
+    {
+      "id": "event5-bronze",
+      "title": "Advanced Weapon Training: Bronze",
+      "description": "Earn a Bronze medal in Advanced Weapon Training.",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c9}>=1",
+      "group": "Training"
+    },
+    {
+      "id": "event5-silver",
+      "title": "Advanced Weapon Training: Silver",
+      "description": "Earn a Silver medal in Advanced Weapon Training.",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c9}>=2",
+      "group": "Training"
+    },
+    {
+      "id": "event5-gold",
+      "title": "Advanced Weapon Training: Gold",
+      "description": "Earn a Gold medal in Advanced Weapon Training.",
+      "points": 20,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c9}>=3",
+      "group": "Training"
+    },
+    {
+      "id": "all-gold",
+      "title": "Golden Worm",
+      "description": "Hold a Gold medal in Basic Training and all five training events.",
+      "points": 50,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c4}>=3_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c5}>=3_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c6}>=3_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c7}>=3_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c8}>=3_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48f3c9}>=3",
+      "group": "Training"
+    },
+    {
+      "id": "dm1",
+      "title": "First Blood",
+      "description": "Win 1 deathmatch with one team.",
+      "points": 5,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ecd8}>=1",
+      "group": "Deathmatch"
+    },
+    {
+      "id": "dm3",
+      "title": "Hat Trick",
+      "description": "Win 3 deathmatches with one team.",
+      "points": 10,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ecd8}>=3",
+      "group": "Deathmatch"
+    },
+    {
+      "id": "dm5",
+      "title": "Worm Warrior",
+      "description": "Win 5 deathmatches with one team.",
+      "points": 15,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ecd8}>=5",
+      "group": "Deathmatch"
+    },
+    {
+      "id": "dm10",
+      "title": "Deathmatch Champion",
+      "description": "Win 10 deathmatches with one team.",
+      "points": 25,
+      "memaddr": "0xH{WA.exe+47811f}>0_0xH{WA.exe+47811f}<33_I:0xH{WA.exe+47811f}*3856_0xH{WA.exe+48ecd8}>=10",
+      "group": "Deathmatch"
+    }
+  ]
+}

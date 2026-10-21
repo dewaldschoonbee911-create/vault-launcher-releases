@@ -1,0 +1,600 @@
+{
+ "id": "hitman2",
+ "title": "Hitman 2: Silent Assassin",
+ "exeNames": [
+  "hitman2.exe"
+ ],
+ "md5": [
+  "83eb7f441d8f59812e0e6768b92073b8"
+ ],
+ "genericExeName": true,
+ "linkFiles": [
+  "hitman2.exe",
+  "RenderD3D.dll"
+ ],
+ "version": 1,
+ "pollHz": 10,
+ "settleSeconds": 2,
+ "notes": [
+  "Each mission's achievement unlocks when the next mission starts loading.",
+  "Read-only: Vault watches the game's memory and never changes it.",
+  "Addresses come from the community speedrun auto-splitters for the Steam version.",
+  "Save achievements come from the save games in the Save folder: each one names the mission it was made in. Saving is limited on harder difficulties and impossible on Professional."
+ ],
+ "watches": [
+  {
+   "id": "scene",
+   "label": "Current scene number",
+   "path": [
+    "{hitman2.exe+141528}",
+    "0"
+   ],
+   "size": "u16"
+  }
+ ],
+ "testGuide": [
+  {
+   "title": "Start Hitman 2: Silent Assassin",
+   "detail": "Start or load a mission. \"Current scene number\" should show a number that changes between missions."
+  },
+  {
+   "title": "Finish a mission",
+   "detail": "When the next mission loads, that mission's achievement should pop up. If not, send a test report."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "mission-1",
+   "title": "Anathema",
+   "description": "Complete Anathema at the Gontranno Sanctuary.",
+   "points": 10,
+   "group": "Sicily",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=457_I:0xX{hitman2.exe+141528}_0x0000=212"
+  },
+  {
+   "id": "mission-2",
+   "title": "St. Petersburg Stakeout",
+   "description": "Complete St. Petersburg Stakeout.",
+   "points": 10,
+   "group": "St. Petersburg",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=457_I:0xX{hitman2.exe+141528}_0x0000=209"
+  },
+  {
+   "id": "mission-3",
+   "title": "Kirov Park Meeting",
+   "description": "Complete Kirov Park Meeting.",
+   "points": 10,
+   "group": "St. Petersburg",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=426_I:0xX{hitman2.exe+141528}_0x0000=299"
+  },
+  {
+   "id": "mission-4",
+   "title": "Tubeway Torpedo",
+   "description": "Complete Tubeway Torpedo.",
+   "points": 10,
+   "group": "St. Petersburg",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=461_I:0xX{hitman2.exe+141528}_0x0000=212"
+  },
+  {
+   "id": "mission-5",
+   "title": "Invitation to a Party",
+   "description": "Complete Invitation to a Party.",
+   "points": 10,
+   "group": "St. Petersburg",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=457_I:0xX{hitman2.exe+141528}_0x0000=132"
+  },
+  {
+   "id": "mission-6",
+   "title": "Tracking Hayamoto",
+   "description": "Complete Tracking Hayamoto.",
+   "points": 10,
+   "group": "Japan",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=412_I:0xX{hitman2.exe+141528}_0x0000=228"
+  },
+  {
+   "id": "mission-7",
+   "title": "Hidden Valley",
+   "description": "Complete Hidden Valley.",
+   "points": 10,
+   "group": "Japan",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=428_I:0xX{hitman2.exe+141528}_0x0000=424"
+  },
+  {
+   "id": "mission-8",
+   "title": "At the Gates",
+   "description": "Complete At the Gates.",
+   "points": 10,
+   "group": "Japan",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=424_I:0xX{hitman2.exe+141528}_0x0000=160"
+  },
+  {
+   "id": "mission-9",
+   "title": "Shogun Showdown",
+   "description": "Complete Shogun Showdown.",
+   "points": 10,
+   "group": "Japan",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=457_I:0xX{hitman2.exe+141528}_0x0000=260"
+  },
+  {
+   "id": "mission-10",
+   "title": "Basement Killing",
+   "description": "Complete Basement Killing.",
+   "points": 10,
+   "group": "Malaysia",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=428_I:0xX{hitman2.exe+141528}_0x0000=425"
+  },
+  {
+   "id": "mission-11",
+   "title": "The Graveyard Shift",
+   "description": "Complete The Graveyard Shift.",
+   "points": 10,
+   "group": "Malaysia",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=425_I:0xX{hitman2.exe+141528}_0x0000=432"
+  },
+  {
+   "id": "mission-12",
+   "title": "The Jacuzzi Job",
+   "description": "Complete The Jacuzzi Job.",
+   "points": 10,
+   "group": "Malaysia",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=457_I:0xX{hitman2.exe+141528}_0x0000=146"
+  },
+  {
+   "id": "mission-13",
+   "title": "Murder at the Bazaar",
+   "description": "Complete Murder at the Bazaar.",
+   "points": 10,
+   "group": "Afghanistan",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=409_I:0xX{hitman2.exe+141528}_0x0000=107"
+  },
+  {
+   "id": "mission-14",
+   "title": "The Motorcade Interception",
+   "description": "Complete The Motorcade Interception.",
+   "points": 10,
+   "group": "Afghanistan",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=434_I:0xX{hitman2.exe+141528}_0x0000=146"
+  },
+  {
+   "id": "mission-15",
+   "title": "Tunnel Rat",
+   "description": "Complete Tunnel Rat.",
+   "points": 10,
+   "group": "Afghanistan",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=457_I:0xX{hitman2.exe+141528}_0x0000=172"
+  },
+  {
+   "id": "mission-16",
+   "title": "Temple City Ambush",
+   "description": "Complete Temple City Ambush.",
+   "points": 10,
+   "group": "India",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=402_I:0xX{hitman2.exe+141528}_0x0000=260"
+  },
+  {
+   "id": "mission-17",
+   "title": "The Death of Hannelore",
+   "description": "Complete The Death of Hannelore.",
+   "points": 10,
+   "group": "India",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=417_I:0xX{hitman2.exe+141528}_0x0000=240"
+  },
+  {
+   "id": "mission-18",
+   "title": "Terminal Hospitality",
+   "description": "Complete Terminal Hospitality.",
+   "points": 10,
+   "group": "India",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=457_I:0xX{hitman2.exe+141528}_0x0000=200"
+  },
+  {
+   "id": "mission-19",
+   "title": "St. Petersburg Revisited",
+   "description": "Complete St. Petersburg Revisited.",
+   "points": 10,
+   "group": "St. Petersburg",
+   "memaddr": "I:0xX{hitman2.exe+141528}_d0x0000=421_I:0xX{hitman2.exe+141528}_0x0000=409"
+  },
+  {
+   "id": "finale",
+   "title": "Redemption at Gontranno",
+   "description": "Finish the game back at the Gontranno Sanctuary.",
+   "points": 50,
+   "group": "Sicily",
+   "memaddr": "I:0xX{renderd3d.dll+c25c}_0xXf2c=1117714243_I:0xX{renderd3d.dll+c25c}_d0xXf2c!=1117714243_I:0xX{hitman2.exe+141528}_0x0000=409"
+  },
+  {
+   "id": "save-c1-1",
+   "title": "Field Notes: Anathema",
+   "description": "Save your game during Anathema.",
+   "points": 5,
+   "group": "Saves: Sicily",
+   "rule": {
+    "hmSavedIn": [
+     "C1-1"
+    ]
+   }
+  },
+  {
+   "id": "save-c2-1",
+   "title": "Field Notes: St. Petersburg Stakeout",
+   "description": "Save your game during St. Petersburg Stakeout.",
+   "points": 5,
+   "group": "Saves: St. Petersburg",
+   "rule": {
+    "hmSavedIn": [
+     "C2-1"
+    ]
+   }
+  },
+  {
+   "id": "save-c2-2",
+   "title": "Field Notes: Kirov Park Meeting",
+   "description": "Save your game during Kirov Park Meeting.",
+   "points": 5,
+   "group": "Saves: St. Petersburg",
+   "rule": {
+    "hmSavedIn": [
+     "C2-2"
+    ]
+   }
+  },
+  {
+   "id": "save-c2-3",
+   "title": "Field Notes: Tubeway Torpedo",
+   "description": "Save your game during Tubeway Torpedo.",
+   "points": 5,
+   "group": "Saves: St. Petersburg",
+   "rule": {
+    "hmSavedIn": [
+     "C2-3"
+    ]
+   }
+  },
+  {
+   "id": "save-c2-4",
+   "title": "Field Notes: Invitation to a Party",
+   "description": "Save your game during Invitation to a Party.",
+   "points": 5,
+   "group": "Saves: St. Petersburg",
+   "rule": {
+    "hmSavedIn": [
+     "C2-4"
+    ]
+   }
+  },
+  {
+   "id": "save-c3-1",
+   "title": "Field Notes: Tracking Hayamoto",
+   "description": "Save your game during Tracking Hayamoto.",
+   "points": 5,
+   "group": "Saves: Japan",
+   "rule": {
+    "hmSavedIn": [
+     "C3-1"
+    ]
+   }
+  },
+  {
+   "id": "save-c3-2a",
+   "title": "Field Notes: Hidden Valley",
+   "description": "Save your game during Hidden Valley.",
+   "points": 5,
+   "group": "Saves: Japan",
+   "rule": {
+    "hmSavedIn": [
+     "C3-2a"
+    ]
+   }
+  },
+  {
+   "id": "save-c3-2b",
+   "title": "Field Notes: At the Gates",
+   "description": "Save your game during At the Gates.",
+   "points": 5,
+   "group": "Saves: Japan",
+   "rule": {
+    "hmSavedIn": [
+     "C3-2b"
+    ]
+   }
+  },
+  {
+   "id": "save-c3-3",
+   "title": "Field Notes: Shogun Showdown",
+   "description": "Save your game during Shogun Showdown.",
+   "points": 5,
+   "group": "Saves: Japan",
+   "rule": {
+    "hmSavedIn": [
+     "C3-3"
+    ]
+   }
+  },
+  {
+   "id": "save-c4-1",
+   "title": "Field Notes: Basement Killing",
+   "description": "Save your game during Basement Killing.",
+   "points": 5,
+   "group": "Saves: Malaysia",
+   "rule": {
+    "hmSavedIn": [
+     "C4-1"
+    ]
+   }
+  },
+  {
+   "id": "save-c4-2",
+   "title": "Field Notes: The Graveyard Shift",
+   "description": "Save your game during The Graveyard Shift.",
+   "points": 5,
+   "group": "Saves: Malaysia",
+   "rule": {
+    "hmSavedIn": [
+     "C4-2"
+    ]
+   }
+  },
+  {
+   "id": "save-c4-3",
+   "title": "Field Notes: The Jacuzzi Job",
+   "description": "Save your game during The Jacuzzi Job.",
+   "points": 5,
+   "group": "Saves: Malaysia",
+   "rule": {
+    "hmSavedIn": [
+     "C4-3"
+    ]
+   }
+  },
+  {
+   "id": "save-c5-1",
+   "title": "Field Notes: Murder at the Bazaar",
+   "description": "Save your game during Murder at the Bazaar.",
+   "points": 5,
+   "group": "Saves: Afghanistan",
+   "rule": {
+    "hmSavedIn": [
+     "C5-1"
+    ]
+   }
+  },
+  {
+   "id": "save-c5-2",
+   "title": "Field Notes: The Motorcade Interception",
+   "description": "Save your game during The Motorcade Interception.",
+   "points": 5,
+   "group": "Saves: Afghanistan",
+   "rule": {
+    "hmSavedIn": [
+     "C5-2"
+    ]
+   }
+  },
+  {
+   "id": "save-c5-3",
+   "title": "Field Notes: Tunnel Rat",
+   "description": "Save your game during Tunnel Rat.",
+   "points": 5,
+   "group": "Saves: Afghanistan",
+   "rule": {
+    "hmSavedIn": [
+     "C5-3"
+    ]
+   }
+  },
+  {
+   "id": "save-c6-1",
+   "title": "Field Notes: Temple City Ambush",
+   "description": "Save your game during Temple City Ambush.",
+   "points": 5,
+   "group": "Saves: India",
+   "rule": {
+    "hmSavedIn": [
+     "C6-1"
+    ]
+   }
+  },
+  {
+   "id": "save-c6-2",
+   "title": "Field Notes: The Death of Hannelore",
+   "description": "Save your game during The Death of Hannelore.",
+   "points": 5,
+   "group": "Saves: India",
+   "rule": {
+    "hmSavedIn": [
+     "C6-2"
+    ]
+   }
+  },
+  {
+   "id": "save-c6-3",
+   "title": "Field Notes: Terminal Hospitality",
+   "description": "Save your game during Terminal Hospitality.",
+   "points": 5,
+   "group": "Saves: India",
+   "rule": {
+    "hmSavedIn": [
+     "C6-3"
+    ]
+   }
+  },
+  {
+   "id": "save-c7-1",
+   "title": "Field Notes: St. Petersburg Revisited",
+   "description": "Save your game during St. Petersburg Revisited.",
+   "points": 5,
+   "group": "Saves: St. Petersburg",
+   "rule": {
+    "hmSavedIn": [
+     "C7-1"
+    ]
+   }
+  },
+  {
+   "id": "save-c8-1",
+   "title": "Field Notes: Redemption at Gontranno",
+   "description": "Save your game during Redemption at Gontranno.",
+   "points": 5,
+   "group": "Saves: Sicily",
+   "rule": {
+    "hmSavedIn": [
+     "C8-1"
+    ]
+   }
+  },
+  {
+   "id": "saves-stpetersburg",
+   "title": "Paper Trail: St. Petersburg",
+   "description": "Save at least once in every St. Petersburg mission.",
+   "points": 15,
+   "group": "Saves",
+   "rule": {
+    "hmSavedIn": [
+     "C2-1",
+     "C2-2",
+     "C2-3",
+     "C2-4"
+    ]
+   }
+  },
+  {
+   "id": "saves-japan",
+   "title": "Paper Trail: Japan",
+   "description": "Save at least once in every Japan mission.",
+   "points": 15,
+   "group": "Saves",
+   "rule": {
+    "hmSavedIn": [
+     "C3-1",
+     "C3-2a",
+     "C3-2b",
+     "C3-3"
+    ]
+   }
+  },
+  {
+   "id": "saves-malaysia",
+   "title": "Paper Trail: Malaysia",
+   "description": "Save at least once in every Malaysia mission.",
+   "points": 15,
+   "group": "Saves",
+   "rule": {
+    "hmSavedIn": [
+     "C4-1",
+     "C4-2",
+     "C4-3"
+    ]
+   }
+  },
+  {
+   "id": "saves-afghanistan",
+   "title": "Paper Trail: Afghanistan",
+   "description": "Save at least once in every Afghanistan mission.",
+   "points": 15,
+   "group": "Saves",
+   "rule": {
+    "hmSavedIn": [
+     "C5-1",
+     "C5-2",
+     "C5-3"
+    ]
+   }
+  },
+  {
+   "id": "saves-india",
+   "title": "Paper Trail: India",
+   "description": "Save at least once in every India mission.",
+   "points": 15,
+   "group": "Saves",
+   "rule": {
+    "hmSavedIn": [
+     "C6-1",
+     "C6-2",
+     "C6-3"
+    ]
+   }
+  },
+  {
+   "id": "saves-all",
+   "title": "Meticulous Planner",
+   "description": "Save at least once in every mission.",
+   "points": 30,
+   "group": "Saves",
+   "rule": {
+    "hmSavedIn": [
+     "C1-1",
+     "C2-1",
+     "C2-2",
+     "C2-3",
+     "C2-4",
+     "C3-1",
+     "C3-2a",
+     "C3-2b",
+     "C3-3",
+     "C4-1",
+     "C4-2",
+     "C4-3",
+     "C5-1",
+     "C5-2",
+     "C5-3",
+     "C6-1",
+     "C6-2",
+     "C6-3",
+     "C7-1",
+     "C8-1"
+    ]
+   }
+  },
+  {
+   "id": "saves-10",
+   "title": "Careful Assassin",
+   "description": "Make 10 saves.",
+   "points": 10,
+   "group": "Saves",
+   "rule": {
+    "hmSaves": 10
+   }
+  },
+  {
+   "id": "saves-50",
+   "title": "Contingency Plans",
+   "description": "Make 50 saves.",
+   "points": 10,
+   "group": "Saves",
+   "rule": {
+    "hmSaves": 50
+   }
+  },
+  {
+   "id": "saves-150",
+   "title": "Never Without a Backup",
+   "description": "Make 150 saves.",
+   "points": 10,
+   "group": "Saves",
+   "rule": {
+    "hmSaves": 150
+   }
+  },
+  {
+   "id": "savefiles-3",
+   "title": "Three Identities",
+   "description": "Keep 3 different save files.",
+   "points": 10,
+   "group": "Saves",
+   "rule": {
+    "hmFiles": 3
+   }
+  },
+  {
+   "id": "savefiles-7",
+   "title": "Filing Cabinet",
+   "description": "Keep 7 different save files.",
+   "points": 10,
+   "group": "Saves",
+   "rule": {
+    "hmFiles": 7
+   }
+  }
+ ]
+}

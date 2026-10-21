@@ -1,0 +1,778 @@
+{
+  "id": "ts",
+  "title": "Command & Conquer: Tiberian Sun",
+  "version": 4,
+  "resetUnlocksBefore": 4,
+  "authors": [
+    "Vault Launcher"
+  ],
+  "linkFiles": [
+    "Game.exe",
+    "TIBSUN.MIX"
+  ],
+  "exeNames": [
+    "game.exe"
+  ],
+  "genericExeName": true,
+  "md5": [
+    "d46f79b9f375d1cdb2742c7075b26389"
+  ],
+  "layoutProbes": [
+    {
+      "address": "0x4BD900",
+      "bytes": "8b4424048b91a401000003d08991a4010000c204",
+      "note": "HouseClass::GiveMoney: Credits at +0x1A4"
+    },
+    {
+      "address": "0x4BFC50",
+      "bytes": "83ec10538bd9c7442410000000008a83cd000000",
+      "note": "HouseClass win routine"
+    }
+  ],
+  "pollHz": 15,
+  "gate": "0xX7e2284!=0_I:0xX7e2284_0xX268<100000_I:0xX7e2284_0xX2bc<100000_I:0xX7e2284_0xX1a4<10000000_0xH7e2281<2_0xH7e4870<2",
+  "settleSeconds": 3,
+  "notes": [
+    "Tiberian Sun 2.03 game.exe (Steam Ultimate Collection, md5 d46f79b9...), linked 2000-06-05, fixed base 0x400000, no ASLR/relocations.",
+    "Global addresses from the TSpp reverse-engineered headers (Vinifera project, GPL-3): PlayerPtr 0x7E2284, Scen 0x7E2438, Session 0x7E2458 (GameType first: 0 campaign, 4 internet, 5 skirmish), PlayerWins 0x7E2281, PlayerLoses 0x7E4870.",
+    "Verified in the binary: GiveMoney at 0x4BD900 adds to +0x1A4; kill code increments the victim house +0x2BC (BuildingsLost) and the killer house +0x26C[victim] (BuildingsKilled); the score code sums the 20-slot arrays at +0x218 (UnitsKilled) and +0x26C.",
+    "Scenario: ScenarioName at +0x800, human Difficulty at +0x608 (DIFF_EASY 0, NORMAL 1, HARD 2 per TSpp).",
+    "Mission names are matched as GDI<n>\u2026 / NOD<n>\u2026 (e.g. GDI1A, NOD10A). To be confirmed with a live test: check the \"Mission file\" value on the test page.",
+    "Online and modem/LAN games are excluded, so nothing here touches CnCNet ladder play."
+  ],
+  "achievements": [
+    {
+      "id": "gdi-01",
+      "title": "GDI Mission 1",
+      "description": "Win GDI campaign mission 1.",
+      "points": 10,
+      "group": "GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=49_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4801607SI:0xX7e2438_0xW800=6906983"
+    },
+    {
+      "id": "gdi-02",
+      "title": "GDI Mission 2",
+      "description": "Win GDI campaign mission 2.",
+      "points": 10,
+      "group": "GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=50_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4801607SI:0xX7e2438_0xW800=6906983"
+    },
+    {
+      "id": "gdi-03",
+      "title": "GDI Mission 3",
+      "description": "Win GDI campaign mission 3.",
+      "points": 10,
+      "group": "GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=51_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4801607SI:0xX7e2438_0xW800=6906983"
+    },
+    {
+      "id": "gdi-04",
+      "title": "GDI Mission 4",
+      "description": "Win GDI campaign mission 4.",
+      "points": 10,
+      "group": "GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=52_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4801607SI:0xX7e2438_0xW800=6906983"
+    },
+    {
+      "id": "gdi-05",
+      "title": "GDI Mission 5",
+      "description": "Win GDI campaign mission 5.",
+      "points": 15,
+      "group": "GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=53_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4801607SI:0xX7e2438_0xW800=6906983"
+    },
+    {
+      "id": "gdi-06",
+      "title": "GDI Mission 6",
+      "description": "Win GDI campaign mission 6.",
+      "points": 15,
+      "group": "GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=54_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4801607SI:0xX7e2438_0xW800=6906983"
+    },
+    {
+      "id": "gdi-07",
+      "title": "GDI Mission 7",
+      "description": "Win GDI campaign mission 7.",
+      "points": 15,
+      "group": "GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=55_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4801607SI:0xX7e2438_0xW800=6906983"
+    },
+    {
+      "id": "gdi-08",
+      "title": "GDI Mission 8",
+      "description": "Win GDI campaign mission 8.",
+      "points": 15,
+      "group": "GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=56_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4801607SI:0xX7e2438_0xW800=6906983"
+    },
+    {
+      "id": "gdi-09",
+      "title": "GDI Mission 9",
+      "description": "Win GDI campaign mission 9.",
+      "points": 20,
+      "group": "GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=57_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4801607SI:0xX7e2438_0xW800=6906983"
+    },
+    {
+      "id": "gdi-10",
+      "title": "GDI Mission 10",
+      "description": "Win GDI campaign mission 10.",
+      "points": 20,
+      "group": "GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x803=12337_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4801607SI:0xX7e2438_0xW800=6906983"
+    },
+    {
+      "id": "gdi-11",
+      "title": "GDI Mission 11",
+      "description": "Win GDI campaign mission 11.",
+      "points": 20,
+      "group": "GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x803=12593_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4801607SI:0xX7e2438_0xW800=6906983"
+    },
+    {
+      "id": "gdi-12",
+      "title": "GDI Campaign Complete",
+      "description": "Win the final GDI mission and finish the campaign.",
+      "points": 50,
+      "group": "GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x803=12849_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4801607SI:0xX7e2438_0xW800=6906983"
+    },
+    {
+      "id": "gdi-hard-any",
+      "title": "GDI Veteran",
+      "description": "Win any GDI mission on Hard.",
+      "points": 15,
+      "group": "Hard mode",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xX608=2_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4801607SI:0xX7e2438_0xW800=6906983"
+    },
+    {
+      "id": "gdi-hard-final",
+      "title": "GDI Legend",
+      "description": "Win the final GDI mission on Hard.",
+      "points": 75,
+      "group": "Hard mode",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xX608=2_I:0xX7e2438_0x803=12849_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4801607SI:0xX7e2438_0xW800=6906983"
+    },
+    {
+      "id": "nod-01",
+      "title": "Nod Mission 1",
+      "description": "Win Nod campaign mission 1.",
+      "points": 10,
+      "group": "Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=49_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4476750SI:0xX7e2438_0xW800=6582126"
+    },
+    {
+      "id": "nod-02",
+      "title": "Nod Mission 2",
+      "description": "Win Nod campaign mission 2.",
+      "points": 10,
+      "group": "Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=50_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4476750SI:0xX7e2438_0xW800=6582126"
+    },
+    {
+      "id": "nod-03",
+      "title": "Nod Mission 3",
+      "description": "Win Nod campaign mission 3.",
+      "points": 10,
+      "group": "Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=51_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4476750SI:0xX7e2438_0xW800=6582126"
+    },
+    {
+      "id": "nod-04",
+      "title": "Nod Mission 4",
+      "description": "Win Nod campaign mission 4.",
+      "points": 10,
+      "group": "Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=52_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4476750SI:0xX7e2438_0xW800=6582126"
+    },
+    {
+      "id": "nod-05",
+      "title": "Nod Mission 5",
+      "description": "Win Nod campaign mission 5.",
+      "points": 15,
+      "group": "Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=53_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4476750SI:0xX7e2438_0xW800=6582126"
+    },
+    {
+      "id": "nod-06",
+      "title": "Nod Mission 6",
+      "description": "Win Nod campaign mission 6.",
+      "points": 15,
+      "group": "Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=54_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4476750SI:0xX7e2438_0xW800=6582126"
+    },
+    {
+      "id": "nod-07",
+      "title": "Nod Mission 7",
+      "description": "Win Nod campaign mission 7.",
+      "points": 15,
+      "group": "Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=55_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4476750SI:0xX7e2438_0xW800=6582126"
+    },
+    {
+      "id": "nod-08",
+      "title": "Nod Mission 8",
+      "description": "Win Nod campaign mission 8.",
+      "points": 15,
+      "group": "Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=56_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4476750SI:0xX7e2438_0xW800=6582126"
+    },
+    {
+      "id": "nod-09",
+      "title": "Nod Mission 9",
+      "description": "Win Nod campaign mission 9.",
+      "points": 20,
+      "group": "Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xH803=57_I:0xX7e2438_0xH804>=65_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4476750SI:0xX7e2438_0xW800=6582126"
+    },
+    {
+      "id": "nod-10",
+      "title": "Nod Mission 10",
+      "description": "Win Nod campaign mission 10.",
+      "points": 20,
+      "group": "Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x803=12337_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4476750SI:0xX7e2438_0xW800=6582126"
+    },
+    {
+      "id": "nod-11",
+      "title": "Nod Mission 11",
+      "description": "Win Nod campaign mission 11.",
+      "points": 20,
+      "group": "Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x803=12593_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4476750SI:0xX7e2438_0xW800=6582126"
+    },
+    {
+      "id": "nod-12",
+      "title": "Nod Campaign Complete",
+      "description": "Win the final Nod mission and finish the campaign.",
+      "points": 50,
+      "group": "Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x803=12849_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4476750SI:0xX7e2438_0xW800=6582126"
+    },
+    {
+      "id": "nod-hard-any",
+      "title": "Nod Veteran",
+      "description": "Win any Nod mission on Hard.",
+      "points": 15,
+      "group": "Hard mode",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xX608=2_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4476750SI:0xX7e2438_0xW800=6582126"
+    },
+    {
+      "id": "nod-hard-final",
+      "title": "Nod Legend",
+      "description": "Win the final Nod mission on Hard.",
+      "points": 75,
+      "group": "Hard mode",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xX608=2_I:0xX7e2438_0x803=12849_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xW800=4476750SI:0xX7e2438_0xW800=6582126"
+    },
+    {
+      "id": "fsgdi-01",
+      "title": "Firestorm GDI Mission 1",
+      "description": "Win Firestorm GDI campaign mission 1.",
+      "points": 10,
+      "group": "Firestorm GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=12592_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1145525062_I:0xX7e2438_0xH804=73SI:0xX7e2438_0xX800=1684501350_I:0xX7e2438_0xH804=105SI:0xX7e2438_0xX800=1682395974_I:0xX7e2438_0xH804=105"
+    },
+    {
+      "id": "fsgdi-02",
+      "title": "Firestorm GDI Mission 2",
+      "description": "Win Firestorm GDI campaign mission 2.",
+      "points": 10,
+      "group": "Firestorm GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=12848_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1145525062_I:0xX7e2438_0xH804=73SI:0xX7e2438_0xX800=1684501350_I:0xX7e2438_0xH804=105SI:0xX7e2438_0xX800=1682395974_I:0xX7e2438_0xH804=105"
+    },
+    {
+      "id": "fsgdi-03",
+      "title": "Firestorm GDI Mission 3",
+      "description": "Win Firestorm GDI campaign mission 3.",
+      "points": 10,
+      "group": "Firestorm GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=13104_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1145525062_I:0xX7e2438_0xH804=73SI:0xX7e2438_0xX800=1684501350_I:0xX7e2438_0xH804=105SI:0xX7e2438_0xX800=1682395974_I:0xX7e2438_0xH804=105"
+    },
+    {
+      "id": "fsgdi-04",
+      "title": "Firestorm GDI Mission 4",
+      "description": "Win Firestorm GDI campaign mission 4.",
+      "points": 15,
+      "group": "Firestorm GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=13360_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1145525062_I:0xX7e2438_0xH804=73SI:0xX7e2438_0xX800=1684501350_I:0xX7e2438_0xH804=105SI:0xX7e2438_0xX800=1682395974_I:0xX7e2438_0xH804=105"
+    },
+    {
+      "id": "fsgdi-05",
+      "title": "Firestorm GDI Mission 5",
+      "description": "Win Firestorm GDI campaign mission 5.",
+      "points": 15,
+      "group": "Firestorm GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=13616_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1145525062_I:0xX7e2438_0xH804=73SI:0xX7e2438_0xX800=1684501350_I:0xX7e2438_0xH804=105SI:0xX7e2438_0xX800=1682395974_I:0xX7e2438_0xH804=105"
+    },
+    {
+      "id": "fsgdi-06",
+      "title": "Firestorm GDI Mission 6",
+      "description": "Win Firestorm GDI campaign mission 6.",
+      "points": 15,
+      "group": "Firestorm GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=13872_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1145525062_I:0xX7e2438_0xH804=73SI:0xX7e2438_0xX800=1684501350_I:0xX7e2438_0xH804=105SI:0xX7e2438_0xX800=1682395974_I:0xX7e2438_0xH804=105"
+    },
+    {
+      "id": "fsgdi-07",
+      "title": "Firestorm GDI Mission 7",
+      "description": "Win Firestorm GDI campaign mission 7.",
+      "points": 20,
+      "group": "Firestorm GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=14128_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1145525062_I:0xX7e2438_0xH804=73SI:0xX7e2438_0xX800=1684501350_I:0xX7e2438_0xH804=105SI:0xX7e2438_0xX800=1682395974_I:0xX7e2438_0xH804=105"
+    },
+    {
+      "id": "fsgdi-08",
+      "title": "Firestorm GDI Mission 8",
+      "description": "Win Firestorm GDI campaign mission 8.",
+      "points": 20,
+      "group": "Firestorm GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=14384_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1145525062_I:0xX7e2438_0xH804=73SI:0xX7e2438_0xX800=1684501350_I:0xX7e2438_0xH804=105SI:0xX7e2438_0xX800=1682395974_I:0xX7e2438_0xH804=105"
+    },
+    {
+      "id": "fsgdi-09",
+      "title": "Firestorm GDI Campaign Complete",
+      "description": "Win the final Firestorm GDI mission and finish the campaign.",
+      "points": 50,
+      "group": "Firestorm GDI campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=14640_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1145525062_I:0xX7e2438_0xH804=73SI:0xX7e2438_0xX800=1684501350_I:0xX7e2438_0xH804=105SI:0xX7e2438_0xX800=1682395974_I:0xX7e2438_0xH804=105"
+    },
+    {
+      "id": "fsgdi-hard-any",
+      "title": "Firestorm GDI Veteran",
+      "description": "Win any Firestorm GDI mission on Hard.",
+      "points": 15,
+      "group": "Hard mode",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xX608=2_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1145525062_I:0xX7e2438_0xH804=73SI:0xX7e2438_0xX800=1684501350_I:0xX7e2438_0xH804=105SI:0xX7e2438_0xX800=1682395974_I:0xX7e2438_0xH804=105"
+    },
+    {
+      "id": "fsgdi-hard-final",
+      "title": "Firestorm GDI Legend",
+      "description": "Win the final Firestorm GDI mission on Hard.",
+      "points": 75,
+      "group": "Hard mode",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xX608=2_I:0xX7e2438_0x805=14640_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1145525062_I:0xX7e2438_0xH804=73SI:0xX7e2438_0xX800=1684501350_I:0xX7e2438_0xH804=105SI:0xX7e2438_0xX800=1682395974_I:0xX7e2438_0xH804=105"
+    },
+    {
+      "id": "fsnod-01",
+      "title": "Firestorm Nod Mission 1",
+      "description": "Win Firestorm Nod campaign mission 1.",
+      "points": 10,
+      "group": "Firestorm Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=12592_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1330533190_I:0xX7e2438_0xH804=68SI:0xX7e2438_0xX800=1869509478_I:0xX7e2438_0xH804=100SI:0xX7e2438_0xX800=1867404102_I:0xX7e2438_0xH804=100"
+    },
+    {
+      "id": "fsnod-02",
+      "title": "Firestorm Nod Mission 2",
+      "description": "Win Firestorm Nod campaign mission 2.",
+      "points": 10,
+      "group": "Firestorm Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=12848_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1330533190_I:0xX7e2438_0xH804=68SI:0xX7e2438_0xX800=1869509478_I:0xX7e2438_0xH804=100SI:0xX7e2438_0xX800=1867404102_I:0xX7e2438_0xH804=100"
+    },
+    {
+      "id": "fsnod-03",
+      "title": "Firestorm Nod Mission 3",
+      "description": "Win Firestorm Nod campaign mission 3.",
+      "points": 10,
+      "group": "Firestorm Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=13104_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1330533190_I:0xX7e2438_0xH804=68SI:0xX7e2438_0xX800=1869509478_I:0xX7e2438_0xH804=100SI:0xX7e2438_0xX800=1867404102_I:0xX7e2438_0xH804=100"
+    },
+    {
+      "id": "fsnod-04",
+      "title": "Firestorm Nod Mission 4",
+      "description": "Win Firestorm Nod campaign mission 4.",
+      "points": 15,
+      "group": "Firestorm Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=13360_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1330533190_I:0xX7e2438_0xH804=68SI:0xX7e2438_0xX800=1869509478_I:0xX7e2438_0xH804=100SI:0xX7e2438_0xX800=1867404102_I:0xX7e2438_0xH804=100"
+    },
+    {
+      "id": "fsnod-05",
+      "title": "Firestorm Nod Mission 5",
+      "description": "Win Firestorm Nod campaign mission 5.",
+      "points": 15,
+      "group": "Firestorm Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=13616_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1330533190_I:0xX7e2438_0xH804=68SI:0xX7e2438_0xX800=1869509478_I:0xX7e2438_0xH804=100SI:0xX7e2438_0xX800=1867404102_I:0xX7e2438_0xH804=100"
+    },
+    {
+      "id": "fsnod-06",
+      "title": "Firestorm Nod Mission 6",
+      "description": "Win Firestorm Nod campaign mission 6.",
+      "points": 15,
+      "group": "Firestorm Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=13872_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1330533190_I:0xX7e2438_0xH804=68SI:0xX7e2438_0xX800=1869509478_I:0xX7e2438_0xH804=100SI:0xX7e2438_0xX800=1867404102_I:0xX7e2438_0xH804=100"
+    },
+    {
+      "id": "fsnod-07",
+      "title": "Firestorm Nod Mission 7",
+      "description": "Win Firestorm Nod campaign mission 7.",
+      "points": 20,
+      "group": "Firestorm Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=14128_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1330533190_I:0xX7e2438_0xH804=68SI:0xX7e2438_0xX800=1869509478_I:0xX7e2438_0xH804=100SI:0xX7e2438_0xX800=1867404102_I:0xX7e2438_0xH804=100"
+    },
+    {
+      "id": "fsnod-08",
+      "title": "Firestorm Nod Mission 8",
+      "description": "Win Firestorm Nod campaign mission 8.",
+      "points": 20,
+      "group": "Firestorm Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=14384_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1330533190_I:0xX7e2438_0xH804=68SI:0xX7e2438_0xX800=1869509478_I:0xX7e2438_0xH804=100SI:0xX7e2438_0xX800=1867404102_I:0xX7e2438_0xH804=100"
+    },
+    {
+      "id": "fsnod-09",
+      "title": "Firestorm Nod Campaign Complete",
+      "description": "Win the final Firestorm Nod mission and finish the campaign.",
+      "points": 50,
+      "group": "Firestorm Nod campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0x805=14640_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1330533190_I:0xX7e2438_0xH804=68SI:0xX7e2438_0xX800=1869509478_I:0xX7e2438_0xH804=100SI:0xX7e2438_0xX800=1867404102_I:0xX7e2438_0xH804=100"
+    },
+    {
+      "id": "fsnod-hard-any",
+      "title": "Firestorm Nod Veteran",
+      "description": "Win any Firestorm Nod mission on Hard.",
+      "points": 15,
+      "group": "Hard mode",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xX608=2_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1330533190_I:0xX7e2438_0xH804=68SI:0xX7e2438_0xX800=1869509478_I:0xX7e2438_0xH804=100SI:0xX7e2438_0xX800=1867404102_I:0xX7e2438_0xH804=100"
+    },
+    {
+      "id": "fsnod-hard-final",
+      "title": "Firestorm Nod Legend",
+      "description": "Win the final Firestorm Nod mission on Hard.",
+      "points": 75,
+      "group": "Hard mode",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2438_0xX608=2_I:0xX7e2438_0x805=14640_d0xH7e2281=0_0xH7e2281=1SI:0xX7e2438_0xX800=1330533190_I:0xX7e2438_0xH804=68SI:0xX7e2438_0xX800=1869509478_I:0xX7e2438_0xH804=100SI:0xX7e2438_0xX800=1867404102_I:0xX7e2438_0xH804=100"
+    },
+    {
+      "id": "mission-accomplished",
+      "title": "Mission Accomplished",
+      "description": "Win any campaign mission.",
+      "points": 5,
+      "group": "Campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_d0xH7e2281=0_0xH7e2281=1"
+    },
+    {
+      "id": "no-casualties",
+      "title": "No Man Left Behind",
+      "description": "Win a campaign mission without losing a single unit.",
+      "points": 30,
+      "group": "Campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2284_0xX268=0_d0xH7e2281=0_0xH7e2281=1"
+    },
+    {
+      "id": "fortress",
+      "title": "Fortress",
+      "description": "Win a campaign mission without losing a single building.",
+      "points": 20,
+      "group": "Campaign",
+      "memaddr": "0xX7e2458=0_0xX7e2284!=0_I:0xX7e2284_0xX2bc=0_d0xH7e2281=0_0xH7e2281=1"
+    },
+    {
+      "id": "first-blood",
+      "title": "First Blood",
+      "description": "Destroy your first enemy unit in a skirmish or campaign mission.",
+      "points": 5,
+      "group": "Combat",
+      "memaddr": "0xX7e2458!=3_0xX7e2458!=4_0xX7e2458!=1_0xX7e2458!=2_0xX7e2284!=0_I:0xX7e2284_A:0xX218_I:0xX7e2284_A:0xX21c_I:0xX7e2284_A:0xX220_I:0xX7e2284_A:0xX224_I:0xX7e2284_A:0xX228_I:0xX7e2284_A:0xX22c_I:0xX7e2284_A:0xX230_I:0xX7e2284_A:0xX234_I:0xX7e2284_A:0xX238_I:0xX7e2284_A:0xX23c_I:0xX7e2284_A:0xX240_I:0xX7e2284_A:0xX244_I:0xX7e2284_A:0xX248_I:0xX7e2284_A:0xX24c_I:0xX7e2284_A:0xX250_I:0xX7e2284_A:0xX254_I:0xX7e2284_A:0xX258_I:0xX7e2284_A:0xX25c_I:0xX7e2284_A:0xX260_I:0xX7e2284_0xX264>=1"
+    },
+    {
+      "id": "kills-50",
+      "title": "Skirmisher",
+      "description": "Destroy 50 enemy units in a single skirmish.",
+      "points": 10,
+      "group": "Combat",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_A:0xX218_I:0xX7e2284_A:0xX21c_I:0xX7e2284_A:0xX220_I:0xX7e2284_A:0xX224_I:0xX7e2284_A:0xX228_I:0xX7e2284_A:0xX22c_I:0xX7e2284_A:0xX230_I:0xX7e2284_A:0xX234_I:0xX7e2284_A:0xX238_I:0xX7e2284_A:0xX23c_I:0xX7e2284_A:0xX240_I:0xX7e2284_A:0xX244_I:0xX7e2284_A:0xX248_I:0xX7e2284_A:0xX24c_I:0xX7e2284_A:0xX250_I:0xX7e2284_A:0xX254_I:0xX7e2284_A:0xX258_I:0xX7e2284_A:0xX25c_I:0xX7e2284_A:0xX260_I:0xX7e2284_M:0xX264>=50"
+    },
+    {
+      "id": "kills-100",
+      "title": "Scrap Metal",
+      "description": "Destroy 100 enemy units in a single skirmish.",
+      "points": 10,
+      "group": "Combat",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_A:0xX218_I:0xX7e2284_A:0xX21c_I:0xX7e2284_A:0xX220_I:0xX7e2284_A:0xX224_I:0xX7e2284_A:0xX228_I:0xX7e2284_A:0xX22c_I:0xX7e2284_A:0xX230_I:0xX7e2284_A:0xX234_I:0xX7e2284_A:0xX238_I:0xX7e2284_A:0xX23c_I:0xX7e2284_A:0xX240_I:0xX7e2284_A:0xX244_I:0xX7e2284_A:0xX248_I:0xX7e2284_A:0xX24c_I:0xX7e2284_A:0xX250_I:0xX7e2284_A:0xX254_I:0xX7e2284_A:0xX258_I:0xX7e2284_A:0xX25c_I:0xX7e2284_A:0xX260_I:0xX7e2284_M:0xX264>=100"
+    },
+    {
+      "id": "kills-250",
+      "title": "Junkyard",
+      "description": "Destroy 250 enemy units in a single skirmish.",
+      "points": 15,
+      "group": "Combat",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_A:0xX218_I:0xX7e2284_A:0xX21c_I:0xX7e2284_A:0xX220_I:0xX7e2284_A:0xX224_I:0xX7e2284_A:0xX228_I:0xX7e2284_A:0xX22c_I:0xX7e2284_A:0xX230_I:0xX7e2284_A:0xX234_I:0xX7e2284_A:0xX238_I:0xX7e2284_A:0xX23c_I:0xX7e2284_A:0xX240_I:0xX7e2284_A:0xX244_I:0xX7e2284_A:0xX248_I:0xX7e2284_A:0xX24c_I:0xX7e2284_A:0xX250_I:0xX7e2284_A:0xX254_I:0xX7e2284_A:0xX258_I:0xX7e2284_A:0xX25c_I:0xX7e2284_A:0xX260_I:0xX7e2284_M:0xX264>=250"
+    },
+    {
+      "id": "kills-500",
+      "title": "Total War",
+      "description": "Destroy 500 enemy units in a single skirmish.",
+      "points": 25,
+      "group": "Combat",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_A:0xX218_I:0xX7e2284_A:0xX21c_I:0xX7e2284_A:0xX220_I:0xX7e2284_A:0xX224_I:0xX7e2284_A:0xX228_I:0xX7e2284_A:0xX22c_I:0xX7e2284_A:0xX230_I:0xX7e2284_A:0xX234_I:0xX7e2284_A:0xX238_I:0xX7e2284_A:0xX23c_I:0xX7e2284_A:0xX240_I:0xX7e2284_A:0xX244_I:0xX7e2284_A:0xX248_I:0xX7e2284_A:0xX24c_I:0xX7e2284_A:0xX250_I:0xX7e2284_A:0xX254_I:0xX7e2284_A:0xX258_I:0xX7e2284_A:0xX25c_I:0xX7e2284_A:0xX260_I:0xX7e2284_M:0xX264>=500"
+    },
+    {
+      "id": "kills-1000",
+      "title": "War Machine",
+      "description": "Destroy 1,000 enemy units in a single skirmish.",
+      "points": 50,
+      "group": "Combat",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_A:0xX218_I:0xX7e2284_A:0xX21c_I:0xX7e2284_A:0xX220_I:0xX7e2284_A:0xX224_I:0xX7e2284_A:0xX228_I:0xX7e2284_A:0xX22c_I:0xX7e2284_A:0xX230_I:0xX7e2284_A:0xX234_I:0xX7e2284_A:0xX238_I:0xX7e2284_A:0xX23c_I:0xX7e2284_A:0xX240_I:0xX7e2284_A:0xX244_I:0xX7e2284_A:0xX248_I:0xX7e2284_A:0xX24c_I:0xX7e2284_A:0xX250_I:0xX7e2284_A:0xX254_I:0xX7e2284_A:0xX258_I:0xX7e2284_A:0xX25c_I:0xX7e2284_A:0xX260_I:0xX7e2284_M:0xX264>=1000"
+    },
+    {
+      "id": "buildings-10",
+      "title": "Demolition",
+      "description": "Destroy 10 enemy buildings in a single skirmish.",
+      "points": 10,
+      "group": "Combat",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_A:0xX26c_I:0xX7e2284_A:0xX270_I:0xX7e2284_A:0xX274_I:0xX7e2284_A:0xX278_I:0xX7e2284_A:0xX27c_I:0xX7e2284_A:0xX280_I:0xX7e2284_A:0xX284_I:0xX7e2284_A:0xX288_I:0xX7e2284_A:0xX28c_I:0xX7e2284_A:0xX290_I:0xX7e2284_A:0xX294_I:0xX7e2284_A:0xX298_I:0xX7e2284_A:0xX29c_I:0xX7e2284_A:0xX2a0_I:0xX7e2284_A:0xX2a4_I:0xX7e2284_A:0xX2a8_I:0xX7e2284_A:0xX2ac_I:0xX7e2284_A:0xX2b0_I:0xX7e2284_A:0xX2b4_I:0xX7e2284_M:0xX2b8>=10"
+    },
+    {
+      "id": "buildings-25",
+      "title": "Demolition Crew",
+      "description": "Destroy 25 enemy buildings in a single skirmish.",
+      "points": 15,
+      "group": "Combat",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_A:0xX26c_I:0xX7e2284_A:0xX270_I:0xX7e2284_A:0xX274_I:0xX7e2284_A:0xX278_I:0xX7e2284_A:0xX27c_I:0xX7e2284_A:0xX280_I:0xX7e2284_A:0xX284_I:0xX7e2284_A:0xX288_I:0xX7e2284_A:0xX28c_I:0xX7e2284_A:0xX290_I:0xX7e2284_A:0xX294_I:0xX7e2284_A:0xX298_I:0xX7e2284_A:0xX29c_I:0xX7e2284_A:0xX2a0_I:0xX7e2284_A:0xX2a4_I:0xX7e2284_A:0xX2a8_I:0xX7e2284_A:0xX2ac_I:0xX7e2284_A:0xX2b0_I:0xX7e2284_A:0xX2b4_I:0xX7e2284_M:0xX2b8>=25"
+    },
+    {
+      "id": "buildings-75",
+      "title": "Wrecking Ball",
+      "description": "Destroy 75 enemy buildings in a single skirmish.",
+      "points": 25,
+      "group": "Combat",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_A:0xX26c_I:0xX7e2284_A:0xX270_I:0xX7e2284_A:0xX274_I:0xX7e2284_A:0xX278_I:0xX7e2284_A:0xX27c_I:0xX7e2284_A:0xX280_I:0xX7e2284_A:0xX284_I:0xX7e2284_A:0xX288_I:0xX7e2284_A:0xX28c_I:0xX7e2284_A:0xX290_I:0xX7e2284_A:0xX294_I:0xX7e2284_A:0xX298_I:0xX7e2284_A:0xX29c_I:0xX7e2284_A:0xX2a0_I:0xX7e2284_A:0xX2a4_I:0xX7e2284_A:0xX2a8_I:0xX7e2284_A:0xX2ac_I:0xX7e2284_A:0xX2b0_I:0xX7e2284_A:0xX2b4_I:0xX7e2284_M:0xX2b8>=75"
+    },
+    {
+      "id": "buildings-150",
+      "title": "Scorched Earth",
+      "description": "Destroy 150 enemy buildings in a single skirmish.",
+      "points": 40,
+      "group": "Combat",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_A:0xX26c_I:0xX7e2284_A:0xX270_I:0xX7e2284_A:0xX274_I:0xX7e2284_A:0xX278_I:0xX7e2284_A:0xX27c_I:0xX7e2284_A:0xX280_I:0xX7e2284_A:0xX284_I:0xX7e2284_A:0xX288_I:0xX7e2284_A:0xX28c_I:0xX7e2284_A:0xX290_I:0xX7e2284_A:0xX294_I:0xX7e2284_A:0xX298_I:0xX7e2284_A:0xX29c_I:0xX7e2284_A:0xX2a0_I:0xX7e2284_A:0xX2a4_I:0xX7e2284_A:0xX2a8_I:0xX7e2284_A:0xX2ac_I:0xX7e2284_A:0xX2b0_I:0xX7e2284_A:0xX2b4_I:0xX7e2284_M:0xX2b8>=150"
+    },
+    {
+      "id": "credits-25000",
+      "title": "Savings Account",
+      "description": "Hold 25,000 credits at once in a skirmish or campaign mission.",
+      "points": 5,
+      "group": "Economy",
+      "memaddr": "0xX7e2458!=3_0xX7e2458!=4_0xX7e2458!=1_0xX7e2458!=2_0xX7e2284!=0_I:0xX7e2284_M:0xX1a4>=25000"
+    },
+    {
+      "id": "credits-50000",
+      "title": "War Chest",
+      "description": "Hold 50,000 credits at once in a skirmish or campaign mission.",
+      "points": 10,
+      "group": "Economy",
+      "memaddr": "0xX7e2458!=3_0xX7e2458!=4_0xX7e2458!=1_0xX7e2458!=2_0xX7e2284!=0_I:0xX7e2284_M:0xX1a4>=50000"
+    },
+    {
+      "id": "credits-100000",
+      "title": "Deep Pockets",
+      "description": "Hold 100,000 credits at once in a skirmish or campaign mission.",
+      "points": 15,
+      "group": "Economy",
+      "memaddr": "0xX7e2458!=3_0xX7e2458!=4_0xX7e2458!=1_0xX7e2458!=2_0xX7e2284!=0_I:0xX7e2284_M:0xX1a4>=100000"
+    },
+    {
+      "id": "credits-150000",
+      "title": "Tycoon",
+      "description": "Hold 150,000 credits at once in a skirmish or campaign mission.",
+      "points": 25,
+      "group": "Economy",
+      "memaddr": "0xX7e2458!=3_0xX7e2458!=4_0xX7e2458!=1_0xX7e2458!=2_0xX7e2284!=0_I:0xX7e2284_M:0xX1a4>=150000"
+    },
+    {
+      "id": "credits-500000",
+      "title": "Bottomless Treasury",
+      "description": "Hold 500,000 credits at once in a skirmish or campaign mission.",
+      "points": 50,
+      "group": "Economy",
+      "memaddr": "0xX7e2458!=3_0xX7e2458!=4_0xX7e2458!=1_0xX7e2458!=2_0xX7e2284!=0_I:0xX7e2284_M:0xX1a4>=500000"
+    },
+    {
+      "id": "comeback",
+      "title": "Comeback Kid",
+      "description": "Win a skirmish after your credits dropped below 1,000.",
+      "points": 25,
+      "group": "Economy",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_0xX1a4<1000.1._d0xH7e2281=0_0xH7e2281=1"
+    },
+    {
+      "id": "skirmish-victory",
+      "title": "Commander",
+      "description": "Win a skirmish.",
+      "points": 10,
+      "group": "Skirmish",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_d0xH7e2281=0_0xH7e2281=1"
+    },
+    {
+      "id": "clean-sweep",
+      "title": "Clean Sweep",
+      "description": "Win a skirmish having destroyed at least 50 enemy units and 10 enemy buildings.",
+      "points": 25,
+      "group": "Skirmish",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_A:0xX218_I:0xX7e2284_A:0xX21c_I:0xX7e2284_A:0xX220_I:0xX7e2284_A:0xX224_I:0xX7e2284_A:0xX228_I:0xX7e2284_A:0xX22c_I:0xX7e2284_A:0xX230_I:0xX7e2284_A:0xX234_I:0xX7e2284_A:0xX238_I:0xX7e2284_A:0xX23c_I:0xX7e2284_A:0xX240_I:0xX7e2284_A:0xX244_I:0xX7e2284_A:0xX248_I:0xX7e2284_A:0xX24c_I:0xX7e2284_A:0xX250_I:0xX7e2284_A:0xX254_I:0xX7e2284_A:0xX258_I:0xX7e2284_A:0xX25c_I:0xX7e2284_A:0xX260_I:0xX7e2284_0xX264>=50_I:0xX7e2284_A:0xX26c_I:0xX7e2284_A:0xX270_I:0xX7e2284_A:0xX274_I:0xX7e2284_A:0xX278_I:0xX7e2284_A:0xX27c_I:0xX7e2284_A:0xX280_I:0xX7e2284_A:0xX284_I:0xX7e2284_A:0xX288_I:0xX7e2284_A:0xX28c_I:0xX7e2284_A:0xX290_I:0xX7e2284_A:0xX294_I:0xX7e2284_A:0xX298_I:0xX7e2284_A:0xX29c_I:0xX7e2284_A:0xX2a0_I:0xX7e2284_A:0xX2a4_I:0xX7e2284_A:0xX2a8_I:0xX7e2284_A:0xX2ac_I:0xX7e2284_A:0xX2b0_I:0xX7e2284_A:0xX2b4_I:0xX7e2284_0xX2b8>=10_d0xH7e2281=0_0xH7e2281=1"
+    },
+    {
+      "id": "annihilation",
+      "title": "Annihilation",
+      "description": "Win a skirmish having destroyed at least 200 enemy units and 40 enemy buildings.",
+      "points": 50,
+      "group": "Skirmish",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_A:0xX218_I:0xX7e2284_A:0xX21c_I:0xX7e2284_A:0xX220_I:0xX7e2284_A:0xX224_I:0xX7e2284_A:0xX228_I:0xX7e2284_A:0xX22c_I:0xX7e2284_A:0xX230_I:0xX7e2284_A:0xX234_I:0xX7e2284_A:0xX238_I:0xX7e2284_A:0xX23c_I:0xX7e2284_A:0xX240_I:0xX7e2284_A:0xX244_I:0xX7e2284_A:0xX248_I:0xX7e2284_A:0xX24c_I:0xX7e2284_A:0xX250_I:0xX7e2284_A:0xX254_I:0xX7e2284_A:0xX258_I:0xX7e2284_A:0xX25c_I:0xX7e2284_A:0xX260_I:0xX7e2284_0xX264>=200_I:0xX7e2284_A:0xX26c_I:0xX7e2284_A:0xX270_I:0xX7e2284_A:0xX274_I:0xX7e2284_A:0xX278_I:0xX7e2284_A:0xX27c_I:0xX7e2284_A:0xX280_I:0xX7e2284_A:0xX284_I:0xX7e2284_A:0xX288_I:0xX7e2284_A:0xX28c_I:0xX7e2284_A:0xX290_I:0xX7e2284_A:0xX294_I:0xX7e2284_A:0xX298_I:0xX7e2284_A:0xX29c_I:0xX7e2284_A:0xX2a0_I:0xX7e2284_A:0xX2a4_I:0xX7e2284_A:0xX2a8_I:0xX7e2284_A:0xX2ac_I:0xX7e2284_A:0xX2b0_I:0xX7e2284_A:0xX2b4_I:0xX7e2284_0xX2b8>=40_d0xH7e2281=0_0xH7e2281=1"
+    },
+    {
+      "id": "iron-wall",
+      "title": "Iron Wall",
+      "description": "Win a skirmish losing fewer than 10 units.",
+      "points": 25,
+      "group": "Skirmish",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_0xX268<10_d0xH7e2281=0_0xH7e2281=1"
+    },
+    {
+      "id": "flawless",
+      "title": "Flawless Victory",
+      "description": "Win a skirmish without losing a single unit.",
+      "points": 50,
+      "group": "Skirmish",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_0xX268=0_d0xH7e2281=0_0xH7e2281=1"
+    },
+    {
+      "id": "untouchable",
+      "title": "Untouchable",
+      "description": "Win a skirmish without losing a single building.",
+      "points": 30,
+      "group": "Skirmish",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_0xX2bc=0_d0xH7e2281=0_0xH7e2281=1"
+    },
+    {
+      "id": "lightning-war",
+      "title": "Lightning War",
+      "description": "Win a skirmish with fewer than 30 enemy units destroyed.",
+      "points": 15,
+      "group": "Skirmish",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_A:0xX218_I:0xX7e2284_A:0xX21c_I:0xX7e2284_A:0xX220_I:0xX7e2284_A:0xX224_I:0xX7e2284_A:0xX228_I:0xX7e2284_A:0xX22c_I:0xX7e2284_A:0xX230_I:0xX7e2284_A:0xX234_I:0xX7e2284_A:0xX238_I:0xX7e2284_A:0xX23c_I:0xX7e2284_A:0xX240_I:0xX7e2284_A:0xX244_I:0xX7e2284_A:0xX248_I:0xX7e2284_A:0xX24c_I:0xX7e2284_A:0xX250_I:0xX7e2284_A:0xX254_I:0xX7e2284_A:0xX258_I:0xX7e2284_A:0xX25c_I:0xX7e2284_A:0xX260_I:0xX7e2284_0xX264<30_d0xH7e2281=0_0xH7e2281=1"
+    },
+    {
+      "id": "war-of-attrition",
+      "title": "War of Attrition",
+      "description": "Win a skirmish after losing 100 or more units.",
+      "points": 15,
+      "group": "Skirmish",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_I:0xX7e2284_0xX268>=100_d0xH7e2281=0_0xH7e2281=1"
+    },
+    {
+      "id": "tough-lesson",
+      "title": "Tough Lesson",
+      "description": "Lose a skirmish. It happens to every commander.",
+      "points": 5,
+      "group": "Skirmish",
+      "memaddr": "0xX7e2458=5_0xX7e2284!=0_d0xH7e4870=0_0xH7e4870=1"
+    }
+  ],
+  "watches": [
+    {
+      "id": "mode",
+      "label": "Game type",
+      "address": "0x7E2458",
+      "size": "u32",
+      "values": {
+        "0": "Campaign",
+        "3": "LAN game",
+        "4": "Online game",
+        "5": "Skirmish"
+      }
+    },
+    {
+      "id": "mission",
+      "label": "Mission file",
+      "pointer": "0x7E2438",
+      "offset": "0x800",
+      "size": "str",
+      "length": 16
+    },
+    {
+      "id": "difficulty",
+      "label": "Difficulty",
+      "pointer": "0x7E2438",
+      "offset": "0x608",
+      "size": "u32",
+      "values": {
+        "0": "Easy",
+        "1": "Normal",
+        "2": "Hard"
+      }
+    },
+    {
+      "id": "credits",
+      "label": "Your credits",
+      "pointer": "0x7E2284",
+      "offset": "0x1A4",
+      "size": "u32"
+    },
+    {
+      "id": "kills",
+      "label": "Enemy units destroyed by you",
+      "pointer": "0x7E2284",
+      "offset": "0x218",
+      "size": "sum20"
+    },
+    {
+      "id": "bkills",
+      "label": "Enemy buildings destroyed by you",
+      "pointer": "0x7E2284",
+      "offset": "0x26C",
+      "size": "sum20"
+    },
+    {
+      "id": "lost",
+      "label": "Your units lost",
+      "pointer": "0x7E2284",
+      "offset": "0x268",
+      "size": "u32"
+    },
+    {
+      "id": "blost",
+      "label": "Your buildings lost",
+      "pointer": "0x7E2284",
+      "offset": "0x2BC",
+      "size": "u32"
+    },
+    {
+      "id": "won",
+      "label": "You won",
+      "address": "0x7E2281",
+      "size": "u8",
+      "values": {
+        "0": "Not yet",
+        "1": "Yes!"
+      }
+    }
+  ],
+  "testGuide": [
+    {
+      "title": "Start a skirmish",
+      "detail": "Choose Skirmish and start a game against the computer.",
+      "doneWhen": {
+        "watch": "mode",
+        "equals": 5
+      }
+    },
+    {
+      "title": "Destroy an enemy unit",
+      "detail": "\"Enemy units destroyed by you\" goes up, and First Blood pops up.",
+      "doneWhen": {
+        "watch": "kills",
+        "atLeast": 1
+      }
+    },
+    {
+      "title": "Lose one of yours",
+      "detail": "\"Your units lost\" goes up instead. If the two are swapped, copy the test report to Claude.",
+      "doneWhen": {
+        "watch": "lost",
+        "atLeast": 1
+      }
+    },
+    {
+      "title": "Win a campaign mission",
+      "detail": "\"Mission file\" shows the mission name and the mission achievement pops when you win."
+    }
+  ]
+}

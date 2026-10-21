@@ -1,0 +1,1305 @@
+{
+  "id": "eaw",
+  "title": "Star Wars: Empire at War",
+  "version": 2,
+  "kind": "replay",
+  "authors": [
+    "Vault Launcher"
+  ],
+  "storeIds": [],
+  "linkFiles": [
+    "GameData/sweaw.exe",
+    "corruption/swfoc.exe"
+  ],
+  "exeNames": [],
+  "md5": [],
+  "notes": [
+    "Empire at War has online play, so Vault never reads its memory. It reads your save games in Saved Games\\Petroglyph.",
+    "The galactic map save holds the whole campaign script, so it can only show which campaign you started. Story battles are different: save once during each story battle (Esc, Save) and Vault records it.",
+    "Covers the Rebel and Empire campaigns and the Forces of Corruption campaign with Tyber Zann.",
+    "Every save also names its tutorial or Galactic Conquest map, so tutorials and Galactic Conquest games count as soon as you save once in them (wins are not recorded in saves)."
+  ],
+  "testGuide": [
+    {
+      "title": "Start a story campaign",
+      "detail": "Start the Rebel, Empire or Tyber Zann campaign and save on the galactic map. \"Join the ...\" should pop."
+    },
+    {
+      "title": "Save during a story battle",
+      "detail": "When the first story battle starts, press Esc and save. That battle's achievement should pop."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "rebel-start",
+      "title": "Join the Rebellion",
+      "description": "Start the Rebel campaign and save the galactic map.",
+      "points": 5,
+      "group": "Rebel campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_REBEL_ACT01_MISSION_THREE_34",
+          "TEXT_STORY_REBEL_ACT01_MISSION_TWO_46"
+        ]
+      }
+    },
+    {
+      "id": "rebel-m01",
+      "title": "Hit and Run",
+      "description": "Rebel campaign: save during the mission 1 story battle.",
+      "points": 10,
+      "group": "Rebel campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_REBEL_ACT01_MISSION_ONE_100",
+          "TEXT_STORY_REBEL_ACT01_MISSION_ONE_101",
+          "TEXT_STORY_REBEL_ACT01_MISSION_ONE_102",
+          "TEXT_STORY_REBEL_ACT01_MISSION_ONE_103",
+          "TEXT_STORY_REBEL_ACT01_MISSION_ONE_17",
+          "TEXT_STORY_REBEL_ACT01_MISSION_ONE_30",
+          "TEXT_STORY_REBEL_ACT01_MISSION_ONE_33"
+        ],
+        "battle": true,
+        "side": "rebel"
+      }
+    },
+    {
+      "id": "rebel-m02",
+      "title": "Boots on the Ground",
+      "description": "Rebel campaign: save during the mission 2 story battle.",
+      "points": 10,
+      "group": "Rebel campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_REBEL_ACT01_MISSION_TWO_08",
+          "TEXT_STORY_REBEL_ACT01_MISSION_TWO_10",
+          "TEXT_STORY_REBEL_ACT01_MISSION_TWO_27",
+          "TEXT_STORY_REBEL_ACT01_MISSION_TWO_35",
+          "TEXT_STORY_REBEL_ACT01_MISSION_TWO_36",
+          "TEXT_STORY_REBEL_ACT01_MISSION_TWO_42",
+          "TEXT_STORY_REBEL_ACT01_MISSION_TWO_43",
+          "TEXT_STORY_REBEL_ACT01_MISSION_TWO_45",
+          "TEXT_STORY_REBEL_ACT01_MISSION_TWO_48"
+        ],
+        "battle": true,
+        "side": "rebel"
+      }
+    },
+    {
+      "id": "rebel-m03",
+      "title": "Rescue Op",
+      "description": "Rebel campaign: save during the mission 3 story battle.",
+      "points": 10,
+      "group": "Rebel campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_REBEL_ACT01_MISSION_THREE_09",
+          "TEXT_STORY_REBEL_ACT01_MISSION_THREE_100",
+          "TEXT_STORY_REBEL_ACT01_MISSION_THREE_11",
+          "TEXT_STORY_REBEL_ACT01_MISSION_THREE_17",
+          "TEXT_STORY_REBEL_ACT01_MISSION_THREE_31",
+          "TEXT_STORY_REBEL_ACT01_MISSION_THREE_32",
+          "TEXT_STORY_REBEL_ACT01_MISSION_THREE_33"
+        ],
+        "battle": true,
+        "side": "rebel"
+      }
+    },
+    {
+      "id": "rebel-m04",
+      "title": "Spreading the Word",
+      "description": "Rebel campaign: save during the mission 4 story battle.",
+      "points": 10,
+      "group": "Rebel campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_REBEL_ACT02_MISSION_FOUR_34",
+          "TEXT_STORY_REBEL_ACT02_MISSION_FOUR_35",
+          "TEXT_STORY_REBEL_ACT02_MISSION_FOUR_36",
+          "TEXT_STORY_REBEL_ACT02_MISSION_FOUR_701",
+          "TEXT_STORY_REBEL_ACT02_MISSION_FOUR_SCREEN_02"
+        ],
+        "battle": true,
+        "side": "rebel"
+      }
+    },
+    {
+      "id": "rebel-m06",
+      "title": "Liberation",
+      "description": "Rebel campaign: save during the mission 6 story battle.",
+      "points": 10,
+      "group": "Rebel campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_REBEL_ACT02_MISSION_SIX_33",
+          "TEXT_STORY_REBEL_ACT02_MISSION_SIX_34",
+          "TEXT_STORY_REBEL_ACT02_MISSION_SIX_35",
+          "TEXT_STORY_REBEL_ACT02_MISSION_SIX_SCREEN_02"
+        ],
+        "battle": true,
+        "side": "rebel"
+      }
+    },
+    {
+      "id": "rebel-m07",
+      "title": "Grand Strategy",
+      "description": "Rebel campaign: save during the mission 7 story battle.",
+      "points": 10,
+      "group": "Rebel campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_REBEL_ACT02_MISSION_7A_100",
+          "TEXT_STORY_REBEL_ACT02_MISSION_7A_101",
+          "TEXT_STORY_REBEL_ACT03_MISSION_SEVEN_10",
+          "TEXT_STORY_REBEL_ACT03_MISSION_SEVEN_45",
+          "TEXT_STORY_REBEL_ACT03_MISSION_SEVEN_46",
+          "TEXT_STORY_REBEL_ACT03_MISSION_SEVEN_47",
+          "TEXT_STORY_REBEL_ACT03_MISSION_SEVEN_A_06",
+          "TEXT_STORY_REBEL_ACT03_MISSION_SEVEN_A_09",
+          "TEXT_STORY_REBEL_ACT03_MISSION_SEVEN_A_10"
+        ],
+        "battle": true,
+        "side": "rebel"
+      }
+    },
+    {
+      "id": "rebel-m08",
+      "title": "Starfighter Ace",
+      "description": "Rebel campaign: save during the mission 8 story battle.",
+      "points": 10,
+      "group": "Rebel campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_REBEL_ACT03_MISSION_EIGHT_04",
+          "TEXT_STORY_REBEL_ACT03_MISSION_EIGHT_11",
+          "TEXT_STORY_REBEL_ACT03_MISSION_EIGHT_12",
+          "TEXT_STORY_REBEL_ACT03_MISSION_EIGHT_13",
+          "TEXT_STORY_REBEL_ACT03_MISSION_EIGHT_40",
+          "TEXT_STORY_REBEL_ACT03_MISSION_EIGHT_41",
+          "TEXT_STORY_REBEL_ACT03_MISSION_EIGHT_42"
+        ],
+        "battle": true,
+        "side": "rebel"
+      }
+    },
+    {
+      "id": "rebel-m09",
+      "title": "Two Fronts",
+      "description": "Rebel campaign: save during the mission 9 story battle.",
+      "points": 10,
+      "group": "Rebel campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_REBEL_ACT03_MISSION_NINE_08",
+          "TEXT_STORY_REBEL_ACT03_MISSION_NINE_29",
+          "TEXT_STORY_REBEL_ACT03_MISSION_NINE_43",
+          "TEXT_STORY_REBEL_ACT03_MISSION_NINE_44"
+        ],
+        "battle": true,
+        "side": "rebel"
+      }
+    },
+    {
+      "id": "rebel-m10",
+      "title": "Toward Victory",
+      "description": "Rebel campaign: save during the mission 10 story battle.",
+      "points": 10,
+      "group": "Rebel campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_REBEL_ACT03_MISSION_TEN_23",
+          "TEXT_STORY_REBEL_ACT03_MISSION_TEN_28",
+          "TEXT_STORY_REBEL_ACT03_MISSION_TEN_30",
+          "TEXT_STORY_REBEL_ACT03_MISSION_TEN_33",
+          "TEXT_STORY_REBEL_ACT03_MISSION_TEN_37",
+          "TEXT_STORY_REBEL_ACT03_MISSION_TEN_48",
+          "TEXT_STORY_REBEL_ACT03_MISSION_TEN_49"
+        ],
+        "battle": true,
+        "side": "rebel"
+      }
+    },
+    {
+      "id": "rebel-all",
+      "title": "Rebellion Veteran",
+      "description": "Record every Rebel campaign story battle listed here.",
+      "points": 40,
+      "group": "Rebel campaign",
+      "rule": {
+        "battles": 9,
+        "side": "rebel"
+      }
+    },
+    {
+      "id": "empire-start",
+      "title": "Join the Empire",
+      "description": "Start the Empire campaign and save the galactic map.",
+      "points": 5,
+      "group": "Empire campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_THREE_26",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_THREE_35",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_TWO_40"
+        ]
+      }
+    },
+    {
+      "id": "empire-m02",
+      "title": "An Example Is Made",
+      "description": "Empire campaign: save during the mission 2 story battle.",
+      "points": 10,
+      "group": "Empire campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_TWO_12",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_TWO_65",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_TWO_67",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_TWO_68",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_TWO_70",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_TWO_74",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_TWO_75",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_TWO_76",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_TWO_77",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_TWO_78"
+        ],
+        "battle": true,
+        "side": "empire"
+      }
+    },
+    {
+      "id": "empire-m03",
+      "title": "Iron Grip",
+      "description": "Empire campaign: save during the mission 3 story battle.",
+      "points": 10,
+      "group": "Empire campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_THREE_63",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_THREE_65",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_THREE_66",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_THREE_67",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_THREE_68",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_THREE_69"
+        ],
+        "battle": true,
+        "side": "empire"
+      }
+    },
+    {
+      "id": "empire-m04",
+      "title": "Hunting Rebels",
+      "description": "Empire campaign: save during the mission 4 story battle.",
+      "points": 10,
+      "group": "Empire campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_FOUR_33",
+          "TEXT_STORY_EMPIRE_ACT01_MISSION_FOUR_38",
+          "TEXT_STORY_EMPIRE_ACT02_MISSION_FOUR_21",
+          "TEXT_STORY_EMPIRE_ACT02_MISSION_FOUR_22"
+        ],
+        "battle": true,
+        "side": "empire"
+      }
+    },
+    {
+      "id": "empire-m05",
+      "title": "Fist of the Empire",
+      "description": "Empire campaign: save during the mission 5 story battle.",
+      "points": 10,
+      "group": "Empire campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_EMPIRE_ACT02_MISSION_6_101",
+          "TEXT_STORY_EMPIRE_ACT02_MISSION_6_102",
+          "TEXT_STORY_EMPIRE_ACT02_MISSION_FIVE_10",
+          "TEXT_STORY_EMPIRE_ACT02_MISSION_FIVE_22"
+        ],
+        "battle": true,
+        "side": "empire"
+      }
+    },
+    {
+      "id": "empire-m06",
+      "title": "Order Restored",
+      "description": "Empire campaign: save during the mission 6 story battle.",
+      "points": 10,
+      "group": "Empire campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_EMPIRE_ACT02_MISSION_6_100",
+          "TEXT_STORY_EMPIRE_ACT02_MISSION_6_900",
+          "TEXT_STORY_EMPIRE_ACT02_MISSION_SIX_11",
+          "TEXT_STORY_EMPIRE_ACT02_MISSION_SIX_21",
+          "TEXT_STORY_EMPIRE_ACT02_MISSION_SIX_24",
+          "TEXT_STORY_EMPIRE_ACT02_MISSION_SIX_30",
+          "TEXT_STORY_EMPIRE_ACT02_MISSION_SIX_31",
+          "TEXT_STORY_EMPIRE_ACT02_MISSION_SIX_35"
+        ],
+        "battle": true,
+        "side": "empire"
+      }
+    },
+    {
+      "id": "empire-m08",
+      "title": "Power Projected",
+      "description": "Empire campaign: save during the mission 8 story battle.",
+      "points": 10,
+      "group": "Empire campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_EMPIRE_ACT03_MISSION_EIGHT_17",
+          "TEXT_STORY_EMPIRE_ACT03_MISSION_EIGHT_23",
+          "TEXT_STORY_EMPIRE_ACT03_MISSION_EIGHT_24"
+        ],
+        "battle": true,
+        "side": "empire"
+      }
+    },
+    {
+      "id": "empire-m09",
+      "title": "Ground Assault",
+      "description": "Empire campaign: save during the mission 9 story battle.",
+      "points": 10,
+      "group": "Empire campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_EMPIRE_ACT03_MISSION_NINE_18",
+          "TEXT_STORY_EMPIRE_ACT03_MISSION_NINE_19",
+          "TEXT_STORY_EMPIRE_ACT03_MISSION_NINE_20"
+        ],
+        "battle": true,
+        "side": "empire"
+      }
+    },
+    {
+      "id": "empire-m10",
+      "title": "Fleet Command",
+      "description": "Empire campaign: save during the mission 10 story battle.",
+      "points": 10,
+      "group": "Empire campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_EMPIRE_ACT04_MISSION_10_100",
+          "TEXT_STORY_EMPIRE_ACT04_MISSION_TEN_42",
+          "TEXT_STORY_EMPIRE_ACT04_MISSION_TEN_43",
+          "TEXT_STORY_EMPIRE_ACT04_MISSION_TEN_44",
+          "TEXT_STORY_EMPIRE_ACT04_MISSION_TEN_45",
+          "TEXT_STORY_EMPIRE_ACT04_MISSION_TEN_46"
+        ],
+        "battle": true,
+        "side": "empire"
+      }
+    },
+    {
+      "id": "empire-m11",
+      "title": "No Escape",
+      "description": "Empire campaign: save during the mission 11 story battle.",
+      "points": 10,
+      "group": "Empire campaign",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_EMPIRE_ACT04_MISSION_ELEVEN_06",
+          "TEXT_STORY_EMPIRE_ACT04_MISSION_ELEVEN_21"
+        ],
+        "battle": true,
+        "side": "empire"
+      }
+    },
+    {
+      "id": "empire-all",
+      "title": "Empire Veteran",
+      "description": "Record every Empire campaign story battle listed here.",
+      "points": 40,
+      "group": "Empire campaign",
+      "rule": {
+        "battles": 9,
+        "side": "empire"
+      }
+    },
+    {
+      "id": "zann-start",
+      "title": "Join the Zann Consortium",
+      "description": "Start the Tyber Zann campaign (Forces of Corruption) and save the galactic map.",
+      "points": 5,
+      "group": "Tyber Zann campaign (Forces of Corruption)",
+      "rule": {
+        "anyText": [
+          "TEXT_SPEECH_UW_ACT01_MISSION_02_41",
+          "TEXT_UW_ACT01_G01_05",
+          "TEXT_UW_ACT01_G01_08",
+          "TEXT_UW_ACT01_G01_22",
+          "TEXT_UW_ACT01_G05_01",
+          "TEXT_UW_ACT01_G05_02"
+        ]
+      }
+    },
+    {
+      "id": "zann-m01",
+      "title": "Breakout",
+      "description": "Tyber Zann campaign (Forces of Corruption): save during the mission 1 story battle.",
+      "points": 10,
+      "group": "Tyber Zann campaign (Forces of Corruption)",
+      "rule": {
+        "anyText": [
+          "TEXT_UW_ACT01_M01_GOAL_01",
+          "TEXT_UW_ACT01_M01_GOAL_02",
+          "TEXT_UW_ACT01_M01_GOAL_03",
+          "TEXT_UW_ACT01_M01_GOAL_04",
+          "TEXT_UW_ACT01_M01_HINT_01",
+          "TEXT_UW_ACT01_M01_HINT_02"
+        ],
+        "battle": true,
+        "side": "zann"
+      }
+    },
+    {
+      "id": "zann-m02",
+      "title": "Black Market",
+      "description": "Tyber Zann campaign (Forces of Corruption): save during the mission 2 story battle.",
+      "points": 10,
+      "group": "Tyber Zann campaign (Forces of Corruption)",
+      "rule": {
+        "anyText": [
+          "TEXT_UW_ACT01_M02_B_COUNT_00",
+          "TEXT_UW_ACT01_M02_B_COUNT_01",
+          "TEXT_UW_ACT01_M02_COUNT_00",
+          "TEXT_UW_ACT01_M02_COUNT_01"
+        ],
+        "battle": true,
+        "side": "zann"
+      }
+    },
+    {
+      "id": "zann-m03",
+      "title": "Leverage",
+      "description": "Tyber Zann campaign (Forces of Corruption): save during the mission 3 story battle.",
+      "points": 10,
+      "group": "Tyber Zann campaign (Forces of Corruption)",
+      "rule": {
+        "anyText": [
+          "TEXT_UW_ACT01_M03_GOAL_01",
+          "TEXT_UW_ACT01_M03_GOAL_02",
+          "TEXT_UW_ACT01_M03_HINT_01",
+          "TEXT_UW_ACT01_M03_HINT_02"
+        ],
+        "battle": true,
+        "side": "zann"
+      }
+    },
+    {
+      "id": "zann-m04",
+      "title": "Bad Debts",
+      "description": "Tyber Zann campaign (Forces of Corruption): save during the mission 4 story battle.",
+      "points": 10,
+      "group": "Tyber Zann campaign (Forces of Corruption)",
+      "rule": {
+        "anyText": [
+          "TEXT_UW_ACT01_M04_GOAL_01",
+          "TEXT_UW_ACT01_M04_GOAL_02",
+          "TEXT_UW_ACT01_M04_GOAL_03",
+          "TEXT_UW_ACT01_M04_GOAL_05",
+          "TEXT_UW_ACT01_M04_HINT_01",
+          "TEXT_UW_ACT01_M04_HINT_02"
+        ],
+        "battle": true,
+        "side": "zann"
+      }
+    },
+    {
+      "id": "zann-m06",
+      "title": "Hostile Takeover",
+      "description": "Tyber Zann campaign (Forces of Corruption): save during the mission 6 story battle.",
+      "points": 10,
+      "group": "Tyber Zann campaign (Forces of Corruption)",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_UNDERWORLD_ACT02_MISSION_SIX_01",
+          "TEXT_STORY_UNDERWORLD_ACT02_MISSION_SIX_02",
+          "TEXT_STORY_UNDERWORLD_ACT02_MISSION_SIX_04",
+          "TEXT_STORY_UW_ACT02_M06_44",
+          "TEXT_STORY_UW_ACT02_M06_45"
+        ],
+        "battle": true,
+        "side": "zann"
+      }
+    },
+    {
+      "id": "zann-m07",
+      "title": "Something in the Air",
+      "description": "Tyber Zann campaign (Forces of Corruption): save during the mission 7 story battle.",
+      "points": 10,
+      "group": "Tyber Zann campaign (Forces of Corruption)",
+      "rule": {
+        "anyText": [
+          "TEXT_UW_ACT02_M07_GASCOUNTER_01",
+          "TEXT_UW_ACT02_M07_GASCOUNTER_02",
+          "TEXT_UW_ACT02_M07_GASCOUNTER_03",
+          "TEXT_UW_ACT02_M07_19"
+        ],
+        "battle": true,
+        "side": "zann"
+      }
+    },
+    {
+      "id": "zann-m09",
+      "title": "Pirates",
+      "description": "Tyber Zann campaign (Forces of Corruption): save during the mission 9 story battle.",
+      "points": 10,
+      "group": "Tyber Zann campaign (Forces of Corruption)",
+      "rule": {
+        "anyText": [
+          "TEXT_STORY_UNDERWORLD_ACT02_MISSION_NINE_01",
+          "TEXT_UW_ACT02_M09_GOAL_01"
+        ],
+        "battle": true,
+        "side": "zann"
+      }
+    },
+    {
+      "id": "zann-m11",
+      "title": "Corrupted",
+      "description": "Tyber Zann campaign (Forces of Corruption): save during the mission 11 story battle.",
+      "points": 10,
+      "group": "Tyber Zann campaign (Forces of Corruption)",
+      "rule": {
+        "anyText": [
+          "TEXT_UW_ACT03_M11_GOAL_00",
+          "TEXT_UW_ACT03_M11_GOAL_01",
+          "TEXT_UW_ACT03_M11_GOAL_02",
+          "TEXT_UW_ACT03_M11_GOAL_03",
+          "TEXT_UW_ACT03_M11_GOAL_04",
+          "TEXT_UW_ACT03_M11_GOAL_05"
+        ],
+        "battle": true,
+        "side": "zann"
+      }
+    },
+    {
+      "id": "zann-m12",
+      "title": "The Consortium Rises",
+      "description": "Tyber Zann campaign (Forces of Corruption): save during the mission 12 story battle.",
+      "points": 10,
+      "group": "Tyber Zann campaign (Forces of Corruption)",
+      "rule": {
+        "anyText": [
+          "TEXT_UW_ACT03_M12_GOAL_00",
+          "TEXT_UW_ACT03_M12_GOAL_01",
+          "TEXT_UW_ACT03_M12_GOAL_02",
+          "TEXT_UW_ACT03_M12_GOAL_03",
+          "TEXT_UW_ACT03_M12_GOAL_04",
+          "TEXT_UW_ACT03_M12_GOAL_05"
+        ],
+        "battle": true,
+        "side": "zann"
+      }
+    },
+    {
+      "id": "zann-all",
+      "title": "Zann Consortium Veteran",
+      "description": "Record every Tyber Zann campaign (Forces of Corruption) story battle listed here.",
+      "points": 40,
+      "group": "Tyber Zann campaign (Forces of Corruption)",
+      "rule": {
+        "battles": 9,
+        "side": "zann"
+      }
+    },
+    {
+      "id": "tutorial-1",
+      "title": "Training: Basic Land (Rebel)",
+      "description": "Play tutorial 1, Basic Land (Rebel), and save during it.",
+      "points": 5,
+      "group": "Tutorials",
+      "rule": {
+        "campaign": [
+          "Tutorial_One"
+        ]
+      }
+    },
+    {
+      "id": "tutorial-2",
+      "title": "Training: Basic Galactic (Rebel)",
+      "description": "Play tutorial 2, Basic Galactic (Rebel), and save during it.",
+      "points": 5,
+      "group": "Tutorials",
+      "rule": {
+        "campaign": [
+          "Tutorial_Two"
+        ]
+      }
+    },
+    {
+      "id": "tutorial-3",
+      "title": "Training: Basic Space (Empire)",
+      "description": "Play tutorial 3, Basic Space (Empire), and save during it.",
+      "points": 5,
+      "group": "Tutorials",
+      "rule": {
+        "campaign": [
+          "Tutorial_Three"
+        ]
+      }
+    },
+    {
+      "id": "tutorial-4",
+      "title": "Training: Advanced Galactic (Empire)",
+      "description": "Play tutorial 4, Advanced Galactic (Empire), and save during it.",
+      "points": 5,
+      "group": "Tutorials",
+      "rule": {
+        "campaign": [
+          "Tutorial_Four"
+        ]
+      }
+    },
+    {
+      "id": "tutorial-5",
+      "title": "Training: Advanced Land (Empire)",
+      "description": "Play tutorial 5, Advanced Land (Empire), and save during it.",
+      "points": 5,
+      "group": "Tutorials",
+      "rule": {
+        "campaign": [
+          "Tutorial_Five"
+        ]
+      }
+    },
+    {
+      "id": "tutorial-6",
+      "title": "Training: Land Skirmish Mode",
+      "description": "Play tutorial 6, Land Skirmish Mode, and save during it.",
+      "points": 5,
+      "group": "Tutorials",
+      "rule": {
+        "campaign": [
+          "Tutorial_Six"
+        ]
+      }
+    },
+    {
+      "id": "tutorial-7",
+      "title": "Training: Space Skirmish Mode",
+      "description": "Play tutorial 7, Space Skirmish Mode, and save during it.",
+      "points": 5,
+      "group": "Tutorials",
+      "rule": {
+        "campaign": [
+          "Tutorial_Seven"
+        ]
+      }
+    },
+    {
+      "id": "tutorial-8",
+      "title": "Training: Crime Lord Unleashed",
+      "description": "Play tutorial 8, Crime Lord Unleashed (Zann Consortium), and save during it.",
+      "points": 5,
+      "group": "Tutorials",
+      "rule": {
+        "campaign": [
+          "Tutorial_Underworld"
+        ]
+      }
+    },
+    {
+      "id": "tutorials-all",
+      "title": "Fully Trained",
+      "description": "Play all eight tutorials.",
+      "points": 25,
+      "group": "Tutorials",
+      "rule": {
+        "campaigns": [
+          "Tutorial_One",
+          "Tutorial_Two",
+          "Tutorial_Three",
+          "Tutorial_Four",
+          "Tutorial_Five",
+          "Tutorial_Six",
+          "Tutorial_Seven",
+          "Tutorial_Underworld"
+        ]
+      }
+    },
+    {
+      "id": "gc-alderaans-demise-rebel",
+      "title": "Alderaan's Demise: Rebel",
+      "description": "Play a Galactic Conquest of Alderaan's Demise as the Rebellion, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest",
+      "rule": {
+        "campaign": [
+          "Sandbox_Alderaans_Demise_Rebel"
+        ]
+      }
+    },
+    {
+      "id": "gc-alderaans-demise-empire",
+      "title": "Alderaan's Demise: Empire",
+      "description": "Play a Galactic Conquest of Alderaan's Demise as the Empire, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest",
+      "rule": {
+        "campaign": [
+          "Sandbox_Alderaans_Demise_Empire"
+        ]
+      }
+    },
+    {
+      "id": "gc-shipyards-of-kuat-rebel",
+      "title": "The Shipyards of Kuat: Rebel",
+      "description": "Play a Galactic Conquest of The Shipyards of Kuat as the Rebellion, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest",
+      "rule": {
+        "campaign": [
+          "Sandbox_Shipyards_of_Kuat_Rebel"
+        ]
+      }
+    },
+    {
+      "id": "gc-shipyards-of-kuat-empire",
+      "title": "The Shipyards of Kuat: Empire",
+      "description": "Play a Galactic Conquest of The Shipyards of Kuat as the Empire, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest",
+      "rule": {
+        "campaign": [
+          "Sandbox_Shipyards_of_Kuat_Empire"
+        ]
+      }
+    },
+    {
+      "id": "gc-empire-surrounded-rebel",
+      "title": "Empire Surrounded: Rebel",
+      "description": "Play a Galactic Conquest of Empire Surrounded as the Rebellion, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest",
+      "rule": {
+        "campaign": [
+          "Sandbox_Empire_Surrounded_Rebel"
+        ]
+      }
+    },
+    {
+      "id": "gc-empire-surrounded-empire",
+      "title": "Empire Surrounded: Empire",
+      "description": "Play a Galactic Conquest of Empire Surrounded as the Empire, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest",
+      "rule": {
+        "campaign": [
+          "Sandbox_Empire_Surrounded_Empire"
+        ]
+      }
+    },
+    {
+      "id": "gc-empire-at-war-rebel",
+      "title": "Empire at War: Rebel",
+      "description": "Play a Galactic Conquest of Empire at War as the Rebellion, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest",
+      "rule": {
+        "campaign": [
+          "Sandbox_Empire_at_War_Rebel"
+        ]
+      }
+    },
+    {
+      "id": "gc-empire-at-war-empire",
+      "title": "Empire at War: Empire",
+      "description": "Play a Galactic Conquest of Empire at War as the Empire, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest",
+      "rule": {
+        "campaign": [
+          "Sandbox_Empire_at_War_Empire"
+        ]
+      }
+    },
+    {
+      "id": "gc-galactic-conflict-rebel",
+      "title": "Galactic Conflict: Rebel",
+      "description": "Play a Galactic Conquest of Galactic Conflict as the Rebellion, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest",
+      "rule": {
+        "campaign": [
+          "Sandbox_Galactic_Conflict_Rebel"
+        ]
+      }
+    },
+    {
+      "id": "gc-galactic-conflict-empire",
+      "title": "Galactic Conflict: Empire",
+      "description": "Play a Galactic Conquest of Galactic Conflict as the Empire, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest",
+      "rule": {
+        "campaign": [
+          "Sandbox_Galactic_Conflict_Empire"
+        ]
+      }
+    },
+    {
+      "id": "gc-the-conflict-begins-rebel",
+      "title": "The Conflict Begins: Rebel",
+      "description": "Play a Galactic Conquest of The Conflict Begins as the Rebellion, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest",
+      "rule": {
+        "campaign": [
+          "Campaign_The_Conflict_Begins_Rebel"
+        ]
+      }
+    },
+    {
+      "id": "gc-the-conflict-begins-empire",
+      "title": "The Conflict Begins: Empire",
+      "description": "Play a Galactic Conquest of The Conflict Begins as the Empire, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest",
+      "rule": {
+        "campaign": [
+          "Campaign_The_Conflict_Begins_Empire"
+        ]
+      }
+    },
+    {
+      "id": "gc-the-lines-are-drawn-rebel",
+      "title": "The Lines are Drawn: Rebel",
+      "description": "Play a Galactic Conquest of The Lines are Drawn as the Rebellion, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest",
+      "rule": {
+        "campaign": [
+          "Sandbox_The_Lines_Are_Drawn_Rebel"
+        ]
+      }
+    },
+    {
+      "id": "gc-the-lines-are-drawn-empire",
+      "title": "The Lines are Drawn: Empire",
+      "description": "Play a Galactic Conquest of The Lines are Drawn as the Empire, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest",
+      "rule": {
+        "campaign": [
+          "Sandbox_The_Lines_Are_Drawn_Empire"
+        ]
+      }
+    },
+    {
+      "id": "gc-closing-on-coruscant-rebel",
+      "title": "Closing on Coruscant: Rebel",
+      "description": "Play a Galactic Conquest of Closing on Coruscant as the Rebellion, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest",
+      "rule": {
+        "campaign": [
+          "Sandbox_Closing_on_Coruscant_Rebel"
+        ]
+      }
+    },
+    {
+      "id": "gc-closing-on-coruscant-empire",
+      "title": "Closing on Coruscant: Empire",
+      "description": "Play a Galactic Conquest of Closing on Coruscant as the Empire, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest",
+      "rule": {
+        "campaign": [
+          "Sandbox_Closing_on_Coruscant_Empire"
+        ]
+      }
+    },
+    {
+      "id": "gc-gateways-zann",
+      "title": "Gateways: Zann",
+      "description": "Play a Galactic Conquest of Gateways as the Zann Consortium, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Gateways_Underworld"
+        ]
+      }
+    },
+    {
+      "id": "gc-gateways-rebel",
+      "title": "Gateways: Rebel",
+      "description": "Play a Galactic Conquest of Gateways as the Rebellion, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Gateways_Rebel"
+        ]
+      }
+    },
+    {
+      "id": "gc-gateways-empire",
+      "title": "Gateways: Empire",
+      "description": "Play a Galactic Conquest of Gateways as the Empire, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Gateways_Empire"
+        ]
+      }
+    },
+    {
+      "id": "gc-equal-footing-zann",
+      "title": "Equal Footing: Zann",
+      "description": "Play a Galactic Conquest of Equal Footing as the Zann Consortium, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Equal_Footing_Underworld"
+        ]
+      }
+    },
+    {
+      "id": "gc-equal-footing-rebel",
+      "title": "Equal Footing: Rebel",
+      "description": "Play a Galactic Conquest of Equal Footing as the Rebellion, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Equal_Footing_Rebel"
+        ]
+      }
+    },
+    {
+      "id": "gc-equal-footing-empire",
+      "title": "Equal Footing: Empire",
+      "description": "Play a Galactic Conquest of Equal Footing as the Empire, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Equal_Footing_Empire"
+        ]
+      }
+    },
+    {
+      "id": "gc-origin-zann",
+      "title": "Origin of Corruption: Zann",
+      "description": "Play a Galactic Conquest of Origin of Corruption as the Zann Consortium, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Origin_Underworld"
+        ]
+      }
+    },
+    {
+      "id": "gc-origin-rebel",
+      "title": "Origin of Corruption: Rebel",
+      "description": "Play a Galactic Conquest of Origin of Corruption as the Rebellion, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Origin_Rebel"
+        ]
+      }
+    },
+    {
+      "id": "gc-origin-empire",
+      "title": "Origin of Corruption: Empire",
+      "description": "Play a Galactic Conquest of Origin of Corruption as the Empire, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Origin_Empire"
+        ]
+      }
+    },
+    {
+      "id": "gc-heart-of-the-maw-zann",
+      "title": "Heart of the Maw: Zann",
+      "description": "Play a Galactic Conquest of Heart of the Maw as the Zann Consortium, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Heart_Of_The_Maw_Underworld"
+        ]
+      }
+    },
+    {
+      "id": "gc-heart-of-the-maw-rebel",
+      "title": "Heart of the Maw: Rebel",
+      "description": "Play a Galactic Conquest of Heart of the Maw as the Rebellion, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Heart_Of_The_Maw_Rebel"
+        ]
+      }
+    },
+    {
+      "id": "gc-heart-of-the-maw-empire",
+      "title": "Heart of the Maw: Empire",
+      "description": "Play a Galactic Conquest of Heart of the Maw as the Empire, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Heart_Of_The_Maw_Empire"
+        ]
+      }
+    },
+    {
+      "id": "gc-rim-worlds-zann",
+      "title": "Rim World Conflict: Zann",
+      "description": "Play a Galactic Conquest of Rim World Conflict as the Zann Consortium, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Rim_Worlds_Underworld"
+        ]
+      }
+    },
+    {
+      "id": "gc-rim-worlds-rebel",
+      "title": "Rim World Conflict: Rebel",
+      "description": "Play a Galactic Conquest of Rim World Conflict as the Rebellion, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Rim_Worlds_Rebel"
+        ]
+      }
+    },
+    {
+      "id": "gc-rim-worlds-empire",
+      "title": "Rim World Conflict: Empire",
+      "description": "Play a Galactic Conquest of Rim World Conflict as the Empire, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Rim_Worlds_Empire"
+        ]
+      }
+    },
+    {
+      "id": "gc-clusters-zann",
+      "title": "Clusters: Zann",
+      "description": "Play a Galactic Conquest of Clusters as the Zann Consortium, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Clusters_Underworld"
+        ]
+      }
+    },
+    {
+      "id": "gc-clusters-rebel",
+      "title": "Clusters: Rebel",
+      "description": "Play a Galactic Conquest of Clusters as the Rebellion, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Clusters_Rebel"
+        ]
+      }
+    },
+    {
+      "id": "gc-clusters-empire",
+      "title": "Clusters: Empire",
+      "description": "Play a Galactic Conquest of Clusters as the Empire, and save it.",
+      "points": 10,
+      "group": "Galactic Conquest (Forces of Corruption)",
+      "rule": {
+        "campaign": [
+          "Sandbox_Clusters_Empire"
+        ]
+      }
+    },
+    {
+      "id": "gc-factions",
+      "title": "Every Side of the War",
+      "description": "Play a Galactic Conquest as the Rebellion, the Empire and the Zann Consortium.",
+      "points": 25,
+      "group": "Milestones",
+      "rule": {
+        "campaigns": [
+          "Sandbox_Alderaans_Demise_Rebel",
+          "Sandbox_Alderaans_Demise_Empire",
+          "Sandbox_Gateways_Underworld"
+        ],
+        "count": 3
+      }
+    },
+    {
+      "id": "gc-base-all",
+      "title": "Galaxy Far, Far Away",
+      "description": "Play every original Galactic Conquest map (either side).",
+      "points": 40,
+      "group": "Milestones",
+      "rule": {
+        "campaigns": [
+          "Sandbox_Alderaans_Demise_Rebel",
+          "Sandbox_Alderaans_Demise_Empire",
+          "Sandbox_Shipyards_of_Kuat_Rebel",
+          "Sandbox_Shipyards_of_Kuat_Empire",
+          "Sandbox_Empire_Surrounded_Rebel",
+          "Sandbox_Empire_Surrounded_Empire",
+          "Sandbox_Empire_at_War_Rebel",
+          "Sandbox_Empire_at_War_Empire",
+          "Sandbox_Galactic_Conflict_Rebel",
+          "Sandbox_Galactic_Conflict_Empire",
+          "Campaign_The_Conflict_Begins_Rebel",
+          "Campaign_The_Conflict_Begins_Empire",
+          "Sandbox_The_Lines_Are_Drawn_Rebel",
+          "Sandbox_The_Lines_Are_Drawn_Empire",
+          "Sandbox_Closing_on_Coruscant_Rebel",
+          "Sandbox_Closing_on_Coruscant_Empire"
+        ],
+        "count": 16
+      }
+    },
+    {
+      "id": "gc-zann-all",
+      "title": "Criminal Empire",
+      "description": "Play every Forces of Corruption Galactic Conquest map as the Zann Consortium.",
+      "points": 40,
+      "group": "Milestones",
+      "rule": {
+        "campaigns": [
+          "Sandbox_Gateways_Underworld",
+          "Sandbox_Equal_Footing_Underworld",
+          "Sandbox_Origin_Underworld",
+          "Sandbox_Heart_Of_The_Maw_Underworld",
+          "Sandbox_Rim_Worlds_Underworld",
+          "Sandbox_Clusters_Underworld"
+        ]
+      }
+    },
+    {
+      "id": "gc-5",
+      "title": "Map Collector",
+      "description": "Play 5 different Galactic Conquest games (map and side).",
+      "points": 15,
+      "group": "Milestones",
+      "rule": {
+        "campaigns": [
+          "Sandbox_Alderaans_Demise_Rebel",
+          "Sandbox_Shipyards_of_Kuat_Rebel",
+          "Sandbox_Empire_Surrounded_Rebel",
+          "Sandbox_Empire_at_War_Rebel",
+          "Sandbox_Galactic_Conflict_Rebel",
+          "Campaign_The_Conflict_Begins_Rebel",
+          "Sandbox_The_Lines_Are_Drawn_Rebel",
+          "Sandbox_Closing_on_Coruscant_Rebel",
+          "Sandbox_Gateways_Rebel",
+          "Sandbox_Equal_Footing_Rebel",
+          "Sandbox_Origin_Rebel",
+          "Sandbox_Heart_Of_The_Maw_Rebel",
+          "Sandbox_Rim_Worlds_Rebel",
+          "Sandbox_Clusters_Rebel",
+          "Sandbox_Alderaans_Demise_Empire",
+          "Sandbox_Shipyards_of_Kuat_Empire",
+          "Sandbox_Empire_Surrounded_Empire",
+          "Sandbox_Empire_at_War_Empire",
+          "Sandbox_Galactic_Conflict_Empire",
+          "Campaign_The_Conflict_Begins_Empire",
+          "Sandbox_The_Lines_Are_Drawn_Empire",
+          "Sandbox_Closing_on_Coruscant_Empire",
+          "Sandbox_Gateways_Empire",
+          "Sandbox_Equal_Footing_Empire",
+          "Sandbox_Origin_Empire",
+          "Sandbox_Heart_Of_The_Maw_Empire",
+          "Sandbox_Rim_Worlds_Empire",
+          "Sandbox_Clusters_Empire",
+          "Sandbox_Gateways_Underworld",
+          "Sandbox_Equal_Footing_Underworld",
+          "Sandbox_Origin_Underworld",
+          "Sandbox_Heart_Of_The_Maw_Underworld",
+          "Sandbox_Rim_Worlds_Underworld",
+          "Sandbox_Clusters_Underworld"
+        ],
+        "count": 5
+      }
+    },
+    {
+      "id": "gc-15",
+      "title": "Conqueror of Worlds",
+      "description": "Play 15 different Galactic Conquest games (map and side).",
+      "points": 30,
+      "group": "Milestones",
+      "rule": {
+        "campaigns": [
+          "Sandbox_Alderaans_Demise_Rebel",
+          "Sandbox_Shipyards_of_Kuat_Rebel",
+          "Sandbox_Empire_Surrounded_Rebel",
+          "Sandbox_Empire_at_War_Rebel",
+          "Sandbox_Galactic_Conflict_Rebel",
+          "Campaign_The_Conflict_Begins_Rebel",
+          "Sandbox_The_Lines_Are_Drawn_Rebel",
+          "Sandbox_Closing_on_Coruscant_Rebel",
+          "Sandbox_Gateways_Rebel",
+          "Sandbox_Equal_Footing_Rebel",
+          "Sandbox_Origin_Rebel",
+          "Sandbox_Heart_Of_The_Maw_Rebel",
+          "Sandbox_Rim_Worlds_Rebel",
+          "Sandbox_Clusters_Rebel",
+          "Sandbox_Alderaans_Demise_Empire",
+          "Sandbox_Shipyards_of_Kuat_Empire",
+          "Sandbox_Empire_Surrounded_Empire",
+          "Sandbox_Empire_at_War_Empire",
+          "Sandbox_Galactic_Conflict_Empire",
+          "Campaign_The_Conflict_Begins_Empire",
+          "Sandbox_The_Lines_Are_Drawn_Empire",
+          "Sandbox_Closing_on_Coruscant_Empire",
+          "Sandbox_Gateways_Empire",
+          "Sandbox_Equal_Footing_Empire",
+          "Sandbox_Origin_Empire",
+          "Sandbox_Heart_Of_The_Maw_Empire",
+          "Sandbox_Rim_Worlds_Empire",
+          "Sandbox_Clusters_Empire",
+          "Sandbox_Gateways_Underworld",
+          "Sandbox_Equal_Footing_Underworld",
+          "Sandbox_Origin_Underworld",
+          "Sandbox_Heart_Of_The_Maw_Underworld",
+          "Sandbox_Rim_Worlds_Underworld",
+          "Sandbox_Clusters_Underworld"
+        ],
+        "count": 15
+      }
+    },
+    {
+      "id": "battles-5",
+      "title": "Seasoned Commander",
+      "description": "Record 5 story battles across all campaigns.",
+      "points": 15,
+      "group": "Milestones",
+      "rule": {
+        "battles": 5
+      }
+    },
+    {
+      "id": "battles-15",
+      "title": "Galactic Strategist",
+      "description": "Record 15 story battles across all campaigns.",
+      "points": 30,
+      "group": "Milestones",
+      "rule": {
+        "battles": 15
+      }
+    }
+  ]
+}

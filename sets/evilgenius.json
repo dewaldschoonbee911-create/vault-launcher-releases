@@ -1,0 +1,1247 @@
+{
+  "id": "evilgenius",
+  "title": "Evil Genius",
+  "version": 2,
+  "kind": "replay",
+  "authors": [
+    "Vault Launcher"
+  ],
+  "storeIds": [],
+  "linkFiles": [
+    "EvilGeniusLauncher.exe",
+    "DynamicResources/Config/ObjectiveDetails.ini"
+  ],
+  "exeNames": [],
+  "md5": [],
+  "notes": [
+    "Vault reads your saved games (DynamicResources\\Layouts in the game folder) and never touches the game. Achievements pop when you save.",
+    "The tutorial base does not count. Every save you have counts, so older saves unlock what they show."
+  ],
+  "testGuide": [
+    {
+      "title": "Save on your island",
+      "detail": "Start a new game, build a little and save. \"Welcome to the Island\" should pop, and \"Most cash in a save\" should show your money."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "lair",
+      "title": "Welcome to the Island",
+      "description": "Save a game on your first island.",
+      "points": 5,
+      "group": "World domination",
+      "rule": {
+        "island": 1
+      }
+    },
+    {
+      "id": "island2",
+      "title": "Island Hopping",
+      "description": "Move your operation to the second island.",
+      "points": 30,
+      "group": "World domination",
+      "rule": {
+        "island": 2
+      }
+    },
+    {
+      "id": "agents-1",
+      "title": "One Down",
+      "description": "Defeat 1 super agent.",
+      "points": 15,
+      "group": "Super agents",
+      "rule": {
+        "superAgents": 1
+      }
+    },
+    {
+      "id": "agents-2",
+      "title": "Double Agent",
+      "description": "Defeat 2 super agents.",
+      "points": 20,
+      "group": "Super agents",
+      "rule": {
+        "superAgents": 2
+      }
+    },
+    {
+      "id": "agents-3",
+      "title": "Spy Catcher",
+      "description": "Defeat 3 super agents.",
+      "points": 25,
+      "group": "Super agents",
+      "rule": {
+        "superAgents": 3
+      }
+    },
+    {
+      "id": "agents-4",
+      "title": "Most Wanted List",
+      "description": "Defeat 4 super agents.",
+      "points": 35,
+      "group": "Super agents",
+      "rule": {
+        "superAgents": 4
+      }
+    },
+    {
+      "id": "agents-5",
+      "title": "No Mr Bond, I Expect You to Die",
+      "description": "Defeat 5 super agents.",
+      "points": 50,
+      "group": "Super agents",
+      "rule": {
+        "superAgents": 5
+      }
+    },
+    {
+      "id": "cash-500k",
+      "title": "Petty Cash",
+      "description": "Have $500,000 in the bank in a save.",
+      "points": 5,
+      "group": "Money",
+      "rule": {
+        "cash": 500000
+      }
+    },
+    {
+      "id": "cash-1000k",
+      "title": "One Million Dollars",
+      "description": "Have $1,000,000 in the bank in a save.",
+      "points": 10,
+      "group": "Money",
+      "rule": {
+        "cash": 1000000
+      }
+    },
+    {
+      "id": "cash-5000k",
+      "title": "Slush Fund",
+      "description": "Have $5,000,000 in the bank in a save.",
+      "points": 20,
+      "group": "Money",
+      "rule": {
+        "cash": 5000000
+      }
+    },
+    {
+      "id": "cash-10000k",
+      "title": "Swiss Bank Account",
+      "description": "Have $10,000,000 in the bank in a save.",
+      "points": 30,
+      "group": "Money",
+      "rule": {
+        "cash": 10000000
+      }
+    },
+    {
+      "id": "cash-25000k",
+      "title": "Evil Empire",
+      "description": "Have $25,000,000 in the bank in a save.",
+      "points": 40,
+      "group": "Money",
+      "rule": {
+        "cash": 25000000
+      }
+    },
+    {
+      "id": "cash-50000k",
+      "title": "Gold Reserves",
+      "description": "Have $50,000,000 in the bank in a save.",
+      "points": 50,
+      "group": "Money",
+      "rule": {
+        "cash": 50000000
+      }
+    },
+    {
+      "id": "notorious-1",
+      "title": "Getting Noticed",
+      "description": "Raise your notoriety in any region.",
+      "points": 10,
+      "group": "Notoriety",
+      "rule": {
+        "notoriety": 1
+      }
+    },
+    {
+      "id": "notorious-3",
+      "title": "Infamous",
+      "description": "Reach notoriety level 3 in any region.",
+      "points": 25,
+      "group": "Notoriety",
+      "rule": {
+        "notoriety": 3
+      }
+    },
+    {
+      "id": "regions-3",
+      "title": "Wanted Abroad",
+      "description": "Be notorious in 3 regions of the world at once.",
+      "points": 20,
+      "group": "Notoriety",
+      "rule": {
+        "regions": 3
+      }
+    },
+    {
+      "id": "regions-5",
+      "title": "Public Enemy Number One",
+      "description": "Be notorious in all 5 regions of the world at once.",
+      "points": 35,
+      "group": "Notoriety",
+      "rule": {
+        "regions": 5
+      }
+    },
+    {
+      "id": "hench-500",
+      "title": "Moko Reporting",
+      "description": "Have Moko working for you on your island.",
+      "points": 10,
+      "group": "Henchmen",
+      "rule": {
+        "has": [
+          500
+        ]
+      }
+    },
+    {
+      "id": "hench-501",
+      "title": "Jubei Reporting",
+      "description": "Have Jubei working for you on your island.",
+      "points": 10,
+      "group": "Henchmen",
+      "rule": {
+        "has": [
+          501
+        ]
+      }
+    },
+    {
+      "id": "hench-502",
+      "title": "Eli Barracuda Reporting",
+      "description": "Have Eli Barracuda working for you on your island.",
+      "points": 10,
+      "group": "Henchmen",
+      "rule": {
+        "has": [
+          502
+        ]
+      }
+    },
+    {
+      "id": "hench-503",
+      "title": "Red Ivan Reporting",
+      "description": "Have Red Ivan working for you on your island.",
+      "points": 10,
+      "group": "Henchmen",
+      "rule": {
+        "has": [
+          503
+        ]
+      }
+    },
+    {
+      "id": "hench-504",
+      "title": "Papa Lazarou Reporting",
+      "description": "Have Papa Lazarou working for you on your island.",
+      "points": 10,
+      "group": "Henchmen",
+      "rule": {
+        "has": [
+          504
+        ]
+      }
+    },
+    {
+      "id": "hench-505",
+      "title": "The Matron Reporting",
+      "description": "Have The Matron working for you on your island.",
+      "points": 10,
+      "group": "Henchmen",
+      "rule": {
+        "has": [
+          505
+        ]
+      }
+    },
+    {
+      "id": "hench-3",
+      "title": "Inner Circle",
+      "description": "Have 3 different henchmen over your games.",
+      "points": 20,
+      "group": "Henchmen",
+      "rule": {
+        "kinds": [
+          [
+            500
+          ],
+          [
+            501
+          ],
+          [
+            502
+          ],
+          [
+            503
+          ],
+          [
+            504
+          ],
+          [
+            505
+          ]
+        ],
+        "count": 3
+      }
+    },
+    {
+      "id": "hench-all",
+      "title": "The Usual Suspects",
+      "description": "Have all 6 of these henchmen over your games.",
+      "points": 40,
+      "group": "Henchmen",
+      "rule": {
+        "kinds": [
+          [
+            500
+          ],
+          [
+            501
+          ],
+          [
+            502
+          ],
+          [
+            503
+          ],
+          [
+            504
+          ],
+          [
+            505
+          ]
+        ]
+      }
+    },
+    {
+      "id": "minion-104",
+      "title": "Trained: Guard",
+      "description": "Have a Guard minion on your island.",
+      "points": 5,
+      "group": "Minions",
+      "rule": {
+        "has": [
+          104
+        ]
+      }
+    },
+    {
+      "id": "minion-101",
+      "title": "Trained: Mercenary",
+      "description": "Have a Mercenary minion on your island.",
+      "points": 10,
+      "group": "Minions",
+      "rule": {
+        "has": [
+          101
+        ]
+      }
+    },
+    {
+      "id": "minion-108",
+      "title": "Trained: Soldier",
+      "description": "Have a Soldier minion on your island.",
+      "points": 10,
+      "group": "Minions",
+      "rule": {
+        "has": [
+          108
+        ]
+      }
+    },
+    {
+      "id": "minion-111",
+      "title": "Trained: Martial Artist",
+      "description": "Have a Martial Artist minion on your island.",
+      "points": 10,
+      "group": "Minions",
+      "rule": {
+        "has": [
+          111
+        ]
+      }
+    },
+    {
+      "id": "minion-102",
+      "title": "Trained: Valet",
+      "description": "Have a Valet minion on your island.",
+      "points": 5,
+      "group": "Minions",
+      "rule": {
+        "has": [
+          102
+        ]
+      }
+    },
+    {
+      "id": "minion-107",
+      "title": "Trained: Spin Doctor",
+      "description": "Have a Spin Doctor minion on your island.",
+      "points": 10,
+      "group": "Minions",
+      "rule": {
+        "has": [
+          107
+        ]
+      }
+    },
+    {
+      "id": "minion-109",
+      "title": "Trained: Diplomat",
+      "description": "Have a Diplomat minion on your island.",
+      "points": 10,
+      "group": "Minions",
+      "rule": {
+        "has": [
+          109
+        ]
+      }
+    },
+    {
+      "id": "minion-110",
+      "title": "Trained: Playboy",
+      "description": "Have a Playboy minion on your island.",
+      "points": 10,
+      "group": "Minions",
+      "rule": {
+        "has": [
+          110
+        ]
+      }
+    },
+    {
+      "id": "minion-103",
+      "title": "Trained: Technician",
+      "description": "Have a Technician minion on your island.",
+      "points": 5,
+      "group": "Minions",
+      "rule": {
+        "has": [
+          103
+        ]
+      }
+    },
+    {
+      "id": "minion-106",
+      "title": "Trained: Scientist",
+      "description": "Have a Scientist minion on your island.",
+      "points": 10,
+      "group": "Minions",
+      "rule": {
+        "has": [
+          106
+        ]
+      }
+    },
+    {
+      "id": "minion-105",
+      "title": "Trained: Biochemist",
+      "description": "Have a Biochemist minion on your island.",
+      "points": 10,
+      "group": "Minions",
+      "rule": {
+        "has": [
+          105
+        ]
+      }
+    },
+    {
+      "id": "minion-112",
+      "title": "Trained: Quantum Physicist",
+      "description": "Have a Quantum Physicist minion on your island.",
+      "points": 10,
+      "group": "Minions",
+      "rule": {
+        "has": [
+          112
+        ]
+      }
+    },
+    {
+      "id": "minions-all",
+      "title": "Full Staff",
+      "description": "Have every kind of trained minion over your games.",
+      "points": 40,
+      "group": "Minions",
+      "rule": {
+        "kinds": [
+          [
+            104
+          ],
+          [
+            101
+          ],
+          [
+            108
+          ],
+          [
+            111
+          ],
+          [
+            102
+          ],
+          [
+            107
+          ],
+          [
+            109
+          ],
+          [
+            110
+          ],
+          [
+            103
+          ],
+          [
+            106
+          ],
+          [
+            105
+          ],
+          [
+            112
+          ]
+        ]
+      }
+    },
+    {
+      "id": "trap-first",
+      "title": "It's a Trap!",
+      "description": "Build any trap.",
+      "points": 5,
+      "group": "Traps",
+      "rule": {
+        "kinds": [
+          [
+            17200
+          ],
+          [
+            17201
+          ],
+          [
+            17203
+          ],
+          [
+            17204
+          ],
+          [
+            17205
+          ],
+          [
+            17206
+          ],
+          [
+            17207
+          ],
+          [
+            17208
+          ],
+          [
+            17209,
+            17210
+          ],
+          [
+            17212,
+            17213
+          ],
+          [
+            17214,
+            17232,
+            17233,
+            17234,
+            17235
+          ],
+          [
+            17215
+          ],
+          [
+            17216
+          ],
+          [
+            17217
+          ],
+          [
+            17218
+          ],
+          [
+            17219
+          ],
+          [
+            17220
+          ],
+          [
+            17221,
+            17222
+          ],
+          [
+            17224
+          ],
+          [
+            17225
+          ],
+          [
+            17229
+          ],
+          [
+            17230
+          ],
+          [
+            17231
+          ],
+          [
+            17236
+          ]
+        ],
+        "count": 1
+      }
+    },
+    {
+      "id": "traps-5",
+      "title": "Devious Designer",
+      "description": "Build 5 different kinds of trap over your games.",
+      "points": 15,
+      "group": "Traps",
+      "rule": {
+        "kinds": [
+          [
+            17200
+          ],
+          [
+            17201
+          ],
+          [
+            17203
+          ],
+          [
+            17204
+          ],
+          [
+            17205
+          ],
+          [
+            17206
+          ],
+          [
+            17207
+          ],
+          [
+            17208
+          ],
+          [
+            17209,
+            17210
+          ],
+          [
+            17212,
+            17213
+          ],
+          [
+            17214,
+            17232,
+            17233,
+            17234,
+            17235
+          ],
+          [
+            17215
+          ],
+          [
+            17216
+          ],
+          [
+            17217
+          ],
+          [
+            17218
+          ],
+          [
+            17219
+          ],
+          [
+            17220
+          ],
+          [
+            17221,
+            17222
+          ],
+          [
+            17224
+          ],
+          [
+            17225
+          ],
+          [
+            17229
+          ],
+          [
+            17230
+          ],
+          [
+            17231
+          ],
+          [
+            17236
+          ]
+        ],
+        "count": 5
+      }
+    },
+    {
+      "id": "traps-10",
+      "title": "House of Pain",
+      "description": "Build 10 different kinds of trap over your games.",
+      "points": 25,
+      "group": "Traps",
+      "rule": {
+        "kinds": [
+          [
+            17200
+          ],
+          [
+            17201
+          ],
+          [
+            17203
+          ],
+          [
+            17204
+          ],
+          [
+            17205
+          ],
+          [
+            17206
+          ],
+          [
+            17207
+          ],
+          [
+            17208
+          ],
+          [
+            17209,
+            17210
+          ],
+          [
+            17212,
+            17213
+          ],
+          [
+            17214,
+            17232,
+            17233,
+            17234,
+            17235
+          ],
+          [
+            17215
+          ],
+          [
+            17216
+          ],
+          [
+            17217
+          ],
+          [
+            17218
+          ],
+          [
+            17219
+          ],
+          [
+            17220
+          ],
+          [
+            17221,
+            17222
+          ],
+          [
+            17224
+          ],
+          [
+            17225
+          ],
+          [
+            17229
+          ],
+          [
+            17230
+          ],
+          [
+            17231
+          ],
+          [
+            17236
+          ]
+        ],
+        "count": 10
+      }
+    },
+    {
+      "id": "traps-24",
+      "title": "Master of Traps",
+      "description": "Build 24 different kinds of trap over your games.",
+      "points": 50,
+      "group": "Traps",
+      "rule": {
+        "kinds": [
+          [
+            17200
+          ],
+          [
+            17201
+          ],
+          [
+            17203
+          ],
+          [
+            17204
+          ],
+          [
+            17205
+          ],
+          [
+            17206
+          ],
+          [
+            17207
+          ],
+          [
+            17208
+          ],
+          [
+            17209,
+            17210
+          ],
+          [
+            17212,
+            17213
+          ],
+          [
+            17214,
+            17232,
+            17233,
+            17234,
+            17235
+          ],
+          [
+            17215
+          ],
+          [
+            17216
+          ],
+          [
+            17217
+          ],
+          [
+            17218
+          ],
+          [
+            17219
+          ],
+          [
+            17220
+          ],
+          [
+            17221,
+            17222
+          ],
+          [
+            17224
+          ],
+          [
+            17225
+          ],
+          [
+            17229
+          ],
+          [
+            17230
+          ],
+          [
+            17231
+          ],
+          [
+            17236
+          ]
+        ],
+        "count": 24
+      }
+    },
+    {
+      "id": "trap-17207",
+      "title": "Trap: Do Not Press",
+      "description": "Build the Do Not Press trap.",
+      "points": 10,
+      "group": "Traps",
+      "rule": {
+        "has": [
+          17207
+        ]
+      }
+    },
+    {
+      "id": "trap-17219",
+      "title": "Trap: Piranha Tank",
+      "description": "Build the Piranha Tank trap.",
+      "points": 10,
+      "group": "Traps",
+      "rule": {
+        "has": [
+          17219
+        ]
+      }
+    },
+    {
+      "id": "trap-17215",
+      "title": "Trap: The Dreadmill",
+      "description": "Build the The Dreadmill trap.",
+      "points": 10,
+      "group": "Traps",
+      "rule": {
+        "has": [
+          17215
+        ]
+      }
+    },
+    {
+      "id": "trap-17218",
+      "title": "Trap: Venus Man Trap",
+      "description": "Build the Venus Man Trap trap.",
+      "points": 10,
+      "group": "Traps",
+      "rule": {
+        "has": [
+          17218
+        ]
+      }
+    },
+    {
+      "id": "trap-17205",
+      "title": "Trap: Saw Blades",
+      "description": "Build the Saw Blades trap.",
+      "points": 10,
+      "group": "Traps",
+      "rule": {
+        "has": [
+          17205
+        ]
+      }
+    },
+    {
+      "id": "trap-17225",
+      "title": "Trap: Monkey in a Box",
+      "description": "Build the Monkey in a Box trap.",
+      "points": 10,
+      "group": "Traps",
+      "rule": {
+        "has": [
+          17225
+        ]
+      }
+    },
+    {
+      "id": "loot-10033",
+      "title": "Stolen: Crown Jewels",
+      "description": "Have the Crown Jewels in your lair.",
+      "points": 15,
+      "group": "Stolen loot",
+      "rule": {
+        "has": [
+          10033
+        ]
+      }
+    },
+    {
+      "id": "loot-10074",
+      "title": "Stolen: Excalibur",
+      "description": "Have Excalibur in your lair.",
+      "points": 15,
+      "group": "Stolen loot",
+      "rule": {
+        "has": [
+          10074
+        ]
+      }
+    },
+    {
+      "id": "loot-10075",
+      "title": "Stolen: Miniaturised Eiffel Tower",
+      "description": "Have the Miniaturised Eiffel Tower in your lair.",
+      "points": 15,
+      "group": "Stolen loot",
+      "rule": {
+        "has": [
+          10075
+        ]
+      }
+    },
+    {
+      "id": "loot-10076",
+      "title": "Stolen: Million Dollar Bill",
+      "description": "Have the Million Dollar Bill in your lair.",
+      "points": 15,
+      "group": "Stolen loot",
+      "rule": {
+        "has": [
+          10076
+        ]
+      }
+    },
+    {
+      "id": "loot-10077",
+      "title": "Stolen: Suit of Samurai Armour",
+      "description": "Have the Suit of Samurai Armour in your lair.",
+      "points": 15,
+      "group": "Stolen loot",
+      "rule": {
+        "has": [
+          10077
+        ]
+      }
+    },
+    {
+      "id": "loot-10078",
+      "title": "Stolen: Mummy's Sarcophagus",
+      "description": "Have the Mummy's Sarcophagus in your lair.",
+      "points": 15,
+      "group": "Stolen loot",
+      "rule": {
+        "has": [
+          10078
+        ]
+      }
+    },
+    {
+      "id": "loot-10079",
+      "title": "Stolen: Ark of the Covenant",
+      "description": "Have the Ark of the Covenant in your lair.",
+      "points": 15,
+      "group": "Stolen loot",
+      "rule": {
+        "has": [
+          10079
+        ]
+      }
+    },
+    {
+      "id": "loot-10052",
+      "title": "Stolen: Aztec Amulet",
+      "description": "Have the Aztec Amulet in your lair.",
+      "points": 15,
+      "group": "Stolen loot",
+      "rule": {
+        "has": [
+          10052
+        ]
+      }
+    },
+    {
+      "id": "loot-10054",
+      "title": "Stolen: Space Suit",
+      "description": "Have the Space Suit in your lair.",
+      "points": 15,
+      "group": "Stolen loot",
+      "rule": {
+        "has": [
+          10054
+        ]
+      }
+    },
+    {
+      "id": "loot-10055",
+      "title": "Stolen: Rocket Plans",
+      "description": "Have the Rocket Plans in your lair.",
+      "points": 15,
+      "group": "Stolen loot",
+      "rule": {
+        "has": [
+          10055
+        ]
+      }
+    },
+    {
+      "id": "loot-10051",
+      "title": "Stolen: Jetpack",
+      "description": "Have the Jetpack in your lair.",
+      "points": 15,
+      "group": "Stolen loot",
+      "rule": {
+        "has": [
+          10051
+        ]
+      }
+    },
+    {
+      "id": "loot-10049",
+      "title": "Stolen: Satellite",
+      "description": "Have the Satellite in your lair.",
+      "points": 15,
+      "group": "Stolen loot",
+      "rule": {
+        "has": [
+          10049
+        ]
+      }
+    },
+    {
+      "id": "loot-10048",
+      "title": "Stolen: Diamond",
+      "description": "Have a Diamond in your lair.",
+      "points": 15,
+      "group": "Stolen loot",
+      "rule": {
+        "has": [
+          10048,
+          10060
+        ]
+      }
+    },
+    {
+      "id": "loot-10085",
+      "title": "Stolen: Totem Pole",
+      "description": "Have the Totem Pole in your lair.",
+      "points": 15,
+      "group": "Stolen loot",
+      "rule": {
+        "has": [
+          10085,
+          10086,
+          10087,
+          10088,
+          10089
+        ]
+      }
+    },
+    {
+      "id": "loot-5",
+      "title": "Cat Burglar",
+      "description": "Steal 5 different treasures over your games.",
+      "points": 20,
+      "group": "Stolen loot",
+      "rule": {
+        "kinds": [
+          [
+            10033
+          ],
+          [
+            10074
+          ],
+          [
+            10075
+          ],
+          [
+            10076
+          ],
+          [
+            10077
+          ],
+          [
+            10078
+          ],
+          [
+            10079
+          ],
+          [
+            10052
+          ],
+          [
+            10054
+          ],
+          [
+            10055
+          ],
+          [
+            10051
+          ],
+          [
+            10049
+          ],
+          [
+            10048,
+            10060
+          ],
+          [
+            10085,
+            10086,
+            10087,
+            10088,
+            10089
+          ]
+        ],
+        "count": 5
+      }
+    },
+    {
+      "id": "loot-14",
+      "title": "Greatest Heist in History",
+      "description": "Steal 14 different treasures over your games.",
+      "points": 60,
+      "group": "Stolen loot",
+      "rule": {
+        "kinds": [
+          [
+            10033
+          ],
+          [
+            10074
+          ],
+          [
+            10075
+          ],
+          [
+            10076
+          ],
+          [
+            10077
+          ],
+          [
+            10078
+          ],
+          [
+            10079
+          ],
+          [
+            10052
+          ],
+          [
+            10054
+          ],
+          [
+            10055
+          ],
+          [
+            10051
+          ],
+          [
+            10049
+          ],
+          [
+            10048,
+            10060
+          ],
+          [
+            10085,
+            10086,
+            10087,
+            10088,
+            10089
+          ]
+        ],
+        "count": 14
+      }
+    }
+  ]
+}

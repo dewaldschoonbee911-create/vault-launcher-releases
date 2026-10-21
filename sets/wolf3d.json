@@ -1,0 +1,802 @@
+{
+ "id": "wolf3d",
+ "title": "Wolfenstein 3D",
+ "version": 2,
+ "kind": "replay",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [],
+ "linkFiles": [
+  "base/GAMEMAPS.WL6"
+ ],
+ "exeNames": [],
+ "md5": [],
+ "notes": [
+  "Vault reads your save games (SAVEGAM0-9) and never touches the game. Progress counts when you save, so save on each new floor.",
+  "Includes Spear of Destiny, which comes with the Steam version.",
+  "Save layout from id Software's released Wolfenstein 3D source code."
+ ],
+ "testGuide": [
+  {
+   "title": "Start and save",
+   "detail": "Start Episode 1 and save on floor 1. The episode achievement should pop up and \"Last save\" should show episode 1, floor 1."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "e1-start",
+   "title": "Escape from Castle Wolfenstein",
+   "description": "Start episode 1, Escape from Castle Wolfenstein, and save.",
+   "points": 5,
+   "group": "Episode 1: Escape from Castle Wolfenstein",
+   "rule": {
+    "reach": "e1f1"
+   }
+  },
+  {
+   "id": "e1-f5",
+   "title": "Episode 1: Halfway",
+   "description": "Reach floor 5 of episode 1.",
+   "points": 10,
+   "group": "Episode 1: Escape from Castle Wolfenstein",
+   "rule": {
+    "reach": [
+     "e1f5",
+     "e1f6",
+     "e1f7",
+     "e1f8",
+     "e1f9"
+    ]
+   }
+  },
+  {
+   "id": "e1-boss",
+   "title": "Face Grosse",
+   "description": "Reach the boss floor of episode 1 and face Hans Grosse.",
+   "points": 20,
+   "group": "Episode 1: Escape from Castle Wolfenstein",
+   "rule": {
+    "reach": "e1f9"
+   }
+  },
+  {
+   "id": "e1-secret",
+   "title": "Episode 1: Secret Floor",
+   "description": "Find the secret floor of episode 1.",
+   "points": 20,
+   "group": "Episode 1: Escape from Castle Wolfenstein",
+   "rule": {
+    "reach": "e1f10"
+   }
+  },
+  {
+   "id": "e1-hard",
+   "title": "Episode 1: Death Incarnate",
+   "description": "Reach the boss floor of episode 1 on \"I am Death incarnate!\".",
+   "points": 30,
+   "group": "Death Incarnate",
+   "rule": {
+    "reachHard": "e1f9"
+   }
+  },
+  {
+   "id": "e2-start",
+   "title": "Operation: Eisenfaust",
+   "description": "Start episode 2, Operation: Eisenfaust, and save.",
+   "points": 5,
+   "group": "Episode 2: Operation: Eisenfaust",
+   "rule": {
+    "reach": "e2f1"
+   }
+  },
+  {
+   "id": "e2-f5",
+   "title": "Episode 2: Halfway",
+   "description": "Reach floor 5 of episode 2.",
+   "points": 10,
+   "group": "Episode 2: Operation: Eisenfaust",
+   "rule": {
+    "reach": [
+     "e2f5",
+     "e2f6",
+     "e2f7",
+     "e2f8",
+     "e2f9"
+    ]
+   }
+  },
+  {
+   "id": "e2-boss",
+   "title": "Face Schabbs",
+   "description": "Reach the boss floor of episode 2 and face Dr. Schabbs.",
+   "points": 20,
+   "group": "Episode 2: Operation: Eisenfaust",
+   "rule": {
+    "reach": "e2f9"
+   }
+  },
+  {
+   "id": "e2-secret",
+   "title": "Episode 2: Secret Floor",
+   "description": "Find the secret floor of episode 2.",
+   "points": 20,
+   "group": "Episode 2: Operation: Eisenfaust",
+   "rule": {
+    "reach": "e2f10"
+   }
+  },
+  {
+   "id": "e2-hard",
+   "title": "Episode 2: Death Incarnate",
+   "description": "Reach the boss floor of episode 2 on \"I am Death incarnate!\".",
+   "points": 30,
+   "group": "Death Incarnate",
+   "rule": {
+    "reachHard": "e2f9"
+   }
+  },
+  {
+   "id": "e3-start",
+   "title": "Die, Führer, Die!",
+   "description": "Start episode 3, Die, Führer, Die!, and save.",
+   "points": 5,
+   "group": "Episode 3: Die, Führer, Die!",
+   "rule": {
+    "reach": "e3f1"
+   }
+  },
+  {
+   "id": "e3-f5",
+   "title": "Episode 3: Halfway",
+   "description": "Reach floor 5 of episode 3.",
+   "points": 10,
+   "group": "Episode 3: Die, Führer, Die!",
+   "rule": {
+    "reach": [
+     "e3f5",
+     "e3f6",
+     "e3f7",
+     "e3f8",
+     "e3f9"
+    ]
+   }
+  },
+  {
+   "id": "e3-boss",
+   "title": "Face the Führer",
+   "description": "Reach the boss floor of episode 3 and face the Führer himself.",
+   "points": 20,
+   "group": "Episode 3: Die, Führer, Die!",
+   "rule": {
+    "reach": "e3f9"
+   }
+  },
+  {
+   "id": "e3-secret",
+   "title": "Episode 3: Secret Floor",
+   "description": "Find the secret floor of episode 3.",
+   "points": 20,
+   "group": "Episode 3: Die, Führer, Die!",
+   "rule": {
+    "reach": "e3f10"
+   }
+  },
+  {
+   "id": "e3-hard",
+   "title": "Episode 3: Death Incarnate",
+   "description": "Reach the boss floor of episode 3 on \"I am Death incarnate!\".",
+   "points": 30,
+   "group": "Death Incarnate",
+   "rule": {
+    "reachHard": "e3f9"
+   }
+  },
+  {
+   "id": "e4-start",
+   "title": "A Dark Secret",
+   "description": "Start episode 4, A Dark Secret, and save.",
+   "points": 5,
+   "group": "Episode 4: A Dark Secret",
+   "rule": {
+    "reach": "e4f1"
+   }
+  },
+  {
+   "id": "e4-f5",
+   "title": "Episode 4: Halfway",
+   "description": "Reach floor 5 of episode 4.",
+   "points": 10,
+   "group": "Episode 4: A Dark Secret",
+   "rule": {
+    "reach": [
+     "e4f5",
+     "e4f6",
+     "e4f7",
+     "e4f8",
+     "e4f9"
+    ]
+   }
+  },
+  {
+   "id": "e4-boss",
+   "title": "Face Giftmacher",
+   "description": "Reach the boss floor of episode 4 and face Otto Giftmacher.",
+   "points": 20,
+   "group": "Episode 4: A Dark Secret",
+   "rule": {
+    "reach": "e4f9"
+   }
+  },
+  {
+   "id": "e4-secret",
+   "title": "Episode 4: Secret Floor",
+   "description": "Find the secret floor of episode 4.",
+   "points": 20,
+   "group": "Episode 4: A Dark Secret",
+   "rule": {
+    "reach": "e4f10"
+   }
+  },
+  {
+   "id": "e4-hard",
+   "title": "Episode 4: Death Incarnate",
+   "description": "Reach the boss floor of episode 4 on \"I am Death incarnate!\".",
+   "points": 30,
+   "group": "Death Incarnate",
+   "rule": {
+    "reachHard": "e4f9"
+   }
+  },
+  {
+   "id": "e5-start",
+   "title": "Trail of the Madman",
+   "description": "Start episode 5, Trail of the Madman, and save.",
+   "points": 5,
+   "group": "Episode 5: Trail of the Madman",
+   "rule": {
+    "reach": "e5f1"
+   }
+  },
+  {
+   "id": "e5-f5",
+   "title": "Episode 5: Halfway",
+   "description": "Reach floor 5 of episode 5.",
+   "points": 10,
+   "group": "Episode 5: Trail of the Madman",
+   "rule": {
+    "reach": [
+     "e5f5",
+     "e5f6",
+     "e5f7",
+     "e5f8",
+     "e5f9"
+    ]
+   }
+  },
+  {
+   "id": "e5-boss",
+   "title": "Face Grosse",
+   "description": "Reach the boss floor of episode 5 and face Gretel Grosse.",
+   "points": 20,
+   "group": "Episode 5: Trail of the Madman",
+   "rule": {
+    "reach": "e5f9"
+   }
+  },
+  {
+   "id": "e5-secret",
+   "title": "Episode 5: Secret Floor",
+   "description": "Find the secret floor of episode 5.",
+   "points": 20,
+   "group": "Episode 5: Trail of the Madman",
+   "rule": {
+    "reach": "e5f10"
+   }
+  },
+  {
+   "id": "e5-hard",
+   "title": "Episode 5: Death Incarnate",
+   "description": "Reach the boss floor of episode 5 on \"I am Death incarnate!\".",
+   "points": 30,
+   "group": "Death Incarnate",
+   "rule": {
+    "reachHard": "e5f9"
+   }
+  },
+  {
+   "id": "e6-start",
+   "title": "Confrontation",
+   "description": "Start episode 6, Confrontation, and save.",
+   "points": 5,
+   "group": "Episode 6: Confrontation",
+   "rule": {
+    "reach": "e6f1"
+   }
+  },
+  {
+   "id": "e6-f5",
+   "title": "Episode 6: Halfway",
+   "description": "Reach floor 5 of episode 6.",
+   "points": 10,
+   "group": "Episode 6: Confrontation",
+   "rule": {
+    "reach": [
+     "e6f5",
+     "e6f6",
+     "e6f7",
+     "e6f8",
+     "e6f9"
+    ]
+   }
+  },
+  {
+   "id": "e6-boss",
+   "title": "Face Fettgesicht",
+   "description": "Reach the boss floor of episode 6 and face General Fettgesicht.",
+   "points": 20,
+   "group": "Episode 6: Confrontation",
+   "rule": {
+    "reach": "e6f9"
+   }
+  },
+  {
+   "id": "e6-secret",
+   "title": "Episode 6: Secret Floor",
+   "description": "Find the secret floor of episode 6.",
+   "points": 20,
+   "group": "Episode 6: Confrontation",
+   "rule": {
+    "reach": "e6f10"
+   }
+  },
+  {
+   "id": "e6-hard",
+   "title": "Episode 6: Death Incarnate",
+   "description": "Reach the boss floor of episode 6 on \"I am Death incarnate!\".",
+   "points": 30,
+   "group": "Death Incarnate",
+   "rule": {
+    "reachHard": "e6f9"
+   }
+  },
+  {
+   "id": "e1-all",
+   "title": "Episode 1: Every Floor",
+   "description": "Reach all 10 floors of episode 1, including the secret floor.",
+   "points": 25,
+   "group": "Episode 1: Escape from Castle Wolfenstein",
+   "rule": {
+    "reachAll": [
+     "e1f1",
+     "e1f2",
+     "e1f3",
+     "e1f4",
+     "e1f5",
+     "e1f6",
+     "e1f7",
+     "e1f8",
+     "e1f9",
+     "e1f10"
+    ]
+   }
+  },
+  {
+   "id": "e1-bring",
+   "title": "Episode 1: Bring 'Em On",
+   "description": "Reach the boss floor of episode 1 on \"Bring 'em on!\" or harder.",
+   "points": 15,
+   "group": "Bring 'Em On",
+   "rule": {
+    "reachMed": "e1f9"
+   }
+  },
+  {
+   "id": "e2-all",
+   "title": "Episode 2: Every Floor",
+   "description": "Reach all 10 floors of episode 2, including the secret floor.",
+   "points": 25,
+   "group": "Episode 2: Operation: Eisenfaust",
+   "rule": {
+    "reachAll": [
+     "e2f1",
+     "e2f2",
+     "e2f3",
+     "e2f4",
+     "e2f5",
+     "e2f6",
+     "e2f7",
+     "e2f8",
+     "e2f9",
+     "e2f10"
+    ]
+   }
+  },
+  {
+   "id": "e2-bring",
+   "title": "Episode 2: Bring 'Em On",
+   "description": "Reach the boss floor of episode 2 on \"Bring 'em on!\" or harder.",
+   "points": 15,
+   "group": "Bring 'Em On",
+   "rule": {
+    "reachMed": "e2f9"
+   }
+  },
+  {
+   "id": "e3-all",
+   "title": "Episode 3: Every Floor",
+   "description": "Reach all 10 floors of episode 3, including the secret floor.",
+   "points": 25,
+   "group": "Episode 3: Die, Führer, Die!",
+   "rule": {
+    "reachAll": [
+     "e3f1",
+     "e3f2",
+     "e3f3",
+     "e3f4",
+     "e3f5",
+     "e3f6",
+     "e3f7",
+     "e3f8",
+     "e3f9",
+     "e3f10"
+    ]
+   }
+  },
+  {
+   "id": "e3-bring",
+   "title": "Episode 3: Bring 'Em On",
+   "description": "Reach the boss floor of episode 3 on \"Bring 'em on!\" or harder.",
+   "points": 15,
+   "group": "Bring 'Em On",
+   "rule": {
+    "reachMed": "e3f9"
+   }
+  },
+  {
+   "id": "e4-all",
+   "title": "Episode 4: Every Floor",
+   "description": "Reach all 10 floors of episode 4, including the secret floor.",
+   "points": 25,
+   "group": "Episode 4: A Dark Secret",
+   "rule": {
+    "reachAll": [
+     "e4f1",
+     "e4f2",
+     "e4f3",
+     "e4f4",
+     "e4f5",
+     "e4f6",
+     "e4f7",
+     "e4f8",
+     "e4f9",
+     "e4f10"
+    ]
+   }
+  },
+  {
+   "id": "e4-bring",
+   "title": "Episode 4: Bring 'Em On",
+   "description": "Reach the boss floor of episode 4 on \"Bring 'em on!\" or harder.",
+   "points": 15,
+   "group": "Bring 'Em On",
+   "rule": {
+    "reachMed": "e4f9"
+   }
+  },
+  {
+   "id": "e5-all",
+   "title": "Episode 5: Every Floor",
+   "description": "Reach all 10 floors of episode 5, including the secret floor.",
+   "points": 25,
+   "group": "Episode 5: Trail of the Madman",
+   "rule": {
+    "reachAll": [
+     "e5f1",
+     "e5f2",
+     "e5f3",
+     "e5f4",
+     "e5f5",
+     "e5f6",
+     "e5f7",
+     "e5f8",
+     "e5f9",
+     "e5f10"
+    ]
+   }
+  },
+  {
+   "id": "e5-bring",
+   "title": "Episode 5: Bring 'Em On",
+   "description": "Reach the boss floor of episode 5 on \"Bring 'em on!\" or harder.",
+   "points": 15,
+   "group": "Bring 'Em On",
+   "rule": {
+    "reachMed": "e5f9"
+   }
+  },
+  {
+   "id": "e6-all",
+   "title": "Episode 6: Every Floor",
+   "description": "Reach all 10 floors of episode 6, including the secret floor.",
+   "points": 25,
+   "group": "Episode 6: Confrontation",
+   "rule": {
+    "reachAll": [
+     "e6f1",
+     "e6f2",
+     "e6f3",
+     "e6f4",
+     "e6f5",
+     "e6f6",
+     "e6f7",
+     "e6f8",
+     "e6f9",
+     "e6f10"
+    ]
+   }
+  },
+  {
+   "id": "e6-bring",
+   "title": "Episode 6: Bring 'Em On",
+   "description": "Reach the boss floor of episode 6 on \"Bring 'em on!\" or harder.",
+   "points": 15,
+   "group": "Bring 'Em On",
+   "rule": {
+    "reachMed": "e6f9"
+   }
+  },
+  {
+   "id": "floors-20",
+   "title": "Floor Walker",
+   "description": "Reach 20 different floors (Wolfenstein 3D and Spear of Destiny together).",
+   "points": 10,
+   "group": "Exploration",
+   "rule": {
+    "floors": 20
+   }
+  },
+  {
+   "id": "floors-40",
+   "title": "Castle Crawler",
+   "description": "Reach 40 different floors (Wolfenstein 3D and Spear of Destiny together).",
+   "points": 20,
+   "group": "Exploration",
+   "rule": {
+    "floors": 40
+   }
+  },
+  {
+   "id": "floors-60",
+   "title": "Every Floor in the Castle",
+   "description": "Reach 60 different floors (Wolfenstein 3D and Spear of Destiny together).",
+   "points": 40,
+   "group": "Exploration",
+   "rule": {
+    "floors": 60
+   }
+  },
+  {
+   "id": "sod-f1",
+   "title": "The Spear Awaits",
+   "description": "Start Spear of Destiny and save.",
+   "points": 5,
+   "group": "Spear of Destiny",
+   "rule": {
+    "reach": "s1"
+   }
+  },
+  {
+   "id": "sod-f5",
+   "title": "Trans Grosse",
+   "description": "Reach Trans Grosse's floor.",
+   "points": 15,
+   "group": "Spear of Destiny",
+   "rule": {
+    "reach": "s5"
+   }
+  },
+  {
+   "id": "sod-f10",
+   "title": "Barnacle Wilhelm",
+   "description": "Reach Barnacle Wilhelm's floor.",
+   "points": 15,
+   "group": "Spear of Destiny",
+   "rule": {
+    "reach": "s10"
+   }
+  },
+  {
+   "id": "sod-f16",
+   "title": "The Ubermutant",
+   "description": "Reach the Ubermutant's floor.",
+   "points": 20,
+   "group": "Spear of Destiny",
+   "rule": {
+    "reach": "s16"
+   }
+  },
+  {
+   "id": "sod-f18",
+   "title": "The Death Knight",
+   "description": "Reach the Death Knight's floor.",
+   "points": 20,
+   "group": "Spear of Destiny",
+   "rule": {
+    "reach": "s18"
+   }
+  },
+  {
+   "id": "sod-f19",
+   "title": "Secret: Ramparts",
+   "description": "Find the first secret floor of Spear of Destiny.",
+   "points": 20,
+   "group": "Spear of Destiny",
+   "rule": {
+    "reach": "s19"
+   }
+  },
+  {
+   "id": "sod-f20",
+   "title": "Secret: Dungeon Dimension",
+   "description": "Find the second secret floor of Spear of Destiny.",
+   "points": 25,
+   "group": "Spear of Destiny",
+   "rule": {
+    "reach": "s20"
+   }
+  },
+  {
+   "id": "sod-f21",
+   "title": "Angel of Death",
+   "description": "Reach the final floor and face the Angel of Death.",
+   "points": 40,
+   "group": "Spear of Destiny",
+   "rule": {
+    "reach": "s21"
+   }
+  },
+  {
+   "id": "sod-all",
+   "title": "Spear: Every Floor",
+   "description": "Reach all 21 floors of Spear of Destiny, including both secret floors.",
+   "points": 30,
+   "group": "Spear of Destiny",
+   "rule": {
+    "reachAll": [
+     "s1",
+     "s2",
+     "s3",
+     "s4",
+     "s5",
+     "s6",
+     "s7",
+     "s8",
+     "s9",
+     "s10",
+     "s11",
+     "s12",
+     "s13",
+     "s14",
+     "s15",
+     "s16",
+     "s17",
+     "s18",
+     "s19",
+     "s20",
+     "s21"
+    ]
+   }
+  },
+  {
+   "id": "sod-hard",
+   "title": "Spear: Death Incarnate",
+   "description": "Reach the Angel of Death on \"I am Death incarnate!\".",
+   "points": 40,
+   "group": "Death Incarnate",
+   "rule": {
+    "reachHard": "s21"
+   }
+  },
+  {
+   "id": "perfect-1",
+   "title": "Perfectionist",
+   "description": "Finish 1 floor with 100% kills, secrets and treasure (as shown in a save).",
+   "points": 15,
+   "group": "Skill",
+   "rule": {
+    "perfect": 1
+   }
+  },
+  {
+   "id": "perfect-10",
+   "title": "Clean Sweep",
+   "description": "Finish 10 floors with 100% kills, secrets and treasure (as shown in a save).",
+   "points": 25,
+   "group": "Skill",
+   "rule": {
+    "perfect": 10
+   }
+  },
+  {
+   "id": "perfect-30",
+   "title": "Nothing Left Behind",
+   "description": "Finish 30 floors with 100% kills, secrets and treasure (as shown in a save).",
+   "points": 40,
+   "group": "Skill",
+   "rule": {
+    "perfect": 30
+   }
+  },
+  {
+   "id": "kills-100",
+   "title": "Exterminator",
+   "description": "Finish a floor with 100% kills.",
+   "points": 10,
+   "group": "Skill",
+   "rule": {
+    "perfectKill": 1
+   }
+  },
+  {
+   "id": "secrets-100",
+   "title": "Wall Pusher",
+   "description": "Finish a floor with 100% secrets.",
+   "points": 10,
+   "group": "Skill",
+   "rule": {
+    "perfectSecret": 1
+   }
+  },
+  {
+   "id": "treasure-100",
+   "title": "Treasure Hunter",
+   "description": "Finish a floor with 100% treasure.",
+   "points": 10,
+   "group": "Skill",
+   "rule": {
+    "perfectTreasure": 1
+   }
+  },
+  {
+   "id": "score-50000",
+   "title": "High Score",
+   "description": "Have a score of 50,000 in a Wolfenstein 3D save.",
+   "points": 10,
+   "group": "Skill",
+   "rule": {
+    "score": 50000
+   }
+  },
+  {
+   "id": "score-200000",
+   "title": "Top of the Table",
+   "description": "Have a score of 200,000 in a Wolfenstein 3D save.",
+   "points": 20,
+   "group": "Skill",
+   "rule": {
+    "score": 200000
+   }
+  },
+  {
+   "id": "score-500000",
+   "title": "Score Legend",
+   "description": "Have a score of 500,000 in a Wolfenstein 3D save.",
+   "points": 35,
+   "group": "Skill",
+   "rule": {
+    "score": 500000
+   }
+  },
+  {
+   "id": "sod-score",
+   "title": "Spear Champion",
+   "description": "Have a score of 200,000 in a Spear of Destiny save.",
+   "points": 25,
+   "group": "Skill",
+   "rule": {
+    "spearScore": 200000
+   }
+  }
+ ]
+}

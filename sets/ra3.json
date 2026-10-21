@@ -1,0 +1,1397 @@
+{
+ "id": "ra3",
+ "title": "Command & Conquer: Red Alert 3",
+ "version": 1,
+ "kind": "replay",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [
+  "steam:17480"
+ ],
+ "linkFiles": [
+  "RA3.exe",
+  "ra3_english_1.0.SkuDef"
+ ],
+ "exeNames": [
+  "ra3_1.12.game",
+  "RA3.exe"
+ ],
+ "md5": [],
+ "notes": [
+  "Campaign achievements come from your save games (Vault never touches the game, which has online play). The game saves automatically between missions; saving during a mission helps too.",
+  "Skirmish achievements come from the replay the game saves after every game (Documents\\Red Alert 3\\Replays). Replays do not record who won, so these are about playing, not winning. Games shorter than 3 minutes do not count."
+ ],
+ "testGuide": [
+  {
+   "title": "Play a campaign mission",
+   "detail": "Beat the first mission of any campaign. When the game saves for the next one, its achievement should pop."
+  },
+  {
+   "title": "Play a skirmish",
+   "detail": "Play a skirmish for at least 3 minutes, then quit. \"Into Battle\" should pop."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "allies-1",
+   "title": "Brighton Beach",
+   "description": "Allied: beat mission 1, Brighton Beach.",
+   "points": 10,
+   "group": "Campaign: Allied",
+   "rule": {
+    "sc": {
+     "campaign": "allies",
+     "mission": 1
+    }
+   }
+  },
+  {
+   "id": "allies-2",
+   "title": "Cannes",
+   "description": "Allied: beat mission 2, Cannes.",
+   "points": 10,
+   "group": "Campaign: Allied",
+   "rule": {
+    "sc": {
+     "campaign": "allies",
+     "mission": 2
+    }
+   }
+  },
+  {
+   "id": "allies-3",
+   "title": "Heidelberg",
+   "description": "Allied: beat mission 3, Heidelberg.",
+   "points": 10,
+   "group": "Campaign: Allied",
+   "rule": {
+    "sc": {
+     "campaign": "allies",
+     "mission": 3
+    }
+   }
+  },
+  {
+   "id": "allies-4",
+   "title": "Gibraltar",
+   "description": "Allied: beat mission 4, Gibraltar.",
+   "points": 10,
+   "group": "Campaign: Allied",
+   "rule": {
+    "sc": {
+     "campaign": "allies",
+     "mission": 4
+    }
+   }
+  },
+  {
+   "id": "allies-5",
+   "title": "North Sea",
+   "description": "Allied: beat mission 5, North Sea.",
+   "points": 10,
+   "group": "Campaign: Allied",
+   "rule": {
+    "sc": {
+     "campaign": "allies",
+     "mission": 5
+    }
+   }
+  },
+  {
+   "id": "allies-6",
+   "title": "Mt. Rushmore",
+   "description": "Allied: beat mission 6, Mt. Rushmore.",
+   "points": 10,
+   "group": "Campaign: Allied",
+   "rule": {
+    "sc": {
+     "campaign": "allies",
+     "mission": 6
+    }
+   }
+  },
+  {
+   "id": "allies-7",
+   "title": "Tokyo Harbor",
+   "description": "Allied: beat mission 7, Tokyo Harbor.",
+   "points": 10,
+   "group": "Campaign: Allied",
+   "rule": {
+    "sc": {
+     "campaign": "allies",
+     "mission": 7
+    }
+   }
+  },
+  {
+   "id": "allies-8",
+   "title": "Havana",
+   "description": "Allied: beat mission 8, Havana.",
+   "points": 10,
+   "group": "Campaign: Allied",
+   "rule": {
+    "sc": {
+     "campaign": "allies",
+     "mission": 8
+    }
+   }
+  },
+  {
+   "id": "allies-9",
+   "title": "Victory for the Allies",
+   "description": "Allied: beat mission 9, Leningrad. Campaign complete!",
+   "points": 25,
+   "group": "Campaign: Allied",
+   "rule": {
+    "sc": {
+     "campaign": "allies",
+     "mission": 9
+    }
+   }
+  },
+  {
+   "id": "soviet-1",
+   "title": "Leningrad",
+   "description": "Soviet: beat mission 1, Leningrad.",
+   "points": 10,
+   "group": "Campaign: Soviet",
+   "rule": {
+    "sc": {
+     "campaign": "soviet",
+     "mission": 1
+    }
+   }
+  },
+  {
+   "id": "soviet-2",
+   "title": "Krasna-45",
+   "description": "Soviet: beat mission 2, Krasna-45.",
+   "points": 10,
+   "group": "Campaign: Soviet",
+   "rule": {
+    "sc": {
+     "campaign": "soviet",
+     "mission": 2
+    }
+   }
+  },
+  {
+   "id": "soviet-3",
+   "title": "Vladivostok",
+   "description": "Soviet: beat mission 3, Vladivostok.",
+   "points": 10,
+   "group": "Campaign: Soviet",
+   "rule": {
+    "sc": {
+     "campaign": "soviet",
+     "mission": 3
+    }
+   }
+  },
+  {
+   "id": "soviet-4",
+   "title": "Geneva",
+   "description": "Soviet: beat mission 4, Geneva.",
+   "points": 10,
+   "group": "Campaign: Soviet",
+   "rule": {
+    "sc": {
+     "campaign": "soviet",
+     "mission": 4
+    }
+   }
+  },
+  {
+   "id": "soviet-5",
+   "title": "Mykonos",
+   "description": "Soviet: beat mission 5, Mykonos.",
+   "points": 10,
+   "group": "Campaign: Soviet",
+   "rule": {
+    "sc": {
+     "campaign": "soviet",
+     "mission": 5
+    }
+   }
+  },
+  {
+   "id": "soviet-6",
+   "title": "Von Esling Airbase",
+   "description": "Soviet: beat mission 6, Von Esling Airbase.",
+   "points": 10,
+   "group": "Campaign: Soviet",
+   "rule": {
+    "sc": {
+     "campaign": "soviet",
+     "mission": 6
+    }
+   }
+  },
+  {
+   "id": "soviet-7",
+   "title": "Mt. Fuji",
+   "description": "Soviet: beat mission 7, Mt. Fuji.",
+   "points": 10,
+   "group": "Campaign: Soviet",
+   "rule": {
+    "sc": {
+     "campaign": "soviet",
+     "mission": 7
+    }
+   }
+  },
+  {
+   "id": "soviet-8",
+   "title": "Easter Island",
+   "description": "Soviet: beat mission 8, Easter Island.",
+   "points": 10,
+   "group": "Campaign: Soviet",
+   "rule": {
+    "sc": {
+     "campaign": "soviet",
+     "mission": 8
+    }
+   }
+  },
+  {
+   "id": "soviet-9",
+   "title": "Glory to the Union",
+   "description": "Soviet: beat mission 9, New York City. Campaign complete!",
+   "points": 25,
+   "group": "Campaign: Soviet",
+   "rule": {
+    "sc": {
+     "campaign": "soviet",
+     "mission": 9
+    }
+   }
+  },
+  {
+   "id": "empire-1",
+   "title": "Vorkuta",
+   "description": "Empire of the Rising Sun: beat mission 1, Vorkuta.",
+   "points": 10,
+   "group": "Campaign: Empire of the Rising Sun",
+   "rule": {
+    "sc": {
+     "campaign": "empire",
+     "mission": 1
+    }
+   }
+  },
+  {
+   "id": "empire-2",
+   "title": "Stalingrad",
+   "description": "Empire of the Rising Sun: beat mission 2, Stalingrad.",
+   "points": 10,
+   "group": "Campaign: Empire of the Rising Sun",
+   "rule": {
+    "sc": {
+     "campaign": "empire",
+     "mission": 2
+    }
+   }
+  },
+  {
+   "id": "empire-3",
+   "title": "Odessa",
+   "description": "Empire of the Rising Sun: beat mission 3, Odessa.",
+   "points": 10,
+   "group": "Campaign: Empire of the Rising Sun",
+   "rule": {
+    "sc": {
+     "campaign": "empire",
+     "mission": 3
+    }
+   }
+  },
+  {
+   "id": "empire-4",
+   "title": "Pearl Harbor",
+   "description": "Empire of the Rising Sun: beat mission 4, Pearl Harbor.",
+   "points": 10,
+   "group": "Campaign: Empire of the Rising Sun",
+   "rule": {
+    "sc": {
+     "campaign": "empire",
+     "mission": 4
+    }
+   }
+  },
+  {
+   "id": "empire-5",
+   "title": "Deep Ocean",
+   "description": "Empire of the Rising Sun: beat mission 5, Deep Ocean.",
+   "points": 10,
+   "group": "Campaign: Empire of the Rising Sun",
+   "rule": {
+    "sc": {
+     "campaign": "empire",
+     "mission": 5
+    }
+   }
+  },
+  {
+   "id": "empire-6",
+   "title": "Santa Monica",
+   "description": "Empire of the Rising Sun: beat mission 6, Santa Monica.",
+   "points": 10,
+   "group": "Campaign: Empire of the Rising Sun",
+   "rule": {
+    "sc": {
+     "campaign": "empire",
+     "mission": 6
+    }
+   }
+  },
+  {
+   "id": "empire-7",
+   "title": "Yokohama",
+   "description": "Empire of the Rising Sun: beat mission 7, Yokohama.",
+   "points": 10,
+   "group": "Campaign: Empire of the Rising Sun",
+   "rule": {
+    "sc": {
+     "campaign": "empire",
+     "mission": 7
+    }
+   }
+  },
+  {
+   "id": "empire-8",
+   "title": "Moscow",
+   "description": "Empire of the Rising Sun: beat mission 8, Moscow.",
+   "points": 10,
+   "group": "Campaign: Empire of the Rising Sun",
+   "rule": {
+    "sc": {
+     "campaign": "empire",
+     "mission": 8
+    }
+   }
+  },
+  {
+   "id": "empire-9",
+   "title": "Rising Sun Triumphant",
+   "description": "Empire of the Rising Sun: beat mission 9, Amsterdam. Campaign complete!",
+   "points": 25,
+   "group": "Campaign: Empire of the Rising Sun",
+   "rule": {
+    "sc": {
+     "campaign": "empire",
+     "mission": 9
+    }
+   }
+  },
+  {
+   "id": "allies-half",
+   "title": "Allied: Halfway",
+   "description": "Allied campaign: beat 5 missions.",
+   "points": 15,
+   "group": "Campaign: Allied",
+   "rule": {
+    "sc": {
+     "campaign": "allies",
+     "missions": 5
+    }
+   }
+  },
+  {
+   "id": "soviet-half",
+   "title": "Soviet: Halfway",
+   "description": "Soviet campaign: beat 5 missions.",
+   "points": 15,
+   "group": "Campaign: Soviet",
+   "rule": {
+    "sc": {
+     "campaign": "soviet",
+     "missions": 5
+    }
+   }
+  },
+  {
+   "id": "empire-half",
+   "title": "Empire of the Rising Sun: Halfway",
+   "description": "Empire of the Rising Sun campaign: beat 5 missions.",
+   "points": 15,
+   "group": "Campaign: Empire of the Rising Sun",
+   "rule": {
+    "sc": {
+     "campaign": "empire",
+     "missions": 5
+    }
+   }
+  },
+  {
+   "id": "all-campaigns",
+   "title": "Red Alert",
+   "description": "Finish all three campaigns.",
+   "points": 75,
+   "group": "Milestones",
+   "rule": {
+    "sc": {
+     "campaigns": [
+      "allies",
+      "soviet",
+      "empire"
+     ]
+    }
+   }
+  },
+  {
+   "id": "sk-first",
+   "title": "Into Battle",
+   "description": "Play a skirmish game for at least 3 minutes.",
+   "points": 5,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {}
+   }
+  },
+  {
+   "id": "sk-fac-4",
+   "title": "Allied Forces",
+   "description": "Play a skirmish game as the Allies.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 4
+    }
+   }
+  },
+  {
+   "id": "sk-fac-8",
+   "title": "Soviet Union",
+   "description": "Play a skirmish game as the Soviets.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 8
+    }
+   }
+  },
+  {
+   "id": "sk-fac-2",
+   "title": "Rising Sun",
+   "description": "Play a skirmish game as the Empire of the Rising Sun.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 2
+    }
+   }
+  },
+  {
+   "id": "sk-all-factions",
+   "title": "Commander of Every Army",
+   "description": "Play as every faction (3).",
+   "points": 30,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "factions": [
+      4,
+      8,
+      2
+     ]
+    }
+   }
+  },
+  {
+   "id": "sk-hard",
+   "title": "Hard Target",
+   "description": "Last 10 minutes in a game against a Hard computer.",
+   "points": 15,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "vsAi": "hard",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-brutal",
+   "title": "Brutal Awakening",
+   "description": "Last 10 minutes in a game against a Brutal computer.",
+   "points": 25,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-outnumbered",
+   "title": "Outnumbered",
+   "description": "Last 10 minutes in a game against 3 or more computers.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minAi": 3,
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-brutal-5",
+   "title": "Brutal Veteran",
+   "description": "Play 5 games of 10 minutes or more against a Brutal computer.",
+   "points": 30,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "brutal": 5
+    }
+   }
+  },
+  {
+   "id": "sk-long",
+   "title": "War of Attrition",
+   "description": "Play a game that lasts 45 minutes or more.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minMinutes": 45
+    }
+   }
+  },
+  {
+   "id": "sk-human",
+   "title": "Worthy Opponent",
+   "description": "Play a game of 10 minutes or more against another person.",
+   "points": 15,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "vsHuman": true,
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-games-10",
+   "title": "Seasoned Commander",
+   "description": "Play 10 games (3 minutes or longer).",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 10
+    }
+   }
+  },
+  {
+   "id": "sk-games-25",
+   "title": "Battle Hardened",
+   "description": "Play 25 games (3 minutes or longer).",
+   "points": 25,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 25
+    }
+   }
+  },
+  {
+   "id": "sk-games-50",
+   "title": "Living Legend",
+   "description": "Play 50 games (3 minutes or longer).",
+   "points": 40,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 50
+    }
+   }
+  },
+  {
+   "id": "sk-maps-5",
+   "title": "Cartographer",
+   "description": "Play on 5 different maps.",
+   "points": 10,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "maps": 5
+    }
+   }
+  },
+  {
+   "id": "sk-maps-10",
+   "title": "World Tour",
+   "description": "Play on 10 different maps.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "maps": 10
+    }
+   }
+  },
+  {
+   "id": "sk-hours-10",
+   "title": "Ten Hours of War",
+   "description": "Spend 10 hours in skirmish games.",
+   "points": 25,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "hours": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-4-brutal",
+   "title": "the Allies vs Brutal",
+   "description": "As the Allies, last 10 minutes against a Brutal computer.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 4,
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-4-10",
+   "title": "the Allies Veteran",
+   "description": "Play 10 games as the Allies.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "facGames": {
+      "faction": 4,
+      "n": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "sk-fac-8-brutal",
+   "title": "the Soviets vs Brutal",
+   "description": "As the Soviets, last 10 minutes against a Brutal computer.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 8,
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-8-10",
+   "title": "the Soviets Veteran",
+   "description": "Play 10 games as the Soviets.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "facGames": {
+      "faction": 8,
+      "n": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "sk-fac-2-brutal",
+   "title": "the Empire of the Rising Sun vs Brutal",
+   "description": "As the Empire of the Rising Sun, last 10 minutes against a Brutal computer.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 2,
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-2-10",
+   "title": "the Empire of the Rising Sun Veteran",
+   "description": "Play 10 games as the Empire of the Rising Sun.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "facGames": {
+      "faction": 2,
+      "n": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "sk-vs-all",
+   "title": "Know Your Enemy",
+   "description": "Face every faction (3) as an opponent.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "vsFactions": [
+      4,
+      8,
+      2
+     ]
+    }
+   }
+  },
+  {
+   "id": "sk-team",
+   "title": "Brothers in Arms",
+   "description": "Play a team game with a teammate for at least 10 minutes.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "withAlly": true,
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-big",
+   "title": "Total War",
+   "description": "Play a game with 6 or more players for at least 10 minutes.",
+   "points": 15,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minPlayers": 6,
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-marathon",
+   "title": "Marathon",
+   "description": "Play a game that lasts 90 minutes or more.",
+   "points": 30,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minMinutes": 90
+    }
+   }
+  },
+  {
+   "id": "sk-medium",
+   "title": "Warming Up",
+   "description": "Last 10 minutes in a game against a Medium computer.",
+   "points": 5,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "vsAi": "medium",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-brutal-3",
+   "title": "Three Brutal Foes",
+   "description": "Last 15 minutes against 3 or more computers, one of them Brutal.",
+   "points": 30,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minAi": 3,
+     "vsAi": "brutal",
+     "minMinutes": 15
+    }
+   }
+  },
+  {
+   "id": "sk-brutal-25",
+   "title": "Brutal Master",
+   "description": "Play 25 games of 10 minutes or more against a Brutal computer.",
+   "points": 50,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "brutal": 25
+    }
+   }
+  },
+  {
+   "id": "sk-games-5",
+   "title": "Getting Started",
+   "description": "Play 5 games (3 minutes or longer).",
+   "points": 5,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 5
+    }
+   }
+  },
+  {
+   "id": "sk-games-100",
+   "title": "Centurion",
+   "description": "Play 100 games (3 minutes or longer).",
+   "points": 60,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 100
+    }
+   }
+  },
+  {
+   "id": "sk-hours-1",
+   "title": "First Hour",
+   "description": "Spend 1 hour in skirmish games.",
+   "points": 5,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "hours": 1
+    }
+   }
+  },
+  {
+   "id": "sk-hours-25",
+   "title": "Twenty-Five Hours",
+   "description": "Spend 25 hours in skirmish games.",
+   "points": 40,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "hours": 25
+    }
+   }
+  },
+  {
+   "id": "sk-hours-50",
+   "title": "Fifty Hours",
+   "description": "Spend 50 hours in skirmish games.",
+   "points": 60,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "hours": 50
+    }
+   }
+  },
+  {
+   "id": "sk-maps-20",
+   "title": "Seen It All",
+   "description": "Play on 20 different maps.",
+   "points": 30,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "maps": 20
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_black1b",
+   "title": "Temple Prime",
+   "description": "Play a game on Temple Prime.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_black1b"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_feasel1",
+   "title": "Cabana Republic",
+   "description": "Play a game on Cabana Republic.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_feasel1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_feasel2",
+   "title": "Canals of Carnage",
+   "description": "Play a game on Canals of Carnage.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_feasel2"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_feasel3",
+   "title": "Secret Shrine",
+   "description": "Play a game on Secret Shrine.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_feasel3"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_feasel4",
+   "title": "Battlebase Beta",
+   "description": "Play a game on Battlebase Beta.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_feasel4"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_feasel5",
+   "title": "Snow Plow",
+   "description": "Play a game on Snow Plow.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_feasel5"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_feasel6",
+   "title": "Industrial Strength",
+   "description": "Play a game on Industrial Strength.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_feasel6"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_feasel7",
+   "title": "Casual Encounter",
+   "description": "Play a game on Casual Encounter.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_feasel7"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_feasel8",
+   "title": "Fire Island",
+   "description": "Play a game on Fire Island.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_feasel8"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_rao1",
+   "title": "Infinity Isle",
+   "description": "Play a game on Infinity Isle.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_rao1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_ssmith1-redux",
+   "title": "Turtle Village",
+   "description": "Play a game on Turtle Village.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_ssmith1-redux"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_3_feasel1",
+   "title": "Repair Bay",
+   "description": "Play a game on Repair Bay.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_3_feasel1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_3_feasel2",
+   "title": "Caldera of Chaos",
+   "description": "Play a game on Caldera of Chaos.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_3_feasel2"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_3_feasel3",
+   "title": "Hidden Fortress",
+   "description": "Play a game on Hidden Fortress.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_3_feasel3"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_3_feasel4",
+   "title": "Pyroclasm",
+   "description": "Play a game on Pyroclasm.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_3_feasel4"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_black_xslice",
+   "title": "Hostile Hostel",
+   "description": "Play a game on Hostile Hostel.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_black_xslice"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_feasel1",
+   "title": "Roundhouse Redux",
+   "description": "Play a game on Roundhouse Redux.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_feasel1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_feasel2",
+   "title": "Rock Ridge",
+   "description": "Play a game on Rock Ridge.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_feasel2"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_feasel3",
+   "title": "Reef Madness",
+   "description": "Play a game on Reef Madness.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_feasel3"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_feasel4",
+   "title": "Last Resort",
+   "description": "Play a game on Last Resort.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_feasel4"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_feasel5",
+   "title": "Battlebase Octopon",
+   "description": "Play a game on Battlebase Octopon.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_feasel5"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_feasel6",
+   "title": "Pool Party",
+   "description": "Play a game on Pool Party.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_feasel6"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_feasel7",
+   "title": "Ring of Fire",
+   "description": "Play a game on Ring of Fire.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_feasel7"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_ssmith2-remix",
+   "title": "Death Aquatic",
+   "description": "Play a game on Death Aquatic.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_ssmith2-remix"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_stewart_1",
+   "title": "Cold Showdown",
+   "description": "Play a game on Cold Showdown.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_stewart_1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_5_feasel1",
+   "title": "Loch Mess",
+   "description": "Play a game on Loch Mess.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_5_feasel1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_5_feasel2",
+   "title": "Murder Mesa",
+   "description": "Play a game on Murder Mesa.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_5_feasel2"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_5_feasel3",
+   "title": "Circus Maximus",
+   "description": "Play a game on Circus Maximus.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_5_feasel3"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_6_feasel1",
+   "title": "Burnt-Out Paradise",
+   "description": "Play a game on Burnt-Out Paradise.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_6_feasel1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_6_feasel2",
+   "title": "Swimming Hazard",
+   "description": "Play a game on Swimming Hazard.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_6_feasel2"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_6_feasel3",
+   "title": "Sub-Zero Hour",
+   "description": "Play a game on Sub-Zero Hour.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_6_feasel3"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_6_feasel4",
+   "title": "Magmageddon",
+   "description": "Play a game on Magmageddon.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_6_feasel4"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_6_ssmith2",
+   "title": "Carville",
+   "description": "Play a game on Carville.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_6_ssmith2"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_promo_feasel1",
+   "title": "Wrong Steppe",
+   "description": "Play a game on Wrong Steppe.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_promo_feasel1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_promo_feasel2",
+   "title": "Pier Pressure",
+   "description": "Play a game on Pier Pressure.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_promo_feasel2"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_promo_feasel3a",
+   "title": "Dreadnought Alley",
+   "description": "Play a game on Dreadnought Alley.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_promo_feasel3a"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_promo_feasel3b",
+   "title": "Dreadnought Lane",
+   "description": "Play a game on Dreadnought Lane.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_promo_feasel3b"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_promo_feasel4",
+   "title": "Age of Wreckoning",
+   "description": "Play a game on Age of Wreckoning.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_promo_feasel4"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_promo_feasel5",
+   "title": "Deep End",
+   "description": "Play a game on Deep End.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_promo_feasel5"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_promo_feasel6",
+   "title": "Black Tortoise",
+   "description": "Play a game on Black Tortoise.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_promo_feasel6"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_promo_feasel7",
+   "title": "Neon Crisis",
+   "description": "Play a game on Neon Crisis.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_promo_feasel7"
+    }
+   }
+  }
+ ]
+}

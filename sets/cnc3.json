@@ -1,0 +1,1499 @@
+{
+ "id": "cnc3",
+ "title": "Command & Conquer 3: Tiberium Wars",
+ "version": 1,
+ "kind": "replay",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [
+  "steam:24790"
+ ],
+ "linkFiles": [
+  "CNC3.exe",
+  "CNC3_english_1.0.SkuDef"
+ ],
+ "exeNames": [
+  "cnc3game.dat",
+  "CNC3.exe"
+ ],
+ "md5": [],
+ "notes": [
+  "Campaign achievements come from your save games (Vault never touches the game, which has online play). The game saves automatically between missions; saving during a mission helps too.",
+  "Skirmish achievements come from the replay the game saves after every game (Documents\\Command and Conquer 3 Tiberium Wars\\Replays). Replays do not record who won, so these are about playing, not winning. Games shorter than 3 minutes do not count."
+ ],
+ "testGuide": [
+  {
+   "title": "Play a campaign mission",
+   "detail": "Beat a GDI or Nod mission. When the game saves between missions, \"GDI: First Victory\" or \"Nod: First Victory\" should pop."
+  },
+  {
+   "title": "Play a skirmish",
+   "detail": "Play a skirmish for at least 3 minutes, then quit. \"Into Battle\" should pop."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "gdi-n1",
+   "title": "GDI: First Victory",
+   "description": "GDI: beat 1 mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "missions": 1
+    }
+   }
+  },
+  {
+   "id": "gdi-n5",
+   "title": "GDI: Holding the Line",
+   "description": "GDI: beat 5 missions.",
+   "points": 15,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "missions": 5
+    }
+   }
+  },
+  {
+   "id": "gdi-n10",
+   "title": "GDI: Turning the Tide",
+   "description": "GDI: beat 10 missions.",
+   "points": 20,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "missions": 10
+    }
+   }
+  },
+  {
+   "id": "gdi-complete",
+   "title": "GDI Complete",
+   "description": "Beat every mission of the GDI campaign.",
+   "points": 30,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "complete": true
+    }
+   }
+  },
+  {
+   "id": "nod-n1",
+   "title": "Nod: First Victory",
+   "description": "Nod: beat 1 mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "missions": 1
+    }
+   }
+  },
+  {
+   "id": "nod-n5",
+   "title": "Nod: Rising Brotherhood",
+   "description": "Nod: beat 5 missions.",
+   "points": 15,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "missions": 5
+    }
+   }
+  },
+  {
+   "id": "nod-n10",
+   "title": "Nod: Kane Lives",
+   "description": "Nod: beat 10 missions.",
+   "points": 20,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "missions": 10
+    }
+   }
+  },
+  {
+   "id": "nod-complete",
+   "title": "Nod Complete",
+   "description": "Beat every mission of the Nod campaign.",
+   "points": 30,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "complete": true
+    }
+   }
+  },
+  {
+   "id": "scrin-n1",
+   "title": "Scrin: Arrival",
+   "description": "Scrin: beat 1 mission.",
+   "points": 15,
+   "group": "Campaign: Scrin",
+   "rule": {
+    "sc": {
+     "campaign": "scrin",
+     "missions": 1
+    }
+   }
+  },
+  {
+   "id": "scrin-complete",
+   "title": "Scrin Complete",
+   "description": "Beat every mission of the Scrin campaign.",
+   "points": 30,
+   "group": "Campaign: Scrin",
+   "rule": {
+    "sc": {
+     "campaign": "scrin",
+     "complete": true
+    }
+   }
+  },
+  {
+   "id": "gdi-m1",
+   "title": "GDI: North Carolina",
+   "description": "GDI campaign: beat the North Carolina mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 1
+    }
+   }
+  },
+  {
+   "id": "gdi-m2",
+   "title": "GDI: The Pentagon",
+   "description": "GDI campaign: beat the The Pentagon mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 2
+    }
+   }
+  },
+  {
+   "id": "gdi-m3",
+   "title": "GDI: Langley AFB",
+   "description": "GDI campaign: beat the Langley AFB mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 3
+    }
+   }
+  },
+  {
+   "id": "gdi-m4",
+   "title": "GDI: Hampton Roads",
+   "description": "GDI campaign: beat the Hampton Roads mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 4
+    }
+   }
+  },
+  {
+   "id": "gdi-m5",
+   "title": "GDI: The White House",
+   "description": "GDI campaign: beat the The White House mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 5
+    }
+   }
+  },
+  {
+   "id": "gdi-m6",
+   "title": "GDI: Casabad",
+   "description": "GDI campaign: beat the Casabad mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 6
+    }
+   }
+  },
+  {
+   "id": "gdi-m7",
+   "title": "GDI: Alexandria",
+   "description": "GDI campaign: beat the Alexandria mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 7
+    }
+   }
+  },
+  {
+   "id": "gdi-m8",
+   "title": "GDI: Cairo",
+   "description": "GDI campaign: beat the Cairo mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 8
+    }
+   }
+  },
+  {
+   "id": "gdi-m9",
+   "title": "GDI: Croatia",
+   "description": "GDI campaign: beat the Croatia mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 9
+    }
+   }
+  },
+  {
+   "id": "gdi-m10",
+   "title": "GDI: Albania",
+   "description": "GDI campaign: beat the Albania mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 10
+    }
+   }
+  },
+  {
+   "id": "gdi-m11",
+   "title": "GDI: Sarajevo",
+   "description": "GDI campaign: beat the Sarajevo mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 11
+    }
+   }
+  },
+  {
+   "id": "gdi-m12",
+   "title": "GDI: Munich",
+   "description": "GDI campaign: beat the Munich mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 12
+    }
+   }
+  },
+  {
+   "id": "gdi-m13",
+   "title": "GDI: Stuttgart",
+   "description": "GDI campaign: beat the Stuttgart mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 13
+    }
+   }
+  },
+  {
+   "id": "gdi-m14",
+   "title": "GDI: Cologne",
+   "description": "GDI campaign: beat the Cologne mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 14
+    }
+   }
+  },
+  {
+   "id": "gdi-m15",
+   "title": "GDI: Berne",
+   "description": "GDI campaign: beat the Berne mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 15
+    }
+   }
+  },
+  {
+   "id": "gdi-m16",
+   "title": "GDI: Rome",
+   "description": "GDI campaign: beat the Rome mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 16
+    }
+   }
+  },
+  {
+   "id": "gdi-m17",
+   "title": "GDI: Ground Zero",
+   "description": "GDI campaign: beat the Ground Zero mission.",
+   "points": 10,
+   "group": "Campaign: GDI",
+   "rule": {
+    "sc": {
+     "campaign": "gdi",
+     "mission": 17
+    }
+   }
+  },
+  {
+   "id": "nod-m1",
+   "title": "Nod: Goddard Space Center",
+   "description": "Nod campaign: beat the Goddard Space Center mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 1
+    }
+   }
+  },
+  {
+   "id": "nod-m2",
+   "title": "Nod: The White House",
+   "description": "Nod campaign: beat the The White House mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 2
+    }
+   }
+  },
+  {
+   "id": "nod-m3",
+   "title": "Nod: Andrews AFB",
+   "description": "Nod campaign: beat the Andrews AFB mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 3
+    }
+   }
+  },
+  {
+   "id": "nod-m4",
+   "title": "Nod: Hampton Roads",
+   "description": "Nod campaign: beat the Hampton Roads mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 4
+    }
+   }
+  },
+  {
+   "id": "nod-m5",
+   "title": "Nod: Washington DC",
+   "description": "Nod campaign: beat the Washington DC mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 5
+    }
+   }
+  },
+  {
+   "id": "nod-m6",
+   "title": "Nod: Amazon Desert",
+   "description": "Nod campaign: beat the Amazon Desert mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 6
+    }
+   }
+  },
+  {
+   "id": "nod-m7",
+   "title": "Nod: Atlantic Coast",
+   "description": "Nod campaign: beat the Atlantic Coast mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 7
+    }
+   }
+  },
+  {
+   "id": "nod-m8",
+   "title": "Nod: Slovenia",
+   "description": "Nod campaign: beat the Slovenia mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 8
+    }
+   }
+  },
+  {
+   "id": "nod-m9",
+   "title": "Nod: Sarajevo",
+   "description": "Nod campaign: beat the Sarajevo mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 9
+    }
+   }
+  },
+  {
+   "id": "nod-m10",
+   "title": "Nod: Outback",
+   "description": "Nod campaign: beat the Outback mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 10
+    }
+   }
+  },
+  {
+   "id": "nod-m11",
+   "title": "Nod: Sydney City Wall",
+   "description": "Nod campaign: beat the Sydney City Wall mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 11
+    }
+   }
+  },
+  {
+   "id": "nod-m12",
+   "title": "Nod: Downtown Sydney",
+   "description": "Nod campaign: beat the Downtown Sydney mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 12
+    }
+   }
+  },
+  {
+   "id": "nod-m13",
+   "title": "Nod: Ayers Rock",
+   "description": "Nod campaign: beat the Ayers Rock mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 13
+    }
+   }
+  },
+  {
+   "id": "nod-m14",
+   "title": "Nod: Northern Italy",
+   "description": "Nod campaign: beat the Northern Italy mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 14
+    }
+   }
+  },
+  {
+   "id": "nod-m15",
+   "title": "Nod: Italian Hills",
+   "description": "Nod campaign: beat the Italian Hills mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 15
+    }
+   }
+  },
+  {
+   "id": "nod-m16",
+   "title": "Nod: Operation Stiletto",
+   "description": "Nod campaign: beat the Operation Stiletto mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 16
+    }
+   }
+  },
+  {
+   "id": "nod-m17",
+   "title": "Nod: Kane's Tower",
+   "description": "Nod campaign: beat the Kane's Tower mission.",
+   "points": 10,
+   "group": "Campaign: Nod",
+   "rule": {
+    "sc": {
+     "campaign": "nod",
+     "mission": 17
+    }
+   }
+  },
+  {
+   "id": "scrin-m1",
+   "title": "Scrin: London",
+   "description": "Scrin campaign: beat the London mission.",
+   "points": 10,
+   "group": "Campaign: Scrin",
+   "rule": {
+    "sc": {
+     "campaign": "scrin",
+     "mission": 1
+    }
+   }
+  },
+  {
+   "id": "scrin-m2",
+   "title": "Scrin: Munich",
+   "description": "Scrin campaign: beat the Munich mission.",
+   "points": 10,
+   "group": "Campaign: Scrin",
+   "rule": {
+    "sc": {
+     "campaign": "scrin",
+     "mission": 2
+    }
+   }
+  },
+  {
+   "id": "scrin-m3",
+   "title": "Scrin: Croatia",
+   "description": "Scrin campaign: beat the Croatia mission.",
+   "points": 10,
+   "group": "Campaign: Scrin",
+   "rule": {
+    "sc": {
+     "campaign": "scrin",
+     "mission": 3
+    }
+   }
+  },
+  {
+   "id": "scrin-m4",
+   "title": "Scrin: Threshold 19",
+   "description": "Scrin campaign: beat the Threshold 19 mission.",
+   "points": 10,
+   "group": "Campaign: Scrin",
+   "rule": {
+    "sc": {
+     "campaign": "scrin",
+     "mission": 4
+    }
+   }
+  },
+  {
+   "id": "all-campaigns",
+   "title": "Tiberium Wars",
+   "description": "Finish the GDI, Nod and Scrin campaigns.",
+   "points": 75,
+   "group": "Milestones",
+   "rule": {
+    "sc": {
+     "campaigns": [
+      "gdi",
+      "nod",
+      "scrin"
+     ]
+    }
+   }
+  },
+  {
+   "id": "sk-first",
+   "title": "Into Battle",
+   "description": "Play a skirmish game for at least 3 minutes.",
+   "points": 5,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {}
+   }
+  },
+  {
+   "id": "sk-fac-6",
+   "title": "Global Defense",
+   "description": "Play a skirmish game as GDI.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 6
+    }
+   }
+  },
+  {
+   "id": "sk-fac-7",
+   "title": "Brotherhood of Nod",
+   "description": "Play a skirmish game as Nod.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 7
+    }
+   }
+  },
+  {
+   "id": "sk-fac-8",
+   "title": "Visitors",
+   "description": "Play a skirmish game as Scrin.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 8
+    }
+   }
+  },
+  {
+   "id": "sk-all-factions",
+   "title": "Commander of Every Army",
+   "description": "Play as every faction (3).",
+   "points": 30,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "factions": [
+      6,
+      7,
+      8
+     ]
+    }
+   }
+  },
+  {
+   "id": "sk-hard",
+   "title": "Hard Target",
+   "description": "Last 10 minutes in a game against a Hard computer.",
+   "points": 15,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "vsAi": "hard",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-brutal",
+   "title": "Brutal Awakening",
+   "description": "Last 10 minutes in a game against a Brutal computer.",
+   "points": 25,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-outnumbered",
+   "title": "Outnumbered",
+   "description": "Last 10 minutes in a game against 3 or more computers.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minAi": 3,
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-brutal-5",
+   "title": "Brutal Veteran",
+   "description": "Play 5 games of 10 minutes or more against a Brutal computer.",
+   "points": 30,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "brutal": 5
+    }
+   }
+  },
+  {
+   "id": "sk-long",
+   "title": "War of Attrition",
+   "description": "Play a game that lasts 45 minutes or more.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minMinutes": 45
+    }
+   }
+  },
+  {
+   "id": "sk-human",
+   "title": "Worthy Opponent",
+   "description": "Play a game of 10 minutes or more against another person.",
+   "points": 15,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "vsHuman": true,
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-games-10",
+   "title": "Seasoned Commander",
+   "description": "Play 10 games (3 minutes or longer).",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 10
+    }
+   }
+  },
+  {
+   "id": "sk-games-25",
+   "title": "Battle Hardened",
+   "description": "Play 25 games (3 minutes or longer).",
+   "points": 25,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 25
+    }
+   }
+  },
+  {
+   "id": "sk-games-50",
+   "title": "Living Legend",
+   "description": "Play 50 games (3 minutes or longer).",
+   "points": 40,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 50
+    }
+   }
+  },
+  {
+   "id": "sk-maps-5",
+   "title": "Cartographer",
+   "description": "Play on 5 different maps.",
+   "points": 10,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "maps": 5
+    }
+   }
+  },
+  {
+   "id": "sk-maps-10",
+   "title": "World Tour",
+   "description": "Play on 10 different maps.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "maps": 10
+    }
+   }
+  },
+  {
+   "id": "sk-hours-10",
+   "title": "Ten Hours of War",
+   "description": "Spend 10 hours in skirmish games.",
+   "points": 25,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "hours": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-6-brutal",
+   "title": "GDI vs Brutal",
+   "description": "As GDI, last 10 minutes against a Brutal computer.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 6,
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-6-10",
+   "title": "GDI Veteran",
+   "description": "Play 10 games as GDI.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "facGames": {
+      "faction": 6,
+      "n": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "sk-fac-7-brutal",
+   "title": "Nod vs Brutal",
+   "description": "As Nod, last 10 minutes against a Brutal computer.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 7,
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-7-10",
+   "title": "Nod Veteran",
+   "description": "Play 10 games as Nod.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "facGames": {
+      "faction": 7,
+      "n": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "sk-fac-8-brutal",
+   "title": "Scrin vs Brutal",
+   "description": "As Scrin, last 10 minutes against a Brutal computer.",
+   "points": 20,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "faction": 8,
+     "vsAi": "brutal",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-fac-8-10",
+   "title": "Scrin Veteran",
+   "description": "Play 10 games as Scrin.",
+   "points": 15,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "facGames": {
+      "faction": 8,
+      "n": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "sk-vs-all",
+   "title": "Know Your Enemy",
+   "description": "Face every faction (3) as an opponent.",
+   "points": 20,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "vsFactions": [
+      6,
+      7,
+      8
+     ]
+    }
+   }
+  },
+  {
+   "id": "sk-team",
+   "title": "Brothers in Arms",
+   "description": "Play a team game with a teammate for at least 10 minutes.",
+   "points": 10,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "withAlly": true,
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-big",
+   "title": "Total War",
+   "description": "Play a game with 6 or more players for at least 10 minutes.",
+   "points": 15,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minPlayers": 6,
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-marathon",
+   "title": "Marathon",
+   "description": "Play a game that lasts 90 minutes or more.",
+   "points": 30,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minMinutes": 90
+    }
+   }
+  },
+  {
+   "id": "sk-medium",
+   "title": "Warming Up",
+   "description": "Last 10 minutes in a game against a Medium computer.",
+   "points": 5,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "vsAi": "medium",
+     "minMinutes": 10
+    }
+   }
+  },
+  {
+   "id": "sk-brutal-3",
+   "title": "Three Brutal Foes",
+   "description": "Last 15 minutes against 3 or more computers, one of them Brutal.",
+   "points": 30,
+   "group": "Skirmish",
+   "rule": {
+    "sk": {
+     "minAi": 3,
+     "vsAi": "brutal",
+     "minMinutes": 15
+    }
+   }
+  },
+  {
+   "id": "sk-brutal-25",
+   "title": "Brutal Master",
+   "description": "Play 25 games of 10 minutes or more against a Brutal computer.",
+   "points": 50,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "brutal": 25
+    }
+   }
+  },
+  {
+   "id": "sk-games-5",
+   "title": "Getting Started",
+   "description": "Play 5 games (3 minutes or longer).",
+   "points": 5,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 5
+    }
+   }
+  },
+  {
+   "id": "sk-games-100",
+   "title": "Centurion",
+   "description": "Play 100 games (3 minutes or longer).",
+   "points": 60,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "games": 100
+    }
+   }
+  },
+  {
+   "id": "sk-hours-1",
+   "title": "First Hour",
+   "description": "Spend 1 hour in skirmish games.",
+   "points": 5,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "hours": 1
+    }
+   }
+  },
+  {
+   "id": "sk-hours-25",
+   "title": "Twenty-Five Hours",
+   "description": "Spend 25 hours in skirmish games.",
+   "points": 40,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "hours": 25
+    }
+   }
+  },
+  {
+   "id": "sk-hours-50",
+   "title": "Fifty Hours",
+   "description": "Spend 50 hours in skirmish games.",
+   "points": 60,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "hours": 50
+    }
+   }
+  },
+  {
+   "id": "sk-maps-20",
+   "title": "Seen It All",
+   "description": "Play on 20 different maps.",
+   "points": 30,
+   "group": "Lifetime",
+   "rule": {
+    "sk": {
+     "maps": 20
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_bass1",
+   "title": "Tournament Dustbowl",
+   "description": "Play a game on Tournament Dustbowl.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_bass1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_black1",
+   "title": "Tournament Desert Redux",
+   "description": "Play a game on Tournament Desert Redux.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_black1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_black10",
+   "title": "Deadly Sert\u00e3o",
+   "description": "Play a game on Deadly Sert\u00e3o.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_black10"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_black12",
+   "title": "Schlachtfeld Stuttgart",
+   "description": "Play a game on Schlachtfeld Stuttgart.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_black12"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_black2",
+   "title": "Tournament Arena",
+   "description": "Play a game on Tournament Arena.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_black2"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_black3",
+   "title": "Barstow Badlands",
+   "description": "Play a game on Barstow Badlands.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_black3"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_black4",
+   "title": "Ground Zero",
+   "description": "Play a game on Ground Zero.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_black4"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_black5",
+   "title": "Small Town USA",
+   "description": "Play a game on Small Town USA.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_black5"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_black6",
+   "title": "Black's Big Battle",
+   "description": "Play a game on Black's Big Battle.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_black6"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_black7",
+   "title": "Tournament Tower",
+   "description": "Play a game on Tournament Tower.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_black7"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_black8",
+   "title": "Tiber River Valley",
+   "description": "Play a game on Tiber River Valley.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_black8"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_black9",
+   "title": "Pipeline Problems",
+   "description": "Play a game on Pipeline Problems.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_black9"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_chuck1",
+   "title": "Tournament Coastline",
+   "description": "Play a game on Tournament Coastline.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_chuck1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_simon",
+   "title": "Riverside Rumble",
+   "description": "Play a game on Riverside Rumble.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_simon"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_2_will1",
+   "title": "Tournament Rift",
+   "description": "Play a game on Tournament Rift.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_2_will1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_3_black1",
+   "title": "Unfair Advantage",
+   "description": "Play a game on Unfair Advantage.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_3_black1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_3_black2",
+   "title": "Triple Threat",
+   "description": "Play a game on Triple Threat.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_3_black2"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_bass",
+   "title": "Downtown Dustbowl",
+   "description": "Play a game on Downtown Dustbowl.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_bass"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_bender",
+   "title": "The Battle for Middle Egypt",
+   "description": "Play a game on The Battle for Middle Egypt.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_bender"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_black1",
+   "title": "Crater of Carnage",
+   "description": "Play a game on Crater of Carnage.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_black1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_black6",
+   "title": "Backwater Brawl",
+   "description": "Play a game on Backwater Brawl.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_black6"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_chuck1",
+   "title": "Coastline Chaos",
+   "description": "Play a game on Coastline Chaos.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_chuck1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_chuck2",
+   "title": "Wrecktropolis",
+   "description": "Play a game on Wrecktropolis.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_chuck2"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_rao",
+   "title": "Redzone Rampage",
+   "description": "Play a game on Redzone Rampage.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_rao"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_4_ssmith_01",
+   "title": "Frontier Fracas",
+   "description": "Play a game on Frontier Fracas.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_4_ssmith_01"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_5_black1",
+   "title": "Tiberium Gardens III",
+   "description": "Play a game on Tiberium Gardens III.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_5_black1"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_6_black2",
+   "title": "Six Shooter Showdown",
+   "description": "Play a game on Six Shooter Showdown.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_6_black2"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_6_hayes",
+   "title": "Dead Six",
+   "description": "Play a game on Dead Six.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_6_hayes"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_8_bass",
+   "title": "The Rocktagon",
+   "description": "Play a game on The Rocktagon.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_8_bass"
+    }
+   }
+  },
+  {
+   "id": "map-map_mp_8_black1",
+   "title": "Bordertown Beatdown",
+   "description": "Play a game on Bordertown Beatdown.",
+   "points": 5,
+   "group": "Maps",
+   "rule": {
+    "sk": {
+     "mapId": "map_mp_8_black1"
+    }
+   }
+  }
+ ]
+}

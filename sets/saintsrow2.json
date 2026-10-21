@@ -1,0 +1,611 @@
+{
+  "id": "saintsrow2",
+  "title": "Saints Row 2",
+  "exeNames": [
+    "SR2_pc.exe"
+  ],
+  "md5": [
+    "0e8a48269eb2f91e4d2a469f45a7bc56"
+  ],
+  "linkFiles": [
+    "SR2_pc.exe",
+    "patch.vpp_pc"
+  ],
+  "version": 1,
+  "pollHz": 2,
+  "settleSeconds": 5,
+  "creditOnLoad": true,
+  "gate": "0xX1452c58<=100_0xX1453384<200",
+  "notes": [
+    "Counts come from the game's own completion stats, so loading a save gives you everything it has already done.",
+    "Addresses from the Saints Row 2 speedrun community autosplitter (Steam build)."
+  ],
+  "watches": [
+    {
+      "id": "percent",
+      "label": "Completion %",
+      "address": "1452c58",
+      "size": "u32"
+    },
+    {
+      "id": "missions",
+      "label": "Missions done",
+      "address": "1453384",
+      "size": "u32"
+    },
+    {
+      "id": "strongholds",
+      "label": "Strongholds",
+      "address": "14533c8",
+      "size": "u32"
+    },
+    {
+      "id": "tags",
+      "label": "Tags",
+      "address": "14535e8",
+      "size": "u32"
+    },
+    {
+      "id": "jumps",
+      "label": "Stunt jumps",
+      "address": "14535a4",
+      "size": "u32"
+    },
+    {
+      "id": "cds",
+      "label": "CDs",
+      "address": "2bc7150",
+      "size": "u32"
+    },
+    {
+      "id": "barnstorming",
+      "label": "Barnstorming",
+      "address": "1453670",
+      "size": "u32"
+    }
+  ],
+  "testGuide": [
+    {
+      "title": "Start Saints Row 2 and load your save",
+      "detail": "The counts below should match your stats screen once the save has loaded.",
+      "doneWhen": {
+        "watch": "percent",
+        "atLeast": 1
+      }
+    },
+    {
+      "title": "Do something",
+      "detail": "Spray a tag or finish an activity level. The matching achievement pops right away."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "missions1",
+      "title": "Welcome Back to Stilwater",
+      "description": "Complete 1 mission.",
+      "points": 5,
+      "memaddr": "0xX1453384>=1",
+      "group": "Story"
+    },
+    {
+      "id": "missions5",
+      "title": "Back in Business",
+      "description": "Complete 5 missions.",
+      "points": 10,
+      "memaddr": "0xX1453384>=5",
+      "group": "Story"
+    },
+    {
+      "id": "missions10",
+      "title": "Making Moves",
+      "description": "Complete 10 missions.",
+      "points": 10,
+      "memaddr": "0xX1453384>=10",
+      "group": "Story"
+    },
+    {
+      "id": "missions15",
+      "title": "Rising Saint",
+      "description": "Complete 15 missions.",
+      "points": 10,
+      "memaddr": "0xX1453384>=15",
+      "group": "Story"
+    },
+    {
+      "id": "missions20",
+      "title": "Gang Leader",
+      "description": "Complete 20 missions.",
+      "points": 15,
+      "memaddr": "0xX1453384>=20",
+      "group": "Story"
+    },
+    {
+      "id": "missions25",
+      "title": "Halfway to the Top",
+      "description": "Complete 25 missions.",
+      "points": 15,
+      "memaddr": "0xX1453384>=25",
+      "group": "Story"
+    },
+    {
+      "id": "missions30",
+      "title": "Kingpin",
+      "description": "Complete 30 missions.",
+      "points": 20,
+      "memaddr": "0xX1453384>=30",
+      "group": "Story"
+    },
+    {
+      "id": "missions35",
+      "title": "Running the City",
+      "description": "Complete 35 missions.",
+      "points": 20,
+      "memaddr": "0xX1453384>=35",
+      "group": "Story"
+    },
+    {
+      "id": "missions40",
+      "title": "Boss of Stilwater",
+      "description": "Complete 40 missions.",
+      "points": 30,
+      "memaddr": "0xX1453384>=40",
+      "group": "Story"
+    },
+    {
+      "id": "strongholds1",
+      "title": "Hood Takeover",
+      "description": "Take over 1 stronghold.",
+      "points": 5,
+      "memaddr": "0xX14533c8>=1",
+      "group": "Story"
+    },
+    {
+      "id": "strongholds5",
+      "title": "Turf War",
+      "description": "Take over 5 strongholds.",
+      "points": 10,
+      "memaddr": "0xX14533c8>=5",
+      "group": "Story"
+    },
+    {
+      "id": "strongholds10",
+      "title": "Neighbourhood Watch",
+      "description": "Take over 10 strongholds.",
+      "points": 20,
+      "memaddr": "0xX14533c8>=10",
+      "group": "Story"
+    },
+    {
+      "id": "percent10",
+      "title": "Making Progress",
+      "description": "Reach 10% completion.",
+      "points": 10,
+      "memaddr": "0xX1452c58>=10_0xX1452c58<=100",
+      "group": "Completion"
+    },
+    {
+      "id": "percent25",
+      "title": "A Quarter Done",
+      "description": "Reach 25% completion.",
+      "points": 15,
+      "memaddr": "0xX1452c58>=25_0xX1452c58<=100",
+      "group": "Completion"
+    },
+    {
+      "id": "percent50",
+      "title": "Half the City",
+      "description": "Reach 50% completion.",
+      "points": 20,
+      "memaddr": "0xX1452c58>=50_0xX1452c58<=100",
+      "group": "Completion"
+    },
+    {
+      "id": "percent75",
+      "title": "Almost There",
+      "description": "Reach 75% completion.",
+      "points": 25,
+      "memaddr": "0xX1452c58>=75_0xX1452c58<=100",
+      "group": "Completion"
+    },
+    {
+      "id": "percent100",
+      "title": "One Hundred Percent",
+      "description": "Reach 100% completion.",
+      "points": 50,
+      "memaddr": "0xX1452c58>=100_0xX1452c58<=100",
+      "group": "Completion"
+    },
+    {
+      "id": "tags1",
+      "title": "First Tag",
+      "description": "Find 1 tag.",
+      "points": 5,
+      "memaddr": "0xX14535e8>=1",
+      "group": "Collectibles"
+    },
+    {
+      "id": "tags10",
+      "title": "Street Artist",
+      "description": "Find 10 tags.",
+      "points": 10,
+      "memaddr": "0xX14535e8>=10",
+      "group": "Collectibles"
+    },
+    {
+      "id": "tags25",
+      "title": "Graffiti King",
+      "description": "Find 25 tags.",
+      "points": 15,
+      "memaddr": "0xX14535e8>=25",
+      "group": "Collectibles"
+    },
+    {
+      "id": "tags50",
+      "title": "Painted the Town",
+      "description": "Find 50 tags.",
+      "points": 30,
+      "memaddr": "0xX14535e8>=50",
+      "group": "Collectibles"
+    },
+    {
+      "id": "jumps1",
+      "title": "Airborne",
+      "description": "Complete 1 stunt jump.",
+      "points": 5,
+      "memaddr": "0xX14535a4>=1",
+      "group": "Collectibles"
+    },
+    {
+      "id": "jumps10",
+      "title": "Daredevil",
+      "description": "Complete 10 stunt jumps.",
+      "points": 10,
+      "memaddr": "0xX14535a4>=10",
+      "group": "Collectibles"
+    },
+    {
+      "id": "jumps25",
+      "title": "Evel Saint",
+      "description": "Complete 25 stunt jumps.",
+      "points": 15,
+      "memaddr": "0xX14535a4>=25",
+      "group": "Collectibles"
+    },
+    {
+      "id": "jumps50",
+      "title": "Gravity Optional",
+      "description": "Complete 50 stunt jumps.",
+      "points": 30,
+      "memaddr": "0xX14535a4>=50",
+      "group": "Collectibles"
+    },
+    {
+      "id": "cds1",
+      "title": "Crate Digger",
+      "description": "Find 1 CD.",
+      "points": 5,
+      "memaddr": "0xX2bc7150>=1",
+      "group": "Collectibles"
+    },
+    {
+      "id": "cds10",
+      "title": "Record Collector",
+      "description": "Find 10 CDs.",
+      "points": 10,
+      "memaddr": "0xX2bc7150>=10",
+      "group": "Collectibles"
+    },
+    {
+      "id": "cds25",
+      "title": "Audiophile",
+      "description": "Find 25 CDs.",
+      "points": 20,
+      "memaddr": "0xX2bc7150>=25",
+      "group": "Collectibles"
+    },
+    {
+      "id": "barnstorming1",
+      "title": "Low Flyer",
+      "description": "Complete 1 barnstorming run.",
+      "points": 5,
+      "memaddr": "0xX1453670>=1",
+      "group": "Collectibles"
+    },
+    {
+      "id": "barnstorming5",
+      "title": "Barnstormer",
+      "description": "Complete 5 barnstorming runs.",
+      "points": 10,
+      "memaddr": "0xX1453670>=5",
+      "group": "Collectibles"
+    },
+    {
+      "id": "barnstorming10",
+      "title": "Ace Pilot",
+      "description": "Complete 10 barnstorming runs.",
+      "points": 20,
+      "memaddr": "0xX1453670>=10",
+      "group": "Collectibles"
+    },
+    {
+      "id": "act-chop-shop",
+      "title": "Chop Shop",
+      "description": "Complete a Chop Shop activity.",
+      "points": 10,
+      "memaddr": "0xX14536b4>=1",
+      "group": "Activities"
+    },
+    {
+      "id": "act-crowd-control",
+      "title": "Crowd Control",
+      "description": "Complete a Crowd Control activity.",
+      "points": 10,
+      "memaddr": "0xX14537c4>=1",
+      "group": "Activities"
+    },
+    {
+      "id": "act-demolition-derby",
+      "title": "Demolition Derby",
+      "description": "Complete a Demolition Derby activity.",
+      "points": 10,
+      "memaddr": "0xX1453890>=1",
+      "group": "Activities"
+    },
+    {
+      "id": "act-escort",
+      "title": "Escort",
+      "description": "Complete a Escort activity.",
+      "points": 10,
+      "memaddr": "0xX14539a0>=1",
+      "group": "Activities"
+    },
+    {
+      "id": "act-fight-club",
+      "title": "Fight Club",
+      "description": "Complete a Fight Club activity.",
+      "points": 10,
+      "memaddr": "0xX1453a28>=1",
+      "group": "Activities"
+    },
+    {
+      "id": "act-fuzz",
+      "title": "FUZZ",
+      "description": "Complete a FUZZ activity.",
+      "points": 10,
+      "memaddr": "0xX1453ab0>=1",
+      "group": "Activities"
+    },
+    {
+      "id": "act-heli-assault",
+      "title": "Heli Assault",
+      "description": "Complete a Heli Assault activity.",
+      "points": 10,
+      "memaddr": "0xX1453b38>=1",
+      "group": "Activities"
+    },
+    {
+      "id": "act-hitman",
+      "title": "Hitman",
+      "description": "Complete a Hitman activity.",
+      "points": 10,
+      "memaddr": "0xX14536f8>=1",
+      "group": "Activities"
+    },
+    {
+      "id": "act-insurance-fraud",
+      "title": "Insurance Fraud",
+      "description": "Complete a Insurance Fraud activity.",
+      "points": 10,
+      "memaddr": "0xX1453d14>=1",
+      "group": "Activities"
+    },
+    {
+      "id": "act-mayhem",
+      "title": "Mayhem",
+      "description": "Complete a Mayhem activity.",
+      "points": 10,
+      "memaddr": "0xX1453e68>=1",
+      "group": "Activities"
+    },
+    {
+      "id": "act-racing",
+      "title": "Racing",
+      "description": "Complete a Racing activity.",
+      "points": 10,
+      "memaddr": "0xX1455760>=1",
+      "group": "Activities"
+    },
+    {
+      "id": "act-septic-avenger",
+      "title": "Septic Avenger",
+      "description": "Complete a Septic Avenger activity.",
+      "points": 10,
+      "memaddr": "0xX1453f34>=1",
+      "group": "Activities"
+    },
+    {
+      "id": "act-snatch",
+      "title": "Snatch",
+      "description": "Complete a Snatch activity.",
+      "points": 10,
+      "memaddr": "0xX1454000>=1",
+      "group": "Activities"
+    },
+    {
+      "id": "act-trafficking",
+      "title": "Trafficking",
+      "description": "Complete a Trafficking activity.",
+      "points": 10,
+      "memaddr": "0xX1453918>=1",
+      "group": "Activities"
+    },
+    {
+      "id": "act-trail-blazing",
+      "title": "Trail Blazing",
+      "description": "Complete a Trail Blazing activity.",
+      "points": 10,
+      "memaddr": "0xX1453c04>=1",
+      "group": "Activities"
+    },
+    {
+      "id": "act-all",
+      "title": "Jack of All Trades",
+      "description": "Complete at least one of every activity.",
+      "points": 50,
+      "memaddr": "0xX14536b4>=1_0xX14537c4>=1_0xX1453890>=1_0xX14539a0>=1_0xX1453a28>=1_0xX1453ab0>=1_0xX1453b38>=1_0xX14536f8>=1_0xX1453d14>=1_0xX1453e68>=1_0xX1455760>=1_0xX1453f34>=1_0xX1454000>=1_0xX1453918>=1_0xX1453c04>=1",
+      "group": "Activities"
+    },
+    {
+      "id": "act3-chop-shop",
+      "title": "Grease Monkey",
+      "description": "Beat 3 levels of Chop Shop.",
+      "points": 15,
+      "memaddr": "0xX14536b4>=3",
+      "group": "Activities"
+    },
+    {
+      "id": "act3-crowd-control",
+      "title": "Bodyguard",
+      "description": "Beat 3 levels of Crowd Control.",
+      "points": 15,
+      "memaddr": "0xX14537c4>=3",
+      "group": "Activities"
+    },
+    {
+      "id": "act3-demolition-derby",
+      "title": "Smash Hit",
+      "description": "Beat 3 levels of Demolition Derby.",
+      "points": 15,
+      "memaddr": "0xX1453890>=3",
+      "group": "Activities"
+    },
+    {
+      "id": "act3-escort",
+      "title": "Smooth Operator",
+      "description": "Beat 3 levels of Escort.",
+      "points": 15,
+      "memaddr": "0xX14539a0>=3",
+      "group": "Activities"
+    },
+    {
+      "id": "act3-fight-club",
+      "title": "Bare Knuckles",
+      "description": "Beat 3 levels of Fight Club.",
+      "points": 15,
+      "memaddr": "0xX1453a28>=3",
+      "group": "Activities"
+    },
+    {
+      "id": "act3-fuzz",
+      "title": "Reality TV Star",
+      "description": "Beat 3 levels of FUZZ.",
+      "points": 15,
+      "memaddr": "0xX1453ab0>=3",
+      "group": "Activities"
+    },
+    {
+      "id": "act3-heli-assault",
+      "title": "Gunship",
+      "description": "Beat 3 levels of Heli Assault.",
+      "points": 15,
+      "memaddr": "0xX1453b38>=3",
+      "group": "Activities"
+    },
+    {
+      "id": "act3-hitman",
+      "title": "Contract Killer",
+      "description": "Beat 3 levels of Hitman.",
+      "points": 15,
+      "memaddr": "0xX14536f8>=3",
+      "group": "Activities"
+    },
+    {
+      "id": "act3-insurance-fraud",
+      "title": "Bruised and Paid",
+      "description": "Beat 3 levels of Insurance Fraud.",
+      "points": 15,
+      "memaddr": "0xX1453d14>=3",
+      "group": "Activities"
+    },
+    {
+      "id": "act3-mayhem",
+      "title": "Agent of Chaos",
+      "description": "Beat 3 levels of Mayhem.",
+      "points": 15,
+      "memaddr": "0xX1453e68>=3",
+      "group": "Activities"
+    },
+    {
+      "id": "act3-racing",
+      "title": "Street Racer",
+      "description": "Beat 3 levels of Racing.",
+      "points": 15,
+      "memaddr": "0xX1455760>=3",
+      "group": "Activities"
+    },
+    {
+      "id": "act3-septic-avenger",
+      "title": "Smell of Success",
+      "description": "Beat 3 levels of Septic Avenger.",
+      "points": 15,
+      "memaddr": "0xX1453f34>=3",
+      "group": "Activities"
+    },
+    {
+      "id": "act3-snatch",
+      "title": "Snatcher",
+      "description": "Beat 3 levels of Snatch.",
+      "points": 15,
+      "memaddr": "0xX1454000>=3",
+      "group": "Activities"
+    },
+    {
+      "id": "act3-trafficking",
+      "title": "Delivery Service",
+      "description": "Beat 3 levels of Trafficking.",
+      "points": 15,
+      "memaddr": "0xX1453918>=3",
+      "group": "Activities"
+    },
+    {
+      "id": "act3-trail-blazing",
+      "title": "On Fire",
+      "description": "Beat 3 levels of Trail Blazing.",
+      "points": 15,
+      "memaddr": "0xX1453c04>=3",
+      "group": "Activities"
+    },
+    {
+      "id": "act3-all",
+      "title": "Well Rounded",
+      "description": "Beat 3 levels of every activity.",
+      "points": 75,
+      "memaddr": "0xX14536b4>=3_0xX14537c4>=3_0xX1453890>=3_0xX14539a0>=3_0xX1453a28>=3_0xX1453ab0>=3_0xX1453b38>=3_0xX14536f8>=3_0xX1453d14>=3_0xX1453e68>=3_0xX1455760>=3_0xX1453f34>=3_0xX1454000>=3_0xX1453918>=3_0xX1453c04>=3",
+      "group": "Activities"
+    },
+    {
+      "id": "cds40",
+      "title": "Vinyl Junkie",
+      "description": "Find 40 CDs.",
+      "points": 25,
+      "memaddr": "0xX2bc7150>=40",
+      "group": "Collectibles"
+    },
+    {
+      "id": "barnstorming15",
+      "title": "Top Gun",
+      "description": "Complete 15 barnstorming runs.",
+      "points": 25,
+      "memaddr": "0xX1453670>=15",
+      "group": "Collectibles"
+    },
+    {
+      "id": "percent90",
+      "title": "So Close",
+      "description": "Reach 90% completion.",
+      "points": 35,
+      "memaddr": "0xX1452c58>=90_0xX1452c58<=100",
+      "group": "Completion"
+    }
+  ]
+}

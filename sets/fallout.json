@@ -1,0 +1,810 @@
+{
+ "id": "fallout",
+ "title": "Fallout",
+ "version": 1,
+ "kind": "replay",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [],
+ "linkFiles": [
+  "FALLOUTW.EXE",
+  "MASTER.DAT"
+ ],
+ "exeNames": [],
+ "md5": [],
+ "notes": [
+  "Vault reads your save files (DATA\\SAVEGAME) and never touches the game. Achievements pop when you save.",
+  "Quests count as done when the Pip-Boy crosses them off.",
+  "Every save slot counts, so old saves you already have unlock what they show."
+ ],
+ "testGuide": [
+  {
+   "title": "Leave the Vault and save",
+   "detail": "Start a game, walk out of Vault 13 and save in any slot. \"Out of the Vault\" should pop up."
+  },
+  {
+   "title": "Check the numbers",
+   "detail": "\"Last saved\" should show your character's name and \"Days in the wasteland\" the in-game day."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "leave-vault",
+   "title": "Out of the Vault",
+   "description": "Step out of Vault 13 into the wasteland.",
+   "points": 5,
+   "group": "Main story",
+   "rule": {
+    "map": [
+     "DESERT1",
+     "DESERT2",
+     "DESERT3",
+     "SHADYE",
+     "SHADYW",
+     "VAULTENT",
+     "VAULTBUR",
+     "CAVES",
+     "RAIDERS",
+     "JUNKENT"
+    ]
+   }
+  },
+  {
+   "id": "water-chip",
+   "title": "Water Chip",
+   "description": "Find the Water Chip.",
+   "points": 25,
+   "group": "Main story",
+   "rule": {
+    "gvar": 101,
+    "min": 2
+   }
+  },
+  {
+   "id": "water-chip-fast",
+   "title": "Plenty of Time",
+   "description": "Find the Water Chip, and save, within your first 100 days.",
+   "points": 25,
+   "group": "Main story",
+   "rule": {
+    "gvar": 101,
+    "min": 2,
+    "byDay": 100
+   }
+  },
+  {
+   "id": "master",
+   "title": "Destroy the Mutant Leader",
+   "description": "Destroy the Master in the Cathedral.",
+   "points": 40,
+   "group": "Main story",
+   "rule": {
+    "gvar": 309,
+    "min": 2
+   }
+  },
+  {
+   "id": "vats",
+   "title": "Destroy the Source",
+   "description": "Destroy the Military Base where the mutants are made.",
+   "points": 40,
+   "group": "Main story",
+   "rule": {
+    "gvar": 308,
+    "min": 2
+   }
+  },
+  {
+   "id": "master-dead",
+   "title": "The Master Is Dead",
+   "description": "Kill the Master.",
+   "points": 30,
+   "group": "Main story",
+   "rule": {
+    "gvar": 53,
+    "min": 1
+   }
+  },
+  {
+   "id": "vats-blown",
+   "title": "Vats Blown",
+   "description": "Blow up the vats at Mariposa.",
+   "points": 30,
+   "group": "Main story",
+   "rule": {
+    "gvar": 17,
+    "min": 1
+   }
+  },
+  {
+   "id": "saviour",
+   "title": "Saviour of the Wasteland",
+   "description": "Stop both the Master and the vats.",
+   "points": 75,
+   "group": "Main story",
+   "rule": {
+    "all": [
+     {
+      "gvar": 53,
+      "min": 1
+     },
+     {
+      "gvar": 17,
+      "min": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "quest-vault-238",
+   "title": "Calm the Rebels",
+   "description": "Calm the rebel faction in Vault 13.",
+   "points": 15,
+   "group": "Quests: Vault 13",
+   "rule": {
+    "gvar": 238,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-vault-188",
+   "title": "Water Thief",
+   "description": "Find the water thief in Vault 13.",
+   "points": 15,
+   "group": "Quests: Vault 13",
+   "rule": {
+    "gvar": 188,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-shady-239",
+   "title": "Cure Jarvis",
+   "description": "Cure Jarvis of radscorpion poison.",
+   "points": 15,
+   "group": "Quests: Shady Sands",
+   "rule": {
+    "gvar": 239,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-shady-240",
+   "title": "Antidote",
+   "description": "Make the radscorpion poison antidote.",
+   "points": 15,
+   "group": "Quests: Shady Sands",
+   "rule": {
+    "gvar": 240,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-shady-103",
+   "title": "Rescue Tandi",
+   "description": "Rescue Tandi from the Khans.",
+   "points": 15,
+   "group": "Quests: Shady Sands",
+   "rule": {
+    "gvar": 103,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-shady-43",
+   "title": "Stop the Radscorpions",
+   "description": "Deal with the radscorpions threatening Shady Sands.",
+   "points": 15,
+   "group": "Quests: Shady Sands",
+   "rule": {
+    "gvar": 43,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-junk-144",
+   "title": "Help Saul",
+   "description": "Help Saul in Junktown.",
+   "points": 15,
+   "group": "Quests: Junktown",
+   "rule": {
+    "gvar": 144,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-junk-105",
+   "title": "Kill Killian",
+   "description": "Take the job to kill Killian Darkwater.",
+   "points": 15,
+   "group": "Quests: Junktown",
+   "rule": {
+    "gvar": 105,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-junk-143",
+   "title": "Rescue Sinthia",
+   "description": "Rescue Sinthia in Junktown.",
+   "points": 15,
+   "group": "Quests: Junktown",
+   "rule": {
+    "gvar": 143,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-junk-145",
+   "title": "Save Trish",
+   "description": "Save Trish in Junktown.",
+   "points": 15,
+   "group": "Quests: Junktown",
+   "rule": {
+    "gvar": 145,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-junk-104",
+   "title": "Stop Gizmo",
+   "description": "Stop Gizmo.",
+   "points": 15,
+   "group": "Quests: Junktown",
+   "rule": {
+    "gvar": 104,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-junk-555",
+   "title": "Bust the Skulz",
+   "description": "Help Lars bust the Skulz gang.",
+   "points": 15,
+   "group": "Quests: Junktown",
+   "rule": {
+    "gvar": 555,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-necro-29",
+   "title": "Clear the Watershed",
+   "description": "Destroy the Super Mutants at the Watershed.",
+   "points": 15,
+   "group": "Quests: Necropolis",
+   "rule": {
+    "gvar": 29,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-necro-31",
+   "title": "Fix the Pump",
+   "description": "Fix the Necropolis water pump.",
+   "points": 15,
+   "group": "Quests: Necropolis",
+   "rule": {
+    "gvar": 31,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-hub-100",
+   "title": "Deathclaw",
+   "description": "Destroy the Deathclaw in the Hub's old town.",
+   "points": 15,
+   "group": "Quests: The Hub",
+   "rule": {
+    "gvar": 100,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-hub-112",
+   "title": "Dispose of Jain",
+   "description": "Dispose of Jain.",
+   "points": 15,
+   "group": "Quests: The Hub",
+   "rule": {
+    "gvar": 112,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-hub-111",
+   "title": "Dispose of the Merchant",
+   "description": "Dispose of the merchant.",
+   "points": 15,
+   "group": "Quests: The Hub",
+   "rule": {
+    "gvar": 111,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-hub-106",
+   "title": "Missing Caravans",
+   "description": "Find out what happened to the missing caravans.",
+   "points": 15,
+   "group": "Quests: The Hub",
+   "rule": {
+    "gvar": 106,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-hub-107",
+   "title": "The Necklace",
+   "description": "Steal the necklace from the merchants.",
+   "points": 15,
+   "group": "Quests: The Hub",
+   "rule": {
+    "gvar": 107,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-bos-108",
+   "title": "Initiate",
+   "description": "Become an Initiate of the Brotherhood of Steel.",
+   "points": 15,
+   "group": "Quests: Brotherhood",
+   "rule": {
+    "gvar": 108,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-bos-109",
+   "title": "Lost Initiate",
+   "description": "Rescue the captured Initiate from the Hub.",
+   "points": 15,
+   "group": "Quests: Brotherhood",
+   "rule": {
+    "gvar": 109,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-glow-140",
+   "title": "Glow Security",
+   "description": "Disarm the traps for the Glow facility.",
+   "points": 15,
+   "group": "Quests: The Glow",
+   "rule": {
+    "gvar": 140,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-glow-139",
+   "title": "Power Restored",
+   "description": "Turn on the power in the Glow.",
+   "points": 15,
+   "group": "Quests: The Glow",
+   "rule": {
+    "gvar": 139,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-bone-135",
+   "title": "Blade",
+   "description": "Become a Blade.",
+   "points": 15,
+   "group": "Quests: Boneyard",
+   "rule": {
+    "gvar": 135,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-bone-127",
+   "title": "Romeo and Juliet",
+   "description": "Deliver the locket for Romeo.",
+   "points": 15,
+   "group": "Quests: Boneyard",
+   "rule": {
+    "gvar": 127,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-bone-129",
+   "title": "Special Delivery",
+   "description": "Deliver the package for the Gun Runners.",
+   "points": 15,
+   "group": "Quests: Boneyard",
+   "rule": {
+    "gvar": 129,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-bone-133",
+   "title": "The Spy",
+   "description": "Find the Children's spy among the Followers.",
+   "points": 15,
+   "group": "Quests: Boneyard",
+   "rule": {
+    "gvar": 133,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-bone-138",
+   "title": "Green Thumb",
+   "description": "Fix the hydroponic farms in Adytum.",
+   "points": 15,
+   "group": "Quests: Boneyard",
+   "rule": {
+    "gvar": 138,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-bone-130",
+   "title": "Find Jason",
+   "description": "Rescue Jason Zimmerman.",
+   "points": 15,
+   "group": "Quests: Boneyard",
+   "rule": {
+    "gvar": 130,
+    "min": 2
+   }
+  },
+  {
+   "id": "quest-bone-128",
+   "title": "Gang War",
+   "description": "Stop the gangs from attacking Adytum.",
+   "points": 15,
+   "group": "Quests: Boneyard",
+   "rule": {
+    "gvar": 128,
+    "min": 2
+   }
+  },
+  {
+   "id": "place-shady-sands",
+   "title": "Shady Sands",
+   "description": "Reach the farming town of Shady Sands.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": "SHADYE"
+   }
+  },
+  {
+   "id": "place-vault-15",
+   "title": "Vault 15",
+   "description": "Find Vault 15.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": "VAULTENT"
+   }
+  },
+  {
+   "id": "place-khans",
+   "title": "The Khans' Camp",
+   "description": "Find the Khans' raider camp.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": "RAIDERS"
+   }
+  },
+  {
+   "id": "place-junktown",
+   "title": "Junktown",
+   "description": "Reach Junktown.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": "JUNKENT"
+   }
+  },
+  {
+   "id": "place-hub",
+   "title": "The Hub",
+   "description": "Reach the Hub.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": "HUBENT"
+   }
+  },
+  {
+   "id": "place-necropolis",
+   "title": "Necropolis",
+   "description": "Reach Necropolis, city of the dead.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": "HALLDED"
+   }
+  },
+  {
+   "id": "place-brotherhood",
+   "title": "Lost Hills",
+   "description": "Find the Brotherhood of Steel's bunker.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": "BROHDENT"
+   }
+  },
+  {
+   "id": "place-boneyard",
+   "title": "The Boneyard",
+   "description": "Reach the Boneyard.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": "LAADYTUM"
+   }
+  },
+  {
+   "id": "place-glow",
+   "title": "The Glow",
+   "description": "Reach the Glow.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": "GLOWENT"
+   }
+  },
+  {
+   "id": "place-mariposa",
+   "title": "Mariposa",
+   "description": "Find the Mariposa military base.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": "MBENT"
+   }
+  },
+  {
+   "id": "place-cathedral",
+   "title": "Cathedral",
+   "description": "Reach the Cathedral of the Children.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": "CHILDRN1"
+   }
+  },
+  {
+   "id": "place-masters-lair",
+   "title": "The Vault Below",
+   "description": "Get down into the Master's lair.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": "MSTRLR12"
+   }
+  },
+  {
+   "id": "place-lair",
+   "title": "Into the Lair",
+   "description": "Find the deathclaw lair in the Boneyard.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": "DETHCLAW"
+   }
+  },
+  {
+   "id": "place-brotherhood-deep",
+   "title": "Deeper in Lost Hills",
+   "description": "Reach the lower levels of the Brotherhood bunker.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": "BRODEAD"
+   }
+  },
+  {
+   "id": "places-20",
+   "title": "Wanderer",
+   "description": "Visit 20 different places.",
+   "points": 15,
+   "group": "Places",
+   "rule": {
+    "maps": 20
+   }
+  },
+  {
+   "id": "places-40",
+   "title": "Cartographer",
+   "description": "Visit 40 different places.",
+   "points": 35,
+   "group": "Places",
+   "rule": {
+    "maps": 40
+   }
+  },
+  {
+   "id": "tardis",
+   "title": "Bigger on the Inside",
+   "description": "Stumble on the blue police box in the desert.",
+   "points": 25,
+   "group": "Special encounters",
+   "rule": {
+    "map": "TARDIS"
+   }
+  },
+  {
+   "id": "footprint",
+   "title": "Something Big Passed Here",
+   "description": "Find the giant footprint.",
+   "points": 25,
+   "group": "Special encounters",
+   "rule": {
+    "map": "FOOT"
+   }
+  },
+  {
+   "id": "shuttle",
+   "title": "Crash Site",
+   "description": "Find the crashed shuttle in the desert.",
+   "points": 25,
+   "group": "Special encounters",
+   "rule": {
+    "map": "FSAUSER"
+   }
+  },
+  {
+   "id": "kills-35-10",
+   "title": "Mutant Hunter",
+   "description": "Kill 10 Super Mutants.",
+   "points": 10,
+   "group": "Deeds",
+   "rule": {
+    "gvar": 35,
+    "min": 10,
+    "count": true
+   }
+  },
+  {
+   "id": "kills-35-50",
+   "title": "Mutant Bane",
+   "description": "Kill 50 Super Mutants.",
+   "points": 20,
+   "group": "Deeds",
+   "rule": {
+    "gvar": 35,
+    "min": 50,
+    "count": true
+   }
+  },
+  {
+   "id": "kills-35-150",
+   "title": "Cleanse the Wasteland",
+   "description": "Kill 150 Super Mutants.",
+   "points": 35,
+   "group": "Deeds",
+   "rule": {
+    "gvar": 35,
+    "min": 150,
+    "count": true
+   }
+  },
+  {
+   "id": "kills-34-25",
+   "title": "Hardened",
+   "description": "Kill 25 people.",
+   "points": 10,
+   "group": "Deeds",
+   "rule": {
+    "gvar": 34,
+    "min": 25,
+    "count": true
+   }
+  },
+  {
+   "id": "kills-34-100",
+   "title": "Wasteland Terror",
+   "description": "Kill 100 people.",
+   "points": 20,
+   "group": "Deeds",
+   "rule": {
+    "gvar": 34,
+    "min": 100,
+    "count": true
+   }
+  },
+  {
+   "id": "kills-33-50",
+   "title": "Hunter",
+   "description": "Kill 50 animals.",
+   "points": 10,
+   "group": "Deeds",
+   "rule": {
+    "gvar": 33,
+    "min": 50,
+    "count": true
+   }
+  },
+  {
+   "id": "kills-33-200",
+   "title": "Big Game Hunter",
+   "description": "Kill 200 animals.",
+   "points": 20,
+   "group": "Deeds",
+   "rule": {
+    "gvar": 33,
+    "min": 200,
+    "count": true
+   }
+  },
+  {
+   "id": "champion",
+   "title": "Champion",
+   "description": "Earn the Champion reputation.",
+   "points": 25,
+   "group": "Deeds",
+   "rule": {
+    "gvar": 157,
+    "min": 1
+   }
+  },
+  {
+   "id": "berserker",
+   "title": "Berserker",
+   "description": "Earn the Berserker reputation.",
+   "points": 15,
+   "group": "Deeds",
+   "rule": {
+    "gvar": 156,
+    "min": 1
+   }
+  },
+  {
+   "id": "karma-100",
+   "title": "Good Karma",
+   "description": "Reach 100 karma.",
+   "points": 15,
+   "group": "Deeds",
+   "rule": {
+    "gvar": 155,
+    "min": 100,
+    "count": true
+   }
+  },
+  {
+   "id": "karma-500",
+   "title": "Paragon of the Wastes",
+   "description": "Reach 500 karma.",
+   "points": 30,
+   "group": "Deeds",
+   "rule": {
+    "gvar": 155,
+    "min": 500,
+    "count": true
+   }
+  },
+  {
+   "id": "days-30",
+   "title": "A Month Outside",
+   "description": "Spend 30 days in the wasteland.",
+   "points": 5,
+   "group": "Deeds",
+   "rule": {
+    "days": 30
+   }
+  },
+  {
+   "id": "days-365",
+   "title": "A Year in the Wastes",
+   "description": "Spend a whole year in the wasteland.",
+   "points": 20,
+   "group": "Deeds",
+   "rule": {
+    "days": 365
+   }
+  }
+ ]
+}

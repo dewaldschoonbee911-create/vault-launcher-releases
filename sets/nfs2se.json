@@ -1,0 +1,653 @@
+{
+  "id": "nfs2se",
+  "title": "Need for Speed II: Special Edition",
+  "version": 1,
+  "kind": "replay",
+  "authors": [
+    "Vault Launcher"
+  ],
+  "storeIds": [],
+  "linkFiles": [
+    "FeData/pc/config/config.dat",
+    "GameData/Sim/CarData/PF355.DAT"
+  ],
+  "exeNames": [
+    "nfs2sea.exe",
+    "nfs2sen.exe"
+  ],
+  "md5": [],
+  "notes": [
+    "Vault reads the game's record tables (FeData\\pc\\stats) and never touches the game.",
+    "A record counts as yours when it carries your driver name from the game's options. Records you already hold count too."
+  ],
+  "testGuide": [
+    {
+      "title": "Set a record",
+      "detail": "Race any track and finish with a time good enough for its top 10. The track's \"On the Board\" achievement should pop."
+    },
+    {
+      "title": "Check the numbers",
+      "detail": "\"Your driver names\" should show the name you race under."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "oval-record",
+      "title": "Pioneer Testing Facility: On the Board",
+      "description": "Set any record on Pioneer Testing Facility.",
+      "points": 10,
+      "group": "Pioneer Testing Facility",
+      "rule": {
+        "track": "OVAL",
+        "kind": "any"
+      }
+    },
+    {
+      "id": "oval-lap",
+      "title": "Pioneer Testing Facility: Fastest Lap",
+      "description": "Hold the best lap record on Pioneer Testing Facility.",
+      "points": 15,
+      "group": "Pioneer Testing Facility",
+      "rule": {
+        "track": "OVAL",
+        "kind": "lap"
+      }
+    },
+    {
+      "id": "oval-first2",
+      "title": "Pioneer Testing Facility: 2-Lap Champion",
+      "description": "Hold the number one time for 2-lap races on Pioneer Testing Facility.",
+      "points": 10,
+      "group": "Pioneer Testing Facility",
+      "rule": {
+        "track": "OVAL",
+        "kind": "first2"
+      }
+    },
+    {
+      "id": "oval-first4",
+      "title": "Pioneer Testing Facility: 4-Lap Champion",
+      "description": "Hold the number one time for 4-lap races on Pioneer Testing Facility.",
+      "points": 10,
+      "group": "Pioneer Testing Facility",
+      "rule": {
+        "track": "OVAL",
+        "kind": "first4"
+      }
+    },
+    {
+      "id": "oval-first8",
+      "title": "Pioneer Testing Facility: 8-Lap Champion",
+      "description": "Hold the number one time for 8-lap races on Pioneer Testing Facility.",
+      "points": 10,
+      "group": "Pioneer Testing Facility",
+      "rule": {
+        "track": "OVAL",
+        "kind": "first8"
+      }
+    },
+    {
+      "id": "oval-sweep",
+      "title": "Pioneer Testing Facility: Clean Sweep",
+      "description": "Hold the number one time for 2, 4 and 8 lap races on Pioneer Testing Facility.",
+      "points": 25,
+      "group": "Pioneer Testing Facility",
+      "rule": {
+        "track": "OVAL",
+        "kind": "first-all"
+      }
+    },
+    {
+      "id": "oz-record",
+      "title": "Outback: On the Board",
+      "description": "Set any record on Outback.",
+      "points": 10,
+      "group": "Outback",
+      "rule": {
+        "track": "OZ",
+        "kind": "any"
+      }
+    },
+    {
+      "id": "oz-lap",
+      "title": "Outback: Fastest Lap",
+      "description": "Hold the best lap record on Outback.",
+      "points": 15,
+      "group": "Outback",
+      "rule": {
+        "track": "OZ",
+        "kind": "lap"
+      }
+    },
+    {
+      "id": "oz-first2",
+      "title": "Outback: 2-Lap Champion",
+      "description": "Hold the number one time for 2-lap races on Outback.",
+      "points": 10,
+      "group": "Outback",
+      "rule": {
+        "track": "OZ",
+        "kind": "first2"
+      }
+    },
+    {
+      "id": "oz-first4",
+      "title": "Outback: 4-Lap Champion",
+      "description": "Hold the number one time for 4-lap races on Outback.",
+      "points": 10,
+      "group": "Outback",
+      "rule": {
+        "track": "OZ",
+        "kind": "first4"
+      }
+    },
+    {
+      "id": "oz-first8",
+      "title": "Outback: 8-Lap Champion",
+      "description": "Hold the number one time for 8-lap races on Outback.",
+      "points": 10,
+      "group": "Outback",
+      "rule": {
+        "track": "OZ",
+        "kind": "first8"
+      }
+    },
+    {
+      "id": "oz-sweep",
+      "title": "Outback: Clean Sweep",
+      "description": "Hold the number one time for 2, 4 and 8 lap races on Outback.",
+      "points": 25,
+      "group": "Outback",
+      "rule": {
+        "track": "OZ",
+        "kind": "first-all"
+      }
+    },
+    {
+      "id": "nort-record",
+      "title": "North Country: On the Board",
+      "description": "Set any record on North Country.",
+      "points": 10,
+      "group": "North Country",
+      "rule": {
+        "track": "NORT",
+        "kind": "any"
+      }
+    },
+    {
+      "id": "nort-lap",
+      "title": "North Country: Fastest Lap",
+      "description": "Hold the best lap record on North Country.",
+      "points": 15,
+      "group": "North Country",
+      "rule": {
+        "track": "NORT",
+        "kind": "lap"
+      }
+    },
+    {
+      "id": "nort-first2",
+      "title": "North Country: 2-Lap Champion",
+      "description": "Hold the number one time for 2-lap races on North Country.",
+      "points": 10,
+      "group": "North Country",
+      "rule": {
+        "track": "NORT",
+        "kind": "first2"
+      }
+    },
+    {
+      "id": "nort-first4",
+      "title": "North Country: 4-Lap Champion",
+      "description": "Hold the number one time for 4-lap races on North Country.",
+      "points": 10,
+      "group": "North Country",
+      "rule": {
+        "track": "NORT",
+        "kind": "first4"
+      }
+    },
+    {
+      "id": "nort-first8",
+      "title": "North Country: 8-Lap Champion",
+      "description": "Hold the number one time for 8-lap races on North Country.",
+      "points": 10,
+      "group": "North Country",
+      "rule": {
+        "track": "NORT",
+        "kind": "first8"
+      }
+    },
+    {
+      "id": "nort-sweep",
+      "title": "North Country: Clean Sweep",
+      "description": "Hold the number one time for 2, 4 and 8 lap races on North Country.",
+      "points": 25,
+      "group": "North Country",
+      "rule": {
+        "track": "NORT",
+        "kind": "first-all"
+      }
+    },
+    {
+      "id": "pac-record",
+      "title": "Pacific Spirit: On the Board",
+      "description": "Set any record on Pacific Spirit.",
+      "points": 10,
+      "group": "Pacific Spirit",
+      "rule": {
+        "track": "PAC",
+        "kind": "any"
+      }
+    },
+    {
+      "id": "pac-lap",
+      "title": "Pacific Spirit: Fastest Lap",
+      "description": "Hold the best lap record on Pacific Spirit.",
+      "points": 15,
+      "group": "Pacific Spirit",
+      "rule": {
+        "track": "PAC",
+        "kind": "lap"
+      }
+    },
+    {
+      "id": "pac-first2",
+      "title": "Pacific Spirit: 2-Lap Champion",
+      "description": "Hold the number one time for 2-lap races on Pacific Spirit.",
+      "points": 10,
+      "group": "Pacific Spirit",
+      "rule": {
+        "track": "PAC",
+        "kind": "first2"
+      }
+    },
+    {
+      "id": "pac-first4",
+      "title": "Pacific Spirit: 4-Lap Champion",
+      "description": "Hold the number one time for 4-lap races on Pacific Spirit.",
+      "points": 10,
+      "group": "Pacific Spirit",
+      "rule": {
+        "track": "PAC",
+        "kind": "first4"
+      }
+    },
+    {
+      "id": "pac-first8",
+      "title": "Pacific Spirit: 8-Lap Champion",
+      "description": "Hold the number one time for 8-lap races on Pacific Spirit.",
+      "points": 10,
+      "group": "Pacific Spirit",
+      "rule": {
+        "track": "PAC",
+        "kind": "first8"
+      }
+    },
+    {
+      "id": "pac-sweep",
+      "title": "Pacific Spirit: Clean Sweep",
+      "description": "Hold the number one time for 2, 4 and 8 lap races on Pacific Spirit.",
+      "points": 25,
+      "group": "Pacific Spirit",
+      "rule": {
+        "track": "PAC",
+        "kind": "first-all"
+      }
+    },
+    {
+      "id": "med-record",
+      "title": "Mediterraneo: On the Board",
+      "description": "Set any record on Mediterraneo.",
+      "points": 10,
+      "group": "Mediterraneo",
+      "rule": {
+        "track": "MED",
+        "kind": "any"
+      }
+    },
+    {
+      "id": "med-lap",
+      "title": "Mediterraneo: Fastest Lap",
+      "description": "Hold the best lap record on Mediterraneo.",
+      "points": 15,
+      "group": "Mediterraneo",
+      "rule": {
+        "track": "MED",
+        "kind": "lap"
+      }
+    },
+    {
+      "id": "med-first2",
+      "title": "Mediterraneo: 2-Lap Champion",
+      "description": "Hold the number one time for 2-lap races on Mediterraneo.",
+      "points": 10,
+      "group": "Mediterraneo",
+      "rule": {
+        "track": "MED",
+        "kind": "first2"
+      }
+    },
+    {
+      "id": "med-first4",
+      "title": "Mediterraneo: 4-Lap Champion",
+      "description": "Hold the number one time for 4-lap races on Mediterraneo.",
+      "points": 10,
+      "group": "Mediterraneo",
+      "rule": {
+        "track": "MED",
+        "kind": "first4"
+      }
+    },
+    {
+      "id": "med-first8",
+      "title": "Mediterraneo: 8-Lap Champion",
+      "description": "Hold the number one time for 8-lap races on Mediterraneo.",
+      "points": 10,
+      "group": "Mediterraneo",
+      "rule": {
+        "track": "MED",
+        "kind": "first8"
+      }
+    },
+    {
+      "id": "med-sweep",
+      "title": "Mediterraneo: Clean Sweep",
+      "description": "Hold the number one time for 2, 4 and 8 lap races on Mediterraneo.",
+      "points": 25,
+      "group": "Mediterraneo",
+      "rule": {
+        "track": "MED",
+        "kind": "first-all"
+      }
+    },
+    {
+      "id": "last-record",
+      "title": "Last Resort: On the Board",
+      "description": "Set any record on Last Resort.",
+      "points": 10,
+      "group": "Last Resort",
+      "rule": {
+        "track": "LAST",
+        "kind": "any"
+      }
+    },
+    {
+      "id": "last-lap",
+      "title": "Last Resort: Fastest Lap",
+      "description": "Hold the best lap record on Last Resort.",
+      "points": 15,
+      "group": "Last Resort",
+      "rule": {
+        "track": "LAST",
+        "kind": "lap"
+      }
+    },
+    {
+      "id": "last-first2",
+      "title": "Last Resort: 2-Lap Champion",
+      "description": "Hold the number one time for 2-lap races on Last Resort.",
+      "points": 10,
+      "group": "Last Resort",
+      "rule": {
+        "track": "LAST",
+        "kind": "first2"
+      }
+    },
+    {
+      "id": "last-first4",
+      "title": "Last Resort: 4-Lap Champion",
+      "description": "Hold the number one time for 4-lap races on Last Resort.",
+      "points": 10,
+      "group": "Last Resort",
+      "rule": {
+        "track": "LAST",
+        "kind": "first4"
+      }
+    },
+    {
+      "id": "last-first8",
+      "title": "Last Resort: 8-Lap Champion",
+      "description": "Hold the number one time for 8-lap races on Last Resort.",
+      "points": 10,
+      "group": "Last Resort",
+      "rule": {
+        "track": "LAST",
+        "kind": "first8"
+      }
+    },
+    {
+      "id": "last-sweep",
+      "title": "Last Resort: Clean Sweep",
+      "description": "Hold the number one time for 2, 4 and 8 lap races on Last Resort.",
+      "points": 25,
+      "group": "Last Resort",
+      "rule": {
+        "track": "LAST",
+        "kind": "first-all"
+      }
+    },
+    {
+      "id": "mono-record",
+      "title": "Monolithic Studios: On the Board",
+      "description": "Set any record on Monolithic Studios.",
+      "points": 10,
+      "group": "Monolithic Studios",
+      "rule": {
+        "track": "MONO",
+        "kind": "any"
+      }
+    },
+    {
+      "id": "mono-lap",
+      "title": "Monolithic Studios: Fastest Lap",
+      "description": "Hold the best lap record on Monolithic Studios.",
+      "points": 15,
+      "group": "Monolithic Studios",
+      "rule": {
+        "track": "MONO",
+        "kind": "lap"
+      }
+    },
+    {
+      "id": "mono-first2",
+      "title": "Monolithic Studios: 2-Lap Champion",
+      "description": "Hold the number one time for 2-lap races on Monolithic Studios.",
+      "points": 10,
+      "group": "Monolithic Studios",
+      "rule": {
+        "track": "MONO",
+        "kind": "first2"
+      }
+    },
+    {
+      "id": "mono-first4",
+      "title": "Monolithic Studios: 4-Lap Champion",
+      "description": "Hold the number one time for 4-lap races on Monolithic Studios.",
+      "points": 10,
+      "group": "Monolithic Studios",
+      "rule": {
+        "track": "MONO",
+        "kind": "first4"
+      }
+    },
+    {
+      "id": "mono-first8",
+      "title": "Monolithic Studios: 8-Lap Champion",
+      "description": "Hold the number one time for 8-lap races on Monolithic Studios.",
+      "points": 10,
+      "group": "Monolithic Studios",
+      "rule": {
+        "track": "MONO",
+        "kind": "first8"
+      }
+    },
+    {
+      "id": "mono-sweep",
+      "title": "Monolithic Studios: Clean Sweep",
+      "description": "Hold the number one time for 2, 4 and 8 lap races on Monolithic Studios.",
+      "points": 25,
+      "group": "Monolithic Studios",
+      "rule": {
+        "track": "MONO",
+        "kind": "first-all"
+      }
+    },
+    {
+      "id": "myst-record",
+      "title": "Mystic Peaks: On the Board",
+      "description": "Set any record on Mystic Peaks.",
+      "points": 10,
+      "group": "Mystic Peaks",
+      "rule": {
+        "track": "MYST",
+        "kind": "any"
+      }
+    },
+    {
+      "id": "myst-lap",
+      "title": "Mystic Peaks: Fastest Lap",
+      "description": "Hold the best lap record on Mystic Peaks.",
+      "points": 15,
+      "group": "Mystic Peaks",
+      "rule": {
+        "track": "MYST",
+        "kind": "lap"
+      }
+    },
+    {
+      "id": "myst-first2",
+      "title": "Mystic Peaks: 2-Lap Champion",
+      "description": "Hold the number one time for 2-lap races on Mystic Peaks.",
+      "points": 10,
+      "group": "Mystic Peaks",
+      "rule": {
+        "track": "MYST",
+        "kind": "first2"
+      }
+    },
+    {
+      "id": "myst-first4",
+      "title": "Mystic Peaks: 4-Lap Champion",
+      "description": "Hold the number one time for 4-lap races on Mystic Peaks.",
+      "points": 10,
+      "group": "Mystic Peaks",
+      "rule": {
+        "track": "MYST",
+        "kind": "first4"
+      }
+    },
+    {
+      "id": "myst-first8",
+      "title": "Mystic Peaks: 8-Lap Champion",
+      "description": "Hold the number one time for 8-lap races on Mystic Peaks.",
+      "points": 10,
+      "group": "Mystic Peaks",
+      "rule": {
+        "track": "MYST",
+        "kind": "first8"
+      }
+    },
+    {
+      "id": "myst-sweep",
+      "title": "Mystic Peaks: Clean Sweep",
+      "description": "Hold the number one time for 2, 4 and 8 lap races on Mystic Peaks.",
+      "points": 25,
+      "group": "Mystic Peaks",
+      "rule": {
+        "track": "MYST",
+        "kind": "first-all"
+      }
+    },
+    {
+      "id": "records-1",
+      "title": "Name in Lights",
+      "description": "Hold 1 record across all tracks.",
+      "points": 5,
+      "group": "Records",
+      "rule": {
+        "records": 1
+      }
+    },
+    {
+      "id": "records-5",
+      "title": "Record Breaker",
+      "description": "Hold 5 records across all tracks.",
+      "points": 10,
+      "group": "Records",
+      "rule": {
+        "records": 5
+      }
+    },
+    {
+      "id": "records-15",
+      "title": "Hall of Fame",
+      "description": "Hold 15 records across all tracks.",
+      "points": 20,
+      "group": "Records",
+      "rule": {
+        "records": 15
+      }
+    },
+    {
+      "id": "records-40",
+      "title": "Rewriting History",
+      "description": "Hold 40 records across all tracks.",
+      "points": 35,
+      "group": "Records",
+      "rule": {
+        "records": 40
+      }
+    },
+    {
+      "id": "tracks-4",
+      "title": "Globetrotter",
+      "description": "Hold a record on 4 different tracks.",
+      "points": 15,
+      "group": "Records",
+      "rule": {
+        "tracks": 4
+      }
+    },
+    {
+      "id": "tracks-all",
+      "title": "World Tour",
+      "description": "Hold a record on every track.",
+      "points": 30,
+      "group": "Records",
+      "rule": {
+        "tracks": 8
+      }
+    },
+    {
+      "id": "cars-3",
+      "title": "Car Enthusiast",
+      "description": "Hold records with 3 different cars.",
+      "points": 10,
+      "group": "Records",
+      "rule": {
+        "cars": 3
+      }
+    },
+    {
+      "id": "cars-6",
+      "title": "Supercar Collector",
+      "description": "Hold records with 6 different cars.",
+      "points": 25,
+      "group": "Records",
+      "rule": {
+        "cars": 6
+      }
+    },
+    {
+      "id": "laps-all",
+      "title": "Fastest Driver Alive",
+      "description": "Hold the best lap record on every track.",
+      "points": 50,
+      "group": "Records",
+      "rule": {
+        "lapTracks": 8
+      }
+    }
+  ]
+}

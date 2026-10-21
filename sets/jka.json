@@ -1,0 +1,586 @@
+{
+  "id": "jka",
+  "title": "Star Wars Jedi Knight: Jedi Academy",
+  "exeNames": [
+    "jasp.exe"
+  ],
+  "md5": [
+    "c358d8629f1dccc5131132ac1e94f499"
+  ],
+  "genericExeName": false,
+  "linkFiles": [
+    "GameData/jasp.exe",
+    "GameData/jagamex86.dll"
+  ],
+  "version": 1,
+  "pollHz": 4,
+  "settleSeconds": 3,
+  "creditOnLoad": true,
+  "gate": "0xH{jagamex86.dll+1f4e70}!=0",
+  "notes": [
+    "Level achievements unlock when a level finishes loading (loading a save counts too).",
+    "Combat achievements use the game's own mission statistics, which count per mission.",
+    "Read from the game DLL, which Steam doesn't scramble."
+  ],
+  "watches": [
+    {
+      "id": "map",
+      "label": "Current map",
+      "address": "{jagamex86.dll+1f4e70}",
+      "size": "str",
+      "length": 32
+    },
+    {
+      "id": "kills",
+      "label": "Enemies killed (this mission)",
+      "path": [
+        "{jagamex86.dll+1f4e58}",
+        "16f0"
+      ],
+      "size": "u32"
+    },
+    {
+      "id": "secrets",
+      "label": "Secrets found",
+      "path": [
+        "{jagamex86.dll+1f4e58}",
+        "16dc"
+      ],
+      "size": "u32"
+    },
+    {
+      "id": "blocks",
+      "label": "Saber blocks",
+      "path": [
+        "{jagamex86.dll+1f4e58}",
+        "16f8"
+      ],
+      "size": "u32"
+    },
+    {
+      "id": "throws",
+      "label": "Saber throws",
+      "path": [
+        "{jagamex86.dll+1f4e58}",
+        "16f4"
+      ],
+      "size": "u32"
+    }
+  ],
+  "testGuide": [
+    {
+      "title": "Start Star Wars Jedi Knight: Jedi Academy",
+      "detail": "Start a new game or load a save. \"Current map\" should show the level name."
+    },
+    {
+      "title": "Fight",
+      "detail": "\"Enemies killed\" should count up as you defeat enemies."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "map-yavin1",
+      "title": "Welcome to the Academy",
+      "description": "Crash-land on Yavin IV.",
+      "points": 5,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3755991007_0=1230389593_A:0xH{jagamex86.dll+1f4e74}&223_0=78_0xH{jagamex86.dll+1f4e75}=49_0xH{jagamex86.dll+1f4e76}=0",
+      "group": "Academy"
+    },
+    {
+      "id": "map-yavin1b",
+      "title": "Temple Training",
+      "description": "Reach the temple.",
+      "points": 5,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3755991007_0=1230389593_A:0xX{jagamex86.dll+1f4e74}&4292870111_0=4337998",
+      "group": "Academy"
+    },
+    {
+      "id": "map-yavin2",
+      "title": "Trials Begin",
+      "description": "Begin your training at the Academy.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3755991007_0=1230389593_A:0xH{jagamex86.dll+1f4e74}&223_0=78_0xH{jagamex86.dll+1f4e75}=50_0xH{jagamex86.dll+1f4e76}=0",
+      "group": "Academy"
+    },
+    {
+      "id": "map-t1_danger",
+      "title": "Mission: Danger",
+      "description": "Play the Danger mission.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3758096351_0=1147089236_A:0xX{jagamex86.dll+1f4e74}&3755991007_0=1162300993_A:0xH{jagamex86.dll+1f4e78}&223_0=82_0xH{jagamex86.dll+1f4e79}=0",
+      "group": "Tier 1"
+    },
+    {
+      "id": "map-t1_fatal",
+      "title": "Mission: Fatal",
+      "description": "Play the Fatal mission.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3758096351_0=1180643668_A:0xX{jagamex86.dll+1f4e74}&3755991007_0=1279349825_0xH{jagamex86.dll+1f4e78}=0",
+      "group": "Tier 1"
+    },
+    {
+      "id": "map-t1_inter",
+      "title": "Mission: Intercept",
+      "description": "Play the Intercept mission.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3758096351_0=1230975316_A:0xX{jagamex86.dll+1f4e74}&3755991007_0=1380275278_0xH{jagamex86.dll+1f4e78}=0",
+      "group": "Tier 1"
+    },
+    {
+      "id": "map-t1_rail",
+      "title": "Mission: Railway",
+      "description": "Play the Railway mission.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3758096351_0=1381970260_A:0xX{jagamex86.dll+1f4e74}&4292861919_0=4999489",
+      "group": "Tier 1"
+    },
+    {
+      "id": "map-t1_sour",
+      "title": "Mission: Sour",
+      "description": "Play the Sour mission.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3758096351_0=1398747476_A:0xX{jagamex86.dll+1f4e74}&4292861919_0=5395791",
+      "group": "Tier 1"
+    },
+    {
+      "id": "map-t1_surprise",
+      "title": "Mission: Surprise",
+      "description": "Play the Surprise mission.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3758096351_0=1398747476_A:0xX{jagamex86.dll+1f4e74}&3755991007_0=1380995669_A:0xX{jagamex86.dll+1f4e78}&4292861919_0=4543305",
+      "group": "Tier 1"
+    },
+    {
+      "id": "map-t2_dpred",
+      "title": "Mission: Predator",
+      "description": "Play the Predator mission.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3758096351_0=1147089492_A:0xX{jagamex86.dll+1f4e74}&3755991007_0=1145393744_0xH{jagamex86.dll+1f4e78}=0",
+      "group": "Tier 2"
+    },
+    {
+      "id": "map-t2_rancor",
+      "title": "Mission: Rancor",
+      "description": "Play the Rancor mission.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3758096351_0=1381970516_A:0xX{jagamex86.dll+1f4e74}&3755991007_0=1329811009_A:0xH{jagamex86.dll+1f4e78}&223_0=82_0xH{jagamex86.dll+1f4e79}=0",
+      "group": "Tier 2"
+    },
+    {
+      "id": "map-t2_rogue",
+      "title": "Mission: Rogue",
+      "description": "Play the Rogue mission.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3758096351_0=1381970516_A:0xX{jagamex86.dll+1f4e74}&3755991007_0=1163216719_0xH{jagamex86.dll+1f4e78}=0",
+      "group": "Tier 2"
+    },
+    {
+      "id": "map-t2_trip",
+      "title": "Mission: Trip",
+      "description": "Play the Trip mission.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3758096351_0=1415524948_A:0xX{jagamex86.dll+1f4e74}&4292861919_0=5261650",
+      "group": "Tier 2"
+    },
+    {
+      "id": "map-t2_wedge",
+      "title": "Mission: Wedge",
+      "description": "Play the Wedge mission.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3758096351_0=1465856596_A:0xX{jagamex86.dll+1f4e74}&3755991007_0=1162298437_0xH{jagamex86.dll+1f4e78}=0",
+      "group": "Tier 2"
+    },
+    {
+      "id": "map-t3_bounty",
+      "title": "Mission: Bounty",
+      "description": "Play the Bounty mission.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3758096351_0=1113535316_A:0xX{jagamex86.dll+1f4e74}&3755991007_0=1414419791_A:0xH{jagamex86.dll+1f4e78}&223_0=89_0xH{jagamex86.dll+1f4e79}=0",
+      "group": "Tier 3"
+    },
+    {
+      "id": "map-t3_byss",
+      "title": "Mission: Byss",
+      "description": "Play the Byss mission.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3758096351_0=1113535316_A:0xX{jagamex86.dll+1f4e74}&4292861919_0=5460825",
+      "group": "Tier 3"
+    },
+    {
+      "id": "map-t3_hevil",
+      "title": "Mission: Hidden Evil",
+      "description": "Play the Hidden Evil mission.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3758096351_0=1214198612_A:0xX{jagamex86.dll+1f4e74}&3755991007_0=1279874629_0xH{jagamex86.dll+1f4e78}=0",
+      "group": "Tier 3"
+    },
+    {
+      "id": "map-t3_rift",
+      "title": "Mission: Rift",
+      "description": "Play the Rift mission.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3758096351_0=1381970772_A:0xX{jagamex86.dll+1f4e74}&4292861919_0=5523017",
+      "group": "Tier 3"
+    },
+    {
+      "id": "map-t3_stamp",
+      "title": "Mission: Stampede",
+      "description": "Play the Stampede mission.",
+      "points": 10,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3758096351_0=1398747988_A:0xX{jagamex86.dll+1f4e74}&3755991007_0=1347240276_0xH{jagamex86.dll+1f4e78}=0",
+      "group": "Tier 3"
+    },
+    {
+      "id": "map-hoth2",
+      "title": "Hoth: The Base",
+      "description": "Reach the Rebel base on Hoth.",
+      "points": 15,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3755991007_0=1213484872_0xH{jagamex86.dll+1f4e74}=50_0xH{jagamex86.dll+1f4e75}=0",
+      "group": "Story"
+    },
+    {
+      "id": "map-hoth3",
+      "title": "Hoth: The Escape",
+      "description": "Escape from Hoth.",
+      "points": 15,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3755991007_0=1213484872_0xH{jagamex86.dll+1f4e74}=51_0xH{jagamex86.dll+1f4e75}=0",
+      "group": "Story"
+    },
+    {
+      "id": "map-vjun1",
+      "title": "Vjun: Arrival",
+      "description": "Arrive on Vjun.",
+      "points": 15,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3755991007_0=1314212438_0xH{jagamex86.dll+1f4e74}=49_0xH{jagamex86.dll+1f4e75}=0",
+      "group": "Story"
+    },
+    {
+      "id": "map-vjun2",
+      "title": "Vjun: Vader's Castle",
+      "description": "Infiltrate Vader's castle.",
+      "points": 15,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3755991007_0=1314212438_0xH{jagamex86.dll+1f4e74}=50_0xH{jagamex86.dll+1f4e75}=0",
+      "group": "Story"
+    },
+    {
+      "id": "map-vjun3",
+      "title": "Vjun: The Escape",
+      "description": "Reach the depths of the castle.",
+      "points": 15,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3755991007_0=1314212438_0xH{jagamex86.dll+1f4e74}=51_0xH{jagamex86.dll+1f4e75}=0",
+      "group": "Story"
+    },
+    {
+      "id": "map-taspir1",
+      "title": "Taspir III: Arrival",
+      "description": "Arrive on Taspir III.",
+      "points": 15,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3755991007_0=1347633492_A:0xX{jagamex86.dll+1f4e74}&4294959071_0=3232329",
+      "group": "Story"
+    },
+    {
+      "id": "map-taspir2",
+      "title": "Taspir III: The Facility",
+      "description": "Push into the facility.",
+      "points": 15,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&3755991007_0=1347633492_A:0xX{jagamex86.dll+1f4e74}&4294959071_0=3297865",
+      "group": "Story"
+    },
+    {
+      "id": "map-kor1",
+      "title": "Korriban: The Valley",
+      "description": "Arrive on Korriban.",
+      "points": 20,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&4292861919_0=827477835_0xH{jagamex86.dll+1f4e74}=0",
+      "group": "Story"
+    },
+    {
+      "id": "map-kor2",
+      "title": "Korriban: The Tomb",
+      "description": "Reach the final confrontation on Korriban.",
+      "points": 30,
+      "memaddr": "A:0xX{jagamex86.dll+1f4e70}&4292861919_0=844255051_0xH{jagamex86.dll+1f4e74}=0",
+      "group": "Story"
+    },
+    {
+      "id": "kills1",
+      "title": "First Blood",
+      "description": "Defeat 1 enemies in a single mission.",
+      "points": 5,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f0>=1",
+      "group": "Combat"
+    },
+    {
+      "id": "kills25",
+      "title": "Skirmisher",
+      "description": "Defeat 25 enemies in a single mission.",
+      "points": 10,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f0>=25",
+      "group": "Combat"
+    },
+    {
+      "id": "kills50",
+      "title": "Warrior",
+      "description": "Defeat 50 enemies in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f0>=50",
+      "group": "Combat"
+    },
+    {
+      "id": "kills100",
+      "title": "One-Man Army",
+      "description": "Defeat 100 enemies in a single mission.",
+      "points": 25,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f0>=100",
+      "group": "Combat"
+    },
+    {
+      "id": "blocks25",
+      "title": "Deflector",
+      "description": "Block 25 attacks with your lightsaber in a single mission.",
+      "points": 10,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f8>=25",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "blocks100",
+      "title": "Wall of Light",
+      "description": "Block 100 attacks with your lightsaber in a single mission.",
+      "points": 20,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f8>=100",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "blocks250",
+      "title": "Unbreakable Guard",
+      "description": "Block 250 attacks with your lightsaber in a single mission.",
+      "points": 30,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f8>=250",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "throws10",
+      "title": "Boomerang",
+      "description": "Throw your lightsaber 10 times in a single mission.",
+      "points": 10,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f4>=10",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "throws50",
+      "title": "Saber Throw Master",
+      "description": "Throw your lightsaber 50 times in a single mission.",
+      "points": 20,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f4>=50",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "dismember",
+      "title": "Limb from Limb",
+      "description": "In one mission, land 5 lightsaber strikes on enemy legs and 5 on enemy arms.",
+      "points": 15,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16fc>=5_I:0xX{jagamex86.dll+1f4e58}_0xX1700>=5",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "secret1",
+      "title": "Explorer",
+      "description": "Find a secret area.",
+      "points": 10,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16dc>=1",
+      "group": "Secrets"
+    },
+    {
+      "id": "secret5",
+      "title": "Treasure Hunter",
+      "description": "Find 5 secret areas in one mission.",
+      "points": 20,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16dc>=5",
+      "group": "Secrets"
+    },
+    {
+      "id": "sharpshooter",
+      "title": "Sharpshooter",
+      "description": "Land 200 shots in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16e8>=200",
+      "group": "Combat"
+    },
+    {
+      "id": "kills75",
+      "title": "Veteran",
+      "description": "Defeat 75 enemies in a single mission.",
+      "points": 20,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f0>=75",
+      "group": "Combat"
+    },
+    {
+      "id": "kills150",
+      "title": "Legend of the Force",
+      "description": "Defeat 150 enemies in a single mission.",
+      "points": 35,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f0>=150",
+      "group": "Combat"
+    },
+    {
+      "id": "kills200",
+      "title": "Unstoppable",
+      "description": "Defeat 200 enemies in a single mission.",
+      "points": 45,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f0>=200",
+      "group": "Combat"
+    },
+    {
+      "id": "hits500",
+      "title": "Dead Eye",
+      "description": "Land 500 shots in a single mission.",
+      "points": 25,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16e8>=500",
+      "group": "Combat"
+    },
+    {
+      "id": "shots1000",
+      "title": "Trigger Happy",
+      "description": "Fire 1,000 shots in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16e4>=1000",
+      "group": "Combat"
+    },
+    {
+      "id": "accuracy50",
+      "title": "Steady Aim",
+      "description": "Hit with at least half of your shots (at least 100 fired) in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16e4>=100_I:0xX{jagamex86.dll+1f4e58}_A:0xX16e8*100_I:0xX{jagamex86.dll+1f4e58}_B:0xX16e4*50_0>=0",
+      "group": "Combat"
+    },
+    {
+      "id": "accuracy75",
+      "title": "Marksman",
+      "description": "Hit with three out of four shots (at least 100 fired) in a single mission.",
+      "points": 25,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16e4>=100_I:0xX{jagamex86.dll+1f4e58}_A:0xX16e8*100_I:0xX{jagamex86.dll+1f4e58}_B:0xX16e4*75_0>=0",
+      "group": "Combat"
+    },
+    {
+      "id": "accuracy90",
+      "title": "Never Miss",
+      "description": "Hit with 9 out of 10 shots (at least 50 fired) in a single mission.",
+      "points": 35,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16e4>=50_I:0xX{jagamex86.dll+1f4e58}_A:0xX16e8*100_I:0xX{jagamex86.dll+1f4e58}_B:0xX16e4*90_0>=0",
+      "group": "Combat"
+    },
+    {
+      "id": "blocks50",
+      "title": "Parry",
+      "description": "Block 50 attacks with your lightsaber in a single mission.",
+      "points": 10,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f8>=50",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "blocks500",
+      "title": "Living Shield",
+      "description": "Block 500 attacks with your lightsaber in a single mission.",
+      "points": 40,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f8>=500",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "blocks1000",
+      "title": "Impenetrable",
+      "description": "Block 1000 attacks with your lightsaber in a single mission.",
+      "points": 50,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f8>=1000",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "throws25",
+      "title": "Spinning Blade",
+      "description": "Throw your lightsaber 25 times in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f4>=25",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "throws100",
+      "title": "Return to Sender",
+      "description": "Throw your lightsaber 100 times in a single mission.",
+      "points": 30,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16f4>=100",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "legs25",
+      "title": "Leg Sweeper",
+      "description": "Land 25 lightsaber strikes on enemy legs in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16fc>=25",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "arms25",
+      "title": "Disarming",
+      "description": "Land 25 lightsaber strikes on enemy arms in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX1700>=25",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "torsos50",
+      "title": "Centre Mass",
+      "description": "Land 50 lightsaber strikes on enemy bodies in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX1704>=50",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "others25",
+      "title": "Creative Swordplay",
+      "description": "Land 25 lightsaber strikes on other places (heads and hands) in a single mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX1708>=25",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "strikes100",
+      "title": "Blade Dancer",
+      "description": "Land 100 lightsaber strikes on enemies in a single mission.",
+      "points": 20,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_A:0xX16fc_I:0xX{jagamex86.dll+1f4e58}_A:0xX1700_I:0xX{jagamex86.dll+1f4e58}_A:0xX1704_I:0xX{jagamex86.dll+1f4e58}_0xX1708>=100",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "strikes250",
+      "title": "Saber Storm",
+      "description": "Land 250 lightsaber strikes on enemies in a single mission.",
+      "points": 35,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_A:0xX16fc_I:0xX{jagamex86.dll+1f4e58}_A:0xX1700_I:0xX{jagamex86.dll+1f4e58}_A:0xX1704_I:0xX{jagamex86.dll+1f4e58}_0xX1708>=250",
+      "group": "Lightsaber"
+    },
+    {
+      "id": "secret3",
+      "title": "Sharp Eyes",
+      "description": "Find 3 secret areas in one mission.",
+      "points": 15,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16dc>=3",
+      "group": "Secrets"
+    },
+    {
+      "id": "allsecrets",
+      "title": "Nothing Left Hidden",
+      "description": "Find every secret area in a mission.",
+      "points": 25,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16e0>=1_I:0xX{jagamex86.dll+1f4e58}_0xX16dc>=0xX16e0",
+      "group": "Secrets"
+    },
+    {
+      "id": "allsecrets3",
+      "title": "Master Explorer",
+      "description": "Find every secret in a mission that has at least 3.",
+      "points": 35,
+      "memaddr": "I:0xX{jagamex86.dll+1f4e58}_0xX16e0>=3_I:0xX{jagamex86.dll+1f4e58}_0xX16dc>=0xX16e0",
+      "group": "Secrets"
+    }
+  ]
+}

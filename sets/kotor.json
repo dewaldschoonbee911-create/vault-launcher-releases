@@ -1,0 +1,968 @@
+{
+  "id": "kotor",
+  "title": "Star Wars: Knights of the Old Republic",
+  "exeNames": [
+    "swkotor.exe"
+  ],
+  "md5": [
+    "06b34d1b8a1ecefbaad0bf5e26556c71"
+  ],
+  "linkFiles": [
+    "swkotor.exe",
+    "chitin.key"
+  ],
+  "version": 1,
+  "pollHz": 4,
+  "settleSeconds": 3,
+  "creditOnLoad": true,
+  "gate": "0xX7a39e8!=0",
+  "notes": [
+    "Area achievements unlock when an area finishes loading (loading a save counts too).",
+    "Addresses from the KotOR speedrun community autosplitter (Steam 1.03)."
+  ],
+  "watches": [
+    {
+      "id": "area",
+      "label": "Current area",
+      "path": [
+        "7a39e8",
+        "4c",
+        "0"
+      ],
+      "size": "str",
+      "length": 16
+    }
+  ],
+  "testGuide": [
+    {
+      "title": "Start KOTOR",
+      "detail": "Click Play and load a save or start a new game. \"Current area\" should show a code like end_m01aa."
+    },
+    {
+      "title": "Walk into a new area",
+      "detail": "The matching \"Explore\" achievement pops when the next area loads."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "planet-tar",
+      "title": "Arrived: Taris",
+      "description": "Set foot on Taris.",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093808205_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=70_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Journey"
+    },
+    {
+      "id": "planet-dan",
+      "title": "Arrived: Dantooine",
+      "description": "Set foot on Dantooine.",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974148_I:0xX7a39e8_I:0xX4c_0xH4=49_I:0xX7a39e8_I:0xX4c_0xH5=51_I:0xX7a39e8_I:0xX4c_0xH6=0",
+      "group": "Journey"
+    },
+    {
+      "id": "planet-man",
+      "title": "Arrived: Manaan",
+      "description": "Set foot on Manaan.",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974157_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1145124402_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Journey"
+    },
+    {
+      "id": "planet-kor",
+      "title": "Arrived: Korriban",
+      "description": "Set foot on Korriban.",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1381125963_I:0xX7a39e8_I:0xX4c_A:0xX4&4294959103_0=859000159_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_A:0xH9&223_0=65_I:0xX7a39e8_I:0xX4c_0xHa=0",
+      "group": "Journey"
+    },
+    {
+      "id": "planet-kas",
+      "title": "Arrived: Kashyyyk",
+      "description": "Set foot on Kashyyyk.",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599291723_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093808717_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Journey"
+    },
+    {
+      "id": "planet-tat",
+      "title": "Arrived: Tatooine",
+      "description": "Set foot on Tatooine.",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599357268_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094136141_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Journey"
+    },
+    {
+      "id": "planet-lev",
+      "title": "Arrived: Leviathan",
+      "description": "Set foot on Leviathan.",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599489356_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093678157_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Journey"
+    },
+    {
+      "id": "planet-leh",
+      "title": "Arrived: Lehon (Unknown World)",
+      "description": "Set foot on Lehon (Unknown World).",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598770773_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093743693_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Journey"
+    },
+    {
+      "id": "planet-sfg",
+      "title": "Arrived: Star Forge",
+      "description": "Set foot on Star Forge.",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598116947_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094005837_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Journey"
+    },
+    {
+      "id": "planet-ebo",
+      "title": "Arrived: Ebon Hawk",
+      "description": "Set foot on Ebon Hawk.",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599029829_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093808461_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Journey"
+    },
+    {
+      "id": "area-end_m01aa",
+      "title": "Endar Spire: Command Module",
+      "description": "Reach Command Module.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598312005_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093742669_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Endar Spire"
+    },
+    {
+      "id": "area-end_m01ab",
+      "title": "Endar Spire: Starboard Section",
+      "description": "Reach Starboard Section.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598312005_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093742669_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Endar Spire"
+    },
+    {
+      "id": "area-tar_m02af",
+      "title": "Taris: Hideout",
+      "description": "Explore Hideout on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093808205_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=70_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m02aa",
+      "title": "Taris: South Apartments",
+      "description": "Explore South Apartments on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093808205_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m02ac",
+      "title": "Taris: Upper City South",
+      "description": "Explore Upper City South on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093808205_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=67_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m02ae",
+      "title": "Taris: Upper City Cantina",
+      "description": "Explore Upper City Cantina on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093808205_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=69_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m02ab",
+      "title": "Taris: Upper City North",
+      "description": "Explore Upper City North on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093808205_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m02ad",
+      "title": "Taris: North Apartments",
+      "description": "Explore North Apartments on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093808205_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=68_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m03aa",
+      "title": "Taris: Lower City",
+      "description": "Explore Lower City on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093873741_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m03ad",
+      "title": "Taris: Lower City Apartments (East)",
+      "description": "Explore Lower City Apartments (East) on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093873741_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=68_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m03ae",
+      "title": "Taris: Javyar's Cantina",
+      "description": "Explore Javyar's Cantina on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093873741_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=69_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m03ab",
+      "title": "Taris: Lower City Apartments (West)",
+      "description": "Explore Lower City Apartments (West) on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093873741_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m11aa",
+      "title": "Taris: Hidden Bek Base",
+      "description": "Explore Hidden Bek Base on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093742925_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m11ab",
+      "title": "Taris: Gadon Thek's Office",
+      "description": "Explore Gadon Thek's Office on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093742925_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m04aa",
+      "title": "Taris: Undercity",
+      "description": "Explore Undercity on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093939277_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m05aa",
+      "title": "Taris: Lower Sewers",
+      "description": "Explore Lower Sewers on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094004813_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m05ab",
+      "title": "Taris: Upper Sewers",
+      "description": "Explore Upper Sewers on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094004813_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m10aa",
+      "title": "Taris: Vulkar Base",
+      "description": "Explore Vulkar Base on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093677389_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m10ab",
+      "title": "Taris: Vulkar Spice Lab",
+      "description": "Explore Vulkar Spice Lab on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093677389_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m10ac",
+      "title": "Taris: Vulkar Garage",
+      "description": "Explore Vulkar Garage on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093677389_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=67_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m03af",
+      "title": "Taris: Swoop Platform",
+      "description": "Explore Swoop Platform on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093873741_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=70_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m03mg",
+      "title": "Swoop Racer: Taris",
+      "description": "Race the swoop track on Taris.",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1295200333_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=71_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m09aa",
+      "title": "Taris: Sith Base",
+      "description": "Explore Sith Base on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094266957_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m09ab",
+      "title": "Taris: Governor's Office",
+      "description": "Explore Governor's Office on Taris.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094266957_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-tar_m08aa",
+      "title": "Davik's Estate",
+      "description": "Get inside Davik Kang's estate.",
+      "points": 15,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599226196_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094201421_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Taris"
+    },
+    {
+      "id": "area-danm13",
+      "title": "Dantooine: Jedi Enclave",
+      "description": "Explore Jedi Enclave on Dantooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974148_I:0xX7a39e8_I:0xX4c_0xH4=49_I:0xX7a39e8_I:0xX4c_0xH5=51_I:0xX7a39e8_I:0xX4c_0xH6=0",
+      "group": "Dantooine"
+    },
+    {
+      "id": "area-danm14aa",
+      "title": "Dantooine: Courtyard",
+      "description": "Explore Courtyard on Dantooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974148_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1094792241_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Dantooine"
+    },
+    {
+      "id": "area-danm14ab",
+      "title": "Dantooine: Matale Grounds",
+      "description": "Explore Matale Grounds on Dantooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974148_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1111569457_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Dantooine"
+    },
+    {
+      "id": "area-danm14ac",
+      "title": "Dantooine: Grove",
+      "description": "Explore Grove on Dantooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974148_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1128346673_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Dantooine"
+    },
+    {
+      "id": "area-danm14ad",
+      "title": "Dantooine: Sandral Grounds",
+      "description": "Explore Sandral Grounds on Dantooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974148_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1145123889_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Dantooine"
+    },
+    {
+      "id": "area-danm14ae",
+      "title": "Dantooine: Crystal Cave",
+      "description": "Explore Crystal Cave on Dantooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974148_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1161901105_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Dantooine"
+    },
+    {
+      "id": "area-danm16",
+      "title": "Dantooine: Sandral Estate",
+      "description": "Explore Sandral Estate on Dantooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974148_I:0xX7a39e8_I:0xX4c_0xH4=49_I:0xX7a39e8_I:0xX4c_0xH5=54_I:0xX7a39e8_I:0xX4c_0xH6=0",
+      "group": "Dantooine"
+    },
+    {
+      "id": "area-danm15",
+      "title": "Dantooine: Ruins",
+      "description": "Explore Ruins on Dantooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974148_I:0xX7a39e8_I:0xX4c_0xH4=49_I:0xX7a39e8_I:0xX4c_0xH5=53_I:0xX7a39e8_I:0xX4c_0xH6=0",
+      "group": "Dantooine"
+    },
+    {
+      "id": "area-manm26ad",
+      "title": "Manaan: Docking Bay",
+      "description": "Explore Docking Bay on Manaan.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974157_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1145124402_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Manaan"
+    },
+    {
+      "id": "area-manm26ac",
+      "title": "Manaan: West Central",
+      "description": "Explore West Central on Manaan.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974157_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1128347186_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Manaan"
+    },
+    {
+      "id": "area-manm26aa",
+      "title": "Manaan: Ahto West",
+      "description": "Explore Ahto West on Manaan.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974157_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1094792754_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Manaan"
+    },
+    {
+      "id": "area-manm26ae",
+      "title": "Manaan: East Central",
+      "description": "Explore East Central on Manaan.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974157_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1161901618_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Manaan"
+    },
+    {
+      "id": "area-manm26ab",
+      "title": "Manaan: Ahto East",
+      "description": "Explore Ahto East on Manaan.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974157_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1111569970_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Manaan"
+    },
+    {
+      "id": "area-manm26mg",
+      "title": "Swoop Racer: Manaan",
+      "description": "Race the swoop track on Manaan.",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974157_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1196242482_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Manaan"
+    },
+    {
+      "id": "area-manm27aa",
+      "title": "Manaan: Sith Base",
+      "description": "Explore Sith Base on Manaan.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974157_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1094793010_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Manaan"
+    },
+    {
+      "id": "area-manm28aa",
+      "title": "Manaan: Hrakert Station",
+      "description": "Explore Hrakert Station on Manaan.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974157_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1094793266_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Manaan"
+    },
+    {
+      "id": "area-manm28ab",
+      "title": "Manaan: Sea Floor",
+      "description": "Explore Sea Floor on Manaan.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974157_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1111570482_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Manaan"
+    },
+    {
+      "id": "area-manm28ac",
+      "title": "Manaan: Kolto Control",
+      "description": "Explore Kolto Control on Manaan.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974157_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1128347698_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Manaan"
+    },
+    {
+      "id": "area-manm28ad",
+      "title": "Into the Rift",
+      "description": "Reach the Hrakert Rift at the bottom of the sea.",
+      "points": 20,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1296974157_I:0xX7a39e8_I:0xX4c_A:0xX4&3755999231_0=1145124914_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Manaan"
+    },
+    {
+      "id": "area-korr_m33aa",
+      "title": "Korriban: Dreshdae",
+      "description": "Explore Dreshdae on Korriban.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1381125963_I:0xX7a39e8_I:0xX4c_A:0xX4&4294959103_0=859000159_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_A:0xH9&223_0=65_I:0xX7a39e8_I:0xX4c_0xHa=0",
+      "group": "Korriban"
+    },
+    {
+      "id": "area-korr_m33ab",
+      "title": "Korriban: Sith Academy Entrance",
+      "description": "Explore Sith Academy Entrance on Korriban.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1381125963_I:0xX7a39e8_I:0xX4c_A:0xX4&4294959103_0=859000159_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_A:0xH9&223_0=66_I:0xX7a39e8_I:0xX4c_0xHa=0",
+      "group": "Korriban"
+    },
+    {
+      "id": "area-korr_m35aa",
+      "title": "Korriban: Sith Academy",
+      "description": "Explore Sith Academy on Korriban.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1381125963_I:0xX7a39e8_I:0xX4c_A:0xX4&4294959103_0=892554591_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_A:0xH9&223_0=65_I:0xX7a39e8_I:0xX4c_0xHa=0",
+      "group": "Korriban"
+    },
+    {
+      "id": "area-korr_m36aa",
+      "title": "Korriban: Valley of the Dark Lords",
+      "description": "Explore Valley of the Dark Lords on Korriban.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1381125963_I:0xX7a39e8_I:0xX4c_A:0xX4&4294959103_0=909331807_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_A:0xH9&223_0=65_I:0xX7a39e8_I:0xX4c_0xHa=0",
+      "group": "Korriban"
+    },
+    {
+      "id": "area-korr_m34aa",
+      "title": "Korriban: Shyrack Caves",
+      "description": "Explore Shyrack Caves on Korriban.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1381125963_I:0xX7a39e8_I:0xX4c_A:0xX4&4294959103_0=875777375_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_A:0xH9&223_0=65_I:0xX7a39e8_I:0xX4c_0xHa=0",
+      "group": "Korriban"
+    },
+    {
+      "id": "area-korr_m38aa",
+      "title": "Korriban: Tomb of Marka Ragnos",
+      "description": "Explore Tomb of Marka Ragnos on Korriban.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1381125963_I:0xX7a39e8_I:0xX4c_A:0xX4&4294959103_0=942886239_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_A:0xH9&223_0=65_I:0xX7a39e8_I:0xX4c_0xHa=0",
+      "group": "Korriban"
+    },
+    {
+      "id": "area-korr_m37aa",
+      "title": "Korriban: Tomb of Ajunta Pall",
+      "description": "Explore Tomb of Ajunta Pall on Korriban.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1381125963_I:0xX7a39e8_I:0xX4c_A:0xX4&4294959103_0=926109023_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_A:0xH9&223_0=65_I:0xX7a39e8_I:0xX4c_0xHa=0",
+      "group": "Korriban"
+    },
+    {
+      "id": "area-korr_m38ab",
+      "title": "Korriban: Tomb of Tulak Hord",
+      "description": "Explore Tomb of Tulak Hord on Korriban.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1381125963_I:0xX7a39e8_I:0xX4c_A:0xX4&4294959103_0=942886239_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_A:0xH9&223_0=66_I:0xX7a39e8_I:0xX4c_0xHa=0",
+      "group": "Korriban"
+    },
+    {
+      "id": "area-korr_m39aa",
+      "title": "Tomb of Naga Sadow",
+      "description": "Enter the Tomb of Naga Sadow.",
+      "points": 20,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1381125963_I:0xX7a39e8_I:0xX4c_A:0xX4&4294959103_0=959663455_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_A:0xH9&223_0=65_I:0xX7a39e8_I:0xX4c_0xHa=0",
+      "group": "Korriban"
+    },
+    {
+      "id": "area-kas_m22aa",
+      "title": "Kashyyyk: Czerka Landing Port",
+      "description": "Explore Czerka Landing Port on Kashyyyk.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599291723_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093808717_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Kashyyyk"
+    },
+    {
+      "id": "area-kas_m22ab",
+      "title": "Kashyyyk: Great Walkway",
+      "description": "Explore Great Walkway on Kashyyyk.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599291723_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093808717_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Kashyyyk"
+    },
+    {
+      "id": "area-kas_m23aa",
+      "title": "Kashyyyk: Village of Rwookrrorro",
+      "description": "Explore Village of Rwookrrorro on Kashyyyk.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599291723_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093874253_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Kashyyyk"
+    },
+    {
+      "id": "area-kas_m23ab",
+      "title": "Kashyyyk: Woorwill's Home",
+      "description": "Explore Woorwill's Home on Kashyyyk.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599291723_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093874253_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Kashyyyk"
+    },
+    {
+      "id": "area-kas_m23ac",
+      "title": "Kashyyyk: Worrroznor's Home",
+      "description": "Explore Worrroznor's Home on Kashyyyk.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599291723_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093874253_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=67_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Kashyyyk"
+    },
+    {
+      "id": "area-kas_m24aa",
+      "title": "Kashyyyk: Upper Shadowlands",
+      "description": "Explore Upper Shadowlands on Kashyyyk.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599291723_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093939789_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Kashyyyk"
+    },
+    {
+      "id": "area-kas_m25aa",
+      "title": "Lower Shadowlands",
+      "description": "Reach the forest floor of Kashyyyk.",
+      "points": 15,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599291723_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094005325_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Kashyyyk"
+    },
+    {
+      "id": "area-kas_m23ad",
+      "title": "Kashyyyk: Hall of the Chieftain",
+      "description": "Explore Hall of the Chieftain on Kashyyyk.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599291723_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093874253_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=68_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Kashyyyk"
+    },
+    {
+      "id": "area-tat_m17ab",
+      "title": "Tatooine: Docking Bay",
+      "description": "Explore Docking Bay on Tatooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599357268_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094136141_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Tatooine"
+    },
+    {
+      "id": "area-tat_m17aa",
+      "title": "Tatooine: Anchorhead",
+      "description": "Explore Anchorhead on Tatooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599357268_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094136141_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Tatooine"
+    },
+    {
+      "id": "area-tat_m17ad",
+      "title": "Tatooine: Hunting Lodge",
+      "description": "Explore Hunting Lodge on Tatooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599357268_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094136141_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=68_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Tatooine"
+    },
+    {
+      "id": "area-tat_m17ag",
+      "title": "Tatooine: Czerka Office",
+      "description": "Explore Czerka Office on Tatooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599357268_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094136141_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=71_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Tatooine"
+    },
+    {
+      "id": "area-tat_m17ae",
+      "title": "Tatooine: Swoop Registration",
+      "description": "Explore Swoop Registration on Tatooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599357268_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094136141_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=69_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Tatooine"
+    },
+    {
+      "id": "area-tat_m17mg",
+      "title": "Swoop Racer: Tatooine",
+      "description": "Race the swoop track on Tatooine.",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599357268_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1295462733_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=71_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Tatooine"
+    },
+    {
+      "id": "area-tat_m17af",
+      "title": "Tatooine: Cantina",
+      "description": "Explore Cantina on Tatooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599357268_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094136141_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=70_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Tatooine"
+    },
+    {
+      "id": "area-tat_m17ac",
+      "title": "Tatooine: Droid Shop",
+      "description": "Explore Droid Shop on Tatooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599357268_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094136141_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=67_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Tatooine"
+    },
+    {
+      "id": "area-tat_m18aa",
+      "title": "Tatooine: Dune Sea",
+      "description": "Explore Dune Sea on Tatooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599357268_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094201677_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Tatooine"
+    },
+    {
+      "id": "area-tat_m18ab",
+      "title": "Tatooine: Sand People Territory",
+      "description": "Explore Sand People Territory on Tatooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599357268_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094201677_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Tatooine"
+    },
+    {
+      "id": "area-tat_m20aa",
+      "title": "Sand People Enclave",
+      "description": "Enter the Sand People enclave.",
+      "points": 15,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599357268_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093677645_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Tatooine"
+    },
+    {
+      "id": "area-tat_m18ac",
+      "title": "Tatooine: Eastern Dune Sea",
+      "description": "Explore Eastern Dune Sea on Tatooine.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599357268_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094201677_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=67_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Tatooine"
+    },
+    {
+      "id": "area-lev_m40aa",
+      "title": "Leviathan: Prison Block",
+      "description": "Reach Prison Block.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599489356_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093678157_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Leviathan"
+    },
+    {
+      "id": "area-lev_m40ab",
+      "title": "Leviathan: Command Deck",
+      "description": "Reach Command Deck.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599489356_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093678157_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Leviathan"
+    },
+    {
+      "id": "area-lev_m40ad",
+      "title": "Leviathan: Bridge",
+      "description": "Reach Bridge.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599489356_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093678157_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=68_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Leviathan"
+    },
+    {
+      "id": "area-lev_m40ac",
+      "title": "Leviathan: Hangar",
+      "description": "Reach Hangar.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599489356_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093678157_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=67_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Leviathan"
+    },
+    {
+      "id": "area-unk_m41aa",
+      "title": "Lehon (Unknown World): Central Beach",
+      "description": "Explore Central Beach on Lehon (Unknown World).",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598770773_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093743693_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Lehon (Unknown World)"
+    },
+    {
+      "id": "area-unk_m41ac",
+      "title": "Lehon (Unknown World): North Beach",
+      "description": "Explore North Beach on Lehon (Unknown World).",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598770773_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093743693_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=67_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Lehon (Unknown World)"
+    },
+    {
+      "id": "area-unk_m43aa",
+      "title": "Lehon (Unknown World): Rakatan Settlement",
+      "description": "Explore Rakatan Settlement on Lehon (Unknown World).",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598770773_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093874765_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Lehon (Unknown World)"
+    },
+    {
+      "id": "area-unk_m41ad",
+      "title": "Lehon (Unknown World): Temple Exterior",
+      "description": "Explore Temple Exterior on Lehon (Unknown World).",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598770773_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093743693_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=68_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Lehon (Unknown World)"
+    },
+    {
+      "id": "area-unk_m41ab",
+      "title": "Lehon (Unknown World): South Beach",
+      "description": "Explore South Beach on Lehon (Unknown World).",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598770773_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093743693_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Lehon (Unknown World)"
+    },
+    {
+      "id": "area-unk_m42aa",
+      "title": "Lehon (Unknown World): Elder Settlement",
+      "description": "Explore Elder Settlement on Lehon (Unknown World).",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598770773_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093809229_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Lehon (Unknown World)"
+    },
+    {
+      "id": "area-unk_m44aa",
+      "title": "Lehon (Unknown World): Temple Main Floor",
+      "description": "Explore Temple Main Floor on Lehon (Unknown World).",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598770773_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093940301_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Lehon (Unknown World)"
+    },
+    {
+      "id": "area-unk_m44ab",
+      "title": "Lehon (Unknown World): Temple Catacombs",
+      "description": "Explore Temple Catacombs on Lehon (Unknown World).",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598770773_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093940301_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Lehon (Unknown World)"
+    },
+    {
+      "id": "area-unk_m44ac",
+      "title": "Temple Summit",
+      "description": "Reach the summit of the Rakatan temple.",
+      "points": 20,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598770773_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093940301_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=67_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Lehon (Unknown World)"
+    },
+    {
+      "id": "area-sta_m45aa",
+      "title": "Star Forge: Deck 1",
+      "description": "Reach Deck 1.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598116947_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094005837_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Star Forge"
+    },
+    {
+      "id": "area-sta_m45ab",
+      "title": "Star Forge: Deck 2",
+      "description": "Reach Deck 2.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598116947_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094005837_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Star Forge"
+    },
+    {
+      "id": "area-sta_m45ac",
+      "title": "Star Forge: Command Center",
+      "description": "Reach Command Center.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598116947_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094005837_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=67_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Star Forge"
+    },
+    {
+      "id": "area-sta_m45ad",
+      "title": "Star Forge: Viewing Platform",
+      "description": "Reach Viewing Platform.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598116947_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094005837_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=68_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Star Forge"
+    },
+    {
+      "id": "area-ebo_m12aa",
+      "title": "Ebon Hawk: Ebon Hawk",
+      "description": "Reach Ebon Hawk.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599029829_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093808461_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Ebon Hawk"
+    },
+    {
+      "id": "area-ebo_m41aa",
+      "title": "Ebon Hawk: Ebon Hawk on Lehon",
+      "description": "Reach Ebon Hawk on Lehon.",
+      "points": 5,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599029829_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1093743693_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Ebon Hawk"
+    },
+    {
+      "id": "area-ebo_m46ab",
+      "title": "Mind Prison",
+      "description": "Free your mind in the Mind Prison.",
+      "points": 15,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599029829_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094071373_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Ebon Hawk"
+    },
+    {
+      "id": "area-liv_m99aa",
+      "title": "Yavin Station",
+      "description": "Visit Yavin Station (Yavin DLC).",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1599490380_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094269261_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Extras"
+    },
+    {
+      "id": "story-taris-destroyed",
+      "title": "Taris Has Fallen",
+      "description": "Witness the destruction of Taris.",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1314214995_I:0xX7a39e8_I:0xX4c_A:0xX4&4294967263_0=909139796_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Story"
+    },
+    {
+      "id": "story-captured",
+      "title": "Prisoners of the Leviathan",
+      "description": "Get captured by the Leviathan.",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1314214995_I:0xX7a39e8_I:0xX4c_A:0xX4&4294967263_0=909205332_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Story"
+    },
+    {
+      "id": "story-revan",
+      "title": "Know Thyself",
+      "description": "Learn the truth about Revan.",
+      "points": 25,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1314214995_I:0xX7a39e8_I:0xX4c_A:0xX4&4294967263_0=825450324_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=66_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Story"
+    },
+    {
+      "id": "story-torture",
+      "title": "Bastila Taken",
+      "description": "See what happens to Bastila aboard the Leviathan.",
+      "points": 10,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1314214995_I:0xX7a39e8_I:0xX4c_A:0xX4&4294967263_0=942759764_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Story"
+    },
+    {
+      "id": "story-lehon",
+      "title": "The Unknown World",
+      "description": "Arrive on the Unknown World.",
+      "points": 15,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1314214995_I:0xX7a39e8_I:0xX4c_A:0xX4&4294967263_0=892559188_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Story"
+    },
+    {
+      "id": "story-lehon-ls",
+      "title": "Path of Light",
+      "description": "Leave the Unknown World on the light side.",
+      "points": 15,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1314214995_I:0xX7a39e8_I:0xX4c_A:0xX4&4294967263_0=842293076_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Story"
+    },
+    {
+      "id": "story-lehon-ds",
+      "title": "Path of Darkness",
+      "description": "Leave the Unknown World on the dark side.",
+      "points": 15,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1314214995_I:0xX7a39e8_I:0xX4c_A:0xX4&4294967263_0=875847508_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Story"
+    },
+    {
+      "id": "story-starforge",
+      "title": "The Star Forge",
+      "description": "Arrive at the Star Forge.",
+      "points": 15,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1314214995_I:0xX7a39e8_I:0xX4c_A:0xX4&4294967263_0=875781972_I:0xX7a39e8_I:0xX4c_0xH8=0",
+      "group": "Story"
+    },
+    {
+      "id": "story-ending-dark",
+      "title": "All Hail Lord Revan",
+      "description": "Finish the game on the dark side.",
+      "points": 50,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1314214995_I:0xX7a39e8_I:0xX4c_A:0xX4&4294967263_0=892690260_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Story"
+    },
+    {
+      "id": "story-ending-light",
+      "title": "Redemption",
+      "description": "Finish the game on the light side: the Sith are defeated.",
+      "points": 50,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&3755991007_0=1314214995_I:0xX7a39e8_I:0xX4c_A:0xX4&4294967263_0=926244692_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=65_I:0xX7a39e8_I:0xX4c_0xH9=0",
+      "group": "Story"
+    },
+    {
+      "id": "the-end",
+      "title": "The Star Forge Falls",
+      "description": "Reach the final moment on the Star Forge viewing platform.",
+      "points": 50,
+      "memaddr": "I:0xX7a39e8_I:0xX4c_A:0xX0&4292861919_0=1598116947_I:0xX7a39e8_I:0xX4c_A:0xX4&3758096351_0=1094005837_I:0xX7a39e8_I:0xX4c_A:0xH8&223_0=68_I:0xX7a39e8_I:0xX4c_0xH9=0_0xX7bb4e4=1132924759",
+      "group": "Story"
+    }
+  ]
+}

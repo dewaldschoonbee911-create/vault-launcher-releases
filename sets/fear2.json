@@ -1,0 +1,548 @@
+{
+  "id": "fear2",
+  "title": "F.E.A.R. 2: Project Origin",
+  "version": 2,
+  "kind": "replay",
+  "authors": [
+    "Vault Launcher"
+  ],
+  "storeIds": [],
+  "linkFiles": [
+    "FEAR2.exe",
+    "Game/gameclient.dll"
+  ],
+  "exeNames": [],
+  "md5": [],
+  "notes": [
+    "Vault reads your save games and never touches the game. The game saves at the start of every level, so finishing an episode pops its achievement as the next one starts.",
+    "Episodes count from any save, so old saves count too. Only the furthest level matters, not the difficulty."
+  ],
+  "testGuide": [
+    {
+      "title": "Start the campaign",
+      "detail": "Play until the first checkpoint. \"Last save\" should show Sanctuary."
+    },
+    {
+      "title": "Finish the first episode",
+      "detail": "When the next level starts, \"Complete: Sanctuary\" should pop up."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ep-01",
+      "title": "Complete: Sanctuary",
+      "description": "Finish episode 1, Sanctuary.",
+      "points": 15,
+      "group": "Campaign",
+      "rule": {
+        "reach": 2
+      }
+    },
+    {
+      "id": "ep-02",
+      "title": "Complete: Awakening",
+      "description": "Finish episode 2, Awakening.",
+      "points": 10,
+      "group": "Campaign",
+      "rule": {
+        "reach": 3
+      }
+    },
+    {
+      "id": "ep-03",
+      "title": "Complete: Withdrawal",
+      "description": "Finish episode 3, Withdrawal.",
+      "points": 10,
+      "group": "Campaign",
+      "rule": {
+        "reach": 4
+      }
+    },
+    {
+      "id": "ep-04",
+      "title": "Complete: Discovery",
+      "description": "Finish episode 4, Discovery.",
+      "points": 10,
+      "group": "Campaign",
+      "rule": {
+        "reach": 5
+      }
+    },
+    {
+      "id": "ep-05",
+      "title": "Complete: Replica",
+      "description": "Finish episode 5, Replica.",
+      "points": 10,
+      "group": "Campaign",
+      "rule": {
+        "reach": 6
+      }
+    },
+    {
+      "id": "ep-06",
+      "title": "Complete: Ruin",
+      "description": "Finish episode 6, Ruin.",
+      "points": 10,
+      "group": "Campaign",
+      "rule": {
+        "reach": 7
+      }
+    },
+    {
+      "id": "ep-07",
+      "title": "Complete: Top",
+      "description": "Finish episode 7, Top.",
+      "points": 15,
+      "group": "Campaign",
+      "rule": {
+        "reach": 8
+      }
+    },
+    {
+      "id": "ep-08",
+      "title": "Complete: Elementary",
+      "description": "Finish episode 8, Elementary.",
+      "points": 10,
+      "group": "Campaign",
+      "rule": {
+        "reach": 9
+      }
+    },
+    {
+      "id": "ep-09",
+      "title": "Complete: Nurse's Office",
+      "description": "Finish episode 9, Nurse's Office.",
+      "points": 10,
+      "group": "Campaign",
+      "rule": {
+        "reach": 10
+      }
+    },
+    {
+      "id": "ep-10",
+      "title": "Complete: Snake Fist",
+      "description": "Finish episode 10, Snake Fist.",
+      "points": 10,
+      "group": "Campaign",
+      "rule": {
+        "reach": 11
+      }
+    },
+    {
+      "id": "ep-11",
+      "title": "Complete: Keegan",
+      "description": "Finish episode 11, Keegan.",
+      "points": 10,
+      "group": "Campaign",
+      "rule": {
+        "reach": 12
+      }
+    },
+    {
+      "id": "ep-12",
+      "title": "Complete: Epicenter",
+      "description": "Finish episode 12, Epicenter.",
+      "points": 10,
+      "group": "Campaign",
+      "rule": {
+        "reach": 13
+      }
+    },
+    {
+      "id": "ep-13",
+      "title": "Complete: Approach",
+      "description": "Finish episode 13, Approach.",
+      "points": 10,
+      "group": "Campaign",
+      "rule": {
+        "reach": 14
+      }
+    },
+    {
+      "id": "ep-14-reach",
+      "title": "The Final Episode",
+      "description": "Reach the last episode, Climax.",
+      "points": 25,
+      "group": "Campaign",
+      "rule": {
+        "reach": 14
+      }
+    },
+    {
+      "id": "quarter",
+      "title": "Point Man",
+      "description": "Reach Replica.",
+      "points": 10,
+      "group": "Milestones",
+      "rule": {
+        "reach": 5
+      }
+    },
+    {
+      "id": "halfway",
+      "title": "Halfway to Hell",
+      "description": "Reach Wade Elementary.",
+      "points": 15,
+      "group": "Milestones",
+      "rule": {
+        "reach": 8
+      }
+    },
+    {
+      "id": "late",
+      "title": "Deep in the Crater",
+      "description": "Reach Epicenter.",
+      "points": 20,
+      "group": "Milestones",
+      "rule": {
+        "reach": 12
+      }
+    },
+    {
+      "id": "reborn-1",
+      "title": "Reborn: High-rise",
+      "description": "Reborn add-on: finish level 1.",
+      "points": 10,
+      "group": "Reborn",
+      "rule": {
+        "rebornReach": 2
+      }
+    },
+    {
+      "id": "reborn-2",
+      "title": "Reborn: Escape",
+      "description": "Reborn add-on: finish level 2.",
+      "points": 10,
+      "group": "Reborn",
+      "rule": {
+        "rebornReach": 3
+      }
+    },
+    {
+      "id": "reborn-3",
+      "title": "Reborn: City",
+      "description": "Reborn add-on: finish level 3.",
+      "points": 10,
+      "group": "Reborn",
+      "rule": {
+        "rebornReach": 4
+      }
+    },
+    {
+      "id": "reborn-4",
+      "title": "Reborn: Descent",
+      "description": "Reborn add-on: reach the last level.",
+      "points": 20,
+      "group": "Reborn",
+      "rule": {
+        "rebornReach": 4
+      }
+    },
+    {
+      "id": "start",
+      "title": "Project Origin",
+      "description": "Start the campaign and reach the first checkpoint.",
+      "points": 5,
+      "group": "Milestones",
+      "rule": {
+        "reach": 1
+      }
+    },
+    {
+      "id": "reborn-start",
+      "title": "Reborn",
+      "description": "Start the Reborn add-on.",
+      "points": 5,
+      "group": "Reborn",
+      "rule": {
+        "rebornReach": 1
+      }
+    },
+    {
+      "id": "both",
+      "title": "Origin and Rebirth",
+      "description": "Reach Climax in the campaign and Descent in Reborn.",
+      "points": 30,
+      "group": "Milestones",
+      "rule": {
+        "reach": 14,
+        "rebornReach": 4
+      }
+    },
+    {
+      "id": "mile-3",
+      "title": "Out of the Hospital",
+      "description": "Reach episode 3, Withdrawal.",
+      "points": 10,
+      "group": "Milestones",
+      "rule": {
+        "reach": 3
+      }
+    },
+    {
+      "id": "mile-6",
+      "title": "Into the Ruins",
+      "description": "Reach episode 6, Ruin.",
+      "points": 10,
+      "group": "Milestones",
+      "rule": {
+        "reach": 6
+      }
+    },
+    {
+      "id": "mile-10",
+      "title": "Class Dismissed",
+      "description": "Reach episode 10, Snake Fist.",
+      "points": 10,
+      "group": "Milestones",
+      "rule": {
+        "reach": 10
+      }
+    },
+    {
+      "id": "in-01",
+      "title": "Checkpoint: Sanctuary",
+      "description": "Have the game save during episode 1, Sanctuary.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m01_penthouse"
+      }
+    },
+    {
+      "id": "in-02",
+      "title": "Checkpoint: Awakening",
+      "description": "Have the game save during episode 2, Awakening.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m03_hospitalawaken"
+      }
+    },
+    {
+      "id": "in-03",
+      "title": "Checkpoint: Withdrawal",
+      "description": "Have the game save during episode 3, Withdrawal.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m04_hospitalreveal"
+      }
+    },
+    {
+      "id": "in-04",
+      "title": "Checkpoint: Discovery",
+      "description": "Have the game save during episode 4, Discovery.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m04b_transition"
+      }
+    },
+    {
+      "id": "in-05",
+      "title": "Checkpoint: Replica",
+      "description": "Have the game save during episode 5, Replica.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m05_outershell"
+      }
+    },
+    {
+      "id": "in-06",
+      "title": "Checkpoint: Ruin",
+      "description": "Have the game save during episode 6, Ruin.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m06_citystreets"
+      }
+    },
+    {
+      "id": "in-07",
+      "title": "Checkpoint: Top",
+      "description": "Have the game save during episode 7, Top.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m07_citystreets"
+      }
+    },
+    {
+      "id": "in-08",
+      "title": "Checkpoint: Elementary",
+      "description": "Have the game save during episode 8, Elementary.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m09_schoolentry"
+      }
+    },
+    {
+      "id": "in-09",
+      "title": "Checkpoint: Nurse's Office",
+      "description": "Have the game save during episode 9, Nurse's Office.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m10_school"
+      }
+    },
+    {
+      "id": "in-10",
+      "title": "Checkpoint: Snake Fist",
+      "description": "Have the game save during episode 10, Snake Fist.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m11_lab"
+      }
+    },
+    {
+      "id": "in-11",
+      "title": "Checkpoint: Keegan",
+      "description": "Have the game save during episode 11, Keegan.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m14_subway"
+      }
+    },
+    {
+      "id": "in-12",
+      "title": "Checkpoint: Epicenter",
+      "description": "Have the game save during episode 12, Epicenter.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m15_crater"
+      }
+    },
+    {
+      "id": "in-13",
+      "title": "Checkpoint: Approach",
+      "description": "Have the game save during episode 13, Approach.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m16_tunnel"
+      }
+    },
+    {
+      "id": "in-14",
+      "title": "Checkpoint: Climax",
+      "description": "Have the game save during episode 14, Climax.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m18_containment"
+      }
+    },
+    {
+      "id": "in-reborn-m01",
+      "title": "Checkpoint: Reborn High-rise",
+      "description": "Have the game save during the Reborn level High-rise.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m01ahighrise"
+      }
+    },
+    {
+      "id": "in-reborn-m02",
+      "title": "Checkpoint: Reborn Escape",
+      "description": "Have the game save during the Reborn level Escape.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m02aescape"
+      }
+    },
+    {
+      "id": "in-reborn-m03",
+      "title": "Checkpoint: Reborn City",
+      "description": "Have the game save during the Reborn level City.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m03acity"
+      }
+    },
+    {
+      "id": "in-reborn-m04",
+      "title": "Checkpoint: Reborn Descent",
+      "description": "Have the game save during the Reborn level Descent.",
+      "points": 5,
+      "group": "Checkpoints",
+      "rule": {
+        "world": "m04adescent"
+      }
+    },
+    {
+      "id": "in-all",
+      "title": "Every Checkpoint",
+      "description": "Have the game save in all 14 campaign episodes.",
+      "points": 25,
+      "group": "Checkpoints",
+      "rule": {
+        "worlds": [
+          "m01_penthouse",
+          "m03_hospitalawaken",
+          "m04_hospitalreveal",
+          "m04b_transition",
+          "m05_outershell",
+          "m06_citystreets",
+          "m07_citystreets",
+          "m09_schoolentry",
+          "m10_school",
+          "m11_lab",
+          "m14_subway",
+          "m15_crater",
+          "m16_tunnel",
+          "m18_containment"
+        ]
+      }
+    },
+    {
+      "id": "writes-10",
+      "title": "Quick Save",
+      "description": "Have the game save 10 times (checkpoints and your own saves).",
+      "points": 5,
+      "group": "Saving",
+      "rule": {
+        "saves": 10
+      }
+    },
+    {
+      "id": "writes-50",
+      "title": "Survival Instinct",
+      "description": "Have the game save 50 times (checkpoints and your own saves).",
+      "points": 10,
+      "group": "Saving",
+      "rule": {
+        "saves": 50
+      }
+    },
+    {
+      "id": "writes-150",
+      "title": "Paranoid",
+      "description": "Have the game save 150 times (checkpoints and your own saves).",
+      "points": 20,
+      "group": "Saving",
+      "rule": {
+        "saves": 150
+      }
+    },
+    {
+      "id": "files-3",
+      "title": "Backup Plan",
+      "description": "Have 3 different save files.",
+      "points": 5,
+      "group": "Saving",
+      "rule": {
+        "files": 3
+      }
+    }
+  ]
+}

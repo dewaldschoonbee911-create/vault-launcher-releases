@@ -1,0 +1,703 @@
+{
+ "id": "commandos2",
+ "title": "Commandos 2: Men of Courage",
+ "version": 2,
+ "kind": "replay",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [],
+ "linkFiles": [
+  "Comm2.exe",
+  "DATA2.PCK"
+ ],
+ "exeNames": [
+  "Comm2.exe"
+ ],
+ "md5": [],
+ "notes": [
+  "Vault reads your save games (the OUTPUT folder in the game folder) and never touches the game.",
+  "Save a game once in each new mission and the mission before it counts as finished.",
+  "Untested: Vault hasn't seen a Commandos 2 save yet, so if nothing pops after saving, send a test report."
+ ],
+ "testGuide": [
+  {
+   "title": "Start the campaign",
+   "detail": "Start Night of the Wolves and save the game once."
+  },
+  {
+   "title": "Check the numbers",
+   "detail": "\"Last save\" should show Night of the Wolves and \"Into the Night\" should pop."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "boot-camp",
+   "title": "Boot Camp",
+   "description": "Start the training missions.",
+   "points": 5,
+   "group": "Training",
+   "rule": {
+    "reach": [
+     "TU01",
+     "TU02"
+    ]
+   }
+  },
+  {
+   "id": "night-wolves",
+   "title": "Into the Night",
+   "description": "Start the first mission, Night of the Wolves.",
+   "points": 5,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "SB_N",
+     "SB",
+     "HL",
+     "BU",
+     "KW",
+     "IS",
+     "PT",
+     "RY",
+     "CZ",
+     "PA"
+    ]
+   }
+  },
+  {
+   "id": "beat-sb_n",
+   "title": "Night of the Wolves",
+   "description": "Finish mission 1, Night of the Wolves. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "SB",
+     "HL",
+     "BU",
+     "KW",
+     "IS",
+     "PT",
+     "RY",
+     "CZ",
+     "PA"
+    ]
+   }
+  },
+  {
+   "id": "beat-sb",
+   "title": "Das Boot, Silent Killers",
+   "description": "Finish mission 2, Das Boot, Silent Killers. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "HL",
+     "BU",
+     "KW",
+     "IS",
+     "PT",
+     "RY",
+     "CZ",
+     "PA"
+    ]
+   }
+  },
+  {
+   "id": "beat-hl",
+   "title": "White Death",
+   "description": "Finish mission 3, White Death. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "BU",
+     "KW",
+     "IS",
+     "PT",
+     "RY",
+     "CZ",
+     "PA"
+    ]
+   }
+  },
+  {
+   "id": "beat-bu",
+   "title": "Target: Burma",
+   "description": "Finish mission 4, Target: Burma. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "KW",
+     "IS",
+     "PT",
+     "RY",
+     "CZ",
+     "PA"
+    ]
+   }
+  },
+  {
+   "id": "beat-kw",
+   "title": "Bridge over the River Kwai",
+   "description": "Finish mission 5, Bridge over the River Kwai. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "IS",
+     "PT",
+     "RY",
+     "CZ",
+     "PA"
+    ]
+   }
+  },
+  {
+   "id": "beat-is",
+   "title": "The Guns of Savo Island",
+   "description": "Finish mission 6, The Guns of Savo Island. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "PT",
+     "RY",
+     "CZ",
+     "PA"
+    ]
+   }
+  },
+  {
+   "id": "beat-pt",
+   "title": "The Giant in Haiphong",
+   "description": "Finish mission 7, The Giant in Haiphong. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "RY",
+     "CZ",
+     "PA"
+    ]
+   }
+  },
+  {
+   "id": "beat-ry",
+   "title": "Saving Private Smith",
+   "description": "Finish mission 8, Saving Private Smith. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "CZ",
+     "PA"
+    ]
+   }
+  },
+  {
+   "id": "beat-cz",
+   "title": "Castle Colditz",
+   "description": "Finish mission 9, Castle Colditz. (Counts once you save a game in a later mission.)",
+   "points": 10,
+   "group": "Campaign",
+   "rule": {
+    "reach": [
+     "PA"
+    ]
+   }
+  },
+  {
+   "id": "reach-paris",
+   "title": "Paris Awaits",
+   "description": "Reach the final mission, Is Paris Burning? (Save a game in it.)",
+   "points": 25,
+   "group": "Campaign",
+   "rule": {
+    "reach": "PA"
+   }
+  },
+  {
+   "id": "bonus-1",
+   "title": "Bonus Round",
+   "description": "Play a bonus mission.",
+   "points": 10,
+   "group": "Bonus missions",
+   "rule": {
+    "count": 1,
+    "of": [
+     "TU03",
+     "TU04",
+     "TU05",
+     "TK",
+     "SH",
+     "ECL"
+    ]
+   }
+  },
+  {
+   "id": "bonus-3",
+   "title": "Overtime",
+   "description": "Play 3 different bonus missions.",
+   "points": 15,
+   "group": "Bonus missions",
+   "rule": {
+    "count": 3,
+    "of": [
+     "TU03",
+     "TU04",
+     "TU05",
+     "TK",
+     "SH",
+     "ECL"
+    ]
+   }
+  },
+  {
+   "id": "bonus-all",
+   "title": "Above and Beyond",
+   "description": "Play every bonus mission.",
+   "points": 30,
+   "group": "Bonus missions",
+   "rule": {
+    "count": 6,
+    "of": [
+     "TU03",
+     "TU04",
+     "TU05",
+     "TK",
+     "SH",
+     "ECL"
+    ]
+   }
+  },
+  {
+   "id": "saves-5",
+   "title": "Men of Courage",
+   "description": "Save a game in 5 different campaign missions.",
+   "points": 15,
+   "group": "Milestones",
+   "rule": {
+    "count": 5,
+    "of": [
+     "SB_N",
+     "SB",
+     "HL",
+     "BU",
+     "KW",
+     "IS",
+     "PT",
+     "RY",
+     "CZ",
+     "PA"
+    ]
+   }
+  },
+  {
+   "id": "saves-10",
+   "title": "Seasoned Commando",
+   "description": "Save a game in 10 different campaign missions.",
+   "points": 20,
+   "group": "Milestones",
+   "rule": {
+    "count": 10,
+    "of": [
+     "SB_N",
+     "SB",
+     "HL",
+     "BU",
+     "KW",
+     "IS",
+     "PT",
+     "RY",
+     "CZ",
+     "PA"
+    ]
+   }
+  },
+  {
+   "id": "saves-all",
+   "title": "Every Step of the Way",
+   "description": "Save a game in every campaign mission.",
+   "points": 30,
+   "group": "Milestones",
+   "rule": {
+    "count": 10,
+    "of": [
+     "SB_N",
+     "SB",
+     "HL",
+     "BU",
+     "KW",
+     "IS",
+     "PT",
+     "RY",
+     "CZ",
+     "PA"
+    ]
+   }
+  },
+  {
+   "id": "during-sb_n",
+   "title": "Field Notes: Night of the Wolves",
+   "description": "Save a game during Night of the Wolves.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "SB_N"
+   }
+  },
+  {
+   "id": "during-sb",
+   "title": "Field Notes: Das Boot, Silent Killers",
+   "description": "Save a game during Das Boot, Silent Killers.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "SB"
+   }
+  },
+  {
+   "id": "during-hl",
+   "title": "Field Notes: White Death",
+   "description": "Save a game during White Death.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "HL"
+   }
+  },
+  {
+   "id": "during-bu",
+   "title": "Field Notes: Target: Burma",
+   "description": "Save a game during Target: Burma.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "BU"
+   }
+  },
+  {
+   "id": "during-kw",
+   "title": "Field Notes: Bridge over the River Kwai",
+   "description": "Save a game during Bridge over the River Kwai.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "KW"
+   }
+  },
+  {
+   "id": "during-is",
+   "title": "Field Notes: The Guns of Savo Island",
+   "description": "Save a game during The Guns of Savo Island.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "IS"
+   }
+  },
+  {
+   "id": "during-pt",
+   "title": "Field Notes: The Giant in Haiphong",
+   "description": "Save a game during The Giant in Haiphong.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "PT"
+   }
+  },
+  {
+   "id": "during-ry",
+   "title": "Field Notes: Saving Private Smith",
+   "description": "Save a game during Saving Private Smith.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "RY"
+   }
+  },
+  {
+   "id": "during-cz",
+   "title": "Field Notes: Castle Colditz",
+   "description": "Save a game during Castle Colditz.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "CZ"
+   }
+  },
+  {
+   "id": "during-pa",
+   "title": "Field Notes: Is Paris Burning?",
+   "description": "Save a game during Is Paris Burning?.",
+   "points": 5,
+   "group": "Field notes",
+   "rule": {
+    "reach": "PA"
+   }
+  },
+  {
+   "id": "during-tu01",
+   "title": "Field Notes: Boot Camp 1",
+   "description": "Save a game during the first training mission.",
+   "points": 5,
+   "group": "Training",
+   "rule": {
+    "reach": "TU01"
+   }
+  },
+  {
+   "id": "during-tu02",
+   "title": "Field Notes: Boot Camp 2",
+   "description": "Save a game during the second training mission.",
+   "points": 5,
+   "group": "Training",
+   "rule": {
+    "reach": "TU02"
+   }
+  },
+  {
+   "id": "bonus-tu03",
+   "title": "Bonus Mission 1",
+   "description": "Save a game during bonus mission 1.",
+   "points": 10,
+   "group": "Bonus missions",
+   "rule": {
+    "reach": "TU03"
+   }
+  },
+  {
+   "id": "bonus-tu04",
+   "title": "Bonus Mission 2",
+   "description": "Save a game during bonus mission 2.",
+   "points": 10,
+   "group": "Bonus missions",
+   "rule": {
+    "reach": "TU04"
+   }
+  },
+  {
+   "id": "bonus-tu05",
+   "title": "Bonus Mission 3",
+   "description": "Save a game during bonus mission 3.",
+   "points": 10,
+   "group": "Bonus missions",
+   "rule": {
+    "reach": "TU05"
+   }
+  },
+  {
+   "id": "bonus-tk",
+   "title": "Bonus Mission 4",
+   "description": "Save a game during bonus mission 4.",
+   "points": 10,
+   "group": "Bonus missions",
+   "rule": {
+    "reach": "TK"
+   }
+  },
+  {
+   "id": "bonus-sh",
+   "title": "Bonus Mission 5",
+   "description": "Save a game during bonus mission 5.",
+   "points": 10,
+   "group": "Bonus missions",
+   "rule": {
+    "reach": "SH"
+   }
+  },
+  {
+   "id": "bonus-ecl",
+   "title": "Bonus Mission 6",
+   "description": "Save a game during bonus mission 6.",
+   "points": 10,
+   "group": "Bonus missions",
+   "rule": {
+    "reach": "ECL"
+   }
+  },
+  {
+   "id": "planner-sb_n",
+   "title": "Careful Planner: Night of the Wolves",
+   "description": "Save 5 times during Night of the Wolves.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "SB_N",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-sb",
+   "title": "Careful Planner: Das Boot, Silent Killers",
+   "description": "Save 5 times during Das Boot, Silent Killers.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "SB",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-hl",
+   "title": "Careful Planner: White Death",
+   "description": "Save 5 times during White Death.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "HL",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-bu",
+   "title": "Careful Planner: Target: Burma",
+   "description": "Save 5 times during Target: Burma.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "BU",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-kw",
+   "title": "Careful Planner: Bridge over the River Kwai",
+   "description": "Save 5 times during Bridge over the River Kwai.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "KW",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-is",
+   "title": "Careful Planner: The Guns of Savo Island",
+   "description": "Save 5 times during The Guns of Savo Island.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "IS",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-pt",
+   "title": "Careful Planner: The Giant in Haiphong",
+   "description": "Save 5 times during The Giant in Haiphong.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "PT",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-ry",
+   "title": "Careful Planner: Saving Private Smith",
+   "description": "Save 5 times during Saving Private Smith.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "RY",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-cz",
+   "title": "Careful Planner: Castle Colditz",
+   "description": "Save 5 times during Castle Colditz.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "CZ",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "planner-pa",
+   "title": "Careful Planner: Is Paris Burning?",
+   "description": "Save 5 times during Is Paris Burning?.",
+   "points": 5,
+   "group": "Careful planner",
+   "rule": {
+    "inMission": {
+     "of": "PA",
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "files-3",
+   "title": "Backup Plan",
+   "description": "Have 3 different save slots.",
+   "points": 5,
+   "group": "Saving",
+   "rule": {
+    "files": 3
+   }
+  },
+  {
+   "id": "files-8",
+   "title": "Filing Cabinet",
+   "description": "Have 8 different save slots.",
+   "points": 10,
+   "group": "Saving",
+   "rule": {
+    "files": 8
+   }
+  },
+  {
+   "id": "writes-25",
+   "title": "Save Early",
+   "description": "Save your game 25 times.",
+   "points": 5,
+   "group": "Saving",
+   "rule": {
+    "saves": 25
+   }
+  },
+  {
+   "id": "writes-100",
+   "title": "Save Often",
+   "description": "Save your game 100 times.",
+   "points": 15,
+   "group": "Saving",
+   "rule": {
+    "saves": 100
+   }
+  },
+  {
+   "id": "writes-250",
+   "title": "Nothing Left to Chance",
+   "description": "Save your game 250 times.",
+   "points": 25,
+   "group": "Saving",
+   "rule": {
+    "saves": 250
+   }
+  }
+ ]
+}

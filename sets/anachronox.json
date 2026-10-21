@@ -1,0 +1,773 @@
+{
+ "id": "anachronox",
+ "title": "Anachronox",
+ "version": 1,
+ "kind": "replay",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [],
+ "linkFiles": [
+  "anox.exe",
+  "anoxdata/MAPS.dat"
+ ],
+ "exeNames": [],
+ "md5": [],
+ "mapNames": {},
+ "mapList": [
+  "ballotine",
+  "baltown",
+  "baltownr",
+  "basement",
+  "black",
+  "braintrain",
+  "braintrain-b",
+  "bricksb",
+  "bricksc",
+  "bricksc2",
+  "bricksd",
+  "chamber",
+  "cine1",
+  "cine2",
+  "cinedem",
+  "cineend",
+  "cinehive",
+  "cinehive2",
+  "comhills",
+  "commbase",
+  "commiteon",
+  "crevice",
+  "crevicelanding",
+  "doren",
+  "flashback",
+  "fortress1",
+  "fortress2",
+  "fortressgrounds",
+  "franks",
+  "greattree",
+  "grumpos",
+  "hephaestus",
+  "hephfactory",
+  "hephlava",
+  "hephpipes",
+  "hephpoor",
+  "hephtower1",
+  "hephtower2",
+  "hive",
+  "hivebay",
+  "hovel",
+  "krap2",
+  "krapton",
+  "kraptonbay",
+  "kraptonjail",
+  "kraptonmaze",
+  "labbuilding",
+  "levant",
+  "levant1",
+  "levant2",
+  "limbus",
+  "limbusdome",
+  "mburger",
+  "mmuseum",
+  "mugpath",
+  "museum",
+  "museumnight",
+  "mystech1",
+  "mystech2",
+  "onegate",
+  "onegatestn",
+  "orange",
+  "pay2pray",
+  "pillars",
+  "redlight",
+  "republic",
+  "routubes1",
+  "routubes2",
+  "rowdys",
+  "scommonnight",
+  "scommons",
+  "senderss",
+  "sendormitory",
+  "servicetunnel",
+  "sewagic1a",
+  "sexmach",
+  "slevant",
+  "slounge",
+  "slutopia",
+  "sphere",
+  "sphere3",
+  "starport",
+  "sunstrip",
+  "temple",
+  "tenements",
+  "tensil",
+  "tours",
+  "tours2",
+  "tubbys",
+  "vendomart",
+  "votowne",
+  "warshipbay",
+  "waukees",
+  "whacks",
+  "whitecaves-a",
+  "whitecaves-b",
+  "whitendon",
+  "zordos"
+ ],
+ "notes": [
+  "Vault reads your save folders (anoxdata\\SAVE) and never touches the game. Places count once a save includes them."
+ ],
+ "testGuide": [
+  {
+   "title": "Start and save",
+   "detail": "Start a new game and save in the Bricks. \"The Bricks\" should pop up."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "bricks",
+   "title": "The Bricks",
+   "description": "Wake up in Boots's office in the Bricks.",
+   "points": 5,
+   "group": "Anachronox",
+   "rule": {
+    "map": [
+     "bricksb",
+     "bricksc",
+     "bricksc2",
+     "bricksd"
+    ]
+   }
+  },
+  {
+   "id": "rowdys",
+   "title": "Rowdy's",
+   "description": "Stop by Rowdy's bar.",
+   "points": 10,
+   "group": "Anachronox",
+   "rule": {
+    "map": "rowdys"
+   }
+  },
+  {
+   "id": "sender",
+   "title": "Sender Station",
+   "description": "Reach Sender Station.",
+   "points": 10,
+   "group": "Anachronox",
+   "rule": {
+    "map": [
+     "senderss",
+     "sendormitory"
+    ]
+   }
+  },
+  {
+   "id": "museum",
+   "title": "Museum Piece",
+   "description": "Visit the museum.",
+   "points": 10,
+   "group": "Anachronox",
+   "rule": {
+    "map": [
+     "museum",
+     "mmuseum",
+     "museumnight"
+    ]
+   }
+  },
+  {
+   "id": "democratus",
+   "title": "Democratus",
+   "description": "Reach the planet Democratus.",
+   "points": 20,
+   "group": "Worlds",
+   "rule": {
+    "map": [
+     "votowne",
+     "whitendon",
+     "commbase",
+     "comhills",
+     "commiteon",
+     "republic"
+    ]
+   }
+  },
+  {
+   "id": "hephaestus",
+   "title": "Hephaestus",
+   "description": "Reach the planet Hephaestus.",
+   "points": 20,
+   "group": "Worlds",
+   "rule": {
+    "mapPrefix": "heph"
+   }
+  },
+  {
+   "id": "hive",
+   "title": "The Hive",
+   "description": "Reach the Hive.",
+   "points": 20,
+   "group": "Worlds",
+   "rule": {
+    "map": [
+     "hive",
+     "hivebay"
+    ]
+   }
+  },
+  {
+   "id": "krapton",
+   "title": "Krapton",
+   "description": "Reach Krapton.",
+   "points": 20,
+   "group": "Worlds",
+   "rule": {
+    "mapPrefix": "krapton"
+   }
+  },
+  {
+   "id": "limbus",
+   "title": "Limbus",
+   "description": "Reach Limbus.",
+   "points": 30,
+   "group": "Worlds",
+   "rule": {
+    "mapPrefix": "limbus"
+   }
+  },
+  {
+   "id": "ending",
+   "title": "The End?",
+   "description": "See the ending.",
+   "points": 50,
+   "group": "Worlds",
+   "rule": {
+    "map": "cineend"
+   }
+  },
+  {
+   "id": "maps-20",
+   "title": "Detective Work",
+   "description": "Reach 20 different places.",
+   "points": 10,
+   "group": "Exploration",
+   "rule": {
+    "maps": 20
+   }
+  },
+  {
+   "id": "maps-45",
+   "title": "Galaxy Hopper",
+   "description": "Reach 45 different places.",
+   "points": 20,
+   "group": "Exploration",
+   "rule": {
+    "maps": 45
+   }
+  },
+  {
+   "id": "maps-75",
+   "title": "Every Corner of the Galaxy",
+   "description": "Reach 75 different places.",
+   "points": 40,
+   "group": "Exploration",
+   "rule": {
+    "maps": 75
+   }
+  },
+  {
+   "id": "maps-10",
+   "title": "Out of the Office",
+   "description": "Reach 10 different places.",
+   "points": 5,
+   "group": "Exploration",
+   "rule": {
+    "maps": 10
+   }
+  },
+  {
+   "id": "maps-30",
+   "title": "Gumshoe",
+   "description": "Reach 30 different places.",
+   "points": 15,
+   "group": "Exploration",
+   "rule": {
+    "maps": 30
+   }
+  },
+  {
+   "id": "maps-60",
+   "title": "Well Travelled",
+   "description": "Reach 60 different places.",
+   "points": 25,
+   "group": "Exploration",
+   "rule": {
+    "maps": 60
+   }
+  },
+  {
+   "id": "maps-90",
+   "title": "Seen It All",
+   "description": "Reach 90 different places.",
+   "points": 50,
+   "group": "Exploration",
+   "rule": {
+    "maps": 90
+   }
+  },
+  {
+   "id": "place-starport",
+   "title": "Starport",
+   "description": "Reach Starport.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "starport"
+    ]
+   }
+  },
+  {
+   "id": "place-sphere",
+   "title": "The Sphere",
+   "description": "Reach The Sphere.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "sphere",
+     "sphere3"
+    ]
+   }
+  },
+  {
+   "id": "place-temple",
+   "title": "The Temple",
+   "description": "Reach The Temple.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "temple"
+    ]
+   }
+  },
+  {
+   "id": "place-greattree",
+   "title": "The Great Tree",
+   "description": "Reach The Great Tree.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "greattree"
+    ]
+   }
+  },
+  {
+   "id": "place-doren",
+   "title": "Doren",
+   "description": "Reach Doren.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "doren"
+    ]
+   }
+  },
+  {
+   "id": "place-pillars",
+   "title": "The Pillars",
+   "description": "Reach The Pillars.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "pillars"
+    ]
+   }
+  },
+  {
+   "id": "place-onegate",
+   "title": "Onegate",
+   "description": "Reach Onegate.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "onegate",
+     "onegatestn"
+    ]
+   }
+  },
+  {
+   "id": "place-ballotine",
+   "title": "Ballotine",
+   "description": "Reach Ballotine.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "ballotine"
+    ]
+   }
+  },
+  {
+   "id": "place-baltown",
+   "title": "Baltown",
+   "description": "Reach Baltown.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "baltown",
+     "baltownr"
+    ]
+   }
+  },
+  {
+   "id": "place-fortress",
+   "title": "The Fortress",
+   "description": "Reach The Fortress.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "fortress1",
+     "fortress2",
+     "fortressgrounds"
+    ]
+   }
+  },
+  {
+   "id": "place-whitecaves",
+   "title": "The White Caves",
+   "description": "Reach The White Caves.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "whitecaves-a",
+     "whitecaves-b"
+    ]
+   }
+  },
+  {
+   "id": "place-zordos",
+   "title": "Zordos",
+   "description": "Reach Zordos.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "zordos"
+    ]
+   }
+  },
+  {
+   "id": "place-mystech",
+   "title": "Mystech",
+   "description": "Reach Mystech.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "mystech1",
+     "mystech2"
+    ]
+   }
+  },
+  {
+   "id": "place-tours",
+   "title": "Tours",
+   "description": "Reach Tours.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "tours",
+     "tours2"
+    ]
+   }
+  },
+  {
+   "id": "place-tenements",
+   "title": "The Tenements",
+   "description": "Reach The Tenements.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "tenements"
+    ]
+   }
+  },
+  {
+   "id": "place-sunstrip",
+   "title": "The Sunstrip",
+   "description": "Reach The Sunstrip.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "sunstrip"
+    ]
+   }
+  },
+  {
+   "id": "place-redlight",
+   "title": "The Red Light District",
+   "description": "Reach The Red Light District.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "redlight"
+    ]
+   }
+  },
+  {
+   "id": "place-grumpos",
+   "title": "Grumpos's Place",
+   "description": "Reach Grumpos's Place.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "grumpos"
+    ]
+   }
+  },
+  {
+   "id": "place-warshipbay",
+   "title": "Warship Bay",
+   "description": "Reach Warship Bay.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "warshipbay"
+    ]
+   }
+  },
+  {
+   "id": "place-kraptonjail",
+   "title": "Krapton Jail",
+   "description": "Reach Krapton Jail.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "kraptonjail"
+    ]
+   }
+  },
+  {
+   "id": "place-routubes",
+   "title": "The Rou Tubes",
+   "description": "Reach The Rou Tubes.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "routubes1",
+     "routubes2"
+    ]
+   }
+  },
+  {
+   "id": "place-limbusdome",
+   "title": "The Limbus Dome",
+   "description": "Reach The Limbus Dome.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "limbusdome"
+    ]
+   }
+  },
+  {
+   "id": "place-hephfactory",
+   "title": "The Hephaestus Factory",
+   "description": "Reach The Hephaestus Factory.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "hephfactory"
+    ]
+   }
+  },
+  {
+   "id": "place-vendomart",
+   "title": "Vendomart",
+   "description": "Reach Vendomart.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "vendomart"
+    ]
+   }
+  },
+  {
+   "id": "place-pay2pray",
+   "title": "Pay 2 Pray",
+   "description": "Reach Pay 2 Pray.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "pay2pray"
+    ]
+   }
+  },
+  {
+   "id": "place-tubbys",
+   "title": "Tubby's",
+   "description": "Reach Tubby's.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "tubbys"
+    ]
+   }
+  },
+  {
+   "id": "place-waukees",
+   "title": "Waukee's",
+   "description": "Reach Waukee's.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "waukees"
+    ]
+   }
+  },
+  {
+   "id": "place-levant",
+   "title": "Levant",
+   "description": "Reach Levant.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "levant",
+     "levant1",
+     "levant2",
+     "slevant"
+    ]
+   }
+  },
+  {
+   "id": "place-hephlava",
+   "title": "The Lava Fields of Hephaestus",
+   "description": "Reach The Lava Fields of Hephaestus.",
+   "points": 10,
+   "group": "Places",
+   "rule": {
+    "map": [
+     "hephlava"
+    ]
+   }
+  },
+  {
+   "id": "all-democratus",
+   "title": "Democratus: Every Area",
+   "description": "Reach all 6 areas of Democratus.",
+   "points": 20,
+   "group": "Worlds",
+   "rule": {
+    "mapsIn": {
+     "maps": [
+      "votowne",
+      "whitendon",
+      "commbase",
+      "comhills",
+      "commiteon",
+      "republic"
+     ],
+     "n": 6
+    }
+   }
+  },
+  {
+   "id": "all-hephaestus",
+   "title": "Hephaestus: Every Area",
+   "description": "Reach all 7 areas of Hephaestus.",
+   "points": 20,
+   "group": "Worlds",
+   "rule": {
+    "mapsIn": {
+     "maps": [
+      "hephaestus",
+      "hephfactory",
+      "hephlava",
+      "hephpipes",
+      "hephpoor",
+      "hephtower1",
+      "hephtower2"
+     ],
+     "n": 7
+    }
+   }
+  },
+  {
+   "id": "all-krapton",
+   "title": "Krapton: Every Area",
+   "description": "Reach all 5 areas of Krapton.",
+   "points": 20,
+   "group": "Worlds",
+   "rule": {
+    "mapsIn": {
+     "maps": [
+      "krap2",
+      "krapton",
+      "kraptonbay",
+      "kraptonjail",
+      "kraptonmaze"
+     ],
+     "n": 5
+    }
+   }
+  },
+  {
+   "id": "all-limbus",
+   "title": "Limbus: Every Area",
+   "description": "Reach all 2 areas of Limbus.",
+   "points": 20,
+   "group": "Worlds",
+   "rule": {
+    "mapsIn": {
+     "maps": [
+      "limbus",
+      "limbusdome"
+     ],
+     "n": 2
+    }
+   }
+  },
+  {
+   "id": "all-fortress",
+   "title": "The Fortress: Every Area",
+   "description": "Reach all 3 areas of The Fortress.",
+   "points": 20,
+   "group": "Worlds",
+   "rule": {
+    "mapsIn": {
+     "maps": [
+      "fortress1",
+      "fortress2",
+      "fortressgrounds"
+     ],
+     "n": 3
+    }
+   }
+  }
+ ]
+}

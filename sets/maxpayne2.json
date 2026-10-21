@@ -1,0 +1,658 @@
+{
+  "id": "maxpayne2",
+  "title": "Max Payne 2: The Fall of Max Payne",
+  "exeNames": [
+    "maxpayne2.exe"
+  ],
+  "md5": [
+    "d8225c96d38cd01371eb1cf79dbf4b22"
+  ],
+  "version": 1,
+  "pollHz": 10,
+  "settleSeconds": 3,
+  "creditOnLoad": true,
+  "notes": [
+    "Map achievements unlock the moment a map finishes loading, including when you load a save.",
+    "Chapter achievements come from your save games: save once in each new chapter and the chapter before it counts, even if Vault was closed while you played.",
+    "Build checked: Steam maxpayne2.exe (v1.01, DLLs dated 17 Oct 2003)."
+  ],
+  "watches": [
+    {
+      "id": "level",
+      "label": "Map fingerprint (0 = loading/menu)",
+      "address": "{X_LevelMFC.dll+1B640}",
+      "size": "u32",
+      "values": {
+        "365": "365 (map 1 of 24)",
+        "617": "617 (map 2 of 24)",
+        "324": "324 (map 3 of 24)",
+        "133": "133 (map 4 of 24)",
+        "608": "608 (map 5 of 24)",
+        "249": "249 (map 6 of 24)",
+        "403": "403 (map 7 of 24)",
+        "931": "931 (map 8 of 24)",
+        "136": "136 (map 9 of 24)",
+        "227": "227 (map 10 of 24)",
+        "488": "488 (map 11 of 24)",
+        "373": "373 (map 12 of 24)",
+        "154": "154 (map 13 of 24)",
+        "145": "145 (map 14 of 24)",
+        "97": "97 (map 15 of 24)",
+        "141": "141 (map 16 of 24)",
+        "634": "634 (map 17 of 24)",
+        "426": "426 (map 18 of 24)",
+        "354": "354 (map 19 of 24)",
+        "467": "467 (map 20 of 24)",
+        "316": "316 (map 21 of 24)",
+        "185": "185 (map 22 of 24)",
+        "355": "355 (map 23 of 24)",
+        "849": "849 (map 24 of 24)"
+      }
+    },
+    {
+      "id": "cutscene",
+      "label": "In a cutscene",
+      "address": "{X_GameObjectsMFC.dll+1A7AA0}",
+      "size": "u32",
+      "values": {
+        "0": "No",
+        "1": "Yes"
+      }
+    }
+  ],
+  "testGuide": [
+    {
+      "title": "Start Max Payne 2 from Vault",
+      "detail": "Click Play on the game page, or start it from Steam."
+    },
+    {
+      "title": "Start a new game or load a save",
+      "detail": "The map fingerprint should change from 0 to a number once the map has loaded.",
+      "doneWhen": {
+        "watch": "level",
+        "atLeast": 1
+      }
+    }
+  ],
+  "achievements": [
+    {
+      "id": "mp2-start",
+      "title": "A Film Noir Love Story",
+      "description": "Start the story (load the first map).",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=365",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map02",
+      "title": "Back in the Dark",
+      "description": "Reach map 2 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=617",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map03",
+      "title": "Second Wind",
+      "description": "Reach map 3 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=324",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map04",
+      "title": "Cold Trail",
+      "description": "Reach map 4 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=133",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map05",
+      "title": "Bullet Time Habit",
+      "description": "Reach map 5 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=608",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map06",
+      "title": "Shades of Noir",
+      "description": "Reach map 6 of 24 in the story.",
+      "points": 10,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=249",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map07",
+      "title": "Shoot Dodge",
+      "description": "Reach map 7 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=403",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map08",
+      "title": "Out of the Frying Pan",
+      "description": "Reach map 8 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=931",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map09",
+      "title": "Painkiller Diet",
+      "description": "Reach map 9 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=136",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map10",
+      "title": "Falling Further",
+      "description": "Reach map 10 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=227",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map11",
+      "title": "Halfway Through Hell",
+      "description": "Reach map 11 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=488",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map12",
+      "title": "No Way Back",
+      "description": "Reach map 12 of 24 in the story.",
+      "points": 10,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=373",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map13",
+      "title": "Graphic Novel",
+      "description": "Reach map 13 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=154",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map14",
+      "title": "Long Night",
+      "description": "Reach map 14 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=145",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map15",
+      "title": "Broken Glass",
+      "description": "Reach map 15 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=97",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map16",
+      "title": "Hard-Boiled",
+      "description": "Reach map 16 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=141",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map17",
+      "title": "Dead Men Walking",
+      "description": "Reach map 17 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=634",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map18",
+      "title": "Love Hurts",
+      "description": "Reach map 18 of 24 in the story.",
+      "points": 10,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=426",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map19",
+      "title": "Rain on Concrete",
+      "description": "Reach map 19 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=354",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map20",
+      "title": "Nightmare Logic",
+      "description": "Reach map 20 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=467",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map21",
+      "title": "The Long Fall",
+      "description": "Reach map 21 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=316",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map22",
+      "title": "Nearly Done",
+      "description": "Reach map 22 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=185",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map23",
+      "title": "Last Stand",
+      "description": "Reach map 23 of 24 in the story.",
+      "points": 5,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=355",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-map24",
+      "title": "The Fall of Max Payne",
+      "description": "Reach the final map of the story.",
+      "points": 25,
+      "memaddr": "0xX{X_LevelMFC.dll+1B640}=849",
+      "group": "Story"
+    },
+    {
+      "id": "mp2-milestone8",
+      "title": "A Third of the Way",
+      "description": "Reach map 8 or later.",
+      "points": 10,
+      "memaddr": "1=1S0xX{X_LevelMFC.dll+1B640}=931S0xX{X_LevelMFC.dll+1B640}=136S0xX{X_LevelMFC.dll+1B640}=227S0xX{X_LevelMFC.dll+1B640}=488S0xX{X_LevelMFC.dll+1B640}=373S0xX{X_LevelMFC.dll+1B640}=154S0xX{X_LevelMFC.dll+1B640}=145S0xX{X_LevelMFC.dll+1B640}=97S0xX{X_LevelMFC.dll+1B640}=141S0xX{X_LevelMFC.dll+1B640}=634S0xX{X_LevelMFC.dll+1B640}=426S0xX{X_LevelMFC.dll+1B640}=354S0xX{X_LevelMFC.dll+1B640}=467S0xX{X_LevelMFC.dll+1B640}=316S0xX{X_LevelMFC.dll+1B640}=185S0xX{X_LevelMFC.dll+1B640}=355S0xX{X_LevelMFC.dll+1B640}=849",
+      "group": "Milestones"
+    },
+    {
+      "id": "mp2-milestone16",
+      "title": "Two Thirds Down",
+      "description": "Reach map 16 or later.",
+      "points": 10,
+      "memaddr": "1=1S0xX{X_LevelMFC.dll+1B640}=141S0xX{X_LevelMFC.dll+1B640}=634S0xX{X_LevelMFC.dll+1B640}=426S0xX{X_LevelMFC.dll+1B640}=354S0xX{X_LevelMFC.dll+1B640}=467S0xX{X_LevelMFC.dll+1B640}=316S0xX{X_LevelMFC.dll+1B640}=185S0xX{X_LevelMFC.dll+1B640}=355S0xX{X_LevelMFC.dll+1B640}=849",
+      "group": "Milestones"
+    },
+    {
+      "id": "mp2-milestone4",
+      "title": "Into the Night",
+      "description": "Reach map 4 or later.",
+      "points": 10,
+      "memaddr": "1=1S0xX{X_LevelMFC.dll+1B640}=133S0xX{X_LevelMFC.dll+1B640}=608S0xX{X_LevelMFC.dll+1B640}=249S0xX{X_LevelMFC.dll+1B640}=403S0xX{X_LevelMFC.dll+1B640}=931S0xX{X_LevelMFC.dll+1B640}=136S0xX{X_LevelMFC.dll+1B640}=227S0xX{X_LevelMFC.dll+1B640}=488S0xX{X_LevelMFC.dll+1B640}=373S0xX{X_LevelMFC.dll+1B640}=154S0xX{X_LevelMFC.dll+1B640}=145S0xX{X_LevelMFC.dll+1B640}=97S0xX{X_LevelMFC.dll+1B640}=141S0xX{X_LevelMFC.dll+1B640}=634S0xX{X_LevelMFC.dll+1B640}=426S0xX{X_LevelMFC.dll+1B640}=354S0xX{X_LevelMFC.dll+1B640}=467S0xX{X_LevelMFC.dll+1B640}=316S0xX{X_LevelMFC.dll+1B640}=185S0xX{X_LevelMFC.dll+1B640}=355S0xX{X_LevelMFC.dll+1B640}=849",
+      "group": "Milestones"
+    },
+    {
+      "id": "mp2-milestone12",
+      "title": "Halfway Down",
+      "description": "Reach map 12 (halfway) or later.",
+      "points": 10,
+      "memaddr": "1=1S0xX{X_LevelMFC.dll+1B640}=373S0xX{X_LevelMFC.dll+1B640}=154S0xX{X_LevelMFC.dll+1B640}=145S0xX{X_LevelMFC.dll+1B640}=97S0xX{X_LevelMFC.dll+1B640}=141S0xX{X_LevelMFC.dll+1B640}=634S0xX{X_LevelMFC.dll+1B640}=426S0xX{X_LevelMFC.dll+1B640}=354S0xX{X_LevelMFC.dll+1B640}=467S0xX{X_LevelMFC.dll+1B640}=316S0xX{X_LevelMFC.dll+1B640}=185S0xX{X_LevelMFC.dll+1B640}=355S0xX{X_LevelMFC.dll+1B640}=849",
+      "group": "Milestones"
+    },
+    {
+      "id": "mp2-milestone20",
+      "title": "The Home Stretch",
+      "description": "Reach map 20 or later.",
+      "points": 10,
+      "memaddr": "1=1S0xX{X_LevelMFC.dll+1B640}=467S0xX{X_LevelMFC.dll+1B640}=316S0xX{X_LevelMFC.dll+1B640}=185S0xX{X_LevelMFC.dll+1B640}=355S0xX{X_LevelMFC.dll+1B640}=849",
+      "group": "Milestones"
+    },
+    {
+      "id": "mp2-ch00",
+      "title": "Part I Prologue",
+      "description": "Finish Part I, Prologue: Prologue. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 1
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch01",
+      "title": "Elevator Doors",
+      "description": "Finish Part I, Chapter 1: Elevator Doors. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 2
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch02",
+      "title": "A Criminal Mastermind",
+      "description": "Finish Part I, Chapter 2: A Criminal Mastermind. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 3
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch03",
+      "title": "The Depths of My Brain",
+      "description": "Finish Part I, Chapter 3: The Depths of My Brain. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 4
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch04",
+      "title": "No 'Us' in This",
+      "description": "Finish Part I, Chapter 4: No 'Us' in This. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 5
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch05",
+      "title": "A Sign of Her Passage",
+      "description": "Finish Part I, Chapter 5: A Sign of Her Passage. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 6
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch06",
+      "title": "A Linear Sequence of Scares",
+      "description": "Finish Part I, Chapter 6: A Linear Sequence of Scares. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 7
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch07",
+      "title": "The Million Dollar Question",
+      "description": "Finish Part I, Chapter 7: The Million Dollar Question. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 8
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch08",
+      "title": "Part II Prologue",
+      "description": "Finish Part II, Prologue: Prologue. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 9
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch09",
+      "title": "The Things That I Want",
+      "description": "Finish Part II, Chapter 1: The Things That I Want. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 10
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch10",
+      "title": "In the Middle of Something",
+      "description": "Finish Part II, Chapter 2: In the Middle of Something. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 11
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch11",
+      "title": "Blowing Up",
+      "description": "Finish Part II, Chapter 3: Blowing Up. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 12
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch12",
+      "title": "Routing Her Synapses",
+      "description": "Finish Part II, Chapter 4: Routing Her Synapses. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 13
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch13",
+      "title": "Out of the Window",
+      "description": "Finish Part II, Chapter 5: Out of the Window. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 14
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch14",
+      "title": "The Genius of the Hole",
+      "description": "Finish Part II, Chapter 6: The Genius of the Hole. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 15
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch15",
+      "title": "Part III Prologue",
+      "description": "Finish Part III, Prologue: Prologue. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 16
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch16",
+      "title": "Too Stubborn to Die",
+      "description": "Finish Part III, Chapter 1: Too Stubborn to Die. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 17
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch17",
+      "title": "On a Crash Course",
+      "description": "Finish Part III, Chapter 2: On a Crash Course. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 18
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch18",
+      "title": "A Mob-War",
+      "description": "Finish Part III, Chapter 3: A Mob-War. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 19
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch19",
+      "title": "Dearest of All My Friends",
+      "description": "Finish Part III, Chapter 4: Dearest of All My Friends. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 20
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch20",
+      "title": "A Losing Game",
+      "description": "Finish Part III, Chapter 5: A Losing Game. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 21
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch21",
+      "title": "There Are No Happy Endings",
+      "description": "Finish Part III, Chapter 6: There Are No Happy Endings. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 22
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch22",
+      "title": "Love Hurts",
+      "description": "Finish Part III, Chapter 7: Love Hurts. Counts once you save in a later chapter.",
+      "points": 10,
+      "rule": {
+        "mp2Reach": 23
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-ch-final",
+      "title": "That Old Familiar Feeling",
+      "description": "Reach the final chapter and save there.",
+      "points": 25,
+      "rule": {
+        "mp2Reach": 23
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-part1",
+      "title": "The Darkness Inside",
+      "description": "Finish Part I.",
+      "points": 25,
+      "rule": {
+        "mp2Reach": 8
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-saved-part1",
+      "title": "Paper Trail: Part I",
+      "description": "Save at least once in every chapter of Part I.",
+      "points": 15,
+      "rule": {
+        "mp2SavedIn": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "group": "Saves"
+    },
+    {
+      "id": "mp2-part2",
+      "title": "A Binary Choice",
+      "description": "Finish Part II.",
+      "points": 25,
+      "rule": {
+        "mp2Reach": 15
+      },
+      "group": "Chapters"
+    },
+    {
+      "id": "mp2-saved-part2",
+      "title": "Paper Trail: Part II",
+      "description": "Save at least once in every chapter of Part II.",
+      "points": 15,
+      "rule": {
+        "mp2SavedIn": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "group": "Saves"
+    },
+    {
+      "id": "mp2-saved-part3",
+      "title": "Paper Trail: Part III",
+      "description": "Save at least once in every chapter of Part III.",
+      "points": 15,
+      "rule": {
+        "mp2SavedIn": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      "group": "Saves"
+    },
+    {
+      "id": "mp2-saves10",
+      "title": "Quick Saver",
+      "description": "Make 10 saves.",
+      "points": 10,
+      "rule": {
+        "mp2Saves": 10
+      },
+      "group": "Saves"
+    },
+    {
+      "id": "mp2-saves50",
+      "title": "Save Scummer",
+      "description": "Make 50 saves.",
+      "points": 10,
+      "rule": {
+        "mp2Saves": 50
+      },
+      "group": "Saves"
+    },
+    {
+      "id": "mp2-saves150",
+      "title": "Bullet-Time Archivist",
+      "description": "Make 150 saves.",
+      "points": 10,
+      "rule": {
+        "mp2Saves": 150
+      },
+      "group": "Saves"
+    }
+  ]
+}
