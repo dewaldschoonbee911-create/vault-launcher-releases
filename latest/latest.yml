@@ -1,8 +1,8 @@
-version: 0.1.76
+version: 0.1.77
 files:
-  - url: https://github.com/dewaldschoonbee911-create/vault-launcher-releases/releases/download/v0.1.76/VaultLauncher-Setup-0.1.76.exe
-    sha512: rZ9yM3+yj5PtrvRajrtugvbq28yk1w/RAmZDux5Y9EGYizJJW0k6fBi403ArBaqB25wFQzUaoXFTwxIyxxy2yA==
-    size: 103213541
-path: https://github.com/dewaldschoonbee911-create/vault-launcher-releases/releases/download/v0.1.76/VaultLauncher-Setup-0.1.76.exe
-sha512: rZ9yM3+yj5PtrvRajrtugvbq28yk1w/RAmZDux5Y9EGYizJJW0k6fBi403ArBaqB25wFQzUaoXFTwxIyxxy2yA==
-releaseDate: '2026-10-21T06:17:51.907Z'
+  - url: https://github.com/dewaldschoonbee911-create/vault-launcher-releases/releases/download/v0.1.77/VaultLauncher-Setup-0.1.77.exe
+    sha512: kw3FpA3p/ICF/+XjALGr547tBXww/VV0cjsi0RnkUDWlYfPvqy/RXzIT4caW6414eHUvvCJWhRwwCqq1mChphQ==
+    size: 103215166
+path: https://github.com/dewaldschoonbee911-create/vault-launcher-releases/releases/download/v0.1.77/VaultLauncher-Setup-0.1.77.exe
+sha512: kw3FpA3p/ICF/+XjALGr547tBXww/VV0cjsi0RnkUDWlYfPvqy/RXzIT4caW6414eHUvvCJWhRwwCqq1mChphQ==
+releaseDate: '2026-10-21T07:21:12.704Z'
