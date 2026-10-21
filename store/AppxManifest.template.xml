@@ -8,7 +8,7 @@
          IgnorableNamespaces="uap desktop rescap">
   <Identity Name="{{NAME}}" Publisher="{{PUBLISHER}}" Version="{{VERSION}}" ProcessorArchitecture="x64" />
   <Properties>
-    <DisplayName>Vault Launcher</DisplayName>
+    <DisplayName>Vault Launcher by SteamVault</DisplayName>
     <PublisherDisplayName>{{PUBLISHER_DISPLAY}}</PublisherDisplayName>
     <Logo>assets\StoreLogo.png</Logo>
   </Properties>
@@ -20,7 +20,7 @@
   </Resources>
   <Applications>
     <Application Id="VaultLauncher" Executable="Vault Launcher.exe" EntryPoint="Windows.FullTrustApplication">
-      <uap:VisualElements DisplayName="Vault Launcher" Description="Every PC game you own in one launcher, with live achievement stats."
+      <uap:VisualElements DisplayName="Vault Launcher by SteamVault" Description="Every PC game you own in one launcher, with live achievement stats."
                           BackgroundColor="transparent" Square150x150Logo="assets\Square150x150Logo.png" Square44x44Logo="assets\Square44x44Logo.png">
         <uap:DefaultTile Wide310x150Logo="assets\Wide310x150Logo.png" Square310x310Logo="assets\Square310x310Logo.png" Square71x71Logo="assets\SmallTile.png" ShortName="Vault" />
       </uap:VisualElements>

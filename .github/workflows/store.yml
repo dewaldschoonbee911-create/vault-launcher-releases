@@ -1,0 +1,35 @@
+# Rebuilds the Microsoft Store package (.msix) for an existing release, e.g. after a manifest change.
+# Run it from the Actions tab with the version number; it replaces VaultLauncher-Store-<version>.msix on that release.
+name: Rebuild Store package
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version, e.g. 0.1.76'
+        required: true
+permissions:
+  contents: write
+jobs:
+  store:
+    runs-on: windows-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      V: ${{ inputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build MSIX
+        shell: pwsh
+        run: |
+          gh release download "v$env:V" -p "VaultLauncher-Setup-$env:V.exe"
+          $parts = $env:V.Split('.') + @('0','0','0')
+          $ver = "$($parts[0]).$($parts[1]).$($parts[2]).0"
+          7z x -y "VaultLauncher-Setup-$env:V.exe" -onsis | Out-Null
+          New-Item -ItemType Directory -Force pkg | Out-Null
+          7z x -y 'nsis/$PLUGINSDIR/app-64.7z' -opkg | Out-Null
+          Copy-Item -Recurse store/assets pkg/assets
+          $id = Get-Content store/identity.json -Raw | ConvertFrom-Json
+          (Get-Content store/AppxManifest.template.xml -Raw).Replace('{{NAME}}', $id.name).Replace('{{PUBLISHER}}', $id.publisher).Replace('{{PUBLISHER_DISPLAY}}', $id.publisherDisplayName).Replace('{{VERSION}}', $ver) | Set-Content -Encoding utf8 pkg/AppxManifest.xml
+          $mk = Get-ChildItem 'C:/Program Files (x86)/Windows Kits/10/bin/*/x64/makeappx.exe' | Sort-Object FullName -Descending | Select-Object -First 1
+          & $mk.FullName pack /d pkg /p "VaultLauncher-Store-$env:V.msix" /o
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+          gh release upload "v$env:V" "VaultLauncher-Store-$env:V.msix" --clobber
