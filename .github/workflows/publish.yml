@@ -10,10 +10,43 @@ on:
 permissions:
   contents: write
 jobs:
+  # Microsoft Store package (.msix). Built from the same files as the installer; the Store signs it
+  # after certification, so it's uploaded unsigned to Partner Center. Attached to the release as
+  # VaultLauncher-Store-<version>.msix.
+  store:
+    runs-on: windows-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build MSIX
+        shell: pwsh
+        run: |
+          $v = (Select-String -Path latest.yml -Pattern '^version:\s*(\S+)').Matches[0].Groups[1].Value
+          $parts = $v.Split('.') + @('0','0','0')
+          $ver = "$($parts[0]).$($parts[1]).$($parts[2]).0"
+          7z x -y "VaultLauncher-Setup-$v.exe" -onsis | Out-Null
+          New-Item -ItemType Directory -Force pkg | Out-Null
+          7z x -y 'nsis/$PLUGINSDIR/app-64.7z' -opkg | Out-Null
+          Copy-Item -Recurse store/assets pkg/assets
+          $id = Get-Content store/identity.json -Raw | ConvertFrom-Json
+          (Get-Content store/AppxManifest.template.xml -Raw).Replace('{{NAME}}', $id.name).Replace('{{PUBLISHER}}', $id.publisher).Replace('{{PUBLISHER_DISPLAY}}', $id.publisherDisplayName).Replace('{{VERSION}}', $ver) | Set-Content -Encoding utf8 pkg/AppxManifest.xml
+          $mk = Get-ChildItem 'C:/Program Files (x86)/Windows Kits/10/bin/*/x64/makeappx.exe' | Sort-Object FullName -Descending | Select-Object -First 1
+          & $mk.FullName pack /d pkg /p "VaultLauncher-Store-$v.msix" /o
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: msix
+          path: '*.msix'
   publish:
+    needs: store
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: msix
       - name: Read version
         id: v
         run: echo "version=$(grep '^version:' latest.yml | awk '{print $2}')" >> "$GITHUB_OUTPUT"
@@ -37,6 +70,7 @@ jobs:
             *.exe
             *.blockmap
             *.zip
+            *.msix
             latest.yml
       - name: Remove upload branch
         run: git push origin --delete "${GITHUB_REF_NAME}"
