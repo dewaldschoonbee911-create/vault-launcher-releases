@@ -1,5 +1,5 @@
 {
- "launcherVersion": "0.1.81",
+ "launcherVersion": "0.1.82",
  "sets": [
   {
    "id": "anachronox",
@@ -88,8 +88,8 @@
   {
    "id": "driveclub",
    "file": "driveclub.json",
-   "version": 1,
-   "sha256": "3230d047ab96588ffacea384a77a0f2a4fff80634989e396b18d77f930546a91",
+   "version": 2,
+   "sha256": "4bd3e5836be40203dfe766d9678ae490644c94df4a6e720321510528b3feabbb",
    "minLauncher": "0.1.81"
   },
   {

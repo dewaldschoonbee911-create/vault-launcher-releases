@@ -1,7 +1,7 @@
 {
  "id": "driveclub",
  "title": "DRIVECLUB",
- "version": 1,
+ "version": 2,
  "minLauncher": "0.1.81",
  "kind": "log",
  "authors": [
@@ -14,6 +14,7 @@
   "launcher.ini",
   "runtime/DriveClubGame.exe"
  ],
+ "launchExe": "DriveClub.exe",
  "logFiles": [
   "logs/driveclub_*.log"
  ],
@@ -156,14 +157,14 @@
  ],
  "notes": [
   "For the DRIVECLUB PC recompilation (driveclub-recomp). The game still decides when you've earned a trophy; the recomp writes each one to its log (logs\\driveclub_<date>.log), and Vault reads that log and never touches the game.",
-  "Add the game with \"Add a game\" and pick DriveClub.exe in the driveclub-recomp folder.",
+  "Vault finds the driveclub-recomp folder on your drives by itself. If it doesn't show up, click Add a game and pick DriveClub.exe in that folder.",
   "The recomp doesn't remember trophies between launches, so Vault keeps them for you. #UniteInSpeed unlocks once you have every other main-game trophy, like the platinum on PlayStation.",
   "The Tour and series trophies (the add-on events) are numbered from public trophy lists and haven't been confirmed in a game yet."
  ],
  "testGuide": [
   {
-   "title": "Add the game",
-   "detail": "In Vault, click Add a game and choose DriveClub.exe in your driveclub-recomp folder."
+   "title": "Find the game",
+   "detail": "Start Vault and give it a minute: DRIVECLUB should appear in your library by itself. If it doesn't, click Add a game and choose DriveClub.exe in your driveclub-recomp folder."
   },
   {
    "title": "Finish an event",

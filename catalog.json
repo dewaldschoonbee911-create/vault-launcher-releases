@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-22T07:17:47.275Z",
- "launcherVersion": "0.1.81",
+ "generatedAt": "2026-10-22T07:34:09.880Z",
+ "launcherVersion": "0.1.82",
  "sets": [
   {
    "id": "anachronox",
@@ -13482,7 +13482,7 @@
    "statusNote": "Main-game trophies confirmed live (first event: 4 trophies); add-on series numbering not confirmed yet.",
    "notes": [
     "For the DRIVECLUB PC recompilation (driveclub-recomp). The game still decides when you've earned a trophy; the recomp writes each one to its log (logs\\driveclub_<date>.log), and Vault reads that log and never touches the game.",
-    "Add the game with \"Add a game\" and pick DriveClub.exe in the driveclub-recomp folder.",
+    "Vault finds the driveclub-recomp folder on your drives by itself. If it doesn't show up, click Add a game and pick DriveClub.exe in that folder.",
     "The recomp doesn't remember trophies between launches, so Vault keeps them for you. #UniteInSpeed unlocks once you have every other main-game trophy, like the platinum on PlayStation.",
     "The Tour and series trophies (the add-on events) are numbered from public trophy lists and haven't been confirmed in a game yet."
    ],
