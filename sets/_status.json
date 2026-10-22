@@ -141,7 +141,7 @@
   "note": "Main-game trophies confirmed live (first event: 4 trophies); add-on series numbering not confirmed yet."
  },
  "gow3r": {
-  "status": "untested",
-  "note": "Built from the public trophy list; waiting for the first trophy in a real game."
+  "status": "partly",
+  "note": "Poseidon confirmed from real saves; the other bosses use the autosave name pattern and still need a player to reach them."
  }
 }

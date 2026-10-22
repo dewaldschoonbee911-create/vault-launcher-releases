@@ -1,5 +1,5 @@
 {
- "launcherVersion": "0.1.85",
+ "launcherVersion": "0.1.86",
  "sets": [
   {
    "id": "anachronox",
@@ -143,8 +143,8 @@
   {
    "id": "gow3r",
    "file": "gow3r.json",
-   "version": 2,
-   "sha256": "ece3b76db759de84e2528907b9604f9e0a39bc8e32d0950178e22d74648641e9",
+   "version": 3,
+   "sha256": "b8286c3aa49ae52e2250f6993489f890f7a467d5773782c57c7a3a3be7e72fa3",
    "minLauncher": "0.1.81"
   },
   {
@@ -336,6 +336,6 @@
   }
  ],
  "status": {
-  "sha256": "ef13162b5813249f194f2dbc5f51351ce871774179f87ec5b84f9e222f4f0a85"
+  "sha256": "8ef8033bc10bfa7d20b06b8494b1d01c6994132fd3ee27c6fae5b8f3e56c72da"
  }
 }

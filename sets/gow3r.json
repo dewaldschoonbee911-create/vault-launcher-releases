@@ -1,7 +1,7 @@
 {
  "id": "gow3r",
  "title": "God of War III Remastered",
- "version": 2,
+ "version": 3,
  "minLauncher": "0.1.81",
  "kind": "log",
  "authors": [
@@ -68,7 +68,7 @@
   "For the God of War III PC recompilation (gow3_pc). Story trophies come from your saves, which list every level you've been through; Vault only reads them. Trophies the recomp reports in its log (last_run.log) count too.",
   "Vault finds the gow3-windows folder on your drives by itself. If it doesn't show up, click Add a game and pick God of War III.exe in that folder.",
   "The recomp starts a fresh log every launch, so keep Vault running while you play. King of the Hill unlocks once you have every other trophy, like the platinum on PlayStation.",
-  "So far Kill Poseidon and Beat the game are read from saves; more story trophies are added as their levels are mapped. Counters (like the 1000-hit combo) wait until the recomp reports trophies."
+  "Read from saves so far: Poseidon (a Hades level in the save), Helios, Hermes, Hercules, Hades and Cronos (the autosave named after each fight), and the end of the game. Counters like the 1000-hit combo wait until the recomp reports trophies."
  ],
  "testGuide": [
   {
@@ -166,7 +166,8 @@
    "group": "God of War III",
    "rarity": 73.0,
    "rule": {
-    "line": "\\btrophy 4 unlocked\\b"
+    "line": "\\btrophy 4 unlocked\\b",
+    "saveLabel": "^\\(Auto Save\\) Helios$"
    }
   },
   {
@@ -177,7 +178,8 @@
    "group": "God of War III",
    "rarity": 68.88,
    "rule": {
-    "line": "\\btrophy 5 unlocked\\b"
+    "line": "\\btrophy 5 unlocked\\b",
+    "saveLabel": "^\\(Auto Save\\) Hermes$"
    }
   },
   {
@@ -342,7 +344,8 @@
    "group": "God of War III",
    "rarity": 67.16,
    "rule": {
-    "line": "\\btrophy 20 unlocked\\b"
+    "line": "\\btrophy 20 unlocked\\b",
+    "saveLabel": "^\\(Auto Save\\) Hercules$"
    }
   },
   {
@@ -353,7 +356,8 @@
    "group": "God of War III",
    "rarity": 65.39,
    "rule": {
-    "line": "\\btrophy 21 unlocked\\b"
+    "line": "\\btrophy 21 unlocked\\b",
+    "saveLabel": "^\\(Auto Save\\) Cronos$"
    }
   },
   {
@@ -375,7 +379,8 @@
    "group": "God of War III",
    "rarity": 76.15,
    "rule": {
-    "line": "\\btrophy 23 unlocked\\b"
+    "line": "\\btrophy 23 unlocked\\b",
+    "saveLabel": "^\\(Auto Save\\) Hades$"
    }
   },
   {

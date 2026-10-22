@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-22T09:55:52.580Z",
- "launcherVersion": "0.1.85",
+ "generatedAt": "2026-10-22T10:16:16.878Z",
+ "launcherVersion": "0.1.86",
  "sets": [
   {
    "id": "anachronox",
@@ -16687,13 +16687,13 @@
    "id": "gow3r",
    "title": "God of War III Remastered",
    "how": "files",
-   "status": "untested",
-   "statusNote": "Built from the public trophy list; waiting for the first trophy in a real game.",
+   "status": "partly",
+   "statusNote": "Poseidon confirmed from real saves; the other bosses use the autosave name pattern and still need a player to reach them.",
    "notes": [
     "For the God of War III PC recompilation (gow3_pc). Story trophies come from your saves, which list every level you've been through; Vault only reads them. Trophies the recomp reports in its log (last_run.log) count too.",
     "Vault finds the gow3-windows folder on your drives by itself. If it doesn't show up, click Add a game and pick God of War III.exe in that folder.",
     "The recomp starts a fresh log every launch, so keep Vault running while you play. King of the Hill unlocks once you have every other trophy, like the platinum on PlayStation.",
-    "So far Kill Poseidon and Beat the game are read from saves; more story trophies are added as their levels are mapped. Counters (like the 1000-hit combo) wait until the recomp reports trophies."
+    "Read from saves so far: Poseidon (a Hades level in the save), Helios, Hermes, Hercules, Hades and Cronos (the autosave named after each fight), and the end of the game. Counters like the 1000-hit combo wait until the recomp reports trophies."
    ],
    "achievementCount": 35,
    "points": 805,
