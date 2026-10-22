@@ -1,5 +1,5 @@
 {
- "launcherVersion": "0.1.87",
+ "launcherVersion": "0.1.88",
  "sets": [
   {
    "id": "anachronox",
@@ -311,6 +311,13 @@
    "sha256": "306d5dd9aaa6a32d70de1cd79f4d496380966d240e819312f1d419ad38704e33"
   },
   {
+   "id": "uncharted",
+   "file": "uncharted.json",
+   "version": 1,
+   "sha256": "291be9eaf6bb3542457a4010132f6a5b3a9dcdc73272da955591ec9d8af9b490",
+   "minLauncher": "0.1.88"
+  },
+  {
    "id": "warcraft3",
    "file": "warcraft3.json",
    "version": 3,
@@ -336,6 +343,6 @@
   }
  ],
  "status": {
-  "sha256": "8ef8033bc10bfa7d20b06b8494b1d01c6994132fd3ee27c6fae5b8f3e56c72da"
+  "sha256": "630b52d73e799b6d5d237d370ef7782324e3efc64ba7452f28034e0ac8567ade"
  }
 }

@@ -1,0 +1,2522 @@
+{
+ "id": "uncharted",
+ "title": "Uncharted: The Nathan Drake Collection",
+ "version": 1,
+ "minLauncher": "0.1.88",
+ "kind": "log",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [],
+ "exeNames": [],
+ "md5": [],
+ "linkFiles": [
+  "Uncharted.exe",
+  "bin/bb-probe.exe"
+ ],
+ "launchExe": "Uncharted.exe",
+ "logFiles": [
+  "saves/last_run.log",
+  "user/last_run.log"
+ ],
+ "logWatches": [
+  {
+   "id": "game",
+   "label": "Playing",
+   "regex": "/app0/(u[123])data/",
+   "names": {
+    "u1": "Uncharted: Drake's Fortune",
+    "u2": "Uncharted 2: Among Thieves",
+    "u3": "Uncharted 3: Drake's Deception"
+   }
+  },
+  {
+   "id": "trophy",
+   "label": "Last trophy number",
+   "regex": "\\btrophy (\\d+) unlocked\\b"
+  }
+ ],
+ "rarityFrom": "Exophase (PlayStation players)",
+ "notes": [
+  "For the Uncharted: The Nathan Drake Collection PC recompilation. Each game still decides when you've earned a trophy; the recomp writes it to its log (last_run.log), and Vault reads that log and never touches the game.",
+  "All three games' trophies are here, each with its own platinum. Vault tells the games apart by which game's files the log shows being loaded.",
+  "The recomp starts a fresh log every launch, so keep Vault running while you play."
+ ],
+ "testGuide": [
+  {
+   "title": "Find a treasure",
+   "detail": "Pick up the first treasure in any of the three games. \"First Treasure\" for that game should pop up within a few seconds, and Playing should show which game you're in."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "u1-t00",
+   "title": "Uncharted Platinum",
+   "description": "Earn every other Drake's Fortune trophy.",
+   "points": 100,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 15.34,
+   "rule": {
+    "line": "\\btrophy 0 unlocked\\b",
+    "when": {
+     "game": "u1"
+    },
+    "allOf": [
+     "u1-t01",
+     "u1-t02",
+     "u1-t03",
+     "u1-t04",
+     "u1-t05",
+     "u1-t06",
+     "u1-t07",
+     "u1-t08",
+     "u1-t09",
+     "u1-t10",
+     "u1-t11",
+     "u1-t12",
+     "u1-t13",
+     "u1-t14",
+     "u1-t15",
+     "u1-t16",
+     "u1-t17",
+     "u1-t18",
+     "u1-t19",
+     "u1-t20",
+     "u1-t21",
+     "u1-t22",
+     "u1-t23",
+     "u1-t24",
+     "u1-t25",
+     "u1-t26",
+     "u1-t27",
+     "u1-t28",
+     "u1-t29",
+     "u1-t30",
+     "u1-t31",
+     "u1-t32",
+     "u1-t33",
+     "u1-t34",
+     "u1-t35",
+     "u1-t36",
+     "u1-t37",
+     "u1-t38",
+     "u1-t39",
+     "u1-t40",
+     "u1-t41",
+     "u1-t42",
+     "u1-t43",
+     "u1-t44",
+     "u1-t45"
+    ]
+   }
+  },
+  {
+   "id": "u1-t01",
+   "title": "Charted! - Easy",
+   "description": "Finish the game on Easy without changing the difficulty.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 62.68,
+   "rule": {
+    "line": "\\btrophy 1 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t02",
+   "title": "Charted! - Normal",
+   "description": "Finish the game on Normal without changing the difficulty.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 51.19,
+   "rule": {
+    "line": "\\btrophy 2 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t03",
+   "title": "Charted! - Hard",
+   "description": "Finish the game on Hard without changing the difficulty.",
+   "points": 25,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 23.25,
+   "rule": {
+    "line": "\\btrophy 3 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t04",
+   "title": "Charted! - Crushing",
+   "description": "Finish the game on Crushing without changing the difficulty.",
+   "points": 50,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 18.07,
+   "rule": {
+    "line": "\\btrophy 4 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t05",
+   "title": "First Treasure",
+   "description": "Find 1 treasure.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 99.51,
+   "rule": {
+    "line": "\\btrophy 5 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t06",
+   "title": "Novice Fortune Hunter",
+   "description": "Find 10 treasures.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 71.46,
+   "rule": {
+    "line": "\\btrophy 6 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t07",
+   "title": "Intermediate Fortune Hunter",
+   "description": "Find 20 treasures.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 46.95,
+   "rule": {
+    "line": "\\btrophy 7 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t08",
+   "title": "Proficient Fortune Hunter",
+   "description": "Find 30 treasures.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 31.1,
+   "rule": {
+    "line": "\\btrophy 8 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t09",
+   "title": "Professional Fortune Hunter",
+   "description": "Find 40 treasures.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 23.23,
+   "rule": {
+    "line": "\\btrophy 9 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t10",
+   "title": "Expert Fortune Hunter",
+   "description": "Find 50 treasures.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 19.8,
+   "rule": {
+    "line": "\\btrophy 10 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t11",
+   "title": "Master Fortune Hunter",
+   "description": "Find 60 treasures.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 18.84,
+   "rule": {
+    "line": "\\btrophy 11 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t12",
+   "title": "Relic Finder",
+   "description": "Find the Strange Relic.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 36.8,
+   "rule": {
+    "line": "\\btrophy 12 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t13",
+   "title": "Master Thief Collection",
+   "description": "Find all treasures and the Strange Relic.",
+   "points": 50,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 18.61,
+   "rule": {
+    "line": "\\btrophy 13 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t14",
+   "title": "20 Headshots",
+   "description": "Kill 20 enemies with headshots.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 88.45,
+   "rule": {
+    "line": "\\btrophy 14 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t15",
+   "title": "100 Headshots",
+   "description": "Kill 100 enemies with headshots.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 74.43,
+   "rule": {
+    "line": "\\btrophy 15 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t16",
+   "title": "250 Headshots",
+   "description": "Kill 250 enemies with headshots.",
+   "points": 25,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 40.58,
+   "rule": {
+    "line": "\\btrophy 16 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t17",
+   "title": "Headshot Expert",
+   "description": "Kill 5 enemies in a row with headshots.",
+   "points": 25,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 82.14,
+   "rule": {
+    "line": "\\btrophy 17 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t18",
+   "title": "Brutal Brawler",
+   "description": "Kill 5 enemies with a brutal combo.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 61.41,
+   "rule": {
+    "line": "\\btrophy 18 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t19",
+   "title": "Brutal Slugger",
+   "description": "Kill 20 enemies with a brutal combo.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 26.22,
+   "rule": {
+    "line": "\\btrophy 19 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t20",
+   "title": "Brutal Expert",
+   "description": "Kill 5 enemies in a row with a brutal combo.",
+   "points": 25,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 21.2,
+   "rule": {
+    "line": "\\btrophy 20 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t21",
+   "title": "Triple Dyno-Might!",
+   "description": "Kill 3 enemies with 1 explosion.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 44.82,
+   "rule": {
+    "line": "\\btrophy 21 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t22",
+   "title": "Dyno-Might Master",
+   "description": "Kill 3 enemies with 1 explosion, 5 times.",
+   "points": 25,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 18.17,
+   "rule": {
+    "line": "\\btrophy 22 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t23",
+   "title": "Hangman",
+   "description": "Kill 20 enemies with gunfire while hanging.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 20.0,
+   "rule": {
+    "line": "\\btrophy 23 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t24",
+   "title": "Grenade Hangman",
+   "description": "Kill 10 enemies with grenades while hanging.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 17.91,
+   "rule": {
+    "line": "\\btrophy 24 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t25",
+   "title": "Run-and-Gunner",
+   "description": "Kill 20 enemies by shooting from the hip (without aiming).",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 40.47,
+   "rule": {
+    "line": "\\btrophy 25 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t26",
+   "title": "Steel Fist",
+   "description": "Kill 5 enemies with a single punch after weakening them with gunfire.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 22.12,
+   "rule": {
+    "line": "\\btrophy 26 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t27",
+   "title": "Steel Fist Expert",
+   "description": "Kill 10 enemies in a row with a single punch after weakening them with gunfire.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 16.63,
+   "rule": {
+    "line": "\\btrophy 27 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t28",
+   "title": "Master Ninja",
+   "description": "Kill 50 enemies by melee-attacking from behind.",
+   "points": 25,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 16.93,
+   "rule": {
+    "line": "\\btrophy 28 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t29",
+   "title": "Survivor",
+   "description": "Kill 75 enemies in a row without dying.",
+   "points": 25,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 26.5,
+   "rule": {
+    "line": "\\btrophy 29 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t30",
+   "title": "30 Kills: Mk-NDI",
+   "description": "Kill 30 enemies with Mk-NDI grenades.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 32.14,
+   "rule": {
+    "line": "\\btrophy 30 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t31",
+   "title": "20 Kills: Desert-5",
+   "description": "Kill 20 enemies with the Desert-5.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 33.44,
+   "rule": {
+    "line": "\\btrophy 31 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t32",
+   "title": "20 Kills: Wes-44",
+   "description": "Kill 20 enemies with the Wes-44.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 37.85,
+   "rule": {
+    "line": "\\btrophy 32 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t33",
+   "title": "30 Kills: Dragon Sniper",
+   "description": "Kill 30 enemies with the Dragon Sniper.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 40.2,
+   "rule": {
+    "line": "\\btrophy 33 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t34",
+   "title": "50 Kills: 92FS-9mm",
+   "description": "Kill 50 enemies with the 92FS-9mm.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 60.31,
+   "rule": {
+    "line": "\\btrophy 34 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t35",
+   "title": "50 Kills: M4",
+   "description": "Kill 50 enemies with the M4.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 55.32,
+   "rule": {
+    "line": "\\btrophy 35 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t36",
+   "title": "50 Kills: Micro-9mm",
+   "description": "Kill 50 enemies with the Micro-9mm.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 31.09,
+   "rule": {
+    "line": "\\btrophy 36 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t37",
+   "title": "30 Kills: M79",
+   "description": "Kill 30 enemies with the M79.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 21.96,
+   "rule": {
+    "line": "\\btrophy 37 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t38",
+   "title": "30 Kills: MP40",
+   "description": "Kill 30 enemies with the MP40.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 63.44,
+   "rule": {
+    "line": "\\btrophy 38 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t39",
+   "title": "50 Kills: PM-9mm",
+   "description": "Kill 50 enemies with the PM-9mm.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 87.32,
+   "rule": {
+    "line": "\\btrophy 39 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t40",
+   "title": "50 Kills: Moss-12",
+   "description": "Kill 50 enemies with the Moss-12.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 27.11,
+   "rule": {
+    "line": "\\btrophy 40 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t41",
+   "title": "50 Kills: AK-47",
+   "description": "Kill 50 enemies with the AK-47.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 73.46,
+   "rule": {
+    "line": "\\btrophy 41 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t42",
+   "title": "Shoot Some B-Roll For Elena",
+   "description": "Explore Photo Mode.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 34.09,
+   "rule": {
+    "line": "\\btrophy 42 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t43",
+   "title": "These Walls Can't Stop Me",
+   "description": "Beat 'Chapter 5 - The Fortress' in less than 10 minutes.",
+   "points": 25,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 16.4,
+   "rule": {
+    "line": "\\btrophy 43 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t44",
+   "title": "Up a Short Creek Without a Paddle",
+   "description": "Beat 'Chapter 12 - Going Upriver' in less than 5 minutes.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 16.6,
+   "rule": {
+    "line": "\\btrophy 44 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t45",
+   "title": "A Speedy Reunion",
+   "description": "Beat 'Chapter 16 - The Treasure Vault' in less than 7 minutes.",
+   "points": 50,
+   "group": "Uncharted: Drake's Fortune",
+   "rarity": 16.11,
+   "rule": {
+    "line": "\\btrophy 45 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t46",
+   "title": "Charted! - Brutal",
+   "description": "Finish the game on Brutal without changing the difficulty.",
+   "points": 50,
+   "group": "Uncharted: Drake's Fortune (Extended Collection)",
+   "rarity": 3.94,
+   "rule": {
+    "line": "\\btrophy 46 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t47",
+   "title": "Supernatural Born Killers",
+   "description": "Defeat 5 Descendants with a sniper rifle.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune (Extended Collection)",
+   "rarity": 13.48,
+   "rule": {
+    "line": "\\btrophy 47 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t48",
+   "title": "Cosplay",
+   "description": "Kill an enemy while playing as an alternate character costume other than Drake.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune (Extended Collection)",
+   "rarity": 18.96,
+   "rule": {
+    "line": "\\btrophy 48 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t49",
+   "title": "YOLO Fortunately",
+   "description": "Beat the last chapter without dying on Normal difficulty or harder.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune (Extended Collection)",
+   "rarity": 8.79,
+   "rule": {
+    "line": "\\btrophy 49 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t50",
+   "title": "The Fat and the Furious",
+   "description": "Complete a continuous speed run as Doughnut Drake.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune (Extended Collection)",
+   "rarity": 4.31,
+   "rule": {
+    "line": "\\btrophy 50 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t51",
+   "title": "Follow the Leader",
+   "description": "Compare statistics with friends.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune (Extended Collection)",
+   "rarity": 21.16,
+   "rule": {
+    "line": "\\btrophy 51 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t52",
+   "title": "Need for Speed",
+   "description": "Achieve a complete speed run time of less than 2 hours 30 minutes.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune (Extended Collection)",
+   "rarity": 4.33,
+   "rule": {
+    "line": "\\btrophy 52 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u1-t53",
+   "title": "Cheater Cheater",
+   "description": "Activate a tweak.",
+   "points": 10,
+   "group": "Uncharted: Drake's Fortune (Extended Collection)",
+   "rarity": 19.95,
+   "rule": {
+    "line": "\\btrophy 53 unlocked\\b",
+    "when": {
+     "game": "u1"
+    }
+   }
+  },
+  {
+   "id": "u2-t00",
+   "title": "Uncharted 2 Platinum",
+   "description": "Earn every other Among Thieves trophy.",
+   "points": 100,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 18.56,
+   "rule": {
+    "line": "\\btrophy 0 unlocked\\b",
+    "when": {
+     "game": "u2"
+    },
+    "allOf": [
+     "u2-t01",
+     "u2-t02",
+     "u2-t03",
+     "u2-t04",
+     "u2-t05",
+     "u2-t06",
+     "u2-t07",
+     "u2-t08",
+     "u2-t09",
+     "u2-t10",
+     "u2-t11",
+     "u2-t12",
+     "u2-t13",
+     "u2-t14",
+     "u2-t15",
+     "u2-t16",
+     "u2-t17",
+     "u2-t18",
+     "u2-t19",
+     "u2-t20",
+     "u2-t21",
+     "u2-t22",
+     "u2-t23",
+     "u2-t24",
+     "u2-t25",
+     "u2-t26",
+     "u2-t27",
+     "u2-t28",
+     "u2-t29",
+     "u2-t30",
+     "u2-t31",
+     "u2-t32",
+     "u2-t33",
+     "u2-t34",
+     "u2-t35",
+     "u2-t36",
+     "u2-t37",
+     "u2-t38",
+     "u2-t39",
+     "u2-t40",
+     "u2-t41",
+     "u2-t42",
+     "u2-t43",
+     "u2-t44"
+    ]
+   }
+  },
+  {
+   "id": "u2-t01",
+   "title": "Charted! - Easy",
+   "description": "Finish the game on Easy without changing the difficulty.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 71.91,
+   "rule": {
+    "line": "\\btrophy 1 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t02",
+   "title": "Charted! - Normal",
+   "description": "Finish the game on Normal without changing the difficulty.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 60.68,
+   "rule": {
+    "line": "\\btrophy 2 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t03",
+   "title": "Charted! - Hard",
+   "description": "Finish the game on Hard without changing the difficulty.",
+   "points": 25,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 29.59,
+   "rule": {
+    "line": "\\btrophy 3 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t04",
+   "title": "Charted! - Crushing",
+   "description": "Finish the game on Crushing without changing the difficulty.",
+   "points": 50,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 22.7,
+   "rule": {
+    "line": "\\btrophy 4 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t05",
+   "title": "First Treasure",
+   "description": "Find 1 treasure.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 100.0,
+   "rule": {
+    "line": "\\btrophy 5 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t06",
+   "title": "Novice Fortune Hunter",
+   "description": "Find 20 treasures.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 58.05,
+   "rule": {
+    "line": "\\btrophy 6 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t07",
+   "title": "Intermediate Fortune Hunter",
+   "description": "Find 40 treasures.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 28.89,
+   "rule": {
+    "line": "\\btrophy 7 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t08",
+   "title": "Proficient Fortune Hunter",
+   "description": "Find 60 treasures.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 23.34,
+   "rule": {
+    "line": "\\btrophy 8 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t09",
+   "title": "Expert Fortune Hunter",
+   "description": "Find 80 treasures.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 22.04,
+   "rule": {
+    "line": "\\btrophy 9 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t10",
+   "title": "Master Fortune Hunter",
+   "description": "Find 100 treasures.",
+   "points": 25,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 21.5,
+   "rule": {
+    "line": "\\btrophy 10 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t11",
+   "title": "Relic Finder",
+   "description": "Find the Strange Relic.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 29.22,
+   "rule": {
+    "line": "\\btrophy 11 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t12",
+   "title": "Master Thief Collection",
+   "description": "Find all treasures and the Strange Relic.",
+   "points": 50,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 21.32,
+   "rule": {
+    "line": "\\btrophy 12 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t13",
+   "title": "20 Headshots",
+   "description": "Kill 20 enemies with headshots.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 87.78,
+   "rule": {
+    "line": "\\btrophy 13 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t14",
+   "title": "100 Headshots",
+   "description": "Kill 100 enemies with headshots.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 77.68,
+   "rule": {
+    "line": "\\btrophy 14 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t15",
+   "title": "250 Headshots",
+   "description": "Defeat 250 enemies with headshots.",
+   "points": 25,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 35.6,
+   "rule": {
+    "line": "\\btrophy 15 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t16",
+   "title": "Headshot Expert",
+   "description": "Kill 5 enemies in a row with headshots.",
+   "points": 25,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 63.19,
+   "rule": {
+    "line": "\\btrophy 16 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t17",
+   "title": "Bare-knuckle Brawler",
+   "description": "Defeat 20 enemies with hand-to-hand combat.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 91.4,
+   "rule": {
+    "line": "\\btrophy 17 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t18",
+   "title": "Bare-knuckle Slugger",
+   "description": "Defeat 50 enemies with hand-to-hand combat.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 83.13,
+   "rule": {
+    "line": "\\btrophy 18 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t19",
+   "title": "Bare-knuckle Expert",
+   "description": "Defeat 10 enemies in a row with hand-to-hand combat.",
+   "points": 25,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 32.7,
+   "rule": {
+    "line": "\\btrophy 19 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t20",
+   "title": "Dyno-Might Master",
+   "description": "Kill 5 enemies with 1 explosion.",
+   "points": 25,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 24.55,
+   "rule": {
+    "line": "\\btrophy 20 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t21",
+   "title": "Hangman",
+   "description": "Kill 20 enemies with gunfire while hanging.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 74.72,
+   "rule": {
+    "line": "\\btrophy 21 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t22",
+   "title": "Grenade Hangman",
+   "description": "Kill 10 enemies with grenades while hanging.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 25.34,
+   "rule": {
+    "line": "\\btrophy 22 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t23",
+   "title": "Run-and-Gunner",
+   "description": "Kill 20 enemies by shooting from the hip (without aiming).",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 33.41,
+   "rule": {
+    "line": "\\btrophy 23 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t24",
+   "title": "Steel Fist Master",
+   "description": "Kill 20 enemies with a single punch after weakening them with gunfire.",
+   "points": 25,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 27.59,
+   "rule": {
+    "line": "\\btrophy 24 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t25",
+   "title": "Steel Fist Expert",
+   "description": "Kill 10 enemies in a row with a single punch after weakening them with gunfire.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 19.64,
+   "rule": {
+    "line": "\\btrophy 25 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t26",
+   "title": "Master Ninja",
+   "description": "Kill 50 enemies by melee-attacking from behind.",
+   "points": 25,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 53.96,
+   "rule": {
+    "line": "\\btrophy 26 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t27",
+   "title": "Survivor",
+   "description": "Kill 75 enemies in a row without dying.",
+   "points": 25,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 38.0,
+   "rule": {
+    "line": "\\btrophy 27 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t28",
+   "title": "30 Kills: Mk-NDI",
+   "description": "Kill 30 enemies with Mk-NDI grenades.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 78.76,
+   "rule": {
+    "line": "\\btrophy 28 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t29",
+   "title": "30 Kills: Desert-5",
+   "description": "Kill 30 enemies with the Desert-5.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 42.36,
+   "rule": {
+    "line": "\\btrophy 29 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t30",
+   "title": "30 Kills: Wes-44",
+   "description": "Kill 30 enemies with the Wes-44.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 32.88,
+   "rule": {
+    "line": "\\btrophy 30 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t31",
+   "title": "50 Kills: Dragon Sniper",
+   "description": "Kill 50 enemies with the Dragon Sniper.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 60.44,
+   "rule": {
+    "line": "\\btrophy 31 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t32",
+   "title": "50 Kills: 92FS-9mm",
+   "description": "Kill 50 enemies with the 92FS-9mm.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 77.93,
+   "rule": {
+    "line": "\\btrophy 32 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t33",
+   "title": "50 Kills: M4",
+   "description": "Kill 50 enemies with the M4.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 76.54,
+   "rule": {
+    "line": "\\btrophy 33 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t34",
+   "title": "50 Kills: Micro-9mm",
+   "description": "Kill 50 enemies with the Micro-9mm.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 28.62,
+   "rule": {
+    "line": "\\btrophy 34 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t35",
+   "title": "30 Kills: Moss-12",
+   "description": "Kill 30 enemies with the Moss-12.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 30.96,
+   "rule": {
+    "line": "\\btrophy 35 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t36",
+   "title": "30 Kills: RPG-7",
+   "description": "Kill 30 enemies with the RPG-7.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 28.46,
+   "rule": {
+    "line": "\\btrophy 36 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t37",
+   "title": "50 Kills: SAS-12",
+   "description": "Kill 50 enemies with the SAS-12.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 27.63,
+   "rule": {
+    "line": "\\btrophy 37 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t38",
+   "title": "20 Kills: Pistole",
+   "description": "Kill 20 enemies with the Pistole.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 52.56,
+   "rule": {
+    "line": "\\btrophy 38 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t39",
+   "title": "50 Kills: M32-Hammer",
+   "description": "Kill 50 enemies with the M32-Hammer.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 27.6,
+   "rule": {
+    "line": "\\btrophy 39 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t40",
+   "title": "50 Kills: FAL",
+   "description": "Kill 50 enemies with the FAL.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 62.32,
+   "rule": {
+    "line": "\\btrophy 40 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t41",
+   "title": "New Paparazzi in Town",
+   "description": "Explore Photo Mode.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 40.5,
+   "rule": {
+    "line": "\\btrophy 41 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t42",
+   "title": "Staying Dry",
+   "description": "Beat 'Chapter 3 - Borneo' in less than 6 minutes 30 seconds.",
+   "points": 25,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 19.7,
+   "rule": {
+    "line": "\\btrophy 42 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t43",
+   "title": "Quick Jaunt Through a Warzone",
+   "description": "Beat 'Chapter 5 - Urban Warfare' in less than 7 minutes 30 seconds.",
+   "points": 50,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 19.59,
+   "rule": {
+    "line": "\\btrophy 43 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t44",
+   "title": "Bullet Train From Hell",
+   "description": "Beat 'Chapter 13 - Locomotion' in less than 7 minutes.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves",
+   "rarity": 19.5,
+   "rule": {
+    "line": "\\btrophy 44 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t45",
+   "title": "Charted! - Brutal",
+   "description": "Finish the game on Brutal without changing the difficulty.",
+   "points": 50,
+   "group": "Uncharted 2: Among Thieves (Extended Collection)",
+   "rarity": 4.09,
+   "rule": {
+    "line": "\\btrophy 45 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t46",
+   "title": "Supernatural Born Killers",
+   "description": "Defeat 5 Guardians with a sniper rifle.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves (Extended Collection)",
+   "rarity": 10.03,
+   "rule": {
+    "line": "\\btrophy 46 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t47",
+   "title": "Cosplay",
+   "description": "Kill an enemy while playing as an alternate character costume other than Drake.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves (Extended Collection)",
+   "rarity": 21.24,
+   "rule": {
+    "line": "\\btrophy 47 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t48",
+   "title": "YOLO Among Thieves",
+   "description": "Beat the last chapter without dying on Normal difficulty or harder.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves (Extended Collection)",
+   "rarity": 10.01,
+   "rule": {
+    "line": "\\btrophy 48 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t49",
+   "title": "Too Fat Too Furious",
+   "description": "Complete a continuous speed run as Doughnut Drake.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves (Extended Collection)",
+   "rarity": 4.45,
+   "rule": {
+    "line": "\\btrophy 49 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t50",
+   "title": "Take Me to Your Leader",
+   "description": "Compare statistics with friends.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves (Extended Collection)",
+   "rarity": 24.58,
+   "rule": {
+    "line": "\\btrophy 50 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t51",
+   "title": "Needer for Speeder",
+   "description": "Achieve a complete speed run time of less than 3 hours 30 minutes.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves (Extended Collection)",
+   "rarity": 4.31,
+   "rule": {
+    "line": "\\btrophy 51 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u2-t52",
+   "title": "Cheat Hard to Cheat Harder",
+   "description": "Activate a tweak.",
+   "points": 10,
+   "group": "Uncharted 2: Among Thieves (Extended Collection)",
+   "rarity": 24.67,
+   "rule": {
+    "line": "\\btrophy 52 unlocked\\b",
+    "when": {
+     "game": "u2"
+    }
+   }
+  },
+  {
+   "id": "u3-t00",
+   "title": "Uncharted 3 Platinum",
+   "description": "Earn every other Drake's Deception trophy.",
+   "points": 100,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 17.95,
+   "rule": {
+    "line": "\\btrophy 0 unlocked\\b",
+    "when": {
+     "game": "u3"
+    },
+    "allOf": [
+     "u3-t01",
+     "u3-t02",
+     "u3-t03",
+     "u3-t04",
+     "u3-t05",
+     "u3-t06",
+     "u3-t07",
+     "u3-t08",
+     "u3-t09",
+     "u3-t10",
+     "u3-t11",
+     "u3-t12",
+     "u3-t13",
+     "u3-t14",
+     "u3-t15",
+     "u3-t16",
+     "u3-t17",
+     "u3-t18",
+     "u3-t19",
+     "u3-t20",
+     "u3-t21",
+     "u3-t22",
+     "u3-t23",
+     "u3-t24",
+     "u3-t25",
+     "u3-t26",
+     "u3-t27",
+     "u3-t28",
+     "u3-t29",
+     "u3-t30",
+     "u3-t31",
+     "u3-t32",
+     "u3-t33",
+     "u3-t34",
+     "u3-t35",
+     "u3-t36",
+     "u3-t37",
+     "u3-t38",
+     "u3-t39",
+     "u3-t40",
+     "u3-t41",
+     "u3-t42",
+     "u3-t43",
+     "u3-t44",
+     "u3-t45",
+     "u3-t46",
+     "u3-t47",
+     "u3-t48",
+     "u3-t49",
+     "u3-t50"
+    ]
+   }
+  },
+  {
+   "id": "u3-t01",
+   "title": "Charted! - Easy",
+   "description": "Finish the game on Easy without changing the difficulty.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 68.61,
+   "rule": {
+    "line": "\\btrophy 1 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t02",
+   "title": "Charted! - Normal",
+   "description": "Finish the game on Normal without changing the difficulty.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 58.06,
+   "rule": {
+    "line": "\\btrophy 2 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t03",
+   "title": "Charted! - Hard",
+   "description": "Finish the game on Hard without changing the difficulty.",
+   "points": 25,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 28.96,
+   "rule": {
+    "line": "\\btrophy 3 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t04",
+   "title": "Charted! - Crushing",
+   "description": "Finish the game on Crushing without changing the difficulty.",
+   "points": 50,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 22.74,
+   "rule": {
+    "line": "\\btrophy 4 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t05",
+   "title": "First Treasure",
+   "description": "Find 1 treasure.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 100.0,
+   "rule": {
+    "line": "\\btrophy 5 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t06",
+   "title": "Apprentice Fortune Hunter",
+   "description": "Find 20 treasures.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 69.65,
+   "rule": {
+    "line": "\\btrophy 6 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t07",
+   "title": "Skilled Fortune Hunter",
+   "description": "Find 40 treasures.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 39.25,
+   "rule": {
+    "line": "\\btrophy 7 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t08",
+   "title": "Adept Fortune Hunter",
+   "description": "Find 60 treasures.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 27.12,
+   "rule": {
+    "line": "\\btrophy 8 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t09",
+   "title": "Expert Fortune Hunter",
+   "description": "Find 80 treasures.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 22.15,
+   "rule": {
+    "line": "\\btrophy 9 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t10",
+   "title": "Master Fortune Hunter",
+   "description": "Find 100 treasures.",
+   "points": 25,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 21.13,
+   "rule": {
+    "line": "\\btrophy 10 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t11",
+   "title": "Relic Finder",
+   "description": "Find the Strange Relic.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 28.74,
+   "rule": {
+    "line": "\\btrophy 11 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t12",
+   "title": "Master Thief Collection",
+   "description": "Find all treasures and the Strange Relic.",
+   "points": 50,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 20.94,
+   "rule": {
+    "line": "\\btrophy 12 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t13",
+   "title": "20 Headshots",
+   "description": "Kill 20 enemies with headshots.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 85.48,
+   "rule": {
+    "line": "\\btrophy 13 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t14",
+   "title": "100 Headshots",
+   "description": "Kill 100 enemies with headshots.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 70.38,
+   "rule": {
+    "line": "\\btrophy 14 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t15",
+   "title": "Headshot Expert",
+   "description": "Kill 5 enemies in a row with headshots.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 65.96,
+   "rule": {
+    "line": "\\btrophy 15 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t16",
+   "title": "Bare-knuckle Brawler",
+   "description": "Defeat 20 enemies with hand-to-hand combat.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 90.15,
+   "rule": {
+    "line": "\\btrophy 16 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t17",
+   "title": "Bare-knuckle Slugger",
+   "description": "Defeat 50 enemies with hand-to-hand combat.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 80.41,
+   "rule": {
+    "line": "\\btrophy 17 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t18",
+   "title": "Dyno-Might Master",
+   "description": "Kill 4 enemies with 1 explosion.",
+   "points": 25,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 20.04,
+   "rule": {
+    "line": "\\btrophy 18 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t19",
+   "title": "Hangman",
+   "description": "Kill 20 enemies with gunfire while hanging.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 67.56,
+   "rule": {
+    "line": "\\btrophy 19 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t20",
+   "title": "Grenade Hangman",
+   "description": "Kill 10 enemies with grenades while hanging.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 20.37,
+   "rule": {
+    "line": "\\btrophy 20 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t21",
+   "title": "Run-and-Gunner",
+   "description": "Kill 20 enemies by shooting from the hip (without aiming).",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 40.94,
+   "rule": {
+    "line": "\\btrophy 21 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t22",
+   "title": "Combat Leapfrog",
+   "description": "Kill 10 enemies in a row, alternating hand-to-hand combat and gunfire.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 21.2,
+   "rule": {
+    "line": "\\btrophy 22 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t23",
+   "title": "Master Ninja",
+   "description": "Kill 50 enemies by melee-attacking from behind.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 32.3,
+   "rule": {
+    "line": "\\btrophy 23 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t24",
+   "title": "Survivor",
+   "description": "Kill 75 enemies in a row without dying.",
+   "points": 25,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 31.51,
+   "rule": {
+    "line": "\\btrophy 24 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t25",
+   "title": "Side Arm Master",
+   "description": "Defeat 30 enemies in a row with your side arm.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 22.21,
+   "rule": {
+    "line": "\\btrophy 25 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t26",
+   "title": "Reload Master",
+   "description": "Defeat 50 enemies in a row without auto-reloading.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 21.57,
+   "rule": {
+    "line": "\\btrophy 26 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t27",
+   "title": "Blindfire Marksman",
+   "description": "Defeat 20 enemies by blind-firing while in cover (without aiming).",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 60.55,
+   "rule": {
+    "line": "\\btrophy 27 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t28",
+   "title": "Throwback",
+   "description": "Defeat 10 enemies with thrown-back grenades.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 27.44,
+   "rule": {
+    "line": "\\btrophy 28 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t29",
+   "title": "Throwback Master",
+   "description": "Throw back a grenade and defeat 2 enemies at once.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 33.79,
+   "rule": {
+    "line": "\\btrophy 29 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t30",
+   "title": "He's Gonna Need a Sturgeon",
+   "description": "Hit 3 enemies with fish in the market.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 24.15,
+   "rule": {
+    "line": "\\btrophy 30 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t31",
+   "title": "Riot Rocker",
+   "description": "Kill 5 riot shield enemies by running over their shield.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 22.43,
+   "rule": {
+    "line": "\\btrophy 31 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t32",
+   "title": "Land Shark",
+   "description": "Defeat 20 enemies while swimming.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 20.62,
+   "rule": {
+    "line": "\\btrophy 32 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t33",
+   "title": "Brute Beater",
+   "description": "Successfully counter all of a Brute's damage-giving attacks.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 72.39,
+   "rule": {
+    "line": "\\btrophy 33 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t34",
+   "title": "Marco Solo",
+   "description": "Play in the swimming pool on the cruise ship.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 45.9,
+   "rule": {
+    "line": "\\btrophy 34 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t35",
+   "title": "30 Kills: Mk-NDI",
+   "description": "Kill 30 enemies with the Mk-NDI.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 70.29,
+   "rule": {
+    "line": "\\btrophy 35 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t36",
+   "title": "30 Kills: Dragon Sniper",
+   "description": "Kill 30 enemies with the Dragon Sniper.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 22.38,
+   "rule": {
+    "line": "\\btrophy 36 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t37",
+   "title": "30 Kills: M9",
+   "description": "Kill 30 enemies with the M9.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 68.6,
+   "rule": {
+    "line": "\\btrophy 37 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t38",
+   "title": "30 Kills: RPG-7",
+   "description": "Kill 30 enemies with the RPG-7.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 20.11,
+   "rule": {
+    "line": "\\btrophy 38 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t39",
+   "title": "30 Kills: SAS-12",
+   "description": "Kill 30 enemies with the SAS-12.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 35.44,
+   "rule": {
+    "line": "\\btrophy 39 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t40",
+   "title": "30 Kills: Arm Micro",
+   "description": "Kill 30 enemies with the Arm Micro.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 58.46,
+   "rule": {
+    "line": "\\btrophy 40 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t41",
+   "title": "30 Kills: G-MAL",
+   "description": "Kill 30 enemies with the G-MAL.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 65.01,
+   "rule": {
+    "line": "\\btrophy 41 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t42",
+   "title": "30 Kills: KAL-7",
+   "description": "Kill 30 enemies with the KAL-7.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 72.11,
+   "rule": {
+    "line": "\\btrophy 42 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t43",
+   "title": "30 Kills: Mag 5",
+   "description": "Kill 30 enemies with the Mag 5.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 25.34,
+   "rule": {
+    "line": "\\btrophy 43 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t44",
+   "title": "30 Kills: PAK-80",
+   "description": "Kill 30 enemies with the PAK-80.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 23.77,
+   "rule": {
+    "line": "\\btrophy 44 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t45",
+   "title": "30 Kills: T-Bolt Sniper",
+   "description": "Kill 30 enemies with the T-Bolt Sniper.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 41.65,
+   "rule": {
+    "line": "\\btrophy 45 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t46",
+   "title": "30 Kills: Tau Sniper",
+   "description": "Kill 30 enemies with the Tau Sniper.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 43.17,
+   "rule": {
+    "line": "\\btrophy 46 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t47",
+   "title": "Photobomb",
+   "description": "Explore Photo Mode.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 39.24,
+   "rule": {
+    "line": "\\btrophy 47 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t48",
+   "title": "Outrun the Flames",
+   "description": "Beat 'Chapter 7 - Stay in the Light' in less than 9 minutes 30 seconds.",
+   "points": 50,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 18.81,
+   "rule": {
+    "line": "\\btrophy 48 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t49",
+   "title": "Catch that Plane!",
+   "description": "Beat 'Chapter 16 - One Shot at This' in less than 12 minutes.",
+   "points": 25,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 18.72,
+   "rule": {
+    "line": "\\btrophy 49 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t50",
+   "title": "My Horse is Faster",
+   "description": "Beat 'Chapter 20 - Caravan' in less than 15 minutes.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception",
+   "rarity": 18.62,
+   "rule": {
+    "line": "\\btrophy 50 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t51",
+   "title": "Charted! - Brutal",
+   "description": "Finish the game on Brutal without changing the difficulty.",
+   "points": 50,
+   "group": "Uncharted 3: Drake's Deception (Extended Collection)",
+   "rarity": 4.3,
+   "rule": {
+    "line": "\\btrophy 51 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t52",
+   "title": "Supernatural Born Killers",
+   "description": "Defeat 5 Djinn with a sniper rifle.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception (Extended Collection)",
+   "rarity": 16.36,
+   "rule": {
+    "line": "\\btrophy 52 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t53",
+   "title": "Cosplay",
+   "description": "Kill an enemy while playing as an alternate character costume other than Drake.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception (Extended Collection)",
+   "rarity": 21.25,
+   "rule": {
+    "line": "\\btrophy 53 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t54",
+   "title": "YOLO Deceptively",
+   "description": "Beat the last chapter without dying on Normal difficulty or harder.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception (Extended Collection)",
+   "rarity": 7.08,
+   "rule": {
+    "line": "\\btrophy 54 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t55",
+   "title": "The Fat and the Furious Yemen Drifter",
+   "description": "Complete a continuous speed run as Doughnut Drake.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception (Extended Collection)",
+   "rarity": 4.36,
+   "rule": {
+    "line": "\\btrophy 55 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t56",
+   "title": "Leader of the Pack",
+   "description": "Compare statistics with friends.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception (Extended Collection)",
+   "rarity": 22.99,
+   "rule": {
+    "line": "\\btrophy 56 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t57",
+   "title": "Neediest for Speediest",
+   "description": "Achieve a complete speed run time of less than 4 hours 15 minutes.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception (Extended Collection)",
+   "rarity": 4.4,
+   "rule": {
+    "line": "\\btrophy 57 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  },
+  {
+   "id": "u3-t58",
+   "title": "Cheaters Gonna Cheat",
+   "description": "Activate a tweak.",
+   "points": 10,
+   "group": "Uncharted 3: Drake's Deception (Extended Collection)",
+   "rarity": 23.72,
+   "rule": {
+    "line": "\\btrophy 58 unlocked\\b",
+    "when": {
+     "game": "u3"
+    }
+   }
+  }
+ ]
+}

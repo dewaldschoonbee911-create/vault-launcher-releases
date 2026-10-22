@@ -143,5 +143,9 @@
  "gow3r": {
   "status": "partly",
   "note": "Poseidon confirmed from real saves; the other bosses use the autosave name pattern and still need a player to reach them."
+ },
+ "uncharted": {
+  "status": "partly",
+  "note": "Uncharted 2 First Treasure confirmed from a real log; Uncharted 1 and 3 untested."
  }
 }
