@@ -1,6 +1,6 @@
 # Sends each new release to the Microsoft Store as an update submission (Microsoft still reviews it).
-# Needs four repository secrets from Partner Center: PARTNER_CENTER_TENANT_ID, PARTNER_CENTER_SELLER_ID,
-# PARTNER_CENTER_CLIENT_ID and PARTNER_CENTER_CLIENT_SECRET. Until they're added this does nothing.
+# Needs one repository secret, PARTNER_CENTER_CLIENT_SECRET (the key of the "Vault Store Upload" app in
+# Partner Center). Until it's added this does nothing. The IDs below aren't secret.
 # If a submission is still being reviewed, this one is skipped and the next release catches up.
 name: Submit to Microsoft Store
 on:
@@ -16,6 +16,10 @@ jobs:
     runs-on: windows-latest
     env:
       GH_TOKEN: ${{ github.token }}
+      PC_TENANT: 09603462-ddfc-4d66-a405-28bac7fd06e1
+      PC_SELLER: '96795550'
+      PC_CLIENT: 5ba4fb1c-03af-4432-9ffa-868ff4c22472
+      PC_SECRET: ${{ secrets.PARTNER_CENTER_CLIENT_SECRET }}
       HAS_KEYS: ${{ secrets.PARTNER_CENTER_CLIENT_SECRET != '' }}
     steps:
       - name: Skip (no Partner Center keys yet)
@@ -33,7 +37,8 @@ jobs:
         if: env.HAS_KEYS == 'true'
       - name: Sign in to Partner Center
         if: env.HAS_KEYS == 'true'
-        run: msstore reconfigure --tenantId ${{ secrets.PARTNER_CENTER_TENANT_ID }} --sellerId ${{ secrets.PARTNER_CENTER_SELLER_ID }} --clientId ${{ secrets.PARTNER_CENTER_CLIENT_ID }} --clientSecret ${{ secrets.PARTNER_CENTER_CLIENT_SECRET }}
+        shell: pwsh
+        run: msstore reconfigure --tenantId $env:PC_TENANT --sellerId $env:PC_SELLER --clientId $env:PC_CLIENT --clientSecret $env:PC_SECRET
       - name: Submit the update
         if: env.HAS_KEYS == 'true'
         shell: pwsh
