@@ -10,6 +10,11 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+# One submission at a time: a newer release waits for the previous one to finish instead of
+# replacing its submission while it's still being processed.
+concurrency:
+  group: store-submit
+  cancel-in-progress: false
 jobs:
   submit:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
