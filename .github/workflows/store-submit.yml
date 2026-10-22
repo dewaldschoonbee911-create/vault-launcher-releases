@@ -43,4 +43,5 @@ jobs:
         if: env.HAS_KEYS == 'true'
         shell: pwsh
         run: |
-          msstore publish "$env:GITHUB_WORKSPACE\pkg" --inputDirectory "$env:GITHUB_WORKSPACE\pkg" --appId 9NT96QS862FF --verbose
+          $f = (Get-ChildItem pkg\*.msix | Select-Object -First 1).FullName
+          msstore publish "$f" --appId 9NT96QS862FF --verbose
