@@ -1,5 +1,5 @@
 {
- "launcherVersion": "0.1.83",
+ "launcherVersion": "0.1.84",
  "sets": [
   {
    "id": "anachronox",
@@ -139,6 +139,13 @@
    "file": "gorky17.json",
    "version": 2,
    "sha256": "0cf38e32b856f28440697c5b7fa537f45283cbcb01460d71c7a3bfa47681492d"
+  },
+  {
+   "id": "gow3r",
+   "file": "gow3r.json",
+   "version": 1,
+   "sha256": "19da2c53f2934a181a2159066abf17d9135ace96b3157a822fde1966144be49c",
+   "minLauncher": "0.1.81"
   },
   {
    "id": "halflife",
@@ -329,6 +336,6 @@
   }
  ],
  "status": {
-  "sha256": "e42df09abe7764f23fd256971bceebc34fff3913cdcd2959313a3a3b427bdae9"
+  "sha256": "ef13162b5813249f194f2dbc5f51351ce871774179f87ec5b84f9e222f4f0a85"
  }
 }

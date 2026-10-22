@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-22T07:47:48.214Z",
- "launcherVersion": "0.1.83",
+ "generatedAt": "2026-10-22T07:55:11.081Z",
+ "launcherVersion": "0.1.84",
  "sets": [
   {
    "id": "anachronox",
@@ -16679,6 +16679,269 @@
      "description": "Save a game in 50 different places.",
      "points": 35,
      "group": "Places"
+    }
+   ],
+   "earlyAccessUntil": null
+  },
+  {
+   "id": "gow3r",
+   "title": "God of War III Remastered",
+   "how": "files",
+   "status": "untested",
+   "statusNote": "Built from the public trophy list; waiting for the first trophy in a real game.",
+   "notes": [
+    "For the God of War III PC recompilation (gow3_pc). The game still decides when you've earned a trophy; the recomp writes each one to its log (last_run.log), and Vault reads that log and never touches the game.",
+    "Vault finds the gow3-windows folder on your drives by itself. If it doesn't show up, click Add a game and pick God of War III.exe in that folder.",
+    "The recomp starts a fresh log every launch, so keep Vault running while you play. King of the Hill unlocks once you have every other trophy, like the platinum on PlayStation.",
+    "Trophy numbers come from the public trophy list and haven't been confirmed in a game yet."
+   ],
+   "achievementCount": 35,
+   "points": 805,
+   "achievements": [
+    {
+     "id": "t00",
+     "title": "King of the Hill",
+     "description": "Unlock every other trophy.",
+     "points": 100,
+     "group": "God of War III"
+    },
+    {
+     "id": "t01",
+     "title": "Releasing the Floodgates",
+     "description": "Kill Poseidon.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t02",
+     "title": "Burnt to a Crisp",
+     "description": "Acquire the Bow of Apollo.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t03",
+     "title": "Mr. Hand",
+     "description": "Discover the secret 'Hades Arm' room.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t04",
+     "title": "Shine Lord",
+     "description": "Kill Helios.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t05",
+     "title": "Shoe Delivery",
+     "description": "Kill Hermes and acquire his Boots.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t06",
+     "title": "Ladies Man",
+     "description": "Successfully entertain Aphrodite.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t07",
+     "title": "Handy Man",
+     "description": "Sever Gaia's hand.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t08",
+     "title": "Open Sesame",
+     "description": "Open the Gates of Tisiphone.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t09",
+     "title": "Rescue Me",
+     "description": "Save Pandora.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t10",
+     "title": "Three Wise Men",
+     "description": "Solve the Three Judges.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t11",
+     "title": "Hit Man",
+     "description": "Perform a 1000-hit combo.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t12",
+     "title": "Torn Up",
+     "description": "Rip apart an Olympus Sentry.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t13",
+     "title": "Nice Tan",
+     "description": "Blind 100 enemies with the Head of Helios.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t14",
+     "title": "Obedience School",
+     "description": "Deliver 50 kicks to Hounds.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t15",
+     "title": "It's getting hot in here...",
+     "description": "Burn 100 enemies with the Bow of Apollo.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t16",
+     "title": "Souled Out",
+     "description": "Summon every Soul with the Claws of Hades.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t17",
+     "title": "Bloody Hell",
+     "description": "Cover Kratos in 500 buckets of blood from the enemies he kills.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t18",
+     "title": "No Guts, No Glory",
+     "description": "Gut 3 Centaur Generals.",
+     "points": 10,
+     "group": "God of War III"
+    },
+    {
+     "id": "t19",
+     "title": "Hitting Your Stride",
+     "description": "Upgrade any weapon to the next level.",
+     "points": 25,
+     "group": "God of War III"
+    },
+    {
+     "id": "t20",
+     "title": "Sibling Rivalry",
+     "description": "Kill Hercules.",
+     "points": 25,
+     "group": "God of War III"
+    },
+    {
+     "id": "t21",
+     "title": "Titan Slayer",
+     "description": "Kill Cronos.",
+     "points": 25,
+     "group": "God of War III"
+    },
+    {
+     "id": "t22",
+     "title": "Retribution",
+     "description": "Kill Zeus.",
+     "points": 25,
+     "group": "God of War III"
+    },
+    {
+     "id": "t23",
+     "title": "Depths Below",
+     "description": "Kill Hades.",
+     "points": 25,
+     "group": "God of War III"
+    },
+    {
+     "id": "t24",
+     "title": "Freezer Burn",
+     "description": "Acquire the Boreas Icestorm.",
+     "points": 25,
+     "group": "God of War III"
+    },
+    {
+     "id": "t25",
+     "title": "Seeing things from a different perspective",
+     "description": "Solve Hera's Gardens.",
+     "points": 25,
+     "group": "God of War III"
+    },
+    {
+     "id": "t26",
+     "title": "Eye Candy",
+     "description": "Collect all of the Gorgon Eyes.",
+     "points": 25,
+     "group": "God of War III"
+    },
+    {
+     "id": "t27",
+     "title": "Feather Plucker",
+     "description": "Collect all of the Phoenix Feathers.",
+     "points": 25,
+     "group": "God of War III"
+    },
+    {
+     "id": "t28",
+     "title": "Horn of Plenty",
+     "description": "Collect all of the Minotaur Horns.",
+     "points": 25,
+     "group": "God of War III"
+    },
+    {
+     "id": "t29",
+     "title": "Maxed Out!",
+     "description": "Completely upgrade all weapons.",
+     "points": 25,
+     "group": "God of War III"
+    },
+    {
+     "id": "t30",
+     "title": "Vengeance Complete",
+     "description": "Beat the game.",
+     "points": 50,
+     "group": "God of War III"
+    },
+    {
+     "id": "t31",
+     "title": "Up to the Challenge",
+     "description": "Beat the Challenge of Olympus.",
+     "points": 50,
+     "group": "God of War III"
+    },
+    {
+     "id": "t32",
+     "title": "Unhuman",
+     "description": "Beat Titan Mode.",
+     "points": 50,
+     "group": "God of War III"
+    },
+    {
+     "id": "t33",
+     "title": "Priceless",
+     "description": "Collect all of the 'Godly Possessions'.",
+     "points": 50,
+     "group": "God of War III"
+    },
+    {
+     "id": "t34",
+     "title": "aMAZEd",
+     "description": "Beat the Labyrinth without dying or failing.",
+     "points": 50,
+     "group": "God of War III"
     }
    ],
    "earlyAccessUntil": null

@@ -139,5 +139,9 @@
  "driveclub": {
   "status": "partly",
   "note": "Main-game trophies confirmed live (first event: 4 trophies); add-on series numbering not confirmed yet."
+ },
+ "gow3r": {
+  "status": "untested",
+  "note": "Built from the public trophy list; waiting for the first trophy in a real game."
  }
 }
