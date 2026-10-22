@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-22T04:13:57.624Z",
+ "generatedAt": "2026-10-22T04:23:52.030Z",
  "launcherVersion": "0.1.80",
  "sets": [
   {
@@ -21147,8 +21147,8 @@
    "id": "minecraft",
    "title": "Minecraft: Java Edition",
    "how": "files",
-   "status": "untested",
-   "statusNote": null,
+   "status": "partly",
+   "statusNote": "Confirmed in Minecraft 26.3 (Java): Minecraft, Stone Age and Getting an Upgrade popped up from a real world.",
    "notes": [
     "Vault reads the advancements file each world saves (saves\\<world>\\advancements) and never touches the game. Every vanilla advancement becomes a Vault achievement, across all your worlds.",
     "Works with the official Minecraft Launcher and with Prism, MultiMC, ATLauncher, CurseForge and Modrinth instances.",

@@ -1,135 +1,139 @@
 {
-  "_about": "Which Vault Sets have been checked in a real game. tested = seen working live; partly = some achievements confirmed; untested = built from research, waiting for a player report.",
-  "maxpayne2": {
-    "status": "tested",
-    "note": "Map and story achievements confirmed live."
-  },
-  "generalszh": {
-    "status": "tested",
-    "note": "Mission start, campaign and score values confirmed live."
-  },
-  "starcraft": {
-    "status": "tested",
-    "note": "Replay reading and results confirmed live."
-  },
-  "kotor": {
-    "status": "partly",
-    "note": "Area achievements confirmed live; story moments and endings not reached yet."
-  },
-  "warcraft3": {
-    "status": "partly",
-    "note": "Campaign chapters confirmed; skirmish, Hard and secret level untested."
-  },
-  "hots": {
-    "status": "partly",
-    "note": "Read correctly from 52 real replays (heroes, maps, score screen, awards); live popup after a new match not confirmed yet."
-  },
-  "diablo": {
-    "status": "partly",
-    "note": "Save reading confirmed on a real character."
-  },
-  "deathrally": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "gorky17": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "nfs2se": {
-    "status": "partly",
-    "note": "Record tables read correctly from a real install."
-  },
-  "fallout3": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "fear2": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "commandos1": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "commandosbcd": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "commandos2": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "commandos3": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "hitmanbm": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "assassinscreed": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "cnc3": {
-    "status": "partly",
-    "note": "Skirmish achievements confirmed from real replays."
-  },
-  "cnc3kw": {
-    "status": "partly",
-    "note": "Campaign save and replay reading checked on real files."
-  },
-  "ra3": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "ra3uprising": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "cnc4": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "supcom": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "eaw": {
-    "status": "partly",
-    "note": "Save reading confirmed on a real Forces of Corruption save."
-  },
-  "evilgenius": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "kknd": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "kknd2": {
-    "status": "untested",
-    "note": "Built from research, waiting for a player report."
-  },
-  "renegade": {
-    "status": "partly",
-    "note": "Save-file mission reading confirmed."
-  },
-  "worms": {
-    "status": "partly",
-    "note": "First achievement confirmed in a real game."
-  },
-  "hearthstone": {
-    "status": "untested",
-    "note": "Log reading checked on sample Hearthstone logs; waiting for a player report."
-  },
-  "davediver": {
-    "status": "untested",
-    "note": "Save format from the DaveSaveEd editor; not yet checked on a real save."
-  },
-  "wot": {
-    "status": "untested",
-    "note": "Official Wargaming API; waiting for a player report."
-  }
+ "_about": "Which Vault Sets have been checked in a real game. tested = seen working live; partly = some achievements confirmed; untested = built from research, waiting for a player report.",
+ "maxpayne2": {
+  "status": "tested",
+  "note": "Map and story achievements confirmed live."
+ },
+ "generalszh": {
+  "status": "tested",
+  "note": "Mission start, campaign and score values confirmed live."
+ },
+ "starcraft": {
+  "status": "tested",
+  "note": "Replay reading and results confirmed live."
+ },
+ "kotor": {
+  "status": "partly",
+  "note": "Area achievements confirmed live; story moments and endings not reached yet."
+ },
+ "warcraft3": {
+  "status": "partly",
+  "note": "Campaign chapters confirmed; skirmish, Hard and secret level untested."
+ },
+ "hots": {
+  "status": "partly",
+  "note": "Read correctly from 52 real replays (heroes, maps, score screen, awards); live popup after a new match not confirmed yet."
+ },
+ "diablo": {
+  "status": "partly",
+  "note": "Save reading confirmed on a real character."
+ },
+ "deathrally": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "gorky17": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "nfs2se": {
+  "status": "partly",
+  "note": "Record tables read correctly from a real install."
+ },
+ "fallout3": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "fear2": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "commandos1": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "commandosbcd": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "commandos2": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "commandos3": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "hitmanbm": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "assassinscreed": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "cnc3": {
+  "status": "partly",
+  "note": "Skirmish achievements confirmed from real replays."
+ },
+ "cnc3kw": {
+  "status": "partly",
+  "note": "Campaign save and replay reading checked on real files."
+ },
+ "ra3": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "ra3uprising": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "cnc4": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "supcom": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "eaw": {
+  "status": "partly",
+  "note": "Save reading confirmed on a real Forces of Corruption save."
+ },
+ "evilgenius": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "kknd": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "kknd2": {
+  "status": "untested",
+  "note": "Built from research, waiting for a player report."
+ },
+ "renegade": {
+  "status": "partly",
+  "note": "Save-file mission reading confirmed."
+ },
+ "worms": {
+  "status": "partly",
+  "note": "First achievement confirmed in a real game."
+ },
+ "hearthstone": {
+  "status": "untested",
+  "note": "Log reading checked on sample Hearthstone logs; waiting for a player report."
+ },
+ "davediver": {
+  "status": "untested",
+  "note": "Save format from the DaveSaveEd editor; not yet checked on a real save."
+ },
+ "wot": {
+  "status": "untested",
+  "note": "Official Wargaming API; waiting for a player report."
+ },
+ "minecraft": {
+  "status": "partly",
+  "note": "Confirmed in Minecraft 26.3 (Java): Minecraft, Stone Age and Getting an Upgrade popped up from a real world."
+ }
 }
