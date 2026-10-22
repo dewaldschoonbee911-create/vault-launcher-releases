@@ -39,4 +39,4 @@ jobs:
         shell: pwsh
         run: |
           $f = (Get-ChildItem *.msix | Select-Object -First 1).FullName
-          msstore publish "$f" --appId 9NT96QS862FF
+          msstore publish "$env:GITHUB_WORKSPACE" --inputFile "$f" --appId 9NT96QS862FF
