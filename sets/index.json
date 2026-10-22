@@ -1,5 +1,5 @@
 {
- "launcherVersion": "0.1.80",
+ "launcherVersion": "0.1.81",
  "sets": [
   {
    "id": "anachronox",
@@ -84,6 +84,13 @@
    "file": "diablo.json",
    "version": 1,
    "sha256": "3ed979981372f900f3c77d0b1530d77e43668054419ff99482ce92e8142a6536"
+  },
+  {
+   "id": "driveclub",
+   "file": "driveclub.json",
+   "version": 1,
+   "sha256": "3230d047ab96588ffacea384a77a0f2a4fff80634989e396b18d77f930546a91",
+   "minLauncher": "0.1.81"
   },
   {
    "id": "eaw",
@@ -322,6 +329,6 @@
   }
  ],
  "status": {
-  "sha256": "99f0ead911de9710df6feee5688085f5398f2301c637d2306a3de6251fad6671"
+  "sha256": "e42df09abe7764f23fd256971bceebc34fff3913cdcd2959313a3a3b427bdae9"
  }
 }

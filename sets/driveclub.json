@@ -1,0 +1,1483 @@
+{
+ "id": "driveclub",
+ "title": "DRIVECLUB",
+ "version": 1,
+ "minLauncher": "0.1.81",
+ "kind": "log",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [],
+ "exeNames": [],
+ "md5": [],
+ "linkFiles": [
+  "launcher.ini",
+  "runtime/DriveClubGame.exe"
+ ],
+ "logFiles": [
+  "logs/driveclub_*.log"
+ ],
+ "logWatches": [
+  {
+   "id": "trophy",
+   "label": "Last trophy",
+   "regex": "\\btrophy (\\d+) unlocked\\b",
+   "names": {
+    "0": "#UniteInSpeed",
+    "1": "You Only Get One First Time",
+    "2": "Clubman",
+    "3": "First Of Many",
+    "4": "This One Is Mine",
+    "5": "Contender",
+    "6": "And So It Begins!",
+    "7": "Level Up!",
+    "8": "5 And Counting",
+    "9": "Progress",
+    "10": "Tonnage",
+    "11": "Face-Off",
+    "12": "On The Podium",
+    "13": "Nose To Tail",
+    "14": "Team Work",
+    "15": "Rack 'em Up, Knock 'em Down",
+    "16": "Long Distance",
+    "17": "Making Waves",
+    "18": "Life Begins",
+    "19": "Full House",
+    "20": "Unbeatable",
+    "21": "Mastery",
+    "22": "Hoon-a-tic",
+    "23": "Cleanup",
+    "24": "Lifer",
+    "25": "Welcome To The Limit",
+    "26": "Credit Where It's Due",
+    "27": "The Rookie Trophy",
+    "28": "The Amateur Trophy",
+    "29": "The Semi-Pro Trophy",
+    "30": "The Professional Trophy",
+    "31": "The Legend Trophy",
+    "32": "Ignition Beginner",
+    "33": "Ignition Rising Star",
+    "34": "Ignition Contender",
+    "35": "Ignition Champion",
+    "36": "Ignition Completionist",
+    "37": "Photo-Finish Beginner",
+    "38": "Photo-Finish Rising Star",
+    "39": "Photo-Finish Contender",
+    "40": "Photo-Finish Champion",
+    "41": "Photo-Finish Completionist",
+    "42": "Redline Beginner",
+    "43": "Redline Rising Star",
+    "44": "Redline Contender",
+    "45": "Redline Champion",
+    "46": "Redline Completionist",
+    "47": "Elements Beginner",
+    "48": "Elements Rising Star",
+    "49": "Elements Contender",
+    "50": "Elements Champion",
+    "51": "Elements Completionist",
+    "52": "Apex Beginner",
+    "53": "Apex Rising Star",
+    "54": "Apex Contender",
+    "55": "Apex Champion",
+    "56": "Apex Completionist",
+    "57": "Sakura Beginner",
+    "58": "Sakura Rising Star",
+    "59": "Sakura Contender",
+    "60": "Sakura Champion",
+    "61": "Sakura Completionist",
+    "62": "Downforce Beginner",
+    "63": "Downforce Rising Star",
+    "64": "Downforce Contender",
+    "65": "Downforce Champion",
+    "66": "Downforce Completionist",
+    "67": "Midnight Beginner",
+    "68": "Midnight Rising Star",
+    "69": "Midnight Contender",
+    "70": "Midnight Champion",
+    "71": "Midnight Completionist",
+    "72": "Lamborghini Beginner",
+    "73": "Lamborghini Rising Star",
+    "74": "Lamborghini Contender",
+    "75": "Lamborghini Champion",
+    "76": "Lamborghini Completionist",
+    "77": "Pacesetter Beginner",
+    "78": "Pacesetter Rising Star",
+    "79": "Pacesetter Contender",
+    "80": "Pacesetter Champion",
+    "81": "Pacesetter Completionist",
+    "82": "Turbocharged Beginner",
+    "83": "Turbocharged Rising Star",
+    "84": "Turbocharged Contender",
+    "85": "Turbocharged Champion",
+    "86": "Turbocharged Completionist",
+    "87": "Evolution Beginner",
+    "88": "Evolution Rising Star",
+    "89": "Evolution Contender",
+    "90": "Evolution Champion",
+    "91": "Evolution Completionist",
+    "92": "Lamborghini Icons Beginner",
+    "93": "Lamborghini Icons Rising Star",
+    "94": "Lamborghini Icons Contender",
+    "95": "Lamborghini Icons Champion",
+    "96": "Lamborghini Icons Completionist",
+    "97": "Torque Beginner",
+    "98": "Torque Rising Star",
+    "99": "Torque Contender",
+    "100": "Torque Champion",
+    "101": "Torque Completionist",
+    "102": "RPM Beginner",
+    "103": "RPM Rising Star",
+    "104": "RPM Contender",
+    "105": "RPM Champion",
+    "106": "RPM Completionist",
+    "107": "Velocity Beginner",
+    "108": "Velocity Rising Star",
+    "109": "Velocity Contender",
+    "110": "Velocity Champion",
+    "111": "Velocity Completionist",
+    "112": "Horsepower Beginner",
+    "113": "Horsepower Rising Star",
+    "114": "Horsepower Contender",
+    "115": "Horsepower Champion",
+    "116": "Horsepower Completionist",
+    "117": "Unite In Speed Beginner",
+    "118": "Unite In Speed Rising Star",
+    "119": "Unite In Speed Contender",
+    "120": "Unite In Speed Champion",
+    "121": "Unite In Speed Completionist",
+    "122": "All Stars Beginner",
+    "123": "All Stars Champion",
+    "124": "All Stars Completionist",
+    "125": "AMG Beginner",
+    "126": "AMG Champion",
+    "127": "AMG Completionist"
+   }
+  }
+ ],
+ "notes": [
+  "For the DRIVECLUB PC recompilation (driveclub-recomp). The game still decides when you've earned a trophy; the recomp writes each one to its log (logs\\driveclub_<date>.log), and Vault reads that log and never touches the game.",
+  "Add the game with \"Add a game\" and pick DriveClub.exe in the driveclub-recomp folder.",
+  "The recomp doesn't remember trophies between launches, so Vault keeps them for you. #UniteInSpeed unlocks once you have every other main-game trophy, like the platinum on PlayStation.",
+  "The Tour and series trophies (the add-on events) are numbered from public trophy lists and haven't been confirmed in a game yet."
+ ],
+ "testGuide": [
+  {
+   "title": "Add the game",
+   "detail": "In Vault, click Add a game and choose DriveClub.exe in your driveclub-recomp folder."
+  },
+  {
+   "title": "Finish an event",
+   "detail": "Play your first Tour event to the results screen. \"You Only Get One First Time\" should pop up within a few seconds of the game awarding it, and Last trophy should show its name."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "t000",
+   "title": "#UniteInSpeed",
+   "description": "Earn every other DRIVECLUB trophy in the main game.",
+   "points": 100,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 0 unlocked\\b",
+    "allOf": [
+     "t001",
+     "t002",
+     "t003",
+     "t004",
+     "t005",
+     "t006",
+     "t007",
+     "t008",
+     "t009",
+     "t010",
+     "t011",
+     "t012",
+     "t013",
+     "t014",
+     "t015",
+     "t016",
+     "t017",
+     "t018",
+     "t019",
+     "t020",
+     "t021",
+     "t022",
+     "t023",
+     "t024",
+     "t025",
+     "t026"
+    ]
+   }
+  },
+  {
+   "id": "t001",
+   "title": "You Only Get One First Time",
+   "description": "Complete your first event.",
+   "points": 10,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 1 unlocked\\b"
+   }
+  },
+  {
+   "id": "t002",
+   "title": "Clubman",
+   "description": "Join a club, or have someone join a club you created.",
+   "points": 10,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 2 unlocked\\b"
+   }
+  },
+  {
+   "id": "t003",
+   "title": "First Of Many",
+   "description": "Beat your first Face-Off.",
+   "points": 10,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 3 unlocked\\b"
+   }
+  },
+  {
+   "id": "t004",
+   "title": "This One Is Mine",
+   "description": "Customise a vehicle.",
+   "points": 10,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 4 unlocked\\b"
+   }
+  },
+  {
+   "id": "t005",
+   "title": "Contender",
+   "description": "Be top of the leaderboard when a Driver Challenge timer runs out.",
+   "points": 10,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 5 unlocked\\b"
+   }
+  },
+  {
+   "id": "t006",
+   "title": "And So It Begins!",
+   "description": "Send a challenge to another player.",
+   "points": 10,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 6 unlocked\\b"
+   }
+  },
+  {
+   "id": "t007",
+   "title": "Level Up!",
+   "description": "Reach Driver Level 2.",
+   "points": 10,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 7 unlocked\\b"
+   }
+  },
+  {
+   "id": "t008",
+   "title": "5 And Counting",
+   "description": "Reach Driver Level 5.",
+   "points": 10,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 8 unlocked\\b"
+   }
+  },
+  {
+   "id": "t009",
+   "title": "Progress",
+   "description": "Reach Level 2 with one Accolade.",
+   "points": 10,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 9 unlocked\\b"
+   }
+  },
+  {
+   "id": "t010",
+   "title": "Tonnage",
+   "description": "Complete a point-to-point event with an average speed of 100 mph (161 km/h).",
+   "points": 10,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 10 unlocked\\b"
+   }
+  },
+  {
+   "id": "t011",
+   "title": "Face-Off",
+   "description": "Complete 50 Face-Offs.",
+   "points": 25,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 11 unlocked\\b"
+   }
+  },
+  {
+   "id": "t012",
+   "title": "On The Podium",
+   "description": "Finish in the top 3 of a 12-player race.",
+   "points": 25,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 12 unlocked\\b"
+   }
+  },
+  {
+   "id": "t013",
+   "title": "Nose To Tail",
+   "description": "Draft another vehicle for at least 2,000 m (2,187 yards) in a single event.",
+   "points": 25,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 13 unlocked\\b"
+   }
+  },
+  {
+   "id": "t014",
+   "title": "Team Work",
+   "description": "Be a member of a club that is Club Level 10 or above.",
+   "points": 25,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 14 unlocked\\b"
+   }
+  },
+  {
+   "id": "t015",
+   "title": "Rack 'em Up, Knock 'em Down",
+   "description": "Beat 3 target times in a single Time Trial event.",
+   "points": 25,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 15 unlocked\\b"
+   }
+  },
+  {
+   "id": "t016",
+   "title": "Long Distance",
+   "description": "Drive for at least 300 miles (483 km).",
+   "points": 25,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 16 unlocked\\b"
+   }
+  },
+  {
+   "id": "t017",
+   "title": "Making Waves",
+   "description": "Reach Driver Level 15.",
+   "points": 25,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 17 unlocked\\b"
+   }
+  },
+  {
+   "id": "t018",
+   "title": "Life Begins",
+   "description": "Reach Driver Level 30.",
+   "points": 25,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 18 unlocked\\b"
+   }
+  },
+  {
+   "id": "t019",
+   "title": "Full House",
+   "description": "Win a race in every class: Hot Hatch, Performance, Sports, Super and Hyper.",
+   "points": 25,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 19 unlocked\\b"
+   }
+  },
+  {
+   "id": "t020",
+   "title": "Unbeatable",
+   "description": "Win 5 of your own solo challenges after sending them to other players.",
+   "points": 50,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 20 unlocked\\b"
+   }
+  },
+  {
+   "id": "t021",
+   "title": "Mastery",
+   "description": "Reach Level 6 with one Accolade.",
+   "points": 50,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 21 unlocked\\b"
+   }
+  },
+  {
+   "id": "t022",
+   "title": "Hoon-a-tic",
+   "description": "Earn 1,000,000 drift points in total.",
+   "points": 50,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 22 unlocked\\b"
+   }
+  },
+  {
+   "id": "t023",
+   "title": "Cleanup",
+   "description": "Finish on the podium of a 12-player race without losing any Fame to collisions.",
+   "points": 50,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 23 unlocked\\b"
+   }
+  },
+  {
+   "id": "t024",
+   "title": "Lifer",
+   "description": "Drive at least 1,000 miles (1,610 km) as a club member.",
+   "points": 50,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 24 unlocked\\b"
+   }
+  },
+  {
+   "id": "t025",
+   "title": "Welcome To The Limit",
+   "description": "Reach Driver Level 50.",
+   "points": 50,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 25 unlocked\\b"
+   }
+  },
+  {
+   "id": "t026",
+   "title": "Credit Where It's Due",
+   "description": "Reach Level 6 with a Gameplay, Game Mode, Vehicle and Event Accolade.",
+   "points": 50,
+   "group": "DRIVECLUB",
+   "rule": {
+    "line": "\\btrophy 26 unlocked\\b"
+   }
+  },
+  {
+   "id": "t027",
+   "title": "The Rookie Trophy",
+   "description": "Win 'The Rookie Trophy' event in Tour on gold star difficulty.",
+   "points": 10,
+   "group": "DRIVECLUB Tour",
+   "rule": {
+    "line": "\\btrophy 27 unlocked\\b"
+   }
+  },
+  {
+   "id": "t028",
+   "title": "The Amateur Trophy",
+   "description": "Win 'The Amateur Trophy' event in Tour on gold star difficulty.",
+   "points": 10,
+   "group": "DRIVECLUB Tour",
+   "rule": {
+    "line": "\\btrophy 28 unlocked\\b"
+   }
+  },
+  {
+   "id": "t029",
+   "title": "The Semi-Pro Trophy",
+   "description": "Win 'The Semi-Pro Trophy' event in Tour on gold star difficulty.",
+   "points": 25,
+   "group": "DRIVECLUB Tour",
+   "rule": {
+    "line": "\\btrophy 29 unlocked\\b"
+   }
+  },
+  {
+   "id": "t030",
+   "title": "The Professional Trophy",
+   "description": "Win 'The Professional Trophy' event in Tour on gold star difficulty.",
+   "points": 25,
+   "group": "DRIVECLUB Tour",
+   "rule": {
+    "line": "\\btrophy 30 unlocked\\b"
+   }
+  },
+  {
+   "id": "t031",
+   "title": "The Legend Trophy",
+   "description": "Win 'The Legend Trophy' event in Tour on gold star difficulty.",
+   "points": 50,
+   "group": "DRIVECLUB Tour",
+   "rule": {
+    "line": "\\btrophy 31 unlocked\\b"
+   }
+  },
+  {
+   "id": "t032",
+   "title": "Ignition Beginner",
+   "description": "Earn a star in any Ignition event.",
+   "points": 10,
+   "group": "Ignition",
+   "rule": {
+    "line": "\\btrophy 32 unlocked\\b"
+   }
+  },
+  {
+   "id": "t033",
+   "title": "Ignition Rising Star",
+   "description": "Unlock additional Ignition events.",
+   "points": 10,
+   "group": "Ignition",
+   "rule": {
+    "line": "\\btrophy 33 unlocked\\b"
+   }
+  },
+  {
+   "id": "t034",
+   "title": "Ignition Contender",
+   "description": "Unlock the Ignition Trophy event.",
+   "points": 25,
+   "group": "Ignition",
+   "rule": {
+    "line": "\\btrophy 34 unlocked\\b"
+   }
+  },
+  {
+   "id": "t035",
+   "title": "Ignition Champion",
+   "description": "Win the Ignition Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Ignition",
+   "rule": {
+    "line": "\\btrophy 35 unlocked\\b"
+   }
+  },
+  {
+   "id": "t036",
+   "title": "Ignition Completionist",
+   "description": "Earn all stars in Ignition.",
+   "points": 50,
+   "group": "Ignition",
+   "rule": {
+    "line": "\\btrophy 36 unlocked\\b"
+   }
+  },
+  {
+   "id": "t037",
+   "title": "Photo-Finish Beginner",
+   "description": "Earn a star in any Photo-Finish event.",
+   "points": 10,
+   "group": "Photo-Finish",
+   "rule": {
+    "line": "\\btrophy 37 unlocked\\b"
+   }
+  },
+  {
+   "id": "t038",
+   "title": "Photo-Finish Rising Star",
+   "description": "Unlock additional Photo-Finish events.",
+   "points": 10,
+   "group": "Photo-Finish",
+   "rule": {
+    "line": "\\btrophy 38 unlocked\\b"
+   }
+  },
+  {
+   "id": "t039",
+   "title": "Photo-Finish Contender",
+   "description": "Unlock the Photo-Finish Trophy event.",
+   "points": 25,
+   "group": "Photo-Finish",
+   "rule": {
+    "line": "\\btrophy 39 unlocked\\b"
+   }
+  },
+  {
+   "id": "t040",
+   "title": "Photo-Finish Champion",
+   "description": "Win the Photo-Finish Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Photo-Finish",
+   "rule": {
+    "line": "\\btrophy 40 unlocked\\b"
+   }
+  },
+  {
+   "id": "t041",
+   "title": "Photo-Finish Completionist",
+   "description": "Earn all stars in Photo-Finish.",
+   "points": 50,
+   "group": "Photo-Finish",
+   "rule": {
+    "line": "\\btrophy 41 unlocked\\b"
+   }
+  },
+  {
+   "id": "t042",
+   "title": "Redline Beginner",
+   "description": "Earn a star in any Redline event.",
+   "points": 10,
+   "group": "Redline",
+   "rule": {
+    "line": "\\btrophy 42 unlocked\\b"
+   }
+  },
+  {
+   "id": "t043",
+   "title": "Redline Rising Star",
+   "description": "Unlock additional Redline events.",
+   "points": 10,
+   "group": "Redline",
+   "rule": {
+    "line": "\\btrophy 43 unlocked\\b"
+   }
+  },
+  {
+   "id": "t044",
+   "title": "Redline Contender",
+   "description": "Unlock the Redline Trophy event.",
+   "points": 25,
+   "group": "Redline",
+   "rule": {
+    "line": "\\btrophy 44 unlocked\\b"
+   }
+  },
+  {
+   "id": "t045",
+   "title": "Redline Champion",
+   "description": "Win the Redline Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Redline",
+   "rule": {
+    "line": "\\btrophy 45 unlocked\\b"
+   }
+  },
+  {
+   "id": "t046",
+   "title": "Redline Completionist",
+   "description": "Earn all stars in Redline.",
+   "points": 50,
+   "group": "Redline",
+   "rule": {
+    "line": "\\btrophy 46 unlocked\\b"
+   }
+  },
+  {
+   "id": "t047",
+   "title": "Elements Beginner",
+   "description": "Earn a star in any Elements event.",
+   "points": 10,
+   "group": "Elements",
+   "rule": {
+    "line": "\\btrophy 47 unlocked\\b"
+   }
+  },
+  {
+   "id": "t048",
+   "title": "Elements Rising Star",
+   "description": "Unlock additional Elements events.",
+   "points": 10,
+   "group": "Elements",
+   "rule": {
+    "line": "\\btrophy 48 unlocked\\b"
+   }
+  },
+  {
+   "id": "t049",
+   "title": "Elements Contender",
+   "description": "Unlock the Elements Trophy event.",
+   "points": 25,
+   "group": "Elements",
+   "rule": {
+    "line": "\\btrophy 49 unlocked\\b"
+   }
+  },
+  {
+   "id": "t050",
+   "title": "Elements Champion",
+   "description": "Win the Elements Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Elements",
+   "rule": {
+    "line": "\\btrophy 50 unlocked\\b"
+   }
+  },
+  {
+   "id": "t051",
+   "title": "Elements Completionist",
+   "description": "Earn all stars in Elements.",
+   "points": 50,
+   "group": "Elements",
+   "rule": {
+    "line": "\\btrophy 51 unlocked\\b"
+   }
+  },
+  {
+   "id": "t052",
+   "title": "Apex Beginner",
+   "description": "Earn a star in any Apex event.",
+   "points": 10,
+   "group": "Apex",
+   "rule": {
+    "line": "\\btrophy 52 unlocked\\b"
+   }
+  },
+  {
+   "id": "t053",
+   "title": "Apex Rising Star",
+   "description": "Unlock additional Apex events.",
+   "points": 10,
+   "group": "Apex",
+   "rule": {
+    "line": "\\btrophy 53 unlocked\\b"
+   }
+  },
+  {
+   "id": "t054",
+   "title": "Apex Contender",
+   "description": "Unlock the Apex Trophy event.",
+   "points": 25,
+   "group": "Apex",
+   "rule": {
+    "line": "\\btrophy 54 unlocked\\b"
+   }
+  },
+  {
+   "id": "t055",
+   "title": "Apex Champion",
+   "description": "Win the Apex Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Apex",
+   "rule": {
+    "line": "\\btrophy 55 unlocked\\b"
+   }
+  },
+  {
+   "id": "t056",
+   "title": "Apex Completionist",
+   "description": "Earn all stars in Apex.",
+   "points": 50,
+   "group": "Apex",
+   "rule": {
+    "line": "\\btrophy 56 unlocked\\b"
+   }
+  },
+  {
+   "id": "t057",
+   "title": "Sakura Beginner",
+   "description": "Earn a star in any Sakura event.",
+   "points": 10,
+   "group": "Sakura",
+   "rule": {
+    "line": "\\btrophy 57 unlocked\\b"
+   }
+  },
+  {
+   "id": "t058",
+   "title": "Sakura Rising Star",
+   "description": "Unlock additional Sakura events.",
+   "points": 10,
+   "group": "Sakura",
+   "rule": {
+    "line": "\\btrophy 58 unlocked\\b"
+   }
+  },
+  {
+   "id": "t059",
+   "title": "Sakura Contender",
+   "description": "Unlock the Sakura Trophy event.",
+   "points": 25,
+   "group": "Sakura",
+   "rule": {
+    "line": "\\btrophy 59 unlocked\\b"
+   }
+  },
+  {
+   "id": "t060",
+   "title": "Sakura Champion",
+   "description": "Win the Sakura Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Sakura",
+   "rule": {
+    "line": "\\btrophy 60 unlocked\\b"
+   }
+  },
+  {
+   "id": "t061",
+   "title": "Sakura Completionist",
+   "description": "Earn all stars in Sakura.",
+   "points": 50,
+   "group": "Sakura",
+   "rule": {
+    "line": "\\btrophy 61 unlocked\\b"
+   }
+  },
+  {
+   "id": "t062",
+   "title": "Downforce Beginner",
+   "description": "Earn a star in any Downforce event.",
+   "points": 10,
+   "group": "Downforce",
+   "rule": {
+    "line": "\\btrophy 62 unlocked\\b"
+   }
+  },
+  {
+   "id": "t063",
+   "title": "Downforce Rising Star",
+   "description": "Unlock additional Downforce events.",
+   "points": 10,
+   "group": "Downforce",
+   "rule": {
+    "line": "\\btrophy 63 unlocked\\b"
+   }
+  },
+  {
+   "id": "t064",
+   "title": "Downforce Contender",
+   "description": "Unlock the Downforce Trophy event.",
+   "points": 25,
+   "group": "Downforce",
+   "rule": {
+    "line": "\\btrophy 64 unlocked\\b"
+   }
+  },
+  {
+   "id": "t065",
+   "title": "Downforce Champion",
+   "description": "Win the Downforce Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Downforce",
+   "rule": {
+    "line": "\\btrophy 65 unlocked\\b"
+   }
+  },
+  {
+   "id": "t066",
+   "title": "Downforce Completionist",
+   "description": "Earn all stars in Downforce.",
+   "points": 50,
+   "group": "Downforce",
+   "rule": {
+    "line": "\\btrophy 66 unlocked\\b"
+   }
+  },
+  {
+   "id": "t067",
+   "title": "Midnight Beginner",
+   "description": "Earn a star in any Midnight event.",
+   "points": 10,
+   "group": "Midnight",
+   "rule": {
+    "line": "\\btrophy 67 unlocked\\b"
+   }
+  },
+  {
+   "id": "t068",
+   "title": "Midnight Rising Star",
+   "description": "Unlock additional Midnight events.",
+   "points": 10,
+   "group": "Midnight",
+   "rule": {
+    "line": "\\btrophy 68 unlocked\\b"
+   }
+  },
+  {
+   "id": "t069",
+   "title": "Midnight Contender",
+   "description": "Unlock the Midnight Trophy event.",
+   "points": 25,
+   "group": "Midnight",
+   "rule": {
+    "line": "\\btrophy 69 unlocked\\b"
+   }
+  },
+  {
+   "id": "t070",
+   "title": "Midnight Champion",
+   "description": "Win the Midnight Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Midnight",
+   "rule": {
+    "line": "\\btrophy 70 unlocked\\b"
+   }
+  },
+  {
+   "id": "t071",
+   "title": "Midnight Completionist",
+   "description": "Earn all stars in Midnight.",
+   "points": 50,
+   "group": "Midnight",
+   "rule": {
+    "line": "\\btrophy 71 unlocked\\b"
+   }
+  },
+  {
+   "id": "t072",
+   "title": "Lamborghini Beginner",
+   "description": "Earn a star in any Lamborghini event.",
+   "points": 10,
+   "group": "Lamborghini",
+   "rule": {
+    "line": "\\btrophy 72 unlocked\\b"
+   }
+  },
+  {
+   "id": "t073",
+   "title": "Lamborghini Rising Star",
+   "description": "Unlock additional Lamborghini events.",
+   "points": 10,
+   "group": "Lamborghini",
+   "rule": {
+    "line": "\\btrophy 73 unlocked\\b"
+   }
+  },
+  {
+   "id": "t074",
+   "title": "Lamborghini Contender",
+   "description": "Unlock the Lamborghini Trophy event.",
+   "points": 25,
+   "group": "Lamborghini",
+   "rule": {
+    "line": "\\btrophy 74 unlocked\\b"
+   }
+  },
+  {
+   "id": "t075",
+   "title": "Lamborghini Champion",
+   "description": "Win the Lamborghini Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Lamborghini",
+   "rule": {
+    "line": "\\btrophy 75 unlocked\\b"
+   }
+  },
+  {
+   "id": "t076",
+   "title": "Lamborghini Completionist",
+   "description": "Earn all stars in Lamborghini.",
+   "points": 50,
+   "group": "Lamborghini",
+   "rule": {
+    "line": "\\btrophy 76 unlocked\\b"
+   }
+  },
+  {
+   "id": "t077",
+   "title": "Pacesetter Beginner",
+   "description": "Earn a star in any Pacesetter event.",
+   "points": 10,
+   "group": "Pacesetter",
+   "rule": {
+    "line": "\\btrophy 77 unlocked\\b"
+   }
+  },
+  {
+   "id": "t078",
+   "title": "Pacesetter Rising Star",
+   "description": "Unlock additional Pacesetter events.",
+   "points": 10,
+   "group": "Pacesetter",
+   "rule": {
+    "line": "\\btrophy 78 unlocked\\b"
+   }
+  },
+  {
+   "id": "t079",
+   "title": "Pacesetter Contender",
+   "description": "Unlock the Pacesetter Trophy event.",
+   "points": 25,
+   "group": "Pacesetter",
+   "rule": {
+    "line": "\\btrophy 79 unlocked\\b"
+   }
+  },
+  {
+   "id": "t080",
+   "title": "Pacesetter Champion",
+   "description": "Win the Pacesetter Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Pacesetter",
+   "rule": {
+    "line": "\\btrophy 80 unlocked\\b"
+   }
+  },
+  {
+   "id": "t081",
+   "title": "Pacesetter Completionist",
+   "description": "Earn all stars in Pacesetter.",
+   "points": 50,
+   "group": "Pacesetter",
+   "rule": {
+    "line": "\\btrophy 81 unlocked\\b"
+   }
+  },
+  {
+   "id": "t082",
+   "title": "Turbocharged Beginner",
+   "description": "Earn a star in any Turbocharged event.",
+   "points": 10,
+   "group": "Turbocharged",
+   "rule": {
+    "line": "\\btrophy 82 unlocked\\b"
+   }
+  },
+  {
+   "id": "t083",
+   "title": "Turbocharged Rising Star",
+   "description": "Unlock additional Turbocharged events.",
+   "points": 10,
+   "group": "Turbocharged",
+   "rule": {
+    "line": "\\btrophy 83 unlocked\\b"
+   }
+  },
+  {
+   "id": "t084",
+   "title": "Turbocharged Contender",
+   "description": "Unlock the Turbocharged Trophy event.",
+   "points": 25,
+   "group": "Turbocharged",
+   "rule": {
+    "line": "\\btrophy 84 unlocked\\b"
+   }
+  },
+  {
+   "id": "t085",
+   "title": "Turbocharged Champion",
+   "description": "Win the Turbocharged Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Turbocharged",
+   "rule": {
+    "line": "\\btrophy 85 unlocked\\b"
+   }
+  },
+  {
+   "id": "t086",
+   "title": "Turbocharged Completionist",
+   "description": "Earn all stars in Turbocharged.",
+   "points": 50,
+   "group": "Turbocharged",
+   "rule": {
+    "line": "\\btrophy 86 unlocked\\b"
+   }
+  },
+  {
+   "id": "t087",
+   "title": "Evolution Beginner",
+   "description": "Earn a star in any Evolution event.",
+   "points": 10,
+   "group": "Evolution",
+   "rule": {
+    "line": "\\btrophy 87 unlocked\\b"
+   }
+  },
+  {
+   "id": "t088",
+   "title": "Evolution Rising Star",
+   "description": "Unlock additional Evolution events.",
+   "points": 10,
+   "group": "Evolution",
+   "rule": {
+    "line": "\\btrophy 88 unlocked\\b"
+   }
+  },
+  {
+   "id": "t089",
+   "title": "Evolution Contender",
+   "description": "Unlock the Evolution Trophy event.",
+   "points": 25,
+   "group": "Evolution",
+   "rule": {
+    "line": "\\btrophy 89 unlocked\\b"
+   }
+  },
+  {
+   "id": "t090",
+   "title": "Evolution Champion",
+   "description": "Win the Evolution Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Evolution",
+   "rule": {
+    "line": "\\btrophy 90 unlocked\\b"
+   }
+  },
+  {
+   "id": "t091",
+   "title": "Evolution Completionist",
+   "description": "Earn all stars in Evolution.",
+   "points": 50,
+   "group": "Evolution",
+   "rule": {
+    "line": "\\btrophy 91 unlocked\\b"
+   }
+  },
+  {
+   "id": "t092",
+   "title": "Lamborghini Icons Beginner",
+   "description": "Earn a star in any Lamborghini Icons event.",
+   "points": 10,
+   "group": "Lamborghini Icons",
+   "rule": {
+    "line": "\\btrophy 92 unlocked\\b"
+   }
+  },
+  {
+   "id": "t093",
+   "title": "Lamborghini Icons Rising Star",
+   "description": "Unlock additional Lamborghini Icons events.",
+   "points": 10,
+   "group": "Lamborghini Icons",
+   "rule": {
+    "line": "\\btrophy 93 unlocked\\b"
+   }
+  },
+  {
+   "id": "t094",
+   "title": "Lamborghini Icons Contender",
+   "description": "Unlock the Lamborghini Icons Trophy event.",
+   "points": 25,
+   "group": "Lamborghini Icons",
+   "rule": {
+    "line": "\\btrophy 94 unlocked\\b"
+   }
+  },
+  {
+   "id": "t095",
+   "title": "Lamborghini Icons Champion",
+   "description": "Win the Lamborghini Icons Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Lamborghini Icons",
+   "rule": {
+    "line": "\\btrophy 95 unlocked\\b"
+   }
+  },
+  {
+   "id": "t096",
+   "title": "Lamborghini Icons Completionist",
+   "description": "Earn all stars in Lamborghini Icons.",
+   "points": 50,
+   "group": "Lamborghini Icons",
+   "rule": {
+    "line": "\\btrophy 96 unlocked\\b"
+   }
+  },
+  {
+   "id": "t097",
+   "title": "Torque Beginner",
+   "description": "Earn a star in any Torque event.",
+   "points": 10,
+   "group": "Torque",
+   "rule": {
+    "line": "\\btrophy 97 unlocked\\b"
+   }
+  },
+  {
+   "id": "t098",
+   "title": "Torque Rising Star",
+   "description": "Unlock additional Torque events.",
+   "points": 10,
+   "group": "Torque",
+   "rule": {
+    "line": "\\btrophy 98 unlocked\\b"
+   }
+  },
+  {
+   "id": "t099",
+   "title": "Torque Contender",
+   "description": "Unlock the Torque Trophy event.",
+   "points": 25,
+   "group": "Torque",
+   "rule": {
+    "line": "\\btrophy 99 unlocked\\b"
+   }
+  },
+  {
+   "id": "t100",
+   "title": "Torque Champion",
+   "description": "Win the Torque Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Torque",
+   "rule": {
+    "line": "\\btrophy 100 unlocked\\b"
+   }
+  },
+  {
+   "id": "t101",
+   "title": "Torque Completionist",
+   "description": "Earn all stars in Torque.",
+   "points": 50,
+   "group": "Torque",
+   "rule": {
+    "line": "\\btrophy 101 unlocked\\b"
+   }
+  },
+  {
+   "id": "t102",
+   "title": "RPM Beginner",
+   "description": "Earn a star in any RPM event.",
+   "points": 10,
+   "group": "RPM",
+   "rule": {
+    "line": "\\btrophy 102 unlocked\\b"
+   }
+  },
+  {
+   "id": "t103",
+   "title": "RPM Rising Star",
+   "description": "Unlock additional RPM events.",
+   "points": 10,
+   "group": "RPM",
+   "rule": {
+    "line": "\\btrophy 103 unlocked\\b"
+   }
+  },
+  {
+   "id": "t104",
+   "title": "RPM Contender",
+   "description": "Unlock the RPM Trophy event.",
+   "points": 25,
+   "group": "RPM",
+   "rule": {
+    "line": "\\btrophy 104 unlocked\\b"
+   }
+  },
+  {
+   "id": "t105",
+   "title": "RPM Champion",
+   "description": "Win the RPM Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "RPM",
+   "rule": {
+    "line": "\\btrophy 105 unlocked\\b"
+   }
+  },
+  {
+   "id": "t106",
+   "title": "RPM Completionist",
+   "description": "Earn all stars in RPM.",
+   "points": 50,
+   "group": "RPM",
+   "rule": {
+    "line": "\\btrophy 106 unlocked\\b"
+   }
+  },
+  {
+   "id": "t107",
+   "title": "Velocity Beginner",
+   "description": "Earn a star in any Velocity event.",
+   "points": 10,
+   "group": "Velocity",
+   "rule": {
+    "line": "\\btrophy 107 unlocked\\b"
+   }
+  },
+  {
+   "id": "t108",
+   "title": "Velocity Rising Star",
+   "description": "Unlock additional Velocity events.",
+   "points": 10,
+   "group": "Velocity",
+   "rule": {
+    "line": "\\btrophy 108 unlocked\\b"
+   }
+  },
+  {
+   "id": "t109",
+   "title": "Velocity Contender",
+   "description": "Unlock the Velocity Trophy event.",
+   "points": 25,
+   "group": "Velocity",
+   "rule": {
+    "line": "\\btrophy 109 unlocked\\b"
+   }
+  },
+  {
+   "id": "t110",
+   "title": "Velocity Champion",
+   "description": "Win the Velocity Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Velocity",
+   "rule": {
+    "line": "\\btrophy 110 unlocked\\b"
+   }
+  },
+  {
+   "id": "t111",
+   "title": "Velocity Completionist",
+   "description": "Earn all stars in Velocity.",
+   "points": 50,
+   "group": "Velocity",
+   "rule": {
+    "line": "\\btrophy 111 unlocked\\b"
+   }
+  },
+  {
+   "id": "t112",
+   "title": "Horsepower Beginner",
+   "description": "Earn a star in any Horsepower event.",
+   "points": 10,
+   "group": "Horsepower",
+   "rule": {
+    "line": "\\btrophy 112 unlocked\\b"
+   }
+  },
+  {
+   "id": "t113",
+   "title": "Horsepower Rising Star",
+   "description": "Unlock additional Horsepower events.",
+   "points": 10,
+   "group": "Horsepower",
+   "rule": {
+    "line": "\\btrophy 113 unlocked\\b"
+   }
+  },
+  {
+   "id": "t114",
+   "title": "Horsepower Contender",
+   "description": "Unlock the Horsepower Trophy event.",
+   "points": 25,
+   "group": "Horsepower",
+   "rule": {
+    "line": "\\btrophy 114 unlocked\\b"
+   }
+  },
+  {
+   "id": "t115",
+   "title": "Horsepower Champion",
+   "description": "Win the Horsepower Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Horsepower",
+   "rule": {
+    "line": "\\btrophy 115 unlocked\\b"
+   }
+  },
+  {
+   "id": "t116",
+   "title": "Horsepower Completionist",
+   "description": "Earn all stars in Horsepower.",
+   "points": 50,
+   "group": "Horsepower",
+   "rule": {
+    "line": "\\btrophy 116 unlocked\\b"
+   }
+  },
+  {
+   "id": "t117",
+   "title": "Unite In Speed Beginner",
+   "description": "Earn a star in any Unite In Speed event.",
+   "points": 10,
+   "group": "Unite In Speed",
+   "rule": {
+    "line": "\\btrophy 117 unlocked\\b"
+   }
+  },
+  {
+   "id": "t118",
+   "title": "Unite In Speed Rising Star",
+   "description": "Unlock additional Unite In Speed events.",
+   "points": 10,
+   "group": "Unite In Speed",
+   "rule": {
+    "line": "\\btrophy 118 unlocked\\b"
+   }
+  },
+  {
+   "id": "t119",
+   "title": "Unite In Speed Contender",
+   "description": "Unlock the Unite In Speed Trophy event.",
+   "points": 25,
+   "group": "Unite In Speed",
+   "rule": {
+    "line": "\\btrophy 119 unlocked\\b"
+   }
+  },
+  {
+   "id": "t120",
+   "title": "Unite In Speed Champion",
+   "description": "Win the Unite In Speed Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "Unite In Speed",
+   "rule": {
+    "line": "\\btrophy 120 unlocked\\b"
+   }
+  },
+  {
+   "id": "t121",
+   "title": "Unite In Speed Completionist",
+   "description": "Earn all stars in Unite In Speed.",
+   "points": 50,
+   "group": "Unite In Speed",
+   "rule": {
+    "line": "\\btrophy 121 unlocked\\b"
+   }
+  },
+  {
+   "id": "t122",
+   "title": "All Stars Beginner",
+   "description": "Earn a star in any All Stars event.",
+   "points": 10,
+   "group": "All Stars",
+   "rule": {
+    "line": "\\btrophy 122 unlocked\\b"
+   }
+  },
+  {
+   "id": "t123",
+   "title": "All Stars Champion",
+   "description": "Win the All Stars Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "All Stars",
+   "rule": {
+    "line": "\\btrophy 123 unlocked\\b"
+   }
+  },
+  {
+   "id": "t124",
+   "title": "All Stars Completionist",
+   "description": "Earn all stars in All Stars.",
+   "points": 50,
+   "group": "All Stars",
+   "rule": {
+    "line": "\\btrophy 124 unlocked\\b"
+   }
+  },
+  {
+   "id": "t125",
+   "title": "AMG Beginner",
+   "description": "Earn a star in any AMG event.",
+   "points": 10,
+   "group": "AMG",
+   "rule": {
+    "line": "\\btrophy 125 unlocked\\b"
+   }
+  },
+  {
+   "id": "t126",
+   "title": "AMG Champion",
+   "description": "Win the AMG Trophy event on gold star difficulty.",
+   "points": 25,
+   "group": "AMG",
+   "rule": {
+    "line": "\\btrophy 126 unlocked\\b"
+   }
+  },
+  {
+   "id": "t127",
+   "title": "AMG Completionist",
+   "description": "Earn all stars in AMG.",
+   "points": 50,
+   "group": "AMG",
+   "rule": {
+    "line": "\\btrophy 127 unlocked\\b"
+   }
+  }
+ ]
+}

@@ -135,5 +135,9 @@
  "minecraft": {
   "status": "partly",
   "note": "Confirmed in Minecraft 26.3 (Java): Minecraft, Stone Age and Getting an Upgrade popped up from a real world."
+ },
+ "driveclub": {
+  "status": "partly",
+  "note": "Main-game trophies confirmed live (first event: 4 trophies); add-on series numbering not confirmed yet."
  }
 }
