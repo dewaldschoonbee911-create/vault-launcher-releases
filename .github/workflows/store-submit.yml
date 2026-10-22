@@ -31,8 +31,8 @@ jobs:
         if: env.HAS_KEYS == 'true'
         shell: pwsh
         run: |
-          gh release download --repo $env:GITHUB_REPOSITORY -p "VaultLauncher-Store-*.msix"
-          Get-ChildItem *.msix
+          gh release download --repo $env:GITHUB_REPOSITORY -p "VaultLauncher-Store-*.msix" -D pkg
+          Get-ChildItem pkg
       - uses: microsoft/microsoft-store-apppublisher@v1.1
         if: env.HAS_KEYS == 'true'
       - name: Sign in to Partner Center
@@ -43,5 +43,4 @@ jobs:
         if: env.HAS_KEYS == 'true'
         shell: pwsh
         run: |
-          $f = (Get-ChildItem *.msix | Select-Object -First 1).FullName
-          msstore publish "$env:GITHUB_WORKSPACE" --inputFile "$f" --appId 9NT96QS862FF
+          msstore publish "$env:GITHUB_WORKSPACE\pkg" --inputDirectory "$env:GITHUB_WORKSPACE\pkg" --appId 9NT96QS862FF --verbose
