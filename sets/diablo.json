@@ -382,7 +382,7 @@
   {
    "id": "all-quests",
    "title": "Hero of Tristram",
-   "description": "Complete every quest your game offered (with at least 8 quests in it), then save.",
+   "description": "Complete every other quest your game offered (Diablo himself aside), then save.",
    "points": 50,
    "group": "Quests",
    "rule": {

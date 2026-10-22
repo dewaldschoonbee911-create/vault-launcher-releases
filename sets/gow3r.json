@@ -1,7 +1,7 @@
 {
  "id": "gow3r",
  "title": "God of War III Remastered",
- "version": 1,
+ "version": 2,
  "minLauncher": "0.1.81",
  "kind": "log",
  "authors": [
@@ -65,15 +65,15 @@
  ],
  "rarityFrom": "Exophase (PlayStation players)",
  "notes": [
-  "For the God of War III PC recompilation (gow3_pc). The game still decides when you've earned a trophy; the recomp writes each one to its log (last_run.log), and Vault reads that log and never touches the game.",
+  "For the God of War III PC recompilation (gow3_pc). Story trophies come from your saves, which list every level you've been through; Vault only reads them. Trophies the recomp reports in its log (last_run.log) count too.",
   "Vault finds the gow3-windows folder on your drives by itself. If it doesn't show up, click Add a game and pick God of War III.exe in that folder.",
   "The recomp starts a fresh log every launch, so keep Vault running while you play. King of the Hill unlocks once you have every other trophy, like the platinum on PlayStation.",
-  "Trophy numbers come from the public trophy list and haven't been confirmed in a game yet."
+  "So far Kill Poseidon and Beat the game are read from saves; more story trophies are added as their levels are mapped. Counters (like the 1000-hit combo) wait until the recomp reports trophies."
  ],
  "testGuide": [
   {
    "title": "Kill Poseidon",
-   "detail": "Play the opening until Poseidon falls. \"Releasing the Floodgates\" should pop up within a few seconds, and Last trophy should show its name."
+   "detail": "Kill Poseidon and let the game autosave in Hades. \"Releasing the Floodgates\" should pop up within a few seconds of the save."
   }
  ],
  "achievements": [
@@ -132,7 +132,8 @@
    "group": "God of War III",
    "rarity": 96.17,
    "rule": {
-    "line": "\\btrophy 1 unlocked\\b"
+    "line": "\\btrophy 1 unlocked\\b",
+    "saveLevel": "^hds\\d"
    }
   },
   {
@@ -451,7 +452,8 @@
    "group": "God of War III",
    "rarity": 54.47,
    "rule": {
-    "line": "\\btrophy 30 unlocked\\b"
+    "line": "\\btrophy 30 unlocked\\b",
+    "saveLevel": "^endofgame"
    }
   },
   {

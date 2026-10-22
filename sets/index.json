@@ -1,5 +1,5 @@
 {
- "launcherVersion": "0.1.84",
+ "launcherVersion": "0.1.85",
  "sets": [
   {
    "id": "anachronox",
@@ -83,7 +83,7 @@
    "id": "diablo",
    "file": "diablo.json",
    "version": 1,
-   "sha256": "3ed979981372f900f3c77d0b1530d77e43668054419ff99482ce92e8142a6536"
+   "sha256": "6124ec5bbd59e371b5035ecee28fbdeec8417fbb1a38fed5edd1472c835dedb9"
   },
   {
    "id": "driveclub",
@@ -143,8 +143,8 @@
   {
    "id": "gow3r",
    "file": "gow3r.json",
-   "version": 1,
-   "sha256": "19da2c53f2934a181a2159066abf17d9135ace96b3157a822fde1966144be49c",
+   "version": 2,
+   "sha256": "ece3b76db759de84e2528907b9604f9e0a39bc8e32d0950178e22d74648641e9",
    "minLauncher": "0.1.81"
   },
   {
