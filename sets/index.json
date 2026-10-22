@@ -1,5 +1,5 @@
 {
- "launcherVersion": "0.1.78",
+ "launcherVersion": "0.1.79",
  "sets": [
   {
    "id": "anachronox",
@@ -210,6 +210,13 @@
    "file": "maxpayne2.json",
    "version": 1,
    "sha256": "09d4ecc8df0beef0604bbf148bc31b4be9261cf1dd3ce295b6f8307ba7f8fe8d"
+  },
+  {
+   "id": "minecraft",
+   "file": "minecraft.json",
+   "version": 1,
+   "sha256": "a1a32fc79568569834daf5bf1a17a0148ffdf3456ad09e8a6d675bdcf23d5f0c",
+   "minLauncher": "0.1.79"
   },
   {
    "id": "nfs2se",

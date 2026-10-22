@@ -1,0 +1,1310 @@
+{
+ "id": "minecraft",
+ "title": "Minecraft: Java Edition",
+ "version": 1,
+ "minLauncher": "0.1.79",
+ "kind": "replay",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [],
+ "exeNames": [],
+ "md5": [],
+ "notes": [
+  "Vault reads the advancements file each world saves (saves\\<world>\\advancements) and never touches the game. Every vanilla advancement becomes a Vault achievement, across all your worlds.",
+  "Works with the official Minecraft Launcher and with Prism, MultiMC, ATLauncher, CurseForge and Modrinth instances.",
+  "Only singleplayer worlds are on your PC. Advancements earned on a multiplayer server are kept by the server.",
+  "Minecraft for Windows (Bedrock) has its own Xbox achievements, so this set is for Java Edition only."
+ ],
+ "testGuide": [
+  {
+   "title": "Open a world",
+   "detail": "Start Vault, then open any singleplayer world and pick up a log or craft a crafting table. Within a few seconds of the game saving (pause with Esc to force a save), \"Minecraft\" and \"Stone Age\" style achievements should pop up."
+  },
+  {
+   "title": "Old worlds",
+   "detail": "Worlds you played before installing Vault count too: their advancements are picked up the first time Vault sees them."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "story-cure_zombie_villager",
+   "title": "Zombie Doctor",
+   "description": "Weaken and then cure a Zombie Villager.",
+   "points": 25,
+   "group": "Minecraft",
+   "rule": {
+    "advancement": "minecraft:story/cure_zombie_villager"
+   }
+  },
+  {
+   "id": "story-deflect_arrow",
+   "title": "Not Today, Thank You",
+   "description": "Deflect a projectile with a Shield.",
+   "points": 10,
+   "group": "Minecraft",
+   "rule": {
+    "advancement": "minecraft:story/deflect_arrow"
+   }
+  },
+  {
+   "id": "story-enchant_item",
+   "title": "Enchanter",
+   "description": "Enchant an item at an Enchanting Table.",
+   "points": 10,
+   "group": "Minecraft",
+   "rule": {
+    "advancement": "minecraft:story/enchant_item"
+   }
+  },
+  {
+   "id": "story-enter_the_end",
+   "title": "The End?",
+   "description": "Enter the End Portal.",
+   "points": 10,
+   "group": "Minecraft",
+   "rule": {
+    "advancement": "minecraft:story/enter_the_end"
+   }
+  },
+  {
+   "id": "story-enter_the_nether",
+   "title": "We Need to Go Deeper",
+   "description": "Build, light, and enter a Nether Portal.",
+   "points": 10,
+   "group": "Minecraft",
+   "rule": {
+    "advancement": "minecraft:story/enter_the_nether"
+   }
+  },
+  {
+   "id": "story-follow_ender_eye",
+   "title": "Eye Spy",
+   "description": "Follow an Eye of Ender.",
+   "points": 10,
+   "group": "Minecraft",
+   "rule": {
+    "advancement": "minecraft:story/follow_ender_eye"
+   }
+  },
+  {
+   "id": "story-form_obsidian",
+   "title": "Ice Bucket Challenge",
+   "description": "Obtain a block of Obsidian.",
+   "points": 10,
+   "group": "Minecraft",
+   "rule": {
+    "advancement": "minecraft:story/form_obsidian"
+   }
+  },
+  {
+   "id": "story-iron_tools",
+   "title": "Isn't It Iron Pick?",
+   "description": "Upgrade your Pickaxe.",
+   "points": 10,
+   "group": "Minecraft",
+   "rule": {
+    "advancement": "minecraft:story/iron_tools"
+   }
+  },
+  {
+   "id": "story-lava_bucket",
+   "title": "Hot Stuff",
+   "description": "Fill a Bucket with lava.",
+   "points": 10,
+   "group": "Minecraft",
+   "rule": {
+    "advancement": "minecraft:story/lava_bucket"
+   }
+  },
+  {
+   "id": "story-mine_diamond",
+   "title": "Diamonds!",
+   "description": "Acquire diamonds.",
+   "points": 10,
+   "group": "Minecraft",
+   "rule": {
+    "advancement": "minecraft:story/mine_diamond"
+   }
+  },
+  {
+   "id": "story-mine_stone",
+   "title": "Stone Age",
+   "description": "Mine Stone with your new Pickaxe.",
+   "points": 10,
+   "group": "Minecraft",
+   "rule": {
+    "advancement": "minecraft:story/mine_stone"
+   }
+  },
+  {
+   "id": "story-obtain_armor",
+   "title": "Suit Up",
+   "description": "Protect yourself with a piece of iron armor.",
+   "points": 10,
+   "group": "Minecraft",
+   "rule": {
+    "advancement": "minecraft:story/obtain_armor"
+   }
+  },
+  {
+   "id": "story-root",
+   "title": "Minecraft",
+   "description": "The heart and story of the game.",
+   "points": 10,
+   "group": "Minecraft",
+   "rule": {
+    "advancement": "minecraft:story/root"
+   }
+  },
+  {
+   "id": "story-shiny_gear",
+   "title": "Cover Me with Diamonds",
+   "description": "Diamond armor saves lives.",
+   "points": 10,
+   "group": "Minecraft",
+   "rule": {
+    "advancement": "minecraft:story/shiny_gear"
+   }
+  },
+  {
+   "id": "story-smelt_iron",
+   "title": "Acquire Hardware",
+   "description": "Smelt an Iron Ingot.",
+   "points": 10,
+   "group": "Minecraft",
+   "rule": {
+    "advancement": "minecraft:story/smelt_iron"
+   }
+  },
+  {
+   "id": "story-upgrade_tools",
+   "title": "Getting an Upgrade",
+   "description": "Construct a better Pickaxe.",
+   "points": 10,
+   "group": "Minecraft",
+   "rule": {
+    "advancement": "minecraft:story/upgrade_tools"
+   }
+  },
+  {
+   "id": "nether-all_effects",
+   "title": "How Did We Get Here?",
+   "description": "Have every effect applied at the same time.",
+   "points": 50,
+   "group": "Nether",
+   "hidden": true,
+   "rule": {
+    "advancement": "minecraft:nether/all_effects"
+   }
+  },
+  {
+   "id": "nether-all_potions",
+   "title": "A Furious Cocktail",
+   "description": "Have every potion effect applied at the same time.",
+   "points": 50,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/all_potions"
+   }
+  },
+  {
+   "id": "nether-brew_potion",
+   "title": "Local Brewery",
+   "description": "Brew a Potion.",
+   "points": 10,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/brew_potion"
+   }
+  },
+  {
+   "id": "nether-charge_respawn_anchor",
+   "title": "Not Quite \"Nine\" Lives",
+   "description": "Charge a Respawn Anchor to the maximum.",
+   "points": 10,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/charge_respawn_anchor"
+   }
+  },
+  {
+   "id": "nether-create_beacon",
+   "title": "Bring Home the Beacon",
+   "description": "Construct and place a Beacon.",
+   "points": 10,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/create_beacon"
+   }
+  },
+  {
+   "id": "nether-create_full_beacon",
+   "title": "Beaconator",
+   "description": "Bring a Beacon to full power.",
+   "points": 25,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/create_full_beacon"
+   }
+  },
+  {
+   "id": "nether-distract_piglin",
+   "title": "Oooh, Shiny!",
+   "description": "Distract Piglins with gold.",
+   "points": 10,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/distract_piglin"
+   }
+  },
+  {
+   "id": "nether-explore_nether",
+   "title": "Hot Tourist Destinations",
+   "description": "Explore all Nether biomes.",
+   "points": 50,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/explore_nether"
+   }
+  },
+  {
+   "id": "nether-fast_travel",
+   "title": "Subspace Bubble",
+   "description": "Use the Nether to travel 7 km in the Overworld.",
+   "points": 50,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/fast_travel"
+   }
+  },
+  {
+   "id": "nether-find_bastion",
+   "title": "Those Were the Days",
+   "description": "Enter a Bastion Remnant.",
+   "points": 10,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/find_bastion"
+   }
+  },
+  {
+   "id": "nether-find_fortress",
+   "title": "A Terrible Fortress",
+   "description": "Break your way into a Nether Fortress.",
+   "points": 10,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/find_fortress"
+   }
+  },
+  {
+   "id": "nether-get_wither_skull",
+   "title": "Spooky Scary Skeleton",
+   "description": "Obtain a Wither Skeleton's skull.",
+   "points": 10,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/get_wither_skull"
+   }
+  },
+  {
+   "id": "nether-loot_bastion",
+   "title": "War Pigs",
+   "description": "Loot a Chest in a Bastion Remnant.",
+   "points": 10,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/loot_bastion"
+   }
+  },
+  {
+   "id": "nether-netherite_armor",
+   "title": "Cover Me in Debris",
+   "description": "Get a full suit of Netherite armor.",
+   "points": 50,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/netherite_armor"
+   }
+  },
+  {
+   "id": "nether-obtain_ancient_debris",
+   "title": "Hidden in the Depths",
+   "description": "Obtain Ancient Debris.",
+   "points": 10,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/obtain_ancient_debris"
+   }
+  },
+  {
+   "id": "nether-obtain_blaze_rod",
+   "title": "Into Fire",
+   "description": "Relieve a Blaze of its rod.",
+   "points": 10,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/obtain_blaze_rod"
+   }
+  },
+  {
+   "id": "nether-obtain_crying_obsidian",
+   "title": "Who is Cutting Onions?",
+   "description": "Obtain Crying Obsidian.",
+   "points": 10,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/obtain_crying_obsidian"
+   }
+  },
+  {
+   "id": "nether-return_to_sender",
+   "title": "Return to Sender",
+   "description": "Destroy a Ghast with a fireball.",
+   "points": 50,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/return_to_sender"
+   }
+  },
+  {
+   "id": "nether-ride_strider",
+   "title": "This Boat Has Legs",
+   "description": "Ride a Strider with a Warped Fungus on a Stick.",
+   "points": 10,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/ride_strider"
+   }
+  },
+  {
+   "id": "nether-ride_strider_in_overworld_lava",
+   "title": "Feels Like Home",
+   "description": "Take a Strider for a loooong ride on a lava lake in the Overworld.",
+   "points": 10,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/ride_strider_in_overworld_lava"
+   }
+  },
+  {
+   "id": "nether-root",
+   "title": "Nether",
+   "description": "Bring summer clothes.",
+   "points": 10,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/root"
+   }
+  },
+  {
+   "id": "nether-summon_wither",
+   "title": "Withering Heights",
+   "description": "Summon the Wither.",
+   "points": 10,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/summon_wither"
+   }
+  },
+  {
+   "id": "nether-uneasy_alliance",
+   "title": "Uneasy Alliance",
+   "description": "Rescue a Ghast from the Nether, bring it safely home to the Overworld... and then kill it.",
+   "points": 50,
+   "group": "Nether",
+   "rule": {
+    "advancement": "minecraft:nether/uneasy_alliance"
+   }
+  },
+  {
+   "id": "end-dragon_breath",
+   "title": "You Need a Mint",
+   "description": "Collect Dragon's Breath in a Glass Bottle.",
+   "points": 25,
+   "group": "The End",
+   "rule": {
+    "advancement": "minecraft:end/dragon_breath"
+   }
+  },
+  {
+   "id": "end-dragon_egg",
+   "title": "The Next Generation",
+   "description": "Hold the Dragon Egg.",
+   "points": 25,
+   "group": "The End",
+   "rule": {
+    "advancement": "minecraft:end/dragon_egg"
+   }
+  },
+  {
+   "id": "end-elytra",
+   "title": "Sky's the Limit",
+   "description": "Find Elytra.",
+   "points": 25,
+   "group": "The End",
+   "rule": {
+    "advancement": "minecraft:end/elytra"
+   }
+  },
+  {
+   "id": "end-enter_end_gateway",
+   "title": "Remote Getaway",
+   "description": "Escape the island.",
+   "points": 10,
+   "group": "The End",
+   "rule": {
+    "advancement": "minecraft:end/enter_end_gateway"
+   }
+  },
+  {
+   "id": "end-find_end_city",
+   "title": "The City at the End of the Game",
+   "description": "Go on in, what could happen?",
+   "points": 10,
+   "group": "The End",
+   "rule": {
+    "advancement": "minecraft:end/find_end_city"
+   }
+  },
+  {
+   "id": "end-kill_dragon",
+   "title": "Free the End",
+   "description": "Good luck.",
+   "points": 10,
+   "group": "The End",
+   "rule": {
+    "advancement": "minecraft:end/kill_dragon"
+   }
+  },
+  {
+   "id": "end-levitate",
+   "title": "Great View From Up Here",
+   "description": "Levitate up 50 blocks from the attacks of a Shulker.",
+   "points": 50,
+   "group": "The End",
+   "rule": {
+    "advancement": "minecraft:end/levitate"
+   }
+  },
+  {
+   "id": "end-respawn_dragon",
+   "title": "The End... Again...",
+   "description": "Respawn the Ender Dragon.",
+   "points": 25,
+   "group": "The End",
+   "rule": {
+    "advancement": "minecraft:end/respawn_dragon"
+   }
+  },
+  {
+   "id": "end-root",
+   "title": "The End",
+   "description": "Or the beginning?",
+   "points": 10,
+   "group": "The End",
+   "rule": {
+    "advancement": "minecraft:end/root"
+   }
+  },
+  {
+   "id": "adventure-adventuring_time",
+   "title": "Adventuring Time",
+   "description": "Discover every biome.",
+   "points": 50,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/adventuring_time"
+   }
+  },
+  {
+   "id": "adventure-arbalistic",
+   "title": "Arbalistic",
+   "description": "Kill five unique mobs with one crossbow shot.",
+   "points": 50,
+   "group": "Adventure",
+   "hidden": true,
+   "rule": {
+    "advancement": "minecraft:adventure/arbalistic"
+   }
+  },
+  {
+   "id": "adventure-avoid_vibration",
+   "title": "Sneak 100",
+   "description": "Sneak near a Sculk Sensor or Warden to prevent it from detecting you.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/avoid_vibration"
+   }
+  },
+  {
+   "id": "adventure-blowback",
+   "title": "Blowback",
+   "description": "Kill a Breeze with a deflected Breeze-shot Wind Charge.",
+   "points": 50,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/blowback"
+   }
+  },
+  {
+   "id": "adventure-brush_armadillo",
+   "title": "Isn't It Scute?",
+   "description": "Get Armadillo Scutes from an Armadillo using a Brush.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/brush_armadillo"
+   }
+  },
+  {
+   "id": "adventure-bullseye",
+   "title": "Bullseye",
+   "description": "Hit the bullseye of a Target block from at least 30 meters away.",
+   "points": 50,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/bullseye"
+   }
+  },
+  {
+   "id": "adventure-craft_decorated_pot_using_only_sherds",
+   "title": "Careful Restoration",
+   "description": "Make a Decorated Pot out of 4 Pottery Sherds.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/craft_decorated_pot_using_only_sherds"
+   }
+  },
+  {
+   "id": "adventure-crafters_crafting_crafters",
+   "title": "Crafters Crafting Crafters",
+   "description": "Be near a Crafter when it crafts a Crafter.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/crafters_crafting_crafters"
+   }
+  },
+  {
+   "id": "adventure-fall_from_world_height",
+   "title": "Caves & Cliffs",
+   "description": "Free fall from the top of the world (build limit) to the bottom of the world and survive.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/fall_from_world_height"
+   }
+  },
+  {
+   "id": "adventure-heart_transplanter",
+   "title": "Heart Transplanter",
+   "description": "Place a Creaking Heart with the correct alignment between two Pale Oak Log blocks.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/heart_transplanter"
+   }
+  },
+  {
+   "id": "adventure-hero_of_the_village",
+   "title": "Hero of the Village",
+   "description": "Successfully defend a village from a raid.",
+   "points": 50,
+   "group": "Adventure",
+   "hidden": true,
+   "rule": {
+    "advancement": "minecraft:adventure/hero_of_the_village"
+   }
+  },
+  {
+   "id": "adventure-honey_block_slide",
+   "title": "Sticky Situation",
+   "description": "Jump into a Honey Block to break your fall.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/honey_block_slide"
+   }
+  },
+  {
+   "id": "adventure-kill_a_mob",
+   "title": "Monster Hunter",
+   "description": "Kill any hostile monster.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/kill_a_mob"
+   }
+  },
+  {
+   "id": "adventure-kill_all_mobs",
+   "title": "Monsters Hunted",
+   "description": "Kill one of every hostile monster.",
+   "points": 50,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/kill_all_mobs"
+   }
+  },
+  {
+   "id": "adventure-kill_mob_near_sculk_catalyst",
+   "title": "It Spreads",
+   "description": "Kill a mob near a Sculk Catalyst.",
+   "points": 50,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/kill_mob_near_sculk_catalyst"
+   }
+  },
+  {
+   "id": "adventure-lighten_up",
+   "title": "Lighten Up",
+   "description": "Scrape a Copper Bulb with an Axe to make it brighter.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/lighten_up"
+   }
+  },
+  {
+   "id": "adventure-lightning_rod_with_villager_no_fire",
+   "title": "Surge Protector",
+   "description": "Protect a Villager from an undesired shock without starting a fire.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/lightning_rod_with_villager_no_fire"
+   }
+  },
+  {
+   "id": "adventure-minecraft_trials_edition",
+   "title": "Minecraft: Trial(s) Edition",
+   "description": "Step foot in a Trial Chamber.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/minecraft_trials_edition"
+   }
+  },
+  {
+   "id": "adventure-ol_betsy",
+   "title": "Ol' Betsy",
+   "description": "Shoot a Crossbow.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/ol_betsy"
+   }
+  },
+  {
+   "id": "adventure-overoverkill",
+   "title": "Over-Overkill",
+   "description": "Deal 50 hearts of damage in a single hit using the Mace.",
+   "points": 50,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/overoverkill"
+   }
+  },
+  {
+   "id": "adventure-play_jukebox_in_meadows",
+   "title": "Sound of Music",
+   "description": "Make the Meadows come alive with the sound of music from a Jukebox.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/play_jukebox_in_meadows"
+   }
+  },
+  {
+   "id": "adventure-read_power_of_chiseled_bookshelf",
+   "title": "The Power of Books",
+   "description": "Read the power signal of a Chiseled Bookshelf using a Comparator.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/read_power_of_chiseled_bookshelf"
+   }
+  },
+  {
+   "id": "adventure-revaulting",
+   "title": "Revaulting",
+   "description": "Unlock an Ominous Vault with an Ominous Trial Key.",
+   "points": 25,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/revaulting"
+   }
+  },
+  {
+   "id": "adventure-root",
+   "title": "Adventure",
+   "description": "Adventure, exploration and combat.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/root"
+   }
+  },
+  {
+   "id": "adventure-salvage_sherd",
+   "title": "Respecting the Remnants",
+   "description": "Brush a Suspicious block to obtain a Pottery Sherd.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/salvage_sherd"
+   }
+  },
+  {
+   "id": "adventure-shoot_arrow",
+   "title": "Take Aim",
+   "description": "Shoot something with an Arrow.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/shoot_arrow"
+   }
+  },
+  {
+   "id": "adventure-sleep_in_bed",
+   "title": "Sweet Dreams",
+   "description": "Sleep in a Bed to change your respawn point.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/sleep_in_bed"
+   }
+  },
+  {
+   "id": "adventure-sniper_duel",
+   "title": "Sniper Duel",
+   "description": "Kill a Skeleton from at least 50 meters away.",
+   "points": 50,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/sniper_duel"
+   }
+  },
+  {
+   "id": "adventure-spear_many_mobs",
+   "title": "Mob Kabob",
+   "description": "Hit five mobs in the same Charge attack using the Spear.",
+   "points": 25,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/spear_many_mobs"
+   }
+  },
+  {
+   "id": "adventure-spyglass_at_dragon",
+   "title": "Is It a Plane?",
+   "description": "Look at the Ender Dragon through a Spyglass.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/spyglass_at_dragon"
+   }
+  },
+  {
+   "id": "adventure-spyglass_at_ghast",
+   "title": "Is It a Balloon?",
+   "description": "Look at a Ghast through a Spyglass.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/spyglass_at_ghast"
+   }
+  },
+  {
+   "id": "adventure-spyglass_at_parrot",
+   "title": "Is It a Bird?",
+   "description": "Look at a Parrot through a Spyglass.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/spyglass_at_parrot"
+   }
+  },
+  {
+   "id": "adventure-summon_iron_golem",
+   "title": "Hired Help",
+   "description": "Summon an Iron Golem to help defend a village.",
+   "points": 25,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/summon_iron_golem"
+   }
+  },
+  {
+   "id": "adventure-throw_trident",
+   "title": "A Throwaway Joke",
+   "description": "Throw a Trident at something.\nNote: Throwing away your only weapon is not a good idea.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/throw_trident"
+   }
+  },
+  {
+   "id": "adventure-totem_of_undying",
+   "title": "Postmortal",
+   "description": "Use a Totem of Undying to cheat death.",
+   "points": 25,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/totem_of_undying"
+   }
+  },
+  {
+   "id": "adventure-trade",
+   "title": "What a Deal!",
+   "description": "Successfully trade with a Villager.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/trade"
+   }
+  },
+  {
+   "id": "adventure-trade_at_world_height",
+   "title": "Star Trader",
+   "description": "Trade with a Villager at the build height limit.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/trade_at_world_height"
+   }
+  },
+  {
+   "id": "adventure-trim_with_all_exclusive_armor_patterns",
+   "title": "Smithing with Style",
+   "description": "Apply these smithing templates at least once: Spire, Snout, Rib, Ward, Silence, Vex, Tide, Wayfinder.",
+   "points": 50,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/trim_with_all_exclusive_armor_patterns"
+   }
+  },
+  {
+   "id": "adventure-trim_with_any_armor_pattern",
+   "title": "Crafting a New Look",
+   "description": "Craft trimmed armor at a Smithing Table.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/trim_with_any_armor_pattern"
+   }
+  },
+  {
+   "id": "adventure-two_birds_one_arrow",
+   "title": "Two Birds, One Arrow",
+   "description": "Kill two Phantoms with a piercing Arrow.",
+   "points": 50,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/two_birds_one_arrow"
+   }
+  },
+  {
+   "id": "adventure-under_lock_and_key",
+   "title": "Under Lock and Key",
+   "description": "Unlock a Vault with a Trial Key.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/under_lock_and_key"
+   }
+  },
+  {
+   "id": "adventure-use_lodestone",
+   "title": "Country Lode, Take Me Home",
+   "description": "Use a Compass on a Lodestone.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/use_lodestone"
+   }
+  },
+  {
+   "id": "adventure-very_very_frightening",
+   "title": "Very Very Frightening",
+   "description": "Strike a Villager with lightning.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/very_very_frightening"
+   }
+  },
+  {
+   "id": "adventure-voluntary_exile",
+   "title": "Voluntary Exile",
+   "description": "Kill a raid captain.\nMaybe consider staying away from villages for the time being...",
+   "points": 10,
+   "group": "Adventure",
+   "hidden": true,
+   "rule": {
+    "advancement": "minecraft:adventure/voluntary_exile"
+   }
+  },
+  {
+   "id": "adventure-walk_on_powder_snow_with_leather_boots",
+   "title": "Light as a Rabbit",
+   "description": "Walk on Powder Snow... without sinking in it.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/walk_on_powder_snow_with_leather_boots"
+   }
+  },
+  {
+   "id": "adventure-what_goes_around_comes_around",
+   "title": "What Goes Around Comes Around",
+   "description": "Kill a Frostbite using an Ice Ball.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/what_goes_around_comes_around"
+   }
+  },
+  {
+   "id": "adventure-who_needs_rockets",
+   "title": "Who Needs Rockets?",
+   "description": "Use a Wind Charge to launch yourself upward 8 blocks.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/who_needs_rockets"
+   }
+  },
+  {
+   "id": "adventure-whos_the_pillager_now",
+   "title": "Who's the Pillager Now?",
+   "description": "Give a Pillager a taste of their own medicine.",
+   "points": 10,
+   "group": "Adventure",
+   "rule": {
+    "advancement": "minecraft:adventure/whos_the_pillager_now"
+   }
+  },
+  {
+   "id": "husbandry-allay_deliver_cake_to_note_block",
+   "title": "Birthday Song",
+   "description": "Have an Allay drop a Cake at a Note Block.",
+   "points": 10,
+   "group": "Husbandry",
+   "hidden": true,
+   "rule": {
+    "advancement": "minecraft:husbandry/allay_deliver_cake_to_note_block"
+   }
+  },
+  {
+   "id": "husbandry-allay_deliver_item_to_player",
+   "title": "You've Got a Friend in Me",
+   "description": "Have an Allay deliver items to you.",
+   "points": 10,
+   "group": "Husbandry",
+   "hidden": true,
+   "rule": {
+    "advancement": "minecraft:husbandry/allay_deliver_item_to_player"
+   }
+  },
+  {
+   "id": "husbandry-axolotl_in_a_bucket",
+   "title": "The Cutest Predator",
+   "description": "Catch an Axolotl in a Bucket.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/axolotl_in_a_bucket"
+   }
+  },
+  {
+   "id": "husbandry-balanced_diet",
+   "title": "A Balanced Diet",
+   "description": "Eat everything that is edible, even if it's not good for you.",
+   "points": 50,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/balanced_diet"
+   }
+  },
+  {
+   "id": "husbandry-bred_all_animals",
+   "title": "Two by Two",
+   "description": "Breed all the animals!",
+   "points": 50,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/bred_all_animals"
+   }
+  },
+  {
+   "id": "husbandry-breed_an_animal",
+   "title": "The Parrots and the Bats",
+   "description": "Breed two animals together.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/breed_an_animal"
+   }
+  },
+  {
+   "id": "husbandry-complete_catalogue",
+   "title": "A Complete Catalogue",
+   "description": "Tame all Cat variants!",
+   "points": 50,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/complete_catalogue"
+   }
+  },
+  {
+   "id": "husbandry-feed_snifflet",
+   "title": "Little Sniffs",
+   "description": "Feed a Snifflet.",
+   "points": 10,
+   "group": "Husbandry",
+   "hidden": true,
+   "rule": {
+    "advancement": "minecraft:husbandry/feed_snifflet"
+   }
+  },
+  {
+   "id": "husbandry-fishy_business",
+   "title": "Fishy Business",
+   "description": "Catch a fish.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/fishy_business"
+   }
+  },
+  {
+   "id": "husbandry-froglights",
+   "title": "With Our Powers Combined!",
+   "description": "Have all Froglights in your inventory.",
+   "points": 50,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/froglights"
+   }
+  },
+  {
+   "id": "husbandry-kill_axolotl_target",
+   "title": "The Healing Power of Friendship!",
+   "description": "Team up with an Axolotl and win a fight.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/kill_axolotl_target"
+   }
+  },
+  {
+   "id": "husbandry-leash_all_frog_variants",
+   "title": "When the Squad Hops into Town",
+   "description": "Get each Frog variant on a Lead.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/leash_all_frog_variants"
+   }
+  },
+  {
+   "id": "husbandry-make_a_sign_glow",
+   "title": "Glow and Behold!",
+   "description": "Make the text of any kind of sign glow.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/make_a_sign_glow"
+   }
+  },
+  {
+   "id": "husbandry-obtain_netherite_hoe",
+   "title": "Serious Dedication",
+   "description": "Use a Netherite Ingot to upgrade a Hoe, and then reevaluate your life choices.",
+   "points": 50,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/obtain_netherite_hoe"
+   }
+  },
+  {
+   "id": "husbandry-obtain_sniffer_egg",
+   "title": "Smells Interesting",
+   "description": "Obtain a Sniffer Egg.",
+   "points": 10,
+   "group": "Husbandry",
+   "hidden": true,
+   "rule": {
+    "advancement": "minecraft:husbandry/obtain_sniffer_egg"
+   }
+  },
+  {
+   "id": "husbandry-place_dried_ghast_in_water",
+   "title": "Stay Hydrated!",
+   "description": "Place a Dried Ghast block into water.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/place_dried_ghast_in_water"
+   }
+  },
+  {
+   "id": "husbandry-plant_any_sniffer_seed",
+   "title": "Planting the Past",
+   "description": "Plant any Sniffer seed.",
+   "points": 10,
+   "group": "Husbandry",
+   "hidden": true,
+   "rule": {
+    "advancement": "minecraft:husbandry/plant_any_sniffer_seed"
+   }
+  },
+  {
+   "id": "husbandry-plant_seed",
+   "title": "A Seedy Place",
+   "description": "Plant a seed and watch it grow.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/plant_seed"
+   }
+  },
+  {
+   "id": "husbandry-remove_wolf_armor",
+   "title": "Shear Brilliance",
+   "description": "Remove Wolf Armor from a Wolf using Shears.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/remove_wolf_armor"
+   }
+  },
+  {
+   "id": "husbandry-repair_wolf_armor",
+   "title": "Good as New",
+   "description": "Fully repair damaged Wolf Armor using Armadillo Scutes.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/repair_wolf_armor"
+   }
+  },
+  {
+   "id": "husbandry-ride_a_boat_with_a_goat",
+   "title": "Whatever Floats Your Goat!",
+   "description": "Get in a Boat and float with a Goat.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/ride_a_boat_with_a_goat"
+   }
+  },
+  {
+   "id": "husbandry-root",
+   "title": "Husbandry",
+   "description": "The world is full of friends and food.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/root"
+   }
+  },
+  {
+   "id": "husbandry-safely_harvest_honey",
+   "title": "Bee Our Guest",
+   "description": "Use a Campfire to collect Honey from a Beehive using a Glass Bottle without aggravating the Bees.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/safely_harvest_honey"
+   }
+  },
+  {
+   "id": "husbandry-silk_touch_nest",
+   "title": "Total Beelocation",
+   "description": "Move a Bee Nest or Beehive, with 3 Bees inside, using Silk Touch.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/silk_touch_nest"
+   }
+  },
+  {
+   "id": "husbandry-tactical_fishing",
+   "title": "Tactical Fishing",
+   "description": "Catch a Fish... without a Fishing Rod!",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/tactical_fishing"
+   }
+  },
+  {
+   "id": "husbandry-tadpole_in_a_bucket",
+   "title": "Bukkit Bukkit",
+   "description": "Catch a Tadpole in a Bucket.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/tadpole_in_a_bucket"
+   }
+  },
+  {
+   "id": "husbandry-tame_an_animal",
+   "title": "Best Friends Forever",
+   "description": "Tame an animal.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/tame_an_animal"
+   }
+  },
+  {
+   "id": "husbandry-uh_oh",
+   "title": "Uh-Oh",
+   "description": "Have a Sulfur Cube absorb a TNT block.",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/uh_oh"
+   }
+  },
+  {
+   "id": "husbandry-wax_off",
+   "title": "Wax Off",
+   "description": "Scrape Wax off of a Copper block!",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/wax_off"
+   }
+  },
+  {
+   "id": "husbandry-wax_on",
+   "title": "Wax On",
+   "description": "Apply Honeycomb to a Copper block!",
+   "points": 10,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/wax_on"
+   }
+  },
+  {
+   "id": "husbandry-whole_pack",
+   "title": "The Whole Pack",
+   "description": "Tame one of each Wolf variant.",
+   "points": 50,
+   "group": "Husbandry",
+   "rule": {
+    "advancement": "minecraft:husbandry/whole_pack"
+   }
+  }
+ ]
+}
