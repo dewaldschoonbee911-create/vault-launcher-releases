@@ -1,0 +1,42 @@
+# Sends each new release to the Microsoft Store as an update submission (Microsoft still reviews it).
+# Needs four repository secrets from Partner Center: PARTNER_CENTER_TENANT_ID, PARTNER_CENTER_SELLER_ID,
+# PARTNER_CENTER_CLIENT_ID and PARTNER_CENTER_CLIENT_SECRET. Until they're added this does nothing.
+# If a submission is still being reviewed, this one is skipped and the next release catches up.
+name: Submit to Microsoft Store
+on:
+  workflow_run:
+    workflows: ['Publish release']
+    types: [completed]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  submit:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: windows-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      HAS_KEYS: ${{ secrets.PARTNER_CENTER_CLIENT_SECRET != '' }}
+    steps:
+      - name: Skip (no Partner Center keys yet)
+        if: env.HAS_KEYS != 'true'
+        run: echo "Add the Partner Center secrets to submit automatically."
+      - uses: actions/checkout@v4
+        if: env.HAS_KEYS == 'true'
+      - name: Get the newest Store package
+        if: env.HAS_KEYS == 'true'
+        shell: pwsh
+        run: |
+          gh release download --repo $env:GITHUB_REPOSITORY -p "VaultLauncher-Store-*.msix"
+          Get-ChildItem *.msix
+      - uses: microsoft/microsoft-store-apppublisher@v1.1
+        if: env.HAS_KEYS == 'true'
+      - name: Sign in to Partner Center
+        if: env.HAS_KEYS == 'true'
+        run: msstore reconfigure --tenantId ${{ secrets.PARTNER_CENTER_TENANT_ID }} --sellerId ${{ secrets.PARTNER_CENTER_SELLER_ID }} --clientId ${{ secrets.PARTNER_CENTER_CLIENT_ID }} --clientSecret ${{ secrets.PARTNER_CENTER_CLIENT_SECRET }}
+      - name: Submit the update
+        if: env.HAS_KEYS == 'true'
+        shell: pwsh
+        run: |
+          $f = (Get-ChildItem *.msix | Select-Object -First 1).FullName
+          msstore publish "$f" --appId 9NT96QS862FF
