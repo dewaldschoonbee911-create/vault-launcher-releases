@@ -1,5 +1,5 @@
 {
- "launcherVersion": "0.1.88",
+ "launcherVersion": "0.1.89",
  "sets": [
   {
    "id": "anachronox",
@@ -12,6 +12,13 @@
    "file": "assassinscreed.json",
    "version": 2,
    "sha256": "98fe0ff247de033b109d9f5118a351571282aa9168eb02f1e99889b8e7371ffc"
+  },
+  {
+   "id": "bloodborne",
+   "file": "bloodborne.json",
+   "version": 1,
+   "sha256": "f29aacb10b92c5daab3bc320d801469fe62cb2c90302f57a6dc14813945ea960",
+   "minLauncher": "0.1.81"
   },
   {
    "id": "cnc3",
@@ -343,6 +350,6 @@
   }
  ],
  "status": {
-  "sha256": "630b52d73e799b6d5d237d370ef7782324e3efc64ba7452f28034e0ac8567ade"
+  "sha256": "15c9c89652f059d4bb0bb825b45b12c7e5f088335702e6c16fe6ce23c70f4bc9"
  }
 }

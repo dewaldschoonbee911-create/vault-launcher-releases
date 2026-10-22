@@ -1,0 +1,558 @@
+{
+ "id": "bloodborne",
+ "title": "Bloodborne",
+ "version": 1,
+ "minLauncher": "0.1.81",
+ "kind": "log",
+ "authors": [
+  "Vault Launcher"
+ ],
+ "storeIds": [],
+ "exeNames": [],
+ "md5": [],
+ "linkFiles": [
+  "Bloodborne.exe",
+  "bin/bb-probe.exe"
+ ],
+ "launchExe": "Bloodborne.exe",
+ "logFiles": [
+  "user/last_run.log"
+ ],
+ "logWatches": [
+  {
+   "id": "trophy",
+   "label": "Last trophy",
+   "regex": "\\btrophy (\\d+) unlocked\\b",
+   "names": {
+    "0": "Bloodborne",
+    "1": "Yharnam Sunrise",
+    "2": "Honoring Wishes",
+    "3": "Childhood's Beginning",
+    "4": "Yharnam, Pthumerian Queen",
+    "5": "Hunter's Essence",
+    "6": "Hunter's Craft",
+    "7": "Weapon Master",
+    "8": "Blood Gem Master",
+    "9": "Rune Master",
+    "10": "Cainhurst",
+    "11": "The Choir",
+    "12": "Source of the Dream",
+    "13": "Nightmare Lecture Hall",
+    "14": "Father Gascoigne",
+    "15": "Vicar Amelia",
+    "16": "Shadow of Yharnam",
+    "17": "Rom, the Vacuous Spider",
+    "18": "The One Reborn",
+    "19": "Micolash, Host of the Nightmare",
+    "20": "Mergo's Wet Nurse",
+    "21": "Cleric Beast",
+    "22": "Blood-starved Beast",
+    "23": "Witch of Hemwick",
+    "24": "Darkbeast Paarl",
+    "25": "Amygdala",
+    "26": "Martyr Logarius",
+    "27": "Celestial Emissary",
+    "28": "Ebrietas, Daughter of the Cosmos",
+    "29": "Blood Gem Contact",
+    "30": "Rune Contact",
+    "31": "Pthumeru Chalice",
+    "32": "Ailing Loran Chalice",
+    "33": "Isz Chalice",
+    "34": "Old Hunter Essence",
+    "35": "Orphan of Kos",
+    "36": "Ludwig the Holy Blade",
+    "37": "Lady Maria of the Astral Clocktower",
+    "38": "Living Failures",
+    "39": "Laurence, the First Vicar"
+   }
+  }
+ ],
+ "rarityFrom": "Exophase (PlayStation players)",
+ "notes": [
+  "For the Bloodborne PC port. The game still decides when you've earned a trophy; the port writes it to its log (user\\last_run.log), and Vault reads that log and never touches the game.",
+  "The port starts a fresh log every launch, so keep Vault running while you play. The Bloodborne platinum unlocks once you have every other main-game trophy."
+ ],
+ "testGuide": [
+  {
+   "title": "Kill the Cleric Beast",
+   "detail": "Defeat the Cleric Beast on the Great Bridge. \"Cleric Beast\" should pop up within a few seconds."
+  }
+ ],
+ "achievements": [
+  {
+   "id": "t00",
+   "title": "Bloodborne",
+   "description": "All trophies acquired. Hats off!",
+   "points": 100,
+   "group": "Bloodborne",
+   "rarity": 36.11,
+   "rule": {
+    "line": "\\btrophy 0 unlocked\\b",
+    "allOf": [
+     "t01",
+     "t02",
+     "t03",
+     "t04",
+     "t05",
+     "t06",
+     "t07",
+     "t08",
+     "t09",
+     "t10",
+     "t11",
+     "t12",
+     "t13",
+     "t14",
+     "t15",
+     "t16",
+     "t17",
+     "t18",
+     "t19",
+     "t20",
+     "t21",
+     "t22",
+     "t23",
+     "t24",
+     "t25",
+     "t26",
+     "t27",
+     "t28",
+     "t29",
+     "t30",
+     "t31",
+     "t32",
+     "t33"
+    ]
+   }
+  },
+  {
+   "id": "t01",
+   "title": "Yharnam Sunrise",
+   "description": "You lived through the hunt, and saw another day.",
+   "points": 50,
+   "group": "Bloodborne",
+   "rarity": 45.12,
+   "rule": {
+    "line": "\\btrophy 1 unlocked\\b"
+   }
+  },
+  {
+   "id": "t02",
+   "title": "Honoring Wishes",
+   "description": "Captivated by the moon presence, you pledge to watch over the hunter's dream.",
+   "points": 50,
+   "group": "Bloodborne",
+   "rarity": 50.1,
+   "rule": {
+    "line": "\\btrophy 2 unlocked\\b"
+   }
+  },
+  {
+   "id": "t03",
+   "title": "Childhood's Beginning",
+   "description": "You became an infant Great One, lifting humanity into its next childhood.",
+   "points": 50,
+   "group": "Bloodborne",
+   "rarity": 50.03,
+   "rule": {
+    "line": "\\btrophy 3 unlocked\\b"
+   }
+  },
+  {
+   "id": "t04",
+   "title": "Yharnam, Pthumerian Queen",
+   "description": "Defeat Yharnam, Blood Queen of the Old Labyrinth.",
+   "points": 50,
+   "group": "Bloodborne",
+   "rarity": 37.46,
+   "rule": {
+    "line": "\\btrophy 4 unlocked\\b"
+   }
+  },
+  {
+   "id": "t05",
+   "title": "Hunter's Essence",
+   "description": "Acquire all hunter weapons.",
+   "points": 50,
+   "group": "Bloodborne",
+   "rarity": 38.71,
+   "rule": {
+    "line": "\\btrophy 5 unlocked\\b"
+   }
+  },
+  {
+   "id": "t06",
+   "title": "Hunter's Craft",
+   "description": "Acquire all special hunter tools.",
+   "points": 50,
+   "group": "Bloodborne",
+   "rarity": 43.89,
+   "rule": {
+    "line": "\\btrophy 6 unlocked\\b"
+   }
+  },
+  {
+   "id": "t07",
+   "title": "Weapon Master",
+   "description": "Acquire a weapon of the highest level.",
+   "points": 25,
+   "group": "Bloodborne",
+   "rarity": 57.68,
+   "rule": {
+    "line": "\\btrophy 7 unlocked\\b"
+   }
+  },
+  {
+   "id": "t08",
+   "title": "Blood Gem Master",
+   "description": "Acquire an extremely precious blood gem.",
+   "points": 25,
+   "group": "Bloodborne",
+   "rarity": 51.39,
+   "rule": {
+    "line": "\\btrophy 8 unlocked\\b"
+   }
+  },
+  {
+   "id": "t09",
+   "title": "Rune Master",
+   "description": "Acquire an extremely precious Caryll Rune.",
+   "points": 25,
+   "group": "Bloodborne",
+   "rarity": 69.41,
+   "rule": {
+    "line": "\\btrophy 9 unlocked\\b"
+   }
+  },
+  {
+   "id": "t10",
+   "title": "Cainhurst",
+   "description": "Gain entry to Cainhurst, the lost and ruined castle.",
+   "points": 25,
+   "group": "Bloodborne",
+   "rarity": 62.6,
+   "rule": {
+    "line": "\\btrophy 10 unlocked\\b"
+   }
+  },
+  {
+   "id": "t11",
+   "title": "The Choir",
+   "description": "Gain entry to the realm of the Choir, the high stratum of the Healing Church.",
+   "points": 25,
+   "group": "Bloodborne",
+   "rarity": 59.1,
+   "rule": {
+    "line": "\\btrophy 11 unlocked\\b"
+   }
+  },
+  {
+   "id": "t12",
+   "title": "Source of the Dream",
+   "description": "Discover the abandoned old workshop, the source of the hunter's dream.",
+   "points": 25,
+   "group": "Bloodborne",
+   "rarity": 66.67,
+   "rule": {
+    "line": "\\btrophy 12 unlocked\\b"
+   }
+  },
+  {
+   "id": "t13",
+   "title": "Nightmare Lecture Hall",
+   "description": "Gain entry to the Byrgenwerth lecture hall that drifts through the nightmare.",
+   "points": 25,
+   "group": "Bloodborne",
+   "rarity": 70.9,
+   "rule": {
+    "line": "\\btrophy 13 unlocked\\b"
+   }
+  },
+  {
+   "id": "t14",
+   "title": "Father Gascoigne",
+   "description": "Defeat Father Gascoigne, the beast that he became.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 92.38,
+   "rule": {
+    "line": "\\btrophy 14 unlocked\\b"
+   }
+  },
+  {
+   "id": "t15",
+   "title": "Vicar Amelia",
+   "description": "Defeat Vicar Amelia, the beast that she became.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 78.5,
+   "rule": {
+    "line": "\\btrophy 15 unlocked\\b"
+   }
+  },
+  {
+   "id": "t16",
+   "title": "Shadow of Yharnam",
+   "description": "Defeat the Shadow of Yharnam.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 73.52,
+   "rule": {
+    "line": "\\btrophy 16 unlocked\\b"
+   }
+  },
+  {
+   "id": "t17",
+   "title": "Rom, the Vacuous Spider",
+   "description": "Defeat the Great One Rom, the Vacuous Spider.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 71.75,
+   "rule": {
+    "line": "\\btrophy 17 unlocked\\b"
+   }
+  },
+  {
+   "id": "t18",
+   "title": "The One Reborn",
+   "description": "Defeat The One Reborn.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 68.37,
+   "rule": {
+    "line": "\\btrophy 18 unlocked\\b"
+   }
+  },
+  {
+   "id": "t19",
+   "title": "Micolash, Host of the Nightmare",
+   "description": "Defeat Micolash, Host of the Nightmare.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 65.55,
+   "rule": {
+    "line": "\\btrophy 19 unlocked\\b"
+   }
+  },
+  {
+   "id": "t20",
+   "title": "Mergo's Wet Nurse",
+   "description": "Defeat the Great One Mergo's Wet Nurse.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 64.49,
+   "rule": {
+    "line": "\\btrophy 20 unlocked\\b"
+   }
+  },
+  {
+   "id": "t21",
+   "title": "Cleric Beast",
+   "description": "Defeat the Cleric Beast.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 96.58,
+   "rule": {
+    "line": "\\btrophy 21 unlocked\\b"
+   }
+  },
+  {
+   "id": "t22",
+   "title": "Blood-starved Beast",
+   "description": "Defeat the Blood-starved Beast.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 82.42,
+   "rule": {
+    "line": "\\btrophy 22 unlocked\\b"
+   }
+  },
+  {
+   "id": "t23",
+   "title": "Witch of Hemwick",
+   "description": "Defeat the Witch of Hemwick.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 75.8,
+   "rule": {
+    "line": "\\btrophy 23 unlocked\\b"
+   }
+  },
+  {
+   "id": "t24",
+   "title": "Darkbeast Paarl",
+   "description": "Defeat Darkbeast Paarl.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 69.19,
+   "rule": {
+    "line": "\\btrophy 24 unlocked\\b"
+   }
+  },
+  {
+   "id": "t25",
+   "title": "Amygdala",
+   "description": "Defeat the Great One Amygdala.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 61.82,
+   "rule": {
+    "line": "\\btrophy 25 unlocked\\b"
+   }
+  },
+  {
+   "id": "t26",
+   "title": "Martyr Logarius",
+   "description": "Defeat Martyr Logarius.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 59.53,
+   "rule": {
+    "line": "\\btrophy 26 unlocked\\b"
+   }
+  },
+  {
+   "id": "t27",
+   "title": "Celestial Emissary",
+   "description": "Defeat the Great One Celestial Emissary.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 57.48,
+   "rule": {
+    "line": "\\btrophy 27 unlocked\\b"
+   }
+  },
+  {
+   "id": "t28",
+   "title": "Ebrietas, Daughter of the Cosmos",
+   "description": "Defeat the Great One Ebrietas, Daughter of the Cosmos.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 55.5,
+   "rule": {
+    "line": "\\btrophy 28 unlocked\\b"
+   }
+  },
+  {
+   "id": "t29",
+   "title": "Blood Gem Contact",
+   "description": "Acquire a blood gem that grants hunter weapons special strength.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 95.14,
+   "rule": {
+    "line": "\\btrophy 29 unlocked\\b"
+   }
+  },
+  {
+   "id": "t30",
+   "title": "Rune Contact",
+   "description": "Acquire a Caryll Rune that grants hunters special strength.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 82.64,
+   "rule": {
+    "line": "\\btrophy 30 unlocked\\b"
+   }
+  },
+  {
+   "id": "t31",
+   "title": "Pthumeru Chalice",
+   "description": "Acquire the Pthumeru Chalice that seals the labyrinth beneath Yharnam.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 82.4,
+   "rule": {
+    "line": "\\btrophy 31 unlocked\\b"
+   }
+  },
+  {
+   "id": "t32",
+   "title": "Ailing Loran Chalice",
+   "description": "Acquire the Ailing Loran Chalice that seals the land lost to the sands.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 61.82,
+   "rule": {
+    "line": "\\btrophy 32 unlocked\\b"
+   }
+  },
+  {
+   "id": "t33",
+   "title": "Isz Chalice",
+   "description": "Acquire the Great Isz Chalice that seals the home of the cosmic kin.",
+   "points": 10,
+   "group": "Bloodborne",
+   "rarity": 55.49,
+   "rule": {
+    "line": "\\btrophy 33 unlocked\\b"
+   }
+  },
+  {
+   "id": "t34",
+   "title": "Old Hunter Essence",
+   "description": "Acquire all old hunter weapons.",
+   "points": 50,
+   "group": "The Old Hunters",
+   "rarity": 24.68,
+   "rule": {
+    "line": "\\btrophy 34 unlocked\\b"
+   }
+  },
+  {
+   "id": "t35",
+   "title": "Orphan of Kos",
+   "description": "Defeat the Great One Orphan of Kos.",
+   "points": 25,
+   "group": "The Old Hunters",
+   "rarity": 32.63,
+   "rule": {
+    "line": "\\btrophy 35 unlocked\\b"
+   }
+  },
+  {
+   "id": "t36",
+   "title": "Ludwig the Holy Blade",
+   "description": "Defeat Ludwig, the Holy Blade, the beast that he became.",
+   "points": 10,
+   "group": "The Old Hunters",
+   "rarity": 37.29,
+   "rule": {
+    "line": "\\btrophy 36 unlocked\\b"
+   }
+  },
+  {
+   "id": "t37",
+   "title": "Lady Maria of the Astral Clocktower",
+   "description": "Defeat Lady Maria of the Astral Clocktower.",
+   "points": 10,
+   "group": "The Old Hunters",
+   "rarity": 35.49,
+   "rule": {
+    "line": "\\btrophy 37 unlocked\\b"
+   }
+  },
+  {
+   "id": "t38",
+   "title": "Living Failures",
+   "description": "Defeat the Living Failures, the failed attempts at ascension.",
+   "points": 10,
+   "group": "The Old Hunters",
+   "rarity": 35.83,
+   "rule": {
+    "line": "\\btrophy 38 unlocked\\b"
+   }
+  },
+  {
+   "id": "t39",
+   "title": "Laurence, the First Vicar",
+   "description": "Defeat Laurence, the First Vicar, the beast that he became.",
+   "points": 10,
+   "group": "The Old Hunters",
+   "rarity": 30.79,
+   "rule": {
+    "line": "\\btrophy 39 unlocked\\b"
+   }
+  }
+ ]
+}

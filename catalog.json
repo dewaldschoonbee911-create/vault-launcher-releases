@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-22T11:03:28.943Z",
- "launcherVersion": "0.1.88",
+ "generatedAt": "2026-10-22T11:08:41.181Z",
+ "launcherVersion": "0.1.89",
  "sets": [
   {
    "id": "anachronox",
@@ -730,6 +730,302 @@
      "description": "Have 3 different save slots.",
      "points": 10,
      "group": "Saving"
+    }
+   ],
+   "earlyAccessUntil": null
+  },
+  {
+   "id": "bloodborne",
+   "title": "Bloodborne",
+   "how": "files",
+   "status": "untested",
+   "statusNote": "Same recomp runtime and log line as DRIVECLUB; waiting for the first trophy in a real game.",
+   "notes": [
+    "For the Bloodborne PC port. The game still decides when you've earned a trophy; the port writes it to its log (user\\last_run.log), and Vault reads that log and never touches the game.",
+    "The port starts a fresh log every launch, so keep Vault running while you play. The Bloodborne platinum unlocks once you have every other main-game trophy."
+   ],
+   "achievementCount": 40,
+   "points": 890,
+   "achievements": [
+    {
+     "id": "t00",
+     "title": "Bloodborne",
+     "description": "All trophies acquired. Hats off!",
+     "points": 100,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t01",
+     "title": "Yharnam Sunrise",
+     "description": "You lived through the hunt, and saw another day.",
+     "points": 50,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t02",
+     "title": "Honoring Wishes",
+     "description": "Captivated by the moon presence, you pledge to watch over the hunter's dream.",
+     "points": 50,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t03",
+     "title": "Childhood's Beginning",
+     "description": "You became an infant Great One, lifting humanity into its next childhood.",
+     "points": 50,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t04",
+     "title": "Yharnam, Pthumerian Queen",
+     "description": "Defeat Yharnam, Blood Queen of the Old Labyrinth.",
+     "points": 50,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t05",
+     "title": "Hunter's Essence",
+     "description": "Acquire all hunter weapons.",
+     "points": 50,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t06",
+     "title": "Hunter's Craft",
+     "description": "Acquire all special hunter tools.",
+     "points": 50,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t07",
+     "title": "Weapon Master",
+     "description": "Acquire a weapon of the highest level.",
+     "points": 25,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t08",
+     "title": "Blood Gem Master",
+     "description": "Acquire an extremely precious blood gem.",
+     "points": 25,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t09",
+     "title": "Rune Master",
+     "description": "Acquire an extremely precious Caryll Rune.",
+     "points": 25,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t10",
+     "title": "Cainhurst",
+     "description": "Gain entry to Cainhurst, the lost and ruined castle.",
+     "points": 25,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t11",
+     "title": "The Choir",
+     "description": "Gain entry to the realm of the Choir, the high stratum of the Healing Church.",
+     "points": 25,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t12",
+     "title": "Source of the Dream",
+     "description": "Discover the abandoned old workshop, the source of the hunter's dream.",
+     "points": 25,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t13",
+     "title": "Nightmare Lecture Hall",
+     "description": "Gain entry to the Byrgenwerth lecture hall that drifts through the nightmare.",
+     "points": 25,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t14",
+     "title": "Father Gascoigne",
+     "description": "Defeat Father Gascoigne, the beast that he became.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t15",
+     "title": "Vicar Amelia",
+     "description": "Defeat Vicar Amelia, the beast that she became.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t16",
+     "title": "Shadow of Yharnam",
+     "description": "Defeat the Shadow of Yharnam.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t17",
+     "title": "Rom, the Vacuous Spider",
+     "description": "Defeat the Great One Rom, the Vacuous Spider.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t18",
+     "title": "The One Reborn",
+     "description": "Defeat The One Reborn.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t19",
+     "title": "Micolash, Host of the Nightmare",
+     "description": "Defeat Micolash, Host of the Nightmare.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t20",
+     "title": "Mergo's Wet Nurse",
+     "description": "Defeat the Great One Mergo's Wet Nurse.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t21",
+     "title": "Cleric Beast",
+     "description": "Defeat the Cleric Beast.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t22",
+     "title": "Blood-starved Beast",
+     "description": "Defeat the Blood-starved Beast.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t23",
+     "title": "Witch of Hemwick",
+     "description": "Defeat the Witch of Hemwick.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t24",
+     "title": "Darkbeast Paarl",
+     "description": "Defeat Darkbeast Paarl.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t25",
+     "title": "Amygdala",
+     "description": "Defeat the Great One Amygdala.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t26",
+     "title": "Martyr Logarius",
+     "description": "Defeat Martyr Logarius.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t27",
+     "title": "Celestial Emissary",
+     "description": "Defeat the Great One Celestial Emissary.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t28",
+     "title": "Ebrietas, Daughter of the Cosmos",
+     "description": "Defeat the Great One Ebrietas, Daughter of the Cosmos.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t29",
+     "title": "Blood Gem Contact",
+     "description": "Acquire a blood gem that grants hunter weapons special strength.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t30",
+     "title": "Rune Contact",
+     "description": "Acquire a Caryll Rune that grants hunters special strength.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t31",
+     "title": "Pthumeru Chalice",
+     "description": "Acquire the Pthumeru Chalice that seals the labyrinth beneath Yharnam.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t32",
+     "title": "Ailing Loran Chalice",
+     "description": "Acquire the Ailing Loran Chalice that seals the land lost to the sands.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t33",
+     "title": "Isz Chalice",
+     "description": "Acquire the Great Isz Chalice that seals the home of the cosmic kin.",
+     "points": 10,
+     "group": "Bloodborne"
+    },
+    {
+     "id": "t34",
+     "title": "Old Hunter Essence",
+     "description": "Acquire all old hunter weapons.",
+     "points": 50,
+     "group": "The Old Hunters"
+    },
+    {
+     "id": "t35",
+     "title": "Orphan of Kos",
+     "description": "Defeat the Great One Orphan of Kos.",
+     "points": 25,
+     "group": "The Old Hunters"
+    },
+    {
+     "id": "t36",
+     "title": "Ludwig the Holy Blade",
+     "description": "Defeat Ludwig, the Holy Blade, the beast that he became.",
+     "points": 10,
+     "group": "The Old Hunters"
+    },
+    {
+     "id": "t37",
+     "title": "Lady Maria of the Astral Clocktower",
+     "description": "Defeat Lady Maria of the Astral Clocktower.",
+     "points": 10,
+     "group": "The Old Hunters"
+    },
+    {
+     "id": "t38",
+     "title": "Living Failures",
+     "description": "Defeat the Living Failures, the failed attempts at ascension.",
+     "points": 10,
+     "group": "The Old Hunters"
+    },
+    {
+     "id": "t39",
+     "title": "Laurence, the First Vicar",
+     "description": "Defeat Laurence, the First Vicar, the beast that he became.",
+     "points": 10,
+     "group": "The Old Hunters"
     }
    ],
    "earlyAccessUntil": null

@@ -147,5 +147,9 @@
  "uncharted": {
   "status": "partly",
   "note": "Uncharted 2 First Treasure confirmed from a real log; Uncharted 1 and 3 untested."
+ },
+ "bloodborne": {
+  "status": "untested",
+  "note": "Same recomp runtime and log line as DRIVECLUB; waiting for the first trophy in a real game."
  }
 }
