@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-23T06:16:17.755Z",
- "launcherVersion": "0.1.94",
+ "generatedAt": "2026-10-23T06:23:54.734Z",
+ "launcherVersion": "0.1.95",
  "sets": [
   {
    "id": "anachronox",
@@ -16984,13 +16984,13 @@
    "title": "Forza Horizon 2",
    "how": "files",
    "status": "untested",
-   "statusNote": "12 of 50 achievements read from the save; built from a fresh save, waiting for progress.",
+   "statusNote": "13 of 88 achievements read from the save; built from a fresh save, waiting for progress.",
    "notes": [
     "For Forza Horizon 2 (Xbox One) played through Azimuth. Xbox One games don't award achievements themselves, so Vault reads your save (Azimuth's data\\titles\\1A96545B\\saves) and never touches the game.",
-    "12 of the 50 achievements are read from the save so far: championships, cars, the bucket list, photos and becoming Horizon Champion. The rest (wristbands, towns, reward boards, barn finds and more) are added as their place in the save is found. Online and Club achievements need Xbox Live and can't be earned here."
+    "13 of the 88 achievements (base game, Storm Island and the Porsche Expansion) are read from the save so far: championships, cars, the bucket list, photos and the two finales. The rest are added as their place in the save is found. Online and Club achievements need Xbox Live and can't be earned here."
    ],
-   "achievementCount": 50,
-   "points": 1000,
+   "achievementCount": 88,
+   "points": 2000,
    "achievements": [
     {
      "id": "all-your-race-are-belong-to-us-2-0",
@@ -17001,7 +17001,7 @@
     },
     {
      "id": "a-wild-drivatar-appears",
-     "title": "A Wild Drivatar Appears",
+     "title": "A Wild Drivatar Appears!",
      "description": "Win 3 Head to Head Races against Drivatars with a Bounty on them.",
      "points": 10,
      "group": "Forza Horizon 2"
@@ -17093,7 +17093,7 @@
     {
      "id": "kick-the-bucket",
      "title": "Kick the Bucket",
-     "description": "Scratch 15 items off your Solo Bucket List.",
+     "description": "Scratch 15 items off the first two Horizon Bucket Lists.",
      "points": 10,
      "group": "Forza Horizon 2"
     },
@@ -17135,7 +17135,7 @@
     {
      "id": "one-down",
      "title": "One Down!",
-     "description": "Complete a Solo Bucket List challenge.",
+     "description": "Complete a Solo Bucket List challenge from the first two Horizon Bucket Lists.",
      "points": 10,
      "group": "Forza Horizon 2"
     },
@@ -17170,7 +17170,7 @@
     {
      "id": "rest-in-peace",
      "title": "Rest in Peace",
-     "description": "Complete every Solo Bucket List challenge.",
+     "description": "Complete 30 Solo Bucket List challenges from the first two Horizon Bucket Lists.",
      "points": 20,
      "group": "Forza Horizon 2"
     },
@@ -17309,7 +17309,7 @@
     },
     {
      "id": "well-traveled",
-     "title": "Well Traveled",
+     "title": "Well Travelled",
      "description": "Complete 25 Online Road Trip locations.",
      "points": 30,
      "group": "Forza Horizon 2"
@@ -17331,7 +17331,7 @@
     {
      "id": "yes-we-can",
      "title": "Yes We Can",
-     "description": "Complete 25 Bucket List items co-operatively.",
+     "description": "Complete 25 Bucket List items co-operatively from the first two Horizon Bucket Lists.",
      "points": 30,
      "group": "Forza Horizon 2"
     },
@@ -17341,6 +17341,272 @@
      "description": "Complete 100 Playground Games events.",
      "points": 40,
      "group": "Forza Horizon 2"
+    },
+    {
+     "id": "si-welcome-to-storm-island",
+     "title": "Welcome to Storm Island",
+     "description": "Arrive on Storm Island.",
+     "points": 20,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-into-the-jungle",
+     "title": "Into the Jungle",
+     "description": "Win your first Storm Island Championship.",
+     "points": 20,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-high-five",
+     "title": "High Five",
+     "description": "Win 5 Storm Island Championships.",
+     "points": 20,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-storm-island-champion",
+     "title": "Storm Island Champion",
+     "description": "Win the Storm Island Finale.",
+     "points": 50,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-galant-great",
+     "title": "Galant Great",
+     "description": "Win an Event in the Mitsubishi Galant.",
+     "points": 10,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-stadium-star",
+     "title": "Stadium Star",
+     "description": "Win an Event in the Robby Gordon #7 SST.",
+     "points": 10,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-ranger-rock-star",
+     "title": "Ranger Rock Star",
+     "description": "Win an event in the Ford Ranger.",
+     "points": 10,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-fiesta-fun",
+     "title": "Fiesta Fun",
+     "description": "Win an event in the '81 Ford Fiesta.",
+     "points": 10,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-metro-master",
+     "title": "Metro Master",
+     "description": "Win an event in the MG Metro R4.",
+     "points": 10,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-tropical-treasure",
+     "title": "Tropical Treasure",
+     "description": "Find and restore a Barn Find on Storm Island.",
+     "points": 25,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-tick",
+     "title": "Tick!",
+     "description": "Complete your first Storm Island Bucket List Challenge.",
+     "points": 10,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-see-you-in-another-life",
+     "title": "See You in Another Life!",
+     "description": "Complete every Storm Island Bucket List Challenge.",
+     "points": 25,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-castaways",
+     "title": "Castaways",
+     "description": "Complete every Co-op Storm Island Bucket List Challenge.",
+     "points": 30,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-gotta-smash-em-all",
+     "title": "Gotta Smash Em All!",
+     "description": "Collect every Storm Island Bonus Board.",
+     "points": 25,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-island-explorer",
+     "title": "Island Explorer",
+     "description": "Drive every Road on Storm Island.",
+     "points": 25,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-skills-for-thrills",
+     "title": "Skills for Thrills",
+     "description": "Bank a Skill Chain of 100,000 points on Storm Island.",
+     "points": 20,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-ready-to-bounce",
+     "title": "Ready to Bounce",
+     "description": "Start a race with Off-Road tires, suspension, and transmission on Storm Island.",
+     "points": 10,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-storm-breaker",
+     "title": "Storm Breaker",
+     "description": "Win 5 events in stormy conditions.",
+     "points": 20,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-horizon-5-0",
+     "title": "Horizon 5-0",
+     "description": "Complete 50 Online Events on Storm Island.",
+     "points": 30,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-we-have-to-go-back",
+     "title": "We Have to Go Back!",
+     "description": "Complete every Storm Island Championship.",
+     "points": 50,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-survive-the-gauntlet",
+     "title": "Survive the Gauntlet",
+     "description": "Complete your first Gauntlet Event.",
+     "points": 20,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-meet-and-beat",
+     "title": "Meet and Beat",
+     "description": "Visit the Storm Island Car Meet and win 3 Showdowns.",
+     "points": 20,
+     "group": "Storm Island"
+    },
+    {
+     "id": "si-gauntlet-runner",
+     "title": "Gauntlet Runner",
+     "description": "Win every Gauntlet Event.",
+     "points": 30,
+     "group": "Storm Island"
+    },
+    {
+     "id": "po-porsche-owners-club",
+     "title": "Porsche Owners Club",
+     "description": "Obtain your first Porsche.",
+     "points": 25,
+     "group": "Porsche Expansion"
+    },
+    {
+     "id": "po-porsche-rookie",
+     "title": "Porsche Rookie",
+     "description": "Tick off 5 items on the Porsche Bucket List.",
+     "points": 25,
+     "group": "Porsche Expansion"
+    },
+    {
+     "id": "po-porsche-pro",
+     "title": "Porsche Pro",
+     "description": "Complete the Porsche Bucket List.",
+     "points": 50,
+     "group": "Porsche Expansion"
+    },
+    {
+     "id": "po-this-is-my-porsche",
+     "title": "This Is My Porsche",
+     "description": "Complete 10 events in the same Porsche.",
+     "points": 50,
+     "group": "Porsche Expansion"
+    },
+    {
+     "id": "po-horse-power",
+     "title": "Horse Power",
+     "description": "Complete 40 events in Porsches.",
+     "points": 100,
+     "group": "Porsche Expansion"
+    },
+    {
+     "id": "po-cup-car",
+     "title": "Cup Car",
+     "description": "Earn 25,000 Credits in Rivals Mode with the Porsche 911 GT3 RS 4.0.",
+     "points": 20,
+     "group": "Porsche Expansion"
+    },
+    {
+     "id": "po-call-911",
+     "title": "Call 911",
+     "description": "Pull off 30 Near Miss Skills in the Porsche 911 Turbo S.",
+     "points": 20,
+     "group": "Porsche Expansion"
+    },
+    {
+     "id": "po-widow-maker",
+     "title": "Widow Maker",
+     "description": "Win a race in the wet in a 1982 Porsche 911 Turbo 3.3.",
+     "points": 20,
+     "group": "Porsche Expansion"
+    },
+    {
+     "id": "po-animal",
+     "title": "Animal!",
+     "description": "Pull off 20 Drifts in the 2015 Porsche Cayman GTS.",
+     "points": 20,
+     "group": "Porsche Expansion"
+    },
+    {
+     "id": "po-no-airbag-required",
+     "title": "No Airbag Required",
+     "description": "Earn 20 Clean Racer Skills in the 1989 Porsche 944 Turbo.",
+     "points": 20,
+     "group": "Porsche Expansion"
+    },
+    {
+     "id": "po-show-and-display",
+     "title": "Show and Display",
+     "description": "Complete 4 events in the 1987 Porsche 959.",
+     "points": 30,
+     "group": "Porsche Expansion"
+    },
+    {
+     "id": "po-air-cooled-competitor",
+     "title": "Air Cooled Competitor",
+     "description": "Complete 4 events in the 1970 Porsche 914/6.",
+     "points": 30,
+     "group": "Porsche Expansion"
+    },
+    {
+     "id": "po-ring-wraith",
+     "title": "Ring Wraith",
+     "description": "Complete 4 events in the 2014 Porsche 918 Spyder.",
+     "points": 30,
+     "group": "Porsche Expansion"
+    },
+    {
+     "id": "po-cajun-kickin",
+     "title": "Cajun Kickin'",
+     "description": "Complete 4 events in the 2015 Porsche Macan Turbo.",
+     "points": 30,
+     "group": "Porsche Expansion"
+    },
+    {
+     "id": "po-listen-to-it-roar",
+     "title": "Listen to it Roar!",
+     "description": "Complete 4 events in the 2003 Porsche Carrera GT.",
+     "points": 30,
+     "group": "Porsche Expansion"
     }
    ],
    "earlyAccessUntil": null

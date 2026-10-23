@@ -1,7 +1,7 @@
 {
  "id": "fh2",
  "title": "Forza Horizon 2",
- "version": 1,
+ "version": 2,
  "minLauncher": "0.1.94",
  "kind": "replay",
  "authors": [
@@ -17,7 +17,7 @@
  "launchExe": "azimuth.exe",
  "notes": [
   "For Forza Horizon 2 (Xbox One) played through Azimuth. Xbox One games don't award achievements themselves, so Vault reads your save (Azimuth's data\\titles\\1A96545B\\saves) and never touches the game.",
-  "12 of the 50 achievements are read from the save so far: championships, cars, the bucket list, photos and becoming Horizon Champion. The rest (wristbands, towns, reward boards, barn finds and more) are added as their place in the save is found. Online and Club achievements need Xbox Live and can't be earned here."
+  "13 of the 88 achievements (base game, Storm Island and the Porsche Expansion) are read from the save so far: championships, cars, the bucket list, photos and the two finales. The rest are added as their place in the save is found. Online and Club achievements need Xbox Live and can't be earned here."
  ],
  "testGuide": [
   {
@@ -35,21 +35,24 @@
    "rule": {
     "stat": "championshipsCompleted",
     "atLeast": 168
-   }
+   },
+   "rarity": 2.4
   },
   {
    "id": "a-wild-drivatar-appears",
-   "title": "A Wild Drivatar Appears",
+   "title": "A Wild Drivatar Appears!",
    "description": "Win 3 Head to Head Races against Drivatars with a Bounty on them.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 28.23
   },
   {
    "id": "bragging-rights",
    "title": "Bragging Rights",
    "description": "Beat Friends or Club Members on any 20 Speed Cameras.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 35.33
   },
   {
    "id": "car-lover",
@@ -60,42 +63,48 @@
    "rule": {
     "stat": "garage",
     "atLeast": 50
-   }
+   },
+   "rarity": 30.78
   },
   {
    "id": "fast-and-clean",
    "title": "Fast and Clean",
    "description": "Earn the Clean Racing skill 100 times.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 63.05
   },
   {
    "id": "first-of-many",
    "title": "First of Many",
    "description": "Win your first Championship race.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 87.98
   },
   {
    "id": "friends-with-benefits",
    "title": "Friends with Benefits",
    "description": "Earn a total of 1,000,000 CR from Rivals.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 3.23
   },
   {
    "id": "green-wristband",
    "title": "Green Wristband",
    "description": "Obtain the Green Wristband.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 64.24
   },
   {
    "id": "gold-wristband",
    "title": "Gold Wristband",
    "description": "Obtain the Gold Wristband.",
    "points": 30,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 13.13
   },
   {
    "id": "horizon-champion",
@@ -105,7 +114,8 @@
    "group": "Forza Horizon 2",
    "rule": {
     "prop": "CareerState.WonFirstFinal"
-   }
+   },
+   "rarity": 34.72
   },
   {
    "id": "horizon-enthusiast",
@@ -116,7 +126,8 @@
    "rule": {
     "stat": "championshipsCompleted",
     "atLeast": 100
-   }
+   },
+   "rarity": 3.15
   },
   {
    "id": "horizon-fan",
@@ -127,53 +138,60 @@
    "rule": {
     "stat": "championshipsCompleted",
     "atLeast": 25
-   }
+   },
+   "rarity": 17.81
   },
   {
    "id": "horizon-leader",
    "title": "Horizon Leader",
    "description": "Choose where the Road Trip goes for the first time.",
    "points": 20,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 32.07
   },
   {
    "id": "human-gps",
    "title": "Human GPS",
    "description": "Drive down every road in the game.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 16.73
   },
   {
    "id": "kick-the-bucket",
    "title": "Kick the Bucket",
-   "description": "Scratch 15 items off your Solo Bucket List.",
+   "description": "Scratch 15 items off the first two Horizon Bucket Lists.",
    "points": 10,
    "group": "Forza Horizon 2",
    "rule": {
     "stat": "bucketSolo",
     "atLeast": 15
-   }
+   },
+   "rarity": 18.1
   },
   {
    "id": "license-to-skill",
    "title": "License to Skill",
    "description": "Earn 5 Skill Points.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 70.13
   },
   {
    "id": "loyal",
    "title": "Loyal",
    "description": "Earn 500,000 XP for your Club.",
    "points": 25,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 35.36
   },
   {
    "id": "multi-disciplined",
    "title": "Multi-Disciplined",
    "description": "Win an event in every type of car.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 6.33
   },
   {
    "id": "number-one",
@@ -184,25 +202,28 @@
    "rule": {
     "stat": "championshipsWon",
     "atLeast": 1
-   }
+   },
+   "rarity": 82.58
   },
   {
    "id": "on-the-road-again",
    "title": "On the Road Again",
    "description": "Complete an Online Road Trip location.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 25.98
   },
   {
    "id": "one-down",
    "title": "One Down!",
-   "description": "Complete a Solo Bucket List challenge.",
+   "description": "Complete a Solo Bucket List challenge from the first two Horizon Bucket Lists.",
    "points": 10,
    "group": "Forza Horizon 2",
    "rule": {
     "stat": "bucketSolo",
     "atLeast": 1
-   }
+   },
+   "rarity": 78.58
   },
   {
    "id": "photographer",
@@ -213,179 +234,200 @@
    "rule": {
     "stat": "photos",
     "atLeast": 100
-   }
+   },
+   "rarity": 24.55
   },
   {
    "id": "pink-wristband",
    "title": "Pink Wristband",
    "description": "Obtain the Pink Wristband.",
    "points": 20,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 41.79
   },
   {
    "id": "purple-wristband",
    "title": "Purple Wristband",
    "description": "Obtain the Purple Wristband.",
    "points": 30,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 28.29
   },
   {
    "id": "rain-master",
    "title": "Rain Master",
    "description": "Complete your first race in the rain.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 70.9
   },
   {
    "id": "rest-in-peace",
    "title": "Rest in Peace",
-   "description": "Complete every Solo Bucket List challenge.",
+   "description": "Complete 30 Solo Bucket List challenges from the first two Horizon Bucket Lists.",
    "points": 20,
    "group": "Forza Horizon 2",
-   "rule": {
-    "stat": "bucketSolo",
-    "atLeast": "bucketTotal"
-   }
+   "rarity": 8.66
   },
   {
    "id": "smash-happy",
    "title": "Smash Happy",
    "description": "Collect all Reward Boards.",
    "points": 20,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 11.08
   },
   {
    "id": "social-butterfly",
    "title": "Social Butterfly",
    "description": "Compete in 200 multiplayer events.",
    "points": 50,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 5.14
   },
   {
    "id": "social-caterpillar",
    "title": "Social Caterpillar",
    "description": "Compete in 20 multiplayer events.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 23.2
   },
   {
    "id": "stone-cold-skiller",
    "title": "Stone Cold Skiller",
    "description": "Earn 65 Skill Points.",
    "points": 20,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 24.46
   },
   {
    "id": "storage-hunter",
    "title": "Storage Hunter",
    "description": "Restore 10 Barn Finds.",
    "points": 20,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 22.21
   },
   {
    "id": "summer-sale",
    "title": "Summer Sale",
    "description": "Smash 25 Reward Boards.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 48.36
   },
   {
    "id": "super-meet-boy",
    "title": "Super Meet Boy",
    "description": "Grab a livery, grab a tuning setup, buy a car and enter a Showdown at any Car Meet.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 5.57
   },
   {
    "id": "team-player",
    "title": "Team Player",
    "description": "Win 50 Team Events.",
    "points": 30,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 3.02
   },
   {
    "id": "that-new-car-smell",
    "title": "That New Car Smell",
    "description": "Buy your first car.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 76.46
   },
   {
    "id": "the-train-s-in-vain",
    "title": "The Train's in Vain",
    "description": "Beat the Train in a Horizon Showcase event.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 60.49
   },
   {
    "id": "wanderlust",
    "title": "Wanderlust",
    "description": "Complete a Road Trip.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 94.14
   },
   {
    "id": "we-meet-again",
    "title": "We Meet Again!",
    "description": "Win a Showdown at every Car Meet.",
    "points": 20,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 3.14
   },
   {
    "id": "welcome-to-castelletto",
    "title": "Welcome to Castelletto",
    "description": "Arrive at Castelletto for the first time.",
    "points": 25,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 93.92
   },
   {
    "id": "welcome-to-horizon-europe",
    "title": "Welcome to Horizon Europe",
    "description": "Arrive at the Horizon Festival.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 99.76
   },
   {
    "id": "welcome-to-montellino",
    "title": "Welcome to Montellino",
    "description": "Arrive at Montellino for the first time.",
    "points": 25,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 59.72
   },
   {
    "id": "welcome-to-nice",
    "title": "Welcome to Nice",
    "description": "Arrive at Nice for the first time.",
    "points": 25,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 82.26
   },
   {
    "id": "welcome-to-saint-martin",
    "title": "Welcome to Saint-Martin",
    "description": "Arrive at Saint-Martin for the first time.",
    "points": 25,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 55.21
   },
   {
    "id": "welcome-to-san-giovanni",
    "title": "Welcome to San Giovanni",
    "description": "Arrive at San Giovanni for the first time.",
    "points": 25,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 52.14
   },
   {
    "id": "welcome-to-sisteron",
    "title": "Welcome to Sisteron",
    "description": "Arrive at Sisteron for the first time.",
    "points": 25,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 66.62
   },
   {
    "id": "well-traveled",
-   "title": "Well Traveled",
+   "title": "Well Travelled",
    "description": "Complete 25 Online Road Trip locations.",
    "points": 30,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 3.89
   },
   {
    "id": "worthy-of-a-sultan",
@@ -396,32 +438,348 @@
    "rule": {
     "stat": "garage",
     "atLeast": 175
-   }
+   },
+   "rarity": 8.44
   },
   {
    "id": "yellow-wristband",
    "title": "Yellow Wristband",
    "description": "Obtain the Yellow Wristband.",
    "points": 10,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 95.23
   },
   {
    "id": "yes-we-can",
    "title": "Yes We Can",
-   "description": "Complete 25 Bucket List items co-operatively.",
+   "description": "Complete 25 Bucket List items co-operatively from the first two Horizon Bucket Lists.",
    "points": 30,
    "group": "Forza Horizon 2",
-   "rule": {
-    "stat": "bucketCoop",
-    "atLeast": 25
-   }
+   "rarity": 2.82
   },
   {
    "id": "you-are-playground-games",
    "title": "You Are Playground Games",
    "description": "Complete 100 Playground Games events.",
    "points": 40,
-   "group": "Forza Horizon 2"
+   "group": "Forza Horizon 2",
+   "rarity": 2.48
+  },
+  {
+   "id": "si-welcome-to-storm-island",
+   "title": "Welcome to Storm Island",
+   "description": "Arrive on Storm Island.",
+   "points": 20,
+   "group": "Storm Island",
+   "rarity": 18.12
+  },
+  {
+   "id": "si-into-the-jungle",
+   "title": "Into the Jungle",
+   "description": "Win your first Storm Island Championship.",
+   "points": 20,
+   "group": "Storm Island",
+   "rarity": 16.74,
+   "rule": {
+    "stat": "islandChampionshipsWon",
+    "atLeast": 1
+   }
+  },
+  {
+   "id": "si-high-five",
+   "title": "High Five",
+   "description": "Win 5 Storm Island Championships.",
+   "points": 20,
+   "group": "Storm Island",
+   "rarity": 12.06,
+   "rule": {
+    "stat": "islandChampionshipsWon",
+    "atLeast": 5
+   }
+  },
+  {
+   "id": "si-storm-island-champion",
+   "title": "Storm Island Champion",
+   "description": "Win the Storm Island Finale.",
+   "points": 50,
+   "group": "Storm Island",
+   "rarity": 8.89,
+   "rule": {
+    "prop": "CareerState.WonFirstIslandFinal"
+   }
+  },
+  {
+   "id": "si-galant-great",
+   "title": "Galant Great",
+   "description": "Win an Event in the Mitsubishi Galant.",
+   "points": 10,
+   "group": "Storm Island",
+   "rarity": 7.28
+  },
+  {
+   "id": "si-stadium-star",
+   "title": "Stadium Star",
+   "description": "Win an Event in the Robby Gordon #7 SST.",
+   "points": 10,
+   "group": "Storm Island",
+   "rarity": 12.54
+  },
+  {
+   "id": "si-ranger-rock-star",
+   "title": "Ranger Rock Star",
+   "description": "Win an event in the Ford Ranger.",
+   "points": 10,
+   "group": "Storm Island",
+   "rarity": 14.11
+  },
+  {
+   "id": "si-fiesta-fun",
+   "title": "Fiesta Fun",
+   "description": "Win an event in the '81 Ford Fiesta.",
+   "points": 10,
+   "group": "Storm Island",
+   "rarity": 6.72
+  },
+  {
+   "id": "si-metro-master",
+   "title": "Metro Master",
+   "description": "Win an event in the MG Metro R4.",
+   "points": 10,
+   "group": "Storm Island",
+   "rarity": 7.76
+  },
+  {
+   "id": "si-tropical-treasure",
+   "title": "Tropical Treasure",
+   "description": "Find and restore a Barn Find on Storm Island.",
+   "points": 25,
+   "group": "Storm Island",
+   "rarity": 10.96
+  },
+  {
+   "id": "si-tick",
+   "title": "Tick!",
+   "description": "Complete your first Storm Island Bucket List Challenge.",
+   "points": 10,
+   "group": "Storm Island",
+   "rarity": 11.75
+  },
+  {
+   "id": "si-see-you-in-another-life",
+   "title": "See You in Another Life!",
+   "description": "Complete every Storm Island Bucket List Challenge.",
+   "points": 25,
+   "group": "Storm Island",
+   "rarity": 3.31
+  },
+  {
+   "id": "si-castaways",
+   "title": "Castaways",
+   "description": "Complete every Co-op Storm Island Bucket List Challenge.",
+   "points": 30,
+   "group": "Storm Island",
+   "rarity": 1.8
+  },
+  {
+   "id": "si-gotta-smash-em-all",
+   "title": "Gotta Smash Em All!",
+   "description": "Collect every Storm Island Bonus Board.",
+   "points": 25,
+   "group": "Storm Island",
+   "rarity": 7.58
+  },
+  {
+   "id": "si-island-explorer",
+   "title": "Island Explorer",
+   "description": "Drive every Road on Storm Island.",
+   "points": 25,
+   "group": "Storm Island",
+   "rarity": 11.52
+  },
+  {
+   "id": "si-skills-for-thrills",
+   "title": "Skills for Thrills",
+   "description": "Bank a Skill Chain of 100,000 points on Storm Island.",
+   "points": 20,
+   "group": "Storm Island",
+   "rarity": 10.42
+  },
+  {
+   "id": "si-ready-to-bounce",
+   "title": "Ready to Bounce",
+   "description": "Start a race with Off-Road tires, suspension, and transmission on Storm Island.",
+   "points": 10,
+   "group": "Storm Island",
+   "rarity": 14.99
+  },
+  {
+   "id": "si-storm-breaker",
+   "title": "Storm Breaker",
+   "description": "Win 5 events in stormy conditions.",
+   "points": 20,
+   "group": "Storm Island",
+   "rarity": 12.62
+  },
+  {
+   "id": "si-horizon-5-0",
+   "title": "Horizon 5-0",
+   "description": "Complete 50 Online Events on Storm Island.",
+   "points": 30,
+   "group": "Storm Island",
+   "rarity": 2.3
+  },
+  {
+   "id": "si-we-have-to-go-back",
+   "title": "We Have to Go Back!",
+   "description": "Complete every Storm Island Championship.",
+   "points": 50,
+   "group": "Storm Island",
+   "rarity": 5.08
+  },
+  {
+   "id": "si-survive-the-gauntlet",
+   "title": "Survive the Gauntlet",
+   "description": "Complete your first Gauntlet Event.",
+   "points": 20,
+   "group": "Storm Island",
+   "rarity": 12.67
+  },
+  {
+   "id": "si-meet-and-beat",
+   "title": "Meet and Beat",
+   "description": "Visit the Storm Island Car Meet and win 3 Showdowns.",
+   "points": 20,
+   "group": "Storm Island",
+   "rarity": 2.49
+  },
+  {
+   "id": "si-gauntlet-runner",
+   "title": "Gauntlet Runner",
+   "description": "Win every Gauntlet Event.",
+   "points": 30,
+   "group": "Storm Island",
+   "rarity": 6.26
+  },
+  {
+   "id": "po-porsche-owners-club",
+   "title": "Porsche Owners Club",
+   "description": "Obtain your first Porsche.",
+   "points": 25,
+   "group": "Porsche Expansion",
+   "rarity": 14.23
+  },
+  {
+   "id": "po-porsche-rookie",
+   "title": "Porsche Rookie",
+   "description": "Tick off 5 items on the Porsche Bucket List.",
+   "points": 25,
+   "group": "Porsche Expansion",
+   "rarity": 6.05
+  },
+  {
+   "id": "po-porsche-pro",
+   "title": "Porsche Pro",
+   "description": "Complete the Porsche Bucket List.",
+   "points": 50,
+   "group": "Porsche Expansion",
+   "rarity": 4.47
+  },
+  {
+   "id": "po-this-is-my-porsche",
+   "title": "This Is My Porsche",
+   "description": "Complete 10 events in the same Porsche.",
+   "points": 50,
+   "group": "Porsche Expansion",
+   "rarity": 6.64
+  },
+  {
+   "id": "po-horse-power",
+   "title": "Horse Power",
+   "description": "Complete 40 events in Porsches.",
+   "points": 100,
+   "group": "Porsche Expansion",
+   "rarity": 5.54
+  },
+  {
+   "id": "po-cup-car",
+   "title": "Cup Car",
+   "description": "Earn 25,000 Credits in Rivals Mode with the Porsche 911 GT3 RS 4.0.",
+   "points": 20,
+   "group": "Porsche Expansion",
+   "rarity": 4.38
+  },
+  {
+   "id": "po-call-911",
+   "title": "Call 911",
+   "description": "Pull off 30 Near Miss Skills in the Porsche 911 Turbo S.",
+   "points": 20,
+   "group": "Porsche Expansion",
+   "rarity": 7.29
+  },
+  {
+   "id": "po-widow-maker",
+   "title": "Widow Maker",
+   "description": "Win a race in the wet in a 1982 Porsche 911 Turbo 3.3.",
+   "points": 20,
+   "group": "Porsche Expansion",
+   "rarity": 4.98
+  },
+  {
+   "id": "po-animal",
+   "title": "Animal!",
+   "description": "Pull off 20 Drifts in the 2015 Porsche Cayman GTS.",
+   "points": 20,
+   "group": "Porsche Expansion",
+   "rarity": 7.85
+  },
+  {
+   "id": "po-no-airbag-required",
+   "title": "No Airbag Required",
+   "description": "Earn 20 Clean Racer Skills in the 1989 Porsche 944 Turbo.",
+   "points": 20,
+   "group": "Porsche Expansion",
+   "rarity": 5.22
+  },
+  {
+   "id": "po-show-and-display",
+   "title": "Show and Display",
+   "description": "Complete 4 events in the 1987 Porsche 959.",
+   "points": 30,
+   "group": "Porsche Expansion",
+   "rarity": 5.73
+  },
+  {
+   "id": "po-air-cooled-competitor",
+   "title": "Air Cooled Competitor",
+   "description": "Complete 4 events in the 1970 Porsche 914/6.",
+   "points": 30,
+   "group": "Porsche Expansion",
+   "rarity": 5.59
+  },
+  {
+   "id": "po-ring-wraith",
+   "title": "Ring Wraith",
+   "description": "Complete 4 events in the 2014 Porsche 918 Spyder.",
+   "points": 30,
+   "group": "Porsche Expansion",
+   "rarity": 7.14
+  },
+  {
+   "id": "po-cajun-kickin",
+   "title": "Cajun Kickin'",
+   "description": "Complete 4 events in the 2015 Porsche Macan Turbo.",
+   "points": 30,
+   "group": "Porsche Expansion",
+   "rarity": 6.37
+  },
+  {
+   "id": "po-listen-to-it-roar",
+   "title": "Listen to it Roar!",
+   "description": "Complete 4 events in the 2003 Porsche Carrera GT.",
+   "points": 30,
+   "group": "Porsche Expansion",
+   "rarity": 5.91
   }
- ]
+ ],
+ "rarityFrom": "Exophase (Xbox players)"
 }
