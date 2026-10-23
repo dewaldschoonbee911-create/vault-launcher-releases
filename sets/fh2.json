@@ -1,7 +1,7 @@
 {
  "id": "fh2",
  "title": "Forza Horizon 2",
- "version": 2,
+ "version": 3,
  "minLauncher": "0.1.94",
  "kind": "replay",
  "authors": [
@@ -17,7 +17,7 @@
  "launchExe": "azimuth.exe",
  "notes": [
   "For Forza Horizon 2 (Xbox One) played through Azimuth. Xbox One games don't award achievements themselves, so Vault reads your save (Azimuth's data\\titles\\1A96545B\\saves) and never touches the game.",
-  "13 of the 88 achievements (base game, Storm Island and the Porsche Expansion) are read from the save so far: championships, cars, the bucket list, photos and the two finales. The rest are added as their place in the save is found. Online and Club achievements need Xbox Live and can't be earned here."
+  "14 of the 88 achievements (base game, Storm Island and the Porsche Expansion) are read from the save so far: championships, cars, the bucket list, photos and the two finales. The rest are added as their place in the save is found. Online and Club achievements need Xbox Live and can't be earned here."
  ],
  "testGuide": [
   {
@@ -379,7 +379,10 @@
    "description": "Arrive at the Horizon Festival.",
    "points": 10,
    "group": "Forza Horizon 2",
-   "rarity": 99.76
+   "rarity": 99.76,
+   "rule": {
+    "prop": "iestate.IntroducedFestival"
+   }
   },
   {
    "id": "welcome-to-montellino",

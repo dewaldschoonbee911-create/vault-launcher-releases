@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-23T06:23:54.734Z",
- "launcherVersion": "0.1.95",
+ "generatedAt": "2026-10-23T07:12:20.719Z",
+ "launcherVersion": "0.1.96",
  "sets": [
   {
    "id": "anachronox",
@@ -16984,10 +16984,10 @@
    "title": "Forza Horizon 2",
    "how": "files",
    "status": "untested",
-   "statusNote": "13 of 88 achievements read from the save; built from a fresh save, waiting for progress.",
+   "statusNote": "14 of 88 achievements read from the save; saves confirmed read live, intro not finished yet.",
    "notes": [
     "For Forza Horizon 2 (Xbox One) played through Azimuth. Xbox One games don't award achievements themselves, so Vault reads your save (Azimuth's data\\titles\\1A96545B\\saves) and never touches the game.",
-    "13 of the 88 achievements (base game, Storm Island and the Porsche Expansion) are read from the save so far: championships, cars, the bucket list, photos and the two finales. The rest are added as their place in the save is found. Online and Club achievements need Xbox Live and can't be earned here."
+    "14 of the 88 achievements (base game, Storm Island and the Porsche Expansion) are read from the save so far: championships, cars, the bucket list, photos and the two finales. The rest are added as their place in the save is found. Online and Club achievements need Xbox Live and can't be earned here."
    ],
    "achievementCount": 88,
    "points": 2000,

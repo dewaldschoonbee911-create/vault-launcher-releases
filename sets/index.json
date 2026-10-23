@@ -1,5 +1,5 @@
 {
- "launcherVersion": "0.1.95",
+ "launcherVersion": "0.1.96",
  "sets": [
   {
    "id": "anachronox",
@@ -132,8 +132,8 @@
   {
    "id": "fh2",
    "file": "fh2.json",
-   "version": 2,
-   "sha256": "129b7fd04821d84ba5cb6a09314c03ae22afd6d8b9ab1d95e4dfe28ced483c0f",
+   "version": 3,
+   "sha256": "930c44706c95e33079f0a929a63d6ddb631c77899140f438c1f6c9fffbe1fa22",
    "minLauncher": "0.1.94"
   },
   {
@@ -357,6 +357,6 @@
   }
  ],
  "status": {
-  "sha256": "da7d28cff0597689af80b90cefd5adabca51750d5778d38ffc1e6b7899097160"
+  "sha256": "31f98c0eeac409a0ea5b5ad906df2974f835136fce95ac6e12f1aa0c32ce37fa"
  }
 }
