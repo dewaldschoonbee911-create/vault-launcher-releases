@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-22T17:53:26.782Z",
- "launcherVersion": "0.1.93",
+ "generatedAt": "2026-10-23T06:16:17.755Z",
+ "launcherVersion": "0.1.94",
  "sets": [
   {
    "id": "anachronox",
@@ -16975,6 +16975,372 @@
      "description": "Save a game in 50 different places.",
      "points": 35,
      "group": "Places"
+    }
+   ],
+   "earlyAccessUntil": null
+  },
+  {
+   "id": "fh2",
+   "title": "Forza Horizon 2",
+   "how": "files",
+   "status": "untested",
+   "statusNote": "12 of 50 achievements read from the save; built from a fresh save, waiting for progress.",
+   "notes": [
+    "For Forza Horizon 2 (Xbox One) played through Azimuth. Xbox One games don't award achievements themselves, so Vault reads your save (Azimuth's data\\titles\\1A96545B\\saves) and never touches the game.",
+    "12 of the 50 achievements are read from the save so far: championships, cars, the bucket list, photos and becoming Horizon Champion. The rest (wristbands, towns, reward boards, barn finds and more) are added as their place in the save is found. Online and Club achievements need Xbox Live and can't be earned here."
+   ],
+   "achievementCount": 50,
+   "points": 1000,
+   "achievements": [
+    {
+     "id": "all-your-race-are-belong-to-us-2-0",
+     "title": "All Your Race Are Belong To Us 2.0",
+     "description": "Complete all 168 Championships.",
+     "points": 50,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "a-wild-drivatar-appears",
+     "title": "A Wild Drivatar Appears",
+     "description": "Win 3 Head to Head Races against Drivatars with a Bounty on them.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "bragging-rights",
+     "title": "Bragging Rights",
+     "description": "Beat Friends or Club Members on any 20 Speed Cameras.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "car-lover",
+     "title": "Car Lover",
+     "description": "Have 50 cars in your garage.",
+     "points": 20,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "fast-and-clean",
+     "title": "Fast and Clean",
+     "description": "Earn the Clean Racing skill 100 times.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "first-of-many",
+     "title": "First of Many",
+     "description": "Win your first Championship race.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "friends-with-benefits",
+     "title": "Friends with Benefits",
+     "description": "Earn a total of 1,000,000 CR from Rivals.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "green-wristband",
+     "title": "Green Wristband",
+     "description": "Obtain the Green Wristband.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "gold-wristband",
+     "title": "Gold Wristband",
+     "description": "Obtain the Gold Wristband.",
+     "points": 30,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "horizon-champion",
+     "title": "Horizon Champion",
+     "description": "Become the Horizon Champion.",
+     "points": 50,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "horizon-enthusiast",
+     "title": "Horizon Enthusiast",
+     "description": "Complete 100 Championships.",
+     "points": 25,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "horizon-fan",
+     "title": "Horizon Fan",
+     "description": "Complete 25 Championships.",
+     "points": 20,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "horizon-leader",
+     "title": "Horizon Leader",
+     "description": "Choose where the Road Trip goes for the first time.",
+     "points": 20,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "human-gps",
+     "title": "Human GPS",
+     "description": "Drive down every road in the game.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "kick-the-bucket",
+     "title": "Kick the Bucket",
+     "description": "Scratch 15 items off your Solo Bucket List.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "license-to-skill",
+     "title": "License to Skill",
+     "description": "Earn 5 Skill Points.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "loyal",
+     "title": "Loyal",
+     "description": "Earn 500,000 XP for your Club.",
+     "points": 25,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "multi-disciplined",
+     "title": "Multi-Disciplined",
+     "description": "Win an event in every type of car.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "number-one",
+     "title": "Number One",
+     "description": "Win a Championship.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "on-the-road-again",
+     "title": "On the Road Again",
+     "description": "Complete an Online Road Trip location.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "one-down",
+     "title": "One Down!",
+     "description": "Complete a Solo Bucket List challenge.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "photographer",
+     "title": "Photographer",
+     "description": "Take photos of 100 different cars for Horizon Promo.",
+     "points": 20,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "pink-wristband",
+     "title": "Pink Wristband",
+     "description": "Obtain the Pink Wristband.",
+     "points": 20,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "purple-wristband",
+     "title": "Purple Wristband",
+     "description": "Obtain the Purple Wristband.",
+     "points": 30,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "rain-master",
+     "title": "Rain Master",
+     "description": "Complete your first race in the rain.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "rest-in-peace",
+     "title": "Rest in Peace",
+     "description": "Complete every Solo Bucket List challenge.",
+     "points": 20,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "smash-happy",
+     "title": "Smash Happy",
+     "description": "Collect all Reward Boards.",
+     "points": 20,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "social-butterfly",
+     "title": "Social Butterfly",
+     "description": "Compete in 200 multiplayer events.",
+     "points": 50,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "social-caterpillar",
+     "title": "Social Caterpillar",
+     "description": "Compete in 20 multiplayer events.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "stone-cold-skiller",
+     "title": "Stone Cold Skiller",
+     "description": "Earn 65 Skill Points.",
+     "points": 20,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "storage-hunter",
+     "title": "Storage Hunter",
+     "description": "Restore 10 Barn Finds.",
+     "points": 20,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "summer-sale",
+     "title": "Summer Sale",
+     "description": "Smash 25 Reward Boards.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "super-meet-boy",
+     "title": "Super Meet Boy",
+     "description": "Grab a livery, grab a tuning setup, buy a car and enter a Showdown at any Car Meet.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "team-player",
+     "title": "Team Player",
+     "description": "Win 50 Team Events.",
+     "points": 30,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "that-new-car-smell",
+     "title": "That New Car Smell",
+     "description": "Buy your first car.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "the-train-s-in-vain",
+     "title": "The Train's in Vain",
+     "description": "Beat the Train in a Horizon Showcase event.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "wanderlust",
+     "title": "Wanderlust",
+     "description": "Complete a Road Trip.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "we-meet-again",
+     "title": "We Meet Again!",
+     "description": "Win a Showdown at every Car Meet.",
+     "points": 20,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "welcome-to-castelletto",
+     "title": "Welcome to Castelletto",
+     "description": "Arrive at Castelletto for the first time.",
+     "points": 25,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "welcome-to-horizon-europe",
+     "title": "Welcome to Horizon Europe",
+     "description": "Arrive at the Horizon Festival.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "welcome-to-montellino",
+     "title": "Welcome to Montellino",
+     "description": "Arrive at Montellino for the first time.",
+     "points": 25,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "welcome-to-nice",
+     "title": "Welcome to Nice",
+     "description": "Arrive at Nice for the first time.",
+     "points": 25,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "welcome-to-saint-martin",
+     "title": "Welcome to Saint-Martin",
+     "description": "Arrive at Saint-Martin for the first time.",
+     "points": 25,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "welcome-to-san-giovanni",
+     "title": "Welcome to San Giovanni",
+     "description": "Arrive at San Giovanni for the first time.",
+     "points": 25,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "welcome-to-sisteron",
+     "title": "Welcome to Sisteron",
+     "description": "Arrive at Sisteron for the first time.",
+     "points": 25,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "well-traveled",
+     "title": "Well Traveled",
+     "description": "Complete 25 Online Road Trip locations.",
+     "points": 30,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "worthy-of-a-sultan",
+     "title": "Worthy of a Sultan",
+     "description": "Have 175 cars in your garage.",
+     "points": 40,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "yellow-wristband",
+     "title": "Yellow Wristband",
+     "description": "Obtain the Yellow Wristband.",
+     "points": 10,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "yes-we-can",
+     "title": "Yes We Can",
+     "description": "Complete 25 Bucket List items co-operatively.",
+     "points": 30,
+     "group": "Forza Horizon 2"
+    },
+    {
+     "id": "you-are-playground-games",
+     "title": "You Are Playground Games",
+     "description": "Complete 100 Playground Games events.",
+     "points": 40,
+     "group": "Forza Horizon 2"
     }
    ],
    "earlyAccessUntil": null

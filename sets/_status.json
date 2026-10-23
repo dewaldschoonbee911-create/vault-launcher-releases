@@ -151,5 +151,9 @@
  "bloodborne": {
   "status": "untested",
   "note": "Same recomp runtime and log line as DRIVECLUB; waiting for the first trophy in a real game."
+ },
+ "fh2": {
+  "status": "untested",
+  "note": "12 of 50 achievements read from the save; built from a fresh save, waiting for progress."
  }
 }

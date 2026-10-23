@@ -1,5 +1,5 @@
 {
- "launcherVersion": "0.1.93",
+ "launcherVersion": "0.1.94",
  "sets": [
   {
    "id": "anachronox",
@@ -128,6 +128,13 @@
    "file": "fear2.json",
    "version": 2,
    "sha256": "a8142293e0acf238c8fcf459f4450fa0d4b8611024aac6394cfe6a75aa08e452"
+  },
+  {
+   "id": "fh2",
+   "file": "fh2.json",
+   "version": 1,
+   "sha256": "cc0149d6b3e8c954374391e8af04c0a0cf7d492c620999010c99b7e51ae6441a",
+   "minLauncher": "0.1.94"
   },
   {
    "id": "generals",
@@ -350,6 +357,6 @@
   }
  ],
  "status": {
-  "sha256": "15c9c89652f059d4bb0bb825b45b12c7e5f088335702e6c16fe6ce23c70f4bc9"
+  "sha256": "7d126280515f86d3406ca1e62781028741bbbc824481e4a5813ff8aa0e687d93"
  }
 }
