@@ -1,5 +1,5 @@
 {
- "launcherVersion": "0.1.96",
+ "launcherVersion": "0.1.97",
  "sets": [
   {
    "id": "anachronox",
@@ -90,7 +90,7 @@
    "id": "diablo",
    "file": "diablo.json",
    "version": 1,
-   "sha256": "6124ec5bbd59e371b5035ecee28fbdeec8417fbb1a38fed5edd1472c835dedb9"
+   "sha256": "ec3b500108b1c8666657fb9473c470db824d8eb27087a49346ce672bcc5e447b"
   },
   {
    "id": "driveclub",

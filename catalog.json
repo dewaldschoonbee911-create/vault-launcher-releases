@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-23T07:14:51.532Z",
- "launcherVersion": "0.1.96",
+ "generatedAt": "2026-10-24T03:42:24.771Z",
+ "launcherVersion": "0.1.97",
  "sets": [
   {
    "id": "anachronox",
@@ -13020,7 +13020,8 @@
     "Works with any copy of Diablo: Battle.net, GOG, the original CD, and DevilutionX. Hellfire too.",
     "Vault reads your save files and never touches the game. Single-player progress counts when the game saves: use Save Game in the menu, and achievements pop up then.",
     "Multiplayer heroes save all the time, so their achievements pop almost straight away.",
-    "Kills and quests come from the saved game, so they're counted per hero and added up across all your heroes."
+    "Kills and quests come from the saved game, so they're counted per hero and added up across all your heroes.",
+    "Single player: Diablo and DevilutionX don't save your hero after Diablo dies (the game ends straight away), so beating Diablo in single player can't be seen in your saves. Beat him in a multiplayer game (you can play it alone) and the win is saved and counts."
    ],
    "achievementCount": 106,
    "points": 2120,
