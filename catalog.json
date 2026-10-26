@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-24T03:42:24.771Z",
- "launcherVersion": "0.1.97",
+ "generatedAt": "2026-10-26T03:33:15.962Z",
+ "launcherVersion": "0.1.98",
  "sets": [
   {
    "id": "anachronox",
@@ -30715,10 +30715,11 @@
     "Warcraft III has Blizzard's anti-cheat, so Vault never reads its memory. Achievements come from the campaign progress file the game saves in Documents\\Warcraft III when you beat a chapter.",
     "Achievements pop on the victory screen, as soon as the game saves your progress. Progress you already have counts too.",
     "Campaign on Hard: set the difficulty to Hard before you play the chapter. Chapters you beat before Vault was watching do not count as Hard.",
-    "Skirmish and lifetime achievements come from the replay Warcraft III saves after every game (LastReplay.w3g). Turning on \"Auto-save replays\" in Options keeps every game, so none are missed."
+    "Skirmish and lifetime achievements come from the replay Warcraft III saves after every game (LastReplay.w3g). Turning on \"Auto-save replays\" in Options keeps every game, so none are missed.",
+    "Orc prologue achievements by Electronic-Fold-5138 (more of his list will follow as their place in the saves is found)."
    ],
-   "achievementCount": 136,
-   "points": 2650,
+   "achievementCount": 145,
+   "points": 2740,
    "achievements": [
     {
      "id": "tutorial-1",
@@ -31671,6 +31672,69 @@
      "description": "Beat Insane computers in 10 games.",
      "points": 40,
      "group": "Lifetime"
+    },
+    {
+     "id": "orc1-no-mercy",
+     "title": "Starting With No Mercy",
+     "description": "Chasing Visions: kill all 17 enemies (4 gnolls, the ogre, 3 trolls, 6 murlocs and 3 golems).",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc1-here-before",
+     "title": "Weren't You Here Before?",
+     "description": "Chasing Visions: finish the mission in under 5 minutes.",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc2-left-out",
+     "title": "Nobody Gets Left Out",
+     "description": "Departures: kill every gnoll, footman, knight and rifleman.",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc2-breadcrumbs",
+     "title": "Leave No Breadcrumbs",
+     "description": "Departures: destroy all 7 enemy towers.",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc3-no-mans-land",
+     "title": "No Man's Land",
+     "description": "Riders on the Storm: kill every neutral (2 sasquatch, 6 wolves, 4 golems, 10 ogres, 4 lizards and 20 gnolls).",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc3-zug-zug",
+     "title": "Zug-Zug Express",
+     "description": "Riders on the Storm: finish the mission in under 15 minutes.",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc4-rats",
+     "title": "I Hate Rats",
+     "description": "The Fires Down Below: kill the hidden rats.",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc5-priest",
+     "title": "Call a Priest (Not for Me)",
+     "description": "Countdown to Extinction: kill every wolf and lizard.",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc5-offense",
+     "title": "The Best Defense Is Offense",
+     "description": "Countdown to Extinction: destroy 3 or more enemy buildings.",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
     }
    ],
    "earlyAccessUntil": null
