@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-26T03:45:08.612Z",
- "launcherVersion": "0.1.99",
+ "generatedAt": "2026-10-26T04:09:05.229Z",
+ "launcherVersion": "0.1.100",
  "sets": [
   {
    "id": "anachronox",
@@ -30718,8 +30718,8 @@
     "Skirmish and lifetime achievements come from the replay Warcraft III saves after every game (LastReplay.w3g). Turning on \"Auto-save replays\" in Options keeps every game, so none are missed.",
     "Orc prologue achievements by Electronic-Fold-5138 (more of his list will follow as their place in the saves is found)."
    ],
-   "achievementCount": 149,
-   "points": 2780,
+   "achievementCount": 155,
+   "points": 2840,
    "achievements": [
     {
      "id": "tutorial-1",
@@ -31761,6 +31761,48 @@
      "id": "orc5-pups-only",
      "title": "Pups Only",
      "description": "Countdown to Extinction: win with Feral Spirit still below level 2.",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc1-single-minded",
+     "title": "Single-Minded",
+     "description": "Chasing Visions: win without losing a single unit.",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc1-finders-keepers",
+     "title": "Finders Keepers",
+     "description": "Chasing Visions: finish the mission carrying the Ring of Protection +1 (a stone golem drops it).",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc3-woods",
+     "title": "The Woods Can't Hide You",
+     "description": "Riders on the Storm: wipe out the human camps (every footman, rifleman and priest).",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc4-six-feet",
+     "title": "Six Feet Under",
+     "description": "The Fires Down Below: clear the whole map, every human and every creep.",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc4-dont-lose",
+     "title": "Don't Lose a Unit",
+     "description": "The Fires Down Below: keep all 13 of your units (grunts, shamans and headhunters) alive.",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc5-minor-renovations",
+     "title": "Minor Renovations",
+     "description": "Countdown to Extinction: win losing no more than 5 buildings.",
      "points": 10,
      "group": "Orc Prologue: Exodus of the Horde"
     }

@@ -2223,6 +2223,178 @@
      }
     }
    }
+  },
+  {
+   "id": "orc1-single-minded",
+   "title": "Single-Minded",
+   "description": "Chasing Visions: win without losing a single unit.",
+   "points": 10,
+   "group": "Orc Prologue: Exodus of the Horde",
+   "rule": {
+    "mission": {
+     "map": "Prologue01",
+     "check": [
+      {
+       "types": [
+        "Othr",
+        "ogru"
+       ],
+       "owner": [
+        "Othr"
+       ],
+       "noneLost": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "orc1-finders-keepers",
+   "title": "Finders Keepers",
+   "description": "Chasing Visions: finish the mission carrying the Ring of Protection +1 (a stone golem drops it).",
+   "points": 10,
+   "group": "Orc Prologue: Exodus of the Horde",
+   "rule": {
+    "hero": {
+     "name": "Thrall",
+     "mission": "Tutorial02",
+     "items": [
+      "rde0"
+     ]
+    }
+   }
+  },
+  {
+   "id": "orc3-woods",
+   "title": "The Woods Can't Hide You",
+   "description": "Riders on the Storm: wipe out the human camps (every footman, rifleman and priest).",
+   "points": 10,
+   "group": "Orc Prologue: Exodus of the Horde",
+   "rule": {
+    "mission": {
+     "map": "Prologue03",
+     "check": [
+      {
+       "types": [
+        "hfoo",
+        "hrif",
+        "hmpr"
+       ],
+       "alive": {
+        "max": 0
+       },
+       "total": {
+        "min": 10
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "orc4-six-feet",
+   "title": "Six Feet Under",
+   "description": "The Fires Down Below: clear the whole map, every human and every creep.",
+   "points": 10,
+   "group": "Orc Prologue: Exodus of the Horde",
+   "rule": {
+    "mission": {
+     "map": "Prologue04",
+     "check": [
+      {
+       "types": [
+        "hfoo",
+        "hrif",
+        "hpea",
+        "nmrl",
+        "nslf",
+        "nslm",
+        "nskg",
+        "ngrk",
+        "nska",
+        "nslh",
+        "ngnw",
+        "ngst",
+        "nC01",
+        "ngno",
+        "ngh1",
+        "nmfs",
+        "nmrr",
+        "nslr",
+        "nspb",
+        "nC04"
+       ],
+       "alive": {
+        "max": 0
+       },
+       "total": {
+        "min": 20
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "orc4-dont-lose",
+   "title": "Don't Lose a Unit",
+   "description": "The Fires Down Below: keep all 13 of your units (grunts, shamans and headhunters) alive.",
+   "points": 10,
+   "group": "Orc Prologue: Exodus of the Horde",
+   "rule": {
+    "mission": {
+     "map": "Prologue04",
+     "check": [
+      {
+       "types": [
+        "ogru",
+        "oshm",
+        "ohun"
+       ],
+       "owner": [
+        "Othr"
+       ],
+       "noneLost": true,
+       "total": {
+        "min": 13
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "orc5-minor-renovations",
+   "title": "Minor Renovations",
+   "description": "Countdown to Extinction: win losing no more than 5 buildings.",
+   "points": 10,
+   "group": "Orc Prologue: Exodus of the Horde",
+   "rule": {
+    "mission": {
+     "map": "Prologue05",
+     "check": [
+      {
+       "types": [
+        "otrb",
+        "owtw",
+        "obar",
+        "oalt",
+        "ofor",
+        "obea",
+        "osld",
+        "otto",
+        "ovln"
+       ],
+       "owner": [
+        "Othr"
+       ],
+       "dead": {
+        "max": 5
+       }
+      }
+     ]
+    }
+   }
   }
  ]
 }
