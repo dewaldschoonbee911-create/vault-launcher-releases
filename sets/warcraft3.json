@@ -1,7 +1,7 @@
 {
  "id": "warcraft3",
  "title": "Warcraft III: Reforged",
- "version": 4,
+ "version": 5,
  "resetUnlocksBefore": 3,
  "kind": "replay",
  "authors": [
@@ -2155,6 +2155,72 @@
        }
       }
      ]
+    }
+   }
+  },
+  {
+   "id": "orc3-accessory",
+   "title": "Just an Accessory",
+   "description": "Riders on the Storm: finish the mission carrying the Circlet of Nobility.",
+   "points": 10,
+   "group": "Orc Prologue: Exodus of the Horde",
+   "rule": {
+    "hero": {
+     "name": "Thrall",
+     "mission": "Tutorial04",
+     "items": [
+      "cnob"
+     ]
+    }
+   }
+  },
+  {
+   "id": "orc4-geared-up",
+   "title": "All Geared Up",
+   "description": "The Fires Down Below: finish the mission carrying the Orb of Fire and the Hood of Cunning.",
+   "points": 10,
+   "group": "Orc Prologue: Exodus of the Horde",
+   "rule": {
+    "hero": {
+     "name": "Thrall",
+     "mission": "Tutorial05",
+     "items": [
+      "ofir",
+      "hcun"
+     ]
+    }
+   }
+  },
+  {
+   "id": "orc5-heavy-head",
+   "title": "Heavy Is the Head",
+   "description": "Countdown to Extinction: finish the mission carrying the Crown of Kings.",
+   "points": 10,
+   "group": "Orc Prologue: Exodus of the Horde",
+   "rule": {
+    "hero": {
+     "name": "Thrall",
+     "mission": "Orc01",
+     "items": [
+      "ckng"
+     ]
+    }
+   }
+  },
+  {
+   "id": "orc5-pups-only",
+   "title": "Pups Only",
+   "description": "Countdown to Extinction: win with Feral Spirit still below level 2.",
+   "points": 10,
+   "group": "Orc Prologue: Exodus of the Horde",
+   "rule": {
+    "hero": {
+     "name": "Thrall",
+     "mission": "Orc01",
+     "abilityBelow": {
+      "id": "AOsf",
+      "level": 2
+     }
     }
    }
   }

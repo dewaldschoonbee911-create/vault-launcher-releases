@@ -1,5 +1,5 @@
 {
- "launcherVersion": "0.1.98",
+ "launcherVersion": "0.1.99",
  "sets": [
   {
    "id": "anachronox",
@@ -334,8 +334,8 @@
   {
    "id": "warcraft3",
    "file": "warcraft3.json",
-   "version": 4,
-   "sha256": "c931b100630d2ceddc61611dcc21dacb142b794014c301f99fa644d8ad15cf9b"
+   "version": 5,
+   "sha256": "c398e73bada6c398e4fe2294aa2570e9a1dd40f93a9a8ed09a7f00ac0dadbed2"
   },
   {
    "id": "wolf3d",

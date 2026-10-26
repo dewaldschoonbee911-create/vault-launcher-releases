@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-26T03:33:15.962Z",
- "launcherVersion": "0.1.98",
+ "generatedAt": "2026-10-26T03:45:08.612Z",
+ "launcherVersion": "0.1.99",
  "sets": [
   {
    "id": "anachronox",
@@ -30718,8 +30718,8 @@
     "Skirmish and lifetime achievements come from the replay Warcraft III saves after every game (LastReplay.w3g). Turning on \"Auto-save replays\" in Options keeps every game, so none are missed.",
     "Orc prologue achievements by Electronic-Fold-5138 (more of his list will follow as their place in the saves is found)."
    ],
-   "achievementCount": 145,
-   "points": 2740,
+   "achievementCount": 149,
+   "points": 2780,
    "achievements": [
     {
      "id": "tutorial-1",
@@ -31733,6 +31733,34 @@
      "id": "orc5-offense",
      "title": "The Best Defense Is Offense",
      "description": "Countdown to Extinction: destroy 3 or more enemy buildings.",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc3-accessory",
+     "title": "Just an Accessory",
+     "description": "Riders on the Storm: finish the mission carrying the Circlet of Nobility.",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc4-geared-up",
+     "title": "All Geared Up",
+     "description": "The Fires Down Below: finish the mission carrying the Orb of Fire and the Hood of Cunning.",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc5-heavy-head",
+     "title": "Heavy Is the Head",
+     "description": "Countdown to Extinction: finish the mission carrying the Crown of Kings.",
+     "points": 10,
+     "group": "Orc Prologue: Exodus of the Horde"
+    },
+    {
+     "id": "orc5-pups-only",
+     "title": "Pups Only",
+     "description": "Countdown to Extinction: win with Feral Spirit still below level 2.",
      "points": 10,
      "group": "Orc Prologue: Exodus of the Horde"
     }
