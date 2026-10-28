@@ -1,5 +1,5 @@
 {
- "launcherVersion": "0.1.106",
+ "launcherVersion": "0.1.107",
  "sets": [
   {
    "id": "anachronox",
@@ -234,7 +234,7 @@
    "id": "ra2yr",
    "file": "ra2yr.json",
    "version": 4,
-   "sha256": "5374becf023a9bdceee2e1ab4b59cb009b7dabff2f8da22224d3e32845a583b3"
+   "sha256": "666dccb9d0a9695d0a9dc840ba2801abf6517e01d02859e42d6f6c9ddbbfcec8"
   },
   {
    "id": "ra3",

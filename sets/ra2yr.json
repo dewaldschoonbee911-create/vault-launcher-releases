@@ -11,8 +11,7 @@
     "ra2md.mix"
   ],
   "exeNames": [
-    "gamemd.exe",
-    "gamemd-spawn.exe"
+    "gamemd.exe"
   ],
   "genericExeName": false,
   "md5": [
@@ -37,7 +36,7 @@
     "gamemd.exe 1.001 (Steam Ultimate Collection, md5 2a1307f6...). Globals from YRpp; offsets verified in the binary.",
     "Kills (fixed in set v4): the kill code at 0x703056 increments the VICTIM house +0x5488 and the killer house +0x5438[victim]; so +0x5434/+0x5488 are units/buildings LOST, and kills are the sums of the 20-slot arrays at +0x53E4/+0x5438 (exactly what the score screen at 0x46DB40 adds up). v3 wrongly used the loss counters as kills.",
     "Live-tested 16 Oct 2026. While a match loads the player record briefly holds garbage (2,097,184 credits etc. for ~2s); the gate rejects it.",
-    "Online and modem/LAN games are excluded, so nothing here touches CnCNet ladder play."
+    "Online and modem/LAN games are excluded: CnCNet's gamemd-spawn.exe is never opened, and Vault stops reading gamemd.exe as soon as the Game type watch shows a LAN or online match."
   ],
   "achievements": [
     {
