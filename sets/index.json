@@ -1,5 +1,5 @@
 {
- "launcherVersion": "0.1.105",
+ "launcherVersion": "0.1.106",
  "sets": [
   {
    "id": "anachronox",
@@ -12,13 +12,6 @@
    "file": "assassinscreed.json",
    "version": 2,
    "sha256": "98fe0ff247de033b109d9f5118a351571282aa9168eb02f1e99889b8e7371ffc"
-  },
-  {
-   "id": "bloodborne",
-   "file": "bloodborne.json",
-   "version": 1,
-   "sha256": "f29aacb10b92c5daab3bc320d801469fe62cb2c90302f57a6dc14813945ea960",
-   "minLauncher": "0.1.81"
   },
   {
    "id": "cnc3",
@@ -69,12 +62,6 @@
    "sha256": "a9f0fd82c8e03f9db8612d89dd3d42488e31b769f2d1a430e5e83c9ff12192c3"
   },
   {
-   "id": "davediver",
-   "file": "davediver.json",
-   "version": 1,
-   "sha256": "1d5b5c0868bd040f82bb49341eca5bcbf9a0d939a2f8a7ec7e1d18ad3c5bd94d"
-  },
-  {
    "id": "deathrally",
    "file": "deathrally.json",
    "version": 1,
@@ -91,13 +78,6 @@
    "file": "diablo.json",
    "version": 1,
    "sha256": "ec3b500108b1c8666657fb9473c470db824d8eb27087a49346ce672bcc5e447b"
-  },
-  {
-   "id": "driveclub",
-   "file": "driveclub.json",
-   "version": 3,
-   "sha256": "7bffa1cf57d8f53c77a08d22f30fb6c3cd3ebb1096e9c4cf44c5460bd55f98f6",
-   "minLauncher": "0.1.81"
   },
   {
    "id": "eaw",
@@ -130,13 +110,6 @@
    "sha256": "a8142293e0acf238c8fcf459f4450fa0d4b8611024aac6394cfe6a75aa08e452"
   },
   {
-   "id": "fh2",
-   "file": "fh2.json",
-   "version": 3,
-   "sha256": "930c44706c95e33079f0a929a63d6ddb631c77899140f438c1f6c9fffbe1fa22",
-   "minLauncher": "0.1.94"
-  },
-  {
    "id": "generals",
    "file": "generals.json",
    "version": 1,
@@ -153,13 +126,6 @@
    "file": "gorky17.json",
    "version": 2,
    "sha256": "0cf38e32b856f28440697c5b7fa537f45283cbcb01460d71c7a3bfa47681492d"
-  },
-  {
-   "id": "gow3r",
-   "file": "gow3r.json",
-   "version": 3,
-   "sha256": "b8286c3aa49ae52e2250f6993489f890f7a467d5773782c57c7a3a3be7e72fa3",
-   "minLauncher": "0.1.81"
   },
   {
    "id": "halflife",
@@ -325,13 +291,6 @@
    "sha256": "306d5dd9aaa6a32d70de1cd79f4d496380966d240e819312f1d419ad38704e33"
   },
   {
-   "id": "uncharted",
-   "file": "uncharted.json",
-   "version": 1,
-   "sha256": "291be9eaf6bb3542457a4010132f6a5b3a9dcdc73272da955591ec9d8af9b490",
-   "minLauncher": "0.1.88"
-  },
-  {
    "id": "warcraft3",
    "file": "warcraft3.json",
    "version": 5,
@@ -348,15 +307,9 @@
    "file": "worms.json",
    "version": 1,
    "sha256": "ad6e618eb39dbce8f2537cdc469803291acaf31a6cdd93300139bc9ad6bacd42"
-  },
-  {
-   "id": "wot",
-   "file": "wot.json",
-   "version": 1,
-   "sha256": "2b1437b3a9050f134cf65603fb3f188997143b33cbef14146622c666037df316"
   }
  ],
  "status": {
-  "sha256": "31f98c0eeac409a0ea5b5ad906df2974f835136fce95ac6e12f1aa0c32ce37fa"
+  "sha256": "98689fe9481e06d62fe5a985427b11bff11e8f78a65ff75ee0c737342e6e7306"
  }
 }

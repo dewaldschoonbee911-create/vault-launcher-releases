@@ -124,36 +124,8 @@
   "status": "untested",
   "note": "Log reading checked on sample Hearthstone logs; waiting for a player report."
  },
- "davediver": {
-  "status": "untested",
-  "note": "Save format from the DaveSaveEd editor; not yet checked on a real save."
- },
- "wot": {
-  "status": "untested",
-  "note": "Official Wargaming API; waiting for a player report."
- },
  "minecraft": {
   "status": "partly",
   "note": "Confirmed in Minecraft 26.3 (Java): Minecraft, Stone Age and Getting an Upgrade popped up from a real world."
- },
- "driveclub": {
-  "status": "partly",
-  "note": "Main-game trophies confirmed live (first event: 4 trophies); add-on series numbering not confirmed yet."
- },
- "gow3r": {
-  "status": "partly",
-  "note": "Poseidon confirmed from real saves; the other bosses use the autosave name pattern and still need a player to reach them."
- },
- "uncharted": {
-  "status": "partly",
-  "note": "Uncharted 2 First Treasure confirmed from a real log; Uncharted 1 and 3 untested."
- },
- "bloodborne": {
-  "status": "untested",
-  "note": "Same recomp runtime and log line as DRIVECLUB; waiting for the first trophy in a real game."
- },
- "fh2": {
-  "status": "untested",
-  "note": "14 of 88 achievements read from the save; saves confirmed read live, intro not finished yet."
  }
 }
